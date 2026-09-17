@@ -4,6 +4,8 @@ MOSS is a litter-picking rover for sidewalks, roadsides and parks: small enough 
 
 ![Concept](../media/images/concept_01_concept_v2_3_1.jpg)
 
+![Tracked base](../media/images/moss_tracks_turn.gif)
+
 - Tracked base (two motors with encoders, differential drive), printed tracks in TPU.
 - Collection bin on top, emptied by hand at the end of a run.
 - Arm derived from the SO-101 (6 DoF, open source) with a NormaCore parallel gripper.

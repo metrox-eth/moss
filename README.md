@@ -4,9 +4,9 @@ Cleaner streets, one maker at a time.
 
 MOSS is a small, mostly 3D-printed litter-picking rover: tracked base, a collection bin, and an arm derived from the SO-101 with a NormaCore parallel gripper. Target parts cost: 500 to 700 USD plus a Jetson (before tax and shipping, labour and tools excluded). The goal is a design any maker can print, build, improve, and run where they live.
 
-![MOSS picking up litter (concept simulation, scripted robot)](media/images/moss_pickup_loop.gif)
+![MOSS exploded view, turntable](media/images/moss_exploded_turntable.gif)
 
-This repository is the build log, the design files as they become real, and the software as it gets written. It started on 15 September 2026. Nothing here is finished; everything here is real. The animation above is the concept simulation (scripted, not a trained policy); the photo below is the first printed parts.
+This repository is the build log, the design files as they become real, and the software as it gets written. It started on 15 September 2026. Nothing here is finished; everything here is real. The animation above is the CAD (every printed part, exploded and assembled); the photo below is the first printed parts.
 
 ![First parts](media/images/build_02_first_parts_20260917.jpg)
 
@@ -21,7 +21,7 @@ This repository is the build log, the design files as they become real, and the 
 
 ![Chassis, removable modules](media/images/concept_04_chassis_v2_3_1.jpg)
 
-![Tracked base](media/images/moss_tracks_turn.gif)
+![MOSS picking up litter (concept simulation, scripted robot)](media/images/moss_pickup_loop.gif)
 
 ## Plan
 
