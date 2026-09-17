@@ -1,0 +1,15 @@
+[project]
+name = "moss-dimos"
+version = "0.0.1"
+description = "MOSS litter-picking rover: dimOS modules (scaffold)"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+requires-python = ">=3.10"
+dependencies = ["numpy"]
+
+[project.optional-dependencies]
+gamepad = ["pygame>=2.6"]
+test = ["pytest"]
+
+[tool.setuptools]
+packages = ["moss_dimos"]

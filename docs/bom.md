@@ -1,0 +1,36 @@
+# Bill of materials (work in progress)
+
+Target: 500 to 700 USD in parts plus a Jetson, before tax and shipping. Prices are not listed yet; they will be once the first unit is complete and the list is stable.
+
+## Printed parts
+| Part | Material | Printer used | Status |
+|---|---|---|---|
+| Track (×2) | TPU 95A | Bambu Lab P1S | printed |
+| Collection bin | PLA | Bambu Lab H2S | printed |
+| Top cover | PLA | H2S | printed |
+| Main chassis | PETG | H2S | printing |
+| Inner side rails (×2) | PETG | P1S | printing |
+| Cross spacers (×4) | PETG | P1S | printing |
+| Outer side rail | PETG | P1S | next plate |
+| Motor brackets (×2) | PETG | P1S | next plate |
+
+## Electronics
+- Jetson Orin Nano 8 GB (brain)
+- Intel RealSense depth camera
+- Waveshare controller board
+- 2 × Cytron MD10C R3 motor drivers
+- 2 × geared DC motors with encoders
+- Fuse holder, DC converter, interface modules
+
+## Mechanical hardware
+- Steel shafts 5 / 6 / 8 mm (cut to length)
+- Bearings 608 and 626 (625 also in stock)
+- Shaft collars 5 / 6 / 8 mm
+- Rigid couplings 6 mm to 6 mm
+- Fasteners M3 and M4
+
+## Arm
+- SO-101 derived arm (6 DoF)
+- NormaCore parallel gripper
+
+![Hardware ordered](../media/images/build_05_hardware_ordered_20260917.jpg)

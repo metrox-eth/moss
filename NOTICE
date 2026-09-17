@@ -1,0 +1,9 @@
+MOSS — a small, mostly 3D-printed litter-picking rover
+Copyright 2026 Laurent Genoud (Show Robotics), Hua Hin, Thailand.
+
+Code: Apache License, Version 2.0 (see LICENSE).
+Hardware design files and documentation (docs/, hardware/, media/): CC BY 4.0.
+
+moss_dimos/gamepad.py is derived from vector-dimos (https://github.com/metrox-eth/vector-dimos),
+Copyright 2026 Laurent Genoud, Apache-2.0, itself an external blueprint for dimOS
+(https://github.com/dimensionalOS/dimos), Copyright 2025 Dimensional Inc., Apache-2.0.
