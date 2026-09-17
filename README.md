@@ -19,6 +19,8 @@ This repository is the build log, the design files as they become real, and the 
 - Software: a scaffold derived from [vector-dimos](https://github.com/metrox-eth/vector-dimos) (gamepad teleop and differential-drive kinematics, cold-tested, not yet run on the rover).
 - CAD: designed in Fusion 360; STL and STEP exports will land in `hardware/` as each part is validated by a real print.
 
+![Chassis, removable modules](media/images/moss_chassis_turn.gif)
+
 ![Tracked base](media/images/moss_tracks_turn.gif)
 
 ## Plan
