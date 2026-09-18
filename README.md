@@ -32,7 +32,7 @@ This repository is the build log, the design files as they become real, and the 
 
 ## Demo
 
-A recorded-run 3D demo where Jev (TypeSafe AI's decision model) chooses which litter to pick up: https://metrox-eth.github.io/moss-jev/ (three real API responses, replayed; no live inference). Source: https://github.com/metrox-eth/moss-jev
+A recorded-run 3D demo where Jev (TypeSafe AI's decision model) chooses which litter to pick up: https://www.showrobotics.ai/moss-jev/ (three real API responses, replayed; no live inference). Mirror: https://metrox-eth.github.io/moss-jev/ · Source: https://github.com/metrox-eth/moss-jev
 
 ## Data
 
