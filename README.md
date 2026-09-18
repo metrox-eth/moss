@@ -6,7 +6,7 @@ MOSS is a small, mostly 3D-printed litter-picking rover: tracked base, a collect
 
 ![MOSS exploded view, turntable](media/images/moss_exploded_turntable.gif)
 
-This repository is the build log, the design files as they become real, and the software as it gets written. It started on 15 September 2026. Nothing here is finished; everything here is real. The animation above is the CAD (every printed part, exploded and assembled); the photo below is the first printed parts.
+This repository is the build log, the design files as they become real, and the software as it gets written. It started on 15 September 2026. Nothing here is finished; everything here is real. The animation above is the current CAD (every printed part, exploded and assembled); the photo below is the first printed parts. The concept video from 15 September (V2.3.1) shows an earlier design: almost everything changed since.
 
 ![First parts](media/images/build_02_first_parts_20260917.jpg)
 
@@ -20,8 +20,6 @@ This repository is the build log, the design files as they become real, and the 
 - Software: a scaffold derived from [vector-dimos](https://github.com/metrox-eth/vector-dimos) (gamepad teleop and differential-drive kinematics, cold-tested, not yet run on the rover).
 - CAD: designed in Fusion 360; STL and STEP exports will land in `hardware/` as each part is validated by a real print.
 - Next: fit the drivetrain, mount the arm, test on the ground.
-
-![Chassis, removable modules](media/images/concept_04_chassis_v2_3_1.jpg)
 
 ![MOSS picking up litter (concept simulation, scripted robot)](media/images/moss_pickup_loop.gif)
 
