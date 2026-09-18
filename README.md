@@ -12,7 +12,7 @@ This repository is the build log, the design files as they become real, and the 
 
 ## Status (18 September 2026)
 
-- Printed: main chassis (PETG), two flexible tracks (TPU 95A), collection bin and top cover (PLA), side rails, cross spacers, motor brackets.
+- Printed: main chassis (PETG), two flexible tracks (TPU 95A), collection bin and top cover (PLA), inner and outer side rails (two of each), cross spacers, motor brackets.
 - First fit on the bench: the parts go together, with two or three small fit issues to correct in the next revision. Nothing bolted yet.
 - Printing: drive and idler wheels (eight halves), track tensioners and bearing retainers.
 - On the bench: Jetson Orin Nano 8 GB, Intel RealSense depth camera (mounted up front, access from above), Waveshare General Driver for Robots (ESP32), 2 × Cytron MD10C R3 motor drivers, 2 × geared motors with encoders, fuse holder, converter, interface modules.

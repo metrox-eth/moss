@@ -11,10 +11,11 @@ Target: 500 to 700 USD in parts plus a Jetson, before tax and shipping. Prices a
 | Main chassis | PETG (black) | H2S | printed |
 | Inner side rails (×2) | PETG | P1S | printed |
 | Cross spacers (×4) | PETG | P1S | printed |
-| Outer side rail | PETG | P1S | printed |
+| Outer side rails (×2) | PETG | P1S | printed |
 | Motor brackets (×2) | PETG | P1S | printed |
 | Drive and idler wheels (8 halves) | PETG | P1S | printing |
 | Track tensioners + bearing retainers (12 parts) | PETG | P1S | printing |
+| Splash-proof vent covers (×2) | PETG | — | designed |
 
 ## Electronics
 - Jetson Orin Nano 8 GB (brain)
