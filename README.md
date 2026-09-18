@@ -10,14 +10,16 @@ This repository is the build log, the design files as they become real, and the 
 
 ![First parts](media/images/build_02_first_parts_20260917.jpg)
 
-## Status (17 September 2026)
+## Status (18 September 2026)
 
-- Printed: two flexible tracks (TPU 95A), the collection bin and its top cover (PLA).
-- Printing: the main chassis (PETG), inner side rails, cross spacers, motor brackets.
-- On the bench: Jetson Orin Nano 8 GB, Intel RealSense depth camera, Waveshare controller board, 2 × Cytron MD10C R3 motor drivers, 2 × geared motors with encoders, fuse holder, converter, interface modules.
+- Printed: main chassis (PETG), two flexible tracks (TPU 95A), collection bin and top cover (PLA), side rails, cross spacers, motor brackets.
+- First fit on the bench: the parts go together, with two or three small fit issues to correct in the next revision. Nothing bolted yet.
+- Printing: drive and idler wheels (eight halves), track tensioners and bearing retainers.
+- On the bench: Jetson Orin Nano 8 GB, Intel RealSense depth camera (mounted up front, access from above), Waveshare General Driver for Robots (ESP32), 2 × Cytron MD10C R3 motor drivers, 2 × geared motors with encoders, fuse holder, converter, interface modules.
 - Ordered: steel shafts (5/6/8 mm), bearings (608, 626), shaft collars, 6 mm couplings, M3 and M4 fasteners.
 - Software: a scaffold derived from [vector-dimos](https://github.com/metrox-eth/vector-dimos) (gamepad teleop and differential-drive kinematics, cold-tested, not yet run on the rover).
 - CAD: designed in Fusion 360; STL and STEP exports will land in `hardware/` as each part is validated by a real print.
+- Next: fit the drivetrain, mount the arm, test on the ground.
 
 ![Chassis, removable modules](media/images/concept_04_chassis_v2_3_1.jpg)
 

@@ -15,3 +15,19 @@ Two tracks, the bin and its top cover are done. The main chassis is printing in 
 ![Structure](../media/images/build_04_structure_20260917.jpg)
 
 Video: `media/video/MOSS_build_update_20260917.mp4`.
+
+## 2026-09-18
+The main chassis came off the H2S in black PETG. First fit check on the bench: chassis, top cover, collection bin, the two flexible tracks, side rails and brackets. The RealSense sits up front, with access from above. Nothing is bolted yet; the parts go together with two or three small fit issues to correct in the next revision.
+
+![The chassis is real](../media/images/build_02_chassis_real_20260918.jpg)
+![From print to first fit](../media/images/build_03_first_fit_parts_20260918.jpg)
+![Taking shape](../media/images/build_04_taking_shape_20260918.jpg)
+
+Printing now on the P1S: the drivetrain, eight wheel halves (drive and idler wheels, 0.4 mm nozzle, black PETG), then twelve parts of track tensioners and bearing retainers.
+
+![Drivetrain plate](../media/images/build_05_drivetrain_plate_20260918.jpg)
+![Tensioners and retainers](../media/images/build_06_tensioners_plate_20260918.jpg)
+
+Next: fit the drivetrain, mount the arm, test on the ground.
+
+Video: `media/video/MOSS_build_log_02_20260918.mp4`.

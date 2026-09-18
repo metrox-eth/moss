@@ -8,11 +8,13 @@ Target: 500 to 700 USD in parts plus a Jetson, before tax and shipping. Prices a
 | Track (×2) | TPU 95A | Bambu Lab P1S | printed |
 | Collection bin | PLA | Bambu Lab H2S | printed |
 | Top cover | PLA | H2S | printed |
-| Main chassis | PETG | H2S | printing |
-| Inner side rails (×2) | PETG | P1S | printing |
-| Cross spacers (×4) | PETG | P1S | printing |
-| Outer side rail | PETG | P1S | next plate |
-| Motor brackets (×2) | PETG | P1S | next plate |
+| Main chassis | PETG (black) | H2S | printed |
+| Inner side rails (×2) | PETG | P1S | printed |
+| Cross spacers (×4) | PETG | P1S | printed |
+| Outer side rail | PETG | P1S | printed |
+| Motor brackets (×2) | PETG | P1S | printed |
+| Drive and idler wheels (8 halves) | PETG | P1S | printing |
+| Track tensioners + bearing retainers (12 parts) | PETG | P1S | printing |
 
 ## Electronics
 - Jetson Orin Nano 8 GB (brain)
