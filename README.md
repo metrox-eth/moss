@@ -30,6 +30,10 @@ This repository is the build log, the design files as they become real, and the 
 3. Train a first pick-up policy on pooled data. The first video of an autonomous pick will be exactly that: autonomous, or it will not be posted.
 4. Publish the design and the build documentation so others can build their own.
 
+## Demo
+
+A recorded-run 3D demo where Jev (TypeSafe AI's decision model) chooses which litter to pick up: https://metrox-eth.github.io/moss-jev/ (three real API responses, replayed; no live inference). Source: https://github.com/metrox-eth/moss-jev
+
 ## Data
 
 Teleop data recorded by MOSS builders is meant to be pooled and open, so the shared model gets better with every robot. Details and the rules we propose are in [docs/data.md](docs/data.md).
