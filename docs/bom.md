@@ -15,7 +15,7 @@ Target: 500 to 700 USD in parts plus a Jetson, before tax and shipping. Prices a
 | Motor brackets (×2) | PETG | P1S | printed |
 | Drive and idler wheels (8 halves) | PETG | P1S | printing |
 | Track tensioners + bearing retainers (12 parts) | PETG | P1S | printing |
-| Splash-proof vent covers (×2) | PETG | — | designed |
+| Splash-proof vent covers (×2) | PETG | — | printed |
 
 ## Electronics
 - Jetson Orin Nano 8 GB (brain)
