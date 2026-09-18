@@ -9,7 +9,7 @@ MOSS is a litter-picking rover for sidewalks, roadsides and parks: small enough 
 - Tracked base (two motors with encoders, differential drive), printed tracks in TPU.
 - Collection bin on top, emptied by hand at the end of a run.
 - Arm derived from the SO-101 (6 DoF, open source) with a NormaCore parallel gripper.
-- Brain: Jetson Orin Nano 8 GB; perception: an Intel RealSense depth camera.
+- Brain: Jetson Orin Nano 8 GB, mounted in a printed cartridge. The cartridge is the modular part: print a different one and a Raspberry Pi takes the Jetson's place for a teleop-only build (MOSS Lite). Perception: an Intel RealSense depth camera.
 - Software: dimOS for navigation and teleop, LeRobot for data and policies.
 
 The criterion we use for success: pick up more litter with less technology. Every added part has to earn its place against a person with a bag.

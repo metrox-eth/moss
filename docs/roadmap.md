@@ -6,3 +6,4 @@
 - **Later**: first policy; first autonomous pick on video; kits so the first hundred builders do not have to source parts themselves.
 
 No dates. Each step is posted when it is real.
+- **MOSS Lite**: the same base with a Raspberry Pi in the compute cartridge instead of the Jetson, teleop and data collection only, for builders without a Jetson.
