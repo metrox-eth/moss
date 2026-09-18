@@ -1,12 +1,14 @@
-"""The derived gamepad module must at least import and expose its pure helpers (no pad, no dimOS run)."""
+"""The dimOS wrapper must import when its optional dependencies are present; only their absence may skip."""
 import importlib
 
 import pytest
 
 
-def test_gamepad_module_imports_or_skips_without_dimos():
+def test_gamepad_module_imports_or_skips_only_for_optional_deps():
     try:
         mod = importlib.import_module("moss_dimos.gamepad")
-    except ModuleNotFoundError as e:  # dimos / pygame absent on a cold box
-        pytest.skip(f"optional dependency missing: {e.name}")
-    assert hasattr(mod, "axes_to_twist")
+    except ModuleNotFoundError as e:
+        if e.name and (e.name == "dimos" or e.name.startswith("dimos.") or e.name == "pygame"):
+            pytest.skip(f"optional dependency missing: {e.name}")
+        raise
+    assert hasattr(mod, "GamepadTeleop")

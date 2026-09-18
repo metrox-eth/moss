@@ -4,11 +4,21 @@ Pure functions, no hardware, no dimOS import: cold-testable anywhere.
 
 Convention: vx forward in m/s, wz counter-clockwise in rad/s, track_width in m
 (distance between the two track centrelines). Left/right speeds in m/s at the
-track. vy is accepted and ignored: a tracked rover cannot strafe.
+track. There is no strafe on tracks: callers never pass a lateral speed.
+
+Every input is validated: a non-finite command or an invalid configuration
+raises ValueError instead of producing a motor command.
 """
 from __future__ import annotations
 
+import math
 from dataclasses import dataclass
+
+
+def _finite(name: str, value: float) -> float:
+    if not isinstance(value, (int, float)) or isinstance(value, bool) or not math.isfinite(value):
+        raise ValueError(f"{name} must be a finite number, got {value!r}")
+    return float(value)
 
 
 @dataclass(frozen=True)
@@ -16,20 +26,29 @@ class DiffDriveConfig:
     track_width_m: float = 0.30
     max_track_speed_mps: float = 0.6
 
+    def __post_init__(self) -> None:
+        w = _finite("track_width_m", self.track_width_m)
+        v = _finite("max_track_speed_mps", self.max_track_speed_mps)
+        if w <= 0:
+            raise ValueError(f"track_width_m must be > 0, got {w}")
+        if v <= 0:
+            raise ValueError(f"max_track_speed_mps must be > 0, got {v} (a zero limit is a stop, not a config)")
 
-def twist_to_tracks(vx: float, wz: float, cfg: DiffDriveConfig, vy: float = 0.0) -> tuple[float, float]:
+
+def twist_to_tracks(vx: float, wz: float, cfg: DiffDriveConfig) -> tuple[float, float]:
     """Twist -> (left, right) track speeds in m/s, scaled to stay within the limit.
 
     Scaling (not clipping) keeps the turn radius when a command is too fast:
     a full-speed forward plus a turn slows both tracks together instead of
     flattening the turn.
     """
-    del vy  # no strafe on tracks
+    vx = _finite("vx", vx)
+    wz = _finite("wz", wz)
     half = 0.5 * cfg.track_width_m
     left = vx - wz * half
     right = vx + wz * half
     peak = max(abs(left), abs(right))
-    if peak > cfg.max_track_speed_mps > 0:
+    if peak > cfg.max_track_speed_mps:
         k = cfg.max_track_speed_mps / peak
         left, right = left * k, right * k
     return left, right
@@ -37,6 +56,14 @@ def twist_to_tracks(vx: float, wz: float, cfg: DiffDriveConfig, vy: float = 0.0)
 
 def tracks_to_twist(left: float, right: float, cfg: DiffDriveConfig) -> tuple[float, float]:
     """(left, right) track speeds -> (vx, wz). Inverse of twist_to_tracks when unscaled."""
+    left = _finite("left", left)
+    right = _finite("right", right)
     vx = 0.5 * (left + right)
     wz = (right - left) / cfg.track_width_m
     return vx, wz
+
+
+def clamp_twist(vx: float, wz: float, cfg: DiffDriveConfig) -> tuple[float, float]:
+    """Twist -> the same twist scaled so that neither track exceeds the limit."""
+    left, right = twist_to_tracks(vx, wz, cfg)
+    return tracks_to_twist(left, right, cfg)

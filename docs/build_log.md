@@ -23,7 +23,7 @@ The main chassis came off the H2S in black PETG. First fit check on the bench: c
 ![From print to first fit](../media/images/build_03_first_fit_parts_20260918.jpg)
 ![Taking shape](../media/images/build_04_taking_shape_20260918.jpg)
 
-Printing now on the P1S: the drivetrain, eight wheel halves (drive and idler wheels, 0.4 mm nozzle, black PETG), then twelve parts of track tensioners and bearing retainers.
+Printing now: the drivetrain, eight wheel halves (drive and idler wheels, 0.4 mm nozzle, black PETG, on the P1S), and a second plate of twelve parts, track tensioners and bearing retainers.
 
 ![Drivetrain plate](../media/images/build_05_drivetrain_plate_20260918.jpg)
 ![Tensioners and retainers](../media/images/build_06_tensioners_plate_20260918.jpg)
