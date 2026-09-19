@@ -48,7 +48,7 @@ Next: replace the stiff track, assemble and check the drivetrain, fit the arm an
 
 ## 2026-09-20 — power and control harness, first motor and encoder tests
 
-The power and control harness is assembled. Both drive motors and their quadrature encoders were tested on the bench from an Espressif ESP32-S3-DevKitC-1 V1.1 driving two Cytron MD10C R3. Video: [MOSS_motor_encoder_bench_20260920.mp4](../media/video/MOSS_motor_encoder_bench_20260920.mp4); photo: [the harness on the bench](../media/images/build_harness_bench_20260920.jpg).
+The print set is complete, camera brackets and corrected motor brackets included, and the mechanical hardware (shafts, bearings, collars, couplings, fasteners) is in. The power and control harness is assembled. Both drive motors and their quadrature encoders were tested on the bench from an Espressif ESP32-S3-DevKitC-1 V1.1 driving two Cytron MD10C R3. Video: [MOSS_motor_encoder_bench_20260920.mp4](../media/video/MOSS_motor_encoder_bench_20260920.mp4); photo: [the harness on the bench](../media/images/build_harness_bench_20260920.jpg).
 
 The selected architecture now uses the ESP32-S3 as motor controller and a separate Waveshare Bus Servo Adapter (A) V1.1 for the SO-101 arm servos. The Waveshare General Driver for Robots is no longer part of the design. The arm was not tested in this session. The ESP32 was powered over USB-UART during the tests; the motors from the pack through the fuse and the positive distribution block, with common grounds.
 
@@ -72,7 +72,7 @@ INA219 communication at 0x40 works and the pack read around 11.95–11.97 V: a v
 
 ### Protection and cabling
 
-Provisional fuse for motor bench tests: 5 A automotive blade, 32 V DC, same format as the holder. Decided, ordered; installation not confirmed. This is not the final rating for the rover with Jetson and arm; the pack's BMS thresholds are unknown. Cable runs of 25–30 cm at most; conductor bundle measured 1.2 mm in diameter, section estimated at 0.75–1 mm², not verified.
+Fuse for the motor bench tests: 5 A automotive blade, 32 V DC, same format as the holder. This is not the final rating for the rover with Jetson and arm; the pack's BMS thresholds are unknown. Cable runs of 25–30 cm at most; conductor bundle measured 1.2 mm in diameter, section estimated at 0.75–1 mm², not verified.
 
 Next: integrate the harness into the chassis, set installed motor and encoder directions, measure ticks per revolution, then the Jetson interface and speed control. For the next hardware revision: mounts for the ESP32-S3, the servo adapter and the real distribution; the printed V0.3 stays the reference.
 
