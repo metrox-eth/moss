@@ -45,3 +45,34 @@ Before calling the set fully reconciled, identify the corrected pair of motor br
 Bench video of the print set laid out, 19 September (20 s pan): [MOSS_print_set_bench_20260919.mp4](../media/video/MOSS_print_set_bench_20260919.mp4). Stills: [print set](../media/images/build_print_set_bench_20260919.jpg), [electronics side](../media/images/build_electronics_bench_20260919.jpg) — bin and cover, rails, chassis, wheels, arm and gripper parts, the Jetson in its cartridge, motors and boards.
 
 Next: replace the stiff track, assemble and check the drivetrain, fit the arm and electronics, and record the first powered tests when they happen.
+
+## 2026-09-20 — power and control harness, first motor and encoder tests
+
+The power and control harness is assembled. Both drive motors and their quadrature encoders were tested on the bench from an Espressif ESP32-S3-DevKitC-1 V1.1 driving two Cytron MD10C R3. Video: [MOSS_motor_encoder_bench_20260920.mp4](../media/video/MOSS_motor_encoder_bench_20260920.mp4); photo: [the harness on the bench](../media/images/build_harness_bench_20260920.jpg).
+
+The selected architecture now uses the ESP32-S3 as motor controller and a separate Waveshare Bus Servo Adapter (A) V1.1 for the SO-101 arm servos. The Waveshare General Driver for Robots is no longer part of the design. The arm was not tested in this session. The ESP32 was powered over USB-UART during the tests; the motors from the pack through the fuse and the positive distribution block, with common grounds.
+
+Firmware: [`firmware/`](../firmware/README.md), the source actually flashed after the tests (25 % commissioning limit). Wiring map in its README. Host logic test: `g++ -std=c++17 firmware/tests/control_test.cpp && ./a.out`.
+
+### Results
+
+| Test | Left encoder delta | Right encoder delta | Invalid transitions (L/R) |
+|---|---:|---:|---:|
+| Individual 15 % PWM, 1 s each | −704 | −712 | 0 / 0 |
+| Both motors: positive 4 s ramp / 2 s at 100 % / 4 s ramp down | −38 083 | −38 609 | 0 / 0 |
+| Both motors: negative 4 s ramp / 2 s at 100 % / 4 s ramp down | +40 340 | +41 679 | 1 / 2 |
+
+Raw traces: [`hardware/bench/20260920/`](../hardware/bench/20260920/). Commanded and timed stops and the disarmed state were confirmed. Positive commands produced clockwise rotation seen from the rear of each motor, with negative tick counts. Forward direction and encoder signs still have to be set after the mirrored installation on the rover. The percentages are PWM duty, not a regulated speed. Tick counts are raw ×4 quadrature counts, not distance. The invalid-transition counters do not catch every possible encoder error.
+
+The 100 % cycle used a temporary firmware; the 25 % limit was restored afterwards and further unloaded 25 % tests (left, right, both, 2 s) completed with no additional invalid transition. No loaded, stall, endurance or ground-driving test has been done.
+
+### Battery monitoring
+
+INA219 communication at 0x40 works and the pack read around 11.95–11.97 V: a voltage indication, not a calibrated state of charge nor per-cell monitoring. The module carries a 0.1 Ω R100 shunt, but in the tested wiring the motor current bypasses that shunt (the fuse-to-distribution link stays direct; the module's small terminal does not take the main cable). The currents in [`ina_bypassed_NOT_motor_current.json`](../hardware/bench/20260920/ina_bypassed_NOT_motor_current.json) are therefore not motor consumption and must not be used for fuse sizing, power claims or current protection. Decision: keep the INA219 for voltage only on this prototype. The firmware provides no battery undervoltage cutoff.
+
+### Protection and cabling
+
+Provisional fuse for motor bench tests: 5 A automotive blade, 32 V DC, same format as the holder. Decided, ordered; installation not confirmed. This is not the final rating for the rover with Jetson and arm; the pack's BMS thresholds are unknown. Cable runs of 25–30 cm at most; conductor bundle measured 1.2 mm in diameter, section estimated at 0.75–1 mm², not verified.
+
+Next: integrate the harness into the chassis, set installed motor and encoder directions, measure ticks per revolution, then the Jetson interface and speed control. For the next hardware revision: mounts for the ESP32-S3, the servo adapter and the real distribution; the printed V0.3 stays the reference.
+

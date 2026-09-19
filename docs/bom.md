@@ -25,13 +25,20 @@ The authoritative list is the [printed-parts inventory](printed_parts.md) (111 p
 
 Not printed: metal HEX12 hubs, bearings, shaft collars, motor–shaft couplings, servo horns, fasteners.
 
-## Electronics
-- Jetson Orin Nano 8 GB (brain), in its original plastic base
-- Intel RealSense depth camera
-- Waveshare controller board
+## Electronics (as selected on 20 September 2026, after the first harness bench tests)
+- Jetson Orin Nano 8 GB (brain), in its original plastic base; Wi-Fi on the Jetson side
+- Intel RealSense depth camera (the IMU comes from it)
+- Espressif ESP32-S3-DevKitC-1 V1.1: motor controller (PWM/DIR for both drivers, both quadrature encoders, I²C to the INA219); see [`firmware/`](../firmware/README.md) for the wiring map
 - 2 × Cytron MD10C R3 motor drivers
-- 2 × geared DC motors with encoders
-- Fuse holder, DC converter, interface modules
+- 2 × geared DC motors with quadrature encoders
+- Waveshare Bus Servo Adapter (A) V1.1: separate interface for the SO-101 arm servos (arm not tested yet)
+- INA219 module at 0x40 (R100 = 0.1 Ω shunt): used for battery voltage only. In the tested wiring the motor current bypasses the shunt, so its current readings are not motor consumption. See the build log.
+- Fuse holder with automotive blade fuse. Provisional rating for motor bench tests: 5 A, 32 V DC (decided; installation not confirmed). Not the final rating for the complete rover with Jetson and arm; the pack's BMS thresholds are unknown.
+- Positive distribution terminal block with ferrules; negative returns chained; XT60 to the pack
+- 5 V buck converter for the logic, if needed (not installed)
+- Removed from the design: Waveshare General Driver for Robots.
+
+Cabling: same wire for the main runs and the driver branches, runs of 25–30 cm at most. Conductor bundle measured 1.2 mm in diameter; section estimated at 0.75–1 mm², not manufacturer-verified.
 
 ## Mechanical hardware
 - Steel shafts 5 / 6 / 8 mm (cut to length)

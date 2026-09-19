@@ -1,0 +1,1516 @@
+{
+  "shunt_ohms": 0.1,
+  "sample_rate_hz": 5,
+  "results": [
+    {
+      "phase": "left",
+      "samples": 8,
+      "current_mA_median": -6.9,
+      "current_mA_min": -7.6,
+      "current_mA_max": -6.6,
+      "bus_mV_min": 11916,
+      "ticks_delta": [
+        -3022,
+        0
+      ],
+      "invalid_edges_delta": [
+        0,
+        0
+      ],
+      "stop_confirmed": true
+    },
+    {
+      "phase": "right",
+      "samples": 8,
+      "current_mA_median": -7.300000000000001,
+      "current_mA_min": -8.5,
+      "current_mA_max": -6.6,
+      "bus_mV_min": 11916,
+      "ticks_delta": [
+        0,
+        -3073
+      ],
+      "invalid_edges_delta": [
+        0,
+        0
+      ],
+      "stop_confirmed": true
+    },
+    {
+      "phase": "both",
+      "samples": 9,
+      "current_mA_median": -10.3,
+      "current_mA_min": -10.9,
+      "current_mA_max": -8.5,
+      "bus_mV_min": 11888,
+      "ticks_delta": [
+        -3027,
+        -3090
+      ],
+      "invalid_edges_delta": [
+        0,
+        0
+      ],
+      "stop_confirmed": true
+    }
+  ],
+  "error": null,
+  "telemetry": [
+    {
+      "ms": 304202,
+      "mode": 0,
+      "reason": "stop",
+      "target_pct": [
+        0,
+        0
+      ],
+      "output_pct": [
+        0,
+        0
+      ],
+      "ticks": [
+        0,
+        0
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11944,
+      "shunt_uV": -390,
+      "current_mA": null,
+      "host_s": 0.22778775,
+      "phase": "idle",
+      "R100_current_mA": -3.9
+    },
+    {
+      "ms": 304402,
+      "mode": 0,
+      "reason": "stop",
+      "target_pct": [
+        0,
+        0
+      ],
+      "output_pct": [
+        0,
+        0
+      ],
+      "ticks": [
+        0,
+        0
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11944,
+      "shunt_uV": -460,
+      "current_mA": null,
+      "host_s": 0.42789075,
+      "phase": "idle",
+      "R100_current_mA": -4.6
+    },
+    {
+      "ms": 304602,
+      "mode": 0,
+      "reason": "stop",
+      "target_pct": [
+        0,
+        0
+      ],
+      "output_pct": [
+        0,
+        0
+      ],
+      "ticks": [
+        0,
+        0
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11944,
+      "shunt_uV": -390,
+      "current_mA": null,
+      "host_s": 0.627737833,
+      "phase": "idle",
+      "R100_current_mA": -3.9
+    },
+    {
+      "ms": 304802,
+      "mode": 0,
+      "reason": "stop",
+      "target_pct": [
+        0,
+        0
+      ],
+      "output_pct": [
+        0,
+        0
+      ],
+      "ticks": [
+        0,
+        0
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11948,
+      "shunt_uV": -500,
+      "current_mA": null,
+      "host_s": 0.827760666,
+      "phase": "idle",
+      "R100_current_mA": -5.0
+    },
+    {
+      "ms": 305002,
+      "mode": 0,
+      "reason": "stop",
+      "target_pct": [
+        0,
+        0
+      ],
+      "output_pct": [
+        0,
+        0
+      ],
+      "ticks": [
+        0,
+        0
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11944,
+      "shunt_uV": -420,
+      "current_mA": null,
+      "host_s": 1.027803833,
+      "phase": "idle",
+      "R100_current_mA": -4.2
+    },
+    {
+      "ms": 305202,
+      "mode": 1,
+      "reason": "armed",
+      "target_pct": [
+        0,
+        0
+      ],
+      "output_pct": [
+        0,
+        0
+      ],
+      "ticks": [
+        0,
+        0
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11944,
+      "shunt_uV": -390,
+      "current_mA": null,
+      "host_s": 1.227721458,
+      "phase": "left",
+      "R100_current_mA": -3.9
+    },
+    {
+      "ms": 305402,
+      "mode": 1,
+      "reason": "armed",
+      "target_pct": [
+        0,
+        0
+      ],
+      "output_pct": [
+        0,
+        0
+      ],
+      "ticks": [
+        0,
+        0
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11944,
+      "shunt_uV": -460,
+      "current_mA": null,
+      "host_s": 1.428183125,
+      "phase": "left",
+      "R100_current_mA": -4.6
+    },
+    {
+      "ms": 305602,
+      "mode": 2,
+      "reason": "drive",
+      "target_pct": [
+        25,
+        0
+      ],
+      "output_pct": [
+        20,
+        0
+      ],
+      "ticks": [
+        -60,
+        0
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11916,
+      "shunt_uV": -700,
+      "current_mA": null,
+      "host_s": 1.628227791,
+      "phase": "left",
+      "R100_current_mA": -7.0
+    },
+    {
+      "ms": 305802,
+      "mode": 2,
+      "reason": "drive",
+      "target_pct": [
+        25,
+        0
+      ],
+      "output_pct": [
+        25,
+        0
+      ],
+      "ticks": [
+        -330,
+        0
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11920,
+      "shunt_uV": -700,
+      "current_mA": null,
+      "host_s": 1.828505333,
+      "phase": "left",
+      "R100_current_mA": -7.0
+    },
+    {
+      "ms": 306001,
+      "mode": 2,
+      "reason": "drive",
+      "target_pct": [
+        25,
+        0
+      ],
+      "output_pct": [
+        25,
+        0
+      ],
+      "ticks": [
+        -651,
+        0
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11924,
+      "shunt_uV": -720,
+      "current_mA": null,
+      "host_s": 2.027739833,
+      "phase": "left",
+      "R100_current_mA": -7.2
+    },
+    {
+      "ms": 306202,
+      "mode": 2,
+      "reason": "drive",
+      "target_pct": [
+        25,
+        0
+      ],
+      "output_pct": [
+        25,
+        0
+      ],
+      "ticks": [
+        -979,
+        0
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11916,
+      "shunt_uV": -680,
+      "current_mA": null,
+      "host_s": 2.2287225,
+      "phase": "left",
+      "R100_current_mA": -6.8
+    },
+    {
+      "ms": 306402,
+      "mode": 2,
+      "reason": "drive",
+      "target_pct": [
+        25,
+        0
+      ],
+      "output_pct": [
+        25,
+        0
+      ],
+      "ticks": [
+        -1306,
+        0
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11920,
+      "shunt_uV": -760,
+      "current_mA": null,
+      "host_s": 2.428331666,
+      "phase": "left",
+      "R100_current_mA": -7.6
+    },
+    {
+      "ms": 306602,
+      "mode": 2,
+      "reason": "drive",
+      "target_pct": [
+        25,
+        0
+      ],
+      "output_pct": [
+        25,
+        0
+      ],
+      "ticks": [
+        -1634,
+        0
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11924,
+      "shunt_uV": -660,
+      "current_mA": null,
+      "host_s": 2.628302125,
+      "phase": "left",
+      "R100_current_mA": -6.6
+    },
+    {
+      "ms": 306802,
+      "mode": 2,
+      "reason": "drive",
+      "target_pct": [
+        25,
+        0
+      ],
+      "output_pct": [
+        25,
+        0
+      ],
+      "ticks": [
+        -1962,
+        0
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11920,
+      "shunt_uV": -740,
+      "current_mA": null,
+      "host_s": 2.828742333,
+      "phase": "left",
+      "R100_current_mA": -7.4
+    },
+    {
+      "ms": 307002,
+      "mode": 2,
+      "reason": "drive",
+      "target_pct": [
+        25,
+        0
+      ],
+      "output_pct": [
+        25,
+        0
+      ],
+      "ticks": [
+        -2288,
+        0
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11924,
+      "shunt_uV": -660,
+      "current_mA": null,
+      "host_s": 3.028258458,
+      "phase": "left",
+      "R100_current_mA": -6.6
+    },
+    {
+      "ms": 307202,
+      "mode": 2,
+      "reason": "drive",
+      "target_pct": [
+        25,
+        0
+      ],
+      "output_pct": [
+        25,
+        0
+      ],
+      "ticks": [
+        -2616,
+        0
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11924,
+      "shunt_uV": -680,
+      "current_mA": null,
+      "host_s": 3.228378458,
+      "phase": "left",
+      "R100_current_mA": -6.8
+    },
+    {
+      "ms": 307402,
+      "mode": 2,
+      "reason": "drive",
+      "target_pct": [
+        25,
+        0
+      ],
+      "output_pct": [
+        25,
+        0
+      ],
+      "ticks": [
+        -2944,
+        0
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11920,
+      "shunt_uV": -700,
+      "current_mA": null,
+      "host_s": 3.428734,
+      "phase": "stopping",
+      "R100_current_mA": -7.0
+    },
+    {
+      "ms": 307602,
+      "mode": 0,
+      "reason": "stop",
+      "target_pct": [
+        0,
+        0
+      ],
+      "output_pct": [
+        0,
+        0
+      ],
+      "ticks": [
+        -3022,
+        0
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11944,
+      "shunt_uV": -390,
+      "current_mA": null,
+      "host_s": 3.62816225,
+      "phase": "stopping",
+      "R100_current_mA": -3.9
+    },
+    {
+      "ms": 307802,
+      "mode": 0,
+      "reason": "stop",
+      "target_pct": [
+        0,
+        0
+      ],
+      "output_pct": [
+        0,
+        0
+      ],
+      "ticks": [
+        -3022,
+        0
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11944,
+      "shunt_uV": -350,
+      "current_mA": null,
+      "host_s": 3.828072416,
+      "phase": "stopping",
+      "R100_current_mA": -3.5
+    },
+    {
+      "ms": 308002,
+      "mode": 0,
+      "reason": "stop",
+      "target_pct": [
+        0,
+        0
+      ],
+      "output_pct": [
+        0,
+        0
+      ],
+      "ticks": [
+        -3022,
+        0
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11944,
+      "shunt_uV": -390,
+      "current_mA": null,
+      "host_s": 4.028052291,
+      "phase": "stopping",
+      "R100_current_mA": -3.9
+    },
+    {
+      "ms": 308202,
+      "mode": 1,
+      "reason": "armed",
+      "target_pct": [
+        0,
+        0
+      ],
+      "output_pct": [
+        0,
+        0
+      ],
+      "ticks": [
+        -3022,
+        0
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11948,
+      "shunt_uV": -410,
+      "current_mA": null,
+      "host_s": 4.228335833,
+      "phase": "right",
+      "R100_current_mA": -4.1
+    },
+    {
+      "ms": 308402,
+      "mode": 2,
+      "reason": "drive",
+      "target_pct": [
+        0,
+        25
+      ],
+      "output_pct": [
+        0,
+        4
+      ],
+      "ticks": [
+        -3022,
+        0
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11932,
+      "shunt_uV": -610,
+      "current_mA": null,
+      "host_s": 4.42873925,
+      "phase": "right",
+      "R100_current_mA": -6.1
+    },
+    {
+      "ms": 308602,
+      "mode": 2,
+      "reason": "drive",
+      "target_pct": [
+        0,
+        25
+      ],
+      "output_pct": [
+        0,
+        24
+      ],
+      "ticks": [
+        -3022,
+        -109
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11916,
+      "shunt_uV": -850,
+      "current_mA": null,
+      "host_s": 4.628606916,
+      "phase": "right",
+      "R100_current_mA": -8.5
+    },
+    {
+      "ms": 308802,
+      "mode": 2,
+      "reason": "drive",
+      "target_pct": [
+        0,
+        25
+      ],
+      "output_pct": [
+        0,
+        25
+      ],
+      "ticks": [
+        -3022,
+        -412
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11924,
+      "shunt_uV": -760,
+      "current_mA": null,
+      "host_s": 4.828720791,
+      "phase": "right",
+      "R100_current_mA": -7.6
+    },
+    {
+      "ms": 309002,
+      "mode": 2,
+      "reason": "drive",
+      "target_pct": [
+        0,
+        25
+      ],
+      "output_pct": [
+        0,
+        25
+      ],
+      "ticks": [
+        -3022,
+        -741
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11928,
+      "shunt_uV": -760,
+      "current_mA": null,
+      "host_s": 5.02901575,
+      "phase": "right",
+      "R100_current_mA": -7.6
+    },
+    {
+      "ms": 309202,
+      "mode": 2,
+      "reason": "drive",
+      "target_pct": [
+        0,
+        25
+      ],
+      "output_pct": [
+        0,
+        25
+      ],
+      "ticks": [
+        -3022,
+        -1072
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11920,
+      "shunt_uV": -850,
+      "current_mA": null,
+      "host_s": 5.230657,
+      "phase": "right",
+      "R100_current_mA": -8.5
+    },
+    {
+      "ms": 309402,
+      "mode": 2,
+      "reason": "drive",
+      "target_pct": [
+        0,
+        25
+      ],
+      "output_pct": [
+        0,
+        25
+      ],
+      "ticks": [
+        -3022,
+        -1404
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11920,
+      "shunt_uV": -720,
+      "current_mA": null,
+      "host_s": 5.428905375,
+      "phase": "right",
+      "R100_current_mA": -7.2
+    },
+    {
+      "ms": 309601,
+      "mode": 2,
+      "reason": "drive",
+      "target_pct": [
+        0,
+        25
+      ],
+      "output_pct": [
+        0,
+        25
+      ],
+      "ticks": [
+        -3022,
+        -1736
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11924,
+      "shunt_uV": -700,
+      "current_mA": null,
+      "host_s": 5.628332,
+      "phase": "right",
+      "R100_current_mA": -7.0
+    },
+    {
+      "ms": 309802,
+      "mode": 2,
+      "reason": "drive",
+      "target_pct": [
+        0,
+        25
+      ],
+      "output_pct": [
+        0,
+        25
+      ],
+      "ticks": [
+        -3022,
+        -2070
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11928,
+      "shunt_uV": -660,
+      "current_mA": null,
+      "host_s": 5.829227333,
+      "phase": "right",
+      "R100_current_mA": -6.6
+    },
+    {
+      "ms": 310002,
+      "mode": 2,
+      "reason": "drive",
+      "target_pct": [
+        0,
+        25
+      ],
+      "output_pct": [
+        0,
+        25
+      ],
+      "ticks": [
+        -3022,
+        -2403
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11916,
+      "shunt_uV": -720,
+      "current_mA": null,
+      "host_s": 6.028960541,
+      "phase": "right",
+      "R100_current_mA": -7.2
+    },
+    {
+      "ms": 310202,
+      "mode": 2,
+      "reason": "drive",
+      "target_pct": [
+        0,
+        25
+      ],
+      "output_pct": [
+        0,
+        25
+      ],
+      "ticks": [
+        -3022,
+        -2736
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11916,
+      "shunt_uV": -740,
+      "current_mA": null,
+      "host_s": 6.229028291,
+      "phase": "right",
+      "R100_current_mA": -7.4
+    },
+    {
+      "ms": 310402,
+      "mode": 0,
+      "reason": "stop",
+      "target_pct": [
+        0,
+        0
+      ],
+      "output_pct": [
+        0,
+        0
+      ],
+      "ticks": [
+        -3022,
+        -3047
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11940,
+      "shunt_uV": -410,
+      "current_mA": null,
+      "host_s": 6.428757583,
+      "phase": "stopping",
+      "R100_current_mA": -4.1
+    },
+    {
+      "ms": 310602,
+      "mode": 0,
+      "reason": "stop",
+      "target_pct": [
+        0,
+        0
+      ],
+      "output_pct": [
+        0,
+        0
+      ],
+      "ticks": [
+        -3022,
+        -3073
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11940,
+      "shunt_uV": -310,
+      "current_mA": null,
+      "host_s": 6.628705916,
+      "phase": "stopping",
+      "R100_current_mA": -3.1
+    },
+    {
+      "ms": 310802,
+      "mode": 0,
+      "reason": "stop",
+      "target_pct": [
+        0,
+        0
+      ],
+      "output_pct": [
+        0,
+        0
+      ],
+      "ticks": [
+        -3022,
+        -3073
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11944,
+      "shunt_uV": -390,
+      "current_mA": null,
+      "host_s": 6.828702,
+      "phase": "stopping",
+      "R100_current_mA": -3.9
+    },
+    {
+      "ms": 311002,
+      "mode": 0,
+      "reason": "stop",
+      "target_pct": [
+        0,
+        0
+      ],
+      "output_pct": [
+        0,
+        0
+      ],
+      "ticks": [
+        -3022,
+        -3073
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11940,
+      "shunt_uV": -390,
+      "current_mA": null,
+      "host_s": 7.028635583,
+      "phase": "stopping",
+      "R100_current_mA": -3.9
+    },
+    {
+      "ms": 311202,
+      "mode": 1,
+      "reason": "armed",
+      "target_pct": [
+        0,
+        0
+      ],
+      "output_pct": [
+        0,
+        0
+      ],
+      "ticks": [
+        -3022,
+        -3073
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11944,
+      "shunt_uV": -420,
+      "current_mA": null,
+      "host_s": 7.22887725,
+      "phase": "both",
+      "R100_current_mA": -4.2
+    },
+    {
+      "ms": 311402,
+      "mode": 2,
+      "reason": "drive",
+      "target_pct": [
+        25,
+        25
+      ],
+      "output_pct": [
+        9,
+        9
+      ],
+      "ticks": [
+        -3028,
+        -3079
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11908,
+      "shunt_uV": -630,
+      "current_mA": null,
+      "host_s": 7.428866,
+      "phase": "both",
+      "R100_current_mA": -6.3
+    },
+    {
+      "ms": 311602,
+      "mode": 2,
+      "reason": "drive",
+      "target_pct": [
+        25,
+        25
+      ],
+      "output_pct": [
+        25,
+        25
+      ],
+      "ticks": [
+        -3198,
+        -3253
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11896,
+      "shunt_uV": -1030,
+      "current_mA": null,
+      "host_s": 7.629266875,
+      "phase": "both",
+      "R100_current_mA": -10.3
+    },
+    {
+      "ms": 311802,
+      "mode": 2,
+      "reason": "drive",
+      "target_pct": [
+        25,
+        25
+      ],
+      "output_pct": [
+        25,
+        25
+      ],
+      "ticks": [
+        -3514,
+        -3574
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11896,
+      "shunt_uV": -850,
+      "current_mA": null,
+      "host_s": 7.827409125,
+      "phase": "both",
+      "R100_current_mA": -8.5
+    },
+    {
+      "ms": 312002,
+      "mode": 2,
+      "reason": "drive",
+      "target_pct": [
+        25,
+        25
+      ],
+      "output_pct": [
+        25,
+        25
+      ],
+      "ticks": [
+        -3839,
+        -3905
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11892,
+      "shunt_uV": -1000,
+      "current_mA": null,
+      "host_s": 8.0291075,
+      "phase": "both",
+      "R100_current_mA": -10.0
+    },
+    {
+      "ms": 312202,
+      "mode": 2,
+      "reason": "drive",
+      "target_pct": [
+        25,
+        25
+      ],
+      "output_pct": [
+        25,
+        25
+      ],
+      "ticks": [
+        -4164,
+        -4238
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11896,
+      "shunt_uV": -1070,
+      "current_mA": null,
+      "host_s": 8.229230458,
+      "phase": "both",
+      "R100_current_mA": -10.7
+    },
+    {
+      "ms": 312402,
+      "mode": 2,
+      "reason": "drive",
+      "target_pct": [
+        25,
+        25
+      ],
+      "output_pct": [
+        25,
+        25
+      ],
+      "ticks": [
+        -4489,
+        -4570
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11896,
+      "shunt_uV": -1030,
+      "current_mA": null,
+      "host_s": 8.427350791,
+      "phase": "both",
+      "R100_current_mA": -10.3
+    },
+    {
+      "ms": 312602,
+      "mode": 2,
+      "reason": "drive",
+      "target_pct": [
+        25,
+        25
+      ],
+      "output_pct": [
+        25,
+        25
+      ],
+      "ticks": [
+        -4814,
+        -4902
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11888,
+      "shunt_uV": -960,
+      "current_mA": null,
+      "host_s": 8.627292833,
+      "phase": "both",
+      "R100_current_mA": -9.6
+    },
+    {
+      "ms": 312802,
+      "mode": 2,
+      "reason": "drive",
+      "target_pct": [
+        25,
+        25
+      ],
+      "output_pct": [
+        25,
+        25
+      ],
+      "ticks": [
+        -5139,
+        -5233
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11904,
+      "shunt_uV": -1090,
+      "current_mA": null,
+      "host_s": 8.829349541,
+      "phase": "both",
+      "R100_current_mA": -10.9
+    },
+    {
+      "ms": 313002,
+      "mode": 2,
+      "reason": "drive",
+      "target_pct": [
+        25,
+        25
+      ],
+      "output_pct": [
+        25,
+        25
+      ],
+      "ticks": [
+        -5465,
+        -5565
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11896,
+      "shunt_uV": -850,
+      "current_mA": null,
+      "host_s": 9.028946291,
+      "phase": "both",
+      "R100_current_mA": -8.5
+    },
+    {
+      "ms": 313202,
+      "mode": 2,
+      "reason": "drive",
+      "target_pct": [
+        25,
+        25
+      ],
+      "output_pct": [
+        25,
+        25
+      ],
+      "ticks": [
+        -5791,
+        -5897
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11892,
+      "shunt_uV": -1050,
+      "current_mA": null,
+      "host_s": 9.227375833,
+      "phase": "both",
+      "R100_current_mA": -10.5
+    },
+    {
+      "ms": 313402,
+      "mode": 0,
+      "reason": "stop",
+      "target_pct": [
+        0,
+        0
+      ],
+      "output_pct": [
+        0,
+        0
+      ],
+      "ticks": [
+        -6044,
+        -6157
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11940,
+      "shunt_uV": -370,
+      "current_mA": null,
+      "host_s": 9.428759541,
+      "phase": "stopping",
+      "R100_current_mA": -3.7
+    },
+    {
+      "ms": 313602,
+      "mode": 0,
+      "reason": "stop",
+      "target_pct": [
+        0,
+        0
+      ],
+      "output_pct": [
+        0,
+        0
+      ],
+      "ticks": [
+        -6049,
+        -6163
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11940,
+      "shunt_uV": -410,
+      "current_mA": null,
+      "host_s": 9.628830083,
+      "phase": "stopping",
+      "R100_current_mA": -4.1
+    },
+    {
+      "ms": 313802,
+      "mode": 0,
+      "reason": "stop",
+      "target_pct": [
+        0,
+        0
+      ],
+      "output_pct": [
+        0,
+        0
+      ],
+      "ticks": [
+        -6049,
+        -6163
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11944,
+      "shunt_uV": -460,
+      "current_mA": null,
+      "host_s": 9.8287375,
+      "phase": "stopping",
+      "R100_current_mA": -4.6
+    },
+    {
+      "ms": 314002,
+      "mode": 0,
+      "reason": "stop",
+      "target_pct": [
+        0,
+        0
+      ],
+      "output_pct": [
+        0,
+        0
+      ],
+      "ticks": [
+        -6049,
+        -6163
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11940,
+      "shunt_uV": -410,
+      "current_mA": null,
+      "host_s": 10.029761,
+      "phase": "stopping",
+      "R100_current_mA": -4.1
+    },
+    {
+      "ms": 314202,
+      "mode": 0,
+      "reason": "stop",
+      "target_pct": [
+        0,
+        0
+      ],
+      "output_pct": [
+        0,
+        0
+      ],
+      "ticks": [
+        -6049,
+        -6163
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11944,
+      "shunt_uV": -420,
+      "current_mA": null,
+      "host_s": 10.228793291,
+      "phase": "stopping",
+      "R100_current_mA": -4.2
+    },
+    {
+      "ms": 314402,
+      "mode": 0,
+      "reason": "stop",
+      "target_pct": [
+        0,
+        0
+      ],
+      "output_pct": [
+        0,
+        0
+      ],
+      "ticks": [
+        -6049,
+        -6163
+      ],
+      "invalid_edges": [
+        0,
+        0
+      ],
+      "ina_ok": true,
+      "bus_mV": 11944,
+      "shunt_uV": -390,
+      "current_mA": null,
+      "host_s": 10.428755375,
+      "phase": "stopping",
+      "R100_current_mA": -3.9
+    }
+  ]
+}
