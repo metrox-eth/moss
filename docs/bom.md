@@ -3,22 +3,30 @@
 Target: 500 to 700 USD in parts plus a Jetson, before tax and shipping. Prices are not listed yet; they will be once the first unit is complete and the list is stable.
 
 ## Printed parts
-| Part | Material | Printer used | Status |
-|---|---|---|---|
-| Track (×2) | TPU 95A | Bambu Lab P1S | printed |
-| Collection bin | PLA | Bambu Lab H2S | printed |
-| Top cover | PLA | H2S | printed |
-| Main chassis | PETG (black) | H2S | printed |
-| Inner side rails (×2) | PETG | P1S | printed |
-| Cross spacers (×4) | PETG | P1S | printed |
-| Outer side rails (×2) | PETG | P1S | printed |
-| Motor brackets (×2) | PETG | P1S | printed |
-| Drive and idler wheels (8 halves) | PETG | P1S | printing |
-| Track tensioners + bearing retainers (12 parts) | PETG | P1S | printing |
-| Splash-proof vent covers (×2) | PETG | — | printed |
+
+The authoritative list is the [printed-parts inventory](printed_parts.md) (111 pieces in the reconciled V0.3 print set, per-part material, source file, print job and status; machine-readable copy in `printed_parts.json`). Summary by assembly:
+
+| Assembly | Printed pieces | Notes |
+|---|---:|---|
+| Body (chassis, motor hatch, bin, cover) | 4 | chassis black PETG (H2S), bin and cover PLA |
+| Tracks | 2 | TPU 95A; the 0.8 mm-nozzle track is too stiff, reprint planned |
+| Side structure (inner and outer rails, cross spacers) | 8 | PETG |
+| Ventilation (splash-proof vent covers) | 2 | PETG |
+| Motor mounts | 2 | corrected revision to confirm on the bench |
+| Wheels and rollers | 20 | 2 drive wheels (4 halves), 2 idlers (4 halves), 6 road rollers (12 halves) |
+| Tensioners and bearing retainers | 12 | |
+| Drivetrain spacers | 32 | small spacers, distinct from the 4 cross spacers |
+| Gaskets | 3 | TPU |
+| Interior supports | 8 | including 4 Jetson base retainers |
+| SO-101-derived arm | 8 | clips integrated in the arm parts |
+| NC90 gripper (derived from the NormaCore parallel gripper) | 8 | rigid parts |
+| Gripper pads | 2 | TPU |
+| **Total** | **111** | plus 2 RealSense brackets, printing to confirm |
+
+Not printed: metal HEX12 hubs, bearings, shaft collars, motor–shaft couplings, servo horns, fasteners.
 
 ## Electronics
-- Jetson Orin Nano 8 GB (brain)
+- Jetson Orin Nano 8 GB (brain), in its original plastic base
 - Intel RealSense depth camera
 - Waveshare controller board
 - 2 × Cytron MD10C R3 motor drivers

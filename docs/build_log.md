@@ -31,3 +31,15 @@ Printing now: the drivetrain, eight wheel halves (drive and idler wheels, 0.4 mm
 Next: fit the drivetrain, mount the arm, test on the ground.
 
 Video: `media/video/MOSS_build_log_02_20260918.mp4`.
+
+## 2026-09-19 — V0.3 print set, assembly continues
+
+The V0.3 prototype's print set is reported essentially complete: chassis and motor hatch, collection bin and cover, track structure, wheels and rollers, tensioners and spacers, interior supports, the SO-101-derived arm, the NC90 parallel gripper, gaskets and gripper pads. The [printed-parts inventory](printed_parts.md) reconciles the delivered print plans and records the remaining checks.
+
+Two tracks have been printed in TPU 95A. The first has good flexibility and grip in manual floor tests. The second, printed with a 0.8 mm nozzle, is too stiff and will be reprinted. The successful 0.4 mm profile is the reference to preserve; the replacement is not yet reported complete.
+
+The printed cover stays on this prototype. Closing the front around the offset arm plate is deferred to the next hardware revision. The complete-cover study is parked and is not part of this build.
+
+Before calling the set fully reconciled, identify the corrected pair of motor brackets and locate the two RealSense mounting brackets: the latter exist in the CAD export but were not found in the final numbered print plates. This is a print and assembly update; it does not report a completed drive test or autonomous pickup.
+
+Next: replace the stiff track, assemble and check the drivetrain, fit the arm and electronics, and record the first powered tests when they happen.

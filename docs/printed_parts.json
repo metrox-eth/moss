@@ -1,0 +1,1100 @@
+{
+  "as_of": "2026-09-19",
+  "repository": "https://github.com/metrox-eth/moss",
+  "reviewed_commit": "d22c513c2d5f866f8da212f4962d24a594859de1",
+  "basis": "Builder reports that printing appears complete except one track replacement. Quantities reconstructed from delivered final print plans, not independently counted on the bench.",
+  "expected_printed_units_in_reconciled_plan": 111,
+  "additional_camera_brackets_to_reconcile": 2,
+  "parts": [
+    {
+      "group": "Body",
+      "part": "Main chassis / hull",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "Carter_PETG_continu_-_revision_mecanique_R8.stl",
+      "print_job": "Standalone H2S chassis",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Body",
+      "part": "Motor access hatch",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "Trappe_inferieure_acces_moteurs_R8.stl",
+      "print_job": "Standalone hatch",
+      "status": "reported_printed",
+      "note": "R8 export reference; the precise revision of the physical hatch is not recorded."
+    },
+    {
+      "group": "Body",
+      "part": "Collection bin",
+      "quantity": 1,
+      "material": "Blue PLA",
+      "source_file": "MOSS_bac_corrige.stl",
+      "print_job": "Standalone H2S bin",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Body",
+      "part": "Existing top cover R5",
+      "quantity": 1,
+      "material": "Blue PLA",
+      "source_file": "MOSS_capot_monobloc_H2S_R5.stl",
+      "print_job": "Standalone H2S cover",
+      "status": "reported_printed",
+      "note": "Keep the printed prototype cover. The unfinished front interface remains as-is; full-cover redesign is parked."
+    },
+    {
+      "group": "Tracks",
+      "part": "Continuous track R2",
+      "quantity": 2,
+      "material": "TPU 95A",
+      "source_file": "MOSS_chenille_TPU95A_P1S_R2.stl",
+      "print_job": "Standalone P1S tracks",
+      "status": "one_accepted_one_reprint_planned",
+      "note": "Two tracks have been printed. The first was reported flexible with good grip; the track printed with a 0.8 mm nozzle is too stiff and will be reprinted. Replacement has not been reported complete."
+    },
+    {
+      "group": "Side structure",
+      "part": "R8 G Entretoise traverse -40",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_G_Entretoise_traverse_-40_R8.stl",
+      "print_job": "01 — P1S 0.8",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Side structure",
+      "part": "R8 G Entretoise traverse 40",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_G_Entretoise_traverse_40_R8.stl",
+      "print_job": "01 — P1S 0.8",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Side structure",
+      "part": "R8 G Flanc interieur",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_G_Flanc_interieur_R8.stl",
+      "print_job": "01 — P1S 0.8",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Side structure",
+      "part": "R8 D Entretoise traverse -40",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_D_Entretoise_traverse_-40_R8.stl",
+      "print_job": "01 — P1S 0.8",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Side structure",
+      "part": "R8 D Entretoise traverse 40",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_D_Entretoise_traverse_40_R8.stl",
+      "print_job": "01 — P1S 0.8",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Side structure",
+      "part": "R8 D Flanc interieur",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_D_Flanc_interieur_R8.stl",
+      "print_job": "01 — P1S 0.8",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Side structure",
+      "part": "R8 G Flanc exterieur",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_G_Flanc_exterieur_R8.stl",
+      "print_job": "02 — P1S 0.8",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Side structure",
+      "part": "R8 D Flanc exterieur",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_D_Flanc_exterieur_R8.stl",
+      "print_job": "03 — P1S 0.8",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Ventilation",
+      "part": "Entree air sous carter - chicane demontable",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "Entree_air_sous_carter_-_chicane_demontable_R8.stl",
+      "print_job": "03 — P1S 0.8",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Ventilation",
+      "part": "Extraction air sous carter - chicane demontable",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "Extraction_air_sous_carter_-_chicane_demontable_R8.stl",
+      "print_job": "03 — P1S 0.8",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Motor mounts",
+      "part": "Corrected motor bracket G V2-01",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "MOSS_support_moteur_G_V2_01.stl",
+      "print_job": "Standalone correction — P1S 0.4",
+      "status": "physical_revision_to_confirm",
+      "note": "Replaces the original plate-02 bracket; count once in the current build. Confirm the physical part is the corrected Ø31 mm M3 pattern, not the original bracket. Fit is not yet individually signed off."
+    },
+    {
+      "group": "Motor mounts",
+      "part": "Corrected motor bracket D V2-01",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "MOSS_support_moteur_D_V2_01.stl",
+      "print_job": "Standalone correction — P1S 0.4",
+      "status": "physical_revision_to_confirm",
+      "note": "Replaces the original plate-02 bracket; count once in the current build. Confirm the physical part is the corrected Ø31 mm M3 pattern, not the original bracket. Fit is not yet individually signed off."
+    },
+    {
+      "group": "Wheels and rollers",
+      "part": "R8_D_Roue_tendeuse_22d_demi-exterieure_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_D_Roue_tendeuse_22d_demi-exterieure_R8.stl",
+      "print_job": "04A — P1S 0.4; replaces 04 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Wheels and rollers",
+      "part": "R8_D_Roue_tendeuse_22d_demi-interieure_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_D_Roue_tendeuse_22d_demi-interieure_R8.stl",
+      "print_job": "04A — P1S 0.4; replaces 04 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Wheels and rollers",
+      "part": "R8_G_Roue_tendeuse_22d_demi-exterieure_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_G_Roue_tendeuse_22d_demi-exterieure_R8.stl",
+      "print_job": "04A — P1S 0.4; replaces 04 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Wheels and rollers",
+      "part": "R8_G_Roue_tendeuse_22d_demi-interieure_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_G_Roue_tendeuse_22d_demi-interieure_R8.stl",
+      "print_job": "04A — P1S 0.4; replaces 04 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Wheels and rollers",
+      "part": "R8H_D_Roue_motrice_HEX12_demi_exterieure",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8H_D_Roue_motrice_HEX12_demi_exterieure.stl",
+      "print_job": "04A — P1S 0.4; replaces 04 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Wheels and rollers",
+      "part": "R8H_D_Roue_motrice_HEX12_demi_interieure",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8H_D_Roue_motrice_HEX12_demi_interieure.stl",
+      "print_job": "04A — P1S 0.4; replaces 04 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Wheels and rollers",
+      "part": "R8H_G_Roue_motrice_HEX12_demi_exterieure",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8H_G_Roue_motrice_HEX12_demi_exterieure.stl",
+      "print_job": "04A — P1S 0.4; replaces 04 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Wheels and rollers",
+      "part": "R8H_G_Roue_motrice_HEX12_demi_interieure",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8H_G_Roue_motrice_HEX12_demi_interieure.stl",
+      "print_job": "04A — P1S 0.4; replaces 04 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Wheels and rollers",
+      "part": "R8_D_Galet625_-70_demi-exterieure_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_D_Galet625_-70_demi-exterieure_R8.stl",
+      "print_job": "04B — P1S 0.4; replaces 04 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Wheels and rollers",
+      "part": "R8_D_Galet625_-70_demi-interieure_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_D_Galet625_-70_demi-interieure_R8.stl",
+      "print_job": "04B — P1S 0.4; replaces 04 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Wheels and rollers",
+      "part": "R8_D_Galet625_0_demi-exterieure_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_D_Galet625_0_demi-exterieure_R8.stl",
+      "print_job": "04B — P1S 0.4; replaces 04 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Wheels and rollers",
+      "part": "R8_D_Galet625_0_demi-interieure_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_D_Galet625_0_demi-interieure_R8.stl",
+      "print_job": "04B — P1S 0.4; replaces 04 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Wheels and rollers",
+      "part": "R8_D_Galet625_70_demi-exterieure_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_D_Galet625_70_demi-exterieure_R8.stl",
+      "print_job": "04B — P1S 0.4; replaces 04 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Wheels and rollers",
+      "part": "R8_D_Galet625_70_demi-interieure_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_D_Galet625_70_demi-interieure_R8.stl",
+      "print_job": "04B — P1S 0.4; replaces 04 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Wheels and rollers",
+      "part": "R8_G_Galet625_-70_demi-exterieure_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_G_Galet625_-70_demi-exterieure_R8.stl",
+      "print_job": "04B — P1S 0.4; replaces 04 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Wheels and rollers",
+      "part": "R8_G_Galet625_-70_demi-interieure_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_G_Galet625_-70_demi-interieure_R8.stl",
+      "print_job": "04B — P1S 0.4; replaces 04 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Wheels and rollers",
+      "part": "R8_G_Galet625_0_demi-exterieure_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_G_Galet625_0_demi-exterieure_R8.stl",
+      "print_job": "04B — P1S 0.4; replaces 04 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Wheels and rollers",
+      "part": "R8_G_Galet625_0_demi-interieure_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_G_Galet625_0_demi-interieure_R8.stl",
+      "print_job": "04B — P1S 0.4; replaces 04 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Wheels and rollers",
+      "part": "R8_G_Galet625_70_demi-exterieure_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_G_Galet625_70_demi-exterieure_R8.stl",
+      "print_job": "04B — P1S 0.4; replaces 04 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Wheels and rollers",
+      "part": "R8_G_Galet625_70_demi-interieure_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_G_Galet625_70_demi-interieure_R8.stl",
+      "print_job": "04B — P1S 0.4; replaces 04 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Tensioners and bearing retainers",
+      "part": "R8_D_Couvercle_tendeur_exterieur_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_D_Couvercle_tendeur_exterieur_R8.stl",
+      "print_job": "05 — H2S 0.4",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Tensioners and bearing retainers",
+      "part": "R8_D_Couvercle_tendeur_interieur_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_D_Couvercle_tendeur_interieur_R8.stl",
+      "print_job": "05 — H2S 0.4",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Tensioners and bearing retainers",
+      "part": "R8_G_Couvercle_tendeur_exterieur_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_G_Couvercle_tendeur_exterieur_R8.stl",
+      "print_job": "05 — H2S 0.4",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Tensioners and bearing retainers",
+      "part": "R8_G_Couvercle_tendeur_interieur_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_G_Couvercle_tendeur_interieur_R8.stl",
+      "print_job": "05 — H2S 0.4",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Tensioners and bearing retainers",
+      "part": "R8_D_Coulisseau_exterieur_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_D_Coulisseau_exterieur_R8.stl",
+      "print_job": "05 — H2S 0.4",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Tensioners and bearing retainers",
+      "part": "R8_D_Coulisseau_interieur_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_D_Coulisseau_interieur_R8.stl",
+      "print_job": "05 — H2S 0.4",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Tensioners and bearing retainers",
+      "part": "R8_G_Coulisseau_exterieur_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_G_Coulisseau_exterieur_R8.stl",
+      "print_job": "05 — H2S 0.4",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Tensioners and bearing retainers",
+      "part": "R8_G_Coulisseau_interieur_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_G_Coulisseau_interieur_R8.stl",
+      "print_job": "05 — H2S 0.4",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Tensioners and bearing retainers",
+      "part": "R8_D_Couvercle_palier_moteur_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_D_Couvercle_palier_moteur_R8.stl",
+      "print_job": "05 — H2S 0.4",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Tensioners and bearing retainers",
+      "part": "R8_G_Couvercle_palier_moteur_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_G_Couvercle_palier_moteur_R8.stl",
+      "print_job": "05 — H2S 0.4",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Tensioners and bearing retainers",
+      "part": "Retenue_interieure_roulement_-1_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "Retenue_interieure_roulement_-1_R8.stl",
+      "print_job": "05 — H2S 0.4",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Tensioners and bearing retainers",
+      "part": "Retenue_interieure_roulement_1_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "Retenue_interieure_roulement_1_R8.stl",
+      "print_job": "05 — H2S 0.4",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Drivetrain spacers",
+      "part": "R8_D_Entretoise_galet_-70_centrale_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_D_Entretoise_galet_-70_centrale_R8.stl",
+      "print_job": "06 — P1S 0.4; replaces 06 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Drivetrain spacers",
+      "part": "R8_D_Entretoise_galet_-70_externe_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_D_Entretoise_galet_-70_externe_R8.stl",
+      "print_job": "06 — P1S 0.4; replaces 06 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Drivetrain spacers",
+      "part": "R8_D_Entretoise_galet_-70_interne_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_D_Entretoise_galet_-70_interne_R8.stl",
+      "print_job": "06 — P1S 0.4; replaces 06 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Drivetrain spacers",
+      "part": "R8_D_Entretoise_galet_0_centrale_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_D_Entretoise_galet_0_centrale_R8.stl",
+      "print_job": "06 — P1S 0.4; replaces 06 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Drivetrain spacers",
+      "part": "R8_D_Entretoise_galet_0_externe_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_D_Entretoise_galet_0_externe_R8.stl",
+      "print_job": "06 — P1S 0.4; replaces 06 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Drivetrain spacers",
+      "part": "R8_D_Entretoise_galet_0_interne_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_D_Entretoise_galet_0_interne_R8.stl",
+      "print_job": "06 — P1S 0.4; replaces 06 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Drivetrain spacers",
+      "part": "R8_D_Entretoise_galet_70_centrale_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_D_Entretoise_galet_70_centrale_R8.stl",
+      "print_job": "06 — P1S 0.4; replaces 06 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Drivetrain spacers",
+      "part": "R8_D_Entretoise_galet_70_externe_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_D_Entretoise_galet_70_externe_R8.stl",
+      "print_job": "06 — P1S 0.4; replaces 06 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Drivetrain spacers",
+      "part": "R8_D_Entretoise_galet_70_interne_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_D_Entretoise_galet_70_interne_R8.stl",
+      "print_job": "06 — P1S 0.4; replaces 06 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Drivetrain spacers",
+      "part": "R8_D_Entretoise_tendeur_centrale_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_D_Entretoise_tendeur_centrale_R8.stl",
+      "print_job": "06 — P1S 0.4; replaces 06 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Drivetrain spacers",
+      "part": "R8_D_Entretoise_tendeur_externe_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_D_Entretoise_tendeur_externe_R8.stl",
+      "print_job": "06 — P1S 0.4; replaces 06 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Drivetrain spacers",
+      "part": "R8_D_Entretoise_tendeur_interne_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_D_Entretoise_tendeur_interne_R8.stl",
+      "print_job": "06 — P1S 0.4; replaces 06 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Drivetrain spacers",
+      "part": "R8_D_Entretoise_tendeur_retenue_externe_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_D_Entretoise_tendeur_retenue_externe_R8.stl",
+      "print_job": "06 — P1S 0.4; replaces 06 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Drivetrain spacers",
+      "part": "R8_D_Entretoise_tendeur_retenue_interne_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_D_Entretoise_tendeur_retenue_interne_R8.stl",
+      "print_job": "06 — P1S 0.4; replaces 06 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Drivetrain spacers",
+      "part": "R8_G_Entretoise_galet_-70_centrale_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_G_Entretoise_galet_-70_centrale_R8.stl",
+      "print_job": "06 — P1S 0.4; replaces 06 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Drivetrain spacers",
+      "part": "R8_G_Entretoise_galet_-70_externe_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_G_Entretoise_galet_-70_externe_R8.stl",
+      "print_job": "06 — P1S 0.4; replaces 06 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Drivetrain spacers",
+      "part": "R8_G_Entretoise_galet_-70_interne_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_G_Entretoise_galet_-70_interne_R8.stl",
+      "print_job": "06 — P1S 0.4; replaces 06 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Drivetrain spacers",
+      "part": "R8_G_Entretoise_galet_0_centrale_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_G_Entretoise_galet_0_centrale_R8.stl",
+      "print_job": "06 — P1S 0.4; replaces 06 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Drivetrain spacers",
+      "part": "R8_G_Entretoise_galet_0_externe_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_G_Entretoise_galet_0_externe_R8.stl",
+      "print_job": "06 — P1S 0.4; replaces 06 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Drivetrain spacers",
+      "part": "R8_G_Entretoise_galet_0_interne_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_G_Entretoise_galet_0_interne_R8.stl",
+      "print_job": "06 — P1S 0.4; replaces 06 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Drivetrain spacers",
+      "part": "R8_G_Entretoise_galet_70_centrale_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_G_Entretoise_galet_70_centrale_R8.stl",
+      "print_job": "06 — P1S 0.4; replaces 06 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Drivetrain spacers",
+      "part": "R8_G_Entretoise_galet_70_externe_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_G_Entretoise_galet_70_externe_R8.stl",
+      "print_job": "06 — P1S 0.4; replaces 06 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Drivetrain spacers",
+      "part": "R8_G_Entretoise_galet_70_interne_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_G_Entretoise_galet_70_interne_R8.stl",
+      "print_job": "06 — P1S 0.4; replaces 06 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Drivetrain spacers",
+      "part": "R8_G_Entretoise_tendeur_centrale_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_G_Entretoise_tendeur_centrale_R8.stl",
+      "print_job": "06 — P1S 0.4; replaces 06 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Drivetrain spacers",
+      "part": "R8_G_Entretoise_tendeur_externe_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_G_Entretoise_tendeur_externe_R8.stl",
+      "print_job": "06 — P1S 0.4; replaces 06 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Drivetrain spacers",
+      "part": "R8_G_Entretoise_tendeur_interne_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_G_Entretoise_tendeur_interne_R8.stl",
+      "print_job": "06 — P1S 0.4; replaces 06 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Drivetrain spacers",
+      "part": "R8_G_Entretoise_tendeur_retenue_externe_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_G_Entretoise_tendeur_retenue_externe_R8.stl",
+      "print_job": "06 — P1S 0.4; replaces 06 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Drivetrain spacers",
+      "part": "R8_G_Entretoise_tendeur_retenue_interne_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_G_Entretoise_tendeur_retenue_interne_R8.stl",
+      "print_job": "06 — P1S 0.4; replaces 06 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Drivetrain spacers",
+      "part": "R8_D_Entretoise_motrice_interne_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_D_Entretoise_motrice_interne_R8.stl",
+      "print_job": "06 — P1S 0.4; replaces 06 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Drivetrain spacers",
+      "part": "R8_G_Entretoise_motrice_interne_R8",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8_G_Entretoise_motrice_interne_R8.stl",
+      "print_job": "06 — P1S 0.4; replaces 06 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Drivetrain spacers",
+      "part": "R8H_D_Entretoise_motrice_externe_HEX12_L15_6",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8H_D_Entretoise_motrice_externe_HEX12_L15_6.stl",
+      "print_job": "06 — P1S 0.4; replaces 06 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Drivetrain spacers",
+      "part": "R8H_G_Entretoise_motrice_externe_HEX12_L15_6",
+      "quantity": 1,
+      "material": "Black PETG",
+      "source_file": "R8H_G_Entretoise_motrice_externe_HEX12_L15_6.stl",
+      "print_job": "06 — P1S 0.4; replaces 06 H2S",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Gaskets",
+      "part": "Joint_trappe_moteurs_R8",
+      "quantity": 1,
+      "material": "TPU 95A",
+      "source_file": "Joint_trappe_moteurs_R8.stl",
+      "print_job": "07 joints — H2S 0.4",
+      "status": "reported_printed",
+      "note": "R8 gasket source; fit to assembled interfaces remains to be checked."
+    },
+    {
+      "group": "Gaskets",
+      "part": "Joint_sous_platine_-_appui_continu_R8",
+      "quantity": 1,
+      "material": "TPU 95A",
+      "source_file": "Joint_sous_platine_-_appui_continu_R8.stl",
+      "print_job": "07 joints — H2S 0.4",
+      "status": "reported_printed",
+      "note": "R8 gasket source; fit to assembled interfaces remains to be checked."
+    },
+    {
+      "group": "Gaskets",
+      "part": "R8_CAMERA_Joint_facade_D455_R8",
+      "quantity": 1,
+      "material": "TPU 95A",
+      "source_file": "R8_CAMERA_Joint_facade_D455_R8.stl",
+      "print_job": "07 joints — H2S 0.4",
+      "status": "reported_printed",
+      "note": "R8 gasket source; fit to assembled interfaces remains to be checked."
+    },
+    {
+      "group": "Interior supports",
+      "part": "Berceau_electronique_R11",
+      "quantity": 1,
+      "material": "Black PLA",
+      "source_file": "Berceau_electronique_R11.stl",
+      "print_job": "07A_berceau_PLA_noir",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Interior supports",
+      "part": "Support_porte_fusible_R9",
+      "quantity": 1,
+      "material": "Black PLA",
+      "source_file": "Support_porte_fusible_R9.stl",
+      "print_job": "07A_berceau_PLA_noir",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Interior supports",
+      "part": "Platine_bras_R11",
+      "quantity": 1,
+      "material": "Black PLA",
+      "source_file": "Platine_bras_R11.stl",
+      "print_job": "07B_platine_PLA_noir",
+      "status": "reported_printed",
+      "note": "Replacement arm plate, not an additional plate stacked on top of R8/R9."
+    },
+    {
+      "group": "Interior supports",
+      "part": "Retenue_socle_Jetson_R11",
+      "quantity": 4,
+      "material": "Black PLA",
+      "source_file": "Retenue_socle_Jetson_R11.stl",
+      "print_job": "07B_platine_PLA_noir",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Interior supports",
+      "part": "Plateau_Jetson_R11",
+      "quantity": 1,
+      "material": "Black PLA",
+      "source_file": "Plateau_Jetson_R11.stl",
+      "print_job": "07C_Jetson_PLA_noir",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "SO-101 arm",
+      "part": "SO101_Bras_superieur_clip",
+      "quantity": 1,
+      "material": "PLA — salmon in print plan",
+      "source_file": "SO101_Bras_superieur_clip.stl",
+      "print_job": "08_bras_PLA_saumon_01",
+      "status": "reported_printed",
+      "note": "Four cable clips are integrated into arm parts; no additional printed clip count."
+    },
+    {
+      "group": "SO-101 arm",
+      "part": "SO101_Avant_bras_clip",
+      "quantity": 1,
+      "material": "PLA — salmon in print plan",
+      "source_file": "SO101_Avant_bras_clip.stl",
+      "print_job": "08_bras_PLA_saumon_01",
+      "status": "reported_printed",
+      "note": "Four cable clips are integrated into arm parts; no additional printed clip count."
+    },
+    {
+      "group": "SO-101 arm",
+      "part": "SO101_Base",
+      "quantity": 1,
+      "material": "PLA — salmon in print plan",
+      "source_file": "SO101_Base.stl",
+      "print_job": "08_bras_PLA_saumon_01",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "SO-101 arm",
+      "part": "SO101_Rotation_epaule",
+      "quantity": 1,
+      "material": "PLA — salmon in print plan",
+      "source_file": "SO101_Rotation_epaule.stl",
+      "print_job": "08_bras_PLA_saumon_01",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "SO-101 arm",
+      "part": "SO101_Support_epaule_clip",
+      "quantity": 1,
+      "material": "PLA — salmon in print plan",
+      "source_file": "SO101_Support_epaule_clip.stl",
+      "print_job": "08_bras_PLA_saumon_01",
+      "status": "reported_printed",
+      "note": "Four cable clips are integrated into arm parts; no additional printed clip count."
+    },
+    {
+      "group": "SO-101 arm",
+      "part": "SO101_Base_motor_holder",
+      "quantity": 1,
+      "material": "PLA — salmon in print plan",
+      "source_file": "SO101_Base_motor_holder.stl",
+      "print_job": "08_bras_PLA_saumon_02",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "SO-101 arm",
+      "part": "SO101_Poignet_clip",
+      "quantity": 1,
+      "material": "PLA — salmon in print plan",
+      "source_file": "SO101_Poignet_clip.stl",
+      "print_job": "08_bras_PLA_saumon_02",
+      "status": "reported_printed",
+      "note": "Four cable clips are integrated into arm parts; no additional printed clip count."
+    },
+    {
+      "group": "SO-101 arm",
+      "part": "SO101_Support_poignet",
+      "quantity": 1,
+      "material": "PLA — salmon in print plan",
+      "source_file": "SO101_Support_poignet.stl",
+      "print_job": "08_bras_PLA_saumon_02",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "NormaCore gripper",
+      "part": "Corps_NC90",
+      "quantity": 1,
+      "material": "PLA — turquoise in print plan",
+      "source_file": "Corps_NC90.stl",
+      "print_job": "09_pince_PLA_turquoise",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "NormaCore gripper",
+      "part": "Machoire_gauche_NC90",
+      "quantity": 1,
+      "material": "PLA — turquoise in print plan",
+      "source_file": "Machoire_gauche_NC90.stl",
+      "print_job": "09_pince_PLA_turquoise",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "NormaCore gripper",
+      "part": "Machoire_droite_NC90",
+      "quantity": 1,
+      "material": "PLA — turquoise in print plan",
+      "source_file": "Machoire_droite_NC90.stl",
+      "print_job": "09_pince_PLA_turquoise",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "NormaCore gripper",
+      "part": "Support_camera_NC90",
+      "quantity": 1,
+      "material": "PLA — turquoise in print plan",
+      "source_file": "Support_camera_NC90.stl",
+      "print_job": "09_pince_PLA_turquoise",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "NormaCore gripper",
+      "part": "Flasque_1_NC90",
+      "quantity": 1,
+      "material": "PLA — turquoise in print plan",
+      "source_file": "Flasque_1_NC90.stl",
+      "print_job": "09_pince_PLA_turquoise",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "NormaCore gripper",
+      "part": "Flasque_2_NC90",
+      "quantity": 1,
+      "material": "PLA — turquoise in print plan",
+      "source_file": "Flasque_2_NC90.stl",
+      "print_job": "09_pince_PLA_turquoise",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "NormaCore gripper",
+      "part": "Pignon_NC90",
+      "quantity": 1,
+      "material": "PLA — turquoise in print plan",
+      "source_file": "Pignon_NC90.stl",
+      "print_job": "09_pince_PLA_turquoise",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "NormaCore gripper",
+      "part": "Guide_cable_NC90",
+      "quantity": 1,
+      "material": "PLA — turquoise in print plan",
+      "source_file": "Guide_cable_NC90.stl",
+      "print_job": "09_pince_PLA_turquoise",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Gripper pads",
+      "part": "Patin_TPU_gauche",
+      "quantity": 1,
+      "material": "TPU 95A",
+      "source_file": "Patin_TPU_gauche.stl",
+      "print_job": "10_patins_TPU95A",
+      "status": "reported_printed",
+      "note": ""
+    },
+    {
+      "group": "Gripper pads",
+      "part": "Patin_TPU_droit",
+      "quantity": 1,
+      "material": "TPU 95A",
+      "source_file": "Patin_TPU_droit.stl",
+      "print_job": "10_patins_TPU95A",
+      "status": "reported_printed",
+      "note": ""
+    }
+  ],
+  "unconfirmed_additional_parts": [
+    {
+      "part": "D455 camera mounting bracket -1",
+      "quantity": 1,
+      "material": "PETG in original plan",
+      "source_file": "R8_CAMERA_Equerre_D455_-1_R8.stl",
+      "status": "printing_not_confirmed",
+      "note": "Present in R8 CAD/STLs, not located in the final numbered print plates. Check the bench before adding a print job."
+    },
+    {
+      "part": "D455 camera mounting bracket 1",
+      "quantity": 1,
+      "material": "PETG in original plan",
+      "source_file": "R8_CAMERA_Equerre_D455_1_R8.stl",
+      "status": "printing_not_confirmed",
+      "note": "Present in R8 CAD/STLs, not located in the final numbered print plates. Check the bench before adding a print job."
+    }
+  ],
+  "scope": "Prototype inventory only. No CAD/STL release approval or physical fit certification. Duplicate formats, superseded plates and failed/rejected designs excluded.",
+  "prototype_version": "V0.3"
+}
