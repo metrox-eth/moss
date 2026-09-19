@@ -10,6 +10,8 @@ MOSS is a small litter-picking rover you can print and build yourself: a tracked
 
 ## Where it stands
 
+![Every printed part and the hardware laid out on the bench, 19 September](media/images/build_print_set_panorama_20260919.jpg)
+
 All 113 printed parts are on the bench, with the shafts, bearings and screws to go with them. On 20 September the two drive motors ran for the first time, encoders counting, from the ESP32 that will drive them on the rover. That is the whole story so far: it runs on the bench, it does not roll yet. Next is putting the harness inside the chassis and making it drive.
 
 ![The power and control harness on the bench, 20 September](media/images/build_harness_bench_20260920.jpg)
