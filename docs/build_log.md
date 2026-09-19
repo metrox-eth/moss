@@ -42,4 +42,6 @@ The printed cover stays on this prototype. Closing the front around the offset a
 
 Before calling the set fully reconciled, identify the corrected pair of motor brackets and locate the two RealSense mounting brackets: the latter exist in the CAD export but were not found in the final numbered print plates. This is a print and assembly update; it does not report a completed drive test or autonomous pickup.
 
+Bench video of the print set laid out, 19 September (20 s pan): [MOSS_print_set_bench_20260919.mp4](../media/video/MOSS_print_set_bench_20260919.mp4). Stills: [print set](../media/images/build_print_set_bench_20260919.jpg), [electronics side](../media/images/build_electronics_bench_20260919.jpg) — bin and cover, rails, chassis, wheels, arm and gripper parts, the Jetson in its cartridge, motors and boards.
+
 Next: replace the stiff track, assemble and check the drivetrain, fit the arm and electronics, and record the first powered tests when they happen.
