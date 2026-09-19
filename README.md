@@ -6,6 +6,8 @@ MOSS is a small litter-picking rover you can print and build yourself: a tracked
 
 ![MOSS exploded view, turntable](media/images/moss_exploded_turntable.gif)
 
+![MOSS picking up a bottle and dropping it in the bin](media/images/moss_pickup_loop.gif)
+
 ## Where it stands
 
 All 113 printed parts are on the bench, with the shafts, bearings and screws to go with them. On 20 September the two drive motors ran for the first time, encoders counting, from the ESP32 that will drive them on the rover. That is the whole story so far: it runs on the bench, it does not roll yet. Next is putting the harness inside the chassis and making it drive.
@@ -17,6 +19,8 @@ Every step is written down when it is real, good or bad. The [build log](docs/bu
 ## Try the demo
 
 Jev, TypeSafe AI's decision model, choosing which piece of litter to go for, in 3D, on recorded runs: https://www.showrobotics.ai/moss-jev/
+
+[![MOSS × Jev demo: Jev picks bottle 01, MOSS goes to collect it](media/images/moss_jev_demo_20260920.jpg)](https://www.showrobotics.ai/moss-jev/)
 
 ## What is in here
 

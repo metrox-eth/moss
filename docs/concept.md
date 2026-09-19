@@ -14,4 +14,4 @@ MOSS is a litter-picking rover for sidewalks, roadsides and parks: small enough 
 
 The criterion we use for success: pick up more litter with less technology. Every added part has to earn its place against a person with a bag.
 
-Concept video (V2.3.1, 15 September 2026): `media/video/MOSS_V2_3_1_20260915.mp4` (concept simulation, scripted robot; not a demo of a working policy). The chassis in that video is an earlier design; the current one is the exploded view at the top of the README.
+Concept video (V2.3.1, 15 September 2026): `media/video/MOSS_V2_3_1_20260915.mp4` (concept simulation, scripted robot; not a demo of a working policy). The chassis in that video is an earlier revision; the current one, in the exploded view at the top of the README, has the same shape with track tensioners added.
