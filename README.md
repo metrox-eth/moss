@@ -22,7 +22,7 @@ Every step is written down when it is real, good or bad. The [build log](docs/bu
 
 ## Try the demo
 
-Jev, TypeSafe AI's decision model, choosing which piece of litter to go for, in 3D, on recorded runs: https://www.showrobotics.ai/moss-jev/
+Jev, TypeSafe AI's decision model, choosing every step of a pickup (approach, align, grasp, lift, carry, release) on physics recorded once in MuJoCo, replayed in 3D in your browser. Three missions with real Jev decisions, plus the earlier target-choice scenarios: https://www.showrobotics.ai/moss-jev/
 
 [![MOSS × Jev demo: Jev picks bottle 01, MOSS goes to collect it](media/images/moss_jev_demo_20260920.jpg)](https://www.showrobotics.ai/moss-jev/)
 
