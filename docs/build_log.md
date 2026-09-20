@@ -76,3 +76,9 @@ Fuse for the motor bench tests: 5 A automotive blade, 32 V DC, same format as th
 
 Next: integrate the harness into the chassis, set installed motor and encoder directions, measure ticks per revolution, then the Jetson interface and speed control. For the next hardware revision: mounts for the ESP32-S3, the servo adapter and the real distribution; the printed V0.3 stays the reference.
 
+## 2026-09-20 (evening) — electronics in the chassis, Jetson on battery
+
+First assembly of the electronics inside the printed chassis: motors, drivers, ESP32-S3, the pack in its bay, and the Jetson, which now boots from battery power. Video: [MOSS_first_assembly_20260920.mp4](../media/video/MOSS_first_assembly_20260920.mp4); still: [electronics in the chassis](../media/images/build_first_assembly_20260920.jpg).
+
+First reality checks: some components ended up elsewhere than planned in CAD. The differences go into [assembly_feedback.md](assembly_feedback.md) as they are measured, and into the next hardware revision. No drive test yet.
+
