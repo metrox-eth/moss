@@ -2,7 +2,7 @@
 
 Cleaner streets, one maker at a time.
 
-MOSS is a small litter-picking rover you can print and build yourself: a tracked base, a bin, and an arm derived from the SO-101 with a parallel gripper. About 500 to 700 USD in parts, plus a Jetson. It is being built in public, from a living room in Hua Hin, Thailand. Nothing here is finished; everything here is real.
+MOSS is a small litter-picking rover you can print and build yourself: a tracked base, a bin, and an arm derived from the SO-101 with a parallel gripper. About $1,700 in parts as built, with a Jetson and a RealSense; a Raspberry Pi version around $820 is the next experiment. It is being built in public, from a living room in Hua Hin, Thailand. Nothing here is finished; everything here is real.
 
 ![MOSS exploded view, turntable](media/images/moss_exploded_turntable.gif)
 
@@ -19,6 +19,16 @@ All 113 printed parts are on the bench, with the shafts, bearings and screws to 
 ![Electronics in the chassis, Jetson on battery, 20 September](media/images/build_first_assembly_20260920.jpg)
 
 Every step is written down when it is real, good or bad. The [build log](docs/build_log.md) has the dates and the numbers, the [assembly feedback](docs/assembly_feedback.md) has what did not fit, the [roadmap](docs/roadmap.md) has what comes next, without dates.
+
+## What does it cost?
+
+| Build | Parts estimate |
+|---|---:|
+| As built: Jetson Orin Nano Super, RealSense D455, 2 TB SSD | about $1,680 |
+| Next experiment: Raspberry Pi 5, Mighty Camera | $820 |
+| Next experiment: Raspberry Pi 5, ST 3D time-of-flight | $821 |
+
+Replacement-cost estimates for every part, not receipts. The Pi builds keep the same chassis, arm and drivetrain, and have not been tested yet. Every line, assumption and source is in the [itemized budget](docs/bom-costs.md); the [45-second comparison](media/video/MOSS_cost_comparison_20260921.mp4) tells it in pictures.
 
 ## Try the demo
 

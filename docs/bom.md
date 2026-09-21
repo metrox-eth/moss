@@ -1,6 +1,8 @@
 # Bill of materials (work in progress)
 
-Target: 500 to 700 USD in parts plus a Jetson, before tax and shipping. Prices are not listed yet; they will be once the first unit is complete and the list is stable.
+The initial $500–700 target excluding the Jetson has been superseded by an [itemized comparison dated 21 September 2026](bom-costs.md): approximately **$1,680 for the Jetson / RealSense prototype configuration**, including an estimated $250 for its 2 TB SSD, and **$820 / $821 for experimental Pi 5 configurations** using Mighty Camera / ST 3D ToF and microSD storage.
+
+These are planning budgets using replacement values for reused hardware, not a receipt total. Additional tax and shipping are not added. The Pi configurations are not yet navigation-tested; the hardware inventory below continues to describe the V0.3 prototype.
 
 ## Printed parts
 
@@ -27,8 +29,9 @@ The authoritative list is the [printed-parts inventory](printed_parts.md) (113 p
 Not printed: metal HEX12 hubs, bearings, shaft collars, motor–shaft couplings, servo horns, fasteners.
 
 ## Electronics (as selected on 20 September 2026, after the first harness bench tests)
-- Jetson Orin Nano 8 GB (brain), in its original plastic base; Wi-Fi on the Jetson side
-- Intel RealSense depth camera (the IMU comes from it)
+- Jetson Orin Nano Super 8 GB (brain), retaining its original plastic base; Wi-Fi on the Jetson side
+- 2 TB SSD
+- Intel RealSense D455 depth camera (RGB and IMU included)
 - Espressif ESP32-S3-DevKitC-1 V1.1: motor controller (PWM/DIR for both drivers, both quadrature encoders, I²C to the INA219); see [`firmware/`](../firmware/README.md) for the wiring map
 - 2 × Cytron MD10C R3 motor drivers
 - 2 × geared DC motors with quadrature encoders
@@ -49,7 +52,8 @@ Cabling: same wire for the main runs and the driver branches, runs of 25–30 cm
 - Fasteners M3 and M4
 
 ## Arm
-- SO-101 derived arm (6 DoF)
-- NormaCore parallel gripper
+- SO-101-derived arm: five ST3215 12 V joint servos
+- NormaCore-derived parallel gripper: one CF35-12 constant-force servo
+- This is the MOSS servo configuration, not the unmodified six-servo SO-101 kit BOM.
 
 ![Mechanical hardware](../media/images/build_05_hardware_ordered_20260917.jpg)

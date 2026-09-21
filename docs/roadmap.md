@@ -6,4 +6,4 @@
 - **Later**: first policy; first autonomous pick on video; kits so the first hundred builders do not have to source parts themselves.
 
 No dates. Each step is posted when it is real.
-- **MOSS Lite**: the same base with a Raspberry Pi in the compute cartridge instead of the Jetson, teleop and data collection only, for builders without a Jetson.
+- **Lower-cost Pi build (experimental)**: Raspberry Pi 5 8 GB with either Mighty Camera or STEVAL-VL53L9 3D ToF, plus a colour camera. Start with teleop and data collection, then evaluate navigation and detection with dimOS on the Pi. Next: mount and test both sensors with dimOS, teleop and data collection first, then navigation and detection. Nothing is validated until it runs on the rover.

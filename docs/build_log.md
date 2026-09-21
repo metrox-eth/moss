@@ -86,3 +86,11 @@ First assembly of the electronics inside the printed chassis: motors, drivers, E
 
 First reality checks: some components ended up elsewhere than planned in CAD. The differences go into [assembly_feedback.md](assembly_feedback.md) as they are measured, and into the next hardware revision. No drive test yet.
 
+
+## 2026-09-21 — cost comparison and alternative sensors ordered
+
+Mighty Camera ($92 paid) and a STEVAL-VL53L9 evaluation board ($80 paid) were ordered to explore lower-cost navigation. The proposed computer is a Raspberry Pi 5 8 GB, budgeted at $175, with microSD storage. These are two alternative configurations, each retaining the tracked base and the MOSS arm and gripper. Navigation and detection on the Pi still need to be tested with dimOS.
+
+The [new itemized budget](bom-costs.md) is $820 with Mighty or $821 with ST, compared with $1,676 for the Jetson / RealSense prototype configuration including a $250 allowance for its 2 TB SSD. These are replacement-cost planning figures, not actual expenditure. They supersede the initial $500–700 excluding Jetson target recorded on 15 September; that entry remains as history.
+
+[Comparison video, 45 seconds](../media/video/MOSS_cost_comparison_20260921.mp4).
