@@ -10,6 +10,7 @@ One line per finding: what was observed, which part and revision, what was done 
 | Front of the cover and offset arm plate | Cover, arm plate | Keep the unfinished interface as is | Complete-cover study, parked | — |
 | Camera brackets | Two RealSense D455 brackets | Fit at assembly | — | Not yet |
 | Plate gasket | R8 gasket listed with the R11 plate | Check the real fit at assembly | — | Not yet |
+| Track tension uneven | Single-sided tensioner per track | Live with some slack for the first drives | Second tensioner on each track | First drive, 22 September: rolls, slack visible |
 | No mounts for the selected electronics | ESP32-S3-DevKitC-1, Bus Servo Adapter, distribution block, fuse holder (20 September architecture) | Fix in place as possible for the first tests | Design the mounts in | Harness bench-tested outside the chassis |
 | INA219 cannot sit in the motor line | INA219 module terminal vs main cable | Voltage monitoring only; current path bypasses the shunt | Proper current sensing if wanted | I²C and voltage read confirmed; current readings invalid |
 

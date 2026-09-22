@@ -94,3 +94,10 @@ Mighty Camera ($92 paid) and a STEVAL-VL53L9 evaluation board ($80 paid) were or
 The [new itemized budget](bom-costs.md) is $820 with Mighty or $821 with ST, compared with $1,676 for the Jetson / RealSense prototype configuration including a $250 allowance for its 2 TB SSD. These are replacement-cost planning figures, not actual expenditure. They supersede the initial $500–700 excluding Jetson target recorded on 15 September; that entry remains as history.
 
 [Comparison video, 45 seconds](../media/video/MOSS_cost_comparison_20260921.mp4).
+
+## 2026-09-22 — first drive
+
+MOSS rolled for the first time today: tracks on, drivetrain assembled, the rover moving on the floor under its own motors. Posted on X at 23:01 with a 10-second clip.
+
+What the first metres taught: the single-sided track adjustment leaves the tension uneven, so there is still some slack. Next hardware step: a second tensioner on each track. This is logged in [assembly_feedback.md](assembly_feedback.md). No autonomous behaviour yet; this is a drive test.
+
