@@ -105,5 +105,7 @@ MOSS rolled for the first time today: tracks on, drivetrain assembled, the rover
 
 What the first metres taught: the single-sided track adjustment leaves the tension uneven, so there is still some slack. Next hardware step: a second tensioner on each track. This is logged in [assembly_feedback.md](assembly_feedback.md).
 
-![Track drivetrain in CAD, side view, 22 September](../media/images/cad_track_drivetrain_20260922.png) No autonomous behaviour yet; this is a drive test.
+![Track mechanism in CAD, side view: drive sprocket, rollers and two tensioners per track, 22 September](../media/images/cad_track_drivetrain_20260922.png)
+
+The CAD already has the second tensioner on each track; one of them still lacks its adjustment screw, to be added next. No autonomous behaviour yet; this is a drive test.
 
