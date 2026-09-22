@@ -16,7 +16,7 @@ MOSS is a small litter-picking rover you can print and build yourself: a tracked
 
 All 113 printed parts are on the bench, with the shafts, bearings and screws to go with them. On 20 September the two drive motors ran for the first time, encoders counting, from the ESP32 that will drive them on the rover. By the evening the electronics were inside the chassis and the Jetson was booting from the battery. Some parts ended up elsewhere than the CAD planned; that is what a first prototype is for. On 22 September it rolled for the first time. The tracks still have some slack, a second tensioner per track is next.
 
-![First drive, 22 September](media/images/build_first_drive_20260922.jpg)
+![MOSS with its bin on, 22 September](media/images/build_bin_on_20260922.jpg)
 
 Every step is written down when it is real, good or bad. The [build log](docs/build_log.md) has the dates and the numbers, the [assembly feedback](docs/assembly_feedback.md) has what did not fit, the [roadmap](docs/roadmap.md) has what comes next, without dates.
 
