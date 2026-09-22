@@ -97,7 +97,9 @@ The [new itemized budget](bom-costs.md) is $820 with Mighty or $821 with ST, com
 
 ## 2026-09-22 — first drive
 
-MOSS rolled for the first time today: tracks on, drivetrain assembled, the rover moving on the floor under its own motors. Posted on X at 23:01 with a 10-second clip.
+![First drive, 22 September](../media/images/build_first_drive_20260922.jpg)
+
+MOSS rolled for the first time today: tracks on, drivetrain assembled, the rover moving and turning on the floor under its own motors, still tethered for control. Video: [MOSS_first_drive_20260922.mp4](../media/video/MOSS_first_drive_20260922.mp4) (18 s).
 
 What the first metres taught: the single-sided track adjustment leaves the tension uneven, so there is still some slack. Next hardware step: a second tensioner on each track. This is logged in [assembly_feedback.md](assembly_feedback.md). No autonomous behaviour yet; this is a drive test.
 
