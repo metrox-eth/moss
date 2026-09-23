@@ -44,6 +44,12 @@ Not printed: metal HEX12 hubs, bearings, shaft collars, motor–shaft couplings,
 
 Cabling: same wire for the main runs and the driver branches, runs of 25–30 cm at most. Conductor bundle measured 1.2 mm in diameter; section estimated at 0.75–1 mm², not manufacturer-verified.
 
+## V0.4 selection (next revision, not built)
+
+The next revision selects a QT Py ESP32-S3 (5426), screw-terminal BFF (6495), optional enclosure (6505), INA219 STEMMA QT (904) and 300 mm cable (5384). One set is **$39.60** including the enclosure, before shipping and import charges. A Cytron MDD3A is selected to replace the two MD10Cs. The Waveshare Bus Servo Adapter remains.
+
+See [the V0.4 update](hardware_v04.md) for quantities, unit prices, CAD status and remaining fit checks. This does not overwrite the as-built V0.3 inventory above. The new Adafruit INA footprint still needs reconciliation with the current hull model.
+
 ## Mechanical hardware
 - Steel shafts 5 / 6 / 8 mm (cut to length)
 - Bearings 608 and 626 (625 also in stock)

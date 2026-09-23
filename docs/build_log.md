@@ -109,3 +109,13 @@ What the first metres taught: the single-sided track adjustment leaves the tensi
 
 The CAD already has the second tensioner on each track; one of them still lacks its adjustment screw, to be added next. No autonomous behaviour yet; this is a drive test.
 
+
+## 2026-09-24 — V0.4 hull and simpler wiring
+
+The physical prototype remains V0.3 and continues assembly and testing after its first drive. In parallel, V0.4 CAD now includes the revised hull and component arrangement: Jetson seat and USB-side cable space, compact motor driver and servo adapter, QT Py / terminal-block provision, a larger battery envelope and motor fasteners accessible from outside.
+
+Two Adafruit control sets have been ordered: QT Py ESP32-S3, Terminal Block BFF, snap-on enclosure, INA219 STEMMA QT and a 300 mm cable. They are not installed yet. The existing INA model in CAD is approximate; the newly ordered Adafruit board still needs a footprint and connector-fit check. Details and costs are in [the V0.4 update](hardware_v04.md).
+
+A [40-second hardware-tour animation](../media/video/MOSS_V04_Inside_and_Action_20260924.mp4) shows the exterior leaving frame, an orbit of the hull and labelled components, reassembly and a scripted pickup. This is CAD animation; it does not report physical autonomous pickup or a new Jev experiment.
+
+Remaining work includes the additional track tensioners, real connector fit, bin magnet mounts, wheel/roller screw recesses, new controller firmware mapping and physical V0.4 validation. The integrated lower platform beneath the arm is still fixed; making it detachable is deferred.

@@ -112,3 +112,9 @@ Accessed for the 21 September comparison; prices and availability vary by locati
 ## Media
 
 [45-second video](../media/video/MOSS_cost_comparison_20260921.mp4) · [Poster](../media/images/MOSS_cost_comparison_20260921.jpg) · [Media credits](../media/MOSS_cost_comparison_20260921_credits.md)
+
+## 24 September update — V0.4 control components
+
+The [ordered V0.4 control set](hardware_v04.md#control-electronics-ordered) is **$39.60 per rover**, including its optional snap-on enclosure, or **$34.65** without that enclosure. Two sets cost $79.20 plus $21.83 shipping; import charges are not included. The Cytron MDD3A is selected to replace the two MD10Cs; its purchase price is not supplied in this update.
+
+The three totals above remain the **dated 21 September comparison**. Do not add the whole new order on top of a one-robot BOM: it contains two sets and replaces existing controller/INA lines. Recalculate a separate V0.4 total once all replacement lines, including the driver, are priced and reconciled.

@@ -242,7 +242,7 @@ G/D and −1/+1 retain the CAD naming so parts can be matched to their source fi
 
 ## Naming and release status
 
-The current physical prototype is **V0.3**. R8, R8H, R10, R11 and V2-01 inside filenames are historical component identifiers; retain them for traceability and do not treat them as the current robot version. The next hardware revision is not assigned a new number here. A successful print and an assembled, validated part are separate milestones.
+The current physical prototype is **V0.3**. R8, R8H, R10, R11 and V2-01 inside filenames are historical component identifiers; retain them for traceability and do not treat them as the current robot version. The next hardware revision is V0.4; its in-progress changes are tracked separately in `hardware_v04.md`. This inventory remains the V0.3 reference. A successful print and an assembled, validated part are separate milestones.
 
 ## Source records
 

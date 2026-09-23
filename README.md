@@ -4,9 +4,9 @@ Cleaner streets, one maker at a time.
 
 MOSS is a small litter-picking rover you can print and build yourself: a tracked base, a bin, and an arm derived from the SO-101 with a parallel gripper. About $1,700 in parts as built, with a Jetson and a RealSense; a Raspberry Pi version around $820 is the next experiment. It is being built in public, from a living room in Hua Hin, Thailand. Nothing here is finished; everything here is real.
 
-![MOSS exploded view, turntable](media/images/moss_exploded_turntable.gif)
+![MOSS hardware tour: inside the hull, back together, a scripted pickup](media/images/moss_v04_hardware_tour.gif)
 
-![MOSS picking up a bottle and dropping it in the bin](media/images/moss_pickup_loop.gif)
+*40-second CAD animation of the V0.4 design: inside the hull, reassembly, and a scripted pickup. The physical prototype drives; autonomous pickup is still ahead. [Video version](media/video/MOSS_V04_Inside_and_Action_20260924.mp4).*
 
 ## Where it stands
 
@@ -17,6 +17,8 @@ MOSS is a small litter-picking rover you can print and build yourself: a tracked
 All 113 printed parts are on the bench, with the shafts, bearings and screws to go with them. On 20 September the two drive motors ran for the first time, encoders counting, from the ESP32 that will drive them on the rover. By the evening the electronics were inside the chassis and the Jetson was booting from the battery. Some parts ended up elsewhere than the CAD planned; that is what a first prototype is for. On 22 September it rolled for the first time. The tracks still have some slack, a second tensioner per track is next.
 
 ![MOSS with its bin on, 22 September](media/images/build_bin_on_20260922.jpg)
+
+In parallel, **V0.4** is being drawn from the assembly feedback: a revised hull, screw-terminal control electronics, one dual motor driver instead of two. Not built yet. See the [V0.4 hardware update](docs/hardware_v04.md).
 
 Every step is written down when it is real, good or bad. The [build log](docs/build_log.md) has the dates and the numbers, the [assembly feedback](docs/assembly_feedback.md) has what did not fit, the [roadmap](docs/roadmap.md) has what comes next, without dates.
 
@@ -46,7 +48,7 @@ Jev, TypeSafe AI's decision model, choosing every step of a pickup (approach, al
 
 ## Build one, or come and watch
 
-The design files are not out yet. They come once the first MOSS rolls and the parts have earned it. Until then, the door is the Discord: ask anything, tell us what we are doing wrong, it helps the next builder too. https://discord.com/invite/x2MeNmgveT
+The design files are not out yet. The first MOSS now rolls; we are incorporating its assembly feedback into V0.4 before releasing the parts and their matching BOM. Until then, the door is the Discord: ask anything, tell us what we are doing wrong, it helps the next builder too. https://discord.com/invite/x2MeNmgveT
 
 The build, day by day, is on X: [@metrox_eth](https://x.com/metrox_eth).
 
