@@ -114,8 +114,17 @@ The CAD already has the second tensioner on each track; one of them still lacks 
 
 The physical prototype remains V0.3 and continues assembly and testing after its first drive. In parallel, V0.4 CAD now includes the revised hull and component arrangement: Jetson seat and USB-side cable space, compact motor driver and servo adapter, QT Py / terminal-block provision, a larger battery envelope and motor fasteners accessible from outside.
 
-Two Adafruit control sets have been ordered: QT Py ESP32-S3, Terminal Block BFF, snap-on enclosure, INA219 STEMMA QT and a 300 mm cable. They are not installed yet. The existing INA model in CAD is approximate; the newly ordered Adafruit board still needs a footprint and connector-fit check. Details and costs are in [the V0.4 update](hardware_v04.md).
+The V0.4 control electronics (QT Py ESP32-S3, Terminal Block BFF, INA219 STEMMA QT) are not installed yet. The INA model in CAD is approximate; the real board still needs a footprint and connector-fit check. Details and costs are in [the V0.4 update](hardware_v04.md).
 
 A [40-second hardware-tour animation](../media/video/MOSS_V04_Inside_and_Action_20260924.mp4) shows the exterior leaving frame, an orbit of the hull and labelled components, reassembly and a scripted pickup. This is CAD animation; it does not report physical autonomous pickup or a new Jev experiment.
 
 Remaining work includes the additional track tensioners, real connector fit, bin magnet mounts, wheel/roller screw recesses, new controller firmware mapping and physical V0.4 validation. The integrated lower platform beneath the arm is still fixed; making it detachable is deferred.
+
+## 2026-09-24 (evening) — the simulator goes public, and MOSS runs in someone else's lab
+
+The CPU MuJoCo simulator behind the Jev demo is now published in the demo repository, folder [`live/`](https://github.com/metrox-eth/moss-jev/tree/main/live): the MOSS body as a portable MJCF with its 57 visual meshes, the complete scene with the can, the three recorded Jev missions, and a replay command that needs no API key and no GPU. An [integration contract](https://github.com/metrox-eth/moss-jev/blob/main/live/INTEGRATION.md) gives units, frames, the eight actuators and the limits. Checked on Linux before publishing: 23 unit tests, the three missions (can, missed grasp, far can) finishing with the can settled in the bin, zero API calls.
+
+Same day, a [V0.4 appearance overlay](https://github.com/metrox-eth/moss-jev/tree/main/live/model/visuals_v04) followed: the saved V0.4 hull, side assemblies and camera envelope, applied by a small script that keeps the host's masses, joints, cameras and contacts untouched. Two things to know if you import it. The CAD belts sit 266 mm apart while the legacy collision boxes are 244 mm apart; the overlay does not change the drive model, so a physically consistent V0.4 driving variant is still to do. And the visual meshes are decimated STL (5,000 to 6,000 triangles per part, no smoothed normals), which shows as facets in a renderer; a finer export is planned.
+
+Within the day, another lab imported the body into its own simulator and started training a can-scooping policy by reinforcement learning on it, 32 environments in parallel. The base in our model is a simplified slide, not tracked-ground dynamics; that limitation is theirs to work around too.
+

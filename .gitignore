@@ -6,3 +6,4 @@ __pycache__/
 recordings/
 *.f3d
 *.f3z
+.pytest_cache/

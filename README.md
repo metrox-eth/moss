@@ -4,6 +4,8 @@ Cleaner streets, one maker at a time.
 
 MOSS is a small litter-picking rover you can print and build yourself: a tracked base, a bin, and an arm derived from the SO-101 with a parallel gripper. About $1,700 in parts as built, with a Jetson and a RealSense; a Raspberry Pi version around $820 is the next experiment. It is being built in public, from a living room in Hua Hin, Thailand. Nothing here is finished; everything here is real.
 
+**New here?** The day-by-day story is in the [build log](docs/build_log.md); what did not fit is in the [assembly feedback](docs/assembly_feedback.md); what it costs is in the [itemized budget](docs/bom-costs.md).
+
 ![MOSS hardware tour: inside the hull, back together, a scripted pickup](media/images/moss_v04_hardware_tour.gif)
 
 *40-second CAD animation of the V0.4 design: inside the hull, reassembly, and a scripted pickup. The physical prototype drives; autonomous pickup is still ahead. [Video version](media/video/MOSS_V04_Inside_and_Action_20260924.mp4).*
@@ -37,6 +39,8 @@ Replacement-cost estimates for every part, not receipts. The Pi builds keep the 
 Jev, TypeSafe AI's decision model, choosing every step of a pickup (approach, align, grasp, lift, carry, release) on physics recorded once in MuJoCo, replayed in 3D in your browser. Three missions with real Jev decisions, plus the earlier target-choice scenarios: https://www.showrobotics.ai/moss-jev/
 
 [![MOSS × Jev demo: Jev picks bottle 01, MOSS goes to collect it](media/images/moss_jev_demo_20260920.jpg)](https://www.showrobotics.ai/moss-jev/)
+
+The simulator behind it is open too: the MOSS body as a MuJoCo model with its meshes, the three recorded missions, and a CPU replay that needs no API key, in the demo repository's [`live/` folder](https://github.com/metrox-eth/moss-jev/tree/main/live). Import the body into your own lab, or replay the missions on your laptop.
 
 ## What is in here
 
