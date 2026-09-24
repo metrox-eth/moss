@@ -9,7 +9,8 @@ dependencies = ["numpy"]
 
 [project.optional-dependencies]
 gamepad = ["pygame>=2.6"]
+pi = ["pyserial>=3.5", "pygame>=2.6"]
 test = ["pytest"]
 
 [tool.setuptools]
-packages = ["moss_dimos"]
+packages = ["moss_dimos", "moss_pi"]
