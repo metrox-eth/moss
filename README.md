@@ -47,6 +47,7 @@ The simulator behind it is open too: the MOSS body as a MuJoCo model with its me
 - `docs/` what MOSS is for, the build log, the bill of materials, the printed-parts list, the data rules, the roadmap.
 - `firmware/` the ESP32-S3 code that drives the motors, with its test.
 - `moss_dimos/` the Jetson side, on dimOS. Cold-tested only, for now.
+- `moss_pi/` the Raspberry Pi side: drives the same motor firmware over serial, keyboard or gamepad teleop, telemetry log. Cold-tested only, for now.
 - `hardware/` the design files, published part by part as they prove themselves on the real robot, and the raw bench traces.
 - `media/` the videos and photos.
 
