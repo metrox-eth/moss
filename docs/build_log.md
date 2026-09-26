@@ -133,7 +133,11 @@ Within the day, another lab imported the body into its own simulator and started
 
 ## 2026-09-26 — arm and gripper on the V0.3, V0.4 parts printing
 
-The arm is on the rover, gripper included. It is a standard SO-101 so far; the only change is a pair of clips for the USB camera cable. The idea stays: if you already have an SO-101, you can use yours in the build. Photos follow.
+The arm is on the rover, gripper included. It is a standard SO-101 so far; the only change is a pair of clips for the USB camera cable. The idea stays: if you already have an SO-101, you can use yours in the build.
+
+![V0.3 with the arm folded over the bin, gripper on, 26 September](../media/images/build_07_arm_gripper_folded_20260926.jpg)
+
+![V0.3 with the arm extended, gripper at floor level, 26 September](../media/images/build_08_arm_gripper_reach_20260926.jpg)
 
 Two things learned by looking at it on the floor. The track chevrons point the wrong way for traction on this rover, so the tracks will be flipped. And a reader noticed that the second joint from the base, the shoulder, looks weak for a load-bearing joint. That is now [issue #2](https://github.com/metrox-eth/moss/issues/2), meant as a first contribution: check the load in the CAD, then propose either a dual-servo shoulder like the RoArm-M3 or a stronger bracket on the existing servo.
 
