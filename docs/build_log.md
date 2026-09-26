@@ -130,3 +130,13 @@ Numbers worth writing down while they are fresh, because a model copied often en
 
 Within the day, another lab imported the body into its own simulator and started training a can-scooping policy by reinforcement learning on it, 32 environments in parallel. The base in our model is a simplified slide, not tracked-ground dynamics; that limitation is theirs to work around too.
 
+
+## 2026-09-26 — arm and gripper on the V0.3, V0.4 parts printing
+
+The arm is on the rover, gripper included. It is a standard SO-101 so far; the only change is a pair of clips for the USB camera cable. The idea stays: if you already have an SO-101, you can use yours in the build. Photos follow.
+
+Two things learned by looking at it on the floor. The track chevrons point the wrong way for traction on this rover, so the tracks will be flipped. And a reader noticed that the second joint from the base, the shoulder, looks weak for a load-bearing joint. That is now [issue #2](https://github.com/metrox-eth/moss/issues/2), meant as a first contribution: check the load in the CAD, then propose either a dual-servo shoulder like the RoArm-M3 or a stronger bracket on the existing servo.
+
+The V0.4 print set has started. Asked the same day what eats the budget: the onboard computer and the perception sensors, by far. The Raspberry Pi version exists to bring that line down; the numbers are in the [itemized budget](bom-costs.md).
+
+A team in the Netherlands building a larger, autonomous litter-picking robot got in touch. More when there is something concrete.
