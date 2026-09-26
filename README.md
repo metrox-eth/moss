@@ -2,7 +2,7 @@
 
 Cleaner streets, one maker at a time.
 
-MOSS is a small litter-picking rover you can print and build yourself: a tracked base, a bin, and an arm derived from the SO-101 with a parallel gripper. About $1,700 in parts as built, with a Jetson and a RealSense; a Raspberry Pi version around $820 is the next experiment. It is being built in public, from a living room in Thailand. Nothing here is finished; everything here is real.
+MOSS is a small litter-picking rover you can print and build yourself: a tracked base, a bin, and an arm derived from the SO-101 with a parallel gripper. About $1,700 in parts as built, with a Jetson and a RealSense; a Raspberry Pi version around $820 is the next experiment. It is being built in public. Nothing here is finished; everything here is real.
 
 **New here?** The day-by-day story is in the [build log](docs/build_log.md); what did not fit is in the [assembly feedback](docs/assembly_feedback.md); what it costs is in the [itemized budget](docs/bom-costs.md).
 
