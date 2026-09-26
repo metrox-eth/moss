@@ -141,6 +141,8 @@ The arm is on the rover, gripper included. It is a standard SO-101 so far; the o
 
 Two things learned by looking at it on the floor. The track chevrons point the wrong way for traction on this rover, so the tracks will be flipped. And a reader noticed that the second joint from the base, the shoulder, looks weak for a load-bearing joint. That is now [issue #2](https://github.com/metrox-eth/moss/issues/2), meant as a first contribution: check the load in the CAD, then propose either a dual-servo shoulder like the RoArm-M3 or a stronger bracket on the existing servo.
 
+Weighed on 27 September, arm and gripper together, off the rover: 768 g. The 24 September note estimated 682 g from the reference SO-101 model plus a gripper allowance, so the estimate was 86 g light. With the base as weighed (3.5 kg without the arm), the loaded rover is about 4.27 kg.
+
 The V0.4 print set has started. Asked the same day what eats the budget: the onboard computer and the perception sensors, by far. The Raspberry Pi version exists to bring that line down; the numbers are in the [itemized budget](bom-costs.md).
 
 A team in the Netherlands building a larger, autonomous litter-picking robot got in touch. More when there is something concrete.
