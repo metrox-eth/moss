@@ -63,3 +63,16 @@ See [the V0.4 update](hardware_v04.md) for quantities, unit prices, CAD status a
 - This is the MOSS servo configuration, not the unmodified six-servo SO-101 kit BOM.
 
 ![Mechanical hardware](../media/images/build_05_hardware_ordered_20260917.jpg)
+
+## Where to buy
+
+Asked in a builders' group on 28 September: where do the parts come from. It depends on the part and on the distributors in your country; this is what works from Thailand.
+
+- Original ESP32 microcontrollers made by Espressif: Mouser.
+- RealSense: DigiKey.
+- Tiny ESP32 boards for small form factors, ESP HATs with STEMMA QT plugs, QT cables, INA219 with QT: Adafruit.
+- Raspberry Pi, Hailo HAT (AI accelerator), motor drivers: Cytron.
+- Motors and sensors: a local supplier (Arduitronics in Thailand).
+- Servo bus adapters and drivers for robots: Waveshare.
+- Specialities such as the Mighty Cam SLAM camera or the ST VL53L9 time-of-flight board: from the manufacturer.
+
