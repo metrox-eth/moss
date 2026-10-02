@@ -6,6 +6,8 @@ MOSS is a small litter-picking rover you can print and build yourself: a tracked
 
 **New here?** The day-by-day story is in the [build log](docs/build_log.md); what did not fit is in the [assembly feedback](docs/assembly_feedback.md); what it costs is in the [itemized budget](docs/bom-costs.md).
 
+**Want one?** [Join the community waitlist](https://ak4khuvxkya.typeform.com/to/qaKmXNME) with [Tnkr](https://x.com/tnkrdotai) and we'll let you know when the open source CAD files and MOSS kits are ready.
+
 ![MOSS hardware tour: inside the hull, back together, a scripted pickup](media/images/moss_v04_hardware_tour.gif)
 
 *40-second CAD animation of the V0.4 design: inside the hull, reassembly, and a scripted pickup. The physical prototype drives; autonomous pickup is still ahead. [Video version](media/video/MOSS_V04_Inside_and_Action_20260924.mp4).*
