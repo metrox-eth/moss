@@ -1,6 +1,6 @@
 # Assembly
 
-Photos from the first prototype. The step-by-step with the final parts comes with the files. Read [docs/lessons.md](docs/lessons.md) first; it is short.
+Photos from the first prototype. The step-by-step with the final parts comes with the files.
 
 ## 1. Lay out the print set
 

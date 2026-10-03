@@ -56,7 +56,7 @@ The MOSS body runs in MuJoCo with three recorded pickup missions, in the [moss-j
 
 ## Come and build
 
-Ask anything, tell us what we are doing wrong, it helps the next builder: [Discord](https://discord.com/invite/x2MeNmgveT). The build, as it happens: [@metrox_eth](https://x.com/metrox_eth). The story so far, in a few moments: [STORY.md](STORY.md). What we learned the hard way: [docs/lessons.md](docs/lessons.md). How data from many rovers gets pooled: [docs/data.md](docs/data.md).
+Ask anything, tell us what we are doing wrong, it helps the next builder: [Discord](https://discord.com/invite/x2MeNmgveT). The build, as it happens: [@metrox_eth](https://x.com/metrox_eth). The story so far, in a few moments: [STORY.md](STORY.md). How data from many rovers gets pooled: [docs/data.md](docs/data.md).
 
 ## Safety
 
