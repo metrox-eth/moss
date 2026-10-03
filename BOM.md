@@ -14,18 +14,40 @@ List prices in USD, one rover. A kit will cost less.
 | 2D lidar | | 69 | 69 | 69 |
 | **Total** | **about $500** | **about $1,400** | **about $1,200** | **about $850** |
 
-## Computer and perception
+## Jetson + RealSense, about $1,400
+
+Base assembly, plus:
 
 | Item | Qty | USD |
 |---|---:|---:|
 | NVIDIA Jetson Orin Nano Super Developer Kit | 1 | 399 |
-| microSD card (Jetson) | 1 | 15 |
+| microSD card | 1 | 15 |
+| Intel RealSense D455 | 1 | 419 |
+| USB 3.1 C to A cable, 90° plug with locking screws, 0.3 m | 1 | 7 |
+| Wrist camera, innomaker 1080p USB module, 32 × 32 mm | 1 | 19 |
+| SLAMTEC RPLIDAR C1 | 1 | 69 |
+
+## Pi 5 + Hailo + Gemini, about $1,200
+
+Base assembly, plus:
+
+| Item | Qty | USD |
+|---|---:|---:|
 | Raspberry Pi 5 8 GB | 1 | 175 |
 | Pi Active Cooler, 27 W power supply, microSD | 1 | 32 |
 | Raspberry Pi AI HAT+ 2 (Hailo-10H, 40 TOPS) | 1 | 200 |
-| Intel RealSense D455 | 1 | 419 |
-| USB 3.1 C to A cable, 90° plug with locking screws, 0.3 m | 1 | 7 |
 | Orbbec Gemini 2 | 1 | 234 |
+| Wrist camera, innomaker 1080p USB module, 32 × 32 mm | 1 | 19 |
+| SLAMTEC RPLIDAR C1 | 1 | 69 |
+
+## Pi 5 + Mighty, about $850
+
+Base assembly, plus:
+
+| Item | Qty | USD |
+|---|---:|---:|
+| Raspberry Pi 5 8 GB | 1 | 175 |
+| Pi Active Cooler, 27 W power supply, microSD | 1 | 32 |
 | Mighty Camera | 1 | 92 |
 | Wrist camera, innomaker 1080p USB module, 32 × 32 mm | 1 | 19 |
 | SLAMTEC RPLIDAR C1 | 1 | 69 |
