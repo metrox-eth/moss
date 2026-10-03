@@ -1,6 +1,6 @@
 # Bill of materials
 
-List prices in USD, one rover. A kit will cost less.
+List prices in USD, one rover.
 
 ## Totals
 

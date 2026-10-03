@@ -15,7 +15,7 @@ MOSS is a small litter-picking rover you print and build yourself: a tracked bas
 
 ## What it costs
 
-List prices for one rover, parts only. A kit will be cheaper.
+List prices for one rover, parts only.
 
 | Configuration | Parts |
 |---|---:|
