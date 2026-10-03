@@ -6,7 +6,7 @@ The idea behind it is older than the robot. Years ago I printed an e-NABLE prost
 
 ## September 2026
 
-**9 to 15 September.** The idea, said out loud on a bigger rover we already had: drive it in the street, pick up the trash, put it in a bin on the rover. Then the question that fixed the shape: what picks up more litter per hour than a person with a bag, for less money than the robots of the big labs? By hand, I fill three big bags in two hours on a covered roadside. A small arm does about one pick a minute. The robot wins on endurance, not speed: eight hours, at night. On the 15th, a 40-second concept video, before a single part existed.
+**9 to 15 September.** The idea, said out loud on a bigger rover we already had: drive it in the street, pick up the trash, put it in a bin on the rover. I am fast with a bag. A robot will need time before it is autonomous and enduring. So the sooner we start, and the more of us there are, the better. On the 15th, a 40-second concept video, before a single part existed.
 
 **16 to 19 September.** Two printers for three days. The bin and a track the first evening, the hull in black PETG on the 18th. By the 19th, 113 parts on the bench, shafts and bearings in bags next to them.
 
