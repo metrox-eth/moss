@@ -1,6 +1,6 @@
 # The story so far
 
-MOSS started with me cleaning my street by hand, two or three hours under the sun. In Thailand it rains a lot, and everything on the road ends up in the ocean. People go and clean the beaches as if the mess came from the sea; it comes from the streets. I didn't want to live in a dirty street, and I didn't want to burn either. So I built a robot.
+MOSS started with me cleaning my street by hand, two or three hours under the sun. In Thailand it rains a lot, and everything on the road ends up in the ocean. People go and clean the beaches as if the mess came from the sea; it comes from the streets. I didn't want to live in a dirty street, and I didn't want to burn cleaning under the tropical sun. So I built a robot.
 
 The idea behind it is older than the robot. Years ago I printed an e-NABLE prosthetic hand, and I saw what happens when a design is free and a maker with a printer picks it up. If every maker with a workshop builds one or two small robots for their own neighbourhood, the litter problem gets solved everywhere at once. Parents and their kids, or any maker, build one over two or three weekends. There is electronics in it, programming, 3D printing, and at the end something useful rolls out the door.
 
