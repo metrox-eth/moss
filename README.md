@@ -31,7 +31,7 @@ The Jetson configuration is the one on the bench. The Pi configuration is drawn,
 
 - Tracked base, two geared DC motors with encoders, printed TPU tracks, an ESP32-S3 driving the motors.
 - A bin you empty by hand at the end of a run.
-- An SO-101 arm (open source) with a NormaCore NC90 gripper and a small camera in the hand.
+- An SO-101 arm (open source) with a NormaCore parallel-jaw gripper, widened to a 90 mm grip, and a small camera in the hand.
 - A depth camera at the nose, a 2D lidar for navigation.
 - Software: dimOS for teleop and navigation, LeRobot for data and policies. A Raspberry Pi path without dimOS for the first drives.
 
@@ -46,13 +46,15 @@ The rule we build by: pick up more litter with less technology. Every part has t
 
 ## Friends
 
-[Dimensional](https://x.com/dimensionalos) (dimOS), [NormaCore](https://x.com/norma_core_dev) (gripper), [Tnkr](https://x.com/tnkrdotai) (kits and guide), [Dirac Robotics](https://x.com/diracrobotics) (calibrated simulation), [microduck-lab](https://github.com/jonathanhawkins/microduck-lab) (reinforcement learning). We help each other.
+OpenAI (Codex Physical Builds), [Dimensional](https://x.com/dimensionalos) (dimOS), [NormaCore](https://x.com/norma_core_dev) (gripper), [Tnkr](https://x.com/tnkrdotai) (kits and guide), [Dirac Robotics](https://x.com/diracrobotics) (calibrated simulation), [microduck-lab](https://github.com/jonathanhawkins/microduck-lab) (reinforcement learning). We help each other.
+
+## Simulation and autonomy, work in progress
+
+The MOSS body runs in MuJoCo with three recorded pickup missions, in the [moss-jev](https://github.com/metrox-eth/moss-jev) repository. It is a basic model. Dirac Robotics is helping build a calibrated URDF, so the robot in MuJoCo behaves like the real one, to experiment with Dimensional's Dimcode; Dimensional is working on a navigation arena; microduck-lab is trying reinforcement learning on it. Accurate simulation, sim-to-real transfer, a modular stack, autonomy: all of it is part of the journey, none of it is here on day one.
 
 ## Come and build
 
 Ask anything, tell us what we are doing wrong, it helps the next builder: [Discord](https://discord.com/invite/x2MeNmgveT). The build, as it happens: [@metrox_eth](https://x.com/metrox_eth). The story so far, in a few moments: [STORY.md](STORY.md). What we learned the hard way: [docs/lessons.md](docs/lessons.md). How data from many rovers gets pooled: [docs/data.md](docs/data.md).
-
-Try the simulator: the MOSS body in MuJoCo, with three recorded pickup missions, in the [moss-jev](https://github.com/metrox-eth/moss-jev) repository.
 
 ## Safety
 

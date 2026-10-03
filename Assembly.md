@@ -48,7 +48,7 @@ Magnets in the cover and in the bin, pads under the bin.
 
 ![Arm and gripper, reaching](media/images/build_08_arm_gripper_reach_20260926.jpg)
 
-Build the SO-101 arm with the upstream guide, then the NC90 gripper. Bolt the arm plate to the hull, route the servo bus and the camera cable through the clips.
+Build the SO-101 arm with the upstream guide, then the gripper. Bolt the arm plate to the hull, route the servo bus and the camera cable through the clips.
 
 ## 8. Computer and sensors
 

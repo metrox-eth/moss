@@ -5,7 +5,7 @@
 | Material | Where | Why |
 |---|---|---|
 | PETG | hull, hatch, drivetrain, tensioners, brackets | stiffness and heat near the motors |
-| PLA (matte) | cover, bin, arm plate, SO-101 arm, NC90 gripper | big flat parts that print clean |
+| PLA (matte) | cover, bin, arm plate, SO-101 arm, gripper | big flat parts that print clean |
 | TPU 95A | tracks, bin pads, gripper pads | grip |
 
 Tracks: print with a 0.4 mm nozzle. The 0.8 mm nozzle makes them too stiff to run.
@@ -53,9 +53,9 @@ The hull is one piece, 328 mm long: it needs a large bed. A version split for 25
 | Bin, with magnet pockets | 1 |
 | Arm mounting plate | 1 |
 | SO-101: base motor holder, base, shoulder bracket, shoulder rotation, upper arm, forearm, wrist bracket, wrist | 8 |
-| NC90 gripper: base with extended rails, two jaws with extended racks, pinion, two flanges, cable guide, camera mount with 34 mm adapter | 8 |
+| Gripper (NormaCore parallel jaw, widened to 90 mm): base with extended rails, two jaws with extended racks, pinion, two flanges, cable guide, camera mount with 34 mm adapter | 8 |
 
-The SO-101 parts are the upstream files with cable clips added. The NC90 jaws and rails are lengthened for bottles and cans.
+The SO-101 parts are the upstream files with cable clips added. The gripper is NormaCore's parallel-jaw design with the jaws and rails lengthened to open 90 mm, for bottles and cans.
 
 ## Tracks and pads, TPU 95A
 
