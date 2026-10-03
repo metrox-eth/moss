@@ -1,34 +1,34 @@
 # Bill of materials
 
-Retail prices in USD, one rover. A kit will cost less.
+List prices in USD, one rover. A kit will cost less.
 
 ## Totals
 
 | | Kit base | Jetson + RealSense | Pi + Hailo + Gemini | Pi + Mighty |
 |---|---:|---:|---:|---:|
 | Kit base (everything below) | 482 | 482 | 482 | 482 |
-| Computer | | 495 | 218 | 218 |
-| AI accelerator | | on board | 232 | none |
-| Camera at the nose | | 466 | 234 | 92 |
+| Computer | | 414 | 207 | 207 |
+| AI accelerator | | on board | 200 | none |
+| Camera at the nose | | 419 | 234 | 92 |
 | Wrist camera | | 19 | 19 | 19 |
-| 2D lidar | | 72 | 72 | 72 |
-| **Total** | **about $480** | **about $1,540** | **about $1,260** | **about $890** |
+| 2D lidar | | 69 | 69 | 69 |
+| **Total** | **about $480** | **about $1,400** | **about $1,210** | **about $870** |
 
 ## Computer and perception
 
 | Item | Qty | USD |
 |---|---:|---:|
-| NVIDIA Jetson Orin Nano Super 8 GB | 1 | 480 |
+| NVIDIA Jetson Orin Nano Super Developer Kit | 1 | 399 |
 | microSD card (Jetson) | 1 | 15 |
 | Raspberry Pi 5 8 GB | 1 | 175 |
-| Pi active cooler, 5 V supply, microSD | 1 | 43 |
-| Raspberry Pi AI HAT+ 2 (Hailo-10H, 40 TOPS) | 1 | 232 |
-| Intel RealSense D455 | 1 | 466 |
+| Pi Active Cooler, 27 W power supply, microSD | 1 | 32 |
+| Raspberry Pi AI HAT+ 2 (Hailo-10H, 40 TOPS) | 1 | 200 |
+| Intel RealSense D455 | 1 | 419 |
 | USB 3.1 C to A cable, 90° plug with locking screws, 0.3 m | 1 | 7 |
 | Orbbec Gemini 2 | 1 | 234 |
 | Mighty Camera | 1 | 92 |
 | Wrist camera, innomaker 1080p USB module, 32 × 32 mm | 1 | 19 |
-| SLAMTEC RPLIDAR C1 | 1 | 72 |
+| SLAMTEC RPLIDAR C1 | 1 | 69 |
 
 ## Kit base, about $482
 

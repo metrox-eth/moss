@@ -15,14 +15,14 @@ MOSS is a small litter-picking rover you print and build yourself: a tracked bas
 
 ## What it costs
 
-Retail estimates for one rover, parts only. A kit will be cheaper.
+List prices for one rover, parts only. A kit will be cheaper.
 
 | Configuration | Parts |
 |---|---:|
 | Kit base: chassis, tracks, arm, gripper, power, filament | about $480 |
-| + Jetson Orin Nano Super, RealSense D455, wrist camera, 2D lidar | about $1,540 |
-| + Raspberry Pi 5, Hailo AI HAT, Orbbec Gemini 2, wrist camera, 2D lidar | about $1,260 |
-| + Raspberry Pi 5, Mighty camera, wrist camera, 2D lidar | about $890 |
+| + Jetson Orin Nano Super, RealSense D455, wrist camera, 2D lidar | about $1,400 |
+| + Raspberry Pi 5, Hailo AI HAT, Orbbec Gemini 2, wrist camera, 2D lidar | about $1,210 |
+| + Raspberry Pi 5, Mighty camera, wrist camera, 2D lidar | about $870 |
 
 The Jetson configuration is the one on the bench. Every line is in the [BOM](BOM.md).
 
