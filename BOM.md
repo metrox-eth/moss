@@ -7,12 +7,12 @@ List prices in USD, one rover.
 | | Base assembly | Jetson + RealSense | Pi 5 + Hailo + Gemini | Pi 5 + Mighty |
 |---|---:|---:|---:|---:|
 | Base assembly (everything below) | 482 | 482 | 482 | 482 |
-| Computer | | 414 | 207 | 207 |
+| Computer | | 414 | 215 | 215 |
 | AI accelerator | | on board | 200 | none |
 | Camera at the nose | | 419 | 234 | 92 |
 | Wrist camera | | 19 | 19 | 19 |
 | 2D lidar | | 69 | 69 | 69 |
-| **Total** | **about $500** | **about $1,400** | **about $1,200** | **about $850** |
+| **Total** | **about $500** | **about $1,400** | **about $1,200** | **about $880** |
 
 ## Jetson + RealSense, about $1,400
 
@@ -34,20 +34,22 @@ Base assembly, plus:
 | Item | Qty | USD |
 |---|---:|---:|
 | Raspberry Pi 5 8 GB | 1 | 175 |
-| Pi Active Cooler, 27 W power supply, microSD | 1 | 32 |
+| Pi Active Cooler, microSD | 1 | 20 |
+| 12 V to 5 V 5 A converter, DC jack in, USB-C out, with fan | 1 | 20 |
 | Raspberry Pi AI HAT+ 2 (Hailo-10H, 40 TOPS) | 1 | 200 |
 | Orbbec Gemini 2 | 1 | 234 |
 | Wrist camera, innomaker 1080p USB module, 32 × 32 mm | 1 | 19 |
 | SLAMTEC RPLIDAR C1 | 1 | 69 |
 
-## Pi 5 + Mighty, about $850
+## Pi 5 + Mighty, about $880
 
 Base assembly, plus:
 
 | Item | Qty | USD |
 |---|---:|---:|
 | Raspberry Pi 5 8 GB | 1 | 175 |
-| Pi Active Cooler, 27 W power supply, microSD | 1 | 32 |
+| Pi Active Cooler, microSD | 1 | 20 |
+| 12 V to 5 V 5 A converter, DC jack in, USB-C out, with fan | 1 | 20 |
 | Mighty Camera | 1 | 92 |
 | Wrist camera, innomaker 1080p USB module, 32 × 32 mm | 1 | 19 |
 | SLAMTEC RPLIDAR C1 | 1 | 69 |
@@ -79,7 +81,7 @@ Base assembly, plus:
 
 | Item | Qty | Unit | Line |
 |---|---:|---:|---:|
-| JGB37 12 V geared DC motor with Hall quadrature encoder | 2 | 15 | 30 |
+| JGB37-520 gear motor, 12 V, 56:1, 178 rpm, Hall encoder, Ø6 mm D-shaft | 2 | 15 | 30 |
 
 ### Arm and gripper
 
@@ -121,8 +123,8 @@ Screws: M3 × 16 (22), M3 × 20 (6), M3 × 25 (6), M3 × 35 (18), M4 × 16 (6), 
 
 | Filament | Qty | Unit | Line |
 |---|---:|---:|---:|
-| PETG, black | 2 kg | 10.39 | 20.79 |
-| PLA, matte | 2 kg | 20.64 | 41.27 |
+| PETG, black (Sunlu) | 2 kg | 10.39 | 20.79 |
+| PLA, matte (Polymaker Panchroma) | 2 kg | 20.64 | 41.27 |
 | TPU 95A | 1 kg | 25 | 25 |
 
 ### Fans and magnets
