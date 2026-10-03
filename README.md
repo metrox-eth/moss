@@ -4,7 +4,7 @@ Cleaner streets, one maker at a time.
 
 MOSS is a small litter-picking rover you print and build yourself: a tracked base, a bin on top, an arm derived from the SO-101 with a parallel gripper. It is open hardware, built in public, and meant to be built by many hands.
 
-![MOSS V0.5, the rover coming together](media/images/moss_v05_rover.jpg)
+![MOSS picking up a can: approach, grasp, lift, drop in the bin](media/images/moss_v05_pickup.gif)
 
 **Where it stands.** The first prototype rolls and carries its arm. Nothing has picked up litter on its own yet. The CAD is being finished on the real robot, and the files come out after one test: a full battery emptied over 3 km on the beach, tracks still on, no bolt lost. No date; it is posted when it is real.
 
