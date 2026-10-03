@@ -4,15 +4,15 @@ List prices in USD, one rover. A kit will cost less.
 
 ## Totals
 
-| | Kit base | Jetson + RealSense | Pi + Hailo + Gemini | Pi + Mighty |
+| | Base assembly | Jetson + RealSense | Pi 5 + Hailo + Gemini | Pi 5 + Mighty |
 |---|---:|---:|---:|---:|
-| Kit base (everything below) | 482 | 482 | 482 | 482 |
+| Base assembly (everything below) | 482 | 482 | 482 | 482 |
 | Computer | | 414 | 207 | 207 |
 | AI accelerator | | on board | 200 | none |
 | Camera at the nose | | 419 | 234 | 92 |
 | Wrist camera | | 19 | 19 | 19 |
 | 2D lidar | | 69 | 69 | 69 |
-| **Total** | **about $480** | **about $1,400** | **about $1,210** | **about $870** |
+| **Total** | **about $500** | **about $1,400** | **about $1,200** | **about $850** |
 
 ## Computer and perception
 
@@ -30,7 +30,7 @@ List prices in USD, one rover. A kit will cost less.
 | Wrist camera, innomaker 1080p USB module, 32 × 32 mm | 1 | 19 |
 | SLAMTEC RPLIDAR C1 | 1 | 69 |
 
-## Kit base, about $482
+## Base assembly, about $482
 
 | Block | USD |
 |---|---:|
