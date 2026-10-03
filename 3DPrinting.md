@@ -8,7 +8,7 @@
 | PLA (matte) | cover, bin, arm plate, SO-101 arm, gripper | big flat parts that print clean |
 | TPU 95A | tracks, bin pads, gripper pads | grip |
 
-The hull is one piece, 328 mm long: it needs a large bed. A version split for 256 mm beds is not in the files yet.
+The hull is one piece, 328 mm long: it needs a large bed. A version split for 256 mm beds follows right after the release.
 
 ## Hull and body, PETG
 
