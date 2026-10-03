@@ -10,9 +10,9 @@
 | Computer | | 495 | 218 | 218 |
 | AI accelerator | | on board | 232 | none |
 | Camera at the nose | | 466 | 234 | 92 |
-| Wrist camera | | 14 | 14 | 14 |
+| Wrist camera | | 19 | 19 | 19 |
 | 2D lidar | | 72 | 72 | 72 |
-| **Total** | **about $480** | **about $1,530** | **about $1,250** | **about $880** |
+| **Total** | **about $480** | **about $1,540** | **about $1,260** | **about $890** |
 
 The Jetson configuration is the prototype. The two Pi configurations are drawn, not yet run.
 
@@ -27,7 +27,7 @@ The Jetson configuration is the prototype. The two Pi configurations are drawn, 
 | Raspberry Pi AI HAT+ 2 (Hailo-10H, 40 TOPS) | 1 | 232 | *paid*; list price about 200 |
 | Orbbec Gemini 2 | 1 | 234 | listing. Depth from 0.15 m, 91° × 66° |
 | Mighty Camera, visual-inertial tracking, onboard IMU | 1 | 92 | *paid*. Pose estimation on the camera itself, no accelerator needed |
-| Wrist camera: Vinmooog USB webcam, the one VLA-REPLICA uses on its SO-101 | 1 | 14 | listing in the VLA-REPLICA bill of materials ($13.98). Not yet in our CAD |
+| Wrist camera, innomaker 1080p USB module, 32 × 32 mm | 1 | 19 | listing |
 | SLAMTEC RPLIDAR C1 | 1 | 72 | listing (RobotShop, DFRobot). Mount printed; position on the cover still being settled |
 
 ## Kit base, about $482
