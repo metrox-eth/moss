@@ -117,7 +117,48 @@ Base assembly, plus:
 | Rigid motor-to-shaft couplings, Ø6 bores | 2 |
 | HEX12 metal wheel hubs, Ø6 bore, 18 mm | 2 |
 
-Screws: M3 × 16 (22), M3 × 20 (6), M3 × 25 (6), M3 × 35 (18), M4 × 16 (6), M4 × 40 (4), M4 × 60 (4), M2.5 × 10 (4); 52 M3 nuts, 18 M4 nuts (4 lock nuts), 8 M4 washers.
+### Fasteners
+
+Socket head cap screws unless noted. Standard lengths only, in 5 mm steps above 10 mm; no screw is cut. Lengths under the head; countersunk screws: overall length.
+
+| Screw | Qty |
+|---|---:|
+| M3 × 8 | 12 |
+| M3 × 10 | 4 |
+| M3 × 10 countersunk 90°, head Ø 6.4 mm max | 10 |
+| M3 × 10 countersunk 90°, head Ø 5.6 mm max | 4 |
+| M3 × 15 | 22 |
+| M3 × 20 | 6 |
+| M3 × 25 | 6 |
+| M3 × 35 | 18 |
+| M4 × 15 | 6 |
+| M4 × 20 | 8 |
+| M4 × 35 | 2 |
+| M4 × 40 | 2 |
+| M4 × 60 | 4 |
+| M2 × 6 | 6 |
+| M2.5 × 8 | 4 |
+| M2.5 × 10 low head, Ø 5 mm max | 4 |
+| M3 hex nut | 52 |
+| M4 hex nut | 30 |
+| M4 washer | 8 |
+| M3 washer, 0.5 mm | 4 |
+| M2.5 washer, 0.5 mm | 4 |
+| M2 washer, 0.3 mm | 6 |
+
+From the servo and gripper kits, no purchase: M2 × 6 (20) and M3 × 6 (37) servo screws for the arm, M3 × 6 cross-head (11) and #1-42 × 3/16" self-tapping (6) for the gripper.
+
+Per configuration:
+
+| Configuration | Screws |
+|---|---|
+| Jetson | M3 × 8 (2) |
+| V0.6 compute dock, Pi or Jetson | M3 × 8 (4), M3 washer 0.5 mm (4), M3 heat-set insert Ø 4.6 × 5 mm (4) |
+| RealSense D455 | M4 × 10 (2) |
+| Orbbec Gemini 2 | M3 × 8 (2) |
+| RPLIDAR C1 | M2.5 × 6 (4) |
+
+Fixed with the files: SO-101 base to arm plate (4 × M4 × 25 countersunk, one clearance to solve), lidar mount (2 × M3 × 20 with a spacer), motor screws, Pi mount, HAT standoffs, wrist camera, Pi power box.
 
 ### Filament
 
