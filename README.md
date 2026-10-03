@@ -64,4 +64,4 @@ This is a prototype with a lithium battery and no certified protection. Put it o
 
 ## License
 
-Code under Apache-2.0. Hardware files and documentation under CC BY 4.0. See `NOTICE`.
+Code under Apache-2.0. Hardware files under CERN-OHL-S-2.0. Documentation and media under CC BY 4.0. See `NOTICE`.

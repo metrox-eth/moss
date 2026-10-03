@@ -2,12 +2,12 @@ MOSS — a small, mostly 3D-printed litter-picking rover
 Copyright 2026 Laurent Genoud (Show Robotics), Thailand.
 
 Code: Apache License, Version 2.0 (see LICENSE).
-Hardware design files and documentation (docs/, hardware/, media/): CC BY 4.0.
+Hardware design files (hardware/): CERN Open Hardware Licence Version 2, Strongly Reciprocal, CERN-OHL-S-2.0 (see LICENSE-HARDWARE).
+Documentation and media (*.md, media/): CC BY 4.0.
+
+Parts derived from the SO-101 arm (TheRobotStudio/SO-ARM100, Apache-2.0) keep their upstream notice.
+The gripper is derived from NormaCore's parallel-jaw gripper, under NormaCore's licence.
 
 moss_dimos/gamepad.py is derived from vector-dimos (https://github.com/metrox-eth/vector-dimos),
 Copyright 2026 Laurent Genoud, Apache-2.0, itself an external blueprint for dimOS
 (https://github.com/dimensionalOS/dimos), Copyright 2025 Dimensional Inc., Apache-2.0.
-
-Third-party photographs and trademarks appearing in the 21 September 2026
-BOM comparison video are excluded from the above CC BY 4.0 grant.
-See media/MOSS_cost_comparison_20260921_credits.md for attribution.
