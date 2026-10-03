@@ -1,6 +1,8 @@
 # 3D printing
 
-**107 printed parts**: 82 in PETG, 19 in PLA, 6 in TPU 95A. The STL files, one per part, come with the release in [`hardware/`](hardware/).
+**107 printed parts**: 82 in PETG, 19 in PLA, 6 in TPU 95A. 18 plates, about 125 printer-hours. The STL files, one per part, come with the release in [`hardware/`](hardware/).
+
+![All 107 printed parts on 18 plates](media/images/moss_v05_print_plates.jpg)
 
 | Material | Where |
 |---|---|
