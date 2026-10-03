@@ -37,7 +37,7 @@ The Jetson configuration is the one on the bench. Every line is in the [BOM](BOM
 - A 2D lidar for navigation.
 - Software: dimOS for teleop and navigation, LeRobot for data and policies.
 
-The rule we build by: pick up more litter with less technology. Every part has to earn its place against a person with a bag.
+I pick up litter by hand on my walks. MOSS is the robot I want next to me doing the same. One less can on the ground.
 
 ## News
 
