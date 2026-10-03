@@ -79,7 +79,7 @@ Base assembly, plus:
 
 | Item | Qty | Unit | Line |
 |---|---:|---:|---:|
-| 12 V geared DC motor with quadrature encoder | 2 | 15 | 30 |
+| JGB37 12 V geared DC motor with Hall quadrature encoder | 2 | 15 | 30 |
 
 ### Arm and gripper
 
