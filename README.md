@@ -24,7 +24,7 @@ Retail estimates for one rover, parts only. A kit will be cheaper.
 | + Raspberry Pi 5, Hailo AI HAT, Orbbec Gemini 2, wrist camera, 2D lidar | about $1,260 |
 | + Raspberry Pi 5, Mighty camera, wrist camera, 2D lidar | about $890 |
 
-The Jetson configuration is the one on the bench. The Pi configurations are drawn, not yet run. Every line is in the [BOM](BOM.md).
+The Jetson configuration is the one on the bench. Every line is in the [BOM](BOM.md).
 
 ![Your hardware, your MOSS: Pi or Jetson, RealSense or Gemini](media/images/moss_v06_modular.jpg)
 
@@ -63,4 +63,4 @@ This is a prototype with a lithium battery and no certified protection. Put it o
 
 ## License
 
-Code under Apache-2.0. Hardware files and documentation under CC BY 4.0 until the first file release, which will carry the hardware license named in `NOTICE`.
+Code under Apache-2.0. Hardware files and documentation under CC BY 4.0. See `NOTICE`.

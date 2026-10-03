@@ -2,7 +2,7 @@
 
 Three layers. The microcontroller drives the motors. The computer on top sends it speeds and reads its telemetry. The policies come later, from pooled data.
 
-**State: the motor firmware ran on the bench and on the first drives. Everything on the computer side is tested against a fake serial port only; nothing has driven the rover from a Jetson or a Pi yet.**
+**The motor firmware drove the prototype. The computer side is tested against a fake serial port only.**
 
 ## Motor firmware, ESP32-S3
 

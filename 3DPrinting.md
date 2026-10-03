@@ -1,6 +1,6 @@
 # 3D printing
 
-**107 printed parts** on the assembled rover: 82 in PETG, 19 in PLA, 6 in TPU 95A. Counted on the V0.5 CAD on 1 October 2026. The STL files, one per part, land in [`hardware/`](hardware/) at the design freeze; this page is the list to plan against.
+**107 printed parts**: 82 in PETG, 19 in PLA, 6 in TPU 95A. The STL files, one per part, come with the release in [`hardware/`](hardware/).
 
 | Material | Where |
 |---|---|
@@ -65,4 +65,4 @@ The SO-101 parts are the upstream files with cable clips added. The gripper is N
 
 ## Filament
 
-Sliced so far, supports included: 1.15 kg of PETG and 1.1 kg of PLA for the hull, cover (465 g), bin (549 g), arm plate and brackets. The drivetrain, arm and tracks add to it. Plan on 2 kg of PETG, 2 kg of PLA and a roll of TPU.
+Plan on 2 kg of PETG, 2 kg of PLA and a roll of TPU.

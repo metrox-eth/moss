@@ -1,6 +1,6 @@
 # Assembly
 
-**Photos from the first prototype, V0.3, September 2026.** The step-by-step with the V0.6 parts is shot during the rebuild and replaces this page when the files come out. Read [docs/lessons.md](docs/lessons.md) before you start: it is short, and it is everything that bit us.
+Photos from the first prototype. The step-by-step with the final parts comes with the files. Read [docs/lessons.md](docs/lessons.md) first; it is short.
 
 ## 1. Lay out the print set
 
