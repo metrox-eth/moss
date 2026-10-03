@@ -1,6 +1,6 @@
 # Software
 
-Three layers. The microcontroller drives the motors. The computer on top sends it speeds and reads its telemetry. The policies come later, from pooled data.
+Three layers. The microcontroller drives the motors. dimOS, on the Jetson or the Pi, does teleop and navigation. The policies come later, from pooled data.
 
 **The motor firmware drove the prototype. The computer side is tested against a fake serial port only.**
 
@@ -21,9 +21,13 @@ Telemetry every 200 ms as JSON: mode, raw encoder ticks, battery voltage. Disarm
 
 The board reads battery voltage through an INA219. It does not measure motor current: the shunt is not in the motor line.
 
-## Driving from a Raspberry Pi, `moss_pi/`
+## Teleop and navigation: dimOS, `moss_dimos/`
 
-Keyboard or gamepad teleop, no dimOS, Python standard library plus pyserial (and pygame for a pad).
+MOSS runs [dimOS](https://github.com/dimensionalOS) by Dimensional, on the Jetson or on the Pi: a gamepad module publishing a Twist behind a deadman, differential-drive kinematics, then navigation and the pick. Speed control and odometry come next.
+
+## Bench tool, `moss_pi/`
+
+Talks to the firmware from any computer over USB, to arm, drive and log telemetry during commissioning. Python standard library plus pyserial, and pygame for a pad.
 
 ```
 python3 -m venv .venv && . .venv/bin/activate
@@ -37,10 +41,6 @@ python -m moss_pi.telemetry_log --port /dev/ttyUSB0 --out telemetry.jsonl
 ```
 
 Nothing moves until you arm with the deadman released. Hold the deadman to drive; release and it brakes, then disarms. The stick is open loop: full stick is 25 % duty. Put the rover on blocks for the first run.
-
-## Driving from a Jetson, `moss_dimos/`
-
-The dimOS side: a gamepad module publishing a Twist behind a deadman, differential-drive kinematics, the same pure teleop logic as the Pi path. The driver that speaks to the firmware from dimOS, speed control and odometry are not written yet. Navigation and the pick come from dimOS once the base is reliable.
 
 ## Data and policies
 

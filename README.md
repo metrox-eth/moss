@@ -32,9 +32,10 @@ The Jetson configuration is the one on the bench. Every line is in the [BOM](BOM
 
 - Tracked base, two geared DC motors with encoders, printed TPU tracks, an ESP32-S3 driving the motors.
 - A bin you empty by hand at the end of a run.
-- An SO-101 arm (open source) with a NormaCore parallel-jaw gripper, widened to a 90 mm grip, and a small camera in the hand.
-- A depth camera or a Mighty tracking camera at the nose, a 2D lidar for navigation.
-- Software: dimOS for teleop and navigation, LeRobot for data and policies. A Raspberry Pi path without dimOS for the first drives.
+- An SO-101 arm (open source) with a NormaCore parallel-jaw gripper, widened to a 90 mm grip.
+- Two cameras: a depth camera at the nose, a colour camera in the hand.
+- A 2D lidar for navigation.
+- Software: dimOS for teleop and navigation, LeRobot for data and policies.
 
 The rule we build by: pick up more litter with less technology. Every part has to earn its place against a person with a bag.
 
