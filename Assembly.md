@@ -4,7 +4,7 @@
 
 ## 1. Lay out the print set
 
-![Every printed part and the hardware on the bench](media/images/build_print_set_panorama_20260919.jpg)
+![All the pieces](media/images/moss_v05_all_the_pieces.jpg)
 
 Check every part against the [list](3DPrinting.md).
 
