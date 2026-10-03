@@ -7,11 +7,11 @@
 | | Kit base | Jetson + RealSense | Pi + Hailo + Gemini |
 |---|---:|---:|---:|
 | Kit base (everything below) | 482 | 482 | 482 |
-| Computer | | 730 | 218 |
+| Computer | | 495 | 218 |
 | AI accelerator | | on board | 232 |
 | Depth camera | | 466 | 234 |
 | 2D lidar | | 72 | 72 |
-| **Total** | **about $480** | **about $1,750** | **about $1,240** |
+| **Total** | **about $480** | **about $1,520** | **about $1,240** |
 
 The Jetson configuration is the prototype. The Pi configuration is drawn, not yet run.
 
@@ -19,7 +19,7 @@ The Jetson configuration is the prototype. The Pi configuration is drawn, not ye
 
 | Item | Qty | USD | Note |
 |---|---:|---:|---|
-| NVIDIA Jetson Orin Nano Super 8 GB | 1 | 480 | plus a 2 TB NVMe SSD, allowance 250 |
+| NVIDIA Jetson Orin Nano Super 8 GB | 1 | 480 | boots from a microSD card, 15 |
 | Intel RealSense D455 | 1 | 466 | *paid*. Depth from 0.12 m with the current close-range software |
 | USB 3.1 C to A cable, 90° plug with locking screws, 0.3 m | 1 | 7 | *paid*. The straight plug does not fit in the hull |
 | Raspberry Pi 5 8 GB | 1 | 175 | with active cooler 8, 5 V supply 20, microSD 15 |
