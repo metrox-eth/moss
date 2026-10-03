@@ -58,7 +58,7 @@ Ask anything, tell us what we are doing wrong, it helps the next builder: [Disco
 
 ## Safety
 
-This is a prototype with a lithium battery, motors strong enough to pinch, and no certified protection. Put it on blocks for the first run. Build at your own risk.
+This is a prototype with a lithium battery and no certified protection. Put it on blocks for the first run. Build at your own risk.
 
 ## License
 

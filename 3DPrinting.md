@@ -2,11 +2,11 @@
 
 **107 printed parts** on the assembled rover: 82 in PETG, 19 in PLA, 6 in TPU 95A. Counted on the V0.5 CAD on 1 October 2026. The STL files, one per part, land in [`hardware/`](hardware/) at the design freeze; this page is the list to plan against.
 
-| Material | Where | Why |
-|---|---|---|
-| PETG | hull, hatch, drivetrain, tensioners, brackets | stiffness and heat near the motors |
-| PLA (matte) | cover, bin, arm plate, SO-101 arm, gripper | big flat parts that print clean |
-| TPU 95A | tracks, bin pads, gripper pads | grip |
+| Material | Where |
+|---|---|
+| PETG | hull, hatch, drivetrain, tensioners, brackets |
+| PLA (matte) | cover, bin, arm plate, SO-101 arm, gripper |
+| TPU 95A | tracks, bin pads, gripper pads |
 
 The hull is one piece, 328 mm long: it needs a large bed. A version split for 256 mm beds follows right after the release.
 

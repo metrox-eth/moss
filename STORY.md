@@ -28,7 +28,7 @@ Tracks on, the rover moving and turning on the floor under its own motors, still
 
 ## 26 September, the arm
 
-A standard SO-101 bolted on, gripper included, with a camera in the hand. Folded over the bin, it looks like the video. A reader looked at the photo and said the shoulder looked weak. He was right, and it became an issue.
+A standard SO-101 bolted on, gripper included, with a camera in the hand. Folded over the bin, it looks like the video. A reader looked at the photo and said the shoulder looked weak. It became an issue on the repository.
 
 *What a stranger seeing it taught you.*
 

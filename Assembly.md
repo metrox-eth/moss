@@ -6,7 +6,7 @@
 
 ![Every printed part and the hardware on the bench](media/images/build_print_set_panorama_20260919.jpg)
 
-Check every part against the [list](3DPrinting.md). Push the bearings into the half-wheels and rollers now, while they are easy to reach.
+Check every part against the [list](3DPrinting.md).
 
 ## 2. Drivetrain plates
 
@@ -14,7 +14,7 @@ Check every part against the [list](3DPrinting.md). Push the bearings into the h
 
 ![Tensioners on the plate](media/images/build_06_tensioners_plate_20260918.jpg)
 
-Rollers on their Ø5 shafts, idler wheels on Ø8, drive wheels on the HEX12 hubs. Collars on both sides of every shaft. Both tensioners on each side, slides and covers.
+Rollers on their Ø5 shafts, idler wheels on Ø8, drive wheels on the HEX12 hubs, collars as the BOM counts them. Both tensioners on each side, slides and covers.
 
 ## 3. Motors, encoders and the control board on the bench
 
@@ -34,7 +34,7 @@ Motor driver, controller, servo adapter, power distribution and fuse into their 
 
 ![Tracks on, first drive](media/images/build_tracks_on_20260922.jpg)
 
-Fit the tracks, tension both sides until there is no sag under the hull, then put the rover on blocks and run `drive 10 10`. First drive on the floor only after that.
+Fit the tracks and tension both sides, then put the rover on blocks and run `drive 10 10`. First drive on the floor only after that.
 
 ## 6. Bin and cover
 
