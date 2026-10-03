@@ -28,7 +28,7 @@ Flash the [firmware](firmware/), wire one motor at a time, run `test left 10` an
 
 ![The harness](media/images/build_harness_bench_20260920.jpg)
 
-Motor driver, controller, servo adapter, power distribution and fuse into their mounts. Battery under the arm plate. Screw terminals, not jumper wires.
+We are simplifying the electrical harness. This is the first prototype; the real build will be much easier and cleaner.
 
 ## 5. Tracks on
 
