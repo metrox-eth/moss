@@ -35,7 +35,7 @@ The Jetson configuration is the one on the bench. Every line is in the [BOM](BOM
 - An SO-101 arm (open source) with a NormaCore parallel-jaw gripper, widened to a 90 mm grip.
 - Two cameras: a depth camera at the nose, a colour camera in the hand.
 - A 2D lidar for navigation.
-- Software: dimOS for teleop and navigation, LeRobot for data and policies.
+- Software: dimOS for teleop, recording and navigation.
 
 I pick up litter by hand on my walks. MOSS is the robot I want next to me doing the same. One less can on the ground.
 

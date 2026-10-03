@@ -44,7 +44,7 @@ Nothing moves until you arm with the deadman released. Hold the deadman to drive
 
 ## Data and policies
 
-Demonstrations are recorded in the LeRobot format with the same camera names on every rover, so datasets pool without rework. The rules are in [docs/data.md](docs/data.md). The simulator (MuJoCo body, three recorded pickup missions) is in [moss-jev](https://github.com/metrox-eth/moss-jev).
+Demonstrations are recorded with the same camera names on every rover, so datasets pool without rework. The rules are in [docs/data.md](docs/data.md). The simulator (MuJoCo body, three recorded pickup missions) is in [moss-jev](https://github.com/metrox-eth/moss-jev).
 
 ## Tests
 
