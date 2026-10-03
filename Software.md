@@ -1,6 +1,6 @@
 # Software
 
-Three layers. The microcontroller drives the motors. dimOS, on the Jetson or the Pi, does teleop and navigation. The policies come later, from pooled data.
+The stack is dimOS. The microcontroller drives the motors; dimOS, on the Jetson or the Pi, does teleop, recording and navigation. The policies come later, from pooled data.
 
 **The motor firmware drove the prototype. The computer side is tested against a fake serial port only.**
 
