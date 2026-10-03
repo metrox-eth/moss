@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use MOSS, please cite it."
+title: "MOSS: an open hardware litter-picking rover"
+authors:
+  - family-names: "metrox"
+type: software
+repository-code: "https://github.com/metrox-eth/moss"
+license: Apache-2.0

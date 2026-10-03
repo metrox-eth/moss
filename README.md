@@ -2,65 +2,62 @@
 
 Cleaner streets, one maker at a time.
 
-MOSS is a small litter-picking rover you can print and build yourself: a tracked base, a bin, and an arm derived from the SO-101 with a parallel gripper. About $1,700 in parts as built, with a Jetson and a RealSense; a Raspberry Pi version around $820 is the next experiment. It is being built in public.
+MOSS is a small litter-picking rover you print and build yourself: a tracked base, a bin on top, an arm derived from the SO-101 with a parallel gripper. It is open hardware, built in public, and meant to be built by many hands.
 
-**New here?** The day-by-day story is in the [build log](docs/build_log.md); what did not fit is in the [assembly feedback](docs/assembly_feedback.md); what it costs is in the [itemized budget](docs/bom-costs.md).
+![MOSS V0.5, the rover coming together](media/images/moss_v05_rover.jpg)
 
-**Want one?** [Join the community waitlist](https://ak4khuvxkya.typeform.com/to/qaKmXNME) with [Tnkr](https://x.com/tnkrdotai) and we'll let you know when the open source CAD files and MOSS kits are ready.
+**Where it stands.** The first prototype rolls and carries its arm. Nothing has picked up litter on its own yet. The CAD is being finished on the real robot, and the files come out after one test: a full battery emptied over 3 km on the beach, tracks still on, no bolt lost. No date; it is posted when it is real.
 
-![MOSS hardware tour: inside the hull, back together, a scripted pickup](media/images/moss_v04_hardware_tour.gif)
+## Two ways to get one
 
-*40-second CAD animation of the V0.4 design: inside the hull, reassembly, and a scripted pickup. The physical prototype drives; autonomous pickup is still ahead. [Video version](media/video/MOSS_V04_Inside_and_Action_20260924.mp4).*
+- **Build it yourself.** [Bill of materials](BOM.md) → [3D printing](3DPrinting.md) → [Assembly](Assembly.md) → [Software](Software.md). The STL and STEP files land in [`hardware/`](hardware/) when the design is frozen.
+- **Get the kit.** Kits and an interactive build guide are coming with [Tnkr](https://x.com/tnkrdotai). [Join the waitlist](https://ak4khuvxkya.typeform.com/to/qaKmXNME) to hear when the files and the kits are ready.
 
-## Where it stands
+## What it costs
 
-![Every printed part and the hardware laid out on the bench, 19 September](media/images/build_print_set_panorama_20260919.jpg)
+Retail estimates for one rover, parts only. A kit will be cheaper.
 
-*We forgot to take the wide shot, so this is 41 frames of a phone pan stitched together. It wobbles a bit; the parts are real.*
-
-All 113 printed parts are on the bench, with the shafts, bearings and screws to go with them. On 20 September the two drive motors ran for the first time, encoders counting, from the ESP32 that will drive them on the rover. By the evening the electronics were inside the chassis and the Jetson was booting from the battery. Some parts ended up elsewhere than the CAD planned; that is what a first prototype is for. On 22 September it rolled for the first time. The tracks still have some slack, a second tensioner per track is next.
-
-![MOSS with its bin on, 22 September](media/images/build_bin_on_20260922.jpg)
-
-In parallel, **V0.4** is being drawn from the assembly feedback: a revised hull, screw-terminal control electronics, one dual motor driver instead of two. Not built yet. See the [V0.4 hardware update](docs/hardware_v04.md).
-
-Every step is written down when it is real, good or bad. The [build log](docs/build_log.md) has the dates and the numbers, the [assembly feedback](docs/assembly_feedback.md) has what did not fit, the [roadmap](docs/roadmap.md) has what comes next, without dates.
-
-## What does it cost?
-
-| Build | Parts estimate |
+| Configuration | Parts |
 |---|---:|
-| As built: Jetson Orin Nano Super, RealSense D455, 2 TB SSD | about $1,680 |
-| Next experiment: Raspberry Pi 5, Mighty Camera | $820 |
-| Next experiment: Raspberry Pi 5, ST 3D time-of-flight | $821 |
+| Kit base: chassis, tracks, arm, gripper, power, filament | about $480 |
+| + Jetson Orin Nano Super, RealSense D455, 2D lidar | about $1,750 |
+| + Raspberry Pi 5, Hailo AI HAT, Orbbec Gemini 2, 2D lidar | about $1,240 |
 
-Replacement-cost estimates for every part, not receipts. The Pi builds keep the same chassis, arm and drivetrain, and have not been tested yet. Every line, assumption and source is in the [itemized budget](docs/bom-costs.md); the [45-second comparison](media/video/MOSS_cost_comparison_20260921.mp4) tells it in pictures.
+The Jetson configuration is the one on the bench. The Pi configuration is drawn, not yet run. Every line is in the [BOM](BOM.md).
 
-## Try the demo
+![Your hardware, your MOSS: Pi or Jetson, RealSense or Gemini](media/images/moss_v06_modular.jpg)
 
-Jev, TypeSafe AI's decision model, choosing every step of a pickup (approach, align, grasp, lift, carry, release) on physics recorded once in MuJoCo, replayed in 3D in your browser. Three missions with real Jev decisions, plus the earlier target-choice scenarios: https://www.showrobotics.ai/moss-jev/
+## What it is made of
 
-[![MOSS × Jev demo: Jev picks bottle 01, MOSS goes to collect it](media/images/moss_jev_demo_20260920.jpg)](https://www.showrobotics.ai/moss-jev/)
+- Tracked base, two geared DC motors with encoders, printed TPU tracks, an ESP32-S3 driving the motors.
+- A bin you empty by hand at the end of a run.
+- An SO-101 arm (open source) with a NormaCore NC90 gripper and a small camera in the hand.
+- A depth camera at the nose, a 2D lidar for navigation.
+- Software: dimOS for teleop and navigation, LeRobot for data and policies. A Raspberry Pi path without dimOS for the first drives.
 
-The simulator behind it is open too: the MOSS body as a MuJoCo model with its meshes, the three recorded missions, and a CPU replay that needs no API key, in the demo repository's [`live/` folder](https://github.com/metrox-eth/moss-jev/tree/main/live). Import the body into your own lab, or replay the missions on your laptop.
+The rule we build by: pick up more litter with less technology. Every part has to earn its place against a person with a bag.
 
-## What is in here
+## News
 
-- `docs/` what MOSS is for, the build log, the bill of materials, the printed-parts list, the data rules, the roadmap.
-- `firmware/` the ESP32-S3 code that drives the motors, with its test.
-- `moss_dimos/` the Jetson side, on dimOS. Cold-tested only, for now.
-- `moss_pi/` the Raspberry Pi side: drives the same motor firmware over serial, keyboard or gamepad teleop, telemetry log. Cold-tested only, for now.
-- `hardware/` the design files, published part by part as they prove themselves on the real robot, and the raw bench traces.
-- `media/` the videos and photos.
+- 3 October 2026: V0.6 makes the hardware modular, Pi or Jetson, RealSense or Gemini. Waitlist open with Tnkr.
+- 1 October 2026: V0.5, the release candidate for the open source CAD.
+- 26 September 2026: arm and gripper mounted on the prototype.
+- 22 September 2026: first drive.
 
-## Build one, or come and watch
+## Friends
 
-The design files are not out yet. The first MOSS now rolls; we are incorporating its assembly feedback into V0.4 before releasing the parts and their matching BOM. Until then, the door is the Discord: ask anything, tell us what we are doing wrong, it helps the next builder too. https://discord.com/invite/x2MeNmgveT
+[Dimensional](https://x.com/dimensionalos) (dimOS), [NormaCore](https://x.com/norma_core_dev) (gripper), [Tnkr](https://x.com/tnkrdotai) (kits and guide), [Dirac Robotics](https://x.com/diracrobotics) (calibrated simulation), [microduck-lab](https://github.com/jonathanhawkins/microduck-lab) (reinforcement learning). We help each other.
 
-The build, day by day, is on X: [@metrox_eth](https://x.com/metrox_eth).
+## Come and build
 
-Data recorded by MOSS builders is meant to be pooled and open, so the shared model gets better with every robot. The rules we propose are in [docs/data.md](docs/data.md).
+Ask anything, tell us what we are doing wrong, it helps the next builder: [Discord](https://discord.com/invite/x2MeNmgveT). The build, as it happens: [@metrox_eth](https://x.com/metrox_eth). The story so far, in a few moments: [STORY.md](STORY.md). What we learned the hard way: [docs/lessons.md](docs/lessons.md). How data from many rovers gets pooled: [docs/data.md](docs/data.md).
+
+Try the simulator: the MOSS body in MuJoCo, with three recorded pickup missions, in the [moss-jev](https://github.com/metrox-eth/moss-jev) repository.
+
+## Safety
+
+This is a prototype with a lithium battery, motors strong enough to pinch, and no certified protection. Put it on blocks for the first run. Build at your own risk.
 
 ## License
 
-Code under Apache-2.0. Hardware files and documentation under CC BY 4.0. See `NOTICE`.
+Code under Apache-2.0. Hardware files and documentation under CC BY 4.0 until the first file release, which will carry the hardware license named in `NOTICE`.

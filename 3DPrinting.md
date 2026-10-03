@@ -1,0 +1,70 @@
+# 3D printing
+
+**107 printed parts** on the assembled rover: 82 in PETG, 19 in PLA, 6 in TPU 95A. Counted on the V0.5 CAD on 1 October 2026. The STL files, one per part, land in [`hardware/`](hardware/) at the design freeze; this page is the list to plan against.
+
+| Material | Where | Why |
+|---|---|---|
+| PETG | hull, hatch, drivetrain, tensioners, brackets | stiffness and heat near the motors |
+| PLA (matte) | cover, bin, arm plate, SO-101 arm, NC90 gripper | big flat parts that print clean |
+| TPU 95A | tracks, bin pads, gripper pads | grip |
+
+Tracks: print with a 0.4 mm nozzle. The 0.8 mm nozzle makes them too stiff to run.
+
+The hull is one piece, 328 mm long: it needs a large bed. A version split for 256 mm beds is not in the files yet. It is also the print that fails most often: level the bed and dry the PETG before it.
+
+## Hull and body, PETG
+
+| Part | Qty |
+|---|---:|
+| Hull, one piece | 1 |
+| Motor hatch, ten fixings | 1 |
+| Motor supports, left and right | 2 |
+| Bearing retainers, left and right | 2 |
+| Lidar mount | 1 |
+| Jetson brackets | 2 |
+| Inner side plates, left and right | 2 |
+| Outer side plates, left and right | 2 |
+| XT30 housing: base, cover, insulating separator | 3 |
+| Cross-member spacers, −40 and +40, left and right | 4 |
+| Motor bearing covers, left and right | 2 |
+
+## Drivetrain, PETG
+
+| Part | Qty |
+|---|---:|
+| Inner tensioner slides, left and right | 2 |
+| Inner tensioner covers, left and right | 2 |
+| Outer tensioner slides, left and right | 2 |
+| Outer tensioner covers, left and right | 2 |
+| Tensioner retainer spacers, inner and outer, left and right | 4 |
+| Tensioner spacers, inner, centre, outer, left and right | 6 |
+| Idler half-wheels, 22 teeth, inner and outer, left and right | 4 |
+| Roller half-wheels (625 bearing), positions −70, 0, +70, inner and outer, left and right | 12 |
+| Roller spacers, positions −70, 0, +70, inner, centre, outer, left and right | 18 |
+| Drive half-wheels HEX12, inner and outer, left and right | 4 |
+| Inner drive spacers, left and right | 2 |
+| Outer drive spacers HEX12, left and right | 2 |
+
+## Cover, bin and arm, PLA
+
+| Part | Qty |
+|---|---:|
+| Top cover, with lips and magnet pockets | 1 |
+| Bin, with magnet pockets | 1 |
+| Arm mounting plate | 1 |
+| SO-101: base motor holder, base, shoulder bracket, shoulder rotation, upper arm, forearm, wrist bracket, wrist | 8 |
+| NC90 gripper: base with extended rails, two jaws with extended racks, pinion, two flanges, cable guide, camera mount with 34 mm adapter | 8 |
+
+The SO-101 parts are the upstream files with cable clips added. The NC90 jaws and rails are lengthened for bottles and cans.
+
+## Tracks and pads, TPU 95A
+
+| Part | Qty |
+|---|---:|
+| Track, 70 teeth, pitch 10 mm, left and right | 2 |
+| Bin pads, front and rear | 2 |
+| Gripper pads, left and right | 2 |
+
+## Filament
+
+Sliced so far, supports included: 1.15 kg of PETG and 1.1 kg of PLA for the hull, cover (465 g), bin (549 g), arm plate and brackets. The drivetrain, arm and tracks add to it. Plan on 2 kg of PETG, 2 kg of PLA and a roll of TPU.
