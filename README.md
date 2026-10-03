@@ -20,10 +20,11 @@ Retail estimates for one rover, parts only. A kit will be cheaper.
 | Configuration | Parts |
 |---|---:|
 | Kit base: chassis, tracks, arm, gripper, power, filament | about $480 |
-| + Jetson Orin Nano Super, RealSense D455, 2D lidar | about $1,520 |
-| + Raspberry Pi 5, Hailo AI HAT, Orbbec Gemini 2, 2D lidar | about $1,240 |
+| + Jetson Orin Nano Super, RealSense D455, wrist camera, 2D lidar | about $1,540 |
+| + Raspberry Pi 5, Hailo AI HAT, Orbbec Gemini 2, wrist camera, 2D lidar | about $1,260 |
+| + Raspberry Pi 5, Mighty camera, wrist camera, 2D lidar | about $890 |
 
-The Jetson configuration is the one on the bench. The Pi configuration is drawn, not yet run. Every line is in the [BOM](BOM.md).
+The Jetson configuration is the one on the bench. The Pi configurations are drawn, not yet run. Every line is in the [BOM](BOM.md).
 
 ![Your hardware, your MOSS: Pi or Jetson, RealSense or Gemini](media/images/moss_v06_modular.jpg)
 
@@ -32,7 +33,7 @@ The Jetson configuration is the one on the bench. The Pi configuration is drawn,
 - Tracked base, two geared DC motors with encoders, printed TPU tracks, an ESP32-S3 driving the motors.
 - A bin you empty by hand at the end of a run.
 - An SO-101 arm (open source) with a NormaCore parallel-jaw gripper, widened to a 90 mm grip, and a small camera in the hand.
-- A depth camera at the nose, a 2D lidar for navigation.
+- A depth camera or a Mighty tracking camera at the nose, a 2D lidar for navigation.
 - Software: dimOS for teleop and navigation, LeRobot for data and policies. A Raspberry Pi path without dimOS for the first drives.
 
 The rule we build by: pick up more litter with less technology. Every part has to earn its place against a person with a bag.

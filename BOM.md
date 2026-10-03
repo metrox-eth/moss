@@ -4,16 +4,17 @@
 
 ## Totals
 
-| | Kit base | Jetson + RealSense | Pi + Hailo + Gemini |
-|---|---:|---:|---:|
-| Kit base (everything below) | 482 | 482 | 482 |
-| Computer | | 495 | 218 |
-| AI accelerator | | on board | 232 |
-| Depth camera | | 466 | 234 |
-| 2D lidar | | 72 | 72 |
-| **Total** | **about $480** | **about $1,520** | **about $1,240** |
+| | Kit base | Jetson + RealSense | Pi + Hailo + Gemini | Pi + Mighty |
+|---|---:|---:|---:|---:|
+| Kit base (everything below) | 482 | 482 | 482 | 482 |
+| Computer | | 495 | 218 | 218 |
+| AI accelerator | | on board | 232 | none |
+| Camera at the nose | | 466 | 234 | 92 |
+| Wrist camera | | 25 | 25 | 25 |
+| 2D lidar | | 72 | 72 | 72 |
+| **Total** | **about $480** | **about $1,540** | **about $1,260** | **about $890** |
 
-The Jetson configuration is the prototype. The Pi configuration is drawn, not yet run.
+The Jetson configuration is the prototype. The two Pi configurations are drawn, not yet run.
 
 ## Computer and perception
 
@@ -25,6 +26,8 @@ The Jetson configuration is the prototype. The Pi configuration is drawn, not ye
 | Raspberry Pi 5 8 GB | 1 | 175 | with active cooler 8, 5 V supply 20, microSD 15 |
 | Raspberry Pi AI HAT+ 2 (Hailo-10H, 40 TOPS) | 1 | 232 | *paid*; list price about 200 |
 | Orbbec Gemini 2 | 1 | 234 | listing. Depth from 0.15 m, 91° × 66° |
+| Mighty Camera, visual-inertial tracking, onboard IMU | 1 | 92 | *paid*. Pose estimation on the camera itself, no accelerator needed |
+| Wrist camera, USB colour, in the gripper | 1 | 25 | estimate; the mount is printed with the gripper |
 | SLAMTEC RPLIDAR C1 | 1 | 72 | listing (RobotShop, DFRobot). Mount printed; position on the cover still being settled |
 
 ## Kit base, about $482
@@ -63,7 +66,7 @@ The Jetson configuration is the prototype. The Pi configuration is drawn, not ye
 | ST3215 12 V bus servo | 5 | 22 | 110 | arm joints |
 | CF35-12 constant-force servo | 1 | 50 | 50 | gripper |
 
-The small camera in the hand (Waveshare 38 mm USB camera in the CAD) is not priced yet.
+The camera in the hand is counted with the sensors above.
 
 ### Power and wiring
 
