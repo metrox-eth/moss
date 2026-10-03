@@ -8,9 +8,7 @@
 | PLA (matte) | cover, bin, arm plate, SO-101 arm, gripper | big flat parts that print clean |
 | TPU 95A | tracks, bin pads, gripper pads | grip |
 
-Tracks: print with a 0.4 mm nozzle. The 0.8 mm nozzle makes them too stiff to run.
-
-The hull is one piece, 328 mm long: it needs a large bed. A version split for 256 mm beds is not in the files yet. It is also the print that fails most often: level the bed and dry the PETG before it.
+The hull is one piece, 328 mm long: it needs a large bed. A version split for 256 mm beds is not in the files yet.
 
 ## Hull and body, PETG
 
