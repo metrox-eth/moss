@@ -61,7 +61,7 @@ Base assembly, plus:
 | Control electronics | 49 |
 | Drive | 30 |
 | Arm and gripper | 160 |
-| Power and wiring | 68 |
+| Power and wiring | 67 |
 | Mechanical hardware | 61 |
 | Filament | 87 |
 | Fans and magnets | 5 |
@@ -90,7 +90,7 @@ Base assembly, plus:
 | ST3215 12 V bus servo | 5 | 22 | 110 |
 | CF35-12 constant-force servo (gripper) | 1 | 50 | 50 |
 
-### Power and wiring, about $68
+### Power and wiring, about $67
 
 | Item | Qty | Unit | Line |
 |---|---:|---:|---:|
@@ -98,9 +98,9 @@ Base assembly, plus:
 | 12.6 V CC/CV charger | 1 | 12 | 12 |
 | Emergency stop LA16-11ZS/A, 16 mm | 1 | 2.25 | 2.25 |
 | Rocker switch KCD11, 2-pin with leads, and its splash cover | 1 | 0.50 | 0.50 |
-| Inline blade fuse holder, 14 AWG | 2 | 1.05 | 2.10 |
-| ATC blade fuse 15 A (pack of 10) | 1 | 1.50 | 1.50 |
-| Amass XT30 connector pair: one input, four outputs (arm, computer, driver, fans) | 5 | 0.80 | 4 |
+| Inline blade fuse holder, 14 AWG | 1 | 1.05 | 1.05 |
+| ATC blade fuse 15 A | 1 | 0.15 | 0.15 |
+| Amass XT30 connector pair, male and female | 6 | 0.80 | 4.80 |
 | DC panel socket 5.5 × 2.1 mm, waterproof | 2 | 1.50 | 3 |
 | Wiring, ferrules, heat-shrink | lot | 12 | 12 |
 | USB cables for the controller and the servo adapter | lot | 10 | 10 |
