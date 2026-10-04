@@ -6,15 +6,15 @@ List prices in USD, one rover.
 
 | | Base assembly | Jetson + RealSense | Pi 5 + Hailo + Gemini | Pi 5 + Mighty |
 |---|---:|---:|---:|---:|
-| Base assembly (everything below) | 482 | 482 | 482 | 482 |
+| Base assembly (everything below) | 460 | 460 | 460 | 460 |
 | Computer | | 414 | 215 | 215 |
 | AI accelerator | | on board | 200 | none |
 | Camera at the nose | | 419 | 234 | 92 |
 | Wrist camera | | 19 | 19 | 19 |
 | 2D lidar | | 69 | 69 | 69 |
-| **Total** | **about $500** | **about $1,400** | **about $1,200** | **about $880** |
+| **Total** | **about $460** | **about $1,390** | **about $1,200** | **about $860** |
 
-## Jetson + RealSense, about $1,400
+## Jetson + RealSense, about $1,390
 
 Base assembly, plus:
 
@@ -41,7 +41,7 @@ Base assembly, plus:
 | Wrist camera, innomaker 1080p USB module, 32 × 32 mm | 1 | 19 |
 | SLAMTEC RPLIDAR C1 | 1 | 69 |
 
-## Pi 5 + Mighty, about $880
+## Pi 5 + Mighty, about $860
 
 Base assembly, plus:
 
@@ -54,14 +54,14 @@ Base assembly, plus:
 | Wrist camera, innomaker 1080p USB module, 32 × 32 mm | 1 | 19 |
 | SLAMTEC RPLIDAR C1 | 1 | 69 |
 
-## Base assembly, about $482
+## Base assembly, about $460
 
 | Block | USD |
 |---|---:|
 | Control electronics | 49 |
 | Drive | 30 |
 | Arm and gripper | 160 |
-| Power and wiring | 90 |
+| Power and wiring | 68 |
 | Mechanical hardware | 61 |
 | Filament | 87 |
 | Fans and magnets | 5 |
@@ -90,15 +90,19 @@ Base assembly, plus:
 | ST3215 12 V bus servo | 5 | 22 | 110 |
 | CF35-12 constant-force servo (gripper) | 1 | 50 | 50 |
 
-### Power and wiring
+### Power and wiring, about $68
 
 | Item | Qty | Unit | Line |
 |---|---:|---:|---:|
-| 3S lithium pack with BMS | 1 | 35 | 35 |
+| 12 V (3S) lithium pack, 7,200 mAh, with BMS, XH2.54 and DC jack leads | 1 | 21 | 21 |
 | 12.6 V CC/CV charger | 1 | 12 | 12 |
-| Emergency stop (16 mm), fuse holder, fuses, distribution | lot | 18 | 18 |
-| Wiring, ferrules, heat-shrink, 2 × DC 5.5 × 2.1 mm panel sockets | lot | 15 | 15 |
-| XT30 pairs: one input, four outputs (arm, computer, driver, fans) | 5 | | |
+| Emergency stop LA16-11ZS/A, 16 mm | 1 | 2.25 | 2.25 |
+| Rocker switch KCD11, 2-pin with leads, and its splash cover | 1 | 0.50 | 0.50 |
+| Inline blade fuse holder, 14 AWG | 2 | 1.05 | 2.10 |
+| ATC blade fuse 15 A (pack of 10) | 1 | 1.50 | 1.50 |
+| Amass XT30 connector pair: one input, four outputs (arm, computer, driver, fans) | 5 | 0.80 | 4 |
+| DC panel socket 5.5 × 2.1 mm, waterproof | 2 | 1.50 | 3 |
+| Wiring, ferrules, heat-shrink | lot | 12 | 12 |
 | USB cables for the controller and the servo adapter | lot | 10 | 10 |
 
 ### Mechanical hardware, about $61

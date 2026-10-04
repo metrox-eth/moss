@@ -19,10 +19,10 @@ List prices for one rover, parts only.
 
 | Configuration | Parts |
 |---|---:|
-| Base assembly: chassis, tracks, arm, gripper, power, filament | about $500 |
-| + Jetson Orin Nano Super, RealSense D455, wrist camera, 2D lidar | about $1,400 |
+| Base assembly: chassis, tracks, arm, gripper, power, filament | about $460 |
+| + Jetson Orin Nano Super, RealSense D455, wrist camera, 2D lidar | about $1,390 |
 | + Raspberry Pi 5, Hailo AI HAT, Orbbec Gemini 2, wrist camera, 2D lidar | about $1,200 |
-| + Raspberry Pi 5, Mighty camera, wrist camera, 2D lidar | about $880 |
+| + Raspberry Pi 5, Mighty camera, wrist camera, 2D lidar | about $860 |
 
 The Jetson configuration is the one on the bench. Every line is in the [BOM](BOM.md).
 
