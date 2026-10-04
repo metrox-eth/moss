@@ -94,7 +94,7 @@ Base assembly, plus:
 
 | Item | Qty | Unit | Line |
 |---|---:|---:|---:|
-| 12 V (3S) lithium pack, 7,200 mAh, with BMS, XH2.54 and DC jack leads | 1 | 21 | 21 |
+| 12 V lithium pack 3S2P, 7,200 mAh, with BMS, XH2.54 and DC jack leads | 1 | 21 | 21 |
 | 12.6 V CC/CV charger | 1 | 12 | 12 |
 | Emergency stop LA16-11ZS/A, 16 mm | 1 | 2.25 | 2.25 |
 | Rocker switch KCD11, 2-pin with leads, and its splash cover | 1 | 0.50 | 0.50 |
