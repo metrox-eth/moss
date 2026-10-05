@@ -26,7 +26,7 @@ constexpr bool INVERT_LEFT = false, INVERT_RIGHT = false;
 constexpr float SHUNT_OHMS = 0.0f;   // voltage only (see V0.3 README)
 constexpr uint32_t PWM_HZ = 20000;
 constexpr int PWM_BITS = 10;
-constexpr const char* FW = "qtpy-mdd3a-v1";
+constexpr const char* FW = "qtpy-mdd3a-v2";
 
 moss::Control control;
 moss::Ramp rampL, rampR;
@@ -54,11 +54,12 @@ void ARDUINO_ISR_ATTR encoderRight() {
   portEXIT_CRITICAL_ISR(&encoderMux);
 }
 void sendLine(const char* text) {
-  size_t n = strlen(text);
-  // Drop a message rather than block motor/watchdog processing on a stalled host.
-  if (Serial.availableForWrite() >= int(n + 1)) {
-    Serial.write((const uint8_t*)text, n); Serial.write('\n');
-  }
+  // First hardware contact: the native CDC FIFO is 64 bytes, so a guard that required the
+  // whole line to fit dropped every telemetry line (~330 bytes). write() already returns 0 when no
+  // host has the port open (DTR low); with a 20 ms tx timeout a stalled host costs at most 20 ms per
+  // line, which keeps the deadman (300 ms) serviced. A line cut by that timeout is the host's problem
+  // (one bad JSON line), never the motors'.
+  Serial.write((const uint8_t*)text, strlen(text)); Serial.write('\n');
 }
 void outputsZero() {
   if (pwmOK) { ledcWrite(M1A, 0); ledcWrite(M1B, 0); ledcWrite(M2A, 0); ledcWrite(M2B, 0); }
@@ -152,7 +153,7 @@ void serviceSerial() {
 void setup() {
   for (int pin : {M1A, M1B, M2A, M2B}) { pinMode(pin, OUTPUT); digitalWrite(pin, LOW); }
   Serial.begin(115200);
-  Serial.setTxTimeoutMs(0);   // native USB: never block on a host that stopped reading
+  Serial.setTxTimeoutMs(20);  // native USB: bounded wait, see sendLine()
   bool ok = true;
   for (int pin : {M1A, M1B, M2A, M2B}) ok = ledcAttach(pin, PWM_HZ, PWM_BITS) && ok;
   pwmOK = ok;
