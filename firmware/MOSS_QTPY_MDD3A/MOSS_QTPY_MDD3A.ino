@@ -66,7 +66,24 @@ void outputsZero() {
   else { digitalWrite(M1A, LOW); digitalWrite(M1B, LOW); digitalWrite(M2A, LOW); digitalWrite(M2B, LOW); }
   rampL.stop(millis()); rampR.stop(millis());
 }
-// MDD3A sign-magnitude: PWM on one input, the other held low. Zero = both low = brake.
+// Two drivers, one wiring (A0/A1 left, A2/A3 right), chosen at compile time:
+//   default            Cytron MDD3A, two PWM inputs per channel (M1A/M1B): PWM on one,
+//                      the other held low; zero = both low = brake.
+//   -DMOSS_DRIVER_MDD10A  Cytron MDD10A (ordered 10/10: 10 A / 30 A per channel), PWM + DIR per
+//                      channel: pinA = PWM1 (magnitude), pinB = DIR1 (held high or low through
+//                      the same LEDC channel: duty 100 % = high). Zero = PWM low = brake.
+//                      Build: arduino-cli compile ... --build-property build.extra_flags=-DMOSS_DRIVER_MDD10A
+//                      The MDD10A has NO reverse-polarity protection on Vmotor.
+#ifdef MOSS_DRIVER_MDD10A
+constexpr const char* DRIVER = "mdd10a";
+void motorWrite(int pinPWM, int pinDIR, int percent, bool invert) {
+  if (invert) percent = -percent;
+  uint32_t duty = (uint32_t(abs(percent)) * 1023U) / 100U;
+  ledcWrite(pinDIR, percent < 0 ? 1023U : 0U);
+  ledcWrite(pinPWM, duty);
+}
+#else
+constexpr const char* DRIVER = "mdd3a";
 void motorWrite(int pinA, int pinB, int percent, bool invert) {
   if (invert) percent = -percent;
   uint32_t duty = (uint32_t(abs(percent)) * 1023U) / 100U;
@@ -74,6 +91,7 @@ void motorWrite(int pinA, int pinB, int percent, bool invert) {
   else if (percent < 0) { ledcWrite(pinA, 0); ledcWrite(pinB, duty); }
   else                  { ledcWrite(pinA, 0); ledcWrite(pinB, 0); }
 }
+#endif
 bool readRegister(uint8_t reg, uint16_t& result) {
   Wire1.beginTransmission(INA_ADDRESS); Wire1.write(reg);
   if (Wire1.endTransmission(false) != 0) return false;
@@ -111,9 +129,9 @@ void telemetry() {
   }
   char out[560];
   snprintf(out, sizeof(out),
-    "{\"ms\":%lu,\"fw\":\"%s\",\"mode\":%d,\"reason\":\"%s\",\"target_pct\":[%d,%d],\"output_pct\":[%d,%d],"
+    "{\"ms\":%lu,\"fw\":\"%s\",\"driver\":\"%s\",\"mode\":%d,\"reason\":\"%s\",\"target_pct\":[%d,%d],\"output_pct\":[%d,%d],"
     "\"ramp_ms\":[%lu,%lu],\"ticks\":[%lld,%lld],\"invalid_edges\":[%lu,%lu],\"ina_ok\":%s,\"bus_mV\":%s,\"shunt_uV\":%s,\"current_mA\":%s}",
-    (unsigned long)millis(), FW, int(control.mode), control.reason, control.left, control.right,
+    (unsigned long)millis(), FW, DRIVER, int(control.mode), control.reason, control.left, control.right,
     rampL.sign*rampL.value, rampR.sign*rampR.value,
     (unsigned long)control.rampRiseMs, (unsigned long)control.rampFallMs,
     (long long)l, (long long)r, (unsigned long)il, (unsigned long)ir, inaOK ? "true" : "false", bus, shunt, current);
@@ -169,8 +187,8 @@ void setup() {
   attachInterrupt(ENC_R_A, encoderRight, CHANGE); attachInterrupt(ENC_R_B, encoderRight, CHANGE);
   Wire1.begin(SDA1, SCL1, 100000); Wire1.setTimeOut(5);
   inaConfigured = initIna();
-  { char banner[160]; snprintf(banner, sizeof(banner), "MOSS V0.4 firmware %s; USB CDC 115200; limit %d%%; ramp %lu/%lu ms per %%; type status",
-    FW, moss::MAX_PERCENT, (unsigned long)control.rampRiseMs, (unsigned long)control.rampFallMs); sendLine(banner); }
+  { char banner[160]; snprintf(banner, sizeof(banner), "MOSS V0.4 firmware %s; driver %s; USB CDC 115200; limit %d%%; ramp %lu/%lu ms per %%; type status",
+    FW, DRIVER, moss::MAX_PERCENT, (unsigned long)control.rampRiseMs, (unsigned long)control.rampFallMs); sendLine(banner); }
 }
 void loop() {
   uint32_t now = millis();
