@@ -12,7 +12,7 @@ Reply cmd(Control& c, const char* s, uint32_t t) {
 int main() {
   Control c;
   assert(c.mode == OFF && c.left == 0 && c.right == 0);
-  assert(c.rampRiseMs == 10 && c.rampFallMs == 5);
+  assert(c.rampRiseMs == 30 && c.rampFallMs == 15);
   assert(cmd(c,"drive 10 10",0)==NOT_ARMED);
   assert(cmd(c,"arm",10)==OK);
   assert(cmd(c,"drive 15 -20",20)==OK && c.left==15 && c.right==-20);
