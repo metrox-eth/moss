@@ -2,23 +2,24 @@
 // MOSS V0.4 control logic - same protocol as the V0.3 bench firmware (arm /
 // drive L R / stop / status / zero / test), plus a configurable ramp:
 //   ramp UP DOWN   milliseconds per 1 % of PWM, rise and fall separately
-// The V0.3 ramp was fixed at 10 ms per percent (0 -> 25 % in 0.25 s), too
-// abrupt for a rover carrying an arm. Defaults below: 0 -> 70 % in 2.1 s,
-// 70 -> 0 in 1.05 s, to be tuned on the floor with the arm mounted.
-// MAX_PERCENT stays a compile-time commissioning limit: raising it is a
-// decision taken after mechanical tests, not a serial command.
+// Defaults below: 0 -> 100 % in 1.0 s, 100 -> 0 in 0.5 s (10/10: the first
+// drive on the floor with the arm mounted, Laurent: "100 %", the 25 % bench
+// limit and the 30 ms rise never got the tracks moving); tune with "ramp".
+// MAX_PERCENT stays a compile-time limit, not a serial command: 100 since
+// 10/10 (the commissioning 25 % was the bench on blocks, 05/10); the host
+// side caps lower with MOSS_MAX_PCT when it wants to.
 #include <stdint.h>
 #include <stdlib.h>
 #include <string.h>
 #include <errno.h>
 
 namespace moss {
-constexpr int MAX_PERCENT = 25;  // Commissioning limit; raise only after mechanical tests.
+constexpr int MAX_PERCENT = 100; // Full PWM = the motors' rated 12 V (bench 05/10 was 25 %, raised 10/10).
 constexpr uint32_t COMMAND_TIMEOUT_MS = 300;
 constexpr uint32_t ARM_TIMEOUT_MS = 10000;
 constexpr uint32_t TEST_MS = 1000;
-constexpr uint32_t RAMP_RISE_MS_DEFAULT = 30;   // ms per 1 % up   (0 -> 70 % in 2.1 s)
-constexpr uint32_t RAMP_FALL_MS_DEFAULT = 15;   // ms per 1 % down (70 -> 0 % in 1.05 s)
+constexpr uint32_t RAMP_RISE_MS_DEFAULT = 10;   // ms per 1 % up   (0 -> 100 % in 1.0 s)
+constexpr uint32_t RAMP_FALL_MS_DEFAULT = 5;    // ms per 1 % down (100 -> 0 % in 0.5 s)
 constexpr uint32_t RAMP_MS_MIN = 1, RAMP_MS_MAX = 500;
 constexpr uint32_t REVERSE_DWELL_MS = 100;      // at zero before changing direction
 

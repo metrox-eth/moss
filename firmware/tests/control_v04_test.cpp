@@ -23,7 +23,7 @@ int main() {
   assert(cmd(c,"arm",330)==OK);
   assert(cmd(c,"drive 1 1",340)==OK);
   assert(cmd(c,"arm",350)==BUSY && c.mode==OFF);
-  const char* invalid[]={"drive 26 0","drive -26 0","drive 1 2 extra","drive 1",
+  const char* invalid[]={"drive 101 0","drive -101 0","drive 1 2 extra","drive 1",
     "drive nan 1","drive 1e2 0","drive 99999999999999999999 0","go","stop x","drive 1 1 x y",
     "ramp 0 10","ramp 501 10","ramp 10","ramp a b"};
   for(auto s: invalid) {

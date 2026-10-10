@@ -26,7 +26,7 @@ constexpr bool INVERT_LEFT = false, INVERT_RIGHT = false;
 constexpr float SHUNT_OHMS = 0.0f;   // voltage only (see V0.3 README)
 constexpr uint32_t PWM_HZ = 20000;
 constexpr int PWM_BITS = 10;
-constexpr const char* FW = "qtpy-mdd3a-v2";
+constexpr const char* FW = "qtpy-mdd3a-v3";
 
 moss::Control control;
 moss::Ramp rampL, rampR;
@@ -169,7 +169,8 @@ void setup() {
   attachInterrupt(ENC_R_A, encoderRight, CHANGE); attachInterrupt(ENC_R_B, encoderRight, CHANGE);
   Wire1.begin(SDA1, SCL1, 100000); Wire1.setTimeOut(5);
   inaConfigured = initIna();
-  sendLine("MOSS V0.4 firmware qtpy-mdd3a-v1; USB CDC 115200; limit 25%; ramp 30/15 ms per %; type status");
+  { char banner[160]; snprintf(banner, sizeof(banner), "MOSS V0.4 firmware %s; USB CDC 115200; limit %d%%; ramp %lu/%lu ms per %%; type status",
+    FW, moss::MAX_PERCENT, (unsigned long)control.rampRiseMs, (unsigned long)control.rampFallMs); sendLine(banner); }
 }
 void loop() {
   uint32_t now = millis();
