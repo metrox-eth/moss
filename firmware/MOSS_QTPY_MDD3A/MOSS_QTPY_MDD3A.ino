@@ -72,7 +72,7 @@ void outputsZero() {
 //   -DMOSS_DRIVER_MDD10A  Cytron MDD10A (ordered 10/10: 10 A / 30 A per channel), PWM + DIR per
 //                      channel: pinA = PWM1 (magnitude), pinB = DIR1 (held high or low through
 //                      the same LEDC channel: duty 100 % = high). Zero = PWM low = brake.
-//                      Build: arduino-cli compile ... --build-property build.extra_flags=-DMOSS_DRIVER_MDD10A
+//                      Build: arduino-cli compile ... --build-property "compiler.cpp.extra_flags=-DMOSS_DRIVER_MDD10A"
 //                      The MDD10A has NO reverse-polarity protection on Vmotor.
 #ifdef MOSS_DRIVER_MDD10A
 constexpr const char* DRIVER = "mdd10a";
