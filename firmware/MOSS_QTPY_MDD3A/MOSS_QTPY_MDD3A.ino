@@ -22,7 +22,7 @@ constexpr int ENC_L_A = SDA, ENC_L_B = SCL;   // GPIO 7 / 6 (primary I2C pins re
 constexpr int ENC_R_A = TX,  ENC_R_B = RX;    // GPIO 5 / 16
 // INA219 on the STEMMA QT connector = Wire1 (SDA1 = GPIO 41, SCL1 = GPIO 40)
 constexpr uint8_t INA_ADDRESS = 0x40;
-constexpr bool INVERT_LEFT = false, INVERT_RIGHT = false;
+constexpr bool INVERT_LEFT = true, INVERT_RIGHT = false;   // 10/10 first drive: left track ran backwards (Laurent); ticks follow
 constexpr float SHUNT_OHMS = 0.0f;   // voltage only (see V0.3 README)
 constexpr uint32_t PWM_HZ = 20000;
 constexpr int PWM_BITS = 10;
@@ -43,14 +43,14 @@ void ARDUINO_ISR_ATTR encoderLeft() {
   portENTER_CRITICAL_ISR(&encoderMux);
   uint8_t next = (gpio_get_level((gpio_num_t)ENC_L_A) << 1) | gpio_get_level((gpio_num_t)ENC_L_B);
   if ((prevL ^ next) == 3) badL = badL + 1;
-  ticksL += quadrature[(prevL << 2) | next]; prevL = next;
+  ticksL += INVERT_LEFT ? -quadrature[(prevL << 2) | next] : quadrature[(prevL << 2) | next]; prevL = next;
   portEXIT_CRITICAL_ISR(&encoderMux);
 }
 void ARDUINO_ISR_ATTR encoderRight() {
   portENTER_CRITICAL_ISR(&encoderMux);
   uint8_t next = (gpio_get_level((gpio_num_t)ENC_R_A) << 1) | gpio_get_level((gpio_num_t)ENC_R_B);
   if ((prevR ^ next) == 3) badR = badR + 1;
-  ticksR += quadrature[(prevR << 2) | next]; prevR = next;
+  ticksR += INVERT_RIGHT ? -quadrature[(prevR << 2) | next] : quadrature[(prevR << 2) | next]; prevR = next;
   portEXIT_CRITICAL_ISR(&encoderMux);
 }
 void sendLine(const char* text) {
