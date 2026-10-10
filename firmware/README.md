@@ -1,4 +1,10 @@
-# MOSS ESP32-S3 commissioning firmware
+# MOSS motor firmware
+
+**Current: [`MOSS_QTPY_MDD3A/`](MOSS_QTPY_MDD3A/)**, QT Py ESP32-S3 on its screw-terminal carrier, native USB, limit 100 % since the first drive on the floor (10 October 2026), `ramp` command, one build per driver (Cytron MDD3A by default, `-DMOSS_DRIVER_MDD10A` for the MDD10A, see its `bench/README.md`). Host test: `tests/control_v04_test.cpp`.
+
+The rest of this page is the V0.3 bench firmware on the DevKitC, kept as history.
+
+## MOSS ESP32-S3 commissioning firmware (V0.3, history)
 
 Reference source snapshot for the firmware restored after the 20 September 2026 bench tests. MAX_PERCENT=25. The temporary 100% firmware is not the default.
 

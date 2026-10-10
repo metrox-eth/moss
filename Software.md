@@ -2,28 +2,29 @@
 
 The stack is dimOS. The microcontroller drives the motors; dimOS, on the Jetson or the Pi, does teleop, recording, navigation and manipulation. The policies come later, from pooled data.
 
-**The motor firmware drove the prototype. The computer side is tested against a fake serial port only.**
+**The motor firmware drove the prototype, and since 10 October the rover is driven on the floor from a gamepad through dimOS (vector-dimos `moss-gamepad`, below).**
 
 ## Motor firmware, ESP32-S3
 
-[`firmware/`](firmware/). Newline-terminated commands over USB serial at 115200 baud:
+[`firmware/`](firmware/). Current board: Adafruit QT Py ESP32-S3 on its screw-terminal carrier, firmware `firmware/MOSS_QTPY_MDD3A/` (native USB; one build for the Cytron MDD3A, one for the MDD10A). The DevKitC snapshot `firmware/MOSS_ESP32S3/` is the V0.3 bench firmware, kept as history. Newline-terminated commands over USB serial at 115200 baud:
 
 | Command | What it does |
 |---|---|
 | `status` | one telemetry line |
 | `arm` | ready to drive, for 10 s if no drive comes |
-| `drive L R` | track speeds, −25 to +25 percent; must be repeated, 300 ms without one stops and disarms |
+| `drive L R` | track speeds, −100 to +100 percent; must be repeated, 300 ms without one stops and disarms |
+| `ramp UP DOWN` | milliseconds per percent, rise and fall; default 30 / 15 |
 | `test left 10` | one motor for one second, bench only |
 | `stop` | stops and disarms |
 | `zero` | resets the encoder counts (disarmed only) |
 
-Telemetry every 200 ms as JSON: mode, raw encoder ticks, battery voltage. Disarmed at boot, nothing moves by itself. The 25 % limit is the commissioning limit; it stays until speed control exists. No speed loop, no odometry in metres yet.
+Telemetry every 200 ms as JSON: firmware and driver names, mode, applied and target percent, raw encoder ticks, battery voltage. Disarmed at boot, nothing moves by itself. The 25 % commissioning limit was lifted after the first drive on the floor (10 October): full stick is 100 % PWM, the host caps lower when it wants to (`MOSS_MAX_PCT`). No speed loop, no odometry in metres yet.
 
 The board reads battery voltage through an INA219. It does not measure motor current: the shunt is not in the motor line.
 
-## Teleop and navigation: dimOS, `moss_dimos/`
+## Teleop and navigation: dimOS
 
-MOSS runs [dimOS](https://github.com/dimensionalOS) by Dimensional, on the Jetson or on the Pi: a gamepad module publishing a Twist behind a deadman, differential-drive kinematics, then navigation and the pick. Speed control and odometry come next.
+MOSS runs [dimOS](https://github.com/dimensionalOS) by Dimensional, on the Jetson or on the Pi. The base that drove on 10 October is the `moss-gamepad` blueprint of [vector-dimos](https://github.com/metrox-eth/vector-dimos): a gamepad module publishing a Twist behind a deadman, a tracked-base adapter that turns the twist into track percent and keeps the firmware's deadman fed, tank steering (past half turn stick the inner track reverses), a launcher with gates (pad present, board present, firmware disarmed, battery above its floor). `moss_dimos/` in this repository is the earlier skeleton of the same idea, cold-tested only. Navigation and the pick come next, then speed control and odometry.
 
 ## Bench tool, `moss_pi/`
 
