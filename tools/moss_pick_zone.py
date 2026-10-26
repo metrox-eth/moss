@@ -76,7 +76,7 @@ def build(offset_m: float):
     return doc
 
 
-def tape(image_path: str, joints_ticks: list[int], z_floor_m: float, offset_m: float):
+def tape(image_path: str, joints_ticks: list[int], z_floor_m: float, offset_m: float, v_max: int = 120, shrink_px: float = 12.0):
     """The zone from the black tape seen by the wrist camera: dark pixels (the board's squares sit inside the
     ring, the jaws are masked out), their convex hull, each hull pixel cast onto the floor plane z = z_floor
     through the calibrated camera at the given joints. Returns the document written to config/arm_pick_zone.json."""
@@ -87,14 +87,18 @@ def tape(image_path: str, joints_ticks: list[int], z_floor_m: float, offset_m: f
     img = cv2.imread(image_path)
     h, w = img.shape[:2]
     hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
-    dark = cv2.inRange(hsv, (0, 0, 0), (180, 160, 140))
+    dark = cv2.inRange(hsv, (0, 0, 0), (180, 160, v_max))
     green = cv2.inRange(hsv, (40, 80, 80), (90, 255, 255))
     dark[cv2.dilate(green, np.ones((7, 7), np.uint8)) > 0] = 0      # drawings on an annotated frame
     dark[640:, :] = 0; dark[:, :150] = 0; dark[:, 1130:] = 0        # the jaws, the frame's edges
     dark[560:, 880:] = 0                                            # the right jaw's base
+    dark[575:, :420] = 0                                            # the left jaw's base and its shadow
     dark = cv2.morphologyEx(dark, cv2.MORPH_OPEN, np.ones((5, 5), np.uint8))
     ys, xs = np.nonzero(dark)
-    hull = cv2.convexHull(np.stack([xs, ys], axis=1).astype(np.int32)).reshape(-1, 2)
+    hull = cv2.convexHull(np.stack([xs, ys], axis=1).astype(np.int32)).reshape(-1, 2).astype(np.float64)
+    # the hull sits on the tape's outer edge: pull it inward by about half the tape's width, onto the tape itself
+    c_px = hull.mean(0)
+    hull = hull - shrink_px * (hull - c_px) / (np.linalg.norm(hull - c_px, axis=1, keepdims=True) + 1e-9)
     K, dist = H.load_intrinsics()
     X = H.load_extrinsics() if hasattr(H, "load_extrinsics") else None
     if X is None:
@@ -142,10 +146,12 @@ def main(argv=None) -> int:
     pt.add_argument("--joints", required=True, help="five ticks read when the image was taken")
     pt.add_argument("--z-floor-cm", type=float, default=-2.0, help="where the chain puts the floor (hand-eye board mean z)")
     pt.add_argument("--offset-cm", type=float, default=0.0)
+    pt.add_argument("--v-max", type=int, default=120, help="darkness threshold (HSV value) for the tape")
+    pt.add_argument("--shrink-px", type=float, default=12.0, help="pull the outer edge onto the tape's middle")
     sub.add_parser("show")
     a = ap.parse_args(argv)
     if a.cmd == "tape":
-        doc, hull = tape(a.image, [int(t) for t in a.joints.split(",")], a.z_floor_cm / 100.0, a.offset_cm / 100.0)
+        doc, hull = tape(a.image, [int(t) for t in a.joints.split(",")], a.z_floor_cm / 100.0, a.offset_cm / 100.0, a.v_max, a.shrink_px)
         xy = np.array(doc["polygon_xy_m"])
         print(f"tape: hull of {len(hull)} px -> {len(xy)} floor points, x {xy[:, 0].min():.3f}..{xy[:, 0].max():.3f} m, "
               f"y {xy[:, 1].min():.3f}..{xy[:, 1].max():.3f} m -> {ZONE}")
