@@ -123,6 +123,15 @@ def main(argv=None) -> int:
         centre = uv.mean(0)
         order = np.argsort(np.arctan2(uv[:, 1] - centre[1], uv[:, 0] - centre[0]))
         zone_poly = uv[order].astype(np.int32)
+        zone_file = ROOT / "config" / "arm_pick_zone.json"
+        if zone_file.exists():
+            # the smooth, widened contour built by tools/moss_pick_zone.py replaces the straight lines
+            zdoc = json.loads(zone_file.read_text())
+            zxy = np.array([[x, y, 0.0] for x, y in zdoc["polygon_xy_m"]], float)
+            zuv, _ = project(zxy, T_base_cam, K, dist)
+            zone_poly = zuv.astype(np.int32)
+            cv2.putText(shown, f"pick zone (+{zdoc['offset_m'] * 100:g} cm)", (int(zuv[0][0]) + 8, int(zuv[0][1]) - 10),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 220, 0), 2)
         cv2.polylines(shown, [zone_poly], True, (0, 220, 0), 3)
         for (u, v), m, zz in zip(uv, marks, z):
             cv2.circle(shown, (int(u), int(v)), 7, (0, 220, 0), -1)
