@@ -13,6 +13,7 @@ unless the arm starts near the pose the sequence expects (drive, or look_down fo
 from __future__ import annotations
 
 import argparse
+import json
 import os
 import sys
 import time
@@ -27,6 +28,7 @@ POSES = ROOT / "config" / "arm_observe_poses.json"
 NEAR_RAD = 0.17                  # pan, lift, elbow, wrist: within ~110 ticks of the expected start pose
 NEAR_ROLL_RAD = 0.35             # the roll is looser (it does not change the arm's silhouette)
 SLOW = 100.0                     # ticks per second, the pace used when the observation pose was first set
+ROLL_CAMERA_UP_TICKS = (3000, 3500)   # wrist_roll band where the camera is on top of the gripper (set by eye on the robot)
 
 
 def near(q: list[float], ref: list[float]) -> bool:
@@ -44,6 +46,11 @@ def main() -> int:
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--where", action="store_true", help="read the joints and exit")
     ap.add_argument("--phase", default=None, help="play this one move of the file (the arm must be near its start pose)")
+    ap.add_argument("--allow-roll", action="store_true", help="play a pose whose roll puts the camera under the gripper (never by default)")
+    ap.add_argument("--free", action="store_true", help="torque off (someone holds the arm): the arm is moved by hand")
+    ap.add_argument("--mark", default=None, metavar="NAME", help="read the servos and append the pose to --marks")
+    ap.add_argument("--marks", default=str(ROOT / "config" / "arm_reach_marks.json"))
+    ap.add_argument("--hold", action="store_true", help="torque on where the arm is, no jump")
     ap.add_argument("--nudge", default=None, metavar="JOINT:TICKS",
                     help="move one joint by a few ticks from where it is (e.g. shoulder_pan:+34), torque stays on")
     ap.add_argument("--allow-turn", action="store_true",
@@ -60,6 +67,15 @@ def main() -> int:
     else:
         cycle = A.load_cycle(a.poses, speed=a.speed, stop_after="observe", pick_pose="pick")
     steps = list(cycle.steps) if cycle else []
+    # the wrist camera sits on top of the gripper only for a roll near 3214-3254 ticks (drive 3221): any pose
+    # of a sequence outside that band turns the camera under the gripper. Three times on the same day,
+    # through intermediate poses taken from the delivered cycle. Refused here, pose by pose, before anything moves.
+    for s in steps:
+        roll = A.rad_to_ticks(s.q_to[4])
+        if not (ROLL_CAMERA_UP_TICKS[0] <= roll <= ROLL_CAMERA_UP_TICKS[1]) and not a.allow_roll:
+            print(f"refused: pose {s.end} has wrist_roll {roll}, outside {ROLL_CAMERA_UP_TICKS} (camera under the gripper); "
+                  f"fix the pose or pass --allow-roll", file=sys.stderr)
+            return 3
     if cycle:
         print(f"sequence: {' -> '.join([steps[0].start] + [s.end for s in steps])}, "
               f"{sum(s.duration_s for s in steps):.1f} s at {a.speed:g} ticks/s")
@@ -85,6 +101,34 @@ def main() -> int:
         q_now, gap_now = list(q[:A.ARM_DOF]), float(q[A.ARM_DOF])
         print(f"arm now: {ticks(q_now)}  gap {gap_now * 1000:.0f} mm")
         if a.where:
+            where_only = True
+            return 0
+        if a.free:
+            # the hand on the arm, then the torque off: the arm is moved by hand to the poses it should learn
+            ad.deactivate()
+            where_only = True
+            print("torque OFF: move the arm by hand; --mark NAME reads a pose, --hold puts the torque back where it is")
+            return 0
+        if a.mark:
+            marks = Path(a.marks)
+            doc = json.loads(marks.read_text()) if marks.exists() else {"about": "poses set by hand on the robot, torque off, read from the servos", "marks": []}
+            doc["marks"].append({"name": a.mark, "ticks": [A.rad_to_ticks(v) for v in q_now], "rad": q_now,
+                                 "gap_mm": round(gap_now * 1000), "at": time.strftime("%H:%M:%S")})
+            marks.write_text(json.dumps(doc, indent=1))
+            print(f"marked {a.mark}: {ticks(q_now)}  gap {gap_now * 1000:.0f} mm  ({len(doc['marks'])} marks in {marks})")
+            where_only = True
+            return 0
+        if a.hold:
+            # the goal register first, where the arm is, then the torque: no jump to a stale goal.
+            # The adapter only writes goals when it thinks it is enabled: tell it so for this write.
+            ad._enabled = True  # noqa: SLF001
+            if not ad.write_joint_positions(list(q_now) + [gap_now]):
+                print("refused: could not write the goal where the arm is; torque stays off", file=sys.stderr)
+                ad._enabled = False  # noqa: SLF001
+                return 2
+            ad.activate()
+            print(f"torque ON, holding {ticks(q_now)}")
+            ad._enabled = False  # noqa: SLF001  (keep it on through disconnect)
             where_only = True
             return 0
         if a.nudge:
