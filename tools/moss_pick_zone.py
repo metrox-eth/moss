@@ -88,6 +88,10 @@ def tape(image_path: str, joints_ticks: list[int], z_floor_m: float, offset_m: f
     h, w = img.shape[:2]
     hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
     dark = cv2.inRange(hsv, (0, 0, 0), (180, 160, v_max))
+    # the tape's crown (top of the ring) is lit harder by the lamps: a looser threshold there only
+    loose = cv2.inRange(hsv, (0, 0, 0), (180, 160, min(255, v_max + 30)))
+    band = np.zeros_like(loose); band[230:310, 470:820] = 255
+    dark = cv2.bitwise_or(dark, cv2.bitwise_and(loose, band))
     green = cv2.inRange(hsv, (40, 80, 80), (90, 255, 255))
     dark[cv2.dilate(green, np.ones((7, 7), np.uint8)) > 0] = 0      # drawings on an annotated frame
     dark[640:, :] = 0; dark[:, :150] = 0; dark[:, 1130:] = 0        # the jaws, the frame's edges
