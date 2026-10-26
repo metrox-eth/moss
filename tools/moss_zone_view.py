@@ -143,7 +143,7 @@ def main(argv=None) -> int:
         model = YOLO(os.path.expanduser("~/.local/state/moss/models/yoloe-11s-seg.pt"))
         model.set_classes(LITTER_WORDS, model.get_text_pe(LITTER_WORDS))
         t0 = time.time()
-        r = model.predict(frame, imgsz=640, conf=0.2, verbose=False)[0]
+        r = model.predict(frame, imgsz=640, conf=0.1, verbose=False)[0]   # 0.2 missed the can inside the zone; 0.1 finds both cans at 0.18-0.19
         det = [(r.names[int(c)], round(float(s), 2)) for c, s in zip(r.boxes.cls, r.boxes.conf)]
         print(f"YOLOE: {len(det)} detections in {(time.time() - t0) * 1000:.0f} ms: {det}")
         shown = r.plot(img=shown, line_width=2)
