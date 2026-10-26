@@ -63,7 +63,7 @@ def main() -> int:
     elif a.phase:
         cycle = A.load_cycle(a.poses, speed=a.speed, start=a.phase, stop_after=a.phase, pick_pose="pick")
     elif a.back:
-        cycle = A.load_cycle(a.poses, speed=a.speed, start="leave_observe", pick_pose="pick")
+        cycle = A.load_cycle(a.poses, speed=a.speed, start="leave_observe", stop_after="to_drive", pick_pose="pick")
     else:
         cycle = A.load_cycle(a.poses, speed=a.speed, stop_after="observe", pick_pose="pick")
     steps = list(cycle.steps) if cycle else []
