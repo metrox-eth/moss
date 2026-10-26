@@ -27,8 +27,9 @@ from moss_dimos import arm as A  # noqa: E402
 POSES = ROOT / "config" / "arm_observe_poses.json"
 NEAR_RAD = 0.17                  # pan, lift, elbow, wrist: within ~110 ticks of the expected start pose
 NEAR_ROLL_RAD = 0.35             # the roll is looser (it does not change the arm's silhouette)
-SLOW = 100.0                     # ticks per second, the pace used when the observation pose was first set
+SLOW = 250.0                     # ticks per second of the largest joint per move (the servos profile the motion themselves)
 ROLL_CAMERA_UP_TICKS = (3000, 3500)   # wrist_roll band where the camera is on top of the gripper (set by eye on the robot)
+OVERLOAD = 950                   # servo load (of 1000) that means the arm is pressing against something: stop and hold
 
 
 def near(q: list[float], ref: list[float]) -> bool:
@@ -186,27 +187,47 @@ def main() -> int:
             steps[0] = A.Step(phase=steps[0].phase, start=steps[0].start, end=steps[0].end,
                               q_from=q_now, q_to=steps[0].q_to, gap_from_m=gap_now, gap_to_m=steps[0].gap_to_m,
                               timed_s=steps[0].timed_s, duration_s=steps[0].duration_s)
-        traj = A.cycle_trajectory(steps, sim=False)
-        pts = list(traj.points)
-        print(f"trajectory: {len(pts)} points, {float(pts[-1].time_from_start):.1f} s")
         if not ad.activate():
             print("activate failed", file=sys.stderr)
             return 2
-        worst = {j: 0.0 for j in A.ARM_JOINTS}
-        t0 = time.monotonic()
-        for p in pts:
-            tp = float(p.time_from_start)
-            while time.monotonic() - t0 < tp:
-                time.sleep(0.002)
-            ad.write_joint_positions(list(p.positions))
-            cur = ad.read_joint_positions()
-            if cur:
-                for i, j in enumerate(A.ARM_JOINTS):
-                    worst[j] = max(worst[j], abs(cur[i] - p.positions[i]) * A.TICKS_PER_RAD)
-        time.sleep(1.0)
-        fin = list(ad.read_joint_positions() or [])
-        print("done: " + ticks(fin[:A.ARM_DOF]))
-        print("worst following error (ticks): " + " ".join(f"{j} {v:.0f}" for j, v in worst.items()))
+        # One frank goal per move, the servos' own profile doing the motion: acceleration at the maximum
+        # (what LeRobot sets on its SO-101s), each joint's speed chosen so that all joints arrive together,
+        # the largest joint moving at --speed ticks/s. Streaming the goal in 1-2 tick steps at 50 Hz gave
+        # the loaded shoulder no torque at all and left it 950 ticks behind the others (26/10).
+        fin = list(q_now)
+        for s in steps:
+            d_ticks = [abs(b - a) * A.TICKS_PER_RAD for a, b in zip(fin, s.q_to)]
+            T = max(max(d_ticks) / a.speed, 0.6)
+            for i, j in enumerate(A.ARM_JOINTS):
+                sid = ad._ids[j]  # noqa: SLF001
+                ad._bus.write1(sid, 41, 254)  # noqa: SLF001
+                ad._bus.write2(sid, 46, max(20, int(d_ticks[i] / T)))  # noqa: SLF001
+            ad.write_joint_positions(list(s.q_to) + [s.gap_to_m])
+            t0 = time.monotonic()
+            overload_since = None
+            aborted = False
+            while time.monotonic() - t0 < T + 0.8:
+                time.sleep(0.05)
+                loads = [((ad._bus.read2(ad._ids[j], 60) or 0) & 0x3FF) for j in ("shoulder_lift", "elbow_flex")]  # noqa: SLF001
+                if max(loads) >= OVERLOAD:
+                    overload_since = overload_since or time.monotonic()
+                    if time.monotonic() - overload_since > 0.6:
+                        cur = list(ad.read_joint_positions() or fin + [s.gap_to_m])
+                        ad.write_joint_positions(cur[:A.ARM_DOF] + [cur[A.ARM_DOF] if len(cur) > A.ARM_DOF else s.gap_to_m])
+                        print(f"ABORT {s.phase}: shoulder/elbow load {loads} for 0.6 s (something is pressed against), "
+                              f"goal set to where the arm is: {ticks(cur[:A.ARM_DOF])}", file=sys.stderr)
+                        aborted = True
+                        break
+                else:
+                    overload_since = None
+            cur = list(ad.read_joint_positions() or [])
+            fin = cur[:A.ARM_DOF] if len(cur) >= A.ARM_DOF else list(s.q_to)
+            lag = [abs(f - t) * A.TICKS_PER_RAD for f, t in zip(fin, s.q_to)]
+            print(f"  {s.phase:14s} {T:4.1f} s -> {ticks(fin)}  short by " +
+                  " ".join(f"{j} {v:.0f}" for j, v in zip(A.ARM_JOINTS, lag)) + " ticks")
+            if aborted:
+                return 4
+        print("done: " + ticks(fin))
         ends_in_drive = a.back and near(fin[:A.ARM_DOF], A.drive_pose_rad())
         return 0
     finally:
