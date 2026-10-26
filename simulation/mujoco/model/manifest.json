@@ -1,0 +1,4319 @@
+{
+  "revision": "V0.6 / R92",
+  "coordinates": "metres; X forward, Y left, Z up; ground Z=0",
+  "configuration": "one-piece hull/cover; Jetson + RealSense; no loose cables or battery interiors",
+  "sources": {
+    "MOSS_Printable_BRep_Parts_R92.step": {
+      "sha256": "85e663ca8b7b784560de1649d18552fe11d97ee142986222d70d54dcbe573aeb",
+      "public_url": "https://github.com/metrox-eth/moss/releases/download/v0.6-r92/MOSS_Printable_BRep_Parts_R92.step"
+    },
+    "MOSS_R31.xml": {
+      "sha256": "e19a05b4492a0f87ad094a44f409ae53eabb37999d34f62fc9c6db5879b8fbd2",
+      "public_url": null
+    },
+    "kinematics.json": {
+      "sha256": "dbc096f7f7beb39b53a4958a3eae4dd451045b49e50feb26b611380977b8b0a1",
+      "public_url": null
+    },
+    "SO101_Base.stl": {
+      "sha256": "bb139655c24730bb3d0e1c5ee6c801cfae97c5d1c2ddeef3684801a22551128e",
+      "public_url": null
+    },
+    "SO101_Shoulder_rotation.stl": {
+      "sha256": "0dbb9c84750ac6fd8e7b4529d407a1f4ef6e05f035d88d5d977d95d7d8e5bcf6",
+      "public_url": null
+    },
+    "SO101_Base_motor_holder.stl": {
+      "sha256": "517d5c0426b77fb9c77c1ee725efd16b50375557315db100d658cb3961d69768",
+      "public_url": null
+    },
+    "SO101_Shoulder_bracket_cable_clip.stl": {
+      "sha256": "4441127a3a7260ffd03205706cf8de75efdad202701f7e9e4c1f17138f162a9c",
+      "public_url": null
+    },
+    "SO101_Upper_arm_cable_clip.stl": {
+      "sha256": "6f5bc515e84edf766f3836c878e7f905c05800e05bfef4e1c855eea87dcedd07",
+      "public_url": null
+    },
+    "SO101_Forearm_cable_clip.stl": {
+      "sha256": "46189448174ccb6c09b7f1c4e503e24b2fe513f4015345737cda6a4a9742b8dc",
+      "public_url": null
+    },
+    "SO101_Wrist_cable_clip.stl": {
+      "sha256": "cca0d36fd3f7792bffb75729ff278dcf0cd55573963f909a8492e712b31d8b3a",
+      "public_url": null
+    },
+    "SO101_Wrist_bracket.stl": {
+      "sha256": "2ed54e713657f810193759ee3b8436768801a27b30adb987d1c0af47870414aa",
+      "public_url": null
+    },
+    "part_0281.stl": {
+      "sha256": "eff6193dc44de3d30bb9866cb44ff3d4d2f858094db1a4b86c4d743f82ff83a7",
+      "public_url": null
+    },
+    "part_0282.stl": {
+      "sha256": "23aaaa479bba04ce88cdecad53d7e24f7532a8000e7e30d1f32720533f57eda3",
+      "public_url": null
+    },
+    "part_0283.stl": {
+      "sha256": "24e6081cbae708ab8c2e0954e3753cc9b37a84dce766bb6e0d54589f3ced91a7",
+      "public_url": null
+    },
+    "part_0285.stl": {
+      "sha256": "6a15d465658492d9477b1bc3b50e619cc396d687bde9e2a265277b1a07093b94",
+      "public_url": null
+    },
+    "part_0287.stl": {
+      "sha256": "5a4c2cd973eebaf301fbfe56778e1bd39199bc43cf14035eaa2820cd467e9179",
+      "public_url": null
+    },
+    "part_0288.stl": {
+      "sha256": "bb899f17ff92b03ef245d3a0ee393a993c2348a7d82875fd136a84fc79ab886b",
+      "public_url": null
+    },
+    "Track_Left_Mounted_Reference_reference_mesh.json": {
+      "sha256": "9d7d8adabcdb23ab8ffd930fa7ae5330eb80cdb4ef05998e76121bed611fd056",
+      "public_url": null
+    },
+    "Track_Right_Mounted_Reference_reference_mesh.json": {
+      "sha256": "56544b5ad1997b22378fb66d9ece4c43be298d943b43e19511ace091f2872368",
+      "public_url": null
+    }
+  },
+  "parts": [
+    {
+      "name": "Hull_R92",
+      "rig": "static",
+      "file": "meshes/Hull_R92.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.164,
+          -0.1185,
+          0.024
+        ],
+        [
+          0.164,
+          0.1185,
+          0.09
+        ]
+      ],
+      "triangles": 89997,
+      "volume_m3": 0.0006470774805188544,
+      "watertight": false,
+      "sha256": "2be060106d66b1d9a0f1d3de3f852b56323d4a865c8959109c943646fb3fe9c9",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Left_Outer_Track_Frame_R32",
+      "rig": "static",
+      "file": "meshes/Left_Outer_Track_Frame_R32.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.144,
+          0.1545,
+          0.021500000000000002
+        ],
+        [
+          0.161,
+          0.166,
+          0.06520000000000001
+        ]
+      ],
+      "triangles": 9716,
+      "volume_m3": 0.00011913742083428655,
+      "watertight": true,
+      "sha256": "b6b4abc054e739931fcf0baa736016d65b597e8bf034ea84dce6a18b658b0b41",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Right_Outer_Track_Frame_R32",
+      "rig": "static",
+      "file": "meshes/Right_Outer_Track_Frame_R32.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.144,
+          -0.166,
+          0.021500000000000002
+        ],
+        [
+          0.161,
+          -0.1545,
+          0.06520000000000001
+        ]
+      ],
+      "triangles": 9716,
+      "volume_m3": 0.00011913742083428655,
+      "watertight": true,
+      "sha256": "a92c7827e8be8101b6da93058092f6cbd88632322d0d2d1e3e11bb217590ad53",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Left_inner_tensioner_cover_R12_C2",
+      "rig": "static",
+      "file": "meshes/Left_inner_tensioner_cover_R12_C2.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.097,
+          0.099,
+          0.0216
+        ],
+        [
+          0.161,
+          0.102,
+          0.0616
+        ]
+      ],
+      "triangles": 2108,
+      "volume_m3": 6.77476608688751e-06,
+      "watertight": true,
+      "sha256": "a7d848f30a7f08bf737e6387fc2d15aef48aab37067f461abe18a14f12988ad2",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Right_inner_tensioner_cover_R12_C2",
+      "rig": "static",
+      "file": "meshes/Right_inner_tensioner_cover_R12_C2.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.097,
+          -0.102,
+          0.0216
+        ],
+        [
+          0.161,
+          -0.099,
+          0.0616
+        ]
+      ],
+      "triangles": 2108,
+      "volume_m3": 6.77476608688751e-06,
+      "watertight": true,
+      "sha256": "b132127a2de738d07997d081a435911e1f43a57320547b3fe6bca835325819c1",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Left_inner_track_frame_R12_C2",
+      "rig": "static",
+      "file": "meshes/Left_inner_track_frame_R12_C2.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.081,
+          0.102,
+          0.021500000000000002
+        ],
+        [
+          0.161,
+          0.1135,
+          0.0655
+        ]
+      ],
+      "triangles": 6408,
+      "volume_m3": 5.7905067376964754e-05,
+      "watertight": true,
+      "sha256": "e726a38ae1e147269418504832ef8a1ddfe99c5c09ec3cccf9e3e54440d14739",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Right_inner_track_frame_R12_C2",
+      "rig": "static",
+      "file": "meshes/Right_inner_track_frame_R12_C2.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.081,
+          -0.1135,
+          0.021500000000000002
+        ],
+        [
+          0.161,
+          -0.102,
+          0.0655
+        ]
+      ],
+      "triangles": 6408,
+      "volume_m3": 5.790506737696473e-05,
+      "watertight": true,
+      "sha256": "cfc8884329f0f13f0bb16fa0098eb2e2e3d276af70acd89c16a0b043eb336021",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Left_Spacer_cross_member_-40",
+      "rig": "static",
+      "file": "meshes/Left_Spacer_cross_member_-40.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.043,
+          0.1135,
+          0.052000000000000005
+        ],
+        [
+          -0.029,
+          0.1545,
+          0.066
+        ]
+      ],
+      "triangles": 672,
+      "volume_m3": 5.682739366241125e-06,
+      "watertight": true,
+      "sha256": "93ca77deee682762d7cf6c74a2322c5d4b17e65bb30d83a74ef7f8eea48e9a17",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Left_Spacer_cross_member_40",
+      "rig": "static",
+      "file": "meshes/Left_Spacer_cross_member_40.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.037,
+          0.1135,
+          0.052000000000000005
+        ],
+        [
+          0.051,
+          0.1545,
+          0.066
+        ]
+      ],
+      "triangles": 672,
+      "volume_m3": 5.682739366241124e-06,
+      "watertight": true,
+      "sha256": "31ba08f9f72cef52a3034bed84d16b00cfe0c358c1e8b6a6423bd154a3cf721d",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Right_Spacer_cross_member_-40",
+      "rig": "static",
+      "file": "meshes/Right_Spacer_cross_member_-40.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.043,
+          -0.1545,
+          0.052000000000000005
+        ],
+        [
+          -0.029,
+          -0.1135,
+          0.066
+        ]
+      ],
+      "triangles": 672,
+      "volume_m3": 5.6827393662411246e-06,
+      "watertight": true,
+      "sha256": "f76d21b93920e50b08a3851edb6d1501488d91156a3ff87592d7d52135867d9a",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Right_Spacer_cross_member_40",
+      "rig": "static",
+      "file": "meshes/Right_Spacer_cross_member_40.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.037,
+          -0.1545,
+          0.052000000000000005
+        ],
+        [
+          0.051,
+          -0.1135,
+          0.066
+        ]
+      ],
+      "triangles": 672,
+      "volume_m3": 5.682739366241127e-06,
+      "watertight": true,
+      "sha256": "ab3a8148cc25e61f8d9d6ffe31477ee60bb8ddb6e735d1f24b98087bca786a8a",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Left_Spacer_road_wheel_-70_inner_ID01_R24",
+      "rig": "static",
+      "file": "meshes/Left_Spacer_road_wheel_-70_inner_ID01_R24.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.0698,
+          0.1135,
+          0.0264
+        ],
+        [
+          -0.062200000000000005,
+          0.121,
+          0.034
+        ]
+      ],
+      "triangles": 1606,
+      "volume_m3": 1.7443571563648227e-07,
+      "watertight": true,
+      "sha256": "9f904f7e95a13a4fa7d8509cb5414fb8fcd57daf034d47ebe151d07ab612284e",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Left_Spacer_road_wheel_0_inner_ID01_R24",
+      "rig": "static",
+      "file": "meshes/Left_Spacer_road_wheel_0_inner_ID01_R24.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.0002,
+          0.1135,
+          0.0264
+        ],
+        [
+          0.0078,
+          0.121,
+          0.034
+        ]
+      ],
+      "triangles": 1606,
+      "volume_m3": 1.7443571563648283e-07,
+      "watertight": true,
+      "sha256": "4c6b2a8e18f6f937019728ccc20b58bdab55a1a529f10860a878496cf975ef74",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Left_Spacer_road_wheel_70_inner_ID01_R24",
+      "rig": "static",
+      "file": "meshes/Left_Spacer_road_wheel_70_inner_ID01_R24.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.0702,
+          0.1135,
+          0.0264
+        ],
+        [
+          0.0778,
+          0.121,
+          0.034
+        ]
+      ],
+      "triangles": 1606,
+      "volume_m3": 1.7443571563648283e-07,
+      "watertight": true,
+      "sha256": "473338534eb81c56a2a6e580f0744d0d424ec62455280c33ed000a075237e537",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Right_Spacer_road_wheel_-70_inner_ID01_R24",
+      "rig": "static",
+      "file": "meshes/Right_Spacer_road_wheel_-70_inner_ID01_R24.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.0698,
+          -0.121,
+          0.0264
+        ],
+        [
+          -0.062200000000000005,
+          -0.1135,
+          0.034
+        ]
+      ],
+      "triangles": 1606,
+      "volume_m3": 1.7443571563648254e-07,
+      "watertight": true,
+      "sha256": "2a6f0c9335507c83f7c6336876c98d23f1446d1126e57c1e69be4d358911bdb0",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Right_Spacer_road_wheel_0_inner_ID01_R24",
+      "rig": "static",
+      "file": "meshes/Right_Spacer_road_wheel_0_inner_ID01_R24.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.0002,
+          -0.121,
+          0.0264
+        ],
+        [
+          0.0078,
+          -0.1135,
+          0.034
+        ]
+      ],
+      "triangles": 1606,
+      "volume_m3": 1.7443571563648283e-07,
+      "watertight": true,
+      "sha256": "6e3baf5548c9779ac72b19d9ec57a1a7249f0c6b8a2bbdf4fd115e806d36fcc6",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Right_Spacer_road_wheel_70_inner_ID01_R24",
+      "rig": "static",
+      "file": "meshes/Right_Spacer_road_wheel_70_inner_ID01_R24.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.0702,
+          -0.121,
+          0.0264
+        ],
+        [
+          0.0778,
+          -0.1135,
+          0.034
+        ]
+      ],
+      "triangles": 1606,
+      "volume_m3": 1.7443571563648249e-07,
+      "watertight": true,
+      "sha256": "7a3f678c40edb9653d45062040ba69778b49a4736f9ac04fb136e5412bf12a58",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Left_Spacer_tensioner_inner_ID05_R24",
+      "rig": "static",
+      "file": "meshes/Left_Spacer_tensioner_inner_ID05_R24.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.123,
+          0.1107,
+          0.033614087480217
+        ],
+        [
+          0.135,
+          0.1261,
+          0.045614087480217
+        ]
+      ],
+      "triangles": 5200,
+      "volume_m3": 8.865471990721838e-07,
+      "watertight": true,
+      "sha256": "0eebb10713c66effc0f92d93b8d4aa495d8d90d580c5a583868760ff183bca1a",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Right_Spacer_tensioner_inner_ID05_R24",
+      "rig": "static",
+      "file": "meshes/Right_Spacer_tensioner_inner_ID05_R24.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.123,
+          -0.1261,
+          0.033614087480217
+        ],
+        [
+          0.135,
+          -0.1107,
+          0.045614087480217
+        ]
+      ],
+      "triangles": 5200,
+      "volume_m3": 8.865471990721854e-07,
+      "watertight": true,
+      "sha256": "80c48132737190b8ec9c2ebc2fae03cd2c7156415f36f42ae97f6477010242a2",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Left_Spacer_drive_inner_ID03_R24",
+      "rig": "static",
+      "file": "meshes/Left_Spacer_drive_inner_ID03_R24.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.1255,
+          0.1165,
+          0.035114087480217
+        ],
+        [
+          -0.1165,
+          0.12409999999999999,
+          0.044114087480217
+        ]
+      ],
+      "triangles": 3286,
+      "volume_m3": 2.3824827810892598e-07,
+      "watertight": true,
+      "sha256": "e2737a8100e79fc6b4bab55509fe2fe914a88092693d3586ecf62623e3af277d",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Right_Spacer_drive_inner_ID03_R24",
+      "rig": "static",
+      "file": "meshes/Right_Spacer_drive_inner_ID03_R24.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.1255,
+          -0.12409999999999999,
+          0.035114087480217
+        ],
+        [
+          -0.1165,
+          -0.1165,
+          0.044114087480217
+        ]
+      ],
+      "triangles": 3286,
+      "volume_m3": 2.3824827810892622e-07,
+      "watertight": true,
+      "sha256": "83f66b9c1840f75a873dadd1188df6721ae0be8dc5714e4041ddedfc2846abf9",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "02_Motor_access_hatch_10_screws",
+      "rig": "static",
+      "file": "meshes/02_Motor_access_hatch_10_screws.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.1586,
+          -0.1056,
+          0.023999999999999994
+        ],
+        [
+          -0.08940000000000001,
+          0.1056,
+          0.0265
+        ]
+      ],
+      "triangles": 7108,
+      "volume_m3": 3.608838066110067e-05,
+      "watertight": true,
+      "sha256": "5952f8ef7014a2051611d8efbe84ee6d402b30a5505682010967e7f9f7ffaa90",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Motor_Mount_Left_R90",
+      "rig": "static",
+      "file": "meshes/Motor_Mount_Left_R90.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.1545,
+          0.0705,
+          0.027
+        ],
+        [
+          -0.092,
+          0.1045,
+          0.069
+        ]
+      ],
+      "triangles": 5944,
+      "volume_m3": 3.118325042131911e-05,
+      "watertight": true,
+      "sha256": "cde478741ffbfdf2a048f82697fbd7ca44fd8e51bccf67669968f1288b2fa573",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Motor_Mount_Right_R90",
+      "rig": "static",
+      "file": "meshes/Motor_Mount_Right_R90.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.1545,
+          -0.1045,
+          0.027
+        ],
+        [
+          -0.092,
+          -0.0705,
+          0.069
+        ]
+      ],
+      "triangles": 5944,
+      "volume_m3": 3.1183250421319155e-05,
+      "watertight": true,
+      "sha256": "5ce86dc96d5c0bd82c614c4cf8cb7e732ce500268102ad824744dfff6e0671db",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "05_Left_bearing_retainer",
+      "rig": "static",
+      "file": "meshes/05_Left_bearing_retainer.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.136557368354874,
+          0.1085,
+          0.02936408748021699
+        ],
+        [
+          -0.105442631645126,
+          0.1105,
+          0.057114087480217
+        ]
+      ],
+      "triangles": 1704,
+      "volume_m3": 9.190281333247981e-07,
+      "watertight": true,
+      "sha256": "cb9de5d8c64b71ac8f72498eabb5e263eb5c8dd9ca12e90f07655b8890fc37aa",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "06_Right_bearing_retainer",
+      "rig": "static",
+      "file": "meshes/06_Right_bearing_retainer.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.136557368354874,
+          -0.1105,
+          0.02936408748021699
+        ],
+        [
+          -0.105442631645126,
+          -0.1085,
+          0.057114087480217
+        ]
+      ],
+      "triangles": 1704,
+      "volume_m3": 9.190281333247992e-07,
+      "watertight": true,
+      "sha256": "121e299be2b9aabf83cfdaa40b1627a9ca19bc53dad8181701b9ce3ddd3c2cb5",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Lidar_Base_R84",
+      "rig": "static",
+      "file": "meshes/Lidar_Base_R84.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.1225,
+          0.0455,
+          0.09
+        ],
+        [
+          0.163,
+          0.098,
+          0.10200000000000001
+        ]
+      ],
+      "triangles": 1820,
+      "volume_m3": 1.2478434760936643e-05,
+      "watertight": true,
+      "sha256": "41013126a0d55dc0755cbf06f1aa540d2a87a8815f12bffb8614b203ce21bb02",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Lidar_dovetail_carriage_R21",
+      "rig": "static",
+      "file": "meshes/Lidar_dovetail_carriage_R21.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.105,
+          0.055,
+          0.0943
+        ],
+        [
+          0.163,
+          0.113,
+          0.10999999999999999
+        ]
+      ],
+      "triangles": 4126,
+      "volume_m3": 3.0205827580442397e-05,
+      "watertight": true,
+      "sha256": "5df597b6e2801f42a6ea2c848e26738d04c68b48fc278c5d847ebc6d7235a0f3",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Left_Spacer_road_wheel_-70_outer_ID02_R24",
+      "rig": "static",
+      "file": "meshes/Left_Spacer_road_wheel_-70_outer_ID02_R24.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.0698,
+          0.149,
+          0.0264
+        ],
+        [
+          -0.062200000000000005,
+          0.1545,
+          0.034
+        ]
+      ],
+      "triangles": 2452,
+      "volume_m3": 1.2768710171543322e-07,
+      "watertight": true,
+      "sha256": "597a657e9746f11209a34fa1a493ae787ae1fd254f23bc93981f1d2a7937292b",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Left_Spacer_road_wheel_0_outer_ID02_R24",
+      "rig": "static",
+      "file": "meshes/Left_Spacer_road_wheel_0_outer_ID02_R24.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.00020000000000000017,
+          0.149,
+          0.0264
+        ],
+        [
+          0.0078,
+          0.1545,
+          0.034
+        ]
+      ],
+      "triangles": 2452,
+      "volume_m3": 1.2768710171543263e-07,
+      "watertight": true,
+      "sha256": "1103b41bcedf225f936f5cf01e44682e1962839ca6e5b670638f4dbee3b3c492",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Left_Spacer_road_wheel_70_outer_ID02_R24",
+      "rig": "static",
+      "file": "meshes/Left_Spacer_road_wheel_70_outer_ID02_R24.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.0702,
+          0.149,
+          0.0264
+        ],
+        [
+          0.0778,
+          0.1545,
+          0.034
+        ]
+      ],
+      "triangles": 2452,
+      "volume_m3": 1.2768710171543293e-07,
+      "watertight": true,
+      "sha256": "f5298bd86d3915d121917f4efec83a075860e352171d4d8b6fc3c91857850225",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Right_Spacer_road_wheel_-70_outer_ID02_R24",
+      "rig": "static",
+      "file": "meshes/Right_Spacer_road_wheel_-70_outer_ID02_R24.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.0698,
+          -0.1545,
+          0.0264
+        ],
+        [
+          -0.062200000000000005,
+          -0.149,
+          0.034
+        ]
+      ],
+      "triangles": 2504,
+      "volume_m3": 1.2768708273166442e-07,
+      "watertight": true,
+      "sha256": "d85cbc46ecdf8aeb09db131aa9947539b46a7ce718a70b816d2bd0a7446e3e42",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Right_Spacer_road_wheel_0_outer_ID02_R24",
+      "rig": "static",
+      "file": "meshes/Right_Spacer_road_wheel_0_outer_ID02_R24.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.00020000000000000017,
+          -0.1545,
+          0.0264
+        ],
+        [
+          0.0078,
+          -0.149,
+          0.034
+        ]
+      ],
+      "triangles": 2504,
+      "volume_m3": 1.2768708273166518e-07,
+      "watertight": true,
+      "sha256": "329d6fbac9e7d4e086f501eeb6279566eff8fab3795996321cc5543288d246c0",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Right_Spacer_road_wheel_70_outer_ID02_R24",
+      "rig": "static",
+      "file": "meshes/Right_Spacer_road_wheel_70_outer_ID02_R24.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.0702,
+          -0.1545,
+          0.0264
+        ],
+        [
+          0.0778,
+          -0.149,
+          0.034
+        ]
+      ],
+      "triangles": 2504,
+      "volume_m3": 1.2768708273166503e-07,
+      "watertight": true,
+      "sha256": "c397aab306c4b88b5d53f9489244caa097dc9eec0444dcbac4e6e6aa65e3c1e9",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Left_Spacer_tensioner_outer_ID06_R24",
+      "rig": "static",
+      "file": "meshes/Left_Spacer_tensioner_outer_ID06_R24.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.123,
+          0.1439,
+          0.033614087
+        ],
+        [
+          0.135,
+          0.15730000000000002,
+          0.045614087
+        ]
+      ],
+      "triangles": 6036,
+      "volume_m3": 7.711019163416026e-07,
+      "watertight": true,
+      "sha256": "f8e77b377d12d51dc82f4ca7566caadd9d4af6c30f75ec7fc88d1bf7d0adb250",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Right_Spacer_tensioner_outer_ID06_R24",
+      "rig": "static",
+      "file": "meshes/Right_Spacer_tensioner_outer_ID06_R24.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.123,
+          -0.15730000000000002,
+          0.033614087
+        ],
+        [
+          0.135,
+          -0.1439,
+          0.045614087
+        ]
+      ],
+      "triangles": 5928,
+      "volume_m3": 7.711018137341198e-07,
+      "watertight": true,
+      "sha256": "207acb616d3de25ec98046d780cee08d2c99f7ec206304465f0cd0d518a5e7b0",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Left_Spacer_drive_outer_HEX12_L12.6_ID04_R24",
+      "rig": "static",
+      "file": "meshes/Left_Spacer_drive_outer_HEX12_L12.6_ID04_R24.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.1255,
+          0.1459,
+          0.035114087
+        ],
+        [
+          -0.1165,
+          0.1585,
+          0.044114086999999996
+        ]
+      ],
+      "triangles": 4124,
+      "volume_m3": 3.951596785357594e-07,
+      "watertight": true,
+      "sha256": "21f37357913133a9955de1443da1ebd61bfa6f1b7e8259bdd64873851121feb8",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Right_Spacer_drive_outer_HEX12_L12.6_ID04_R24",
+      "rig": "static",
+      "file": "meshes/Right_Spacer_drive_outer_HEX12_L12.6_ID04_R24.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.1255,
+          -0.1585,
+          0.035114087
+        ],
+        [
+          -0.1165,
+          -0.1459,
+          0.044114086999999996
+        ]
+      ],
+      "triangles": 4176,
+      "volume_m3": 3.9515972095708375e-07,
+      "watertight": true,
+      "sha256": "295bac565c2cff70ca76769f7aa227f77ceebd2fb9b10b998129262bf6cd3dd4",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Left_Cover_tensioner_outer",
+      "rig": "static",
+      "file": "meshes/Left_Cover_tensioner_outer.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.097,
+          0.166,
+          0.0216
+        ],
+        [
+          0.161,
+          0.169,
+          0.0616
+        ]
+      ],
+      "triangles": 2108,
+      "volume_m3": 6.774766086887536e-06,
+      "watertight": true,
+      "sha256": "4601f0c1cc5447453a540823fae47ec7b20e4141ba2077d588f9192077459dcd",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Right_Cover_tensioner_outer",
+      "rig": "static",
+      "file": "meshes/Right_Cover_tensioner_outer.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.097,
+          -0.169,
+          0.0216
+        ],
+        [
+          0.161,
+          -0.166,
+          0.0616
+        ]
+      ],
+      "triangles": 2108,
+      "volume_m3": 6.774766086887538e-06,
+      "watertight": true,
+      "sha256": "a88cf91661caf3fc9dae5202e40467d805d938b85f1b5a709ac63869f7daeb2d",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Left_22T_idler_wheel_inner_half_R13",
+      "rig": "static",
+      "file": "meshes/Left_22T_idler_wheel_inner_half_R13.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.09624187631353211,
+          0.12409999999999999,
+          0.006749999999999999
+        ],
+        [
+          0.161758123686468,
+          0.137,
+          0.0724781749604339
+        ]
+      ],
+      "triangles": 6260,
+      "volume_m3": 2.3167111257692394e-05,
+      "watertight": true,
+      "sha256": "71bfb35bb5262187acb41a4c76200cd3561602e2b572224db224784f447aa961",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Left_22T_idler_wheel_outer_half_R13",
+      "rig": "static",
+      "file": "meshes/Left_22T_idler_wheel_outer_half_R13.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.09624187631353211,
+          0.135,
+          0.006749999999999999
+        ],
+        [
+          0.161758123686468,
+          0.1459,
+          0.0724781749604339
+        ]
+      ],
+      "triangles": 5516,
+      "volume_m3": 2.2964016243820276e-05,
+      "watertight": true,
+      "sha256": "c98b51abf0b2178dd2b90882c0845c3d13466e027eb7151f925ee71b1314de07",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Right_22T_idler_wheel_inner_half_R13",
+      "rig": "static",
+      "file": "meshes/Right_22T_idler_wheel_inner_half_R13.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.09624187631353211,
+          -0.137,
+          0.006749999999999999
+        ],
+        [
+          0.161758123686468,
+          -0.12409999999999999,
+          0.0724781749604339
+        ]
+      ],
+      "triangles": 6260,
+      "volume_m3": 2.3167111257692394e-05,
+      "watertight": true,
+      "sha256": "faf14739c553959ad411405454ec48f2eda418517ae2a816ca0c4fa94c010b5a",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Right_22T_idler_wheel_outer_half_R13",
+      "rig": "static",
+      "file": "meshes/Right_22T_idler_wheel_outer_half_R13.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.09624187631353211,
+          -0.1459,
+          0.006749999999999999
+        ],
+        [
+          0.161758123686468,
+          -0.135,
+          0.0724781749604339
+        ]
+      ],
+      "triangles": 5516,
+      "volume_m3": 2.2964016243820283e-05,
+      "watertight": true,
+      "sha256": "ad88288cd4ad871416be1ae61041d44009cf8638866ee2aba2e0f8d51c1bb3aa",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Left_HEX12_drive_wheel_inner_half_R13",
+      "rig": "static",
+      "file": "meshes/Left_HEX12_drive_wheel_inner_half_R13.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.153758123686468,
+          0.12409999999999999,
+          0.006749999999999999
+        ],
+        [
+          -0.0882418763135321,
+          0.137,
+          0.0724781749604339
+        ]
+      ],
+      "triangles": 7532,
+      "volume_m3": 2.4695609496428327e-05,
+      "watertight": true,
+      "sha256": "615edc1ff3295ebbfd0ef8366509593b2e7c8a623b18749295ecdfa31bbc166e",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Left_HEX12_drive_wheel_outer_half_R13",
+      "rig": "static",
+      "file": "meshes/Left_HEX12_drive_wheel_outer_half_R13.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.153758123686468,
+          0.135,
+          0.006749999999999999
+        ],
+        [
+          -0.0882418763135321,
+          0.1459,
+          0.0724781749604339
+        ]
+      ],
+      "triangles": 5276,
+      "volume_m3": 2.5251211472455205e-05,
+      "watertight": true,
+      "sha256": "69df33dc964c4e316be21d1d72fec9053c6555ab9d09225fb5e44d9a416c26f3",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Right_HEX12_drive_wheel_inner_half_R13",
+      "rig": "static",
+      "file": "meshes/Right_HEX12_drive_wheel_inner_half_R13.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.153758123686468,
+          -0.137,
+          0.006749999999999999
+        ],
+        [
+          -0.0882418763135321,
+          -0.12409999999999999,
+          0.0724781749604339
+        ]
+      ],
+      "triangles": 7532,
+      "volume_m3": 2.4695609496428323e-05,
+      "watertight": true,
+      "sha256": "887b4619a00b2fd383e27abaf4276a2d03585b053ff24d361abbc01d6de5463b",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Right_HEX12_drive_wheel_outer_half_R13",
+      "rig": "static",
+      "file": "meshes/Right_HEX12_drive_wheel_outer_half_R13.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.153758123686468,
+          -0.1459,
+          0.006749999999999999
+        ],
+        [
+          -0.0882418763135321,
+          -0.135,
+          0.0724781749604339
+        ]
+      ],
+      "triangles": 5276,
+      "volume_m3": 2.5251211472455198e-05,
+      "watertight": true,
+      "sha256": "bdfcd43878a1eabe13986c040a5f864d97b7e63792d9f2da6936d1eccf9c01a4",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Left_625_road_wheel_-70_inner_half_R13",
+      "rig": "static",
+      "file": "meshes/Left_625_road_wheel_-70_inner_half_R13.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.0895,
+          0.119,
+          0.006700000000000001
+        ],
+        [
+          -0.0425,
+          0.136,
+          0.0537
+        ]
+      ],
+      "triangles": 2772,
+      "volume_m3": 1.2553140241348284e-05,
+      "watertight": true,
+      "sha256": "d828a0e1a8ad8589bfee1b235cbd53855ad66bc51106bd9d68807681a37f2c70",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Left_625_road_wheel_-70_outer_half_R13",
+      "rig": "static",
+      "file": "meshes/Left_625_road_wheel_-70_outer_half_R13.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.0895,
+          0.135,
+          0.006700000000000001
+        ],
+        [
+          -0.0425,
+          0.151,
+          0.0537
+        ]
+      ],
+      "triangles": 2700,
+      "volume_m3": 1.2468982751868798e-05,
+      "watertight": true,
+      "sha256": "1f5ce09dfe269407fae528e412159f0ee18381bf05d5b4e3703cb6f89aff117c",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Left_625_road_wheel_70_inner_half_R13",
+      "rig": "static",
+      "file": "meshes/Left_625_road_wheel_70_inner_half_R13.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.0505,
+          0.119,
+          0.006700000000000001
+        ],
+        [
+          0.0975,
+          0.136,
+          0.0537
+        ]
+      ],
+      "triangles": 2772,
+      "volume_m3": 1.2553140241348279e-05,
+      "watertight": true,
+      "sha256": "f4b438c8ff7268f92815ce9067021f34aab21a4c722f0ab945ac9b97072e35ce",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Left_625_road_wheel_70_outer_half_R13",
+      "rig": "static",
+      "file": "meshes/Left_625_road_wheel_70_outer_half_R13.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.0505,
+          0.135,
+          0.006700000000000001
+        ],
+        [
+          0.0975,
+          0.151,
+          0.0537
+        ]
+      ],
+      "triangles": 2700,
+      "volume_m3": 1.2468982751868798e-05,
+      "watertight": true,
+      "sha256": "fde2485837b9e03bcb423256716940ed4993607d2acd03fcd5ea63ad07af0010",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Right_625_road_wheel_-70_inner_half_R13",
+      "rig": "static",
+      "file": "meshes/Right_625_road_wheel_-70_inner_half_R13.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.0895,
+          -0.136,
+          0.006700000000000001
+        ],
+        [
+          -0.0425,
+          -0.119,
+          0.0537
+        ]
+      ],
+      "triangles": 2772,
+      "volume_m3": 1.2553140241348284e-05,
+      "watertight": true,
+      "sha256": "e1a1a5aeefe97644f8721e64b3338e8873a2d50ae584d0a85ab2356c66cf8a58",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Right_625_road_wheel_-70_outer_half_R13",
+      "rig": "static",
+      "file": "meshes/Right_625_road_wheel_-70_outer_half_R13.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.0895,
+          -0.151,
+          0.006700000000000001
+        ],
+        [
+          -0.0425,
+          -0.135,
+          0.0537
+        ]
+      ],
+      "triangles": 2700,
+      "volume_m3": 1.24689827518688e-05,
+      "watertight": true,
+      "sha256": "e591f5f2b5799f4d4dd4f37e0d57d3f83e5db85a12e4da22f2853ef39e4212f6",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Right_625_road_wheel_70_inner_half_R13",
+      "rig": "static",
+      "file": "meshes/Right_625_road_wheel_70_inner_half_R13.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.0505,
+          -0.136,
+          0.006700000000000001
+        ],
+        [
+          0.0975,
+          -0.119,
+          0.0537
+        ]
+      ],
+      "triangles": 2772,
+      "volume_m3": 1.2553140241348279e-05,
+      "watertight": true,
+      "sha256": "b1086019d2618c27a814f2b67007e2e82b65eb42db5ad7d0bb5486e5fb598c24",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Right_625_road_wheel_70_outer_half_R13",
+      "rig": "static",
+      "file": "meshes/Right_625_road_wheel_70_outer_half_R13.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.0505,
+          -0.151,
+          0.006700000000000001
+        ],
+        [
+          0.0975,
+          -0.135,
+          0.0537
+        ]
+      ],
+      "triangles": 2700,
+      "volume_m3": 1.24689827518688e-05,
+      "watertight": true,
+      "sha256": "985c487337b4dd096efa2be891ae47dfd87dbb50eac68380da4d5e3af64c5770",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Left_625_road_wheel_0_inner_half_R13",
+      "rig": "static",
+      "file": "meshes/Left_625_road_wheel_0_inner_half_R13.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.0195,
+          0.119,
+          0.006700000000000001
+        ],
+        [
+          0.0275,
+          0.136,
+          0.0537
+        ]
+      ],
+      "triangles": 2772,
+      "volume_m3": 1.255314024134828e-05,
+      "watertight": true,
+      "sha256": "d268d48aa59b8b4d94aae7ce60f8be2d9f5e34c36f841152d318106d5282b2d8",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Left_625_road_wheel_0_outer_half_R13",
+      "rig": "static",
+      "file": "meshes/Left_625_road_wheel_0_outer_half_R13.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.0195,
+          0.135,
+          0.006700000000000001
+        ],
+        [
+          0.0275,
+          0.151,
+          0.0537
+        ]
+      ],
+      "triangles": 2700,
+      "volume_m3": 1.2468982751868798e-05,
+      "watertight": true,
+      "sha256": "9a22e921c7dc5976c18d12f4aa54e298e9865acac2892d6dac499a6c0f9fb0e4",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Right_625_road_wheel_0_inner_half_R13",
+      "rig": "static",
+      "file": "meshes/Right_625_road_wheel_0_inner_half_R13.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.0195,
+          -0.136,
+          0.006700000000000001
+        ],
+        [
+          0.0275,
+          -0.119,
+          0.0537
+        ]
+      ],
+      "triangles": 2772,
+      "volume_m3": 1.255314024134828e-05,
+      "watertight": true,
+      "sha256": "d61702cc6ecd06c3807f85f1bb9e48a287209348da1abea8f2eea36717d70978",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Right_625_road_wheel_0_outer_half_R13",
+      "rig": "static",
+      "file": "meshes/Right_625_road_wheel_0_outer_half_R13.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.0195,
+          -0.151,
+          0.006700000000000001
+        ],
+        [
+          0.0275,
+          -0.135,
+          0.0537
+        ]
+      ],
+      "triangles": 2700,
+      "volume_m3": 1.2468982751868798e-05,
+      "watertight": true,
+      "sha256": "908ea4ff4ba8c39bd6c81ef92496b2384f2e83f19a53fae8adad3e7f3e6016be",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "XT30_distribution_base",
+      "rig": "static",
+      "file": "meshes/XT30_distribution_base.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.061,
+          -0.082,
+          0.0315
+        ],
+        [
+          0.089,
+          -0.038,
+          0.0395
+        ]
+      ],
+      "triangles": 7796,
+      "volume_m3": 5.097024013355619e-06,
+      "watertight": true,
+      "sha256": "ec34193d4e429383d5a2a7915c515bd91f49988b5c2174dd8559e69423497291",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "XT30_distribution_lid",
+      "rig": "static",
+      "file": "meshes/XT30_distribution_lid.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.061,
+          -0.082,
+          0.0395
+        ],
+        [
+          0.089,
+          -0.038,
+          0.0475
+        ]
+      ],
+      "triangles": 14332,
+      "volume_m3": 4.707155329928634e-06,
+      "watertight": true,
+      "sha256": "24ebd8de25a60e74241cbf1d6cc4d37bdb5f7547ec68056d5364af8621e19ec9",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "XT30_insulating_separator",
+      "rig": "static",
+      "file": "meshes/XT30_insulating_separator.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.0689,
+          -0.07529999999999999,
+          0.038900000000000004
+        ],
+        [
+          0.0798,
+          -0.044700000000000004,
+          0.0401
+        ]
+      ],
+      "triangles": 556,
+      "volume_m3": 3.7947582959653933e-07,
+      "watertight": true,
+      "sha256": "68500c66678f484d1bd755f59172fcccfd70ddfb04b21c1ae08eb63f9a37ea6f",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Left_Slider_outer",
+      "rig": "static",
+      "file": "meshes/Left_Slider_outer.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.116,
+          0.15730000000000002,
+          0.024614087480217005
+        ],
+        [
+          0.142,
+          0.1657,
+          0.054614087480217004
+        ]
+      ],
+      "triangles": 1416,
+      "volume_m3": 5.522952438175596e-06,
+      "watertight": true,
+      "sha256": "9e38514a000164888b0b8960704232964c704af5db7803a90b39e95dcf953b28",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Left_Cover_motor_bearing",
+      "rig": "static",
+      "file": "meshes/Left_Cover_motor_bearing.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.137,
+          0.1645,
+          0.023614087480217
+        ],
+        [
+          -0.105,
+          0.1675,
+          0.055614087480217005
+        ]
+      ],
+      "triangles": 1692,
+      "volume_m3": 1.9898815453800015e-06,
+      "watertight": true,
+      "sha256": "d544f66d87bb639eaa11b58e8c9cfd089169b7bfcdbc03073d1bf38309bd2bd7",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Right_Slider_outer",
+      "rig": "static",
+      "file": "meshes/Right_Slider_outer.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.116,
+          -0.1657,
+          0.024614087480217005
+        ],
+        [
+          0.142,
+          -0.15730000000000002,
+          0.054614087480217004
+        ]
+      ],
+      "triangles": 1416,
+      "volume_m3": 5.522952438175592e-06,
+      "watertight": true,
+      "sha256": "0c16f679754d2eceaaa6c38422d0bc15193c335efa90c90609b94a95afbeb755",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Right_Cover_motor_bearing",
+      "rig": "static",
+      "file": "meshes/Right_Cover_motor_bearing.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.137,
+          -0.1675,
+          0.023614087480217
+        ],
+        [
+          -0.105,
+          -0.1645,
+          0.055614087480217005
+        ]
+      ],
+      "triangles": 1692,
+      "volume_m3": 1.989881545380001e-06,
+      "watertight": true,
+      "sha256": "da867a5e222924ff6e98071f4c925530347d9e9956e00922a6e1ff5633cffb51",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Left_inner_tensioner_slider",
+      "rig": "static",
+      "file": "meshes/Left_inner_tensioner_slider.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.116,
+          0.1023,
+          0.024614087480217005
+        ],
+        [
+          0.142,
+          0.1107,
+          0.054614087480217004
+        ]
+      ],
+      "triangles": 1416,
+      "volume_m3": 5.522952438175622e-06,
+      "watertight": true,
+      "sha256": "fcddb2f4a6835c73b64b957ad97ba719e1f2d298151f30d7ec6590b41fd240cf",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Right_inner_tensioner_slider",
+      "rig": "static",
+      "file": "meshes/Right_inner_tensioner_slider.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.116,
+          -0.1107,
+          0.024614087480217005
+        ],
+        [
+          0.142,
+          -0.1023,
+          0.054614087480217004
+        ]
+      ],
+      "triangles": 1416,
+      "volume_m3": 5.522952438175626e-06,
+      "watertight": true,
+      "sha256": "fca51e9cb25fc95161a188f6807b26b935ee24ddb44dcf347c734ce68fb42859",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Left_Spacer_tensioner_retainer_inner_ID07_R24",
+      "rig": "static",
+      "file": "meshes/Left_Spacer_tensioner_retainer_inner_ID07_R24.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.123,
+          0.096,
+          0.033614087480217
+        ],
+        [
+          0.135,
+          0.1023,
+          0.045614087480217
+        ]
+      ],
+      "triangles": 6922,
+      "volume_m3": 3.6173847653680696e-07,
+      "watertight": true,
+      "sha256": "901a923170e429ba608ff2daf0481ab9296418a105045891eeee454e77d7cf28",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Left_Spacer_tensioner_retainer_outer_ID08_R24",
+      "rig": "static",
+      "file": "meshes/Left_Spacer_tensioner_retainer_outer_ID08_R24.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.123,
+          0.1657,
+          0.033614087480217
+        ],
+        [
+          0.135,
+          0.1717,
+          0.045614087480217
+        ]
+      ],
+      "triangles": 7874,
+      "volume_m3": 3.4426116255474244e-07,
+      "watertight": true,
+      "sha256": "bd7fe1a4ac407c649020ed7696cb07bdb5f0498b381b7fb7a1d6bd91f996b30c",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Left_Spacer_tensioner_center",
+      "rig": "static",
+      "file": "meshes/Left_Spacer_tensioner_center.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.123,
+          0.1331,
+          0.033614087480217
+        ],
+        [
+          0.135,
+          0.1369,
+          0.045614087480217
+        ]
+      ],
+      "triangles": 672,
+      "volume_m3": 2.189783051121813e-07,
+      "watertight": true,
+      "sha256": "642e21f1815a02039b563ceb776bd2d18cb298f07bb469219600bbd25a3927a8",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Right_Spacer_tensioner_retainer_inner_ID07_R24",
+      "rig": "static",
+      "file": "meshes/Right_Spacer_tensioner_retainer_inner_ID07_R24.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.123,
+          -0.1023,
+          0.033614087480217
+        ],
+        [
+          0.135,
+          -0.096,
+          0.045614087480217
+        ]
+      ],
+      "triangles": 6922,
+      "volume_m3": 3.6173847653680743e-07,
+      "watertight": true,
+      "sha256": "978fe3a371f9bd057b34c9f7c183d9345e1ce68bd3a2c820d93967c6aad29162",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Right_Spacer_tensioner_retainer_outer_ID08_R24",
+      "rig": "static",
+      "file": "meshes/Right_Spacer_tensioner_retainer_outer_ID08_R24.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.123,
+          -0.1717,
+          0.033614087480217
+        ],
+        [
+          0.135,
+          -0.1657,
+          0.045614087480217
+        ]
+      ],
+      "triangles": 7874,
+      "volume_m3": 3.4426116255474127e-07,
+      "watertight": true,
+      "sha256": "90655c028165ad47afb8aa914c88a6247000bc31f77d16b81068423c50e68e41",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Right_Spacer_tensioner_center",
+      "rig": "static",
+      "file": "meshes/Right_Spacer_tensioner_center.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.123,
+          -0.1369,
+          0.033614087480217
+        ],
+        [
+          0.135,
+          -0.1331,
+          0.045614087480217
+        ]
+      ],
+      "triangles": 672,
+      "volume_m3": 2.1897830511218116e-07,
+      "watertight": true,
+      "sha256": "04514e7c0a7dd5c5982585db6c100b91085898e10163cfe2ec1b6b424cffdaa3",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Left_Spacer_road_wheel_-70_center",
+      "rig": "static",
+      "file": "meshes/Left_Spacer_road_wheel_-70_center.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.0698,
+          0.126,
+          0.0264
+        ],
+        [
+          -0.062200000000000005,
+          0.144,
+          0.034
+        ]
+      ],
+      "triangles": 672,
+      "volume_m3": 4.1905871469803915e-07,
+      "watertight": true,
+      "sha256": "ff890703a2069de9c3726ab715f0100b3912945d0cbb801a61ab490f3ad7bb3c",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Left_Spacer_road_wheel_0_center",
+      "rig": "static",
+      "file": "meshes/Left_Spacer_road_wheel_0_center.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.0002,
+          0.126,
+          0.0264
+        ],
+        [
+          0.0078,
+          0.144,
+          0.034
+        ]
+      ],
+      "triangles": 672,
+      "volume_m3": 4.1905871469803995e-07,
+      "watertight": true,
+      "sha256": "a1f194d5ad9c2f3044760d7f8e1827a5598b731218f6ca3ec10622b7fda1a835",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Left_Spacer_road_wheel_70_center",
+      "rig": "static",
+      "file": "meshes/Left_Spacer_road_wheel_70_center.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.0702,
+          0.126,
+          0.0264
+        ],
+        [
+          0.0778,
+          0.144,
+          0.034
+        ]
+      ],
+      "triangles": 672,
+      "volume_m3": 4.190587146980391e-07,
+      "watertight": true,
+      "sha256": "e109fea208ae1a2fef334e3aa2455f0121d951a5acf01ef0d920c8a6209ae5d4",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Right_Spacer_road_wheel_-70_center",
+      "rig": "static",
+      "file": "meshes/Right_Spacer_road_wheel_-70_center.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.0698,
+          -0.144,
+          0.0264
+        ],
+        [
+          -0.062200000000000005,
+          -0.126,
+          0.034
+        ]
+      ],
+      "triangles": 672,
+      "volume_m3": 4.190587146980395e-07,
+      "watertight": true,
+      "sha256": "a63073a670b075f241fe1daa9f90b3514b7a46865eafc27bd26e1091c450cd77",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Right_Spacer_road_wheel_0_center",
+      "rig": "static",
+      "file": "meshes/Right_Spacer_road_wheel_0_center.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.0002,
+          -0.144,
+          0.0264
+        ],
+        [
+          0.0078,
+          -0.126,
+          0.034
+        ]
+      ],
+      "triangles": 672,
+      "volume_m3": 4.1905871469803995e-07,
+      "watertight": true,
+      "sha256": "bcd9f2eaace47a9dc0292e229aeebb1a233a1d065ec26b6b7bcf33366d02ab2a",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Right_Spacer_road_wheel_70_center",
+      "rig": "static",
+      "file": "meshes/Right_Spacer_road_wheel_70_center.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.0702,
+          -0.144,
+          0.0264
+        ],
+        [
+          0.0778,
+          -0.126,
+          0.034
+        ]
+      ],
+      "triangles": 672,
+      "volume_m3": 4.1905871469803947e-07,
+      "watertight": true,
+      "sha256": "1ae250bca970279194f210bf78529fe83d43784040fb103f89a0c081ee0bd851",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Left_Drive_bearing_to_collar_spacer_R12_C1",
+      "rig": "static",
+      "file": "meshes/Left_Drive_bearing_to_collar_spacer_R12_C1.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.1255,
+          0.1645,
+          0.035114087480217
+        ],
+        [
+          -0.1165,
+          0.168,
+          0.044114087480217
+        ]
+      ],
+      "triangles": 672,
+      "volume_m3": 1.0996309080961564e-07,
+      "watertight": true,
+      "sha256": "01fba7f56c06284faaca3683de37386850500325a97b4e1ad9fc37c9243b1ce0",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Right_Drive_bearing_to_collar_spacer_R12_C1",
+      "rig": "static",
+      "file": "meshes/Right_Drive_bearing_to_collar_spacer_R12_C1.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.1255,
+          -0.168,
+          0.035114087480217
+        ],
+        [
+          -0.1165,
+          -0.1645,
+          0.044114087480217
+        ]
+      ],
+      "triangles": 672,
+      "volume_m3": 1.0996309080961581e-07,
+      "watertight": true,
+      "sha256": "aa050b833b96dc2b82aa5fb1b6a9a39e76a4e7df9bc514ba4609d5e817f0f053",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "Upper_cover_R9",
+      "rig": "static",
+      "file": "meshes/Upper_cover_R9.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.164,
+          -0.09543507163503247,
+          0.0860000000140825
+        ],
+        [
+          0.122000040730381,
+          0.09543027723026441,
+          0.13314632174808316
+        ]
+      ],
+      "triangles": 55575,
+      "volume_m3": 0.0005929553959930714,
+      "watertight": false,
+      "sha256": "ca0c5c18c7db25eccdbb89050d9ce452b0cbd7e2504cfee23a8588a9bf55833a",
+      "rgba": [
+        0.29,
+        0.46,
+        0.55,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "14_Bin_20x10x2_magnet_pockets",
+      "rig": "static",
+      "file": "meshes/14_Bin_20x10x2_magnet_pockets.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.175,
+          -0.116,
+          0.097999999999999
+        ],
+        [
+          0.009,
+          0.116,
+          0.24900000000000203
+        ]
+      ],
+      "triangles": 6368,
+      "volume_m3": 0.0003990550152897082,
+      "watertight": true,
+      "sha256": "cdf932ffa33470d60a9510739cb4b2c6561e4055bd2d643ce3276bcb9771bd6e",
+      "rgba": [
+        0.29,
+        0.46,
+        0.55,
+        1
+      ],
+      "collision_files": [
+        "meshes/collision/bin_000.stl",
+        "meshes/collision/bin_001.stl",
+        "meshes/collision/bin_002.stl",
+        "meshes/collision/bin_003.stl",
+        "meshes/collision/bin_004.stl",
+        "meshes/collision/bin_005.stl",
+        "meshes/collision/bin_006.stl",
+        "meshes/collision/bin_007.stl",
+        "meshes/collision/bin_008.stl",
+        "meshes/collision/bin_009.stl",
+        "meshes/collision/bin_010.stl",
+        "meshes/collision/bin_011.stl",
+        "meshes/collision/bin_012.stl",
+        "meshes/collision/bin_013.stl",
+        "meshes/collision/bin_014.stl",
+        "meshes/collision/bin_015.stl",
+        "meshes/collision/bin_016.stl",
+        "meshes/collision/bin_017.stl",
+        "meshes/collision/bin_018.stl",
+        "meshes/collision/bin_019.stl",
+        "meshes/collision/bin_020.stl",
+        "meshes/collision/bin_021.stl",
+        "meshes/collision/bin_022.stl",
+        "meshes/collision/bin_023.stl",
+        "meshes/collision/bin_024.stl",
+        "meshes/collision/bin_025.stl",
+        "meshes/collision/bin_026.stl",
+        "meshes/collision/bin_027.stl",
+        "meshes/collision/bin_028.stl",
+        "meshes/collision/bin_029.stl",
+        "meshes/collision/bin_030.stl",
+        "meshes/collision/bin_031.stl",
+        "meshes/collision/bin_032.stl",
+        "meshes/collision/bin_033.stl",
+        "meshes/collision/bin_034.stl",
+        "meshes/collision/bin_035.stl",
+        "meshes/collision/bin_036.stl",
+        "meshes/collision/bin_037.stl",
+        "meshes/collision/bin_038.stl",
+        "meshes/collision/bin_039.stl",
+        "meshes/collision/bin_040.stl",
+        "meshes/collision/bin_041.stl",
+        "meshes/collision/bin_042.stl",
+        "meshes/collision/bin_043.stl",
+        "meshes/collision/bin_044.stl",
+        "meshes/collision/bin_045.stl",
+        "meshes/collision/bin_046.stl",
+        "meshes/collision/bin_047.stl"
+      ],
+      "configuration": "COMMON",
+      "collision_method": {
+        "algorithm": "CoACD",
+        "requested_concavity_m": 0.004,
+        "hull_cap": 48,
+        "hulls": 48,
+        "certified_error_bound": false
+      }
+    },
+    {
+      "name": "Arm_Mounting_Platform_R22",
+      "rig": "static",
+      "file": "meshes/Arm_Mounting_Platform_R22.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.024,
+          -0.09522160223389671,
+          0.08999999999460886
+        ],
+        [
+          0.164,
+          0.045,
+          0.0978
+        ]
+      ],
+      "triangles": 4474,
+      "volume_m3": 0.00014227054689084192,
+      "watertight": true,
+      "sha256": "bbf5a2be91a36022563111fbfec81197377dee38e6bc99219ec3309f6c5c3bae",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "NC90_Right_side_shield",
+      "rig": "nc90_tool",
+      "file": "meshes/NC90_Right_side_shield.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "Apache-2.0",
+      "world_bounds_m": [
+        [
+          0.333208749467675,
+          -0.0197466598919867,
+          0.156377402520744
+        ],
+        [
+          0.358653649376087,
+          0.00701764032890774,
+          0.19165459729968198
+        ]
+      ],
+      "triangles": 2222,
+      "volume_m3": 2.4380506170785385e-06,
+      "watertight": false,
+      "sha256": "86c9c1563d0b8902abb4b160a4cdf83c7e71c3c58eed77a5ecff3eec512704dc",
+      "rgba": [
+        0.29,
+        0.46,
+        0.55,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "NC90_Pinion",
+      "rig": "nc90_drive",
+      "file": "meshes/NC90_Pinion.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "Apache-2.0",
+      "world_bounds_m": [
+        [
+          0.318398035081035,
+          -0.031675416755053504,
+          0.1466773699716733
+        ],
+        [
+          0.345948500205083,
+          -0.00404505950536325,
+          0.15267740282733056
+        ]
+      ],
+      "triangles": 3496,
+      "volume_m3": 2.445513207570585e-06,
+      "watertight": false,
+      "sha256": "ba74fc323d4545461e3829adda8e0eb619668a399366e3cc5807f8ca9c251928",
+      "rgba": [
+        0.29,
+        0.46,
+        0.55,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "NC90_Cable_guide",
+      "rig": "nc90_tool",
+      "file": "meshes/NC90_Cable_guide.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "Apache-2.0",
+      "world_bounds_m": [
+        [
+          0.299903037864912,
+          -0.0029875399798944,
+          0.188877407540179
+        ],
+        [
+          0.321439411814501,
+          0.0166723998596593,
+          0.19321185437405
+        ]
+      ],
+      "triangles": 806,
+      "volume_m3": 1.7955767690669902e-07,
+      "watertight": true,
+      "sha256": "5d2b349356f79b29131dc423945b11bdd123d1a9e2d3c4a47f9b5fcf8f662efe",
+      "rgba": [
+        0.29,
+        0.46,
+        0.55,
+        1
+      ],
+      "collision_files": [
+        "meshes/collision/part_0294.stl"
+      ],
+      "configuration": "COMMON",
+      "collision_source_check": {
+        "bounds_error_m": 8.527946349090598e-09,
+        "volume_relative_error": 0.0065596992707876115
+      }
+    },
+    {
+      "name": "NC90_Right_jaw_extended_rack",
+      "rig": "nc90_jaw_right",
+      "file": "meshes/NC90_Right_jaw_extended_rack.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "Apache-2.0",
+      "world_bounds_m": [
+        [
+          0.266828497927454,
+          -0.0803313306759012,
+          0.0946773239655535
+        ],
+        [
+          0.334747851115669,
+          0.0032434940506840602,
+          0.152677360634979
+        ]
+      ],
+      "triangles": 4326,
+      "volume_m3": 1.2340098976936509e-05,
+      "watertight": true,
+      "sha256": "2dba0a4759b542f0e93bcd2d8892e1dcd05ffbaf88242fe971464ac2c96989e4",
+      "rgba": [
+        0.29,
+        0.46,
+        0.55,
+        1
+      ],
+      "collision_files": [
+        "meshes/collision/part_0291_000.stl",
+        "meshes/collision/part_0291_001.stl",
+        "meshes/collision/part_0291_002.stl",
+        "meshes/collision/part_0291_003.stl",
+        "meshes/collision/part_0291_004.stl",
+        "meshes/collision/part_0291_005.stl",
+        "meshes/collision/part_0291_006.stl",
+        "meshes/collision/part_0291_007.stl",
+        "meshes/collision/part_0291_008.stl",
+        "meshes/collision/part_0291_009.stl",
+        "meshes/collision/part_0291_010.stl",
+        "meshes/collision/part_0291_011.stl",
+        "meshes/collision/part_0291_012.stl",
+        "meshes/collision/part_0291_013.stl",
+        "meshes/collision/part_0291_014.stl",
+        "meshes/collision/part_0291_015.stl",
+        "meshes/collision/part_0291_016.stl",
+        "meshes/collision/part_0291_017.stl",
+        "meshes/collision/part_0291_018.stl",
+        "meshes/collision/part_0291_019.stl",
+        "meshes/collision/part_0291_020.stl",
+        "meshes/collision/part_0291_021.stl",
+        "meshes/collision/part_0291_022.stl",
+        "meshes/collision/part_0291_023.stl",
+        "meshes/collision/part_0291_024.stl",
+        "meshes/collision/part_0291_025.stl",
+        "meshes/collision/part_0291_026.stl",
+        "meshes/collision/part_0291_027.stl",
+        "meshes/collision/part_0291_028.stl",
+        "meshes/collision/part_0291_029.stl",
+        "meshes/collision/part_0291_030.stl",
+        "meshes/collision/part_0291_031.stl",
+        "meshes/collision/part_0291_032.stl",
+        "meshes/collision/part_0291_033.stl",
+        "meshes/collision/part_0291_034.stl",
+        "meshes/collision/part_0291_035.stl",
+        "meshes/collision/part_0291_036.stl",
+        "meshes/collision/part_0291_037.stl",
+        "meshes/collision/part_0291_038.stl",
+        "meshes/collision/part_0291_039.stl",
+        "meshes/collision/part_0291_040.stl",
+        "meshes/collision/part_0291_041.stl",
+        "meshes/collision/part_0291_042.stl",
+        "meshes/collision/part_0291_043.stl",
+        "meshes/collision/part_0291_044.stl",
+        "meshes/collision/part_0291_045.stl",
+        "meshes/collision/part_0291_046.stl",
+        "meshes/collision/part_0291_047.stl",
+        "meshes/collision/part_0291_048.stl",
+        "meshes/collision/part_0291_049.stl",
+        "meshes/collision/part_0291_050.stl",
+        "meshes/collision/part_0291_051.stl",
+        "meshes/collision/part_0291_052.stl",
+        "meshes/collision/part_0291_053.stl",
+        "meshes/collision/part_0291_054.stl",
+        "meshes/collision/part_0291_055.stl",
+        "meshes/collision/part_0291_056.stl",
+        "meshes/collision/part_0291_057.stl",
+        "meshes/collision/part_0291_058.stl",
+        "meshes/collision/part_0291_059.stl",
+        "meshes/collision/part_0291_060.stl",
+        "meshes/collision/part_0291_061.stl",
+        "meshes/collision/part_0291_062.stl",
+        "meshes/collision/part_0291_063.stl"
+      ],
+      "configuration": "COMMON",
+      "collision_source_check": {
+        "bounds_error_m": 1.7572995891779186e-08,
+        "volume_relative_error": 0.00026778051504575866
+      }
+    },
+    {
+      "name": "Gripper_Camera_Mount_R30",
+      "rig": "nc90_tool",
+      "file": "meshes/Gripper_Camera_Mount_R30.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.33277468224794,
+          -0.09030040781735539,
+          0.15000038997454
+        ],
+        [
+          0.39799807221435324,
+          -0.02149134754043,
+          0.18467738252621999
+        ]
+      ],
+      "triangles": 4892,
+      "volume_m3": 1.2260646239972897e-05,
+      "watertight": true,
+      "sha256": "3238522be0d07c50ad9fde3852a38e6128b929cc1e42a1cd39e4085d89a3d59c",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [
+        "meshes/collision/part_1005_000.stl",
+        "meshes/collision/part_1005_001.stl",
+        "meshes/collision/part_1005_002.stl",
+        "meshes/collision/part_1005_003.stl",
+        "meshes/collision/part_1005_004.stl",
+        "meshes/collision/part_1005_005.stl",
+        "meshes/collision/part_1005_006.stl",
+        "meshes/collision/part_1005_007.stl",
+        "meshes/collision/part_1005_008.stl",
+        "meshes/collision/part_1005_009.stl",
+        "meshes/collision/part_1005_010.stl",
+        "meshes/collision/part_1005_011.stl",
+        "meshes/collision/part_1005_012.stl",
+        "meshes/collision/part_1005_013.stl",
+        "meshes/collision/part_1005_014.stl",
+        "meshes/collision/part_1005_015.stl",
+        "meshes/collision/part_1005_016.stl",
+        "meshes/collision/part_1005_017.stl",
+        "meshes/collision/part_1005_018.stl",
+        "meshes/collision/part_1005_019.stl",
+        "meshes/collision/part_1005_020.stl",
+        "meshes/collision/part_1005_021.stl",
+        "meshes/collision/part_1005_022.stl",
+        "meshes/collision/part_1005_023.stl",
+        "meshes/collision/part_1005_024.stl",
+        "meshes/collision/part_1005_025.stl",
+        "meshes/collision/part_1005_026.stl",
+        "meshes/collision/part_1005_027.stl",
+        "meshes/collision/part_1005_028.stl",
+        "meshes/collision/part_1005_029.stl",
+        "meshes/collision/part_1005_030.stl",
+        "meshes/collision/part_1005_031.stl",
+        "meshes/collision/part_1005_032.stl",
+        "meshes/collision/part_1005_033.stl",
+        "meshes/collision/part_1005_034.stl",
+        "meshes/collision/part_1005_035.stl",
+        "meshes/collision/part_1005_036.stl",
+        "meshes/collision/part_1005_037.stl",
+        "meshes/collision/part_1005_038.stl",
+        "meshes/collision/part_1005_039.stl",
+        "meshes/collision/part_1005_040.stl",
+        "meshes/collision/part_1005_041.stl",
+        "meshes/collision/part_1005_042.stl",
+        "meshes/collision/part_1005_043.stl",
+        "meshes/collision/part_1005_044.stl",
+        "meshes/collision/part_1005_045.stl",
+        "meshes/collision/part_1005_046.stl",
+        "meshes/collision/part_1005_047.stl",
+        "meshes/collision/part_1005_048.stl",
+        "meshes/collision/part_1005_049.stl",
+        "meshes/collision/part_1005_050.stl",
+        "meshes/collision/part_1005_051.stl",
+        "meshes/collision/part_1005_052.stl",
+        "meshes/collision/part_1005_053.stl",
+        "meshes/collision/part_1005_054.stl",
+        "meshes/collision/part_1005_055.stl",
+        "meshes/collision/part_1005_056.stl",
+        "meshes/collision/part_1005_057.stl",
+        "meshes/collision/part_1005_058.stl",
+        "meshes/collision/part_1005_059.stl",
+        "meshes/collision/part_1005_060.stl",
+        "meshes/collision/part_1005_061.stl",
+        "meshes/collision/part_1005_062.stl",
+        "meshes/collision/part_1005_063.stl"
+      ],
+      "configuration": "COMMON",
+      "collision_source_check": {
+        "bounds_error_m": 1.984113670139287e-05,
+        "volume_relative_error": 0.0020679369863708954
+      }
+    },
+    {
+      "name": "NC90_Left_side_shield",
+      "rig": "nc90_tool",
+      "file": "meshes/NC90_Left_side_shield.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "Apache-2.0",
+      "world_bounds_m": [
+        [
+          0.305615110240771,
+          -0.0428058894187458,
+          0.156377349316575
+        ],
+        [
+          0.331060008840855,
+          -0.016041589197853298,
+          0.191654549251392
+        ]
+      ],
+      "triangles": 2222,
+      "volume_m3": 2.4380506170785444e-06,
+      "watertight": false,
+      "sha256": "0869003d19247a4f765406f88dffd952b73c49e56d219a532e178b844864f436",
+      "rgba": [
+        0.29,
+        0.46,
+        0.55,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "NC90_Base_extended_rails",
+      "rig": "nc90_tool",
+      "file": "meshes/NC90_Base_extended_rails.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "Apache-2.0",
+      "world_bounds_m": [
+        [
+          0.27001167943122195,
+          -0.0762542912324216,
+          0.142177302492183
+        ],
+        [
+          0.394334856764113,
+          0.040533828084724395,
+          0.19812740434662382
+        ]
+      ],
+      "triangles": 9547,
+      "volume_m3": 4.749103527908113e-05,
+      "watertight": false,
+      "sha256": "91ac060390829c45127ef7300dca3e58b5545e2660718d5824073f32d923a0ed",
+      "rgba": [
+        0.29,
+        0.46,
+        0.55,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMMON"
+    },
+    {
+      "name": "NC90_Left_jaw_extended_rack",
+      "rig": "nc90_jaw_left",
+      "file": "meshes/NC90_Left_jaw_extended_rack.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "Apache-2.0",
+      "world_bounds_m": [
+        [
+          0.329598684011753,
+          -0.0389639683287548,
+          0.0946774286058375
+        ],
+        [
+          0.397518038326633,
+          0.0446108683718962,
+          0.152677476280319
+        ]
+      ],
+      "triangles": 4326,
+      "volume_m3": 1.2340098976936478e-05,
+      "watertight": true,
+      "sha256": "d2dd338427482cc32463a4855e4f1fd19d34e28d6e84607ad44456bdcd88736e",
+      "rgba": [
+        0.29,
+        0.46,
+        0.55,
+        1
+      ],
+      "collision_files": [
+        "meshes/collision/part_0290_000.stl",
+        "meshes/collision/part_0290_001.stl",
+        "meshes/collision/part_0290_002.stl",
+        "meshes/collision/part_0290_003.stl",
+        "meshes/collision/part_0290_004.stl",
+        "meshes/collision/part_0290_005.stl",
+        "meshes/collision/part_0290_006.stl",
+        "meshes/collision/part_0290_007.stl",
+        "meshes/collision/part_0290_008.stl",
+        "meshes/collision/part_0290_009.stl",
+        "meshes/collision/part_0290_010.stl",
+        "meshes/collision/part_0290_011.stl",
+        "meshes/collision/part_0290_012.stl",
+        "meshes/collision/part_0290_013.stl",
+        "meshes/collision/part_0290_014.stl",
+        "meshes/collision/part_0290_015.stl",
+        "meshes/collision/part_0290_016.stl",
+        "meshes/collision/part_0290_017.stl",
+        "meshes/collision/part_0290_018.stl",
+        "meshes/collision/part_0290_019.stl",
+        "meshes/collision/part_0290_020.stl",
+        "meshes/collision/part_0290_021.stl",
+        "meshes/collision/part_0290_022.stl",
+        "meshes/collision/part_0290_023.stl",
+        "meshes/collision/part_0290_024.stl",
+        "meshes/collision/part_0290_025.stl",
+        "meshes/collision/part_0290_026.stl",
+        "meshes/collision/part_0290_027.stl",
+        "meshes/collision/part_0290_028.stl",
+        "meshes/collision/part_0290_029.stl",
+        "meshes/collision/part_0290_030.stl",
+        "meshes/collision/part_0290_031.stl",
+        "meshes/collision/part_0290_032.stl",
+        "meshes/collision/part_0290_033.stl",
+        "meshes/collision/part_0290_034.stl",
+        "meshes/collision/part_0290_035.stl",
+        "meshes/collision/part_0290_036.stl",
+        "meshes/collision/part_0290_037.stl",
+        "meshes/collision/part_0290_038.stl",
+        "meshes/collision/part_0290_039.stl",
+        "meshes/collision/part_0290_040.stl",
+        "meshes/collision/part_0290_041.stl",
+        "meshes/collision/part_0290_042.stl",
+        "meshes/collision/part_0290_043.stl",
+        "meshes/collision/part_0290_044.stl",
+        "meshes/collision/part_0290_045.stl",
+        "meshes/collision/part_0290_046.stl",
+        "meshes/collision/part_0290_047.stl",
+        "meshes/collision/part_0290_048.stl",
+        "meshes/collision/part_0290_049.stl",
+        "meshes/collision/part_0290_050.stl",
+        "meshes/collision/part_0290_051.stl",
+        "meshes/collision/part_0290_052.stl",
+        "meshes/collision/part_0290_053.stl",
+        "meshes/collision/part_0290_054.stl",
+        "meshes/collision/part_0290_055.stl",
+        "meshes/collision/part_0290_056.stl",
+        "meshes/collision/part_0290_057.stl",
+        "meshes/collision/part_0290_058.stl",
+        "meshes/collision/part_0290_059.stl",
+        "meshes/collision/part_0290_060.stl",
+        "meshes/collision/part_0290_061.stl",
+        "meshes/collision/part_0290_062.stl",
+        "meshes/collision/part_0290_063.stl"
+      ],
+      "configuration": "COMMON",
+      "collision_source_check": {
+        "bounds_error_m": 8.832165554473193e-09,
+        "volume_relative_error": 0.00026796193917285243
+      }
+    },
+    {
+      "name": "Jetson_Adapter_R87",
+      "rig": "static",
+      "file": "meshes/Jetson_Adapter_R87.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.09449684248060301,
+          -0.064,
+          0.0467
+        ],
+        [
+          0.0197,
+          0.064,
+          0.0565
+        ]
+      ],
+      "triangles": 5534,
+      "volume_m3": 1.772829261814101e-05,
+      "watertight": true,
+      "sha256": "21dd9ffa4481e50b6c341b6489684468991201dad48050573a3e68d910b058c5",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "COMPUTE_JETSON"
+    },
+    {
+      "name": "RealSense_Insert_R72",
+      "rig": "static",
+      "file": "meshes/RealSense_Insert_R72.stl",
+      "source": "MOSS_Printable_BRep_Parts_R92.step",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          0.12575,
+          -0.0545,
+          0.0495
+        ],
+        [
+          0.134,
+          -0.0405,
+          0.08975
+        ]
+      ],
+      "triangles": 910,
+      "volume_m3": 3.6311501697855757e-06,
+      "watertight": true,
+      "sha256": "5441d7acd051df9e0376674201776386636b0bbdb2c8c343c227195e9da64e96",
+      "rgba": [
+        0.105,
+        0.12,
+        0.13,
+        1
+      ],
+      "collision_files": [],
+      "configuration": "CAMERA_REALSENSE"
+    },
+    {
+      "name": "SO101_Base",
+      "rig": "base_link",
+      "file": "meshes/SO101_Base.stl",
+      "source": "SO101_Base.stl",
+      "license": "Apache-2.0",
+      "world_bounds_m": [
+        [
+          0.053336078990593776,
+          -0.07223856023905266,
+          0.0979997421424836
+        ],
+        [
+          0.16272622904237244,
+          0.030435879723324198,
+          0.17000004568099975
+        ]
+      ],
+      "triangles": 9430,
+      "volume_m3": 0.00012270770524291702,
+      "watertight": true,
+      "sha256": "9316b9e1a7b2cb42b1103107e2ec260647c4e6218360a17f6f94ad5900667881",
+      "rgba": [
+        0.92,
+        0.22,
+        0.055,
+        1
+      ],
+      "collision_files": [
+        "meshes/collision/part_0280.stl"
+      ],
+      "assembly_bounds_error_m": 1.535415650177896e-08,
+      "print_volume_relative_error": 6.188545185051946e-08,
+      "prior_part_id": "part_0280",
+      "geometry_method": "unchanged original SO101 mesh, R92 placement checked",
+      "collision_source_check": {
+        "bounds_error_m": 0.0,
+        "volume_relative_error": 4.417824334418018e-16
+      }
+    },
+    {
+      "name": "SO101_Shoulder_rotation",
+      "rig": "shoulder_link",
+      "file": "meshes/SO101_Shoulder_rotation.stl",
+      "source": "SO101_Shoulder_rotation.stl",
+      "license": "Apache-2.0",
+      "world_bounds_m": [
+        [
+          0.10085405846494422,
+          -0.028369389390089702,
+          0.11659985496401787
+        ],
+        [
+          0.16179526035283498,
+          0.018512358389546853,
+          0.200799976426363
+        ]
+      ],
+      "triangles": 17672,
+      "volume_m3": 6.88030565455644e-05,
+      "watertight": true,
+      "sha256": "bcd924d00811130d543d177a8e211a8936af4ca0cfaee21328fbaab55f27f0e1",
+      "rgba": [
+        0.92,
+        0.22,
+        0.055,
+        1
+      ],
+      "collision_files": [
+        "meshes/collision/part_0284_000.stl",
+        "meshes/collision/part_0284_001.stl",
+        "meshes/collision/part_0284_002.stl",
+        "meshes/collision/part_0284_003.stl",
+        "meshes/collision/part_0284_004.stl",
+        "meshes/collision/part_0284_005.stl",
+        "meshes/collision/part_0284_006.stl",
+        "meshes/collision/part_0284_007.stl",
+        "meshes/collision/part_0284_008.stl",
+        "meshes/collision/part_0284_009.stl",
+        "meshes/collision/part_0284_010.stl",
+        "meshes/collision/part_0284_011.stl",
+        "meshes/collision/part_0284_012.stl",
+        "meshes/collision/part_0284_013.stl",
+        "meshes/collision/part_0284_014.stl",
+        "meshes/collision/part_0284_015.stl",
+        "meshes/collision/part_0284_016.stl",
+        "meshes/collision/part_0284_017.stl",
+        "meshes/collision/part_0284_018.stl",
+        "meshes/collision/part_0284_019.stl",
+        "meshes/collision/part_0284_020.stl",
+        "meshes/collision/part_0284_021.stl",
+        "meshes/collision/part_0284_022.stl",
+        "meshes/collision/part_0284_023.stl",
+        "meshes/collision/part_0284_024.stl",
+        "meshes/collision/part_0284_025.stl",
+        "meshes/collision/part_0284_026.stl",
+        "meshes/collision/part_0284_027.stl",
+        "meshes/collision/part_0284_028.stl",
+        "meshes/collision/part_0284_029.stl",
+        "meshes/collision/part_0284_030.stl",
+        "meshes/collision/part_0284_031.stl",
+        "meshes/collision/part_0284_032.stl",
+        "meshes/collision/part_0284_033.stl",
+        "meshes/collision/part_0284_034.stl",
+        "meshes/collision/part_0284_035.stl",
+        "meshes/collision/part_0284_036.stl",
+        "meshes/collision/part_0284_037.stl",
+        "meshes/collision/part_0284_038.stl",
+        "meshes/collision/part_0284_039.stl",
+        "meshes/collision/part_0284_040.stl",
+        "meshes/collision/part_0284_041.stl",
+        "meshes/collision/part_0284_042.stl",
+        "meshes/collision/part_0284_043.stl",
+        "meshes/collision/part_0284_044.stl",
+        "meshes/collision/part_0284_045.stl",
+        "meshes/collision/part_0284_046.stl",
+        "meshes/collision/part_0284_047.stl",
+        "meshes/collision/part_0284_048.stl",
+        "meshes/collision/part_0284_049.stl",
+        "meshes/collision/part_0284_050.stl",
+        "meshes/collision/part_0284_051.stl",
+        "meshes/collision/part_0284_052.stl",
+        "meshes/collision/part_0284_053.stl",
+        "meshes/collision/part_0284_054.stl",
+        "meshes/collision/part_0284_055.stl",
+        "meshes/collision/part_0284_056.stl",
+        "meshes/collision/part_0284_057.stl",
+        "meshes/collision/part_0284_058.stl",
+        "meshes/collision/part_0284_059.stl",
+        "meshes/collision/part_0284_060.stl",
+        "meshes/collision/part_0284_061.stl",
+        "meshes/collision/part_0284_062.stl",
+        "meshes/collision/part_0284_063.stl"
+      ],
+      "assembly_bounds_error_m": 9.000306055995111e-10,
+      "print_volume_relative_error": 6.764726404098274e-08,
+      "prior_part_id": "part_0284",
+      "geometry_method": "unchanged original SO101 mesh, R92 placement checked",
+      "collision_source_check": {
+        "bounds_error_m": 0.0,
+        "volume_relative_error": 1.9697565539248576e-15
+      }
+    },
+    {
+      "name": "SO101_Base_motor_holder",
+      "rig": "base_link",
+      "file": "meshes/SO101_Base_motor_holder.stl",
+      "source": "SO101_Base_motor_holder.stl",
+      "license": "Apache-2.0",
+      "world_bounds_m": [
+        [
+          0.07474666725906404,
+          -0.07177879839747625,
+          0.13609979593157767
+        ],
+        [
+          0.13127406550528933,
+          0.014253100066204137,
+          0.16750007786750792
+        ]
+      ],
+      "triangles": 37539,
+      "volume_m3": 2.3716183171854164e-05,
+      "watertight": false,
+      "sha256": "47335754d3b6469dcf110d3c8e60eccaf41a689c67dda55b59f41bc19dabfef5",
+      "rgba": [
+        0.92,
+        0.22,
+        0.055,
+        1
+      ],
+      "collision_files": [
+        "meshes/collision/part_0279.stl"
+      ],
+      "assembly_bounds_error_m": 1.6440721891525234e-09,
+      "print_volume_relative_error": 1.1233643620402197e-08,
+      "prior_part_id": "part_0279",
+      "geometry_method": "unchanged original SO101 mesh, R92 placement checked",
+      "collision_source_check": {
+        "bounds_error_m": 0.0,
+        "volume_relative_error": 5.109119271667698e-10
+      }
+    },
+    {
+      "name": "SO101_Shoulder_bracket_cable_clip",
+      "rig": "shoulder_link",
+      "file": "meshes/SO101_Shoulder_bracket_cable_clip.stl",
+      "source": "SO101_Shoulder_bracket_cable_clip.stl",
+      "license": "Apache-2.0",
+      "world_bounds_m": [
+        [
+          0.12672526137916498,
+          -0.03832274777745849,
+          0.17279977812170982
+        ],
+        [
+          0.16479496647377292,
+          0.024741363720511358,
+          0.20079982741475105
+        ]
+      ],
+      "triangles": 21282,
+      "volume_m3": 1.3806961030637832e-05,
+      "watertight": true,
+      "sha256": "d3e9109d5092cb6d61f1992d3ac7aa109aff97e745233b998318888b5f4b9e0a",
+      "rgba": [
+        0.92,
+        0.22,
+        0.055,
+        1
+      ],
+      "collision_files": [
+        "meshes/collision/part_0321_000.stl",
+        "meshes/collision/part_0321_001.stl",
+        "meshes/collision/part_0321_002.stl",
+        "meshes/collision/part_0321_003.stl",
+        "meshes/collision/part_0321_004.stl",
+        "meshes/collision/part_0321_005.stl",
+        "meshes/collision/part_0321_006.stl",
+        "meshes/collision/part_0321_007.stl",
+        "meshes/collision/part_0321_008.stl",
+        "meshes/collision/part_0321_009.stl",
+        "meshes/collision/part_0321_010.stl",
+        "meshes/collision/part_0321_011.stl",
+        "meshes/collision/part_0321_012.stl",
+        "meshes/collision/part_0321_013.stl",
+        "meshes/collision/part_0321_014.stl",
+        "meshes/collision/part_0321_015.stl",
+        "meshes/collision/part_0321_016.stl",
+        "meshes/collision/part_0321_017.stl",
+        "meshes/collision/part_0321_018.stl",
+        "meshes/collision/part_0321_019.stl",
+        "meshes/collision/part_0321_020.stl",
+        "meshes/collision/part_0321_021.stl",
+        "meshes/collision/part_0321_022.stl",
+        "meshes/collision/part_0321_023.stl",
+        "meshes/collision/part_0321_024.stl",
+        "meshes/collision/part_0321_025.stl",
+        "meshes/collision/part_0321_026.stl",
+        "meshes/collision/part_0321_027.stl",
+        "meshes/collision/part_0321_028.stl",
+        "meshes/collision/part_0321_029.stl",
+        "meshes/collision/part_0321_030.stl",
+        "meshes/collision/part_0321_031.stl",
+        "meshes/collision/part_0321_032.stl",
+        "meshes/collision/part_0321_033.stl",
+        "meshes/collision/part_0321_034.stl",
+        "meshes/collision/part_0321_035.stl",
+        "meshes/collision/part_0321_036.stl",
+        "meshes/collision/part_0321_037.stl",
+        "meshes/collision/part_0321_038.stl",
+        "meshes/collision/part_0321_039.stl",
+        "meshes/collision/part_0321_040.stl",
+        "meshes/collision/part_0321_041.stl",
+        "meshes/collision/part_0321_042.stl",
+        "meshes/collision/part_0321_043.stl",
+        "meshes/collision/part_0321_044.stl",
+        "meshes/collision/part_0321_045.stl",
+        "meshes/collision/part_0321_046.stl",
+        "meshes/collision/part_0321_047.stl",
+        "meshes/collision/part_0321_048.stl",
+        "meshes/collision/part_0321_049.stl",
+        "meshes/collision/part_0321_050.stl",
+        "meshes/collision/part_0321_051.stl",
+        "meshes/collision/part_0321_052.stl",
+        "meshes/collision/part_0321_053.stl",
+        "meshes/collision/part_0321_054.stl",
+        "meshes/collision/part_0321_055.stl",
+        "meshes/collision/part_0321_056.stl",
+        "meshes/collision/part_0321_057.stl",
+        "meshes/collision/part_0321_058.stl",
+        "meshes/collision/part_0321_059.stl",
+        "meshes/collision/part_0321_060.stl",
+        "meshes/collision/part_0321_061.stl",
+        "meshes/collision/part_0321_062.stl",
+        "meshes/collision/part_0321_063.stl"
+      ],
+      "assembly_bounds_error_m": 1.3604199294858788e-09,
+      "print_volume_relative_error": 3.203922815854258e-08,
+      "prior_part_id": "part_0321",
+      "geometry_method": "unchanged original SO101 mesh, R92 placement checked",
+      "collision_source_check": {
+        "bounds_error_m": 0.0,
+        "volume_relative_error": 7.361790436357917e-16
+      }
+    },
+    {
+      "name": "SO101_Upper_arm_cable_clip",
+      "rig": "upper_arm_link",
+      "file": "meshes/SO101_Upper_arm_cable_clip.stl",
+      "source": "SO101_Upper_arm_cable_clip.stl",
+      "license": "Apache-2.0",
+      "world_bounds_m": [
+        [
+          0.12954332138598273,
+          -0.044457587427793224,
+          0.2050000955511658
+        ],
+        [
+          0.20132706516511467,
+          0.03070815139123561,
+          0.3426621678641351
+        ]
+      ],
+      "triangles": 25908,
+      "volume_m3": 0.00011789982540353077,
+      "watertight": true,
+      "sha256": "fdee853ceb3012977e61fa6e1705b44e74c855f21346af9abd7219a23e367adf",
+      "rgba": [
+        0.92,
+        0.22,
+        0.055,
+        1
+      ],
+      "collision_files": [
+        "meshes/collision/part_0320_000.stl",
+        "meshes/collision/part_0320_001.stl",
+        "meshes/collision/part_0320_002.stl",
+        "meshes/collision/part_0320_003.stl",
+        "meshes/collision/part_0320_004.stl",
+        "meshes/collision/part_0320_005.stl",
+        "meshes/collision/part_0320_006.stl",
+        "meshes/collision/part_0320_007.stl",
+        "meshes/collision/part_0320_008.stl",
+        "meshes/collision/part_0320_009.stl",
+        "meshes/collision/part_0320_010.stl",
+        "meshes/collision/part_0320_011.stl",
+        "meshes/collision/part_0320_012.stl",
+        "meshes/collision/part_0320_013.stl",
+        "meshes/collision/part_0320_014.stl",
+        "meshes/collision/part_0320_015.stl",
+        "meshes/collision/part_0320_016.stl",
+        "meshes/collision/part_0320_017.stl",
+        "meshes/collision/part_0320_018.stl",
+        "meshes/collision/part_0320_019.stl",
+        "meshes/collision/part_0320_020.stl",
+        "meshes/collision/part_0320_021.stl",
+        "meshes/collision/part_0320_022.stl",
+        "meshes/collision/part_0320_023.stl",
+        "meshes/collision/part_0320_024.stl",
+        "meshes/collision/part_0320_025.stl",
+        "meshes/collision/part_0320_026.stl",
+        "meshes/collision/part_0320_027.stl",
+        "meshes/collision/part_0320_028.stl",
+        "meshes/collision/part_0320_029.stl",
+        "meshes/collision/part_0320_030.stl",
+        "meshes/collision/part_0320_031.stl",
+        "meshes/collision/part_0320_032.stl",
+        "meshes/collision/part_0320_033.stl",
+        "meshes/collision/part_0320_034.stl",
+        "meshes/collision/part_0320_035.stl",
+        "meshes/collision/part_0320_036.stl",
+        "meshes/collision/part_0320_037.stl",
+        "meshes/collision/part_0320_038.stl",
+        "meshes/collision/part_0320_039.stl",
+        "meshes/collision/part_0320_040.stl",
+        "meshes/collision/part_0320_041.stl",
+        "meshes/collision/part_0320_042.stl",
+        "meshes/collision/part_0320_043.stl",
+        "meshes/collision/part_0320_044.stl",
+        "meshes/collision/part_0320_045.stl",
+        "meshes/collision/part_0320_046.stl",
+        "meshes/collision/part_0320_047.stl",
+        "meshes/collision/part_0320_048.stl",
+        "meshes/collision/part_0320_049.stl",
+        "meshes/collision/part_0320_050.stl",
+        "meshes/collision/part_0320_051.stl",
+        "meshes/collision/part_0320_052.stl",
+        "meshes/collision/part_0320_053.stl",
+        "meshes/collision/part_0320_054.stl",
+        "meshes/collision/part_0320_055.stl",
+        "meshes/collision/part_0320_056.stl",
+        "meshes/collision/part_0320_057.stl",
+        "meshes/collision/part_0320_058.stl",
+        "meshes/collision/part_0320_059.stl",
+        "meshes/collision/part_0320_060.stl",
+        "meshes/collision/part_0320_061.stl",
+        "meshes/collision/part_0320_062.stl",
+        "meshes/collision/part_0320_063.stl"
+      ],
+      "assembly_bounds_error_m": 5.08337344440335e-09,
+      "print_volume_relative_error": 8.435144821049329e-09,
+      "prior_part_id": "part_0320",
+      "geometry_method": "unchanged original SO101 mesh, R92 placement checked",
+      "collision_source_check": {
+        "bounds_error_m": 0.0,
+        "volume_relative_error": 8.046465698128219e-16
+      }
+    },
+    {
+      "name": "SO101_Forearm_cable_clip",
+      "rig": "lower_arm_link",
+      "file": "meshes/SO101_Forearm_cable_clip.stl",
+      "source": "SO101_Forearm_cable_clip.stl",
+      "license": "Apache-2.0",
+      "world_bounds_m": [
+        [
+          0.19485092962614994,
+          -0.04594805949729586,
+          0.2517189396188133
+        ],
+        [
+          0.3200101898849553,
+          0.02431575220005704,
+          0.32483348806299006
+        ]
+      ],
+      "triangles": 37508,
+      "volume_m3": 9.34191715717417e-05,
+      "watertight": true,
+      "sha256": "4ccedb9bc4104d56af2348d8cbacec4f3a9a06c39e3d9893bfb231c7d4e260b9",
+      "rgba": [
+        0.92,
+        0.22,
+        0.055,
+        1
+      ],
+      "collision_files": [
+        "meshes/collision/part_0319_000.stl",
+        "meshes/collision/part_0319_001.stl",
+        "meshes/collision/part_0319_002.stl",
+        "meshes/collision/part_0319_003.stl",
+        "meshes/collision/part_0319_004.stl",
+        "meshes/collision/part_0319_005.stl",
+        "meshes/collision/part_0319_006.stl",
+        "meshes/collision/part_0319_007.stl",
+        "meshes/collision/part_0319_008.stl",
+        "meshes/collision/part_0319_009.stl",
+        "meshes/collision/part_0319_010.stl",
+        "meshes/collision/part_0319_011.stl",
+        "meshes/collision/part_0319_012.stl",
+        "meshes/collision/part_0319_013.stl",
+        "meshes/collision/part_0319_014.stl",
+        "meshes/collision/part_0319_015.stl",
+        "meshes/collision/part_0319_016.stl",
+        "meshes/collision/part_0319_017.stl",
+        "meshes/collision/part_0319_018.stl",
+        "meshes/collision/part_0319_019.stl",
+        "meshes/collision/part_0319_020.stl",
+        "meshes/collision/part_0319_021.stl",
+        "meshes/collision/part_0319_022.stl",
+        "meshes/collision/part_0319_023.stl",
+        "meshes/collision/part_0319_024.stl",
+        "meshes/collision/part_0319_025.stl",
+        "meshes/collision/part_0319_026.stl",
+        "meshes/collision/part_0319_027.stl",
+        "meshes/collision/part_0319_028.stl",
+        "meshes/collision/part_0319_029.stl",
+        "meshes/collision/part_0319_030.stl",
+        "meshes/collision/part_0319_031.stl",
+        "meshes/collision/part_0319_032.stl",
+        "meshes/collision/part_0319_033.stl",
+        "meshes/collision/part_0319_034.stl",
+        "meshes/collision/part_0319_035.stl",
+        "meshes/collision/part_0319_036.stl",
+        "meshes/collision/part_0319_037.stl",
+        "meshes/collision/part_0319_038.stl",
+        "meshes/collision/part_0319_039.stl",
+        "meshes/collision/part_0319_040.stl",
+        "meshes/collision/part_0319_041.stl",
+        "meshes/collision/part_0319_042.stl",
+        "meshes/collision/part_0319_043.stl",
+        "meshes/collision/part_0319_044.stl",
+        "meshes/collision/part_0319_045.stl",
+        "meshes/collision/part_0319_046.stl",
+        "meshes/collision/part_0319_047.stl",
+        "meshes/collision/part_0319_048.stl",
+        "meshes/collision/part_0319_049.stl",
+        "meshes/collision/part_0319_050.stl",
+        "meshes/collision/part_0319_051.stl",
+        "meshes/collision/part_0319_052.stl",
+        "meshes/collision/part_0319_053.stl",
+        "meshes/collision/part_0319_054.stl",
+        "meshes/collision/part_0319_055.stl",
+        "meshes/collision/part_0319_056.stl",
+        "meshes/collision/part_0319_057.stl",
+        "meshes/collision/part_0319_058.stl",
+        "meshes/collision/part_0319_059.stl",
+        "meshes/collision/part_0319_060.stl",
+        "meshes/collision/part_0319_061.stl",
+        "meshes/collision/part_0319_062.stl",
+        "meshes/collision/part_0319_063.stl"
+      ],
+      "assembly_bounds_error_m": 2.986138392113702e-09,
+      "print_volume_relative_error": 1.9221615557627532e-08,
+      "prior_part_id": "part_0319",
+      "geometry_method": "unchanged original SO101 mesh, R92 placement checked",
+      "collision_source_check": {
+        "bounds_error_m": 0.0,
+        "volume_relative_error": 1.1605778067223453e-15
+      }
+    },
+    {
+      "name": "SO101_Wrist_cable_clip",
+      "rig": "wrist_link",
+      "file": "meshes/SO101_Wrist_cable_clip.stl",
+      "source": "SO101_Wrist_cable_clip.stl",
+      "license": "Apache-2.0",
+      "world_bounds_m": [
+        [
+          0.31617951237494785,
+          -0.05238300879985766,
+          0.19339900655813103
+        ],
+        [
+          0.35228409521208176,
+          0.01823961893431171,
+          0.27122507095114157
+        ]
+      ],
+      "triangles": 49042,
+      "volume_m3": 3.278802962099317e-05,
+      "watertight": true,
+      "sha256": "81c3c34139a283b5f6ffbe39410e3b89ed4dd35d58feae3104f705b1fa0402b2",
+      "rgba": [
+        0.92,
+        0.22,
+        0.055,
+        1
+      ],
+      "collision_files": [
+        "meshes/collision/part_0318_000.stl",
+        "meshes/collision/part_0318_001.stl",
+        "meshes/collision/part_0318_002.stl",
+        "meshes/collision/part_0318_003.stl",
+        "meshes/collision/part_0318_004.stl",
+        "meshes/collision/part_0318_005.stl",
+        "meshes/collision/part_0318_006.stl",
+        "meshes/collision/part_0318_007.stl",
+        "meshes/collision/part_0318_008.stl",
+        "meshes/collision/part_0318_009.stl",
+        "meshes/collision/part_0318_010.stl",
+        "meshes/collision/part_0318_011.stl",
+        "meshes/collision/part_0318_012.stl",
+        "meshes/collision/part_0318_013.stl",
+        "meshes/collision/part_0318_014.stl",
+        "meshes/collision/part_0318_015.stl",
+        "meshes/collision/part_0318_016.stl",
+        "meshes/collision/part_0318_017.stl",
+        "meshes/collision/part_0318_018.stl",
+        "meshes/collision/part_0318_019.stl",
+        "meshes/collision/part_0318_020.stl",
+        "meshes/collision/part_0318_021.stl",
+        "meshes/collision/part_0318_022.stl",
+        "meshes/collision/part_0318_023.stl",
+        "meshes/collision/part_0318_024.stl",
+        "meshes/collision/part_0318_025.stl",
+        "meshes/collision/part_0318_026.stl",
+        "meshes/collision/part_0318_027.stl",
+        "meshes/collision/part_0318_028.stl",
+        "meshes/collision/part_0318_029.stl",
+        "meshes/collision/part_0318_030.stl",
+        "meshes/collision/part_0318_031.stl",
+        "meshes/collision/part_0318_032.stl",
+        "meshes/collision/part_0318_033.stl",
+        "meshes/collision/part_0318_034.stl",
+        "meshes/collision/part_0318_035.stl",
+        "meshes/collision/part_0318_036.stl",
+        "meshes/collision/part_0318_037.stl",
+        "meshes/collision/part_0318_038.stl",
+        "meshes/collision/part_0318_039.stl",
+        "meshes/collision/part_0318_040.stl",
+        "meshes/collision/part_0318_041.stl",
+        "meshes/collision/part_0318_042.stl",
+        "meshes/collision/part_0318_043.stl",
+        "meshes/collision/part_0318_044.stl",
+        "meshes/collision/part_0318_045.stl",
+        "meshes/collision/part_0318_046.stl",
+        "meshes/collision/part_0318_047.stl",
+        "meshes/collision/part_0318_048.stl",
+        "meshes/collision/part_0318_049.stl",
+        "meshes/collision/part_0318_050.stl",
+        "meshes/collision/part_0318_051.stl",
+        "meshes/collision/part_0318_052.stl",
+        "meshes/collision/part_0318_053.stl",
+        "meshes/collision/part_0318_054.stl",
+        "meshes/collision/part_0318_055.stl",
+        "meshes/collision/part_0318_056.stl",
+        "meshes/collision/part_0318_057.stl",
+        "meshes/collision/part_0318_058.stl",
+        "meshes/collision/part_0318_059.stl",
+        "meshes/collision/part_0318_060.stl",
+        "meshes/collision/part_0318_061.stl",
+        "meshes/collision/part_0318_062.stl",
+        "meshes/collision/part_0318_063.stl"
+      ],
+      "assembly_bounds_error_m": 3.1464587879614925e-09,
+      "print_volume_relative_error": 7.107811189945951e-08,
+      "prior_part_id": "part_0318",
+      "geometry_method": "unchanged original SO101 mesh, R92 placement checked",
+      "collision_source_check": {
+        "bounds_error_m": 0.0,
+        "volume_relative_error": 1.6533506054162569e-15
+      }
+    },
+    {
+      "name": "SO101_Wrist_bracket",
+      "rig": "lower_arm_link",
+      "file": "meshes/SO101_Wrist_bracket.stl",
+      "source": "SO101_Wrist_bracket.stl",
+      "license": "Apache-2.0",
+      "world_bounds_m": [
+        [
+          0.28272702462950927,
+          -0.043246846107996006,
+          0.2483455373752339
+        ],
+        [
+          0.3262756060878829,
+          0.01413302347351195,
+          0.29257321763873845
+        ]
+      ],
+      "triangles": 21042,
+      "volume_m3": 1.3875563391148404e-05,
+      "watertight": true,
+      "sha256": "d626e8ea7ce32231f84a474c0deb2e93edc6915d7c6a9c9273f072b1e2484ce3",
+      "rgba": [
+        0.92,
+        0.22,
+        0.055,
+        1
+      ],
+      "collision_files": [
+        "meshes/collision/part_0286_000.stl",
+        "meshes/collision/part_0286_001.stl",
+        "meshes/collision/part_0286_002.stl",
+        "meshes/collision/part_0286_003.stl",
+        "meshes/collision/part_0286_004.stl",
+        "meshes/collision/part_0286_005.stl",
+        "meshes/collision/part_0286_006.stl",
+        "meshes/collision/part_0286_007.stl",
+        "meshes/collision/part_0286_008.stl",
+        "meshes/collision/part_0286_009.stl",
+        "meshes/collision/part_0286_010.stl",
+        "meshes/collision/part_0286_011.stl",
+        "meshes/collision/part_0286_012.stl",
+        "meshes/collision/part_0286_013.stl",
+        "meshes/collision/part_0286_014.stl",
+        "meshes/collision/part_0286_015.stl",
+        "meshes/collision/part_0286_016.stl",
+        "meshes/collision/part_0286_017.stl",
+        "meshes/collision/part_0286_018.stl",
+        "meshes/collision/part_0286_019.stl",
+        "meshes/collision/part_0286_020.stl",
+        "meshes/collision/part_0286_021.stl",
+        "meshes/collision/part_0286_022.stl",
+        "meshes/collision/part_0286_023.stl",
+        "meshes/collision/part_0286_024.stl",
+        "meshes/collision/part_0286_025.stl",
+        "meshes/collision/part_0286_026.stl",
+        "meshes/collision/part_0286_027.stl",
+        "meshes/collision/part_0286_028.stl",
+        "meshes/collision/part_0286_029.stl",
+        "meshes/collision/part_0286_030.stl",
+        "meshes/collision/part_0286_031.stl",
+        "meshes/collision/part_0286_032.stl",
+        "meshes/collision/part_0286_033.stl",
+        "meshes/collision/part_0286_034.stl",
+        "meshes/collision/part_0286_035.stl",
+        "meshes/collision/part_0286_036.stl",
+        "meshes/collision/part_0286_037.stl",
+        "meshes/collision/part_0286_038.stl",
+        "meshes/collision/part_0286_039.stl",
+        "meshes/collision/part_0286_040.stl",
+        "meshes/collision/part_0286_041.stl",
+        "meshes/collision/part_0286_042.stl",
+        "meshes/collision/part_0286_043.stl",
+        "meshes/collision/part_0286_044.stl",
+        "meshes/collision/part_0286_045.stl",
+        "meshes/collision/part_0286_046.stl",
+        "meshes/collision/part_0286_047.stl",
+        "meshes/collision/part_0286_048.stl",
+        "meshes/collision/part_0286_049.stl",
+        "meshes/collision/part_0286_050.stl",
+        "meshes/collision/part_0286_051.stl",
+        "meshes/collision/part_0286_052.stl",
+        "meshes/collision/part_0286_053.stl",
+        "meshes/collision/part_0286_054.stl",
+        "meshes/collision/part_0286_055.stl",
+        "meshes/collision/part_0286_056.stl",
+        "meshes/collision/part_0286_057.stl",
+        "meshes/collision/part_0286_058.stl",
+        "meshes/collision/part_0286_059.stl",
+        "meshes/collision/part_0286_060.stl",
+        "meshes/collision/part_0286_061.stl",
+        "meshes/collision/part_0286_062.stl",
+        "meshes/collision/part_0286_063.stl"
+      ],
+      "assembly_bounds_error_m": 2.753828332036079e-09,
+      "print_volume_relative_error": 2.4796367079215943e-07,
+      "prior_part_id": "part_0286",
+      "geometry_method": "unchanged original SO101 mesh, R92 placement checked",
+      "collision_source_check": {
+        "bounds_error_m": 0.0,
+        "volume_relative_error": 2.4417976362520763e-16
+      }
+    },
+    {
+      "name": "Servo_housing_part_0281",
+      "rig": "base_link",
+      "file": "meshes/Servo_housing_part_0281.stl",
+      "source": "part_0281.stl",
+      "license": "Apache-2.0",
+      "world_bounds_m": [
+        [
+          0.09241290389178654,
+          -0.039248440211645585,
+          0.12469999969899655
+        ],
+        [
+          0.12689230491500716,
+          0.009797359555433684,
+          0.16430000879764556
+        ]
+      ],
+      "triangles": 19080,
+      "volume_m3": 3.6215062990645684e-05,
+      "watertight": true,
+      "sha256": "a97f8043b9f7514575325b99f2da665b32e719e1903ef04d14cad320708714d9",
+      "rgba": [
+        0.12,
+        0.13,
+        0.14,
+        1
+      ],
+      "collision_files": [
+        "meshes/collision/part_0281.stl"
+      ],
+      "prior_part_id": "part_0281",
+      "geometry_method": "SO101 upstream housing",
+      "collision_source_check": {
+        "bounds_error_m": 0.0,
+        "volume_relative_error": 5.613352305739221e-16
+      }
+    },
+    {
+      "name": "Servo_housing_part_0282",
+      "rig": "base_link",
+      "file": "meshes/Servo_housing_part_0282.stl",
+      "source": "part_0282.stl",
+      "license": "Apache-2.0",
+      "world_bounds_m": [
+        [
+          0.07054258805506654,
+          -0.07657845392649196,
+          0.1267999905437231
+        ],
+        [
+          0.1208401427541421,
+          -0.059515057005065104,
+          0.16880000301599501
+        ]
+      ],
+      "triangles": 1254,
+      "volume_m3": 9.09282068231469e-06,
+      "watertight": true,
+      "sha256": "addedd1555c3032087e4b65a8b8b8f7486bb4a61fd90922261cf1dd6524acb5f",
+      "rgba": [
+        0.12,
+        0.13,
+        0.14,
+        1
+      ],
+      "collision_files": [
+        "meshes/collision/part_0282.stl"
+      ],
+      "prior_part_id": "part_0282",
+      "geometry_method": "SO101 upstream housing",
+      "collision_source_check": {
+        "bounds_error_m": 0.0,
+        "volume_relative_error": 7.452322898233401e-16
+      }
+    },
+    {
+      "name": "Servo_housing_part_0283",
+      "rig": "shoulder_link",
+      "file": "meshes/Servo_housing_part_0283.stl",
+      "source": "part_0283.stl",
+      "license": "Apache-2.0",
+      "world_bounds_m": [
+        [
+          0.12998665069021526,
+          -0.024444257726683554,
+          0.18179985410273075
+        ],
+        [
+          0.15682731719134774,
+          0.015778725238590433,
+          0.22719998745918274
+        ]
+      ],
+      "triangles": 19080,
+      "volume_m3": 3.6215057356465414e-05,
+      "watertight": true,
+      "sha256": "fa80bf61dbefa3c6616e7fc1dd8d9bb6f14d8fd85922ebcae454baf3966356da",
+      "rgba": [
+        0.12,
+        0.13,
+        0.14,
+        1
+      ],
+      "collision_files": [
+        "meshes/collision/part_0283.stl"
+      ],
+      "prior_part_id": "part_0283",
+      "geometry_method": "SO101 upstream housing",
+      "collision_source_check": {
+        "bounds_error_m": 0.0,
+        "volume_relative_error": 1.871117726346676e-15
+      }
+    },
+    {
+      "name": "Servo_housing_part_0285",
+      "rig": "upper_arm_link",
+      "file": "meshes/Servo_housing_part_0285.stl",
+      "source": "part_0285.stl",
+      "license": "Apache-2.0",
+      "world_bounds_m": [
+        [
+          0.1709572021809547,
+          -0.02896548673248763,
+          0.2987045947492587
+        ],
+        [
+          0.22240594626023752,
+          0.011825761461897802,
+          0.33611856257459083
+        ]
+      ],
+      "triangles": 19080,
+      "volume_m3": 3.621505808775586e-05,
+      "watertight": true,
+      "sha256": "0540bd2fb58981e6eb347cdd1252e3ea0a17b04ab98c9e552d363b24d88897cc",
+      "rgba": [
+        0.12,
+        0.13,
+        0.14,
+        1
+      ],
+      "collision_files": [
+        "meshes/collision/part_0285.stl"
+      ],
+      "prior_part_id": "part_0285",
+      "geometry_method": "SO101 upstream housing",
+      "collision_source_check": {
+        "bounds_error_m": 0.0,
+        "volume_relative_error": 1.4968941508505656e-15
+      }
+    },
+    {
+      "name": "Servo_housing_part_0287",
+      "rig": "lower_arm_link",
+      "file": "meshes/Servo_housing_part_0287.stl",
+      "source": "part_0287.stl",
+      "license": "Apache-2.0",
+      "world_bounds_m": [
+        [
+          0.2948716178759996,
+          -0.03753604775319184,
+          0.24493349190068436
+        ],
+        [
+          0.34643946166901474,
+          0.0032648480952570808,
+          0.28495312963315517
+        ]
+      ],
+      "triangles": 19080,
+      "volume_m3": 3.6215070158468314e-05,
+      "watertight": true,
+      "sha256": "cae5b5aefbf9dbec405fa9981942479cfbe7012d5ba71dfc4560149c573c0560",
+      "rgba": [
+        0.12,
+        0.13,
+        0.14,
+        1
+      ],
+      "collision_files": [
+        "meshes/collision/part_0287.stl"
+      ],
+      "prior_part_id": "part_0287",
+      "geometry_method": "SO101 upstream housing",
+      "collision_source_check": {
+        "bounds_error_m": 0.0,
+        "volume_relative_error": 5.613351194723461e-16
+      }
+    },
+    {
+      "name": "Servo_housing_part_0288",
+      "rig": "wrist_link",
+      "file": "meshes/Servo_housing_part_0288.stl",
+      "source": "part_0288.stl",
+      "license": "Apache-2.0",
+      "world_bounds_m": [
+        [
+          0.31930469154123853,
+          -0.028685810210473374,
+          0.19662736437101364
+        ],
+        [
+          0.34684421235977186,
+          0.017979484157140888,
+          0.2362273909251569
+        ]
+      ],
+      "triangles": 17316,
+      "volume_m3": 3.565663935791734e-05,
+      "watertight": true,
+      "sha256": "057438f51f1d628711b2ab27aae1cf38304813a7328883684a0af70f0eaa11c4",
+      "rgba": [
+        0.12,
+        0.13,
+        0.14,
+        1
+      ],
+      "collision_files": [
+        "meshes/collision/part_0288.stl"
+      ],
+      "prior_part_id": "part_0288",
+      "geometry_method": "SO101 upstream housing",
+      "collision_source_check": {
+        "bounds_error_m": 0.0,
+        "volume_relative_error": 3.2307161555595722e-15
+      }
+    },
+    {
+      "name": "Track_Left",
+      "rig": "static",
+      "file": "meshes/Track_Left.obj",
+      "source": "Track_Left_Mounted_Reference_reference_mesh.json",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.16060661561200937,
+          0.11900000177323818,
+          -6.938893903907228e-18
+        ],
+        [
+          0.16860661561200935,
+          0.15100000225007534,
+          0.07922817348283787
+        ]
+      ],
+      "triangles": 513216,
+      "volume_m3": 0.00013036912291053342,
+      "watertight": true,
+      "sha256": "d13bf72f7816399af72fefc1276b815033f37944c669ce6dba2b122c96f7f24e",
+      "rgba": [
+        0.43,
+        0.46,
+        0.47,
+        1
+      ],
+      "collision_files": [],
+      "geometry_method": "original R92 mounted belt; OBJ retains all triangles without STL reader face limit"
+    },
+    {
+      "name": "Track_Right",
+      "rig": "static",
+      "file": "meshes/Track_Right.obj",
+      "source": "Track_Right_Mounted_Reference_reference_mesh.json",
+      "license": "CERN-OHL-S-2.0",
+      "world_bounds_m": [
+        [
+          -0.16060661561200937,
+          -0.15100000225007534,
+          -6.938893903907228e-18
+        ],
+        [
+          0.16860661561200935,
+          -0.11900000177323818,
+          0.07922817348283787
+        ]
+      ],
+      "triangles": 513216,
+      "volume_m3": 0.00013036912291053337,
+      "watertight": true,
+      "sha256": "973539b97f7ba075b7e6f07f8eb5f1da94a88f467b9830aad6b326e51df4eee5",
+      "rgba": [
+        0.43,
+        0.46,
+        0.47,
+        1
+      ],
+      "collision_files": [],
+      "geometry_method": "original R92 mounted belt; OBJ retains all triangles without STL reader face limit"
+    }
+  ],
+  "physical_calibration_verified": false
+}

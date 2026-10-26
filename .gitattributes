@@ -1,0 +1,2 @@
+# Generated 3D assets: avoid enormous textual OBJ diffs in code review.
+simulation/mujoco/model/meshes/** -diff linguist-generated=true

@@ -1,0 +1,21 @@
+MOSS V0.6 / R92 preliminary MuJoCo model
+Copyright 2026 Laurent Genoud (Show Robotics), Thailand.
+
+Code: Apache License 2.0; see ../../LICENSE in the repository root (or the
+copy of LICENSE included with a standalone distribution).
+MOSS-derived CAD meshes: CERN-OHL-S-2.0; see the repository LICENSE-HARDWARE.
+Documentation and preview: CC BY 4.0.
+
+SO101 and NormaCore-derived meshes retain their Apache-2.0 licence; each
+part's licence is recorded in model/manifest.json. Source geometry was
+already part of the MOSS R92 release or the SO101 reference used by MOSS.
+
+The arm joint skeleton derives from Google DeepMind MuJoCo Menagerie,
+robotstudio_so101, pinned commit 0059d4335f8156206f63a35662313385f7ad6d74,
+Apache-2.0. reference/SO101_LICENSE and reference/SO101_source.json retain
+the upstream attribution. The original SO101 arm geometry is from
+TheRobotStudio/SO-ARM100; the gripper is derived from NormaCore's design.
+
+Manufacturer electronics/camera CAD models and TNKR low-poly guide meshes
+are not included. Sensor envelopes and ideal cameras are preliminary
+approximations, not vendor-supplied or calibrated digital twins.

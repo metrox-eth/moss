@@ -62,7 +62,9 @@ People who put a spool of filament in the rover every month: [Richard Burton](ht
 
 ## Simulation and autonomy, work in progress
 
-The MOSS body runs in MuJoCo with three recorded pickup missions, in the [moss-jev](https://github.com/metrox-eth/moss-jev) repository. It is a basic model. Dirac Robotics is helping build a calibrated URDF, so the robot in MuJoCo behaves like the real one, to experiment with Dimensional's Dimcode; Dimensional is working on a navigation arena; microduck-lab is trying reinforcement learning on it. Accurate simulation, sim-to-real transfer, a modular stack, autonomy: all of it is part of the journey, none of it is here on day one.
+The current **[MOSS V0.6 / R92 MuJoCo model](simulation/mujoco/)** lives in this repository, with its XML, meshes, viewer and tests. It includes the released assembly geometry, an articulated arm and coupled gripper, and an idealized base that can drive and turn. It runs locally without Jev or an API key. Start with the **[simulation guide](simulation/mujoco/README.md)** or **[model files](simulation/mujoco/model/)**.
+
+This is a preliminary development model: traction, servo dynamics, camera geometry and sim-to-real accuracy remain uncalibrated. Dirac Robotics is helping build the calibrated simulation; Dimensional is working on a navigation arena, and microduck-lab is trying reinforcement learning. The earlier recorded Jev demonstration remains in [moss-jev](https://github.com/metrox-eth/moss-jev) as historical work.
 
 ## Come and build
 

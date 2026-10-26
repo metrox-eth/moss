@@ -1,0 +1,135 @@
+{
+  "repository": "https://github.com/google-deepmind/mujoco_menagerie",
+  "commit": "0059d4335f8156206f63a35662313385f7ad6d74",
+  "directory": "robotstudio_so101",
+  "files": [
+    {
+      "name": "CHANGELOG.md",
+      "path": "robotstudio_so101/CHANGELOG.md",
+      "sha": "d8318d4c49688f8ea714e4dce5349c4958783d0e",
+      "size": 391,
+      "url": "https://api.github.com/repos/google-deepmind/mujoco_menagerie/contents/robotstudio_so101/CHANGELOG.md?ref=0059d4335f8156206f63a35662313385f7ad6d74",
+      "html_url": "https://github.com/google-deepmind/mujoco_menagerie/blob/0059d4335f8156206f63a35662313385f7ad6d74/robotstudio_so101/CHANGELOG.md",
+      "git_url": "https://api.github.com/repos/google-deepmind/mujoco_menagerie/git/blobs/d8318d4c49688f8ea714e4dce5349c4958783d0e",
+      "download_url": "https://raw.githubusercontent.com/google-deepmind/mujoco_menagerie/0059d4335f8156206f63a35662313385f7ad6d74/robotstudio_so101/CHANGELOG.md",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/google-deepmind/mujoco_menagerie/contents/robotstudio_so101/CHANGELOG.md?ref=0059d4335f8156206f63a35662313385f7ad6d74",
+        "git": "https://api.github.com/repos/google-deepmind/mujoco_menagerie/git/blobs/d8318d4c49688f8ea714e4dce5349c4958783d0e",
+        "html": "https://github.com/google-deepmind/mujoco_menagerie/blob/0059d4335f8156206f63a35662313385f7ad6d74/robotstudio_so101/CHANGELOG.md"
+      }
+    },
+    {
+      "name": "LICENSE",
+      "path": "robotstudio_so101/LICENSE",
+      "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "size": 11357,
+      "url": "https://api.github.com/repos/google-deepmind/mujoco_menagerie/contents/robotstudio_so101/LICENSE?ref=0059d4335f8156206f63a35662313385f7ad6d74",
+      "html_url": "https://github.com/google-deepmind/mujoco_menagerie/blob/0059d4335f8156206f63a35662313385f7ad6d74/robotstudio_so101/LICENSE",
+      "git_url": "https://api.github.com/repos/google-deepmind/mujoco_menagerie/git/blobs/261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "download_url": "https://raw.githubusercontent.com/google-deepmind/mujoco_menagerie/0059d4335f8156206f63a35662313385f7ad6d74/robotstudio_so101/LICENSE",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/google-deepmind/mujoco_menagerie/contents/robotstudio_so101/LICENSE?ref=0059d4335f8156206f63a35662313385f7ad6d74",
+        "git": "https://api.github.com/repos/google-deepmind/mujoco_menagerie/git/blobs/261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+        "html": "https://github.com/google-deepmind/mujoco_menagerie/blob/0059d4335f8156206f63a35662313385f7ad6d74/robotstudio_so101/LICENSE"
+      }
+    },
+    {
+      "name": "README.md",
+      "path": "robotstudio_so101/README.md",
+      "sha": "65129dba053c84d2ad384b1922cea46b119e9036",
+      "size": 1142,
+      "url": "https://api.github.com/repos/google-deepmind/mujoco_menagerie/contents/robotstudio_so101/README.md?ref=0059d4335f8156206f63a35662313385f7ad6d74",
+      "html_url": "https://github.com/google-deepmind/mujoco_menagerie/blob/0059d4335f8156206f63a35662313385f7ad6d74/robotstudio_so101/README.md",
+      "git_url": "https://api.github.com/repos/google-deepmind/mujoco_menagerie/git/blobs/65129dba053c84d2ad384b1922cea46b119e9036",
+      "download_url": "https://raw.githubusercontent.com/google-deepmind/mujoco_menagerie/0059d4335f8156206f63a35662313385f7ad6d74/robotstudio_so101/README.md",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/google-deepmind/mujoco_menagerie/contents/robotstudio_so101/README.md?ref=0059d4335f8156206f63a35662313385f7ad6d74",
+        "git": "https://api.github.com/repos/google-deepmind/mujoco_menagerie/git/blobs/65129dba053c84d2ad384b1922cea46b119e9036",
+        "html": "https://github.com/google-deepmind/mujoco_menagerie/blob/0059d4335f8156206f63a35662313385f7ad6d74/robotstudio_so101/README.md"
+      }
+    },
+    {
+      "name": "assets",
+      "path": "robotstudio_so101/assets",
+      "sha": "84016f65b56445f3486c4ec8ef882fc59148e9f8",
+      "size": 0,
+      "url": "https://api.github.com/repos/google-deepmind/mujoco_menagerie/contents/robotstudio_so101/assets?ref=0059d4335f8156206f63a35662313385f7ad6d74",
+      "html_url": "https://github.com/google-deepmind/mujoco_menagerie/tree/0059d4335f8156206f63a35662313385f7ad6d74/robotstudio_so101/assets",
+      "git_url": "https://api.github.com/repos/google-deepmind/mujoco_menagerie/git/trees/84016f65b56445f3486c4ec8ef882fc59148e9f8",
+      "download_url": null,
+      "type": "dir",
+      "_links": {
+        "self": "https://api.github.com/repos/google-deepmind/mujoco_menagerie/contents/robotstudio_so101/assets?ref=0059d4335f8156206f63a35662313385f7ad6d74",
+        "git": "https://api.github.com/repos/google-deepmind/mujoco_menagerie/git/trees/84016f65b56445f3486c4ec8ef882fc59148e9f8",
+        "html": "https://github.com/google-deepmind/mujoco_menagerie/tree/0059d4335f8156206f63a35662313385f7ad6d74/robotstudio_so101/assets"
+      }
+    },
+    {
+      "name": "scene.xml",
+      "path": "robotstudio_so101/scene.xml",
+      "sha": "f6d8d5b119f0966a8c1139fa65277355b8474327",
+      "size": 825,
+      "url": "https://api.github.com/repos/google-deepmind/mujoco_menagerie/contents/robotstudio_so101/scene.xml?ref=0059d4335f8156206f63a35662313385f7ad6d74",
+      "html_url": "https://github.com/google-deepmind/mujoco_menagerie/blob/0059d4335f8156206f63a35662313385f7ad6d74/robotstudio_so101/scene.xml",
+      "git_url": "https://api.github.com/repos/google-deepmind/mujoco_menagerie/git/blobs/f6d8d5b119f0966a8c1139fa65277355b8474327",
+      "download_url": "https://raw.githubusercontent.com/google-deepmind/mujoco_menagerie/0059d4335f8156206f63a35662313385f7ad6d74/robotstudio_so101/scene.xml",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/google-deepmind/mujoco_menagerie/contents/robotstudio_so101/scene.xml?ref=0059d4335f8156206f63a35662313385f7ad6d74",
+        "git": "https://api.github.com/repos/google-deepmind/mujoco_menagerie/git/blobs/f6d8d5b119f0966a8c1139fa65277355b8474327",
+        "html": "https://github.com/google-deepmind/mujoco_menagerie/blob/0059d4335f8156206f63a35662313385f7ad6d74/robotstudio_so101/scene.xml"
+      }
+    },
+    {
+      "name": "scene_box.xml",
+      "path": "robotstudio_so101/scene_box.xml",
+      "sha": "f51dd3b7609d75c0a26d2735e924c140a15b72b1",
+      "size": 1469,
+      "url": "https://api.github.com/repos/google-deepmind/mujoco_menagerie/contents/robotstudio_so101/scene_box.xml?ref=0059d4335f8156206f63a35662313385f7ad6d74",
+      "html_url": "https://github.com/google-deepmind/mujoco_menagerie/blob/0059d4335f8156206f63a35662313385f7ad6d74/robotstudio_so101/scene_box.xml",
+      "git_url": "https://api.github.com/repos/google-deepmind/mujoco_menagerie/git/blobs/f51dd3b7609d75c0a26d2735e924c140a15b72b1",
+      "download_url": "https://raw.githubusercontent.com/google-deepmind/mujoco_menagerie/0059d4335f8156206f63a35662313385f7ad6d74/robotstudio_so101/scene_box.xml",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/google-deepmind/mujoco_menagerie/contents/robotstudio_so101/scene_box.xml?ref=0059d4335f8156206f63a35662313385f7ad6d74",
+        "git": "https://api.github.com/repos/google-deepmind/mujoco_menagerie/git/blobs/f51dd3b7609d75c0a26d2735e924c140a15b72b1",
+        "html": "https://github.com/google-deepmind/mujoco_menagerie/blob/0059d4335f8156206f63a35662313385f7ad6d74/robotstudio_so101/scene_box.xml"
+      }
+    },
+    {
+      "name": "so101.png",
+      "path": "robotstudio_so101/so101.png",
+      "sha": "f9ac493bb3809531abe7f23ef7168d15315c2c23",
+      "size": 1010575,
+      "url": "https://api.github.com/repos/google-deepmind/mujoco_menagerie/contents/robotstudio_so101/so101.png?ref=0059d4335f8156206f63a35662313385f7ad6d74",
+      "html_url": "https://github.com/google-deepmind/mujoco_menagerie/blob/0059d4335f8156206f63a35662313385f7ad6d74/robotstudio_so101/so101.png",
+      "git_url": "https://api.github.com/repos/google-deepmind/mujoco_menagerie/git/blobs/f9ac493bb3809531abe7f23ef7168d15315c2c23",
+      "download_url": "https://raw.githubusercontent.com/google-deepmind/mujoco_menagerie/0059d4335f8156206f63a35662313385f7ad6d74/robotstudio_so101/so101.png",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/google-deepmind/mujoco_menagerie/contents/robotstudio_so101/so101.png?ref=0059d4335f8156206f63a35662313385f7ad6d74",
+        "git": "https://api.github.com/repos/google-deepmind/mujoco_menagerie/git/blobs/f9ac493bb3809531abe7f23ef7168d15315c2c23",
+        "html": "https://github.com/google-deepmind/mujoco_menagerie/blob/0059d4335f8156206f63a35662313385f7ad6d74/robotstudio_so101/so101.png"
+      }
+    },
+    {
+      "name": "so101.xml",
+      "path": "robotstudio_so101/so101.xml",
+      "sha": "38bd905c819c8c6d755fecb6394d166944262cce",
+      "size": 17206,
+      "url": "https://api.github.com/repos/google-deepmind/mujoco_menagerie/contents/robotstudio_so101/so101.xml?ref=0059d4335f8156206f63a35662313385f7ad6d74",
+      "html_url": "https://github.com/google-deepmind/mujoco_menagerie/blob/0059d4335f8156206f63a35662313385f7ad6d74/robotstudio_so101/so101.xml",
+      "git_url": "https://api.github.com/repos/google-deepmind/mujoco_menagerie/git/blobs/38bd905c819c8c6d755fecb6394d166944262cce",
+      "download_url": "https://raw.githubusercontent.com/google-deepmind/mujoco_menagerie/0059d4335f8156206f63a35662313385f7ad6d74/robotstudio_so101/so101.xml",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/google-deepmind/mujoco_menagerie/contents/robotstudio_so101/so101.xml?ref=0059d4335f8156206f63a35662313385f7ad6d74",
+        "git": "https://api.github.com/repos/google-deepmind/mujoco_menagerie/git/blobs/38bd905c819c8c6d755fecb6394d166944262cce",
+        "html": "https://github.com/google-deepmind/mujoco_menagerie/blob/0059d4335f8156206f63a35662313385f7ad6d74/robotstudio_so101/so101.xml"
+      }
+    }
+  ]
+}

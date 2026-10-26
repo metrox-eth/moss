@@ -1,0 +1,32 @@
+{
+  "checked_on": "2026-10-26",
+  "platform": "Darwin arm64",
+  "python": "3.12.14",
+  "mujoco": "3.3.7",
+  "numpy": "2.5.4",
+  "tests_passed": 12,
+  "tests_failed": 0,
+  "test_command": "python -m pytest test_model.py -q",
+  "xml_regeneration_identical": true,
+  "source_step_matches_github_release_digest": true,
+  "model_sha256": {
+    "model/moss_robot.xml": "3e9f78ef5646d21ef80224b9f24dae97503c5130d4db9e441e037b7366328e69",
+    "model/scene.xml": "a5d44313c1ed624a2e84f59b5ad753fa3346e2abe81c9487b7196d0bf2554c50"
+  },
+  "full_scene": {
+    "nq": 18,
+    "nv": 17,
+    "nu": 9,
+    "geom_count": 845,
+    "estimated_mass_kg": 4.773006
+  },
+  "rendered": [
+    "overview",
+    "front_camera_ideal",
+    "wrist_camera_ideal"
+  ],
+  "hardware_access": false,
+  "physical_calibration_verified": false,
+  "autonomous_pickup_claimed": false,
+  "linux_ci": "Automated by .github/workflows/mujoco.yml; consult the check attached to this revision"
+}

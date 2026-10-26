@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="MOSS arm generator input, derived from pinned SO101 skeleton and NC90 CAD travel">
+  <default>
+    <mesh maxhullvert="128" />
+    <default class="so101">
+      <joint damping="1" frictionloss="0.1" armature="0.005" />
+      <position kp="50" />
+      <default class="visual">
+        <geom type="mesh" contype="0" conaffinity="0" group="2" />
+      </default>
+      <default class="collision">
+        <geom group="3" condim="3" />
+      </default>
+      <default class="collision_gripper">
+        <geom group="3" condim="6" friction="1 5e-3 5e-4" solref="0.01 1" priority="1" rgba="1.0 0 0 1.0" mass="0" />
+      </default>
+      <default class="collision_gripper_mesh">
+        <geom group="4" condim="6" friction="1 5e-3 5e-4" solref="0.01 1" priority="1" rgba="1.0 0 0 1.0" mass="0" />
+      </default>
+    </default>
+    <default class="sts3215">
+      <geom contype="0" conaffinity="0" />
+      <joint damping="0.60" frictionloss="0.052" armature="0.028" />
+      <position kp="998.22" kv="2.731" forcerange="-2.94 2.94" />
+    </default>
+    <default class="backlash">
+      <joint damping="0.01" frictionloss="0" armature="0.01" limited="true" range="-0.0087267 0.0087267" />
+    </default>
+  </default>
+  <worldbody>
+    <body name="base" pos="0.099 -0.04 0.1004" quat="0.793353340291 0 0 0.608761429009" childclass="so101">
+      <inertial pos="0.0137179 -5.19711e-05 0.0334843" mass="0.147" fullinertia="0.000114686 0.000136117 0.000130364 -4.59787e-07 4.97151e-06 9.75275e-08" />
+      <body name="shoulder" pos="0.0388353 0 0.0624" quat="0 0 -1 0">
+        <joint axis="0 0 1" name="shoulder_pan" type="hinge" range="-1.91986 1.91986" class="sts3215" />
+        <inertial pos="-0.0307604 -1.7e-05 -0.0252713" mass="0.100006" fullinertia="8.3759e-05 8.10403e-05 2.39783e-05 7.55525e-08 -1.16342e-06 1.54663e-07" />
+        <body name="upper_arm" pos="-0.0303992 -0.0182778 -0.0542" quat="1 -1 -1 -1">
+          <joint axis="0 0 1" name="shoulder_lift" type="hinge" range="-1.7453293 1.7453293" class="sts3215" />
+          <inertial pos="-0.089847 -0.008382 0.018409" mass="0.103" fullinertia="4.08002e-05 0.000147318 0.000142487 -1.97819e-05 -4.03016e-08 8.97326e-09" />
+          <body name="lower_arm" pos="-0.11257 -0.028 0" quat="1 0 0 1">
+            <joint axis="0 0 1" name="elbow_flex" type="hinge" range="-1.69 1.69" class="sts3215" />
+            <inertial pos="-0.098070 0.0032438 0.018283" mass="0.104" fullinertia="2.87438e-05 0.000159844 0.00014529 7.41152e-06 1.26409e-06 -4.90188e-08" />
+            <body name="wrist" pos="-0.1349 0.0052 0" quat="1 0 0 -1">
+              <joint axis="0 0 1" name="wrist_flex" type="hinge" range="-1.658063 1.658063" class="sts3215" />
+              <inertial pos="-0.000103312 -0.0386143 0.0281156" mass="0.079" fullinertia="3.68263e-05 2.5391e-05 2.1e-05 1.7893e-08 -5.28128e-08 3.6412e-06" />
+              <body name="gripper" pos="5.55112e-17 -0.0611 0.0181" quat="0.0172091 -0.0172091 0.706897 0.706897">
+                <joint axis="0 0 1" name="wrist_roll" type="hinge" range="-2.7438473 2.8412063" class="sts3215" />
+                <inertial pos="0 0 -.035" mass=".15" diaginertia=".00012 .00012 .00008" />
+                <body name="nc90_tool" pos="-1.09576993798e-06 3.82753150396e-07 -0.0484503111592" quat="-0.411722428892 5.53550068644e-08 -2.01628535127e-06 0.9113093007">
+                  <body name="nc90_jaw_left">
+                    <joint name="nc90_jaw_left_slide" type="slide" axis="0 1 0" range="0 .045" damping="1" armature=".001" />
+                    <inertial pos="0 0 0" mass=".03" diaginertia=".00004 .00002 .00004" />
+                  </body>
+                  <body name="nc90_jaw_right">
+                    <joint name="nc90_jaw_right_slide" type="slide" axis="0 -1 0" range="0 .045" damping="1" armature=".001" />
+                    <inertial pos="0 0 0" mass=".03" diaginertia=".00004 .00002 .00004" />
+                  </body>
+                  <body name="nc90_drive">
+                    <joint name="nc90_pinion" type="hinge" axis="0 0 1" range="0 3.78505138987" damping=".01" armature=".0001" />
+                    <inertial pos="0 0 0" mass=".01" diaginertia=".000001 .000001 .000002" />
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+  <actuator>
+    <position class="sts3215" name="shoulder_pan" joint="shoulder_pan" ctrlrange="-1.91986 1.91986" />
+    <position class="sts3215" name="shoulder_lift" joint="shoulder_lift" ctrlrange="-1.74533 1.74533" />
+    <position class="sts3215" name="elbow_flex" joint="elbow_flex" ctrlrange="-1.69 1.69" />
+    <position class="sts3215" name="wrist_flex" joint="wrist_flex" ctrlrange="-1.65806 1.65806" />
+    <position class="sts3215" name="wrist_roll" joint="wrist_roll" ctrlrange="-2.74385 2.84121" />
+    <position name="nc90_close" joint="nc90_jaw_left_slide" kp="50" ctrlrange="0 .045" forcerange="-10 10" />
+  </actuator>
+  <contact>
+    <exclude body1="base" body2="shoulder" />
+    <exclude body1="shoulder" body2="upper_arm" />
+    <exclude body1="upper_arm" body2="lower_arm" />
+    <exclude body1="lower_arm" body2="wrist" />
+    <exclude body1="wrist" body2="gripper" />
+    <exclude body1="wrist" body2="nc90_tool" />
+    <exclude body1="nc90_tool" body2="nc90_jaw_left" />
+    <exclude body1="nc90_tool" body2="nc90_jaw_right" />
+    <exclude body1="nc90_jaw_left" body2="nc90_jaw_right" />
+  </contact>
+  <equality>
+    <joint name="symmetric_nc90_jaws" joint1="nc90_jaw_right_slide" joint2="nc90_jaw_left_slide" polycoef="0 1 0 0 0" />
+    <joint name="nc90_rack_pinion" joint1="nc90_pinion" joint2="nc90_jaw_left_slide" polycoef="0 84.1122531082 0 0 0" />
+  </equality>
+</mujoco>

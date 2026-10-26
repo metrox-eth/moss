@@ -1,0 +1,23 @@
+name: MuJoCo R92 model
+
+on:
+  pull_request:
+    paths: ['simulation/**', '.github/workflows/mujoco.yml']
+  push:
+    paths: ['simulation/**', '.github/workflows/mujoco.yml']
+
+jobs:
+  model:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: simulation/mujoco/requirements*.txt
+      - run: python -m pip install -r simulation/mujoco/requirements-dev.txt
+      - run: python -m pytest simulation/mujoco/test_model.py -q
+      - run: python simulation/mujoco/tools/build_model.py
+      - run: git diff --exit-code -- simulation/mujoco/model/moss_robot.xml simulation/mujoco/model/scene.xml
