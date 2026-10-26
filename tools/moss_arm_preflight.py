@@ -50,14 +50,21 @@ def main(argv=None) -> int:
     record = {"when": time.strftime("%Y-%m-%d %H:%M:%S"), "servos": {}, "moves": {}, "verdict": {}}
     try:
         bus = ad._bus  # noqa: SLF001
-        print("servo           pos   volt  temp  load  torque_limit  acc  speed")
+        print("servo           pos   volt  temp  load  torque_limit  acc  speed  P  D  I  deadband")
         for name, sid in SERVO_IDS.items():
             st = M.read_servo(bus, sid)
             st["torque_limit"] = bus.read2(sid, 48)
             st["acc"] = (bus.read2(sid, 41) or 0) & 0xFF
             st["speed"] = bus.read2(sid, 46)
+            # the position loop (registers 21-23) and the dead band (26-27): what a goal a few
+            # ticks away does under load depends on these, not on the maker's figures
+            pdi = bus.read2(sid, 21) or 0
+            st["P"], st["D"] = pdi & 0xFF, pdi >> 8
+            st["I"] = (bus.read2(sid, 23) or 0) & 0xFF
+            dz = bus.read2(sid, 26) or 0
+            st["deadband"] = [dz & 0xFF, dz >> 8]
             record["servos"][name] = st
-            print(f"{name:14s} {st['pos']:5d}  {st['volt']:.1f}  {st['temp']:3d}   {st['load']:4d}  {st['torque_limit']:5d}       {st['acc']:3d}  {st['speed']}")
+            print(f"{name:14s} {st['pos']:5d}  {st['volt']:.1f}  {st['temp']:3d}   {st['load']:4d}  {st['torque_limit']:5d}       {st['acc']:3d}  {st['speed']:5d}  {st['P']:2d} {st['D']:2d} {st['I']:2d}  {st['deadband']}")
         q = ad.read_joint_positions() or []
         drive = A.drive_pose_rad()
         near_drive = len(q) >= A.ARM_DOF and all(abs(x - y) <= 0.17 for x, y in zip(q[:4], drive[:4]))
