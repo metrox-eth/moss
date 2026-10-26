@@ -1,0 +1,11 @@
+camera_in_tool_xyz_m: [0.05884, 0.03292, -0.00194]
+camera_in_tool_rotvec_deg: [140.003, -78.625, -14.906]
+camera_in_tool_matrix: [[0.520522, -0.794454, -0.312888, 0.058838], [-0.853848, -0.484144, -0.191174, 0.032915], [0.000396, 0.366669, -0.930351, -0.001935], [0.0, 0.0, 0.0, 1.0]]
+method: tsai+lm
+views_used: 10 (pan_plus, pan_minus, wrist_plus, wrist_minus, roll_plus, roll_minus, higher, lower, mixed, back_centre)
+board_origin_spread_m: 0.0056
+board_origin_mean_chassis_m: [0.3990, 0.1246, -0.0182]
+check: PASS (tolerance 0.010 m)
+frame_orientation: upright (raw stream turned 180 deg)
+tool_frame: moss_dimos/arm_kin tool() (config/arm_chain.json), chassis frame
+written: 2026-10-26 16:10:07

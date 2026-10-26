@@ -1,0 +1,164 @@
+{
+ "format": "moss-arm-chain/1",
+ "model": "MOSS_R31.xml",
+ "frame": "the model's world frame: the chassis, x forward, y left, the floor at z = 0",
+ "about": "one link per body from the arm's mount to the tool; pos / quat (w x y z) = the body's offset from its parent as in the CAD model; a hinge at the body's origin about axis, model radians",
+ "links": [
+  {
+   "body": "base",
+   "pos": [
+    0.099,
+    -0.04,
+    0.1004
+   ],
+   "quat": [
+    0.7933533,
+    0.0,
+    0.0,
+    0.6087614
+   ],
+   "joint": null
+  },
+  {
+   "body": "shoulder",
+   "pos": [
+    0.038835,
+    0.0,
+    0.0624
+   ],
+   "quat": [
+    0.0,
+    0.0,
+    -1.0,
+    0.0
+   ],
+   "joint": "shoulder_pan",
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    -1.91986,
+    1.91986
+   ]
+  },
+  {
+   "body": "upper_arm",
+   "pos": [
+    -0.030399,
+    -0.018278,
+    -0.0542
+   ],
+   "quat": [
+    0.5,
+    -0.5,
+    -0.5,
+    -0.5
+   ],
+   "joint": "shoulder_lift",
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    -1.745329,
+    1.745329
+   ]
+  },
+  {
+   "body": "lower_arm",
+   "pos": [
+    -0.11257,
+    -0.028,
+    0.0
+   ],
+   "quat": [
+    0.7071068,
+    0.0,
+    0.0,
+    0.7071068
+   ],
+   "joint": "elbow_flex",
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    -1.69,
+    1.69
+   ]
+  },
+  {
+   "body": "wrist",
+   "pos": [
+    -0.1349,
+    0.0052,
+    0.0
+   ],
+   "quat": [
+    0.7071068,
+    0.0,
+    0.0,
+    -0.7071068
+   ],
+   "joint": "wrist_flex",
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    -1.658063,
+    1.658063
+   ]
+  },
+  {
+   "body": "gripper",
+   "pos": [
+    0.0,
+    -0.0611,
+    0.0181
+   ],
+   "quat": [
+    0.0172091,
+    -0.0172091,
+    0.7068973,
+    0.7068973
+   ],
+   "joint": "wrist_roll",
+   "axis": [
+    0.0,
+    0.0,
+    1.0
+   ],
+   "range": [
+    -2.743847,
+    2.841206
+   ]
+  },
+  {
+   "body": "nc90_tool",
+   "pos": [
+    -1e-06,
+    0.0,
+    -0.04845
+   ],
+   "quat": [
+    -0.4117224,
+    1e-07,
+    -2e-06,
+    0.9113093
+   ],
+   "joint": null
+  }
+ ],
+ "tcp_in_tool_m": [
+  0.0,
+  0.0,
+  -0.035
+ ],
+ "jaws_below_tcp_m": 0.02
+}

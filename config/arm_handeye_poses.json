@@ -1,0 +1,319 @@
+{
+ "format": "moss-arm-drop/1",
+ "joints": [
+  "shoulder_pan",
+  "shoulder_lift",
+  "elbow_flex",
+  "wrist_flex",
+  "wrist_roll"
+ ],
+ "units": {
+  "rad": "model radians (the keep-out table's model)",
+  "ticks": "servo positions as reported (homing offset applied)",
+  "tcp_m": "metres, the model's world frame: the tool point 35 mm along the approach from the gripper's tool frame",
+  "duration_s": "seconds",
+  "gap_mm": "the gripper's jaw gap in millimetres"
+ },
+ "ticks_rule": "ticks = the table's joint_map on rad (today zero 2048 and sign +1 on every joint: round(2048 + rad * 4096 / (2 pi))); ticks are written here for reading, the tool recomputes them",
+ "interpolation": "each move is a straight line in joint space, timed by the quintic smootherstep u -> 6u^5 - 15u^4 + 10u^3 over its duration; angles are never wrapped (the pan turns the way the numbers say); the jaw gap follows the cubic smoothstep 3u^2 - 2u^3 over gap_duration_s (default the move's)",
+ "gripper": {
+  "open": {
+   "gap_mm": 90,
+   "ticks": 3674
+  },
+  "grasp": {
+   "gap_mm": 53,
+   "ticks": 2780
+  },
+  "force": 400,
+  "force_registers": [
+   44,
+   48
+  ],
+  "rule": "ticks for a gap: the straight line through open and grasp (24.2 ticks per mm); the grasp value is the goal that closed on an object with the force limited, not a measured 53 mm"
+ },
+ "rest": [
+  "drive"
+ ],
+ "about": "Hand-eye poses (tools/moss_wrist_handeye.py): small variations around look_floor so the wrist camera keeps the board taped on the floor in view; played in this order, one move at a time.",
+ "poses": {
+  "centre": {
+   "ticks": [
+    2865,
+    1583,
+    2404,
+    2889,
+    3214
+   ],
+   "rad": [
+    1.2532623037025687,
+    -0.7133010663668231,
+    0.5460971604872883,
+    1.2900778426118242,
+    1.7886215986746576
+   ]
+  },
+  "pan_plus": {
+   "ticks": [
+    2945,
+    1583,
+    2404,
+    2889,
+    3214
+   ],
+   "rad": [
+    1.37598076673342,
+    -0.7133010663668231,
+    0.5460971604872883,
+    1.2900778426118242,
+    1.7886215986746576
+   ]
+  },
+  "pan_minus": {
+   "ticks": [
+    2785,
+    1583,
+    2404,
+    2889,
+    3214
+   ],
+   "rad": [
+    1.1305438406717174,
+    -0.7133010663668231,
+    0.5460971604872883,
+    1.2900778426118242,
+    1.7886215986746576
+   ]
+  },
+  "wrist_plus": {
+   "ticks": [
+    2865,
+    1583,
+    2404,
+    2979,
+    3214
+   ],
+   "rad": [
+    1.2532623037025687,
+    -0.7133010663668231,
+    0.5460971604872883,
+    1.4281361135215318,
+    1.7886215986746576
+   ]
+  },
+  "wrist_minus": {
+   "ticks": [
+    2865,
+    1583,
+    2404,
+    2799,
+    3214
+   ],
+   "rad": [
+    1.2532623037025687,
+    -0.7133010663668231,
+    0.5460971604872883,
+    1.1520195717021164,
+    1.7886215986746576
+   ]
+  },
+  "roll_plus": {
+   "ticks": [
+    2865,
+    1583,
+    2404,
+    2889,
+    3334
+   ],
+   "rad": [
+    1.2532623037025687,
+    -0.7133010663668231,
+    0.5460971604872883,
+    1.2900778426118242,
+    1.9726992932209344
+   ]
+  },
+  "roll_minus": {
+   "ticks": [
+    2865,
+    1583,
+    2404,
+    2889,
+    3094
+   ],
+   "rad": [
+    1.2532623037025687,
+    -0.7133010663668231,
+    0.5460971604872883,
+    1.2900778426118242,
+    1.6045439041283807
+   ]
+  },
+  "higher": {
+   "ticks": [
+    2865,
+    1523,
+    2464,
+    2889,
+    3214
+   ],
+   "rad": [
+    1.2532623037025687,
+    -0.8053399136399616,
+    0.6381360077604267,
+    1.2900778426118242,
+    1.7886215986746576
+   ]
+  },
+  "lower": {
+   "ticks": [
+    2865,
+    1643,
+    2344,
+    2889,
+    3214
+   ],
+   "rad": [
+    1.2532623037025687,
+    -0.6212622190936846,
+    0.4540583132141498,
+    1.2900778426118242,
+    1.7886215986746576
+   ]
+  },
+  "mixed": {
+   "ticks": [
+    2925,
+    1583,
+    2404,
+    2829,
+    3274
+   ],
+   "rad": [
+    1.3453011509757073,
+    -0.7133010663668231,
+    0.5460971604872883,
+    1.1980389953386856,
+    1.880660445947796
+   ]
+  },
+  "back_centre": {
+   "ticks": [
+    2865,
+    1583,
+    2404,
+    2889,
+    3214
+   ],
+   "rad": [
+    1.2532623037025687,
+    -0.7133010663668231,
+    0.5460971604872883,
+    1.2900778426118242,
+    1.7886215986746576
+   ]
+  }
+ },
+ "sequence": [
+  {
+   "phase": "to_pan_plus",
+   "from": "centre",
+   "to": "pan_plus",
+   "duration_s": 4.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  },
+  {
+   "phase": "to_pan_minus",
+   "from": "pan_plus",
+   "to": "pan_minus",
+   "duration_s": 4.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  },
+  {
+   "phase": "to_wrist_plus",
+   "from": "pan_minus",
+   "to": "wrist_plus",
+   "duration_s": 4.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  },
+  {
+   "phase": "to_wrist_minus",
+   "from": "wrist_plus",
+   "to": "wrist_minus",
+   "duration_s": 4.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  },
+  {
+   "phase": "to_roll_plus",
+   "from": "wrist_minus",
+   "to": "roll_plus",
+   "duration_s": 4.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  },
+  {
+   "phase": "to_roll_minus",
+   "from": "roll_plus",
+   "to": "roll_minus",
+   "duration_s": 4.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  },
+  {
+   "phase": "to_higher",
+   "from": "roll_minus",
+   "to": "higher",
+   "duration_s": 4.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  },
+  {
+   "phase": "to_lower",
+   "from": "higher",
+   "to": "lower",
+   "duration_s": 4.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  },
+  {
+   "phase": "to_mixed",
+   "from": "lower",
+   "to": "mixed",
+   "duration_s": 4.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  },
+  {
+   "phase": "to_back_centre",
+   "from": "mixed",
+   "to": "back_centre",
+   "duration_s": 4.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  }
+ ]
+}
