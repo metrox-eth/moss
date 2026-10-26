@@ -78,25 +78,6 @@
    "at": "16:32:31"
   },
   {
-   "name": "arriere_centre",
-   "ticks": [
-    2871,
-    2360,
-    2920,
-    1970,
-    3232
-   ],
-   "rad": [
-    1.2624661884298827,
-    0.47860200582032003,
-    1.337631247036279,
-    -0.11965050145508001,
-    1.8162332528565992
-   ],
-   "gap_mm": 90,
-   "at": "16:34:15"
-  },
-  {
    "name": "arriere_droit",
    "ticks": [
     3391,
@@ -114,9 +95,7 @@
    ],
    "gap_mm": 90,
    "at": "16:35:18"
-  }
- ],
- "removed": [
+  },
   {
    "name": "avant_milieu",
    "ticks": [
@@ -134,8 +113,29 @@
     1.8131652912808278
    ],
    "gap_mm": 90,
-   "at": "16:30:35",
-   "why": "taught too far forward, removed on the builder's word; the front edge is the line between the two front-middle marks"
+   "at": "16:30:35"
+  }
+ ],
+ "removed": [
+  {
+   "name": "arriere_centre",
+   "ticks": [
+    2871,
+    2360,
+    2920,
+    1970,
+    3232
+   ],
+   "rad": [
+    1.2624661884298827,
+    0.47860200582032003,
+    1.337631247036279,
+    -0.11965050145508001,
+    1.8162332528565992
+   ],
+   "gap_mm": 90,
+   "at": "16:34:15",
+   "why": "the bottom tip of the diamond, removed on the builder's word; the front-middle mark is kept"
   }
  ]
 }
