@@ -1,0 +1,231 @@
+{
+ "format": "moss-arm-drop/1",
+ "joints": [
+  "shoulder_pan",
+  "shoulder_lift",
+  "elbow_flex",
+  "wrist_flex",
+  "wrist_roll"
+ ],
+ "units": {
+  "rad": "model radians (the keep-out table's model)",
+  "ticks": "servo positions as reported (homing offset applied)",
+  "tcp_m": "metres, the model's world frame: the tool point 35 mm along the approach from the gripper's tool frame",
+  "duration_s": "seconds",
+  "gap_mm": "the gripper's jaw gap in millimetres"
+ },
+ "ticks_rule": "ticks = the table's joint_map on rad (today zero 2048 and sign +1 on every joint: round(2048 + rad * 4096 / (2 pi))); ticks are written here for reading, the tool recomputes them",
+ "interpolation": "each move is a straight line in joint space, timed by the quintic smootherstep u -> 6u^5 - 15u^4 + 10u^3 over its duration; angles are never wrapped (the pan turns the way the numbers say); the jaw gap follows the cubic smoothstep 3u^2 - 2u^3 over gap_duration_s (default the move's)",
+ "gripper": {
+  "open": {
+   "gap_mm": 90,
+   "ticks": 3674
+  },
+  "grasp": {
+   "gap_mm": 53,
+   "ticks": 2780
+  },
+  "force": 400,
+  "force_registers": [
+   44,
+   48
+  ],
+  "rule": "ticks for a gap: the straight line through open and grasp (24.2 ticks per mm); the grasp value is the goal that closed on an object with the force limited, not a measured 53 mm"
+ },
+ "rest": [
+  "drive"
+ ],
+ "about": "The observation pose (tools/moss_arm_observe.py): the wrist camera over the floor ahead, the pose set on the robot by hand (ticks 2927 1536 2338 3057 3258, gripper open); reached from drive through travel at a slow pace, roll last; left through travel back to drive.",
+ "poses": {
+  "travel": {
+   "rad": [
+    1.357552549,
+    -0.809755548,
+    0.383285798,
+    1.551888428,
+    -0.685999941
+   ],
+   "ticks": [
+    2933,
+    1520,
+    2298,
+    3060,
+    1601
+   ]
+  },
+  "look_down": {
+   "rad": [
+    1.2532623037025687,
+    -0.7133010663668231,
+    0.5460971604872883,
+    1.727262367159232,
+    1.7886215986746576
+   ],
+   "ticks": [
+    2865,
+    1583,
+    2404,
+    3174,
+    3214
+   ],
+   "gap_mm": 90,
+   "check": "REFERENCE, set with the builder on by his eye on the robot: arm base in MOSS's axis (pan 2931 -> 2865), gripper straight (roll 3261 -> 3214), gripper vertical (CAD tilt 0.7 deg), wrist camera ON TOP, pointing at the floor about 5 cm ahead of the rover's nose (the camera looks slightly backward on its mount); jaw tips 19.3 from the floor (his ruler; dictated 'mm', the CAD says 18.5 cm for the jaws: cm). Servos read [2862, 1602, 2431, 3174, 3220] under load (the shoulder sags 19 ticks). Gripper open 90 mm. Pan returns within 0.4 deg after a 90 deg swing (test ).",
+   "photo": "moss-atelier/docs/arm_look_down_profile_20261026.jpg (the builder, profile: jaw tips about 19 cm over the floor, camera on top pointing down-back toward the nose)"
+  },
+  "look_down_camera_under": {
+   "rad": [
+    1.354505035703021,
+    -0.7792622402459057,
+    0.4479223900626072,
+    1.547786614976612,
+    1.8499808301900833
+   ],
+   "ticks": [
+    2931,
+    1540,
+    2340,
+    3057,
+    3254
+   ],
+   "why": "the observation pose as set: in the CAD scene the wrist camera faces the robot's back and sits under the gripper (tilt 20 deg). Kept for the record, never played again.",
+   "ticks_note": "intermediate not a reference"
+  },
+  "look_down_camera_under_vertical": {
+   "rad": [
+    1.354505035703021,
+    -0.7133010663668231,
+    0.5460971604872883,
+    1.727262367159232,
+    -1.2808739578845103
+   ],
+   "ticks": [
+    2931,
+    1583,
+    2404,
+    3174,
+    1213
+   ],
+   "why": ": played by mistake; the builder: the camera is under the gripper at this roll",
+   "ticks_note": "intermediate not a reference"
+  },
+  "look_down_pan90": {
+   "rad": [
+    -0.3175340230923277,
+    -0.7133010663668231,
+    0.5460971604872883,
+    1.727262367159232,
+    1.8607186957052828
+   ],
+   "ticks": [
+    1841,
+    1583,
+    2404,
+    3174,
+    3261
+   ],
+   "why": "repeatability test asked by the builder: pan -90 deg and back",
+   "ticks_note": "intermediate not a reference"
+  },
+  "look_floor": {
+   "rad": [
+    1.2532623037025687,
+    -0.7133010663668231,
+    0.5460971604872883,
+    1.2900778426118242,
+    1.7886215986746576
+   ],
+   "ticks": [
+    2865,
+    1583,
+    2404,
+    2889,
+    3214
+   ],
+   "gap_mm": 90,
+   "check": "RECOGNITION pose, set with the builder by his eye: look_down with the wrist lowered 25 deg (3174 -> 2889) so the wrist camera faces the floor straight down (it sits tilted on its mount); the board held 15-30 cm under the lens fills the frame (view_look_floor.jpg). Servos read [2862, 1605, 2437, 2898, 3218] under load."
+  }
+ },
+ "sequence": [
+  {
+   "phase": "leave_drive",
+   "from": "drive",
+   "to": "travel",
+   "duration_s": 10.3,
+   "gap_mm": [
+    90,
+    90
+   ]
+  },
+  {
+   "phase": "observe",
+   "from": "travel",
+   "to": "look_down",
+   "duration_s": 8.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  },
+  {
+   "phase": "leave_observe",
+   "from": "look_down",
+   "to": "travel",
+   "duration_s": 8.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  },
+  {
+   "phase": "to_drive",
+   "from": "travel",
+   "to": "drive",
+   "duration_s": 10.3,
+   "gap_mm": [
+    90,
+    90
+   ]
+  },
+  {
+   "phase": "pan_test_out",
+   "from": "look_down",
+   "to": "look_down_pan90",
+   "duration_s": 10.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  },
+  {
+   "phase": "pan_test_back",
+   "from": "look_down_pan90",
+   "to": "look_down",
+   "duration_s": 10.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  },
+  {
+   "phase": "to_floor",
+   "from": "look_down",
+   "to": "look_floor",
+   "duration_s": 5.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  },
+  {
+   "phase": "from_floor",
+   "from": "look_floor",
+   "to": "look_down",
+   "duration_s": 5.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  }
+ ],
+ "rule": "the wrist camera sits ON TOP of the gripper in every pose (the builder ): roll ~3254 with the wrist flexed forward, as in drive (3221). The CAD camera site is mirrored: do not derive the camera side from it until MOSS_R31.xml is fixed."
+}

@@ -1,0 +1,14 @@
+image_width: 1280
+image_height: 720
+fx: 553.698
+fy: 553.864
+cx: 639.210
+cy: 380.551
+distortion: [-0.271180, 0.086040, -0.000762, 0.000604, -0.013663]
+reprojection_error_px: 0.4541
+frames_used: 25
+frames_found: 25
+board: charuco 7x5, square_m 0.03, marker_m 0.022, DICT_5X5_100
+camera: wrist (/dev/v4l/by-id/usb-Xitech*-index0)
+frame_orientation: raw stream turned 180 deg (upright: floor ahead at the top)
+written: 2026-10-26 16:02:12
