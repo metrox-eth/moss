@@ -58,6 +58,21 @@ VARIATIONS = [
     ("mixed", [60, 0, 0, -60, 60]),
     ("back_centre", [0, 0, 0, 0, 0]),
 ]
+# the second series: rotations about twice as large, the board still in the camera's field at 30 cm
+VARIATIONS_BIG = [
+    ("centre", [0, 0, 0, 0, 0]),
+    ("pan_plus", [150, 0, 0, 0, 0]),
+    ("pan_minus", [-150, 0, 0, 0, 0]),
+    ("wrist_plus", [0, 0, 0, 200, 0]),
+    ("wrist_minus", [0, 0, 0, -200, 0]),
+    ("roll_plus", [0, 0, 0, 0, 250]),
+    ("roll_minus", [0, 0, 0, 0, -250]),
+    ("higher", [0, -110, 110, 0, 0]),
+    ("lower", [0, 110, -110, 0, 0]),
+    ("mixed_a", [120, 0, 0, -150, 180]),
+    ("mixed_b", [-120, -60, 60, 150, -180]),
+    ("back_centre", [0, 0, 0, 0, 0]),
+]
 
 
 def T(R, t):
@@ -96,12 +111,14 @@ def ticks_str(ticks):
 def cmd_poses(a) -> int:
     doc = json.loads(OBSERVE_POSES.read_text())
     base = doc["poses"]["look_floor"]["ticks"]
+    variations = VARIATIONS_BIG if a.big else VARIATIONS
+    target = HANDEYE_POSES.with_name("arm_handeye_poses_big.json") if a.big else HANDEYE_POSES
     out = {k: doc[k] for k in ("format", "joints", "units", "ticks_rule", "interpolation", "gripper")}
     out["rest"] = ["drive"]
     out["about"] = ("Hand-eye poses (tools/moss_wrist_handeye.py): small variations around look_floor so the wrist camera "
                     "keeps the board taped on the floor in view; played in this order, one move at a time.")
     poses, seq, prev = {}, [], None
-    for name, dv in VARIATIONS:
+    for name, dv in variations:
         t = [b + d for b, d in zip(base, dv)]
         poses[name] = {"ticks": t, "rad": [A.ticks_to_rad(x) for x in t]}
         if prev:
@@ -109,8 +126,8 @@ def cmd_poses(a) -> int:
         prev = name
     out["poses"] = poses
     out["sequence"] = seq
-    HANDEYE_POSES.write_text(json.dumps(out, indent=1))
-    print(f"{len(poses)} poses, {len(seq)} moves -> {HANDEYE_POSES}")
+    target.write_text(json.dumps(out, indent=1))
+    print(f"{len(poses)} poses, {len(seq)} moves -> {target}")
     for name, p in poses.items():
         print(f"  {name:12s} {ticks_str(p['ticks'])}")
     return 0
@@ -133,7 +150,7 @@ def board_pose(frame_upright, b, K, dist):
 
 
 def cmd_run(a) -> int:
-    doc = json.loads(HANDEYE_POSES.read_text())
+    doc = json.loads(Path(a.poses).read_text())
     names = [m["to"] for m in doc["sequence"]]
     first = doc["sequence"][0]["from"]
     poses = {k: [float(x) for x in v["rad"]] for k, v in doc["poses"].items()}
@@ -185,7 +202,7 @@ def cmd_run(a) -> int:
                 continue
             frame = W.upright(frame)
             rvec, tvec, n, cc, ci = board_pose(frame, b, K, dist)
-            stem = STATE / f"pose_{i + 1:02d}_{name}"
+            stem = STATE / f"pose_{a.tag + '_' if a.tag else ''}{i + 1:02d}_{name}"
             cv2.imwrite(f"{stem}.jpg", frame, [cv2.IMWRITE_JPEG_QUALITY, 95])
             shown = frame.copy()
             if cc is not None:
@@ -202,9 +219,10 @@ def cmd_run(a) -> int:
             records.append(rec)
             d = "-" if tvec is None else f"{np.linalg.norm(tvec) * 100:.1f} cm from the lens"
             print(f"  {name:12s} read {ticks_str(rec['ticks_read'])}  board: {n} corners, {d}")
-        (STATE / "records.json").write_text(json.dumps({"square_m": a.square, "marker_m": a.marker,
-                                                        "intrinsics": str(INTRINSICS), "records": records}, indent=1))
-        print(f"{len(records)} records -> {STATE / 'records.json'}")
+        out_json = STATE / (f"records_{a.tag}.json" if a.tag else "records.json")
+        out_json.write_text(json.dumps({"square_m": a.square, "marker_m": a.marker,
+                                        "intrinsics": str(INTRINSICS), "records": records}, indent=1))
+        print(f"{len(records)} records -> {out_json}")
         return 0
     finally:
         if cap is not None:
@@ -306,10 +324,14 @@ def board_points_in_base(pairs, Ttc):
 
 
 def cmd_solve(a) -> int:
-    doc = json.loads((STATE / "records.json").read_text())
+    files = sorted(STATE.glob("records*.json"))
+    recs = []
+    for f in files:
+        recs.extend(json.loads(f.read_text())["records"])
+    print(f"{len(recs)} records from {', '.join(f.name for f in files)}")
     kin = ArmKin.load()
     pairs, used = [], []
-    for r in doc["records"]:
+    for r in recs:
         if r["rvec"] is None:
             continue
         p, R = kin.tool(r["rad_read"])
@@ -383,8 +405,11 @@ def main(argv=None) -> int:
     ap.add_argument("--square", type=float, default=W.SQUARE_M)
     ap.add_argument("--marker", type=float, default=W.MARKER_M)
     sub = ap.add_subparsers(dest="cmd", required=True)
-    sub.add_parser("poses")
+    pp = sub.add_parser("poses")
+    pp.add_argument("--big", action="store_true", help="the second series, rotations twice as large")
     pr = sub.add_parser("run")
+    pr.add_argument("--poses", default=str(HANDEYE_POSES))
+    pr.add_argument("--tag", default="", help="records_<tag>.json instead of records.json")
     pr.add_argument("--speed", type=float, default=SPEED)
     pr.add_argument("--dry-run", action="store_true")
     ps = sub.add_parser("solve")
