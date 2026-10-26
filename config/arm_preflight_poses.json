@@ -1,0 +1,223 @@
+{
+ "format": "moss-arm-drop/1",
+ "joints": [
+  "shoulder_pan",
+  "shoulder_lift",
+  "elbow_flex",
+  "wrist_flex",
+  "wrist_roll"
+ ],
+ "units": {
+  "rad": "model radians (the keep-out table's model)",
+  "ticks": "servo positions as reported (homing offset applied)",
+  "tcp_m": "metres, the model's world frame: the tool point 35 mm along the approach from the gripper's tool frame",
+  "duration_s": "seconds",
+  "gap_mm": "the gripper's jaw gap in millimetres"
+ },
+ "ticks_rule": "ticks = the table's joint_map on rad (today zero 2048 and sign +1 on every joint: round(2048 + rad * 4096 / (2 pi))); ticks are written here for reading, the tool recomputes them",
+ "interpolation": "each move is a straight line in joint space, timed by the quintic smootherstep u -> 6u^5 - 15u^4 + 10u^3 over its duration; angles are never wrapped (the pan turns the way the numbers say); the jaw gap follows the cubic smoothstep 3u^2 - 2u^3 over gap_duration_s (default the move's)",
+ "gripper": {
+  "open": {
+   "gap_mm": 90,
+   "ticks": 3674
+  },
+  "grasp": {
+   "gap_mm": 53,
+   "ticks": 2780
+  },
+  "force": 400,
+  "force_registers": [
+   44,
+   48
+  ],
+  "rule": "ticks for a gap: the straight line through open and grasp (24.2 ticks per mm); the grasp value is the goal that closed on an object with the force limited, not a measured 53 mm"
+ },
+ "rest": [
+  "drive"
+ ],
+ "about": "arm preflight: one small move per joint away from the drive pose and back, checked in the CAD scene",
+ "poses": {
+  "drive_pan": {
+   "rad": [
+    1.4710875755823298,
+    -1.8223691760081417,
+    1.7763497523715726,
+    -1.8100973297050567,
+    1.7993594641898571
+   ],
+   "ticks": [
+    3007,
+    860,
+    3206,
+    868,
+    3221
+   ]
+  },
+  "drive_lift": {
+   "rad": [
+    1.2409904573994837,
+    -1.5922720578252956,
+    1.7763497523715726,
+    -1.8100973297050567,
+    1.7993594641898571
+   ],
+   "ticks": [
+    2857,
+    1010,
+    3206,
+    868,
+    3221
+   ]
+  },
+  "drive_elbow": {
+   "rad": [
+    1.2409904573994837,
+    -1.8223691760081417,
+    1.5462526341887264,
+    -1.8100973297050567,
+    1.7993594641898571
+   ],
+   "ticks": [
+    2857,
+    860,
+    3056,
+    868,
+    3221
+   ]
+  },
+  "drive_wrist": {
+   "rad": [
+    1.2409904573994837,
+    -1.8223691760081417,
+    1.7763497523715726,
+    -1.5800002115222105,
+    1.7993594641898571
+   ],
+   "ticks": [
+    2857,
+    860,
+    3206,
+    1018,
+    3221
+   ]
+  },
+  "drive_roll": {
+   "rad": [
+    1.2409904573994837,
+    -1.8223691760081417,
+    1.7763497523715726,
+    -1.8100973297050567,
+    2.029456582372703
+   ],
+   "ticks": [
+    2857,
+    860,
+    3206,
+    868,
+    3371
+   ]
+  }
+ },
+ "sequence": [
+  {
+   "phase": "pan_out",
+   "from": "drive",
+   "to": "drive_pan",
+   "duration_s": 1.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  },
+  {
+   "phase": "pan_back",
+   "from": "drive_pan",
+   "to": "drive",
+   "duration_s": 1.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  },
+  {
+   "phase": "lift_out",
+   "from": "drive",
+   "to": "drive_lift",
+   "duration_s": 1.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  },
+  {
+   "phase": "lift_back",
+   "from": "drive_lift",
+   "to": "drive",
+   "duration_s": 1.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  },
+  {
+   "phase": "elbow_out",
+   "from": "drive",
+   "to": "drive_elbow",
+   "duration_s": 1.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  },
+  {
+   "phase": "elbow_back",
+   "from": "drive_elbow",
+   "to": "drive",
+   "duration_s": 1.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  },
+  {
+   "phase": "wrist_out",
+   "from": "drive",
+   "to": "drive_wrist",
+   "duration_s": 1.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  },
+  {
+   "phase": "wrist_back",
+   "from": "drive_wrist",
+   "to": "drive",
+   "duration_s": 1.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  },
+  {
+   "phase": "roll_out",
+   "from": "drive",
+   "to": "drive_roll",
+   "duration_s": 1.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  },
+  {
+   "phase": "roll_back",
+   "from": "drive_roll",
+   "to": "drive",
+   "duration_s": 1.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  }
+ ]
+}

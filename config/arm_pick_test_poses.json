@@ -1,0 +1,99 @@
+{
+ "format": "moss-arm-drop/1",
+ "joints": [
+  "shoulder_pan",
+  "shoulder_lift",
+  "elbow_flex",
+  "wrist_flex",
+  "wrist_roll"
+ ],
+ "units": {
+  "rad": "model radians (the keep-out table's model)",
+  "ticks": "servo positions as reported (homing offset applied)",
+  "tcp_m": "metres, the model's world frame: the tool point 35 mm along the approach from the gripper's tool frame",
+  "duration_s": "seconds",
+  "gap_mm": "the gripper's jaw gap in millimetres"
+ },
+ "ticks_rule": "ticks = the table's joint_map on rad (today zero 2048 and sign +1 on every joint: round(2048 + rad * 4096 / (2 pi))); ticks are written here for reading, the tool recomputes them",
+ "interpolation": "each move is a straight line in joint space, timed by the quintic smootherstep u -> 6u^5 - 15u^4 + 10u^3 over its duration; angles are never wrapped (the pan turns the way the numbers say); the jaw gap follows the cubic smoothstep 3u^2 - 2u^3 over gap_duration_s (default the move's)",
+ "gripper": {
+  "open": {
+   "gap_mm": 90,
+   "ticks": 3674
+  },
+  "grasp": {
+   "gap_mm": 53,
+   "ticks": 2780
+  },
+  "force": 400,
+  "force_registers": [
+   44,
+   48
+  ],
+  "rule": "ticks for a gap: the straight line through open and grasp (24.2 ticks per mm); the grasp value is the goal that closed on an object with the force limited, not a measured 53 mm"
+ },
+ "rest": [
+  "drive"
+ ],
+ "about": "pick test: recognition pose -> the taught pose nearest to the can, raised 10 cm",
+ "poses": {
+  "look_floor": {
+   "rad": [
+    1.2532623037025687,
+    -0.7133010663668231,
+    0.5460971604872883,
+    1.2900778426118242,
+    1.7886215986746576
+   ],
+   "ticks": [
+    2865,
+    1583,
+    2404,
+    2889,
+    3214
+   ],
+   "gap_mm": 90,
+   "check": "RECOGNITION pose, set with the builder by his eye: look_down with the wrist lowered 25 deg (3174 -> 2889) so the wrist camera faces the floor straight down (it sits tilted on its mount); the board held 15-30 cm under the lens fills the frame (view_look_floor.jpg). Servos read [2862, 1605, 2437, 2898, 3218] under load."
+  },
+  "above_can": {
+   "rad": [
+    0.6810874698212247,
+    0.8486930823260994,
+    -0.6350991655068965,
+    1.4752542964334714,
+    1.8162332528565992
+   ],
+   "ticks": [
+    2492,
+    2601,
+    1634,
+    3010,
+    3232
+   ],
+   "from_mark": "avant_gauche_milieu",
+   "raised_m": 0.1
+  }
+ },
+ "sequence": [
+  {
+   "phase": "to_above",
+   "from": "look_floor",
+   "to": "above_can",
+   "duration_s": 5.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  },
+  {
+   "phase": "back_floor",
+   "from": "above_can",
+   "to": "look_floor",
+   "duration_s": 5.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  }
+ ]
+}

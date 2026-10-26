@@ -180,19 +180,13 @@ def cmd_run(a) -> int:
             print("activate failed", file=sys.stderr)
             return 2
         cap = W.open_wrist(1280, 720)
-        goal = list(poses[first])            # the goal the servos hold; moves start from the goal, not the sagged reading
-        goal_first = list(goal)
-        goal_first[0] = q_now[0]
+        from moss_dimos import arm_motion as M  # noqa: E402
         for i, name in enumerate(names):
-            start = goal if i else q_now
-            step = A.goto_step(list(start), gap_now, list(poses[name]), gap_now, speed=a.speed)
-            traj = A.cycle_trajectory([step], sim=False)
-            t0 = time.monotonic()
-            for p in traj.points:
-                while time.monotonic() - t0 < float(p.time_from_start):
-                    time.sleep(0.002)
-                ad.write_joint_positions(list(p.positions))
-            goal = list(poses[name])
+            rep = M.goto(ad, list(poses[name]), gap_now, rate=a.speed, phase=name)
+            print("  " + rep.line())
+            if rep.aborted:
+                print("ABORT: the arm is pressing against something; stopping the run here", file=sys.stderr)
+                break
             time.sleep(SETTLE_S)
             read = list(ad.read_joint_positions() or [])[:A.ARM_DOF]
             for _ in range(6):
@@ -217,6 +211,10 @@ def cmd_run(a) -> int:
                    "rvec": None if rvec is None else rvec.tolist(), "tvec": None if tvec is None else tvec.tolist(),
                    "frame": f"{stem}.jpg"}
             records.append(rec)
+            # written after every pose: a run stopped half-way keeps what it saw (lesson of a run killed at pose 10)
+            out_json = STATE / (f"records_{a.tag}.json" if a.tag else "records.json")
+            out_json.write_text(json.dumps({"square_m": a.square, "marker_m": a.marker, "partial": True,
+                                            "intrinsics": str(INTRINSICS), "records": records}, indent=1))
             d = "-" if tvec is None else f"{np.linalg.norm(tvec) * 100:.1f} cm from the lens"
             print(f"  {name:12s} read {ticks_str(rec['ticks_read'])}  board: {n} corners, {d}")
         out_json = STATE / (f"records_{a.tag}.json" if a.tag else "records.json")

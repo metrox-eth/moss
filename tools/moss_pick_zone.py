@@ -88,21 +88,49 @@ def tape(image_path: str, joints_ticks: list[int], z_floor_m: float, offset_m: f
     h, w = img.shape[:2]
     hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
     dark = cv2.inRange(hsv, (0, 0, 0), (180, 160, v_max))
-    # the tape's crown (top of the ring) is lit harder by the lamps: a looser threshold there only
-    loose = cv2.inRange(hsv, (0, 0, 0), (180, 160, min(255, v_max + 30)))
-    band = np.zeros_like(loose); band[230:310, 470:820] = 255
-    dark = cv2.bitwise_or(dark, cv2.bitwise_and(loose, band))
     green = cv2.inRange(hsv, (40, 80, 80), (90, 255, 255))
     dark[cv2.dilate(green, np.ones((7, 7), np.uint8)) > 0] = 0      # drawings on an annotated frame
-    dark[640:, :] = 0; dark[:, :150] = 0; dark[:, 1130:] = 0        # the jaws, the frame's edges
-    dark[560:, 880:] = 0                                            # the right jaw's base
-    dark[575:, :420] = 0                                            # the left jaw's base and its shadow
+    dark[628:, :] = 0; dark[:, :150] = 0; dark[:, 1130:] = 0
+    # the jaws' shadow lies just under the tape's lower edge, which runs from about (240, 585) to (850, 615) in
+    # the recognition pose: drop the dark pixels more than 8 px below that line
+    xx = np.arange(w)
+    y_edge = 585 + (xx - 240) * (30.0 / 610.0) + 8
+    for x_ in range(w):
+        dark[int(min(h - 1, max(0, y_edge[x_]))):, x_] = 0        # the black gripper parts at the very bottom, the frame's edges
+    dark[600:, 900:] = 0                                            # the right jaw's black base
+    # the board's own black squares are dark too: find the board from its markers (a few corners are enough),
+    # map its chessboard rectangle into the image with a homography, and blank it out with a margin
+    import moss_wrist_calib as W  # noqa: E402
+    b = W.board(W.SQUARE_M, W.MARKER_M)
+    cc, ci = W.detect(b, cv2.cvtColor(img, cv2.COLOR_BGR2GRAY))
+    if cc is not None and len(cc) >= 4:
+        obj = b.getChessboardCorners()[ci.reshape(-1)][:, :2]
+        Hm, _ = cv2.findHomography(obj.astype(np.float64), cc.reshape(-1, 2).astype(np.float64))
+        cols, rows = b.getChessboardSize()
+        m = 0.004
+        rect = np.array([[-m, -m], [cols * W.SQUARE_M + m, -m], [cols * W.SQUARE_M + m, rows * W.SQUARE_M + m], [-m, rows * W.SQUARE_M + m]])
+        quad = cv2.perspectiveTransform(rect.reshape(-1, 1, 2), Hm).reshape(-1, 2).astype(np.int32)
+        cv2.fillPoly(dark, [quad], 0)
+        # the tape's crown crosses the white paper above the squares, under the lamps' glare: there, anything
+        # that is not white is the tape (the paper margin above the squares is 20 mm on the printed sheet)
+        above = np.array([[-0.03, -0.017], [cols * W.SQUARE_M + 0.03, -0.017], [cols * W.SQUARE_M + 0.03, -m], [-0.03, -m]])
+        quad_above = cv2.perspectiveTransform(above.reshape(-1, 1, 2), Hm).reshape(-1, 2).astype(np.int32)
+        band = np.zeros_like(dark)
+        cv2.fillPoly(band, [quad_above], 255)
+        not_white = cv2.inRange(hsv, (0, 0, 0), (180, 130, 200))   # grey-blue tape, not the white paper, not the yellow card
+        dark = cv2.bitwise_or(dark, cv2.bitwise_and(not_white, band))
     dark = cv2.morphologyEx(dark, cv2.MORPH_OPEN, np.ones((5, 5), np.uint8))
     ys, xs = np.nonzero(dark)
-    hull = cv2.convexHull(np.stack([xs, ys], axis=1).astype(np.int32)).reshape(-1, 2).astype(np.float64)
-    # the hull sits on the tape's outer edge: pull it inward by about half the tape's width, onto the tape itself
-    c_px = hull.mean(0)
-    hull = hull - shrink_px * (hull - c_px) / (np.linalg.norm(hull - c_px, axis=1, keepdims=True) + 1e-9)
+    hull = cv2.convexHull(np.stack([xs, ys], axis=1).astype(np.int32))
+    # the hull sits on the tape's outer edge: erode the filled hull by about half the tape's width, which moves
+    # every edge inward along its own normal and keeps the corners (a radial shrink cut the sharp ones)
+    filled = np.zeros((h, w), np.uint8)
+    cv2.fillPoly(filled, [hull], 255)
+    k = int(round(shrink_px))
+    eroded = cv2.erode(filled, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (2 * k + 1, 2 * k + 1)))
+    cnts, _ = cv2.findContours(eroded, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    inner = max(cnts, key=cv2.contourArea)
+    hull = cv2.approxPolyDP(inner, 3.0, True).reshape(-1, 2).astype(np.float64)
     K, dist = H.load_intrinsics()
     X = H.load_extrinsics() if hasattr(H, "load_extrinsics") else None
     if X is None:

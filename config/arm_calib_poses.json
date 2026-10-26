@@ -1,0 +1,399 @@
+{
+ "format": "moss-arm-drop/1",
+ "joints": [
+  "shoulder_pan",
+  "shoulder_lift",
+  "elbow_flex",
+  "wrist_flex",
+  "wrist_roll"
+ ],
+ "units": {
+  "rad": "model radians (the keep-out table's model)",
+  "ticks": "servo positions as reported (homing offset applied)",
+  "tcp_m": "metres, the model's world frame: the tool point 35 mm along the approach from the gripper's tool frame",
+  "duration_s": "seconds",
+  "gap_mm": "the gripper's jaw gap in millimetres"
+ },
+ "ticks_rule": "ticks = the table's joint_map on rad (today zero 2048 and sign +1 on every joint: round(2048 + rad * 4096 / (2 pi))); ticks are written here for reading, the tool recomputes them",
+ "interpolation": "each move is a straight line in joint space, timed by the quintic smootherstep u -> 6u^5 - 15u^4 + 10u^3 over its duration; angles are never wrapped (the pan turns the way the numbers say); the jaw gap follows the cubic smoothstep 3u^2 - 2u^3 over gap_duration_s (default the move's)",
+ "gripper": {
+  "open": {
+   "gap_mm": 90,
+   "ticks": 3674
+  },
+  "grasp": {
+   "gap_mm": 53,
+   "ticks": 2780
+  },
+  "force": 400,
+  "force_registers": [
+   44,
+   48
+  ],
+  "rule": "ticks for a gap: the straight line through open and grasp (24.2 ticks per mm); the grasp value is the goal that closed on an object with the force limited, not a measured 53 mm"
+ },
+ "rest": [
+  "drive"
+ ],
+ "about": "arm model calibration: five hand-taught pick poses raised 8 cm then 3.5 cm (the sixth, at the rear right, touches the track frame in the CAD scene and is left out), the wrist camera looking at the board taped on the floor",
+ "poses": {
+  "look_floor": {
+   "rad": [
+    1.2532623037025687,
+    -0.7133010663668231,
+    0.5460971604872883,
+    1.2900778426118242,
+    1.7886215986746576
+   ],
+   "ticks": [
+    2865,
+    1583,
+    2404,
+    2889,
+    3214
+   ]
+  },
+  "avant_gauche_high": {
+   "rad": [
+    0.12732040539450823,
+    0.9112638079506964,
+    -0.5701134456619706,
+    1.3645817663401125,
+    1.8116313104929422
+   ],
+   "ticks": [
+    2131,
+    2642,
+    1676,
+    2938,
+    3229
+   ],
+   "from_mark": "avant_gauche",
+   "raised_m": 0.08
+  },
+  "avant_gauche_low": {
+   "rad": [
+    0.12732040539450823,
+    1.1536870810018836,
+    -0.6672746024563928,
+    1.2194664709215488,
+    1.8116313104929422
+   ],
+   "ticks": [
+    2131,
+    2800,
+    1613,
+    2843,
+    3229
+   ],
+   "from_mark": "avant_gauche",
+   "raised_m": 0.035
+  },
+  "avant_gauche_milieu_high": {
+   "rad": [
+    0.6810874698212247,
+    0.9103671599357501,
+    -0.593786305920956,
+    1.372262638328072,
+    1.8162332528565992
+   ],
+   "ticks": [
+    2492,
+    2641,
+    1661,
+    2943,
+    3232
+   ],
+   "from_mark": "avant_gauche_milieu",
+   "raised_m": 0.08
+  },
+  "avant_gauche_milieu_low": {
+   "rad": [
+    0.6810874698212247,
+    1.145987471745856,
+    -0.6791461368201535,
+    1.2221585450986812,
+    1.8162332528565992
+   ],
+   "ticks": [
+    2492,
+    2795,
+    1605,
+    2845,
+    3232
+   ],
+   "from_mark": "avant_gauche_milieu",
+   "raised_m": 0.035
+  },
+  "avant_milieu_high": {
+   "rad": [
+    1.2547962844904545,
+    0.910450916883434,
+    -0.5911346563118863,
+    1.374130824118076,
+    1.8131652912808278
+   ],
+   "ticks": [
+    2866,
+    2642,
+    1663,
+    2944,
+    3230
+   ],
+   "from_mark": "avant_milieu",
+   "raised_m": 0.08
+  },
+  "avant_milieu_low": {
+   "rad": [
+    1.2547962844904545,
+    1.146837905663483,
+    -0.6778198811988771,
+    1.224584430379612,
+    1.8131652912808278
+   ],
+   "ticks": [
+    2866,
+    2796,
+    1606,
+    2846,
+    3230
+   ],
+   "from_mark": "avant_milieu",
+   "raised_m": 0.035
+  },
+  "avant_droit_milieu_high": {
+   "rad": [
+    1.6751070203711202,
+    0.9101402662221107,
+    -0.601775853113151,
+    1.3804744336646146,
+    1.8131652912808278
+   ],
+   "ticks": [
+    3140,
+    2641,
+    1656,
+    2948,
+    3230
+   ],
+   "from_mark": "avant_droit_milieu",
+   "raised_m": 0.08
+  },
+  "avant_droit_milieu_low": {
+   "rad": [
+    1.6751070203711202,
+    1.1434478029214408,
+    -0.683141157343298,
+    1.228691413666034,
+    1.8131652912808278
+   ],
+   "ticks": [
+    3140,
+    2793,
+    1603,
+    2849,
+    3230
+   ],
+   "from_mark": "avant_droit_milieu",
+   "raised_m": 0.035
+  },
+  "avant_droit_high": {
+   "rad": [
+    2.064738140494073,
+    0.9078655112109598,
+    -0.6309359648257614,
+    1.388884324177255,
+    1.8131652912808278
+   ],
+   "ticks": [
+    3394,
+    2640,
+    1637,
+    2953,
+    3230
+   ],
+   "from_mark": "avant_droit",
+   "raised_m": 0.08
+  },
+  "avant_droit_low": {
+   "rad": [
+    2.064738140494073,
+    1.1308651897548392,
+    -0.694299775922797,
+    1.2294101069259957,
+    1.8131652912808278
+   ],
+   "ticks": [
+    3394,
+    2785,
+    1595,
+    2849,
+    3230
+   ],
+   "from_mark": "avant_droit",
+   "raised_m": 0.035
+  }
+ },
+ "sequence": [
+  {
+   "phase": "to_avant_gauche_high_0",
+   "from": "look_floor",
+   "to": "avant_gauche_high",
+   "duration_s": 4.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  },
+  {
+   "phase": "to_avant_gauche_low_1",
+   "from": "avant_gauche_high",
+   "to": "avant_gauche_low",
+   "duration_s": 4.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  },
+  {
+   "phase": "to_avant_gauche_high_2",
+   "from": "avant_gauche_low",
+   "to": "avant_gauche_high",
+   "duration_s": 4.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  },
+  {
+   "phase": "to_avant_gauche_milieu_high_3",
+   "from": "avant_gauche_high",
+   "to": "avant_gauche_milieu_high",
+   "duration_s": 4.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  },
+  {
+   "phase": "to_avant_gauche_milieu_low_4",
+   "from": "avant_gauche_milieu_high",
+   "to": "avant_gauche_milieu_low",
+   "duration_s": 4.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  },
+  {
+   "phase": "to_avant_gauche_milieu_high_5",
+   "from": "avant_gauche_milieu_low",
+   "to": "avant_gauche_milieu_high",
+   "duration_s": 4.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  },
+  {
+   "phase": "to_avant_milieu_high_6",
+   "from": "avant_gauche_milieu_high",
+   "to": "avant_milieu_high",
+   "duration_s": 4.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  },
+  {
+   "phase": "to_avant_milieu_low_7",
+   "from": "avant_milieu_high",
+   "to": "avant_milieu_low",
+   "duration_s": 4.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  },
+  {
+   "phase": "to_avant_milieu_high_8",
+   "from": "avant_milieu_low",
+   "to": "avant_milieu_high",
+   "duration_s": 4.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  },
+  {
+   "phase": "to_avant_droit_milieu_high_9",
+   "from": "avant_milieu_high",
+   "to": "avant_droit_milieu_high",
+   "duration_s": 4.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  },
+  {
+   "phase": "to_avant_droit_milieu_low_10",
+   "from": "avant_droit_milieu_high",
+   "to": "avant_droit_milieu_low",
+   "duration_s": 4.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  },
+  {
+   "phase": "to_avant_droit_milieu_high_11",
+   "from": "avant_droit_milieu_low",
+   "to": "avant_droit_milieu_high",
+   "duration_s": 4.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  },
+  {
+   "phase": "to_avant_droit_high_12",
+   "from": "avant_droit_milieu_high",
+   "to": "avant_droit_high",
+   "duration_s": 4.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  },
+  {
+   "phase": "to_avant_droit_low_13",
+   "from": "avant_droit_high",
+   "to": "avant_droit_low",
+   "duration_s": 4.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  },
+  {
+   "phase": "to_avant_droit_high_14",
+   "from": "avant_droit_low",
+   "to": "avant_droit_high",
+   "duration_s": 4.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  },
+  {
+   "phase": "back_look_floor",
+   "from": "avant_droit_high",
+   "to": "look_floor",
+   "duration_s": 6.0,
+   "gap_mm": [
+    90,
+    90
+   ]
+  }
+ ]
+}

@@ -103,6 +103,10 @@ def main() -> int:
         print(f"arm now: {ticks(q_now)}  gap {gap_now * 1000:.0f} mm")
         if a.where:
             where_only = True
+            from moss_dimos import arm_motion as M  # noqa: E402
+            for j in A.ARM_JOINTS:
+                st = M.read_servo(ad._bus, ad._ids[j])  # noqa: SLF001
+                print(f"  {j:14s} {st['pos']:5d}  {st['volt']:.1f} V  {st['temp']} C  load {st['load']}")
             return 0
         if a.free:
             # the hand on the arm, then the torque off: the arm is moved by hand to the poses it should learn
@@ -190,42 +194,15 @@ def main() -> int:
         if not ad.activate():
             print("activate failed", file=sys.stderr)
             return 2
-        # One frank goal per move, the servos' own profile doing the motion: acceleration at the maximum
-        # (what LeRobot sets on its SO-101s), each joint's speed chosen so that all joints arrive together,
-        # the largest joint moving at --speed ticks/s. Streaming the goal in 1-2 tick steps at 50 Hz gave
-        # the loaded shoulder no torque at all and left it 950 ticks behind the others (26/10).
+        # frank synchronised goals, the servos' own profile (moss_dimos/arm_motion.py)
+        from moss_dimos import arm_motion as M  # noqa: E402
         fin = list(q_now)
         for s in steps:
-            d_ticks = [abs(b - a) * A.TICKS_PER_RAD for a, b in zip(fin, s.q_to)]
-            T = max(max(d_ticks) / a.speed, 0.6)
-            for i, j in enumerate(A.ARM_JOINTS):
-                sid = ad._ids[j]  # noqa: SLF001
-                ad._bus.write1(sid, 41, 254)  # noqa: SLF001
-                ad._bus.write2(sid, 46, max(20, int(d_ticks[i] / T)))  # noqa: SLF001
-            ad.write_joint_positions(list(s.q_to) + [s.gap_to_m])
-            t0 = time.monotonic()
-            overload_since = None
-            aborted = False
-            while time.monotonic() - t0 < T + 0.8:
-                time.sleep(0.05)
-                loads = [((ad._bus.read2(ad._ids[j], 60) or 0) & 0x3FF) for j in ("shoulder_lift", "elbow_flex")]  # noqa: SLF001
-                if max(loads) >= OVERLOAD:
-                    overload_since = overload_since or time.monotonic()
-                    if time.monotonic() - overload_since > 0.6:
-                        cur = list(ad.read_joint_positions() or fin + [s.gap_to_m])
-                        ad.write_joint_positions(cur[:A.ARM_DOF] + [cur[A.ARM_DOF] if len(cur) > A.ARM_DOF else s.gap_to_m])
-                        print(f"ABORT {s.phase}: shoulder/elbow load {loads} for 0.6 s (something is pressed against), "
-                              f"goal set to where the arm is: {ticks(cur[:A.ARM_DOF])}", file=sys.stderr)
-                        aborted = True
-                        break
-                else:
-                    overload_since = None
-            cur = list(ad.read_joint_positions() or [])
-            fin = cur[:A.ARM_DOF] if len(cur) >= A.ARM_DOF else list(s.q_to)
-            lag = [abs(f - t) * A.TICKS_PER_RAD for f, t in zip(fin, s.q_to)]
-            print(f"  {s.phase:14s} {T:4.1f} s -> {ticks(fin)}  short by " +
-                  " ".join(f"{j} {v:.0f}" for j, v in zip(A.ARM_JOINTS, lag)) + " ticks")
-            if aborted:
+            rep = M.goto(ad, list(s.q_to), s.gap_to_m, rate=a.speed, overload=OVERLOAD, phase=s.phase)
+            fin = rep.final_rad
+            print("  " + rep.line())
+            if rep.aborted:
+                print(f"ABORT {s.phase}: the arm is pressing against something, goals set to where it is: {ticks(fin)}", file=sys.stderr)
                 return 4
         print("done: " + ticks(fin))
         ends_in_drive = a.back and near(fin[:A.ARM_DOF], A.drive_pose_rad())

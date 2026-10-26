@@ -50,35 +50,35 @@ def main() -> int:
             goto = A.goto_step(q_now, gap_now, cycle.first_pose, cycle.first_gap_m, speed=a.speed)
             print(f"goto: {off:.0f} ticks from {steps[0].start}, {goto.duration_s:.1f} s first")
             steps.insert(0, goto)
-        traj = A.cycle_trajectory(steps, sim=False)
-        pts = list(traj.points)
-        print(f"trajectory: {len(pts)} points, {float(pts[-1].time_from_start):.1f} s")
+        from moss_dimos import arm_motion as M  # noqa: E402
         if a.dry_run:
+            print("dry run: " + " -> ".join([steps[0].start] + [s.end for s in steps]))
             return 0
         if not ad.activate():
             print("activate failed", file=sys.stderr)
             return 2
-        worst = {j: 0.0 for j in A.ARM_JOINTS}
-        t0 = time.monotonic()
-        for p in pts:
-            tp = float(p.time_from_start)
-            while time.monotonic() - t0 < tp:
-                time.sleep(0.002)
-            ad.write_joint_positions(list(p.positions))
-            cur = ad.read_joint_positions()
-            if cur:
-                for i, j in enumerate(A.ARM_JOINTS):
-                    worst[j] = max(worst[j], abs(cur[i] - p.positions[i]) * A.TICKS_PER_RAD)
-        time.sleep(1.0)
+        for s in steps:
+            rep = M.goto(ad, list(s.q_to), s.gap_to_m, rate=a.speed, phase=s.phase)
+            print("  " + rep.line())
+            if rep.aborted:
+                print("ABORT: the arm is pressing against something; the cycle stops here, torque stays on", file=sys.stderr)
+                ad._enabled = False  # noqa: SLF001
+                return 4
         fin = ad.read_joint_positions() or []
         print("done: " + " ".join(f"{j} {A.rad_to_ticks(v)}" for j, v in zip(A.ARM_JOINTS, fin)))
-        print("worst following error (ticks): " + " ".join(f"{j} {v:.0f}" for j, v in worst.items()))
         return 0
     finally:
-        try:
-            ad.deactivate()
-        except Exception:  # noqa: BLE001
-            pass
+        fin = list(ad.read_joint_positions() or [])
+        drive = A.drive_pose_rad()
+        if len(fin) >= A.ARM_DOF and all(abs(x - y) <= 0.17 for x, y in zip(fin[:4], drive[:4])):
+            try:
+                ad.deactivate()
+                print("torque off: the arm is in the drive pose")
+            except Exception:  # noqa: BLE001
+                pass
+        else:
+            ad._enabled = False  # noqa: SLF001  (disconnect would cut the torque with the arm out)
+            print("torque LEFT ON: the arm is not in the drive pose")
         ad.disconnect()
 
 
