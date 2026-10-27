@@ -1,0 +1,75 @@
+{
+  "format": "moss-arm-load/1",
+  "about": "Cantilever load test: from the drive pose to the travel pose, the elbow and wrist straightened with the arm pointing up and forward, then the shoulder lowered until the whole arm is horizontal (tool 0.435 m ahead of the arm's base, at the height of the shoulder axis, 0.22 m: the longest lever on the shoulder and the elbow). Held there, then back the same way. Ticks are the servos' reported positions (config/arm_calibration.json); 'drive' is taken from the calibration.",
+  "joints": [
+    "shoulder_pan",
+    "shoulder_lift",
+    "elbow_flex",
+    "wrist_flex",
+    "wrist_roll"
+  ],
+  "poses": {
+    "travel": {
+      "ticks": [
+        2933,
+        1520,
+        2298,
+        3060,
+        3221
+      ],
+      "note": "the observe sequence's travel pose"
+    },
+    "up_straight": {
+      "ticks": [
+        2857,
+        1520,
+        2048,
+        2048,
+        3221
+      ],
+      "note": "elbow and wrist straight, arm pointing up and forward (tool 0.24 m ahead, 0.49 m up)"
+    },
+    "horizontal": {
+      "ticks": [
+        2857,
+        2325,
+        2048,
+        2048,
+        3221
+      ],
+      "note": "the arm horizontal: tool 0.435 m ahead at the shoulder's height"
+    }
+  },
+  "sequence": [
+    {
+      "phase": "unfold",
+      "from": "drive",
+      "to": "travel",
+      "duration_s": 6.0,
+      "gap_mm": [
+        90,
+        90
+      ]
+    },
+    {
+      "phase": "straighten",
+      "from": "travel",
+      "to": "up_straight",
+      "duration_s": 6.0,
+      "gap_mm": [
+        90,
+        90
+      ]
+    },
+    {
+      "phase": "lower",
+      "from": "up_straight",
+      "to": "horizontal",
+      "duration_s": 6.0,
+      "gap_mm": [
+        90,
+        90
+      ]
+    }
+  ]
+}
