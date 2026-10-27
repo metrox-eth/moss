@@ -1,6 +1,6 @@
 # The arm
 
-**Dual-servo shoulder upgrade:** [R2 CAD, printable parts and assembly guide](../hardware/mechanical/dual-shoulder-r2/). The six-servo table below describes the original arm; the additional shoulder servo needs paired-servo control.
+**Dual-servo shoulder upgrade:** [Complete guide: R2 CAD, printing, assembly, paired-servo setup and testing](../hardware/mechanical/dual-shoulder-r2/). The six-servo table below describes the original arm; the upgrade adds a seventh servo.
 
 MOSS carries an SO-101 arm: five joints and a gripper, six Feetech servos
 on one bus (protocol 0, 1 Mbps, the port in `MOSS_ARM_PORT`).

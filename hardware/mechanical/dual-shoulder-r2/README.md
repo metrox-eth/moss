@@ -2,6 +2,8 @@
 
 Two shoulder servos sit back to back in one printed housing. A wider upper-arm fork connects their two outward-facing horns in direct drive. The original base pivot, shoulder height and elbow interface are retained.
 
+**Start here for the complete upgrade: print the two parts, assemble the shoulder, then set up and test the paired servos below.**
+
 **[Open the assembled CAD](CAD/MOSS_Dual_Shoulder_R2_Z_Up.step) · [Printable STLs](STL/) · [Individual STEP files](CAD/)**
 
 ![The R2 dual shoulder fitted to MOSS, rendered from CAD](images/moss-dual-shoulder-r2.png)
@@ -37,13 +39,79 @@ Reuse the base-pivot and elbow fixings from the original arm. The CAD was dimens
 
 ![Exploded view of the common housing, two reference servos and upper arm](images/exploded.png)
 
-## Paired-servo control
+## Set up the two servos
 
-The two output shafts face opposite directions. Their relative movements must be mirrored, with a calibrated zero for each servo, so the pair does not fight through the fork.
+**Use the MOSS [`dimos-standalone` branch](https://github.com/metrox-eth/moss/tree/dimos-standalone).** It contains the paired-servo controller and setup tools published on 27 October 2026 (`d65dd6d`), together with this CAD package. The pairing runs on the rover's computer; there is no separate servo firmware image to download for this upgrade. For a new software installation, follow [Install on the robot](https://github.com/metrox-eth/moss/blob/dimos-standalone/Software.md#install-on-the-robot) first.
 
-The [arm software documentation](../../../docs/arm.md) describes the existing MOSS arm stack. Its six-servo configuration is the original single-shoulder arrangement; the second shoulder servo requires paired-servo control. This folder supplies the mechanical design, not a replacement firmware image.
+The existing shoulder keeps **ID 2**. The added servo uses **ID 7**. Because their shafts face opposite ways, the controller mirrors the second servo's movement automatically.
 
-For the load and synchronization study, see the separate [dual-shoulder simulation proposal](https://github.com/metrox-eth/moss/pull/9).
+1. **Give the added servo its own ID.** Connect only that servo to the bus while changing its ID to 7. Power off before reconnecting the complete arm; otherwise a new servo with the factory ID can share an ID with an existing one.
+2. **Set the shared zero.** With torque off, rest the assembled arm at the shoulder's rear mechanical stop. Use this arm's measured shoulder limits and calibration file. The setup tool aligns the two readings, mirrors the limits and saves the pair's calibration. Do not copy another robot's homing offsets.
+3. **Check the pair at rest.** Run the stationary test below, without a payload. It enables holding torque and shows both loads. Persistent opposing effort through the fork means the alignment needs correcting before trying a lift.
+4. **Try an unloaded movement, then a load.** Use poses checked for your assembled arm and return to its supported, folded position after the test.
+
+<details>
+<summary><strong>Setup commands</strong></summary>
+
+Run these from the root of the configured MOSS checkout, using its `.venv`. Stop other arm-control processes first. Load the robot's settings into this shell so `MOSS_ARM_PORT` points to its servo adapter and `MOSS_ARM_CALIB`, if used, points to its calibration file. Without `MOSS_ARM_CALIB`, the tools use `config/arm_calibration.json`; back that file up before zeroing.
+
+With only the new servo connected, find its current ID:
+
+```sh
+.venv/bin/python tools/moss_bus_scan.py
+```
+
+If the scan reports ID 1, change it to 7. If it reports another ID, replace `1` with that ID:
+
+```sh
+.venv/bin/python tools/moss_arm_twin_setup.py rename 1 7
+```
+
+Reconnect the complete arm with power off. After restoring bus power, leave torque off and put the shoulder at its rear stop. With the existing shoulder's measured `range_min` and `range_max` already recorded in this arm's calibration file:
+
+```sh
+.venv/bin/python tools/moss_arm_twin_setup.py zero --joint-id 2 --twin-id 7
+```
+
+This writes servo settings and the calibration file. It uses the shoulder's existing minimum as the stop reading; if that calibration is missing, complete the [arm calibration](https://github.com/metrox-eth/moss/blob/dimos-standalone/docs/arm.md#calibration) first. Do not run `zero` with guessed limits.
+
+Then check the pair without commanding a new pose:
+
+```sh
+.venv/bin/python tools/moss_arm_twin_setup.py rest --seconds 30
+```
+
+Opposite-signed load readings are expected because the servos count in opposite directions. Sustained substantial loads with the same sign indicate that they are fighting. The test leaves torque on if the arm is not folded; support and fold it before switching power off.
+
+</details>
+
+<details>
+<summary><strong>Optional load test and technical references</strong></summary>
+
+The load-test tool moves out through a pose sequence, holds, then returns. First inspect the supplied sequence without opening the servo bus:
+
+```sh
+.venv/bin/python tools/moss_arm_load_test.py --poses config/arm_load_cantilever.json --dry-run
+```
+
+The supplied poses describe the development rover. Check the positions and clearances against your own calibration before using them on hardware. Once checked, start from the recorded folded pose and run without a payload first:
+
+```sh
+.venv/bin/python tools/moss_arm_load_test.py --poses config/arm_load_cantilever.json --hold 30 --label no_load
+```
+
+It records the shoulder, added servo, elbow and wrist loads, current, voltage and temperature in `~/.local/state/moss/arm_load/`. Keep any payload test results with the mass used. A failed clearance check needs investigation before running the sequence.
+
+The implementation stays in separate files so it can be maintained and reused. You can follow this guide without reading them:
+
+| File | Purpose |
+|---|---|
+| [Arm documentation](https://github.com/metrox-eth/moss/blob/dimos-standalone/docs/arm.md#a-joint-with-two-servos) | Calibration and how mirrored movement works |
+| [Setup tool](https://github.com/metrox-eth/moss/blob/dimos-standalone/tools/moss_arm_twin_setup.py) | Servo ID, shared zero and stationary test |
+| [Load-test tool](https://github.com/metrox-eth/moss/blob/dimos-standalone/tools/moss_arm_load_test.py) | Unloaded and loaded measurements |
+| [Feetech adapter](https://github.com/metrox-eth/moss/blob/dimos-standalone/moss_dimos/arm_feetech.py) | Drives the pair together during normal operation |
+
+</details>
 
 ## Size and status
 
