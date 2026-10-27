@@ -1,0 +1,98 @@
+{
+  "revision": "R2",
+  "cad_created": "2026-10-26",
+  "published_package_date": "2026-10-27",
+  "units": "millimetres",
+  "parts": [
+    {
+      "name": "Shoulder monobloc",
+      "quantity": 1,
+      "stl": "STL/01_Shoulder_Monobloc_R2.stl",
+      "step": "CAD/01_Shoulder_Monobloc_R2.step"
+    },
+    {
+      "name": "Dual upper arm",
+      "quantity": 1,
+      "stl": "STL/02_Upper_Arm_Dual_R2.stl",
+      "step": "CAD/02_Upper_Arm_Dual_R2.step"
+    }
+  ],
+  "assembly": "CAD/MOSS_Dual_Shoulder_R2_Z_Up.step",
+  "checksums": [
+    {
+      "path": "CAD/01_Shoulder_Monobloc_R2.step",
+      "bytes": 1690732,
+      "sha256": "a1c8bccd646e7c7e23821088b6235ee58dd926bf8d071ed8cad832fb877db87a"
+    },
+    {
+      "path": "CAD/02_Upper_Arm_Dual_R2.step",
+      "bytes": 1798879,
+      "sha256": "35315c31be891f9c032a92691c21bd6e2cea2adda5d70b2b758dbb43077ca6eb"
+    },
+    {
+      "path": "CAD/MOSS_Dual_Shoulder_R2_Z_Up.step",
+      "bytes": 3517616,
+      "sha256": "ca12a7cc996bc2269a9a9a061f26ca412b491174fee3eaea240f3929b9b86e69"
+    },
+    {
+      "path": "LICENSE-SO101",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "NOTICE",
+      "bytes": 425,
+      "sha256": "7c6f453fbc5f44bc3bbd2868ddc84669964041c7e19c38ea0a9981ffa6682061"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5137,
+      "sha256": "0fc431b99a5d538cf2d763f5ac1867d2bbc43dbfb11fb12ac6c5f218a521f4b6"
+    },
+    {
+      "path": "STL/01_Shoulder_Monobloc_R2.stl",
+      "bytes": 4461784,
+      "sha256": "71479daa0ae6cfb366d7b8f3306b22f0c7d10cf90ce5a8d57f845b258b65fe2a"
+    },
+    {
+      "path": "STL/02_Upper_Arm_Dual_R2.stl",
+      "bytes": 7503184,
+      "sha256": "983e22db89089c13b60cbe634268d63b97cfc845c965909ebf8de6f6122ae45d"
+    },
+    {
+      "path": "images/exploded.png",
+      "bytes": 98913,
+      "sha256": "f60bc17e90b1ac10dce159511f28477e36402f9e8ed74cf0b085d663ca3158f9"
+    },
+    {
+      "path": "images/housing.png",
+      "bytes": 91083,
+      "sha256": "745e1b0d4e8c2f66214f78264ffcf65aff6f767296dac5e56d80290d81a6d0e8"
+    },
+    {
+      "path": "images/moss-dual-shoulder-r2.png",
+      "bytes": 659259,
+      "sha256": "9fec02f0a541a797726675d64e49289571546e1271a010340ba6c948b8d2cd81"
+    },
+    {
+      "path": "source/Rotation_Pitch_SO101.step",
+      "bytes": 370844,
+      "sha256": "a392681efb05bf4009c17115a9b3e37bbee9d2fcfe25e2066b11b95aaa380915"
+    },
+    {
+      "path": "source/Upper_arm_SO101.step",
+      "bytes": 551437,
+      "sha256": "efa19a6dd2ccb459248500c76629cfa840630e7e15d9e146394d31da1525dd61"
+    },
+    {
+      "path": "source/provenance.json",
+      "bytes": 1244,
+      "sha256": "aabd38f765852dd1f80100b5c863d3bb02ab6073ff1017cb3aa2b743c77edd81"
+    },
+    {
+      "path": "validation/CAD_CHECKS_2026-10-26.json",
+      "bytes": 6405,
+      "sha256": "840789e17785a462d72694410a146f013414de62d94593ba480b20650551fd8e"
+    }
+  ]
+}
