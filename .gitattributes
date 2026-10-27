@@ -1,2 +1,7 @@
 # Generated 3D assets: avoid enormous textual OBJ diffs in code review.
 simulation/mujoco/model/meshes/** -diff linguist-generated=true
+
+# Released dual-shoulder CAD and print meshes.
+hardware/mechanical/dual-shoulder-r2/CAD/** -diff linguist-generated=true
+hardware/mechanical/dual-shoulder-r2/STL/** -diff linguist-generated=true
+hardware/mechanical/dual-shoulder-r2/source/*.step -diff

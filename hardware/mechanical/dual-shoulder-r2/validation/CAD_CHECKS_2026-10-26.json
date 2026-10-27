@@ -1,0 +1,301 @@
+{
+  "revision": "R2 monobloc compact",
+  "design": {
+    "revision": "R2 compact monobloc prototype",
+    "servo_centre_offsets_mm": [
+      -20.4,
+      20.4
+    ],
+    "rear_reference_gap_mm": 1.1999999999999957,
+    "source_servo_pack_width_mm": 80.4,
+    "housing_width_mm_nominal": 85.8,
+    "shoulder_raise_mm": 0,
+    "shaft_axis": {
+      "point": [
+        -42.6002,
+        100.6,
+        0
+      ],
+      "direction": [
+        0,
+        0,
+        1
+      ]
+    },
+    "servo_case_fasteners": {
+      "count": 4,
+      "type": "M2 x 6 kit screw",
+      "access": "outside only"
+    },
+    "printed_parts": {
+      "01_Shoulder_Monobloc_R2": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 82026.12447399119,
+        "bounds_mm": [
+          [
+            -59.80000010000017,
+            0.199999899999998,
+            -43.01245250619863
+          ],
+          [
+            1e-07,
+            84.40000010000006,
+            43.01245250619862
+          ]
+        ]
+      },
+      "02_Upper_Arm_Dual_R2": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 125823.86263286576,
+        "bounds_mm": [
+          [
+            -55.100200000000015,
+            88.60001078211883,
+            -52.19980010000001
+          ],
+          [
+            -30.600199899999843,
+            230.76998911788124,
+            56.09980010000003
+          ]
+        ]
+      }
+    },
+    "housing_width_mm_actual": 86.02490501239726
+  },
+  "physical_tests_performed": false,
+  "hardware_contacted": false,
+  "print_meshes_and_screw_access": {
+    "mesh_checks": [
+      {
+        "file": "01_Shoulder_Monobloc_R2.stl",
+        "watertight": true,
+        "dimensions_mm": [
+          86.02373504638672,
+          84.19999694824219,
+          59.79999923706055
+        ],
+        "bed_z_mm": 0.0
+      },
+      {
+        "file": "02_Upper_Arm_Dual_R2.stl",
+        "watertight": true,
+        "dimensions_mm": [
+          108.29959869384766,
+          142.16998291015625,
+          24.5
+        ],
+        "bed_z_mm": 0.0
+      }
+    ],
+    "outside_fasteners": [
+      {
+        "x_mm": -52.85,
+        "y_mm": 71.6,
+        "side": -1,
+        "head_seat_abs_z_mm": 39.5,
+        "outside_tool_intersection_mm3": 0
+      },
+      {
+        "x_mm": -32.35,
+        "y_mm": 71.6,
+        "side": -1,
+        "head_seat_abs_z_mm": 39.5,
+        "outside_tool_intersection_mm3": 0
+      },
+      {
+        "x_mm": -52.85,
+        "y_mm": 71.6,
+        "side": 1,
+        "head_seat_abs_z_mm": 39.5,
+        "outside_tool_intersection_mm3": 0
+      },
+      {
+        "x_mm": -32.35,
+        "y_mm": 71.6,
+        "side": 1,
+        "head_seat_abs_z_mm": 39.5,
+        "outside_tool_intersection_mm3": 0
+      }
+    ]
+  },
+  "collision_samples": {
+    "static_overlaps": [],
+    "insertion_overlaps": [],
+    "shoulder_sweep_overlaps": [],
+    "rover_overlaps": [
+      {
+        "part": "housing",
+        "obstacle": "Servo_housing_part_0281",
+        "volume_mm3": 1.5270925261210395
+      }
+    ],
+    "yaw_overlaps": [
+      {
+        "yaw": -110,
+        "part": "housing",
+        "obstacle": "Servo_housing_part_0281",
+        "volume_mm3": 4.669317549299944
+      },
+      {
+        "yaw": 110,
+        "part": "housing",
+        "obstacle": "Servo_housing_part_0281",
+        "volume_mm3": 4.412332894181864
+      }
+    ],
+    "uncheckable_obstacles": [
+      "Upper_cover_R9"
+    ]
+  },
+  "native_cover_test": {
+    "method": "Exact BRep intersection, no remeshing",
+    "cover_valid": true,
+    "checked_part": "pedestal; all other added stationary parts lie above cover",
+    "results": [
+      {
+        "yaw_deg": -110,
+        "overlap_mm3": 0
+      },
+      {
+        "yaw_deg": -100,
+        "overlap_mm3": 0
+      },
+      {
+        "yaw_deg": -90,
+        "overlap_mm3": 0
+      },
+      {
+        "yaw_deg": -80,
+        "overlap_mm3": 0
+      },
+      {
+        "yaw_deg": -70,
+        "overlap_mm3": 0
+      },
+      {
+        "yaw_deg": -60,
+        "overlap_mm3": 0
+      },
+      {
+        "yaw_deg": -50,
+        "overlap_mm3": 0
+      },
+      {
+        "yaw_deg": -40,
+        "overlap_mm3": 0
+      },
+      {
+        "yaw_deg": -30,
+        "overlap_mm3": 0
+      },
+      {
+        "yaw_deg": -20,
+        "overlap_mm3": 0
+      },
+      {
+        "yaw_deg": -10,
+        "overlap_mm3": 0
+      },
+      {
+        "yaw_deg": 0,
+        "overlap_mm3": 0
+      },
+      {
+        "yaw_deg": 10,
+        "overlap_mm3": 0
+      },
+      {
+        "yaw_deg": 20,
+        "overlap_mm3": 0
+      },
+      {
+        "yaw_deg": 30,
+        "overlap_mm3": 0
+      },
+      {
+        "yaw_deg": 40,
+        "overlap_mm3": 0
+      },
+      {
+        "yaw_deg": 50,
+        "overlap_mm3": 0
+      },
+      {
+        "yaw_deg": 60,
+        "overlap_mm3": 0
+      },
+      {
+        "yaw_deg": 70,
+        "overlap_mm3": 0
+      },
+      {
+        "yaw_deg": 80,
+        "overlap_mm3": 0
+      },
+      {
+        "yaw_deg": 90,
+        "overlap_mm3": 0
+      },
+      {
+        "yaw_deg": 100,
+        "overlap_mm3": 0
+      },
+      {
+        "yaw_deg": 110,
+        "overlap_mm3": 0
+      },
+      {
+        "yaw_deg": 78.96684926744595,
+        "overlap_mm3": 0
+      }
+    ],
+    "max_overlap_mm3": 0
+  },
+  "reference_baseline_note": "Small original pan-servo reference-mesh fit overlaps remain. Their volumes are lower than the original single-servo shoulder baseline; no new overlap was detected in the sampled checks.",
+  "baseline_pan_servo_fit": [
+    {
+      "yaw": -110,
+      "original_overlap_mm3": 4.7840023966118626
+    },
+    {
+      "yaw": 78.96684926744595,
+      "original_overlap_mm3": 1.6410292302189988
+    },
+    {
+      "yaw": 110,
+      "original_overlap_mm3": 4.523851908234274
+    }
+  ],
+  "sampled_checks": {
+    "shoulder_angles_deg": [
+      -100,
+      100
+    ],
+    "shoulder_step_deg": 5,
+    "yaw_angles_deg": [
+      -110,
+      110
+    ],
+    "yaw_step_deg": 10,
+    "servo_insertion_up_mm": [
+      0,
+      2,
+      5,
+      10,
+      20,
+      30,
+      45,
+      60
+    ]
+  },
+  "limits": [
+    "Prototype fit must be checked on the actual servo pair.",
+    "No strength, fatigue, thermal or payload certification.",
+    "No continuous or exhaustive combined-joint trajectory check.",
+    "Cables and plugs are not exact solid models.",
+    "Counter-rotation and separate servo zero calibration remain firmware work."
+  ]
+}
