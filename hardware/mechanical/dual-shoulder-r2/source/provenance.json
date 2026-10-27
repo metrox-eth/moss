@@ -1,0 +1,28 @@
+{
+  "repository": "TheRobotStudio/SO-ARM100",
+  "commit": "a758567c3978dfeefe282ede0500085a48fe8f78",
+  "files": [
+    {
+      "file": "Rotation_Pitch_SO101.step",
+      "url": "https://raw.githubusercontent.com/TheRobotStudio/SO-ARM100/a758567c3978dfeefe282ede0500085a48fe8f78/STEP/SO101/Rotation_Pitch_SO101.step",
+      "sha256": "a392681efb05bf4009c17115a9b3e37bbee9d2fcfe25e2066b11b95aaa380915",
+      "bytes": 370844,
+      "local_path": "Rotation_Pitch_SO101.step"
+    },
+    {
+      "file": "Upper_arm_SO101.step",
+      "url": "https://raw.githubusercontent.com/TheRobotStudio/SO-ARM100/a758567c3978dfeefe282ede0500085a48fe8f78/STEP/SO101/Upper_arm_SO101.step",
+      "sha256": "efa19a6dd2ccb459248500c76629cfa840630e7e15d9e146394d31da1525dd61",
+      "bytes": 551437,
+      "local_path": "Upper_arm_SO101.step"
+    },
+    {
+      "file": "LICENSE",
+      "url": "https://raw.githubusercontent.com/TheRobotStudio/SO-ARM100/a758567c3978dfeefe282ede0500085a48fe8f78/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357,
+      "local_path": "../LICENSE-SO101"
+    }
+  ],
+  "note": "Upstream inputs and licence for the R2 design. The editable delivered geometry is in CAD/."
+}

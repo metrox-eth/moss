@@ -40,6 +40,7 @@ I pick up litter by hand on my walks. MOSS is the robot I want next to me doing 
 
 ## News
 
+- 27 October 2026: **[SO-101 dual-servo shoulder R2](hardware/mechanical/dual-shoulder-r2/)** — common housing and wider upper arm, with editable STEP files, two printable STLs and assembly instructions.
 - 24 October 2026: **BOM and print plates updated.** Hoco HB1 four-port hub, GameSir Nova 2 Lite controller, all 38 spacers on one plate, and one tensioner-slider reference (print four). [Updated package](https://github.com/metrox-eth/moss/releases/download/v0.6-r92/MOSS_R92_Mechanical_20261024.zip) · [Print plates](https://www.showrobotics.ai/moss/build/print-plates.html).
 - 18 October 2026: **Ready-to-print plates are available.** [H2S: one-piece hull and cover](https://github.com/metrox-eth/moss/releases/download/v0.6-r92/MOSS_V06_R92_H2S_Print_Plates.3mf) or [P1 / P2: split hull and cover](https://github.com/metrox-eth/moss/releases/download/v0.6-r92/MOSS_V06_R92_256mm_Split_Print_Plates.3mf). The [updated package](https://github.com/metrox-eth/moss/releases/download/v0.6-r92/MOSS_R92_Mechanical_20261018.zip) includes both Jetson retaining tabs, grouped STLs with quantities, and both 3MF projects. [Choose your plates](https://www.showrobotics.ai/moss/build/print-plates.html).
 
