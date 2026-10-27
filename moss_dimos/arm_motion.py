@@ -39,12 +39,31 @@ class MoveReport:
     peak_load: dict[str, int] = field(default_factory=dict)
     min_volt: float = 0.0
     aborted: bool = False
+    rest_load: dict[str, int] = field(default_factory=dict)   # signed, once the move has settled
 
     def line(self) -> str:
         short = " ".join(f"{j} {v:.0f}" for j, v in zip(A.ARM_JOINTS, self.short_ticks))
         loads = " ".join(f"{j} {v}" for j, v in self.peak_load.items())
+        rest = " ".join(f"{j} {v:+d}" for j, v in self.rest_load.items())
         tail = "  ABORTED (pressed against something)" if self.aborted else ""
-        return f"{self.phase:14s} {self.planned_s:4.1f} s  short by {short} ticks  peak load {loads}  min {self.min_volt:.1f} V{tail}"
+        return f"{self.phase:14s} {self.planned_s:4.1f} s  short by {short} ticks  peak load {loads}  at rest {rest}  min {self.min_volt:.1f} V{tail}"
+
+
+def watched_ids(ad) -> dict[str, int]:
+    """The servos whose load a move watches: the shoulder and the elbow, and the
+    shoulder's twin when there is one. The twin counts the other way, so the same
+    physical torque reads with opposite signs on the two (the share); the same sign
+    on both is the two pushing against each other (the fight)."""
+    ids = ad._ids  # noqa: SLF001
+    out = {j: ids[j] for j in WATCHED}
+    tw = ad.twin() if hasattr(ad, "twin") else None
+    if tw and tw[0] in WATCHED:
+        out[f"{tw[0]}_twin"] = tw[1]
+    return out
+
+
+def servo_ids_for(ad, joint: str) -> list[int]:
+    return ad.servo_ids_for(joint) if hasattr(ad, "servo_ids_for") else [ad._ids[joint]]  # noqa: SLF001
 
 
 def read_servo(bus, sid: int) -> dict:
@@ -67,21 +86,25 @@ def goto(ad, q_to: list[float], gap_m: float, rate: float = RATE_DEFAULT, overlo
     d_ticks = [abs(b - a) * A.TICKS_PER_RAD for a, b in zip(q_now, q_to)]
     T = max(max(d_ticks) / rate, least_s)
     for i, j in enumerate(A.ARM_JOINTS):
-        bus.write1(ids[j], REG_ACC, ACC_MAX)
-        bus.write2(ids[j], REG_SPEED, max(20, int(d_ticks[i] / T)))
+        for sid in servo_ids_for(ad, j):      # a joint's twin takes the same profile
+            bus.write1(sid, REG_ACC, ACC_MAX)
+            bus.write2(sid, REG_SPEED, max(20, int(d_ticks[i] / T)))
     ad.write_joint_positions(list(q_to) + [gap_m])
     t0 = time.monotonic()
-    peak = {j: 0 for j in WATCHED}
+    watched = watched_ids(ad)
+    peak = {j: 0 for j in watched}
+    rest = {j: 0 for j in watched}
     vmin = 99.0
     over_since = None
     aborted = False
     while time.monotonic() - t0 < T + SETTLE_S:
         time.sleep(0.05)
         hot = False
-        for j in WATCHED:
-            s = read_servo(bus, ids[j])
+        for j, sid in watched.items():
+            s = read_servo(bus, sid)
             if s["load"] is not None:
                 peak[j] = max(peak[j], s["load"])
+                rest[j] = s["load"] * s["load_sign"]
                 hot = hot or s["load"] >= overload
             if s["volt"] is not None:
                 vmin = min(vmin, s["volt"])
@@ -98,7 +121,7 @@ def goto(ad, q_to: list[float], gap_m: float, rate: float = RATE_DEFAULT, overlo
     fin = ad.read_joint_positions() or []
     q_fin = list(fin[:A.ARM_DOF]) if len(fin) >= A.ARM_DOF else list(q_to)
     short = [abs(f - t) * A.TICKS_PER_RAD for f, t in zip(q_fin, q_to)]
-    return MoveReport(phase, T, q_fin, short, peak, vmin, aborted)
+    return MoveReport(phase, T, q_fin, short, peak, vmin, aborted, rest)
 
 
 def hold_here(ad) -> list[float]:
@@ -114,7 +137,8 @@ def hold_here(ad) -> list[float]:
 
 def restore_defaults(ad, acc: int = 50, speed: int = 400) -> None:
     """Back to the adapter's own acceleration and speed registers (what activate() writes)."""
-    bus, ids = ad._bus, ad._ids  # noqa: SLF001
+    bus = ad._bus  # noqa: SLF001
     for j in A.ARM_JOINTS:
-        bus.write1(ids[j], REG_ACC, acc)
-        bus.write2(ids[j], REG_SPEED, speed)
+        for sid in servo_ids_for(ad, j):
+            bus.write1(sid, REG_ACC, acc)
+            bus.write2(sid, REG_SPEED, speed)

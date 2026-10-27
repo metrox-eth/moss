@@ -39,7 +39,7 @@ def main(argv=None) -> int:
     ap.add_argument("--no-move", action="store_true")
     ap.add_argument("--rate", type=float, default=300.0)
     a = ap.parse_args(argv)
-    from moss_dimos.arm_feetech import FeetechSo101Adapter, SERVO_IDS  # noqa: E402
+    from moss_dimos.arm_feetech import FeetechSo101Adapter  # noqa: E402
 
     port = os.environ.get(A.ARM_PORT_ENV, A.ARM_PORT_DEFAULT)
     ad = FeetechSo101Adapter(address=port)
@@ -50,8 +50,8 @@ def main(argv=None) -> int:
     record = {"when": time.strftime("%Y-%m-%d %H:%M:%S"), "servos": {}, "moves": {}, "verdict": {}}
     try:
         bus = ad._bus  # noqa: SLF001
-        print("servo           pos   volt  temp  load  torque_limit  acc  speed  P  D  I  deadband")
-        for name, sid in SERVO_IDS.items():
+        print("servo               pos   volt  temp  load  torque_limit  acc  speed  P  D  I  deadband")
+        for name, sid in ad.servo_table():
             st = M.read_servo(bus, sid)
             st["torque_limit"] = bus.read2(sid, 48)
             st["acc"] = (bus.read2(sid, 41) or 0) & 0xFF
@@ -64,7 +64,9 @@ def main(argv=None) -> int:
             dz = bus.read2(sid, 26) or 0
             st["deadband"] = [dz & 0xFF, dz >> 8]
             record["servos"][name] = st
-            print(f"{name:14s} {st['pos']:5d}  {st['volt']:.1f}  {st['temp']:3d}   {st['load']:4d}  {st['torque_limit']:5d}       {st['acc']:3d}  {st['speed']:5d}  {st['P']:2d} {st['D']:2d} {st['I']:2d}  {st['deadband']}")
+            print(f"{name:18s} {st['pos']:5d}  {st['volt']:.1f}  {st['temp']:3d}   {st['load']:4d}  {st['torque_limit']:5d}       {st['acc']:3d}  {st['speed']:5d}  {st['P']:2d} {st['D']:2d} {st['I']:2d}  {st['deadband']}")
+        if ad.twin():
+            print(f"  {ad.twin_name()} (id {ad.twin()[1]}) reads {ad.twin_gap():+d} ticks off the mirror of {ad.twin()[0]} (sum {ad.twin()[2]})")
         q = ad.read_joint_positions() or []
         drive = A.drive_pose_rad()
         near_drive = len(q) >= A.ARM_DOF and all(abs(x - y) <= 0.17 for x, y in zip(q[:4], drive[:4]))
@@ -74,6 +76,7 @@ def main(argv=None) -> int:
             else:
                 doc = json.loads(POSES.read_text())
                 poses = {k: [float(x) for x in v["rad"]] for k, v in doc["poses"].items()}
+                poses["drive"] = list(drive)      # the sequence's "drive" is the calibration's drive pose
                 gap = float(q[A.ARM_DOF])
                 M.hold_here(ad)
                 for mv in doc["sequence"]:
@@ -85,6 +88,12 @@ def main(argv=None) -> int:
                         break
                 M.restore_defaults(ad)
                 fin = ad.read_joint_positions() or []
+                if ad.twin():
+                    print(f"  {ad.twin_name()} reads {ad.twin_gap():+d} ticks off its mirror after the moves")
+                code, msg = ad.read_error()
+                if code:
+                    print(f"  adapter error {code}: {msg}", file=sys.stderr)
+                    record["verdict"]["adapter"] = [msg]
                 if len(fin) >= A.ARM_DOF and all(abs(x - y) <= 0.17 for x, y in zip(fin[:4], drive[:4])):
                     ad.deactivate()
                     print("back in the drive pose, torque off")

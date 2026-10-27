@@ -31,6 +31,42 @@ A servo reports `raw - homing_offset`: every position in this document and
 in the code is that reported value, in ticks (4096 per turn, 0.088 degrees
 each). The file describes one arm, so it lives in that robot's checkout.
 
+### A joint with two servos
+
+The shoulder can carry a second servo back to back with the first, on the
+same axis (the dual-servo bracket). The second one counts the other way,
+so the two are set to read mirror positions about the middle: at every
+pose `twin + joint = sum_ticks` (4094: 2047 + p and 2047 - p, the way the
+RoArm-M3 firmware runs its two shoulder servos). The calibration file
+declares it:
+
+```json
+"shoulder_lift_twin": {"id": 7, "of": "shoulder_lift", "sum_ticks": 4094, "homing_offset": -230, "range_min": 839, "range_max": 3234}
+```
+
+`tools/moss_arm_twin_setup.py` sets it up: `rename OLD NEW` gives a servo
+its bus id; `zero`, with the arm resting at the joint's rear stop and the
+torque off, writes both homing offsets so the stop reads the joint's
+`range_min` on one and `sum_ticks - range_min` on the other, mirrors the
+position limits, copies P/D/I, dead band and torque limit from the joint to
+the twin, and records it all in the calibration file; `rest` holds torque
+on for a while with nothing moving and prints both loads. Each servo signs
+its load in its own direction of count and the twin counts the other way,
+so the same physical torque reads with opposite signs on the two: that is
+the share. The same sign on both is the two pushing against each other
+through the bracket. `tools/moss_bus_scan.py` lists what answers on
+the bus, `tools/moss_servo_log.py` logs positions while the arm is moved by
+hand (which way each servo counts, where the stops are).
+
+The adapter then drives the twin by itself: the joint's goal mirrored, in
+the same sync-write packet as every goal, the same speed and acceleration
+per move, torque on and off together, its goal latched to its own reading
+before torque goes on. It refuses to connect, or to enable torque, when the
+twin reads more than 25 ticks off its mirror (a stale zero would make the
+two push against each other through the bracket), and reports an error
+when they drift more than 40 ticks apart under torque. The preflight and
+every move report the twin's load next to the shoulder's.
+
 ## Named poses
 
 The same file keeps named poses under `"poses"`, each a tick per servo and a
