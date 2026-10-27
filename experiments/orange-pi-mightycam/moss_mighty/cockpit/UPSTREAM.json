@@ -1,0 +1,11 @@
+{
+  "source": "metrox-eth/moss",
+  "revision": "1590dcb1c4c58181c037738d44a22e3940f982db",
+  "paths": [
+    "tools/moss_cockpit/index.html",
+    "tools/moss_cockpit/tokens.css",
+    "tools/moss_cockpit/assets/",
+    "tools/moss_cockpit/fonts/"
+  ],
+  "adaptation": "Mighty/Orange Pi tabletop profile; existing cockpit style and layout, dedicated camera/VIO/resource bindings."
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-27",
+  "purpose": "Whole-board load and fit experiment; no real robot autonomy validation",
+  "board": "Orange Pi Zero 3W / Allwinner A733 / 6 GB",
+  "os": "Armbian 26.8.1 Debian 13",
+  "kernel": "6.6.98-vendor-sun60iw2",
+  "camera": "MightyCam VIO",
+  "cooler": "Official cooler fitted for these measurements",
+  "memory": {
+    "definition": "MemTotal - MemAvailable",
+    "total_mib": 5844.3,
+    "observed_used_gib_approx": [
+      1.6,
+      1.7
+    ],
+    "swap_used_mib": 0
+  },
+  "vision": {
+    "model": "YOLOv5 COCO 640x640",
+    "backend": "A733 VIPLite NPU",
+    "network_ms_approx": [
+      26,
+      30
+    ],
+    "complete_pipeline_ms_approx": [
+      330,
+      390
+    ],
+    "recorded_throughput_fps_approx": [
+      2.6,
+      2.8
+    ],
+    "litter_specific": false
+  },
+  "integration_sample": {
+    "duration_s": 20.42,
+    "detector_cap_hz": 1,
+    "cpu_quota_percent": 400,
+    "memory_used_mib": 1725.5,
+    "temperature_c": 61.1,
+    "stream_counts": {
+      "synthetic_lidar_odometry": 201,
+      "simulated_base_joint_state": 2037,
+      "simulated_arm_joint_state": 1003,
+      "synthetic_global_costmap": 100,
+      "real_mighty_pose": 1225,
+      "real_npu_detections_messages": 20
+    }
+  },
+  "handheld_recording": {
+    "detector_cap_hz": 3,
+    "approx_temperature_c": [
+      61,
+      67
+    ]
+  },
+  "active_inputs": "Real camera image and VIO. Synthetic LiDAR and mock/in-memory actuator buses.",
+  "loaded_but_not_task_validated": [
+    "planner",
+    "explorer",
+    "litter mission"
+  ],
+  "failures": [
+    "VIO path drifted and did not return to start",
+    "Severe coordinate divergence on a subsequent restart",
+    "Camera calibration query returned calib.yaml not found",
+    "Image stream resumed once with VIO OFF; automatic restart is not implemented"
+  ],
+  "interpretation": "Calibration, synchronization, initialization and firmware need investigation. Missing saved calibration is not a proven sole cause. CPU/NPU compute fit was demonstrated; metric camera accuracy and autonomous collection were not."
+}

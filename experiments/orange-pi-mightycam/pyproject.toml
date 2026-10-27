@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "moss-mighty"
+version = "0.1.0"
+description = "Experimental Orange Pi A733 load test for MOSS/dimOS and MightyCam"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+requires-python = ">=3.10,<3.13"
+dependencies = ["mighty-protocol", "Pillow>=9", "numpy"]
+
+[project.entry-points."dimos.blueprints"]
+mighty = "moss_mighty.module:blueprint"
+full-bench = "moss_mighty.full_bench:blueprint"
+vision = "moss_mighty.vision:blueprint"
+demo = "moss_mighty.vision:demo"
+
+[tool.setuptools]
+packages = ["moss_mighty"]
+
+[tool.setuptools.package-data]
+moss_mighty = ["dashboard.html", "cockpit/*.css", "cockpit/*.js", "cockpit/*.json", "cockpit/assets/*.svg", "cockpit/fonts/*"]

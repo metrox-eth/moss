@@ -1,0 +1,85 @@
+/* MOSS brand tokens for the cockpit.
+ *
+ * Colours, font and spacing are the MOSS brand tokens: flat studio blue,
+ * three thin arcs, mint accent, salmon as a counterpoint, Space Grotesk,
+ * hairlines instead of boxes. Sizes are set for a 1440 px canvas. Lines
+ * marked ADAPT are cockpit-only additions.
+ */
+
+/* Variable font, weight axis 300-700, file default 300: the weight RANGE is
+   required, otherwise the browser synthesises 600 from the 300 master. */
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("fonts/SpaceGrotesk.ttf") format("truetype");
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* palette */
+  --moss-white: #EAF0EF;
+  --moss-mint: #6CF8C7;
+  --moss-salmon: #FF947E;
+  --moss-navy: #080F1A;
+  --moss-studio: #3D576A;
+
+  /* lines */
+  --moss-hairline: #6A8797;                 /* card and closing hairlines */
+  --moss-rule: rgba(234, 240, 239, .235);   /* caption bottom rule (WHITE alpha 60/255) */
+  --moss-fade: linear-gradient(to bottom, rgba(8, 15, 26, 0), rgba(8, 15, 26, .902));
+
+  /* type */
+  --moss-font: "Space Grotesk", system-ui, sans-serif;
+  --moss-w-body: 500;
+  --moss-w-title: 600;
+  --moss-w-display: 700;
+  --moss-w-kicker: 600;
+  --moss-track-kicker: .12em;
+
+  /* display sizes at 1440 px */
+  --moss-fs-numeral: 55.5px;
+  --moss-fs-title: 49.5px;
+  --moss-fs-sub: 23.25px;
+  --moss-fs-kicker: 18.75px;
+  --moss-fs-kicker-sm: 17.25px;
+  --moss-fs-meta: 15.75px;
+  --moss-fs-micro: 13.5px;
+
+  /* ADAPT: a dense instrument tier for telemetry: a smaller scale with the
+     same hierarchy (caps kicker > sentence-case title > body) and weights. */
+  --ui-fs-kicker: 13.5px;     /* = --moss-fs-micro, the smallest display size */
+  --ui-fs-title: 22px;
+  --ui-fs-body: 15px;
+  --ui-fs-small: 13px;
+  --ui-fs-big: 40px;          /* battery and other headline numerals */
+
+  /* grid at 1440: 84 px margin, 84 px columns, 24 px gutters */
+  --moss-margin: clamp(16px, 5.834vw, 112px);
+  --moss-gutter: 24px;
+  --moss-accent-len: 70.5px;
+  --moss-accent-w: 2.25px;
+  --moss-vrule-w: 3px;
+  --moss-progress-w: 2.25px;
+
+  /* motion: ease(x) = x*x*(3-2x) */
+  --moss-ease: cubic-bezier(.3333, 0, .6667, 1);
+  --moss-fade-in: 300ms;
+  --moss-fade-out: 280ms;
+
+  /* ADAPT, UI-only status colours. In the brand tokens the mint/salmon
+     alternation carries no status, so this mapping is cockpit-only:
+       ok        = mint text
+       attention = salmon text
+       failure   = salmon badge with navy text
+       caution   = amber text
+       unknown   = white at 0.6 */
+  --ui-ok: var(--moss-mint);
+  --ui-attention: var(--moss-salmon);
+  --ui-fail-bg: var(--moss-salmon);
+  --ui-fail-fg: var(--moss-navy);
+  --ui-unknown: rgba(234, 240, 239, .6);
+  --ui-caution: #FFC15E;   /* the depth camera's dots on the map; obstacle / replan in the decision feed */
+  --ui-dim: rgba(234, 240, 239, .78);       /* secondary text: 4.74:1 on studio */
+  --ui-control-line: rgba(234, 240, 239, .5); /* button borders: >= 3:1 on studio */
+}
