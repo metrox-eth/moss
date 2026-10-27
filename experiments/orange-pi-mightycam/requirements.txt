@@ -1,0 +1,5 @@
+# The dimOS revision used by MOSS Software.md and this experiment.
+dimos @ git+https://github.com/dimensionalOS/dimos.git@a7d19f76158b01739b26e7a17390f89764aaef83
+mighty-protocol @ git+https://github.com/asadm/mighty-protocol.git@aeb060e36a6cc25edae9153b4806dbfa99c343a4
+opencv-python==4.11.0.86
+Pillow>=9

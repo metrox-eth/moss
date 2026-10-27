@@ -1,0 +1,29 @@
+{
+  "repository": "https://github.com/ZIFENG278/ai-sdk",
+  "revision": "fc90006d0f6569da2f6726c2d8395877686f5aca",
+  "sha256": {
+    "examples/libawnn_viplite/awnn_internal.h": "9c1a653d70e46bc63a7b53f56a8d5b03e2a2b03e5f635e4484cc983f48363380",
+    "examples/libawnn_viplite/awnn_lib.c": "cd5887d5ed7a46235c7ad79366ad83ec0aa2368bc487848c57e1726b220b7e30",
+    "examples/libawnn_viplite/awnn_lib.h": "5f59b1ee572ca445b9b8d2f9abbb96ce50b352c653cd59841c2c4feb78b02624",
+    "examples/libawnn_viplite/awnn_quantize.c": "aa23ce3dd31785fc798ffeeca8f9aa473d327c9f7dca8fd062cfeede018c7f6f",
+    "examples/libawnn_viplite/awnn_quantize.h": "853d82b643d0392759cc3ab515b49509b5e036d1694233ac0ca4156233e72bc7",
+    "examples/libawutils/image_utils.c": "4323b109a77fd80326dfd9f6c0fbbad0f393f0abb7efb12afe6fea7bd19b48de",
+    "examples/libawutils/image_utils.h": "3a1eac1ac02cfa0c3be15d64a3bf8ab28c6da9203792ba792a0e065e3bd17302",
+    "examples/yolov5/Makefile": "2072d44c44d7437ab18df09b77f8fe92e12cb0f9c3ce39921ac2eac0047122a8",
+    "examples/yolov5/README.md": "a52fcb51ac7f452af7d638cdd6fa18452ade80dad9a93a1d754ad10f6a387801",
+    "examples/yolov5/input_data/dog.jpg": "5a9522051c3cec2bbd2f6323fccba32e8fbf3ddcc2b3e2fd46b04c720bc6f866",
+    "examples/yolov5/main.c": "53b1b2748690c6b3126656d0e193e4e768c1a5adba6d1d428cc7f4ca51ee840c",
+    "examples/yolov5/model/v3/yolov5.nb": "6c6cb261f41fcc774134b90d0e1f2a17675cd6da1e8f1c6d2b61460cfd584158",
+    "examples/yolov5/yolov5.sh": "a5a0330a9730b44cbb3b181634393551250b99d3ba8143bb0456afebdfbb5bcb",
+    "examples/yolov5/yolov5_post_process.cpp": "ceb3429c19fc3f925fce69cd848ac58d8ee5de39205d4c070e1eb35a1995286c",
+    "examples/yolov5/yolov5_post_process.h": "d4d1b48e6b5672da488890b17912694a47d543cfbd9fa0d602ed2a0a7af5d8bc",
+    "examples/yolov5/yolov5_pre_process.cpp": "caf1cfc88850c9c0e02a8fb9b1ba4ca41480210f63f3774cc7b9ca190884ebdc",
+    "examples/yolov5/yolov5_pre_process.h": "153fbcf00d9387bec06101c4b60d0031b770dac6864734f1afe788c1b86d5075",
+    "machinfo/a733/config.mk": "d495c5f468775dca2504158dc7cae5735b4005dfa5623a9b685563a0ac8e6ea0",
+    "viplite-tina/lib/aarch64-none-linux-gnu/v2.0/inc/vip_lite.h": "33fee8f985210cb34f14b7e2b0614096e6972718f87d8107497521d561d9df41",
+    "viplite-tina/lib/aarch64-none-linux-gnu/v2.0/inc/vip_lite_common.h": "d807216e8376de4729de074ecb1b91cd5ccab279ef18543acd3adb61b1a1518e",
+    "viplite-tina/lib/aarch64-none-linux-gnu/v2.0/libNBGlinker.so": "82f049b0ed0065dd4d443e37eeb1edfcbef24457c9c24e36170d64d5b748ca66",
+    "viplite-tina/lib/aarch64-none-linux-gnu/v2.0/libVIPhal.so": "3ed5357b26bd6c4fb68fbdc0b21d637227dda711d1fe67b9e28accdc48bb11f2",
+    "log/log.h": "d831146829a9092c5e8faac5878aa70a6eee3c7fa0bc2f566a5250db06eac84a"
+  }
+}
