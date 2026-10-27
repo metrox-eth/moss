@@ -1,0 +1,7 @@
+MOSS Dual Shoulder R2 compact monobloc prototype, 2026.
+Derived from SO101 mechanical STEP designs by The Robot Studio.
+https://github.com/TheRobotStudio/SO-ARM100
+Apache License, Version 2.0; see source/LICENSE.
+Changes: continuous monobloc two-servo surround, four external case fixings,
+connector windows and a compact tapered dual-output upper arm.
+Servo references are visual/dimensional aids, not printable components.
