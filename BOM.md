@@ -50,7 +50,7 @@ LK05/LK06/LK08 are guide identifiers for purchased shaft collars, also called lo
 
 ## Power and wiring — module-based rover
 
-**Optional custom battery:** [3S4P / twelve EVE 21700 cells — parts and illustrated build](hardware/power/custom-3s4p-battery/). Its rated capacity is 20 Ah and assembled mass is 910 g; usable capacity and runtime are not yet measured. The 110 × 67 × 35 mm dimensions below refer to the earlier compact pack, **not** this custom build. Choose one battery solution; do not add both to the shopping list.
+**Optional custom battery:** [3S4P / twelve EVE 21700 cells — parts and illustrated build](hardware/power/custom-3s4p-battery/). Its rated capacity is 20 Ah, assembled mass is 910 g, and measured size is **140 × 73 × 48 mm (L × W × H)**; usable capacity and runtime are not yet measured. The 110 × 67 × 35 mm dimensions below refer to the earlier compact pack, **not** this custom build. Choose one battery solution; do not add both to the shopping list.
 
 | Item | Quantity | Note |
 |---|---:|---|
