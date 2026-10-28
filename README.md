@@ -40,6 +40,7 @@ I pick up litter by hand on my walks. MOSS is the robot I want next to me doing 
 
 ## News
 
+- 28 October 2026: **[Build a custom 3S4P battery for MOSS](hardware/power/custom-3s4p-battery/)** — twelve EVE 21700 cells, illustrated assembly, wiring diagram and parts list. 20 Ah from the cell ratings, 910 g assembled; usable energy and collection runtime still to be measured.
 - 27 October 2026: **[Orange Pi + MightyCam experiment](experiments/orange-pi-mightycam/)** — dimOS, YOLO on the NPU and a first memory/load test with simulated rover I/O. Code, cockpit image and the limits of this early bench demo.
 - 27 October 2026: **[SO-101 dual-servo shoulder R2: complete upgrade guide](hardware/mechanical/dual-shoulder-r2/)** — editable CAD, two printable parts, screws, assembly, paired-servo setup and testing in one place.
 - 24 October 2026: **BOM and print plates updated.** Hoco HB1 four-port hub, GameSir Nova 2 Lite controller, all 38 spacers on one plate, and one tensioner-slider reference (print four). [Updated package](https://github.com/metrox-eth/moss/releases/download/v0.6-r92/MOSS_R92_Mechanical_20261024.zip) · [Print plates](https://www.showrobotics.ai/moss/build/print-plates.html).

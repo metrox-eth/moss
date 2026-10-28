@@ -6,6 +6,10 @@ See the [print catalogue](../3DPrinting.md), [BOM](../BOM.md) and [assembly guid
 
 `bench/` retains the raw bench traces. The 20 September INA219 trace is not a motor-current measurement.
 
+## Custom battery
+
+[3S4P battery build tutorial](power/custom-3s4p-battery/) — parts, photographs, wiring and assembly for the twelve-cell EVE 21700 pack, with a 15 A fuse and 14 AWG leads. Rated 20 Ah from the cell specifications; assembled mass 910 g. Actual capacity and collection runtime still need measuring. Read the workshop disclaimer before considering this build.
+
 ## Electronics prototypes
 
 [MOSS Core V1D](electronics/moss-core-v1d/) is the current routed design review: editable KiCad files, schematics, BOM, connector guide and static review evidence. **Draft only: not approved for fabrication or assembly.** Rover fit and hardware validation remain pending.
