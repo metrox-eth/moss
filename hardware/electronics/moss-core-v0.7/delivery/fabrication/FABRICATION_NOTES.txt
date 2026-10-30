@@ -1,0 +1,7 @@
+MOSS CORE V0.7 — PROTOTYPE
+4 copper layers, 80 x 75 mm, 1.6 mm board.
+Layer order: F.Cu, In1.Cu, In2.Cu, B.Cu.
+Minimum plated hole: 0.20 mm. Use the supplied separate PTH/NPTH drill files, including slots.
+The exported mask, paste and silkscreen layers correspond to this exact PCB.
+Confirm stackup, copper build, DFM and any impedance requirements during engineering review.
+No payment or production authorization.

@@ -1,0 +1,10 @@
+{
+  "status": "CURRENT_PUBLIC_PROTOTYPE_NOT_FABRICATED",
+  "PCB_sha256": "cffb4a378502802a778fcee618310e6f3fa5c49ad201b0c372728368ae3520d1",
+  "native_PCB_schematics_footprints_models_and_manufacturing_data_bytes_unchanged": true,
+  "all_44_native_board_3D_models_bundled": true,
+  "reports_local_paths_replaced_with_package_relative_paths": true,
+  "supplier_correspondence_account_and_order_data_excluded": true,
+  "manufactured_hardware_revision_letters_assigned": false,
+  "hardware_qualified": false
+}

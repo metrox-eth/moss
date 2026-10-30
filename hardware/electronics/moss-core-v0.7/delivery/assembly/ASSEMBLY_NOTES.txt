@@ -1,0 +1,8 @@
+MOSS CORE V0.7 — PROTOTYPE — ENGINEERING REVIEW
+194 placed components, 89 grouped purchase articles. Use the matched BOM and positions in this folder.
+F1: Littelfuse 08853.15DR, soldered SMD. No separate fuse holder, cartridge or cover.
+J8: six positions; pins 3/4 have no harness wires or crimp contacts.
+J14/J15: JST B2B-XH-A(LF)(SN), pin 1 fused 3S positive, pin 2 GND.
+F2/F3: Littelfuse 0451001.MRL, 1 A; quantities grouped by exact MPN.
+MOD1: Waveshare 29035 SMD module, factory 5 V setting. Confirm sourcing and castellated soldering method; no paste apertures are provided.
+No payment or production authorization. See README and CONNECTORS for wiring and remaining bench qualification.

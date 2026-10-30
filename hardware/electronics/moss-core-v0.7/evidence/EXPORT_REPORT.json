@@ -1,0 +1,12 @@
+{
+  "status": "CURRENT_PROTOTYPE_EXPORT",
+  "board_sha256": "cffb4a378502802a778fcee618310e6f3fa5c49ad201b0c372728368ae3520d1",
+  "component_count": 194,
+  "article_count": 89,
+  "DRC_errors": 0,
+  "unconnected_items": 0,
+  "schematic_parity_issues": 0,
+  "ERC_violations": 0,
+  "known_DRC_warnings": 2,
+  "hardware_qualified": false
+}

@@ -1,6 +1,6 @@
-# MOSS CORE V0.7 — connector guide, proposed revision D
+# MOSS CORE V0.7 — prototype connector guide
 
-Working revision: the connector layout and routing must pass the final checks before these files replace the supplier submission. Read the numbers on the connector footprint, not the left-to-right order inferred from a top or bottom photograph. All twelve external connectors have a planned numbered legend on the underside. Left/right refer to the rover's forward-driving direction.
+Read the numbers on the connector footprint, not the left-to-right order inferred from a top or bottom photograph. All fourteen external connectors have a numbered legend on the underside. Left/right refer to the rover's forward-driving direction.
 
 | Connector | Underside label | Connect to | Pin assignment |
 |---|---|---|---|
@@ -16,6 +16,8 @@ Working revision: the connector layout and routing must pass the final checks be
 | J5 | ARM | Powered arm servo daisy chain | 1 DATA; 2 switched battery positive; 3 GND. Six servos standard, seven with the optional double shoulder. |
 | J7 | SPEAKER / NO GND | 4-ohm speaker | 1 amplifier positive output; 2 amplifier negative output. Both are driven: do not connect either terminal to GND. |
 | J8 | STOP | Two independent normally closed contacts of the red stop button | 1/2 power-cut contact; **3/4 no wires or crimp contacts**; 5/6 status/reset contact. This is the new six-position connector, not the original four-position harness. |
+
+| J14 / J15 | FAN 1 / FAN 2 | Two 12 V nominal chassis fans | 1 fused 3S battery positive; 2 GND. Shared F3 1 A fuse; not regulated 12 V. |
 
 ## Host USB wiring
 
@@ -35,7 +37,7 @@ Cytron right output B ───────────────────�
 
 These are H-bridge motor leads, not battery-return terminals. The current can reverse; the reading is winding current, not total battery consumption. Confirm direction/channel naming during firmware commissioning.
 
-## Stop-button cable for revision D
+## Stop-button cable
 
 Use the matching six-position JST SH housing. Fit wires only in positions 1, 2, 5 and 6. Keep positions 3 and 4 empty and insulated from other wiring; they are not spare ground connections. Keep the cut and status circuits separate through the cable and at the switch.
 

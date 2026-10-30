@@ -1,0 +1,22 @@
+{
+  "status": "PUBLIC_COMMUNITY_REVIEW_PROTOTYPE",
+  "board_sha256": "cffb4a378502802a778fcee618310e6f3fa5c49ad201b0c372728368ae3520d1",
+  "hardware_qualified": false,
+  "archives": [
+    {
+      "path": "delivery/MOSS_CORE_V07_PROTOTYPE_ASSEMBLY_NOTES_20261030.zip",
+      "bytes": 6877,
+      "sha256": "af95ffe11cd2de0b752b4f14b71b5fe25cefa2c9bf0d2d831996128af54ac2fe"
+    },
+    {
+      "path": "delivery/MOSS_CORE_V07_PROTOTYPE_GERBERS_20261030.zip",
+      "bytes": 307656,
+      "sha256": "fa90c5982f60236e05e5ded1a872fefd31ec3b29dacd538840f4f5e55b1cc021"
+    },
+    {
+      "path": "delivery/MOSS_CORE_V07_PROTOTYPE_REVIEW_20261030.zip",
+      "bytes": 4711806,
+      "sha256": "3f592498735ef9b31a965c8e8d39edbdc338fab23662e7a2584aad375c3deac2"
+    }
+  ]
+}

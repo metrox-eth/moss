@@ -1,0 +1,22 @@
+{
+  "source_sha256": "3fdbd54e1b858c0d1bfd9ce2af361dc4c660273fec9b26b3768d296a7c1e1fe8",
+  "candidate_sha256": "cffb4a378502802a778fcee618310e6f3fa5c49ad201b0c372728368ae3520d1",
+  "all_208_footprints_pads_nets_preserved": true,
+  "all_vias_preserved": true,
+  "before": {
+    "segments_over_0_5mm": 1803,
+    "free_angle_segments": 672,
+    "HV45_segments": 1131,
+    "HV45_percent": 62.7
+  },
+  "after": {
+    "segments_over_0_5mm": 1942,
+    "free_angle_segments": 347,
+    "HV45_segments": 1595,
+    "HV45_percent": 82.1
+  },
+  "converted_source_segments": 325,
+  "no_additional_supplier_submission": true,
+  "status": "ADOPTED_CURRENT_PROTOTYPE",
+  "current_board": "electrical/MOSS_Core_V07_Prototype.kicad_pcb"
+}

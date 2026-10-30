@@ -1,2 +1,3 @@
-# Preserve generated STEP bytes and keep CAD model changes out of text diffs.
-kicad/models/*.step binary
+# Preserve generated CAD and native CSV export bytes.
+electrical/models/*.step binary
+delivery/assembly/*.csv -text whitespace=cr-at-eol

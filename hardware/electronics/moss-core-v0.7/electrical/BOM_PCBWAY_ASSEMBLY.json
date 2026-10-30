@@ -1,0 +1,1675 @@
+{
+  "status": "FOR_QUOTATION_REVIEW_ONLY_NOT_ORDERED",
+  "assemblyPreference": "PCBWay if sourcing/assembly accepted",
+  "procurementStatus": "not quoted/not confirmed",
+  "supplier_contact_or_submission_performed": false,
+  "MOD1_included": true,
+  "notes": [
+    "MOD1 is the Waveshare SKU29035 SMD module, factory 5V. Ask PCBWay to confirm sourcing and assembly; no acceptance is assumed.",
+    "The existing castellated footprint has no paste apertures. Assembly method and any supplier-provided hand-solder operation must be agreed in the quote.",
+    "F1 is the soldered Littelfuse 08853.15DR. No cartridge, holder or removable cover is required."
+  ],
+  "accessories_excluded_from_PCB_placement": [],
+  "component_count": 194,
+  "article_count": 89,
+  "parts": [
+    {
+      "mpn": "GRM188R61A105KA61D",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "quantity": 4,
+      "references": [
+        "C1",
+        "C2",
+        "C43",
+        "C44"
+      ],
+      "labels_by_reference": {
+        "C1": "1uF",
+        "C2": "1uF",
+        "C43": "1uF",
+        "C44": "1uF"
+      },
+      "values": [
+        "1uF"
+      ],
+      "is_pcb_item": true,
+      "value": "1uF"
+    },
+    {
+      "mpn": "GRM21BR71A475KA73L",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "quantity": 1,
+      "references": [
+        "C4"
+      ],
+      "labels_by_reference": {
+        "C4": "4.7uF"
+      },
+      "values": [
+        "4.7uF"
+      ],
+      "is_pcb_item": true,
+      "value": "4.7uF"
+    },
+    {
+      "mpn": "GRM21BR71A106KA73L",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "quantity": 2,
+      "references": [
+        "C5",
+        "C6"
+      ],
+      "labels_by_reference": {
+        "C5": "10uF",
+        "C6": "10uF"
+      },
+      "values": [
+        "10uF"
+      ],
+      "is_pcb_item": true,
+      "value": "10uF"
+    },
+    {
+      "mpn": "GRM188R71C104KA01D",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "quantity": 15,
+      "references": [
+        "C7",
+        "C9",
+        "C11",
+        "C18",
+        "C23",
+        "C25",
+        "C26",
+        "C27",
+        "C29",
+        "C40",
+        "C41",
+        "C42",
+        "C80",
+        "C84",
+        "C100"
+      ],
+      "labels_by_reference": {
+        "C7": "100nF",
+        "C9": "100nF",
+        "C11": "100nF",
+        "C18": "100nF",
+        "C23": "100nF",
+        "C25": "100nF",
+        "C26": "100nF",
+        "C29": "100nF",
+        "C42": "100nF",
+        "C40": "100nF",
+        "C41": "100nF",
+        "C27": "100nF",
+        "C80": "100nF",
+        "C84": "100nF",
+        "C100": "100n"
+      },
+      "values": [
+        "100n",
+        "100nF"
+      ],
+      "is_pcb_item": true,
+      "value": "GRM188R71C104KA01D"
+    },
+    {
+      "mpn": "GRM1885C1H101JA01D",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "quantity": 4,
+      "references": [
+        "C19",
+        "C20",
+        "C21",
+        "C22"
+      ],
+      "labels_by_reference": {
+        "C19": "100pF",
+        "C20": "100pF",
+        "C21": "100pF",
+        "C22": "100pF"
+      },
+      "values": [
+        "100pF"
+      ],
+      "is_pcb_item": true,
+      "value": "100pF"
+    },
+    {
+      "mpn": "GRM188R71H104KA93D",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "quantity": 3,
+      "references": [
+        "C31",
+        "C141",
+        "C151"
+      ],
+      "labels_by_reference": {
+        "C31": "100nF",
+        "C141": "100nF 50V X7R",
+        "C151": "100n"
+      },
+      "values": [
+        "100n",
+        "100nF",
+        "100nF 50V X7R"
+      ],
+      "is_pcb_item": true,
+      "value": "GRM188R71H104KA93D"
+    },
+    {
+      "mpn": "GRM188R71H103KA01D",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "quantity": 3,
+      "references": [
+        "C45",
+        "C150",
+        "C152"
+      ],
+      "labels_by_reference": {
+        "C45": "10nF",
+        "C152": "10n",
+        "C150": "10n"
+      },
+      "values": [
+        "10n",
+        "10nF"
+      ],
+      "is_pcb_item": true,
+      "value": "GRM188R71H103KA01D"
+    },
+    {
+      "mpn": "GRM21BR71A106KE51L",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "quantity": 1,
+      "references": [
+        "C81"
+      ],
+      "labels_by_reference": {
+        "C81": "10uF / 10V X7R"
+      },
+      "values": [
+        "10uF / 10V X7R"
+      ],
+      "is_pcb_item": true,
+      "value": "10uF / 10V X7R"
+    },
+    {
+      "mpn": "GRM32ER71H106KA12L",
+      "footprint": "Capacitor_SMD:C_1210_3225Metric",
+      "quantity": 1,
+      "references": [
+        "C82"
+      ],
+      "labels_by_reference": {
+        "C82": "10uF / 50V X7R"
+      },
+      "values": [
+        "10uF / 50V X7R"
+      ],
+      "is_pcb_item": true,
+      "value": "10uF / 50V X7R"
+    },
+    {
+      "mpn": "C0805C104K5RACTU",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "quantity": 1,
+      "references": [
+        "C83"
+      ],
+      "labels_by_reference": {
+        "C83": "100nF / 50V X7R"
+      },
+      "values": [
+        "100nF / 50V X7R"
+      ],
+      "is_pcb_item": true,
+      "value": "100nF / 50V X7R"
+    },
+    {
+      "mpn": "GRM31CR71A226KE15L",
+      "footprint": "Capacitor_SMD:C_1206_3216Metric",
+      "quantity": 2,
+      "references": [
+        "C85",
+        "C86"
+      ],
+      "labels_by_reference": {
+        "C85": "22uF / 10V X7R",
+        "C86": "22uF / 10V X7R"
+      },
+      "values": [
+        "22uF / 10V X7R"
+      ],
+      "is_pcb_item": true,
+      "value": "22uF / 10V X7R"
+    },
+    {
+      "mpn": "GRM1885C1H750JA01D",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "quantity": 1,
+      "references": [
+        "C87"
+      ],
+      "labels_by_reference": {
+        "C87": "75pF / C0G"
+      },
+      "values": [
+        "75pF / C0G"
+      ],
+      "is_pcb_item": true,
+      "value": "75pF / C0G"
+    },
+    {
+      "mpn": "GRM1885C1H102JA01D",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "quantity": 1,
+      "references": [
+        "C101"
+      ],
+      "labels_by_reference": {
+        "C101": "1n"
+      },
+      "values": [
+        "1n"
+      ],
+      "is_pcb_item": true,
+      "value": "1n"
+    },
+    {
+      "mpn": "C0603C104K4RACTU",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "quantity": 3,
+      "references": [
+        "C120",
+        "C123",
+        "C126"
+      ],
+      "labels_by_reference": {
+        "C120": "100n 16V X7R",
+        "C123": "100n 16V X7R",
+        "C126": "100n 16V X7R"
+      },
+      "values": [
+        "100n 16V X7R"
+      ],
+      "is_pcb_item": true,
+      "value": "100n 16V X7R"
+    },
+    {
+      "mpn": "C0805C225K4RACTU",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "quantity": 2,
+      "references": [
+        "C121",
+        "C124"
+      ],
+      "labels_by_reference": {
+        "C121": "2.2u 16V X7R",
+        "C124": "2.2u 16V X7R"
+      },
+      "values": [
+        "2.2u 16V X7R"
+      ],
+      "is_pcb_item": true,
+      "value": "2.2u 16V X7R"
+    },
+    {
+      "mpn": "C0603C105K4RACTU",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "quantity": 2,
+      "references": [
+        "C122",
+        "C125"
+      ],
+      "labels_by_reference": {
+        "C122": "1u 16V X7R",
+        "C125": "1u 16V X7R"
+      },
+      "values": [
+        "1u 16V X7R"
+      ],
+      "is_pcb_item": true,
+      "value": "1u 16V X7R"
+    },
+    {
+      "mpn": "10SVPE220M",
+      "footprint": "Capacitor_SMD:CP_Elec_6.3x5.9",
+      "quantity": 1,
+      "references": [
+        "C140"
+      ],
+      "labels_by_reference": {
+        "C140": "220uF 10V polymer"
+      },
+      "values": [
+        "220uF 10V polymer"
+      ],
+      "is_pcb_item": true,
+      "value": "220uF 10V polymer"
+    },
+    {
+      "mpn": "GRM31CR71E106KA12L",
+      "footprint": "Capacitor_SMD:C_1206_3216Metric",
+      "quantity": 1,
+      "references": [
+        "C142"
+      ],
+      "labels_by_reference": {
+        "C142": "10uF 25V X7R"
+      },
+      "values": [
+        "10uF 25V X7R"
+      ],
+      "is_pcb_item": true,
+      "value": "10uF 25V X7R"
+    },
+    {
+      "mpn": "GRM188R71H102KA01D",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "quantity": 1,
+      "references": [
+        "C153"
+      ],
+      "labels_by_reference": {
+        "C153": "1n"
+      },
+      "values": [
+        "1n"
+      ],
+      "is_pcb_item": true,
+      "value": "1n"
+    },
+    {
+      "mpn": "PMEG2010ER,115",
+      "footprint": "Diode_SMD:Nexperia_CFP3_SOD-123W",
+      "quantity": 1,
+      "references": [
+        "D1"
+      ],
+      "labels_by_reference": {
+        "D1": "PMEG2010ER"
+      },
+      "values": [
+        "PMEG2010ER"
+      ],
+      "is_pcb_item": true,
+      "value": "PMEG2010ER"
+    },
+    {
+      "mpn": "LTST-C190KGKT",
+      "footprint": "LED_SMD:LED_0603_1608Metric",
+      "quantity": 1,
+      "references": [
+        "D2"
+      ],
+      "labels_by_reference": {
+        "D2": "GREEN"
+      },
+      "values": [
+        "GREEN"
+      ],
+      "is_pcb_item": true,
+      "value": "GREEN"
+    },
+    {
+      "mpn": "PESD5V0S1BA,115",
+      "footprint": "Diode_SMD:D_SOD-323",
+      "quantity": 5,
+      "references": [
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "D9"
+      ],
+      "labels_by_reference": {
+        "D5": "PESD5V0S1BA",
+        "D6": "PESD5V0S1BA",
+        "D7": "PESD5V0S1BA",
+        "D8": "PESD5V0S1BA",
+        "D9": "PESD5V0S1BA"
+      },
+      "values": [
+        "PESD5V0S1BA"
+      ],
+      "is_pcb_item": true,
+      "value": "PESD5V0S1BA"
+    },
+    {
+      "mpn": "TPD1E10B06DYAR",
+      "footprint": "Diode_SMD:D_SOD-523",
+      "quantity": 3,
+      "references": [
+        "D20",
+        "D21",
+        "D22"
+      ],
+      "labels_by_reference": {
+        "D20": "TPD1E10B06DYAR",
+        "D21": "TPD1E10B06DYAR",
+        "D22": "TPD1E10B06DYAR"
+      },
+      "values": [
+        "TPD1E10B06DYAR"
+      ],
+      "is_pcb_item": true,
+      "value": "TPD1E10B06DYAR"
+    },
+    {
+      "mpn": "SMBJ13A-E3/52",
+      "footprint": "Diode_SMD:D_SMB",
+      "quantity": 1,
+      "references": [
+        "D32"
+      ],
+      "labels_by_reference": {
+        "D32": "SMBJ13A-E3/52"
+      },
+      "values": [
+        "SMBJ13A-E3/52"
+      ],
+      "is_pcb_item": true,
+      "value": "SMBJ13A-E3/52"
+    },
+    {
+      "mpn": "BZT52C12-E3-08",
+      "footprint": "Diode_SMD:D_SOD-123",
+      "quantity": 1,
+      "references": [
+        "D50"
+      ],
+      "labels_by_reference": {
+        "D50": "BZT52C12"
+      },
+      "values": [
+        "BZT52C12"
+      ],
+      "is_pcb_item": true,
+      "value": "BZT52C12"
+    },
+    {
+      "mpn": "08853.15DR",
+      "footprint": "Fuse:Fuse_Littelfuse-NANO2-885",
+      "quantity": 1,
+      "references": [
+        "F1"
+      ],
+      "labels_by_reference": {
+        "F1": "3.15A / compact host input fuse"
+      },
+      "values": [
+        "3.15A / compact host input fuse"
+      ],
+      "is_pcb_item": true,
+      "manufacturer": "Littelfuse",
+      "value": "3.15A / compact host input fuse"
+    },
+    {
+      "mpn": "0451001.MRL",
+      "footprint": "Fuse:Littelfuse_0451_Nano2",
+      "quantity": 2,
+      "references": [
+        "F2",
+        "F3"
+      ],
+      "labels_by_reference": {
+        "F2": "1A / 125V fast",
+        "F3": "1A / 125V fast"
+      },
+      "values": [
+        "1A / 125V fast"
+      ],
+      "is_pcb_item": true,
+      "value": "1A / 125V fast"
+    },
+    {
+      "mpn": "USB4105-GF-A",
+      "footprint": "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal",
+      "quantity": 2,
+      "references": [
+        "J1",
+        "J20"
+      ],
+      "labels_by_reference": {
+        "J1": "USB2 device / 500mA max",
+        "J20": "5V3A OUT TO ORANGE PI"
+      },
+      "values": [
+        "5V3A OUT TO ORANGE PI",
+        "USB2 device / 500mA max"
+      ],
+      "is_pcb_item": true,
+      "value": "USB4105-GF-A"
+    },
+    {
+      "mpn": "SM05B-GHS-TB(LF)(SN)",
+      "footprint": "Connector_JST:JST_GH_SM05B-GHS-TB_1x05-1MP_P1.25mm_Horizontal",
+      "quantity": 1,
+      "references": [
+        "J2"
+      ],
+      "labels_by_reference": {
+        "J2": "CYTRON MDD10A SIGNAL"
+      },
+      "values": [
+        "CYTRON MDD10A SIGNAL"
+      ],
+      "is_pcb_item": true,
+      "value": "CYTRON MDD10A SIGNAL"
+    },
+    {
+      "mpn": "SM04B-GHS-TB(LF)(SN)",
+      "footprint": "Connector_JST:JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal",
+      "quantity": 2,
+      "references": [
+        "J3",
+        "J4"
+      ],
+      "labels_by_reference": {
+        "J3": "ENCODER LEFT",
+        "J4": "ENCODER RIGHT"
+      },
+      "values": [
+        "ENCODER LEFT",
+        "ENCODER RIGHT"
+      ],
+      "is_pcb_item": true,
+      "value": "SM04B-GHS-TB(LF)(SN)"
+    },
+    {
+      "mpn": "22-05-7035",
+      "footprint": "Connector_Molex:Molex_SPOX_5268-03A_1x03_P2.50mm_Horizontal",
+      "quantity": 1,
+      "references": [
+        "J5"
+      ],
+      "labels_by_reference": {
+        "J5": "ARM / DATA V+ GND"
+      },
+      "values": [
+        "ARM / DATA V+ GND"
+      ],
+      "is_pcb_item": true,
+      "value": "ARM / DATA V+ GND"
+    },
+    {
+      "mpn": "S2B-PH-K-S(LF)(SN)",
+      "footprint": "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal",
+      "quantity": 1,
+      "references": [
+        "J7"
+      ],
+      "labels_by_reference": {
+        "J7": "SPEAKER / 4 ohm 3 W"
+      },
+      "values": [
+        "SPEAKER / 4 ohm 3 W"
+      ],
+      "is_pcb_item": true,
+      "value": "SPEAKER / 4 ohm 3 W"
+    },
+    {
+      "mpn": "BM06B-SRSS-TB(LF)(SN)",
+      "footprint": "Connector_JST:JST_SH_BM06B-SRSS-TB_1x06-1MP_P1.00mm_Vertical",
+      "quantity": 1,
+      "references": [
+        "J8"
+      ],
+      "labels_by_reference": {
+        "J8": "E-STOP / SIGNAL ONLY"
+      },
+      "values": [
+        "E-STOP / SIGNAL ONLY"
+      ],
+      "is_pcb_item": true,
+      "value": "E-STOP / SIGNAL ONLY"
+    },
+    {
+      "mpn": "XT30PW-M",
+      "footprint": "Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal_EdgeEntry",
+      "quantity": 1,
+      "references": [
+        "J10"
+      ],
+      "labels_by_reference": {
+        "J10": "XT30PW-M / FUSED 3S INPUT"
+      },
+      "values": [
+        "XT30PW-M / FUSED 3S INPUT"
+      ],
+      "is_pcb_item": true,
+      "manufacturer": "AMASS",
+      "purchase_url": "https://www.tme.eu/gb/details/xt30pw-m/dc-power-connectors/amass/",
+      "value": "XT30PW-M / FUSED 3S INPUT"
+    },
+    {
+      "mpn": "1715721",
+      "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
+      "quantity": 3,
+      "references": [
+        "J11",
+        "J12",
+        "J13"
+      ],
+      "labels_by_reference": {
+        "J11": "CYTRON POWER",
+        "J12": "L MOTOR SENSE LOOP",
+        "J13": "R MOTOR SENSE LOOP"
+      },
+      "values": [
+        "CYTRON POWER",
+        "L MOTOR SENSE LOOP",
+        "R MOTOR SENSE LOOP"
+      ],
+      "is_pcb_item": true,
+      "value": "1715721"
+    },
+    {
+      "mpn": "B2B-XH-A(LF)(SN)",
+      "footprint": "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical",
+      "quantity": 2,
+      "references": [
+        "J14",
+        "J15"
+      ],
+      "labels_by_reference": {
+        "J14": "FAN 1 / 3S",
+        "J15": "FAN 2 / 3S"
+      },
+      "values": [
+        "FAN 1 / 3S",
+        "FAN 2 / 3S"
+      ],
+      "is_pcb_item": true,
+      "manufacturer": "JST",
+      "value": "B2B-XH-A(LF)(SN)"
+    },
+    {
+      "mpn": "XAL4020-222MEC",
+      "footprint": "Inductor_SMD:L_Coilcraft_XAL4020-XXX",
+      "quantity": 1,
+      "references": [
+        "L1"
+      ],
+      "labels_by_reference": {
+        "L1": "2.2uH"
+      },
+      "values": [
+        "2.2uH"
+      ],
+      "is_pcb_item": true,
+      "value": "2.2uH"
+    },
+    {
+      "mpn": "SRP6060FA-100M",
+      "footprint": "Inductor_SMD:L_Bourns_SRP6060FA",
+      "quantity": 1,
+      "references": [
+        "L2"
+      ],
+      "labels_by_reference": {
+        "L2": "10uH / 7.6A Isat typ"
+      },
+      "values": [
+        "10uH / 7.6A Isat typ"
+      ],
+      "is_pcb_item": true,
+      "value": "10uH / 7.6A Isat typ"
+    },
+    {
+      "mpn": "29035",
+      "footprint": "MOSS_Power:Waveshare_DC5_36_TO_DC3V3_5_SMD_33x16mm_HandSolder",
+      "quantity": 1,
+      "references": [
+        "MOD1"
+      ],
+      "labels_by_reference": {
+        "MOD1": "DC5-36-TO-DC3V3-5 / 5V"
+      },
+      "values": [
+        "DC5-36-TO-DC3V3-5 / 5V"
+      ],
+      "is_pcb_item": true,
+      "manufacturer": "Waveshare",
+      "sku": "29035",
+      "purchase_url": "https://www.waveshare.com/dc5-36-to-dc3v3-5.htm?sku=29035",
+      "assemblyPreference": "PCBWay if sourcing/assembly accepted",
+      "procurementStatus": "not quoted/not confirmed",
+      "assemblyFallback": "User hand-soldering only if PCBWay sourcing or assembly is declined",
+      "value": "DC5-36-TO-DC3V3-5 / 5V"
+    },
+    {
+      "mpn": "MMBT3904,215",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "quantity": 1,
+      "references": [
+        "Q2"
+      ],
+      "labels_by_reference": {
+        "Q2": "MMBT3904"
+      },
+      "values": [
+        "MMBT3904"
+      ],
+      "is_pcb_item": true,
+      "value": "MMBT3904"
+    },
+    {
+      "mpn": "SiRA99DP-T1-GE3",
+      "footprint": "Package_SO:PowerPAK_SO-8_Single",
+      "quantity": 1,
+      "references": [
+        "Q50"
+      ],
+      "labels_by_reference": {
+        "Q50": "SiRA99DP"
+      },
+      "values": [
+        "SiRA99DP"
+      ],
+      "is_pcb_item": true,
+      "value": "SiRA99DP"
+    },
+    {
+      "mpn": "BSS138BK,215",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "quantity": 2,
+      "references": [
+        "Q51",
+        "Q52"
+      ],
+      "labels_by_reference": {
+        "Q51": "BSS138BK",
+        "Q52": "BSS138BK"
+      },
+      "values": [
+        "BSS138BK"
+      ],
+      "is_pcb_item": true,
+      "value": "BSS138BK"
+    },
+    {
+      "mpn": "RC0603FR-075K1L",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "quantity": 2,
+      "references": [
+        "R1",
+        "R2"
+      ],
+      "labels_by_reference": {
+        "R1": "5.1k",
+        "R2": "5.1k"
+      },
+      "values": [
+        "5.1k"
+      ],
+      "is_pcb_item": true,
+      "value": "5.1k"
+    },
+    {
+      "mpn": "RC0402FR-0722RL",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "quantity": 2,
+      "references": [
+        "R3",
+        "R4"
+      ],
+      "labels_by_reference": {
+        "R3": "22",
+        "R4": "22"
+      },
+      "values": [
+        "22"
+      ],
+      "is_pcb_item": true,
+      "value": "22"
+    },
+    {
+      "mpn": "RC0603FR-0710KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "quantity": 25,
+      "references": [
+        "R5",
+        "R6",
+        "R10",
+        "R11",
+        "R12",
+        "R13",
+        "R19",
+        "R24",
+        "R26",
+        "R28",
+        "R30",
+        "R36",
+        "R38",
+        "R40",
+        "R42",
+        "R43",
+        "R54",
+        "R56",
+        "R58",
+        "R64",
+        "R110",
+        "R111",
+        "R143",
+        "R223",
+        "R227"
+      ],
+      "labels_by_reference": {
+        "R5": "10k",
+        "R6": "10k",
+        "R10": "10k",
+        "R11": "10k",
+        "R12": "10k",
+        "R13": "10k",
+        "R19": "10k",
+        "R24": "10k",
+        "R26": "10k",
+        "R28": "10k",
+        "R30": "10k",
+        "R36": "10k",
+        "R38": "10k",
+        "R40": "10k",
+        "R42": "10k",
+        "R43": "10k",
+        "R64": "10k",
+        "R110": "10k",
+        "R111": "10k",
+        "R54": "10k",
+        "R56": "10k",
+        "R58": "10k",
+        "R143": "10k",
+        "R223": "10k",
+        "R227": "10k"
+      },
+      "values": [
+        "10k"
+      ],
+      "is_pcb_item": true,
+      "value": "10k"
+    },
+    {
+      "mpn": "RC0603FR-071KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "quantity": 7,
+      "references": [
+        "R7",
+        "R35",
+        "R37",
+        "R39",
+        "R41",
+        "R49",
+        "R222"
+      ],
+      "labels_by_reference": {
+        "R7": "1k",
+        "R35": "1k",
+        "R37": "1k",
+        "R39": "1k",
+        "R41": "1k",
+        "R49": "1k",
+        "R222": "1k"
+      },
+      "values": [
+        "1k"
+      ],
+      "is_pcb_item": true,
+      "value": "1k"
+    },
+    {
+      "mpn": "RC0603FR-074K7L",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "quantity": 2,
+      "references": [
+        "R8",
+        "R9"
+      ],
+      "labels_by_reference": {
+        "R8": "4.7k",
+        "R9": "4.7k"
+      },
+      "values": [
+        "4.7k"
+      ],
+      "is_pcb_item": true,
+      "value": "4.7k"
+    },
+    {
+      "mpn": "RC0603FR-07100RL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "quantity": 4,
+      "references": [
+        "R23",
+        "R25",
+        "R27",
+        "R29"
+      ],
+      "labels_by_reference": {
+        "R23": "100",
+        "R25": "100",
+        "R27": "100",
+        "R29": "100"
+      },
+      "values": [
+        "100"
+      ],
+      "is_pcb_item": true,
+      "value": "100"
+    },
+    {
+      "mpn": "RC0603FR-0747KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "quantity": 10,
+      "references": [
+        "R31",
+        "R32",
+        "R33",
+        "R34",
+        "R73",
+        "R75",
+        "R90",
+        "R91",
+        "R92",
+        "R93"
+      ],
+      "labels_by_reference": {
+        "R31": "47k",
+        "R32": "47k",
+        "R33": "47k",
+        "R34": "47k",
+        "R93": "47k",
+        "R73": "47k",
+        "R75": "47k",
+        "R90": "47k",
+        "R91": "47k",
+        "R92": "47k"
+      },
+      "values": [
+        "47k"
+      ],
+      "is_pcb_item": true,
+      "value": "47k"
+    },
+    {
+      "mpn": "RC0603FR-0747RL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "quantity": 5,
+      "references": [
+        "R48",
+        "R50",
+        "R51",
+        "R52",
+        "R224"
+      ],
+      "labels_by_reference": {
+        "R48": "47",
+        "R50": "47",
+        "R51": "47",
+        "R52": "47",
+        "R224": "47"
+      },
+      "values": [
+        "47"
+      ],
+      "is_pcb_item": true,
+      "value": "47"
+    },
+    {
+      "mpn": "RC0603FR-072K2L",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "quantity": 1,
+      "references": [
+        "R53"
+      ],
+      "labels_by_reference": {
+        "R53": "2.2k"
+      },
+      "values": [
+        "2.2k"
+      ],
+      "is_pcb_item": true,
+      "value": "2.2k"
+    },
+    {
+      "mpn": "RC0603FR-07100KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "quantity": 8,
+      "references": [
+        "R55",
+        "R74",
+        "R76",
+        "R77",
+        "R78",
+        "R79",
+        "R144",
+        "R200"
+      ],
+      "labels_by_reference": {
+        "R74": "100k",
+        "R76": "100k",
+        "R77": "100k",
+        "R78": "100k",
+        "R79": "100k",
+        "R55": "100k",
+        "R144": "100k",
+        "R200": "100k 1% 100ppm"
+      },
+      "values": [
+        "100k",
+        "100k 1% 100ppm"
+      ],
+      "is_pcb_item": true,
+      "value": "RC0603FR-07100KL"
+    },
+    {
+      "mpn": "RC0603FR-0722KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "quantity": 1,
+      "references": [
+        "R57"
+      ],
+      "labels_by_reference": {
+        "R57": "22k"
+      },
+      "values": [
+        "22k"
+      ],
+      "is_pcb_item": true,
+      "value": "22k"
+    },
+    {
+      "mpn": "RC0603FR-0710RL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "quantity": 1,
+      "references": [
+        "R63"
+      ],
+      "labels_by_reference": {
+        "R63": "10"
+      },
+      "values": [
+        "10"
+      ],
+      "is_pcb_item": true,
+      "value": "10"
+    },
+    {
+      "mpn": "RT0603BRD07464KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "quantity": 1,
+      "references": [
+        "R70"
+      ],
+      "labels_by_reference": {
+        "R70": "464k"
+      },
+      "values": [
+        "464k"
+      ],
+      "is_pcb_item": true,
+      "value": "464k"
+    },
+    {
+      "mpn": "RT0603BRD07100KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "quantity": 2,
+      "references": [
+        "R71",
+        "R102"
+      ],
+      "labels_by_reference": {
+        "R71": "100k",
+        "R102": "100k / 0.1%"
+      },
+      "values": [
+        "100k",
+        "100k / 0.1%"
+      ],
+      "is_pcb_item": true,
+      "value": "RT0603BRD07100KL"
+    },
+    {
+      "mpn": "RC0603FR-0760K4L",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "quantity": 1,
+      "references": [
+        "R72"
+      ],
+      "labels_by_reference": {
+        "R72": "60.4k"
+      },
+      "values": [
+        "60.4k"
+      ],
+      "is_pcb_item": true,
+      "value": "60.4k"
+    },
+    {
+      "mpn": "RT0603BRD0713K3L",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "quantity": 1,
+      "references": [
+        "R103"
+      ],
+      "labels_by_reference": {
+        "R103": "13.3k / 0.1%"
+      },
+      "values": [
+        "13.3k / 0.1%"
+      ],
+      "is_pcb_item": true,
+      "value": "13.3k / 0.1%"
+    },
+    {
+      "mpn": "RC0603FR-07511KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "quantity": 1,
+      "references": [
+        "R104"
+      ],
+      "labels_by_reference": {
+        "R104": "511k"
+      },
+      "values": [
+        "511k"
+      ],
+      "is_pcb_item": true,
+      "value": "511k"
+    },
+    {
+      "mpn": "RC0603FR-07105KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "quantity": 1,
+      "references": [
+        "R105"
+      ],
+      "labels_by_reference": {
+        "R105": "105k"
+      },
+      "values": [
+        "105k"
+      ],
+      "is_pcb_item": true,
+      "value": "105k"
+    },
+    {
+      "mpn": "RT0603BRD07174KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "quantity": 1,
+      "references": [
+        "R140"
+      ],
+      "labels_by_reference": {
+        "R140": "174k"
+      },
+      "values": [
+        "174k"
+      ],
+      "is_pcb_item": true,
+      "value": "174k"
+    },
+    {
+      "mpn": "RT0603BRD0710KL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "quantity": 1,
+      "references": [
+        "R141"
+      ],
+      "labels_by_reference": {
+        "R141": "10k"
+      },
+      "values": [
+        "10k"
+      ],
+      "is_pcb_item": true,
+      "value": "10k"
+    },
+    {
+      "mpn": "CSS2H-2512K-2L00F",
+      "footprint": "MOSS_V07:CSS2H_2512K_Bourns",
+      "quantity": 2,
+      "references": [
+        "R180",
+        "R181"
+      ],
+      "labels_by_reference": {
+        "R180": "2mR 1% 5W",
+        "R181": "2mR 1% 5W"
+      },
+      "values": [
+        "2mR 1% 5W"
+      ],
+      "is_pcb_item": true,
+      "value": "2mR 1% 5W"
+    },
+    {
+      "mpn": "CRCW0603470RFKEA",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "quantity": 2,
+      "references": [
+        "R182",
+        "R183"
+      ],
+      "labels_by_reference": {
+        "R182": "470R 1%",
+        "R183": "470R 1%"
+      },
+      "values": [
+        "470R 1%"
+      ],
+      "is_pcb_item": true,
+      "value": "470R 1%"
+    },
+    {
+      "mpn": "RC1206FR-071KL",
+      "footprint": "Resistor_SMD:R_1206_3216Metric",
+      "quantity": 2,
+      "references": [
+        "R220",
+        "R226"
+      ],
+      "labels_by_reference": {
+        "R220": "1k",
+        "R226": "1k"
+      },
+      "values": [
+        "1k"
+      ],
+      "is_pcb_item": true,
+      "value": "1k"
+    },
+    {
+      "mpn": "RC1206FR-07330RL",
+      "footprint": "Resistor_SMD:R_1206_3216Metric",
+      "quantity": 1,
+      "references": [
+        "R221"
+      ],
+      "labels_by_reference": {
+        "R221": "330"
+      },
+      "values": [
+        "330"
+      ],
+      "is_pcb_item": true,
+      "value": "330"
+    },
+    {
+      "mpn": "RC0603FR-07470RL",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "quantity": 1,
+      "references": [
+        "R225"
+      ],
+      "labels_by_reference": {
+        "R225": "470"
+      },
+      "values": [
+        "470"
+      ],
+      "is_pcb_item": true,
+      "value": "470"
+    },
+    {
+      "mpn": "KMR221NGLFS",
+      "footprint": "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2",
+      "quantity": 2,
+      "references": [
+        "SW1",
+        "SW2"
+      ],
+      "labels_by_reference": {
+        "SW1": "RESET_N",
+        "SW2": "BOOT_N"
+      },
+      "values": [
+        "BOOT_N",
+        "RESET_N"
+      ],
+      "is_pcb_item": true,
+      "manufacturer": "C&K",
+      "manufacturer_order_code": "Y78B22120FP",
+      "value": "KMR221NGLFS"
+    },
+    {
+      "mpn": "ESP32-S3-WROOM-1U-N8",
+      "footprint": "RF_Module:ESP32-S3-WROOM-1U",
+      "quantity": 1,
+      "references": [
+        "U1"
+      ],
+      "labels_by_reference": {
+        "U1": "ESP32-S3-WROOM-1U-N8"
+      },
+      "values": [
+        "ESP32-S3-WROOM-1U-N8"
+      ],
+      "is_pcb_item": true,
+      "value": "ESP32-S3-WROOM-1U-N8"
+    },
+    {
+      "mpn": "TPD2E2U06DCKR",
+      "footprint": "Package_TO_SOT_SMD:SOT-323_SC-70",
+      "quantity": 1,
+      "references": [
+        "U2"
+      ],
+      "labels_by_reference": {
+        "U2": "TPD2E2U06DCKR"
+      },
+      "values": [
+        "TPD2E2U06DCKR"
+      ],
+      "is_pcb_item": true,
+      "value": "TPD2E2U06DCKR"
+    },
+    {
+      "mpn": "TPS2553DBVR",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "quantity": 1,
+      "references": [
+        "U3"
+      ],
+      "labels_by_reference": {
+        "U3": "TPS2553DBVR"
+      },
+      "values": [
+        "TPS2553DBVR"
+      ],
+      "is_pcb_item": true,
+      "value": "TPS2553DBVR"
+    },
+    {
+      "mpn": "TLV62569DBVR",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "quantity": 1,
+      "references": [
+        "U4"
+      ],
+      "labels_by_reference": {
+        "U4": "TLV62569DBVR"
+      },
+      "values": [
+        "TLV62569DBVR"
+      ],
+      "is_pcb_item": true,
+      "value": "TLV62569DBVR"
+    },
+    {
+      "mpn": "TPS3431SDRBR",
+      "footprint": "Package_SON:VSON-8-1EP_3x3mm_P0.65mm_EP1.65x2.4mm",
+      "quantity": 1,
+      "references": [
+        "U5"
+      ],
+      "labels_by_reference": {
+        "U5": "TPS3431SDRBR"
+      },
+      "values": [
+        "TPS3431SDRBR"
+      ],
+      "is_pcb_item": true,
+      "value": "TPS3431SDRBR"
+    },
+    {
+      "mpn": "SN74HCS21PWR",
+      "footprint": "Package_SO:TSSOP-14_4.4x5mm_P0.65mm",
+      "quantity": 1,
+      "references": [
+        "U6"
+      ],
+      "labels_by_reference": {
+        "U6": "SN74HCS21PWR"
+      },
+      "values": [
+        "SN74HCS21PWR"
+      ],
+      "is_pcb_item": true,
+      "value": "SN74HCS21PWR"
+    },
+    {
+      "mpn": "74LV08APWJ",
+      "footprint": "Package_SO:TSSOP-14_4.4x5mm_P0.65mm",
+      "quantity": 1,
+      "references": [
+        "U11"
+      ],
+      "labels_by_reference": {
+        "U11": "74LV08APWJ"
+      },
+      "values": [
+        "74LV08APWJ"
+      ],
+      "is_pcb_item": true,
+      "value": "74LV08APWJ"
+    },
+    {
+      "mpn": "SN74LVC14APWR",
+      "footprint": "Package_SO:TSSOP-14_4.4x5mm_P0.65mm",
+      "quantity": 1,
+      "references": [
+        "U12"
+      ],
+      "labels_by_reference": {
+        "U12": "SN74LVC14APWR"
+      },
+      "values": [
+        "SN74LVC14APWR"
+      ],
+      "is_pcb_item": true,
+      "value": "SN74LVC14APWR"
+    },
+    {
+      "mpn": "SN74LVC2G126DCUR",
+      "footprint": "Package_SO:VSSOP-8_2.3x2mm_P0.5mm",
+      "quantity": 1,
+      "references": [
+        "U14"
+      ],
+      "labels_by_reference": {
+        "U14": "SN74LVC2G126DCUR"
+      },
+      "values": [
+        "SN74LVC2G126DCUR"
+      ],
+      "is_pcb_item": true,
+      "value": "SN74LVC2G126DCUR"
+    },
+    {
+      "mpn": "SN74LVC1G126DCKR",
+      "footprint": "Package_TO_SOT_SMD:SOT-353_SC-70-5",
+      "quantity": 1,
+      "references": [
+        "U15"
+      ],
+      "labels_by_reference": {
+        "U15": "SN74LVC1G126DCKR"
+      },
+      "values": [
+        "SN74LVC1G126DCKR"
+      ],
+      "is_pcb_item": true,
+      "value": "SN74LVC1G126DCKR"
+    },
+    {
+      "mpn": "SN74LVC125APWR",
+      "footprint": "Package_SO:TSSOP-14_4.4x5mm_P0.65mm",
+      "quantity": 1,
+      "references": [
+        "U16"
+      ],
+      "labels_by_reference": {
+        "U16": "SN74LVC125APWR"
+      },
+      "values": [
+        "SN74LVC125APWR"
+      ],
+      "is_pcb_item": true,
+      "value": "SN74LVC125APWR"
+    },
+    {
+      "mpn": "INA226AIDGSR",
+      "footprint": "Package_SO:MSOP-10_3x3mm_P0.5mm",
+      "quantity": 1,
+      "references": [
+        "U17"
+      ],
+      "labels_by_reference": {
+        "U17": "INA226 / BAT VOLTAGE"
+      },
+      "values": [
+        "INA226 / BAT VOLTAGE"
+      ],
+      "is_pcb_item": true,
+      "value": "INA226 / BAT VOLTAGE"
+    },
+    {
+      "mpn": "TPS3808G33DBVR",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "quantity": 1,
+      "references": [
+        "U20"
+      ],
+      "labels_by_reference": {
+        "U20": "TPS3808G33DBVR"
+      },
+      "values": [
+        "TPS3808G33DBVR"
+      ],
+      "is_pcb_item": true,
+      "value": "TPS3808G33DBVR"
+    },
+    {
+      "mpn": "TPS22918DBVR",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "quantity": 1,
+      "references": [
+        "U22"
+      ],
+      "labels_by_reference": {
+        "U22": "TPS22918DBVR"
+      },
+      "values": [
+        "TPS22918DBVR"
+      ],
+      "is_pcb_item": true,
+      "value": "TPS22918DBVR"
+    },
+    {
+      "mpn": "MAX98357AETE+T",
+      "footprint": "Package_DFN_QFN:MAX98357A_T1633_4_90_0031",
+      "quantity": 1,
+      "references": [
+        "U23"
+      ],
+      "labels_by_reference": {
+        "U23": "MAX98357AETE+T"
+      },
+      "values": [
+        "MAX98357AETE+T"
+      ],
+      "is_pcb_item": true,
+      "value": "MAX98357AETE+T"
+    },
+    {
+      "mpn": "TPS54302DDCR",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "quantity": 1,
+      "references": [
+        "U24"
+      ],
+      "labels_by_reference": {
+        "U24": "TPS54302DDCR"
+      },
+      "values": [
+        "TPS54302DDCR"
+      ],
+      "is_pcb_item": true,
+      "value": "TPS54302DDCR"
+    },
+    {
+      "mpn": "TPS3808G01DBVR",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "quantity": 1,
+      "references": [
+        "U27"
+      ],
+      "labels_by_reference": {
+        "U27": "TPS3808G01DBVR"
+      },
+      "values": [
+        "TPS3808G01DBVR"
+      ],
+      "is_pcb_item": true,
+      "value": "TPS3808G01DBVR"
+    },
+    {
+      "mpn": "INA240A2PWR",
+      "footprint": "Package_SO:TSSOP-8_4.4x3mm_P0.65mm",
+      "quantity": 2,
+      "references": [
+        "U40",
+        "U41"
+      ],
+      "labels_by_reference": {
+        "U40": "INA240A2PWR",
+        "U41": "INA240A2PWR"
+      },
+      "values": [
+        "INA240A2PWR"
+      ],
+      "is_pcb_item": true,
+      "value": "INA240A2PWR"
+    },
+    {
+      "mpn": "TPS25810RVCR",
+      "footprint": "Package_DFN_QFN:Texas_RVC0020A_WQFN-20-1EP_3x4mm_P0.5mm_EP1.6x2.6mm_ThermalVias",
+      "quantity": 1,
+      "references": [
+        "U42"
+      ],
+      "labels_by_reference": {
+        "U42": "TPS25810RVCR / USB-C source3A"
+      },
+      "values": [
+        "TPS25810RVCR / USB-C source3A"
+      ],
+      "is_pcb_item": true,
+      "value": "TPS25810RVCR / USB-C source3A"
+    },
+    {
+      "mpn": "ADS1115IDGSR",
+      "footprint": "Package_SO:MSOP-10_3x3mm_P0.5mm",
+      "quantity": 1,
+      "references": [
+        "U43"
+      ],
+      "labels_by_reference": {
+        "U43": "ADS1115IDGSR"
+      },
+      "values": [
+        "ADS1115IDGSR"
+      ],
+      "is_pcb_item": true,
+      "value": "ADS1115IDGSR"
+    },
+    {
+      "mpn": "SN74LVC1G14DBVR",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "quantity": 1,
+      "references": [
+        "U50"
+      ],
+      "labels_by_reference": {
+        "U50": "SN74LVC1G14"
+      },
+      "values": [
+        "SN74LVC1G14"
+      ],
+      "is_pcb_item": true,
+      "value": "SN74LVC1G14"
+    }
+  ]
+}

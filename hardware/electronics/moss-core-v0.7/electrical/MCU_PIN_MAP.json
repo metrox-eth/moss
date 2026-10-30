@@ -1,0 +1,211 @@
+{
+  "part": "ESP32-S3-WROOM-1U-N8",
+  "pins": {
+    "1": [
+      "GND",
+      "GND",
+      "power_in"
+    ],
+    "2": [
+      "3V3",
+      "3V3",
+      "power_in"
+    ],
+    "3": [
+      "EN",
+      "RESET_N",
+      "input"
+    ],
+    "4": [
+      "IO4",
+      "ESTOP_ACTIVE",
+      "bidirectional"
+    ],
+    "5": [
+      "IO5",
+      "ENC_R_A",
+      "bidirectional"
+    ],
+    "6": [
+      "IO6",
+      "ENC_L_B",
+      "bidirectional"
+    ],
+    "7": [
+      "IO7",
+      "ENC_L_A",
+      "bidirectional"
+    ],
+    "8": [
+      "IO15",
+      "STATUS_LED",
+      "bidirectional"
+    ],
+    "9": [
+      "IO16",
+      "ENC_R_B",
+      "bidirectional"
+    ],
+    "10": [
+      "IO17",
+      "DIR_L",
+      "bidirectional"
+    ],
+    "11": [
+      "IO18",
+      "PWM_L",
+      "bidirectional"
+    ],
+    "12": [
+      "IO8",
+      "DIR_R",
+      "bidirectional"
+    ],
+    "13": [
+      "IO19/USB_D-",
+      "ESP_USB_N",
+      "bidirectional"
+    ],
+    "14": [
+      "IO20/USB_D+",
+      "ESP_USB_P",
+      "bidirectional"
+    ],
+    "15": [
+      "IO3",
+      null,
+      "bidirectional"
+    ],
+    "16": [
+      "IO46",
+      null,
+      "bidirectional"
+    ],
+    "17": [
+      "IO9",
+      "PWM_R",
+      "bidirectional"
+    ],
+    "18": [
+      "IO10",
+      "AUDIO_BCLK",
+      "bidirectional"
+    ],
+    "19": [
+      "IO11",
+      "AUDIO_LRCLK",
+      "bidirectional"
+    ],
+    "20": [
+      "IO12",
+      "AUDIO_DATA",
+      "bidirectional"
+    ],
+    "21": [
+      "IO13",
+      "AUDIO_ENABLE",
+      "bidirectional"
+    ],
+    "22": [
+      "IO14",
+      "USB_PWR_FAULT_N",
+      "bidirectional"
+    ],
+    "23": [
+      "IO21",
+      "DRIVE_ENABLE",
+      "bidirectional"
+    ],
+    "24": [
+      "IO47",
+      "WD_ENABLE",
+      "bidirectional"
+    ],
+    "25": [
+      "IO48",
+      "WD_TICK",
+      "bidirectional"
+    ],
+    "26": [
+      "IO45",
+      null,
+      "bidirectional"
+    ],
+    "27": [
+      "IO0",
+      "BOOT_N",
+      "bidirectional"
+    ],
+    "28": [
+      "IO35",
+      "SERVO_TX",
+      "bidirectional"
+    ],
+    "29": [
+      "IO36",
+      "SERVO_TX_ENABLE",
+      "bidirectional"
+    ],
+    "30": [
+      "IO37",
+      "SERVO_RX",
+      "bidirectional"
+    ],
+    "31": [
+      "IO38",
+      "ACT_POWER_ENABLE",
+      "bidirectional"
+    ],
+    "32": [
+      "IO39",
+      "ACT_READY",
+      "bidirectional"
+    ],
+    "33": [
+      "IO40",
+      "I2C_SCL",
+      "bidirectional"
+    ],
+    "34": [
+      "IO41",
+      "I2C_SDA",
+      "bidirectional"
+    ],
+    "35": [
+      "IO42",
+      "ENC_POWER_EN",
+      "bidirectional"
+    ],
+    "36": [
+      "IO44",
+      "DRIVE_RUN",
+      "bidirectional"
+    ],
+    "37": [
+      "IO43",
+      "DEBUG_TX",
+      "bidirectional"
+    ],
+    "38": [
+      "IO2_SPARE",
+      null,
+      "bidirectional"
+    ],
+    "39": [
+      "IO1_SPARE",
+      null,
+      "bidirectional"
+    ],
+    "40": [
+      "GND",
+      "GND",
+      "power_in"
+    ],
+    "41": [
+      "GND",
+      "GND",
+      "power_in"
+    ]
+  },
+  "status": "Firmware port required, untested on hardware"
+}
