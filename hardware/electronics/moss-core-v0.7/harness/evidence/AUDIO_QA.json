@@ -18,16 +18,15 @@
     "rms_dbfs": -30.553511231752726
   },
   "effects": {
-    "peak_dbfs": -14.0,
-    "rms_dbfs": -34.62859983863577
+    "present": false
   },
   "mix_float": {
-    "peak_dbfs": -11.46877057250835,
-    "rms_dbfs": -29.121511392198485
+    "peak_dbfs": -17.165705827358956,
+    "rms_dbfs": -30.553511231752726
   },
   "mix_wav_readback": {
-    "peak_dbfs": -11.468837638748093,
-    "rms_dbfs": -29.121777111135046
+    "peak_dbfs": -17.165968661175025,
+    "rms_dbfs": -30.55377703512971
   },
   "clipped_samples": 0,
   "first_sample": [
@@ -48,66 +47,8 @@
       42
     ]
   },
-  "effects_original_synthesis": true,
+  "effects_original_synthesis": false,
   "speech_or_tts": false,
-  "sound_family_reference": "sound_effects.py",
-  "events": [
-    {
-      "time_seconds": 3.1,
-      "duration_seconds": 0.34,
-      "cue": "soft transition cue",
-      "cue_peak_dbfs": -14.0,
-      "pan": 0
-    },
-    {
-      "time_seconds": 7.15,
-      "duration_seconds": 0.34,
-      "cue": "soft transition cue",
-      "cue_peak_dbfs": -14.0,
-      "pan": 0
-    },
-    {
-      "time_seconds": 10.2,
-      "duration_seconds": 0.34,
-      "cue": "soft transition cue",
-      "cue_peak_dbfs": -14.0,
-      "pan": 0
-    },
-    {
-      "time_seconds": 14.1,
-      "duration_seconds": 0.34,
-      "cue": "soft transition cue",
-      "cue_peak_dbfs": -14.0,
-      "pan": 0
-    },
-    {
-      "time_seconds": 22.1,
-      "duration_seconds": 0.34,
-      "cue": "soft transition cue",
-      "cue_peak_dbfs": -14.0,
-      "pan": 0
-    },
-    {
-      "time_seconds": 26.65,
-      "duration_seconds": 0.34,
-      "cue": "soft transition cue",
-      "cue_peak_dbfs": -14.0,
-      "pan": 0
-    },
-    {
-      "time_seconds": 30.15,
-      "duration_seconds": 0.44,
-      "cue": "soft transition cue",
-      "cue_peak_dbfs": -14.0,
-      "pan": 0
-    },
-    {
-      "time_seconds": 35.1,
-      "duration_seconds": 0.44,
-      "cue": "soft transition cue",
-      "cue_peak_dbfs": -14.0,
-      "pan": 0
-    }
-  ],
-  "sha256": "562989d8c7597898126cebac3d9db9be30f7f5a0504e0e51c8938c87b9e588fe"
+  "events": [],
+  "sha256": "6a8a11a3788d3f0dd56925c5d98d7b1f490fae4affce225739634cef3b8fbeac"
 }

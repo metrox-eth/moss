@@ -5,6 +5,7 @@
   "routes_sha256": "ced60cb6321cad7a4edc1983807427f520afecd069c392940326b95cadebba9a",
   "missing_relative_links": [],
   "private_absolute_path_hits": [],
-  "video_sha256": "efc112fabf5b75d1eaca01dc8f95502f8644b7801f1f0ccf4ddf6c722353b42b",
-  "viewer_zip_sha256": "7992a80c204cb83bb17985d9b80dc35ebce22cfa34e9943fddd93edfa825acc2"
+  "video_sha256": "66e3aeeb2182d65df1dac40898d6dbe04ac8a3459cb961c49b46556078486417",
+  "viewer_zip_sha256": "7992a80c204cb83bb17985d9b80dc35ebce22cfa34e9943fddd93edfa825acc2",
+  "audio_edit": "Music only, added beeps removed; video stream unchanged."
 }

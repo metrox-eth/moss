@@ -1,0 +1,18 @@
+{
+  "change": "Removed all added electronic beeps; music only.",
+  "seconds": 42,
+  "video_bitstream_unchanged": true,
+  "video_stream_hash": "SHA256=c6ad828f2fb105633ad57a3b861f4589008ccc663513771a4091028cfc128cc6",
+  "sha256": "66e3aeeb2182d65df1dac40898d6dbe04ac8a3459cb961c49b46556078486417",
+  "music_gain": 0.462,
+  "fades_seconds": {
+    "in": [
+      0,
+      0.5
+    ],
+    "out": [
+      40.5,
+      42
+    ]
+  }
+}

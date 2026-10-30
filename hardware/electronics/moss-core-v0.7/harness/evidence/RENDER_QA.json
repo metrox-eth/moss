@@ -73,5 +73,6 @@
   "elapsed_s": 93.33503890037537,
   "frames": 1008,
   "video_decode": "Full final H.264/AAC stream decoded by FFmpeg without errors",
-  "video_sha256": "efc112fabf5b75d1eaca01dc8f95502f8644b7801f1f0ccf4ddf6c722353b42b"
+  "video_sha256": "66e3aeeb2182d65df1dac40898d6dbe04ac8a3459cb961c49b46556078486417",
+  "audio_edit": "Music only, added beeps removed; video stream unchanged."
 }

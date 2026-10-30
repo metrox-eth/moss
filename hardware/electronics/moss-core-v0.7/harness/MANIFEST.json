@@ -211,8 +211,8 @@
       "bytes": 481
     },
     "evidence/AUDIO_QA.json": {
-      "sha256": "0316fff921e297a76fcf8ff90a2c26758edae67259b9e05dcdf0e636cfac82b9",
-      "bytes": 2395
+      "sha256": "2b0e45120008214aae1c33e4f500916d7d0d7ebdbd205e03ad2088157588d797",
+      "bytes": 1075
     },
     "evidence/CONNECTION_CHECKS.json": {
       "sha256": "aa8fd10b679caf9bd5e6a3c5176c419b149278370393ef3bfe736b6b91a0188f",
@@ -226,13 +226,17 @@
       "sha256": "7b002e58fa1866c9e4a16e262907f7dcc4b6185aaaea29ce15adae02c1af99ab",
       "bytes": 19716
     },
+    "evidence/MUSIC_ONLY_QA.json": {
+      "sha256": "0333d89c54d30e999b89ea37e4787fa28f4d224ac4401b08423bdec9e89b7e49",
+      "bytes": 425
+    },
     "evidence/PUBLIC_BUILD_QA.json": {
-      "sha256": "089fd005b0e5863e18c11c4c104e987b172be25bedd94929ee9895b6936b3448",
-      "bytes": 576
+      "sha256": "8f9b34b32ce2499cd08171b0365db7654495957c1f147a041fd941073909145a",
+      "bytes": 652
     },
     "evidence/RENDER_QA.json": {
-      "sha256": "352716ac2baf3d0a887b1749160683997072e77aa317755687849f9324851113",
-      "bytes": 2055
+      "sha256": "5bf3df4d0c30180eb10ece66474981d346aaef165ce9644cd4ee4de603d1acde",
+      "bytes": 2131
     },
     "evidence/ROUTING_CLEARANCE_SCREEN.json": {
       "sha256": "9492f81b50b65bffa35d86e27af2593a68acca4d1d5fa51c2358bc184bceb7d3",
@@ -259,8 +263,8 @@
       "bytes": 117882
     },
     "media/MOSS_Harness_Story.mp4": {
-      "sha256": "efc112fabf5b75d1eaca01dc8f95502f8644b7801f1f0ccf4ddf6c722353b42b",
-      "bytes": 12340158
+      "sha256": "66e3aeeb2182d65df1dac40898d6dbe04ac8a3459cb961c49b46556078486417",
+      "bytes": 12342239
     },
     "media/MOTOR_CONNECTOR.jpg": {
       "sha256": "3e70c5c3d3ab029c014fe821609a048caeb4cf1b42d4f68536faf85cf7228c69",
@@ -287,8 +291,8 @@
       "bytes": 24410
     },
     "source/README.md": {
-      "sha256": "dc0a64663532a25e4166fc695637c5818602579d32f8c5ebf9f15fcccc9a03e5",
-      "bytes": 1922
+      "sha256": "a721b14032abe3357905d6742d546f359c95df4060c814064750f2b0e99d3539",
+      "bytes": 1931
     },
     "source/ROUTE_CONTROL_POINTS.json": {
       "sha256": "eb9d481ef122d127b79168508fc434c2519743c0eac98a807980e0a2a49d060f",
@@ -315,8 +319,8 @@
       "bytes": 8103
     },
     "source/make_story_audio.py": {
-      "sha256": "d5ab0ff47f2dd858bcbb8497be488a40950317fe138eefed1b1e5534523d0e83",
-      "bytes": 4921
+      "sha256": "efbfbc8cbd1534334c5c65d0937f2c5d2d4e709bb6700b8363719de3146d7b9e",
+      "bytes": 2848
     },
     "source/render_harness.py": {
       "sha256": "e6968f3a112637cd689cfa169952ad2af7c693a1a43600ddc88359d05a4c006c",
