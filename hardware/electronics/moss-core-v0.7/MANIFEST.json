@@ -1,0 +1,680 @@
+{
+  "revision": "MOSS CORE V0.7 Rev D",
+  "PCB_sha256": "3fdbd54e1b858c0d1bfd9ce2af361dc4c660273fec9b26b3768d296a7c1e1fe8",
+  "checks": {
+    "native_ERC_violations": 0,
+    "native_DRC_errors": 0,
+    "native_DRC_known_warnings": 2,
+    "unconnected_items": 0,
+    "schematic_parity_issues": 0,
+    "all_native_board_model_files_present": true,
+    "hardware_qualified": false
+  },
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 105,
+      "sha256": "d80386b2e14e5cc5b2d1c8a4fd95e622989728a4ec801147d22ca4138e4b0b74"
+    },
+    {
+      "path": "CONNECTORS.md",
+      "bytes": 5302,
+      "sha256": "9a496d8ca21a66b9e7994c9bda79933029d2ba29b6066e2de868dc97a3b8ef51"
+    },
+    {
+      "path": "KiCad_Libraries_LICENSE.md",
+      "bytes": 2105,
+      "sha256": "285b027a721577d0bc0198f36e948c6c282ddaa4b58fef8ed826749576eb0aef"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5547,
+      "sha256": "9cfff9132672ea156b7e328405fbda41415e31d5048b7828b32bfe0890b5b0f6"
+    },
+    {
+      "path": "kicad/01_USB_Power.kicad_sch",
+      "bytes": 76447,
+      "sha256": "bb6685d8662445a1ab93dedce307b4f43222d0ee61dc9b4e4ae7c0e24f52acaa"
+    },
+    {
+      "path": "kicad/02_Controller.kicad_sch",
+      "bytes": 82256,
+      "sha256": "0dfc5a8e2967adf913c26458123ff6d85974940acf613299e9cb1692bff39903"
+    },
+    {
+      "path": "kicad/03_Hardware_Interlock.kicad_sch",
+      "bytes": 54213,
+      "sha256": "840e32ad6b02e444e0ec0dc63c15fcc329224b2c949c774da33884636f70588b"
+    },
+    {
+      "path": "kicad/04_Drive_Encoders.kicad_sch",
+      "bytes": 132930,
+      "sha256": "38127889dabe0e8970713cd4c122ecea2b1bd4f9a5d2980c08feda65084a947a"
+    },
+    {
+      "path": "kicad/05_Servo.kicad_sch",
+      "bytes": 38682,
+      "sha256": "9ae345e830f66d37ffecf854a7ef305bb11460b04494e2d55d211db0f2f64b38"
+    },
+    {
+      "path": "kicad/06_Audio.kicad_sch",
+      "bytes": 63899,
+      "sha256": "938a47dcc8b8b71553b95b4719a747ff1bb4df1d8d3ddee845298cb42f6cd855"
+    },
+    {
+      "path": "kicad/07_Battery_Voltage.kicad_sch",
+      "bytes": 17832,
+      "sha256": "e5fd434687771b5321ecd1d9716a8a1b9ce5d1b854388bec20089520a66fe588"
+    },
+    {
+      "path": "kicad/09_Audio_Power.kicad_sch",
+      "bytes": 38832,
+      "sha256": "24fce37ea84304fa1617368e7ea392486c2058a04b40dd4da095972a8cbd1984"
+    },
+    {
+      "path": "kicad/10_Battery_Power.kicad_sch",
+      "bytes": 10667,
+      "sha256": "d0a5ce510c62638fe7b990c93df13a96c92a90eb8603e2e421f2013fa638138e"
+    },
+    {
+      "path": "kicad/16_Orange_Pi_Power.kicad_sch",
+      "bytes": 43270,
+      "sha256": "3a798932207290477159d74690f2e88e8259f719756971b69905a8dd33167a1c"
+    },
+    {
+      "path": "kicad/17_Motor_Current.kicad_sch",
+      "bytes": 55114,
+      "sha256": "6ae8a5b9c5482cf567c246a92768c3fff6f32aad7e5f480d72fb2498cf00a49b"
+    },
+    {
+      "path": "kicad/18_Actuator_Cutoff.kicad_sch",
+      "bytes": 58070,
+      "sha256": "a30b42bdb99976a69761b44aa67d5a9efb71d8b80be956cf4ef659d59f1ea606"
+    },
+    {
+      "path": "kicad/19_Fans.kicad_sch",
+      "bytes": 10431,
+      "sha256": "11d4e9ec283556cc45e4f51a3146aab8310f73cfd0d8ba6851cb33efebcb42d5"
+    },
+    {
+      "path": "kicad/BOM.json",
+      "bytes": 32017,
+      "sha256": "ecd2f663f6919f57af8efc1418a24a3b6decd7171cd1574bd04b905a5b10cda2"
+    },
+    {
+      "path": "kicad/MOSS.kicad_sym",
+      "bytes": 261487,
+      "sha256": "ffb91c9921548ac461da3474c6e970c1a8d840ca36afba718464bbc2fbf65264"
+    },
+    {
+      "path": "kicad/MOSS.pretty/Button_Switch_SMD_SW_Push_1P1T_NO_CK_KMR2.kicad_mod",
+      "bytes": 4157,
+      "sha256": "433ba4b677161514c7809202cb49e1e4d299c2399fc57327077b67e83a30ae15"
+    },
+    {
+      "path": "kicad/MOSS.pretty/Capacitor_SMD_CP_Elec_6.3x5.9.kicad_mod",
+      "bytes": 5231,
+      "sha256": "31667e472901e55b4853e6378d1f6734cf346544668d6445ef56f87266c8e839"
+    },
+    {
+      "path": "kicad/MOSS.pretty/Capacitor_SMD_C_0603_1608Metric.kicad_mod",
+      "bytes": 1929,
+      "sha256": "d868255d0ce37cb5f53470bf3464a652008dd262c7733b6f3f3d6ba023803c6e"
+    },
+    {
+      "path": "kicad/MOSS.pretty/Capacitor_SMD_C_0805_2012Metric.kicad_mod",
+      "bytes": 2031,
+      "sha256": "1711192f7b24ee9d3f49a3e7614564af1163d448a923de3e43dc4d7a6963c163"
+    },
+    {
+      "path": "kicad/MOSS.pretty/Capacitor_SMD_C_1206_3216Metric.kicad_mod",
+      "bytes": 1939,
+      "sha256": "cd32001f37c37af2833a65a56db69283fce14c07f211a4e25facce7767c4de3f"
+    },
+    {
+      "path": "kicad/MOSS.pretty/Capacitor_SMD_C_1210_3225Metric.kicad_mod",
+      "bytes": 1937,
+      "sha256": "4422eca63653282f2cece15d05ebe82d035e23c2f081cf80b3d275214a9ac918"
+    },
+    {
+      "path": "kicad/MOSS.pretty/Connector_AMASS_AMASS_XT30PW-M_1x02_P2.50mm_Horizontal_EdgeEntry.kicad_mod",
+      "bytes": 6063,
+      "sha256": "e62d018d9f7e0924a7b0a34f380d747ca7526afdfb639b779af3b9d75ac7a8de"
+    },
+    {
+      "path": "kicad/MOSS.pretty/Connector_JST_JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal.kicad_mod",
+      "bytes": 5249,
+      "sha256": "bd3d91f06a7e137a9121c233155e634b54c6f2cba622dd3a03fd805e84fd9278"
+    },
+    {
+      "path": "kicad/MOSS.pretty/Connector_JST_JST_GH_SM05B-GHS-TB_1x05-1MP_P1.25mm_Horizontal.kicad_mod",
+      "bytes": 5323,
+      "sha256": "60d78da749f952c41c3054f139553f9ebfe779eedf78031f67e05584f104be93"
+    },
+    {
+      "path": "kicad/MOSS.pretty/Connector_JST_JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal.kicad_mod",
+      "bytes": 5058,
+      "sha256": "f6cf0f972b346df942f394a1dd52d6e17b9ad53efe064b356b37fa45a978f149"
+    },
+    {
+      "path": "kicad/MOSS.pretty/Connector_JST_JST_SH_BM06B-SRSS-TB_1x06-1MP_P1.00mm_Vertical.kicad_mod",
+      "bytes": 6160,
+      "sha256": "53c3c819d715331e1707f16c4a5a722e7fd6ca2e1e240fb0de652927e39590ac"
+    },
+    {
+      "path": "kicad/MOSS.pretty/Connector_JST_JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical.kicad_mod",
+      "bytes": 3353,
+      "sha256": "e6c8288e844619538cacedd7c3c0cd9a77f9c419b743ed312183a146ff98ee69"
+    },
+    {
+      "path": "kicad/MOSS.pretty/Connector_Molex_Molex_SPOX_5268-03A_1x03_P2.50mm_Horizontal.kicad_mod",
+      "bytes": 4891,
+      "sha256": "91f2bb20791b342aa62a908dda0c1242bb1539132c36341bdbcf2a90ebcd0f0b"
+    },
+    {
+      "path": "kicad/MOSS.pretty/Connector_USB_USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.kicad_mod",
+      "bytes": 6861,
+      "sha256": "740f9da284b62354412233efc3a8e80f4c513bb5b64ea0f7821805fafaea95f6"
+    },
+    {
+      "path": "kicad/MOSS.pretty/Diode_SMD_D_SMB.kicad_mod",
+      "bytes": 4548,
+      "sha256": "3a4a45ad27a1e82c3a12538c50afd80671bf8c6b5112d1caba663eae8737f9bd"
+    },
+    {
+      "path": "kicad/MOSS.pretty/Diode_SMD_D_SOD-123.kicad_mod",
+      "bytes": 4581,
+      "sha256": "cf0853fd94d3ba2a3fef24a6592b93f10a06f2d8de6d719bbca042f99442b52c"
+    },
+    {
+      "path": "kicad/MOSS.pretty/Diode_SMD_D_SOD-323.kicad_mod",
+      "bytes": 4436,
+      "sha256": "bdbdc360aa5188f7fba3014a3d961be5645877452c0ba7ab299e1647249e521a"
+    },
+    {
+      "path": "kicad/MOSS.pretty/Diode_SMD_D_SOD-523.kicad_mod",
+      "bytes": 4487,
+      "sha256": "5c47c9905d63faaa235e41aeae0412ed52138f9a9abf728615596bdbcd8fe717"
+    },
+    {
+      "path": "kicad/MOSS.pretty/Diode_SMD_Nexperia_CFP3_SOD-123W.kicad_mod",
+      "bytes": 4502,
+      "sha256": "d0b9f0cb100522c6d8d36fb623ba4112bafe228a00a113883c402919f05cb29f"
+    },
+    {
+      "path": "kicad/MOSS.pretty/Fuse_Fuse_Littelfuse-NANO2-885.kicad_mod",
+      "bytes": 3637,
+      "sha256": "c42ca6b6efda451e0ca830a6aa214c22de1219db7bbe1a1874973e7051a232b2"
+    },
+    {
+      "path": "kicad/MOSS.pretty/Fuse_Littelfuse_0451_Nano2.kicad_mod",
+      "bytes": 1161,
+      "sha256": "057d57cebfd29bc7120ccee7cdb7a9efffba938da76ecbcf996372ab026a6d5b"
+    },
+    {
+      "path": "kicad/MOSS.pretty/Inductor_SMD_L_Bourns_SRP6060FA.kicad_mod",
+      "bytes": 2044,
+      "sha256": "16c4ddc13671453c35af1b57636d6e57074016bd1a93119aba40dd074c9c39f2"
+    },
+    {
+      "path": "kicad/MOSS.pretty/Inductor_SMD_L_Coilcraft_XAL4020-XXX.kicad_mod",
+      "bytes": 2068,
+      "sha256": "31aac3dfe38eb8f324989c6da7d57770fd85f2db7a782e4f56074d87a59f6cc1"
+    },
+    {
+      "path": "kicad/MOSS.pretty/LED_SMD_LED_0603_1608Metric.kicad_mod",
+      "bytes": 2432,
+      "sha256": "90c23978eb2345ec7167c83127b9c7135e01b12f9db4970bca540b17191e8894"
+    },
+    {
+      "path": "kicad/MOSS.pretty/MOSS_Mount_M2p5_2p7_D6.kicad_mod",
+      "bytes": 595,
+      "sha256": "e05f35331f08cd3596d3ef16e74223605ce0eb15a4a827c8a16d8bbad14db7fd"
+    },
+    {
+      "path": "kicad/MOSS.pretty/MOSS_Mount_M2p5_2p7_D8.kicad_mod",
+      "bytes": 595,
+      "sha256": "50f0e219bd3e5eb0f3f19fca97143da3ce7cacf7ab95c7c484c00bbe43e1d376"
+    },
+    {
+      "path": "kicad/MOSS.pretty/MOSS_Power_Waveshare_DC5_36_TO_DC3V3_5_SMD_33x16mm_HandSolder.kicad_mod",
+      "bytes": 1981,
+      "sha256": "cc084b1b844e34e22f9c7ec954e014f8cffb1230030b515f5f3876bbe20da8ba"
+    },
+    {
+      "path": "kicad/MOSS.pretty/MOSS_V07_CSS2H_2512K_Bourns.kicad_mod",
+      "bytes": 1092,
+      "sha256": "ce0fc8efd753d3bc5091e20b827dabfe28ad53ae213442ad8f776f38ef76d193"
+    },
+    {
+      "path": "kicad/MOSS.pretty/Package_DFN_QFN_MAX98357A_T1633_4_90_0031.kicad_mod",
+      "bytes": 7509,
+      "sha256": "79518dce3fdd1c5714fd628dfb0cd3454f2b0af9a4b69cd5e621b099f8ffe7c4"
+    },
+    {
+      "path": "kicad/MOSS.pretty/Package_DFN_QFN_Texas_RVC0020A_WQFN-20-1EP_3x4mm_P0.5mm_EP1.6x2.6mm_ThermalVias.kicad_mod",
+      "bytes": 8692,
+      "sha256": "d5fad165e23c7328af9a19bacb3e5d8b0ee4a7fd10656c870e0c0c8a8cf7e573"
+    },
+    {
+      "path": "kicad/MOSS.pretty/Package_SON_VSON-8-1EP_3x3mm_P0.65mm_EP1.65x2.4mm.kicad_mod",
+      "bytes": 4923,
+      "sha256": "ec797b556ab94756fe7e33dee7551f5e3232c564d49501208f6cc15c3eb978f0"
+    },
+    {
+      "path": "kicad/MOSS.pretty/Package_SO_MSOP-10_3x3mm_P0.5mm.kicad_mod",
+      "bytes": 4812,
+      "sha256": "c45ac5c5d4663a4fe72946356d1d8a38a57ab0a6512d7125e3b8598b04116ccf"
+    },
+    {
+      "path": "kicad/MOSS.pretty/Package_SO_PowerPAK_SO-8_Single.kicad_mod",
+      "bytes": 4874,
+      "sha256": "5ab58d78514fd49ecb9def985369d467044eba75ff53ceaf37f47640391f4063"
+    },
+    {
+      "path": "kicad/MOSS.pretty/Package_SO_TSSOP-14_4.4x5mm_P0.65mm.kicad_mod",
+      "bytes": 5378,
+      "sha256": "ab8826b0c30a16c4c79a1d9cc43277e4198530d890b0b4486025b0249871b4f3"
+    },
+    {
+      "path": "kicad/MOSS.pretty/Package_SO_TSSOP-8_4.4x3mm_P0.65mm.kicad_mod",
+      "bytes": 4604,
+      "sha256": "1b908731d09b6173ab87370f051b8ad42ce49073bfcb200cf0417c716c6634a5"
+    },
+    {
+      "path": "kicad/MOSS.pretty/Package_SO_VSSOP-8_2.3x2mm_P0.5mm.kicad_mod",
+      "bytes": 4077,
+      "sha256": "99a80c59b7ca60816edc82c62ae1e12c0cf70a16b9fcf902947653d27191073a"
+    },
+    {
+      "path": "kicad/MOSS.pretty/Package_TO_SOT_SMD_SOT-23-5.kicad_mod",
+      "bytes": 4751,
+      "sha256": "56665b9629bd9421fa1b5106294b94d7e931b7a444e3712dcaa7d3d298ced86f"
+    },
+    {
+      "path": "kicad/MOSS.pretty/Package_TO_SOT_SMD_SOT-23-6.kicad_mod",
+      "bytes": 4286,
+      "sha256": "a624b3d7fd0733da18f9d4544486ce7d69d363b541db22d3e7a8e875d74e5405"
+    },
+    {
+      "path": "kicad/MOSS.pretty/Package_TO_SOT_SMD_SOT-23.kicad_mod",
+      "bytes": 4491,
+      "sha256": "1fc64a59ce10911e130c0050db406230830188e05d7a5cce2f1fb3d7879a8f10"
+    },
+    {
+      "path": "kicad/MOSS.pretty/Package_TO_SOT_SMD_SOT-323_SC-70.kicad_mod",
+      "bytes": 4296,
+      "sha256": "fa9a3ed068d67ac84eb0c127d6efaf2cc19ca4458d0e44b8ba92e1df315e8e63"
+    },
+    {
+      "path": "kicad/MOSS.pretty/Package_TO_SOT_SMD_SOT-353_SC-70-5.kicad_mod",
+      "bytes": 4901,
+      "sha256": "ebb3e3a60fae926649e3c2607c1b39bcb585d1cad10c6205b32edc9f5f38a039"
+    },
+    {
+      "path": "kicad/MOSS.pretty/RF_Module_ESP32-S3-WROOM-1U.kicad_mod",
+      "bytes": 14938,
+      "sha256": "75475cdd2aa5c3d15dccbcd6b8adba1e19ca63330b08a4931f5fb6a175e273b6"
+    },
+    {
+      "path": "kicad/MOSS.pretty/Resistor_SMD_R_0402_1005Metric.kicad_mod",
+      "bytes": 1937,
+      "sha256": "cac0c58feb3a3a908debd1bddbefbe3a76fb0483436c0e91ae122cd454ac37ec"
+    },
+    {
+      "path": "kicad/MOSS.pretty/Resistor_SMD_R_0603_1608Metric.kicad_mod",
+      "bytes": 1943,
+      "sha256": "fbcf38e085a3d5a76df02ca931b641f0cd462ef4a97b4ceb14367d1a80608d11"
+    },
+    {
+      "path": "kicad/MOSS.pretty/Resistor_SMD_R_1206_3216Metric.kicad_mod",
+      "bytes": 1943,
+      "sha256": "105f91691a8aaebe8f8a381f975304307551e70973ad93dee10adc50bdf2cd10"
+    },
+    {
+      "path": "kicad/MOSS.pretty/TerminalBlock_Phoenix_TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal.kicad_mod",
+      "bytes": 4523,
+      "sha256": "68ddf52ca63afa46954a2db2362c7b7e893678112ee22cd8cc0599b9e5d4cbfd"
+    },
+    {
+      "path": "kicad/MOSS.pretty/TestPoint_TestPoint_Pad_D1.0mm.kicad_mod",
+      "bytes": 1758,
+      "sha256": "be28d30483ce15dc3f110c7fc6c311c84e9766305cb5a7c314aaf202419d76b3"
+    },
+    {
+      "path": "kicad/MOSS_Core_V07_DRAFT.kicad_dru",
+      "bytes": 2713,
+      "sha256": "c39def057e204409fa042e1c68b905486cfb948b02db4ca079145826dfac18ea"
+    },
+    {
+      "path": "kicad/MOSS_Core_V07_DRAFT.kicad_pcb",
+      "bytes": 2184024,
+      "sha256": "3fdbd54e1b858c0d1bfd9ce2af361dc4c660273fec9b26b3768d296a7c1e1fe8"
+    },
+    {
+      "path": "kicad/MOSS_Core_V07_DRAFT.kicad_prl",
+      "bytes": 2306,
+      "sha256": "2c33bf011f4f193e7b8731a7b1f9e8f5cb309481761f98bac04ab8785178b219"
+    },
+    {
+      "path": "kicad/MOSS_Core_V07_DRAFT.kicad_pro",
+      "bytes": 14119,
+      "sha256": "b1b88f590ef25545c3a54a99322fd92c2a70f4d1d2735280c70e670402380a63"
+    },
+    {
+      "path": "kicad/MOSS_Core_V07_DRAFT.kicad_sch",
+      "bytes": 17235,
+      "sha256": "902b259d22f6110c4f9031bdcf3a0d6e0d97a1f57de699dc15eea6262f7f46a4"
+    },
+    {
+      "path": "kicad/circuit.json",
+      "bytes": 229951,
+      "sha256": "e0223985131a01a03f632da865acefbaf25c999c62188dd2f7173831628376f6"
+    },
+    {
+      "path": "kicad/fp-lib-table",
+      "bytes": 135,
+      "sha256": "ac49c5ec3ce0c2c2d9ac42a7dbecbb064d03cd1db26c674abe0f00b0e075eeb3"
+    },
+    {
+      "path": "kicad/models/AMASS_XT30PW_M_VISUAL.step",
+      "bytes": 228440,
+      "sha256": "de81e8ebe5cef55718bb26e466d684b3cc7d613785e53b787968c24c6ae3f3f7"
+    },
+    {
+      "path": "kicad/models/Bourns_CSS2H_2512K_2L00F_ENVELOPE.step",
+      "bytes": 49772,
+      "sha256": "2935d9fe6762f96ef8f63ecf8878f15ce7797ececc3786e9df4f7165bb3de0cf"
+    },
+    {
+      "path": "kicad/models/Button_Switch_SMD_SW_Push_1P1T_NO_CK_KMR2.step",
+      "bytes": 115207,
+      "sha256": "3bc8d332afe2964b582d8caddfabf0912a948d62325ecb4300adcefa2eadc874"
+    },
+    {
+      "path": "kicad/models/Capacitor_SMD_CP_Elec_6.3x5.9.step",
+      "bytes": 81943,
+      "sha256": "db9f56772f8759b93f4ba0b274e293a14bbd3c7d5f2de835feeabb78b0c02d76"
+    },
+    {
+      "path": "kicad/models/Capacitor_SMD_C_0603_1608Metric.step",
+      "bytes": 43450,
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+    },
+    {
+      "path": "kicad/models/Capacitor_SMD_C_0805_2012Metric.step",
+      "bytes": 43618,
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+    },
+    {
+      "path": "kicad/models/Capacitor_SMD_C_1206_3216Metric.step",
+      "bytes": 43450,
+      "sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a"
+    },
+    {
+      "path": "kicad/models/Capacitor_SMD_C_1210_3225Metric.step",
+      "bytes": 43502,
+      "sha256": "f8510481c5044113cf49b0fa6dd54ddab9224508bd6808e1afab8ef0cefdefc9"
+    },
+    {
+      "path": "kicad/models/Connector_JST_JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal.step",
+      "bytes": 329331,
+      "sha256": "aacba39c0ebf407941d81e202e5fc85121532adadfd38f26725330dea8815ac7"
+    },
+    {
+      "path": "kicad/models/Connector_JST_JST_GH_SM05B-GHS-TB_1x05-1MP_P1.25mm_Horizontal.step",
+      "bytes": 377755,
+      "sha256": "83904d0811d071430211aa3207f46b5940102c2bdb39218e713e5751c04c26fe"
+    },
+    {
+      "path": "kicad/models/Connector_JST_JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal.step",
+      "bytes": 186394,
+      "sha256": "5343f72b9fe095ba999c44c2d42c2045032162dd11066bd4d36865caf3d1fba2"
+    },
+    {
+      "path": "kicad/models/Connector_JST_JST_SH_BM06B-SRSS-TB_1x06-1MP_P1.00mm_Vertical.step",
+      "bytes": 90564,
+      "sha256": "3542ff3606fe531a56b4051935716b0f13dd857908b5cb5237af98bdbe29716a"
+    },
+    {
+      "path": "kicad/models/Connector_JST_JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical.step",
+      "bytes": 144517,
+      "sha256": "7287616fdad677e9b54cf5494f17efc4b3fb77be002659d73e215772393f20c6"
+    },
+    {
+      "path": "kicad/models/Connector_USB_USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step",
+      "bytes": 1059856,
+      "sha256": "6338ce740fa231c2d3dcc6384e0576994a47240a312a21413cb85d76990a69a0"
+    },
+    {
+      "path": "kicad/models/Diode_SMD_D_SMB.step",
+      "bytes": 70508,
+      "sha256": "029466277d91e9f5492556be93e46611049e07115c7913880c547afa96058ed4"
+    },
+    {
+      "path": "kicad/models/Diode_SMD_D_SOD-123.step",
+      "bytes": 52836,
+      "sha256": "b3dc4065573abc72e3d5b4cca0e908f72a24205a41b6284b1f75ccacbe99adf8"
+    },
+    {
+      "path": "kicad/models/Diode_SMD_D_SOD-323.step",
+      "bytes": 52730,
+      "sha256": "cd8619b2119cd95683a2c5e660ab4f2d4db674f696cd6f9e9756f221171a214d"
+    },
+    {
+      "path": "kicad/models/Diode_SMD_D_SOD-523.step",
+      "bytes": 43207,
+      "sha256": "b525222377930c32abea58606bffba3aaf171cc66ac292b82d28a82d646d995d"
+    },
+    {
+      "path": "kicad/models/Diode_SMD_Nexperia_CFP3_SOD-123W.step",
+      "bytes": 59769,
+      "sha256": "b7e56594bfc2e4eec42ca2b7b7911cc7eff91c1f55a3c8db11ddfba2e5ce21d7"
+    },
+    {
+      "path": "kicad/models/Inductor_SMD_L_Bourns_SRP6060FA.step",
+      "bytes": 16488,
+      "sha256": "c7a9e2fe6362c19c7d270c9ce5b55bc154ec0b2cf6723e520f5afaa3aa3924a8"
+    },
+    {
+      "path": "kicad/models/Inductor_SMD_L_Coilcraft_XAL4020-XXX.step",
+      "bytes": 32254,
+      "sha256": "ccccee60d1c700cb295b890024e8da4e4d7507b6b69039c751b6dcc3e91bd3ee"
+    },
+    {
+      "path": "kicad/models/LED_SMD_LED_0603_1608Metric.step",
+      "bytes": 77068,
+      "sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "path": "kicad/models/Littelfuse_0451001_MRL_VISUAL.step",
+      "bytes": 49826,
+      "sha256": "ac63f50b23a3d9ca0bacccdae4a557fe4d9f1350cabea3501b1bdea8abdd0edf"
+    },
+    {
+      "path": "kicad/models/Littelfuse_08853_15DR_VISUAL.step",
+      "bytes": 93126,
+      "sha256": "cebd4d2019cae91df5cfd0dc6d185ec6e030751217ce809b49845a697014fce8"
+    },
+    {
+      "path": "kicad/models/MAX98357A_TQFN16_BODY_ENVELOPE.step",
+      "bytes": 17438,
+      "sha256": "2e254212c1d595af31582ab1e79fedf41f1f658b087d826bd18a2de9bac6bb4d"
+    },
+    {
+      "path": "kicad/models/Molex_22057035_VISUAL.step",
+      "bytes": 95171,
+      "sha256": "de34112234f37c6a1d91487ea01651a0394f33b4be46d3e3f83f048c53548df4"
+    },
+    {
+      "path": "kicad/models/Package_DFN_QFN_Texas_RVC0020A_WQFN-20-1EP_3x4mm_P0.5mm_EP1.6x2.6mm.step",
+      "bytes": 52822,
+      "sha256": "f257536c2c62c3b774a8d2e72792a5e607e79f19c56edb5e8211258bed260d6c"
+    },
+    {
+      "path": "kicad/models/Package_SON_VSON-8-1EP_3x3mm_P0.65mm_EP1.65x2.4mm.step",
+      "bytes": 17440,
+      "sha256": "1050def5c38af941aebf6e8f32735342c3682a02492520c8a60367d50292e2ab"
+    },
+    {
+      "path": "kicad/models/Package_SO_MSOP-10_3x3mm_P0.5mm.step",
+      "bytes": 151060,
+      "sha256": "b8f88eac3ce221c2ccb0b5048f9ad49c2ef4af148f8ae50c4e232e357683f547"
+    },
+    {
+      "path": "kicad/models/Package_SO_TSSOP-14_4.4x5mm_P0.65mm.step",
+      "bytes": 198789,
+      "sha256": "3ee5786aae56190997aa793ba3cfc003fd616782770e29719b4562f012982245"
+    },
+    {
+      "path": "kicad/models/Package_SO_TSSOP-8_4.4x3mm_P0.65mm.step",
+      "bytes": 125225,
+      "sha256": "2299fb3b85d686800712b24f5411cd4896ad7de29f3aab656d6dc1006211629b"
+    },
+    {
+      "path": "kicad/models/Package_SO_VSSOP-8_2.3x2mm_P0.5mm.step",
+      "bytes": 124982,
+      "sha256": "353552981eef35cb93635057d4aeb89aef22648c77af6fd095e328bfe6b834bd"
+    },
+    {
+      "path": "kicad/models/Package_TO_SOT_SMD_SOT-23-5.step",
+      "bytes": 87532,
+      "sha256": "720a6eab0024069bbee68e7cb4c3ff1149468a34611225cdc852662c5d0ec2b7"
+    },
+    {
+      "path": "kicad/models/Package_TO_SOT_SMD_SOT-23-6.step",
+      "bytes": 99639,
+      "sha256": "c9fe686b4d1b56927a41fa84a9bc1efb61d8a45a123a3db43bcaa05c2891d635"
+    },
+    {
+      "path": "kicad/models/Package_TO_SOT_SMD_SOT-23.step",
+      "bytes": 60296,
+      "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0"
+    },
+    {
+      "path": "kicad/models/Package_TO_SOT_SMD_SOT-323_SC-70.step",
+      "bytes": 64345,
+      "sha256": "acbf75a28fe41aa90efb38cd2b78220968d6eb6ebae1625dfd532dbeb268fece"
+    },
+    {
+      "path": "kicad/models/Package_TO_SOT_SMD_SOT-353_SC-70-5.step",
+      "bytes": 89216,
+      "sha256": "2860de5b7b085919ff6e952148353f928798588d9f544dc69430545aff2ba908"
+    },
+    {
+      "path": "kicad/models/RF_Module_ESP32-S3-WROOM-1U.step",
+      "bytes": 17427,
+      "sha256": "9255fcb7efa11e68753c797987752cc076df8914b6cfecd30d7d0dd8c97bb46a"
+    },
+    {
+      "path": "kicad/models/Resistor_SMD_R_0402_1005Metric.step",
+      "bytes": 40756,
+      "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb"
+    },
+    {
+      "path": "kicad/models/Resistor_SMD_R_0603_1608Metric.step",
+      "bytes": 40618,
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+    },
+    {
+      "path": "kicad/models/Resistor_SMD_R_1206_3216Metric.step",
+      "bytes": 40414,
+      "sha256": "f5d1ea5c47935091292bd1c6c698e0df88d3d4bbf92bf66b4c97e49df5be9ebc"
+    },
+    {
+      "path": "kicad/models/TerminalBlock_Phoenix_TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal.step",
+      "bytes": 70419,
+      "sha256": "2684469b03d2dd46f26862eb86eb283215344c311dd485db877e7139b5381497"
+    },
+    {
+      "path": "kicad/models/Vishay_SiRA99DP_PowerPAK_SO8_ENVELOPE.step",
+      "bytes": 17608,
+      "sha256": "83100492cebada0f7085ddd8d43595b3a87472719f57e7b1c7354b573d97861a"
+    },
+    {
+      "path": "kicad/models/Waveshare_DC5_36_5V_PHOTO_BASED_VISUAL_a5a8c664b4a7.step",
+      "bytes": 3086652,
+      "sha256": "a5a8c664b4a71081e197c29846342f11fa209f1ad27a6bed727bc9143dab167d"
+    },
+    {
+      "path": "kicad/placement.json",
+      "bytes": 15505,
+      "sha256": "34717f9bca79cc73431fe884b2b3bc3eea4aee91f299a79b4c05ad1d738509c9"
+    },
+    {
+      "path": "kicad/sym-lib-table",
+      "bytes": 124,
+      "sha256": "ef07006013319e54616e1376e02258812eadbf289258bbb6b3a1556d13b03b20"
+    },
+    {
+      "path": "manufacturing/BOM_REV_D.csv",
+      "bytes": 6963,
+      "sha256": "4995e03146de187283c64f95287fd182e183f5009da3801b2e3d2dfdf088b427"
+    },
+    {
+      "path": "manufacturing/MOSS_CORE_V07_REV_D_GERBERS_20261030.zip",
+      "bytes": 303513,
+      "sha256": "a6bdb6c72032033e41b66c072a6c03596638ae935dae0c3db36f99f91e9ef474"
+    },
+    {
+      "path": "manufacturing/POSITIONS_REV_D.csv",
+      "bytes": 15955,
+      "sha256": "647546ba28a0d8cceea28f5d5b5550dc6d1009aa8491876ad64c387da4c01062"
+    },
+    {
+      "path": "preview/BOARD_BOTTOM.png",
+      "bytes": 725665,
+      "sha256": "546b4425b77f1346a45880ca3ac875222cbad77da2b5cfcc09d643935acd1d79"
+    },
+    {
+      "path": "preview/BOARD_TOP.png",
+      "bytes": 1302804,
+      "sha256": "7969b7bc381f5f7243dc5716ab41ad0dc230eabf332e663488c4615a823424fa"
+    },
+    {
+      "path": "review/DELTA_CHECK.json",
+      "bytes": 438,
+      "sha256": "9ee8470111254c3572a830c79dcaf393537e082c11a1e157de4cebf47797ed86"
+    },
+    {
+      "path": "review/DRC_FINAL.json",
+      "bytes": 2093,
+      "sha256": "0fd48408ae02264c20ae1937ae444c95e322f4fbe7782e19665b5563d3c4a34f"
+    },
+    {
+      "path": "review/DRC_PUBLICATION.json",
+      "bytes": 2093,
+      "sha256": "d327a60b6d104b50cfa54bf55f6e342854c9642ddf19dfaea5298455c599d604"
+    },
+    {
+      "path": "review/DRILL_REPORT.txt",
+      "bytes": 1154,
+      "sha256": "9a0f38f71b2652324f0d1be6d7124f887ce525bbfd68514739fdef9f43a27835"
+    },
+    {
+      "path": "review/ERC_FINAL.json",
+      "bytes": 3526,
+      "sha256": "354a858a66e7a9de4b768118a24e35b21810c6c2ca0e58525430cdd33127d326"
+    },
+    {
+      "path": "review/ERC_PUBLICATION.json",
+      "bytes": 3526,
+      "sha256": "fffecbf58704f6dba15bfb0e0cd1960493fa24e33296b86515c58e9496cf600b"
+    },
+    {
+      "path": "review/F1_SELECTION.md",
+      "bytes": 3550,
+      "sha256": "f59b6b8f881be9f0e196671271ba2d4218bc38180cd915a6bea230166f2ceb2e"
+    },
+    {
+      "path": "review/F1_VISUAL_SCOPE.json",
+      "bytes": 327,
+      "sha256": "96b9d3dbcd10160218bf6ef472e9dedf29d505eceb6d68bce6be8d13b64e2684"
+    },
+    {
+      "path": "review/PUBLICATION_NOTES.json",
+      "bytes": 662,
+      "sha256": "05bf70a147564b22a41f15b02a97c20d6a294f8802f63ec22eb920841ca9fd64"
+    }
+  ]
+}

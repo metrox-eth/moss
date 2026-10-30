@@ -1,0 +1,102 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-30T18:34:12",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/f243e979-af0d-59fe-ba61-8f0ca6ff181c",
+            "violations": []
+        },
+        {
+            "path": "/01 USB Power/",
+            "uuid_path": "/f243e979-af0d-59fe-ba61-8f0ca6ff181c/cb99ba43-8952-5bb3-ae00-eb2656403989",
+            "violations": []
+        },
+        {
+            "path": "/02 Controller/",
+            "uuid_path": "/f243e979-af0d-59fe-ba61-8f0ca6ff181c/94ec12f2-d80b-521f-8c2e-90dde364e5eb",
+            "violations": []
+        },
+        {
+            "path": "/03 Hardware Interlock/",
+            "uuid_path": "/f243e979-af0d-59fe-ba61-8f0ca6ff181c/bf8bd66f-692d-5a5c-8e53-1f1d17cd1da3",
+            "violations": []
+        },
+        {
+            "path": "/04 Drive Encoders/",
+            "uuid_path": "/f243e979-af0d-59fe-ba61-8f0ca6ff181c/51494b1c-0d88-5cf9-9cc1-71426b099cc8",
+            "violations": []
+        },
+        {
+            "path": "/05 Servo/",
+            "uuid_path": "/f243e979-af0d-59fe-ba61-8f0ca6ff181c/a397f9ec-30a6-5a7a-9972-ab684a5c5a06",
+            "violations": []
+        },
+        {
+            "path": "/06 Audio/",
+            "uuid_path": "/f243e979-af0d-59fe-ba61-8f0ca6ff181c/c7f111bf-1ccc-5842-acc3-1d06c7645201",
+            "violations": []
+        },
+        {
+            "path": "/07 Battery Voltage/",
+            "uuid_path": "/f243e979-af0d-59fe-ba61-8f0ca6ff181c/fdf679f3-6594-53fb-9e4b-2c79be3a749c",
+            "violations": []
+        },
+        {
+            "path": "/09 Audio Power/",
+            "uuid_path": "/f243e979-af0d-59fe-ba61-8f0ca6ff181c/c91a2f50-1d07-5440-ab37-964bec32971c",
+            "violations": []
+        },
+        {
+            "path": "/10 Battery Power/",
+            "uuid_path": "/f243e979-af0d-59fe-ba61-8f0ca6ff181c/5b8e4b07-ec1a-5b56-89b4-eb2b18fe8a65",
+            "violations": []
+        },
+        {
+            "path": "/16 Orange Pi Power/",
+            "uuid_path": "/f243e979-af0d-59fe-ba61-8f0ca6ff181c/28dd437e-34c6-5785-b3f5-1df4850f1439",
+            "violations": []
+        },
+        {
+            "path": "/17 Motor Current/",
+            "uuid_path": "/f243e979-af0d-59fe-ba61-8f0ca6ff181c/03b51654-a433-5786-a696-ab37007e36ff",
+            "violations": []
+        },
+        {
+            "path": "/18 Actuator Cutoff/",
+            "uuid_path": "/f243e979-af0d-59fe-ba61-8f0ca6ff181c/28e22d8a-694e-56c0-bc47-be66de848a3d",
+            "violations": []
+        },
+        {
+            "path": "/19 Fans/",
+            "uuid_path": "/f243e979-af0d-59fe-ba61-8f0ca6ff181c/46b7b368-5525-57da-949e-65f26c2f9cc9",
+            "violations": []
+        }
+    ],
+    "source": "MOSS_Core_V07_DRAFT.kicad_sch"
+}

@@ -1,0 +1,2 @@
+# Preserve generated STEP bytes and keep CAD model changes out of text diffs.
+kicad/models/*.step binary

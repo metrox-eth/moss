@@ -1,0 +1,15 @@
+(version 1)
+
+# GCT USB4105 drawing B4, 18-Dec-2023, recommended component-side PCB layout.
+# ONLY a 0.65mm NPTH locating hole against its adjacent outer GND SMT land.
+# The two physical lands each carry two USB contact numbers, hence four pairs.
+# The relative-centre signature limits this exception to those four pairs;
+# all other J1 pads, shell slots, tracks, vias and other footprints keep the
+# project's 0.25mm hole-to-copper rule. Copper clearance stays 0.15mm globally.
+# A changed footprint geometry fails closed and must be re-qualified.
+(rule "J1 USB4105 B4 locating hole to adjacent outer GND land only"
+ (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.Reference == 'J1' && B.Reference == 'J1' && (((A.Pad_Type == 'NPTH, mechanical' && A.Pad_Number == '' && A.Hole_Size_X == 0.65mm && A.Hole_Size_Y == 0.65mm) && (B.Pad_Type == 'SMD' && B.NetName == 'GND' && (B.Pad_Number == 'A1' || B.Pad_Number == 'B12' || B.Pad_Number == 'A12' || B.Pad_Number == 'B1'))) || ((B.Pad_Type == 'NPTH, mechanical' && B.Pad_Number == '' && B.Hole_Size_X == 0.65mm && B.Hole_Size_Y == 0.65mm) && (A.Pad_Type == 'SMD' && A.NetName == 'GND' && (A.Pad_Number == 'A1' || A.Pad_Number == 'B12' || A.Pad_Number == 'A12' || A.Pad_Number == 'B1')))) && ((((A.Position_X-B.Position_X) == 1.075mm || (B.Position_X-A.Position_X) == 1.075mm) && ((A.Position_Y-B.Position_Y) == 0.31mm || (B.Position_Y-A.Position_Y) == 0.31mm)) || (((A.Position_X-B.Position_X) == 0.31mm || (B.Position_X-A.Position_X) == 0.31mm) && ((A.Position_Y-B.Position_Y) == 1.075mm || (B.Position_Y-A.Position_Y) == 1.075mm)))")
+ (constraint hole_clearance (min 0.15mm)))
+(rule "J20 USB4105 B4 locating hole to adjacent outer GND land only"
+ (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.Reference == 'J20' && B.Reference == 'J20' && (((A.Pad_Type == 'NPTH, mechanical' && A.Pad_Number == '' && A.Hole_Size_X == 0.65mm && A.Hole_Size_Y == 0.65mm) && (B.Pad_Type == 'SMD' && B.NetName == 'GND' && (B.Pad_Number == 'A1' || B.Pad_Number == 'B12' || B.Pad_Number == 'A12' || B.Pad_Number == 'B1'))) || ((B.Pad_Type == 'NPTH, mechanical' && B.Pad_Number == '' && B.Hole_Size_X == 0.65mm && B.Hole_Size_Y == 0.65mm) && (A.Pad_Type == 'SMD' && A.NetName == 'GND' && (A.Pad_Number == 'A1' || A.Pad_Number == 'B12' || A.Pad_Number == 'A12' || A.Pad_Number == 'B1')))) && ((((A.Position_X-B.Position_X) == 1.075mm || (B.Position_X-A.Position_X) == 1.075mm) && ((A.Position_Y-B.Position_Y) == 0.31mm || (B.Position_Y-A.Position_Y) == 0.31mm)) || (((A.Position_X-B.Position_X) == 0.31mm || (B.Position_X-A.Position_X) == 0.31mm) && ((A.Position_Y-B.Position_Y) == 1.075mm || (B.Position_Y-A.Position_Y) == 1.075mm)))")
+ (constraint hole_clearance (min 0.15mm)))

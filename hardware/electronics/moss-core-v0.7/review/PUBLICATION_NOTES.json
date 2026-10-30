@@ -1,0 +1,10 @@
+{
+  "PCB_bytes_unchanged": true,
+  "PCB_sha256": "3fdbd54e1b858c0d1bfd9ce2af361dc4c660273fec9b26b3768d296a7c1e1fe8",
+  "schematic_and_footprint_bytes_unchanged": true,
+  "all_44_native_board_3D_model_files_bundled": true,
+  "library_default_3D_models": "Some footprint-library defaults refer to KiCad10 system models; the native PCB carries the reviewed package-local overrides. Do not blindly replace native-board model settings from library defaults.",
+  "reports_local_paths_replaced_by_package_relative_paths": true,
+  "private_supplier_information_included": false,
+  "manufacturing_CSV_line_endings": "Normalized CRLF to LF; fields and values unchanged"
+}

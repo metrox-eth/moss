@@ -1,0 +1,11 @@
+{
+  "status": "DIMENSIONED_VISUAL_NOT_MANUFACTURER_CAD",
+  "body_mm": [
+    10.86,
+    4.78,
+    4.78
+  ],
+  "MPN": "08853.15DR",
+  "source": "https://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_885_datasheet.pdf.pdf",
+  "terminal_shape": "simplified; footprint follows manufacturer land pattern"
+}

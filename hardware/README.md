@@ -12,6 +12,8 @@ See the [print catalogue](../3DPrinting.md), [BOM](../BOM.md) and [assembly guid
 
 ## Electronics prototypes
 
-[MOSS Core V1D](electronics/moss-core-v1d/) is the current routed design review: editable KiCad files, schematics, BOM, connector guide and static review evidence. **Draft only: not approved for fabrication or assembly.** Rover fit and hardware validation remain pending.
+[MOSS CORE V0.7 — Rev D](electronics/moss-core-v0.7/) is the current community design review: editable KiCad files, component views, grouped BOM, connector guide, Gerbers and static review evidence. It adds the Orange Pi power module, per-motor current sensing and fan outputs, with corrected connector legends and a compact host-branch fuse. **Untested prototype: not production-ready or hardware-qualified.** Electrical, connector and real-load review is welcome.
+
+[MOSS Core V1D](electronics/moss-core-v1d/) is retained as the previous routed design review. Its assumptions and package are historical; it is not the current V0.7 design.
 
 [V1C](electronics/moss-core-v1c/) is retained for traceability and **must not be fabricated** because of a physical-pin mapping error; see the [critical erratum](electronics/moss-core-v1d/V1C_CRITICAL_ERRATA.txt).
