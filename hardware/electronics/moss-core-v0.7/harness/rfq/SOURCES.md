@@ -1,0 +1,16 @@
+# Sources
+
+- [S1: Arduitronics RU00129: motor kit, photos and specification image](https://www.arduitronics.com/product/6047/)
+- [S2: Yijia LA16: contact diagram p1; 22ZS/A selection p3](https://yijiabutton.com/wp-content/uploads/2023/10/28.-YJ-LA16-Specification.pdf)
+- [S3: Molex PicoBlade mating drawing: 51047 + 51021, p2](https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/510/51047/510470400_sd.pdf)
+- [S4: Molex female terminal: 50058-8000](https://www.molex.com/en-us/products/part-detail/500588000)
+- [S5: Molex male terminal: 50133-8000](https://www.molex.com/en-us/products/part-detail/501338000)
+- [S6: JST SH and GH connector specifications](https://www.jst-mfg.com/product/pdf/eng/eSH.pdf)
+- [S7: JST GH terminal and insulation range](https://www.jst-mfg.com/product/pdf/eng/eGH.pdf)
+- [S8: Cytron MDD10A official product/manual](https://www.cytron.io/p-10amp-5v-30v-dc-motor-driver-2-channels)
+- [S9: Phoenix 1715721 terminals](https://www.phoenixcontact.com/en-pc/products/pcb-terminal-block-mkds-15-2-508-1715721)
+- [S10: AMASS XT30U](https://www.china-amass.com/biao/649.html)
+- [S11: JST PH: speaker termination](https://www.jst-mfg.com/product/pdf/eng/ePH.pdf)
+- [S12: JST XH: fan termination](https://www.jst-mfg.com/product/pdf/eng/eXH.pdf)
+- [S13: Molex arm housing drawing](https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/526/5264/050375023_sd.pdf)
+- [S14: Molex arm contact drawing](https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/526/5263/008701039_sd.pdf)

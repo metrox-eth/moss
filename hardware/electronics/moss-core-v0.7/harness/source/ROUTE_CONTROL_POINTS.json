@@ -251,7 +251,7 @@
     ],
     "sleeve": true,
     "lid": false,
-    "notes": "Four signal wires share the physical six-way motor plug with two power leads. Owner confirmed the current motor uses the workshop-photo connector. Vendor, pinout and mounting clocking remain unverified."
+    "notes": "Retain the six-wire pigtail supplied with Arduitronics RU00129. Encoder functions share one motor plug with M1/M2. See INTERFACE_VERIFICATION.md for the first-article continuity map."
   },
   {
     "id": "H05",
@@ -324,7 +324,7 @@
     ],
     "sleeve": true,
     "lid": false,
-    "notes": "Four signal wires share the physical six-way motor plug with two power leads. Owner confirmed the current motor uses the workshop-photo connector. Vendor, pinout and mounting clocking remain unverified."
+    "notes": "Retain the six-wire pigtail supplied with Arduitronics RU00129. Encoder functions share one motor plug with M1/M2. See INTERFACE_VERIFICATION.md for the first-article continuity map."
   },
   {
     "id": "H06a",
@@ -688,17 +688,17 @@
       ],
       [
         21,
-        89,
+        81,
         61
       ],
       [
         18,
-        82,
+        74,
         58
       ]
     ],
     "conductors": 4,
-    "wire_od_mm": 0.8,
+    "wire_od_mm": 0.7,
     "colours": [
       "#347ba1",
       "#eeeeea",
@@ -707,7 +707,7 @@
     ],
     "sleeve": true,
     "lid": false,
-    "notes": "Inline disconnect near STOP button. Closed-lid route includes service loop. Candidate connector geometry only."
+    "notes": "PicoBlade 51021/51047 four-way disconnect near STOP. Closed-lid service loop; 28 AWG, insulation OD 0.50-0.80 mm."
   },
   {
     "id": "H08_lid",
@@ -716,7 +716,7 @@
     "control_points_mm": [
       [
         18,
-        57.23,
+        65,
         58
       ],
       [
@@ -766,7 +766,7 @@
       ]
     ],
     "conductors": 4,
-    "wire_od_mm": 0.8,
+    "wire_od_mm": 0.7,
     "colours": [
       "#347ba1",
       "#eeeeea",
@@ -775,7 +775,7 @@
     ],
     "sleeve": true,
     "lid": true,
-    "notes": "Moves with lid after unplugging. Service loop above battery provides slack to lift lid and reach latch. Two independent NC circuits; actual switch contacts unresolved. Uses rounded divider notch."
+    "notes": "Moves with lid after unplugging. Service loop above battery provides slack to lift lid and reach latch. Two independent NC circuits; documented new-kit switch YJ-LA16-22ZS/A. Existing unmarked switch requires continuity identification. Uses rounded divider notch."
   },
   {
     "id": "O01",

@@ -121,7 +121,7 @@ def add_models(add,box):
         rid='H04' if side=='left' else 'H05'
         add(f'CONNECTOR__{rid}__motor_six_way_plug',transform(p,d['outlet'],d['row'],d['out']),WHITE,'CONNECTOR',rid)
         records.append({'ref':'motor_'+side,'family':'XH-style visual match; exact vendor unverified','circuits':6,'pitch_mm':2.5,'housing_width_mm':17.3,'wire_exit_world_mm':d['outlet'],
-            'evidence':'Owner confirmed same six-wire plug as 20 September workshop photographs. Native KiCad S6B-XH header is a visual reference, not a vendor identification. Circuit order and clocking remain to verify.'})
+            'evidence':'Arduitronics RU00129 product photos and MOSS workshop photos show the same six-wire interface. Retain the supplied pigtail. KiCad XH geometry is a visual reference, not a purchasing identification.'})
     # Cytron control header: one 5-way cable connector over the native 5 pins.
     m=cached('Cytron_control_5',lambda:housing(5,2.54,12.7,8.5,3.4,4.7,1.05))
     add('CONNECTOR__H03__Cytron_five_way',transform(m,[-124,39.359,65.4],[1,0,0],[0,0,1]),WHITE,'CONNECTOR','H03')
@@ -142,18 +142,23 @@ def add_models(add,box):
     add('CONNECTOR__H01__Core_XT30_cable',transform(xt,[-55.5,50.1,14.995],[1,0,0],[0,1,0]),YELLOW,'CONNECTOR','H01')
     for key,outlet,direction in [('loom',[82,60,62],[-1,0,0]),('pack',[103,60,62],[1,0,0])]:
         add(f'CONNECTOR__H01__battery_XT30_{key}',transform(xt,outlet,[0,1,0],direction),YELLOW,'CONNECTOR','H01')
-    # Correct full mated length of the proposed four-way lid disconnect: 24.77mm.
-    # Centre interface Y=68.0, two bodies with four 3mm-spaced cavities.
-    for label,origin,out,group,rid,L in [
-        ('chassis',[18,82,58],[0,1,0],'CONNECTOR','H08_chassis',14),
-        ('lid',[18,57.23,58],[0,-1,0],'LIDCONNECTOR','H08_lid',10.77)]:
-        s=block(6.85,L,6.85,(0,-L/2,0))
-        for x in [-1.5,1.5]:
-            for z in [-1.5,1.5]:s=s.cut(cq.Solid.makeCylinder(.72,L+1,cq.Vector(x,.5,z),cq.Vector(0,-1,0)))
-        add(f'{group}__{rid}__MicroFit4_{label}',transform(shape_mesh(s),origin,[1,0,0],out),BLACK,group,rid)
-        latch=block(3.7,7,1,(0,-L*.6,3.85))
-        add(f'{group}__{rid}__MicroFit4_latch',transform(shape_mesh(latch),origin,[1,0,0],out),BLACK,group,rid)
-    records.append({'ref':'X08','family':'Molex Micro-Fit 3.0 four-way candidate','mated_axial_length_mm':24.77,'evidence':'Molex 43025-0400 public drawing. Contacts/wire insulation transition remain an RFQ item; not fabrication-ready.'})
+    # PicoBlade 51047/51021: official drawing gives 9 mm mated length.
+    # Simplified shell and inserted receptacle; 6.75 mm width, 1.25 mm pitch.
+    shell=block(6.75,8,3.3,(0,-4,0))
+    shell=shell.cut(block(5.55,4,2.45,(0,-.95,0)))
+    for x in [-1.25,1.25]:shell=shell.cut(block(.8,1.8,1,(x,-2,1.5)))
+    for i in range(4):
+        x=(i-1.5)*1.25
+        shell=shell.cut(cq.Solid.makeCylinder(.38,9,cq.Vector(x,.5,0),cq.Vector(0,-1,0)))
+    add('LIDCONNECTOR__H08_lid__PicoBlade_51047',transform(shape_mesh(shell),[18,65,58],[1,0,0],[0,-1,0]),WHITE,'LIDCONNECTOR','H08_lid')
+    recept=block(6.75,1,3.2,(0,-.5,0)).fuse(block(5.45,2.95,2.3,(0,-2.475,0)))
+    for i in range(4):
+        recept=recept.cut(cq.Solid.makeCylinder(.38,5,cq.Vector((i-1.5)*1.25,.5,0),cq.Vector(0,-1,0)))
+    add('CONNECTOR__H08_chassis__PicoBlade_51021',transform(shape_mesh(recept),[18,74,58],[1,0,0],[0,1,0]),WHITE,'CONNECTOR','H08_chassis')
+    records.append({'ref':'X08','family':'Molex PicoBlade 4-way','mated_axial_length_mm':9,'pitch_mm':1.25,'housing_width_mm':6.75,
+        'housings':['51021-0400','51047-0400'],'contacts':['50058-8000','50133-8000'],
+        'wire_spec':'28 AWG; insulation OD 0.50-0.80 mm including tolerance',
+        'evidence':'Molex 510470000-SD page 2 confirms mating pair and 9 mm length. Connector contacts and JST SH accept the selected wire range; simplified visual shell.'})
     return records
 
 def context_models(add,box,tube,curve):

@@ -164,7 +164,7 @@
         7.8,
         22.614
       ],
-      "evidence": "Owner confirmed same six-wire plug as 20 September workshop photographs. Native KiCad S6B-XH header is a visual reference, not a vendor identification. Circuit order and clocking remain to verify."
+      "evidence": "Arduitronics RU00129 product photos and MOSS workshop photos show the same six-wire interface. Retain the supplied pigtail. KiCad XH geometry is a visual reference, not a purchasing identification."
     },
     {
       "ref": "motor_right",
@@ -177,13 +177,24 @@
         -7.8,
         22.614
       ],
-      "evidence": "Owner confirmed same six-wire plug as 20 September workshop photographs. Native KiCad S6B-XH header is a visual reference, not a vendor identification. Circuit order and clocking remain to verify."
+      "evidence": "Arduitronics RU00129 product photos and MOSS workshop photos show the same six-wire interface. Retain the supplied pigtail. KiCad XH geometry is a visual reference, not a purchasing identification."
     },
     {
       "ref": "X08",
-      "family": "Molex Micro-Fit 3.0 four-way candidate",
-      "mated_axial_length_mm": 24.77,
-      "evidence": "Molex 43025-0400 public drawing. Contacts/wire insulation transition remain an RFQ item; not fabrication-ready."
+      "family": "Molex PicoBlade 4-way",
+      "mated_axial_length_mm": 9,
+      "pitch_mm": 1.25,
+      "housing_width_mm": 6.75,
+      "housings": [
+        "51021-0400",
+        "51047-0400"
+      ],
+      "contacts": [
+        "50058-8000",
+        "50133-8000"
+      ],
+      "wire_spec": "28 AWG; insulation OD 0.50-0.80 mm including tolerance",
+      "evidence": "Molex 510470000-SD page 2 confirms mating pair and 9 mm length. Connector contacts and JST SH accept the selected wire range; simplified visual shell."
     }
   ]
 }

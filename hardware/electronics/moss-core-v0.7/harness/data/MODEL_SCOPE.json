@@ -1,8 +1,8 @@
 {
   "board_sha256": "cffb4a378502802a778fcee618310e6f3fa5c49ad201b0c372728368ae3520d1",
   "routes": 20,
-  "scene_meshes": 424,
-  "triangles": 1603761,
+  "scene_meshes": 422,
+  "triangles": 1605033,
   "units_GLTF": "metres",
   "units_source": "mm",
   "conceptual_geometry": [

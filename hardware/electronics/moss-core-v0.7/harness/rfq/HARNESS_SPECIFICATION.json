@@ -1,0 +1,408 @@
+{
+  "title": "MOSS CORE V0.7 - Harness prototype RFQ",
+  "date": "2026-10-31",
+  "status": "PROTOTYPE_QUOTATION_NOT_PRODUCTION_RELEASE",
+  "board_sha256": "cffb4a378502802a778fcee618310e6f3fa5c49ad201b0c372728368ae3520d1",
+  "quantities_kits": [
+    2,
+    10,
+    50,
+    100
+  ],
+  "length_basis": "Connector wire-exit to wire-exit, measured along the relaxed cable. Each quote span is the longest CAD conductor plus 20 mm, rounded up to 5 mm. Manufacturing cut/strip/contact engagement allowances are added by the assembler, not included in this free span. Prototype target tolerance +/-5 mm. Physical routing to be checked on first article.",
+  "cables": [
+    {
+      "id": "H01",
+      "function": "Battery supply",
+      "conductors": 2,
+      "cad_centreline_mm": 173.5,
+      "cad_longest_conductor_mm": 174.6,
+      "prototype_free_span_mm": 195,
+      "wire": "16 AWG"
+    },
+    {
+      "id": "H02",
+      "function": "Cytron supply",
+      "conductors": 2,
+      "cad_centreline_mm": 111.5,
+      "cad_longest_conductor_mm": 115.9,
+      "prototype_free_span_mm": 140,
+      "wire": "16 AWG"
+    },
+    {
+      "id": "H03",
+      "function": "Cytron control",
+      "conductors": 5,
+      "cad_centreline_mm": 138.1,
+      "cad_longest_conductor_mm": 141.7,
+      "prototype_free_span_mm": 165,
+      "wire": "26 AWG / OD 0.76-1.00 mm"
+    },
+    {
+      "id": "H04",
+      "function": "Left encoder",
+      "conductors": 4,
+      "cad_centreline_mm": 123.1,
+      "cad_longest_conductor_mm": 126.2,
+      "prototype_free_span_mm": 150,
+      "wire": "26 AWG / OD 0.76-1.00 mm"
+    },
+    {
+      "id": "H05",
+      "function": "Right encoder",
+      "conductors": 4,
+      "cad_centreline_mm": 169.0,
+      "cad_longest_conductor_mm": 172.7,
+      "prototype_free_span_mm": 195,
+      "wire": "26 AWG / OD 0.76-1.00 mm"
+    },
+    {
+      "id": "H06a",
+      "function": "Left motor / shunt input",
+      "conductors": 1,
+      "cad_centreline_mm": 103.3,
+      "cad_longest_conductor_mm": 103.3,
+      "prototype_free_span_mm": 125,
+      "wire": "16 AWG"
+    },
+    {
+      "id": "H06b",
+      "function": "Left motor / shunt output",
+      "conductors": 1,
+      "cad_centreline_mm": 44.6,
+      "cad_longest_conductor_mm": 44.6,
+      "prototype_free_span_mm": 65,
+      "wire": "16 AWG main leg; stock motor tail"
+    },
+    {
+      "id": "H06c",
+      "function": "Left motor / direct return",
+      "conductors": 1,
+      "cad_centreline_mm": 126.6,
+      "cad_longest_conductor_mm": 126.6,
+      "prototype_free_span_mm": 150,
+      "wire": "16 AWG main leg; stock motor tail"
+    },
+    {
+      "id": "H07a",
+      "function": "Right motor / shunt input",
+      "conductors": 1,
+      "cad_centreline_mm": 68.9,
+      "cad_longest_conductor_mm": 68.9,
+      "prototype_free_span_mm": 90,
+      "wire": "16 AWG"
+    },
+    {
+      "id": "H07b",
+      "function": "Right motor / shunt output",
+      "conductors": 1,
+      "cad_centreline_mm": 119.7,
+      "cad_longest_conductor_mm": 119.7,
+      "prototype_free_span_mm": 140,
+      "wire": "16 AWG main leg; stock motor tail"
+    },
+    {
+      "id": "H07c",
+      "function": "Right motor / direct return",
+      "conductors": 1,
+      "cad_centreline_mm": 146.9,
+      "cad_longest_conductor_mm": 146.9,
+      "prototype_free_span_mm": 170,
+      "wire": "16 AWG main leg; stock motor tail"
+    },
+    {
+      "id": "H08_chassis",
+      "function": "STOP / chassis half",
+      "conductors": 4,
+      "cad_centreline_mm": 325.4,
+      "cad_longest_conductor_mm": 329.0,
+      "prototype_free_span_mm": 350,
+      "wire": "28 AWG / OD 0.50-0.80 mm"
+    },
+    {
+      "id": "H08_lid",
+      "function": "STOP / removable lid tail",
+      "conductors": 4,
+      "cad_centreline_mm": 127.8,
+      "cad_longest_conductor_mm": 131.1,
+      "prototype_free_span_mm": 155,
+      "wire": "28 AWG / OD 0.50-0.80 mm"
+    },
+    {
+      "id": "O01",
+      "function": "Arm bus input",
+      "conductors": 3,
+      "cad_centreline_mm": 235.3,
+      "cad_longest_conductor_mm": 238.8,
+      "prototype_free_span_mm": 260,
+      "wire": "Existing device cable / optional adapter"
+    },
+    {
+      "id": "O02",
+      "function": "Speaker lead",
+      "conductors": 2,
+      "cad_centreline_mm": 64.1,
+      "cad_longest_conductor_mm": 64.5,
+      "prototype_free_span_mm": 85,
+      "wire": "Existing device cable / optional adapter"
+    },
+    {
+      "id": "O03_left",
+      "function": "Left cooling fan",
+      "conductors": 2,
+      "cad_centreline_mm": 248.7,
+      "cad_longest_conductor_mm": 250.2,
+      "prototype_free_span_mm": 275,
+      "wire": "Existing device cable / optional adapter"
+    },
+    {
+      "id": "O03_right",
+      "function": "Right cooling fan",
+      "conductors": 2,
+      "cad_centreline_mm": 148.5,
+      "cad_longest_conductor_mm": 149.3,
+      "prototype_free_span_mm": 170,
+      "wire": "Existing device cable / optional adapter"
+    }
+  ],
+  "core_connections": [
+    [
+      "J10",
+      "1 GND / 2 BAT_PROTECTED",
+      "Battery - / fused battery +"
+    ],
+    [
+      "J11",
+      "1 ACTUATOR_SW / 2 GND",
+      "Cytron POWER + / -"
+    ],
+    [
+      "J12",
+      "1 CYTRON_L_LEAD / 2 MOTOR_L_LEAD",
+      "Cytron M1A -> J12.1; J12.2 -> left motor M1"
+    ],
+    [
+      "J13",
+      "1 CYTRON_R_LEAD / 2 MOTOR_R_LEAD",
+      "Cytron M2A -> J13.1; J13.2 -> right motor M1"
+    ],
+    [
+      "J2",
+      "1 MDD_PWM1 / 2 MDD_DIR1 / 3 MDD_PWM2 / 4 MDD_DIR2 / 5 GND",
+      "Match named Cytron control signals; retain its supplied five-way 2510 housing"
+    ],
+    [
+      "J3",
+      "1 GND / 2 ENC_3V3 / 3 EL_A_EXT / 4 EL_B_EXT",
+      "Left encoder: GND / VCC / channel A / channel B"
+    ],
+    [
+      "J4",
+      "1 GND / 2 ENC_3V3 / 3 ER_A_EXT / 4 ER_B_EXT",
+      "Right encoder: GND / VCC / channel A / channel B"
+    ],
+    [
+      "J5",
+      "1 SERVO_BUS / 2 ACTUATOR_SW / 3 GND",
+      "Existing three-wire arm chain; optional adapter only"
+    ],
+    [
+      "J7",
+      "1 SPEAKER_P / 2 SPEAKER_N",
+      "Speaker + / -; neither output is ground"
+    ],
+    [
+      "J14",
+      "1 FAN_3S / 2 GND",
+      "Fan positive / negative"
+    ],
+    [
+      "J15",
+      "1 FAN_3S / 2 GND",
+      "Fan positive / negative"
+    ]
+  ],
+  "stop_connections": [
+    [
+      "J8.1",
+      "ESTOP_CUT_SOURCE",
+      "1",
+      "C1",
+      "blue"
+    ],
+    [
+      "J8.2",
+      "ESTOP_CUT_RETURN",
+      "2",
+      "NC1",
+      "white"
+    ],
+    [
+      "J8.5",
+      "ESTOP_STATUS_SOURCE",
+      "3",
+      "C2",
+      "green"
+    ],
+    [
+      "J8.6",
+      "ESTOP_STATUS_RAW",
+      "4",
+      "NC2",
+      "yellow"
+    ]
+  ],
+  "connector_parts": [
+    [
+      "J2",
+      "1 x GHR-05V-S",
+      "5 x SSHL-002T-P0.2",
+      "26 AWG; OD 0.76-1.00 mm"
+    ],
+    [
+      "J3/J4",
+      "2 x GHR-04V-S",
+      "8 x SSHL-002T-P0.2",
+      "26 AWG; OD 0.76-1.00 mm"
+    ],
+    [
+      "J8",
+      "1 x SHR-06V-S",
+      "4 x SSH-003T-P0.2-H",
+      "28 AWG; populate 1,2,5,6 only"
+    ],
+    [
+      "X08 chassis",
+      "1 x 51021-0400",
+      "4 x 50058-8000",
+      "28 AWG; OD 0.50-0.80 mm"
+    ],
+    [
+      "X08 lid",
+      "1 x 51047-0400",
+      "4 x 50133-8000",
+      "28 AWG; OD 0.50-0.80 mm"
+    ],
+    [
+      "J10 extension",
+      "1 x XT30U-F; 1 x XT30U-M",
+      "Integrated solder cups",
+      "16 AWG; omit if existing lead reaches"
+    ],
+    [
+      "J11-J13",
+      "Existing Phoenix 1715721 blocks",
+      "6 Core-side single-wire ferrules",
+      "16 AWG (1.31 mm2); one wire per cavity"
+    ],
+    [
+      "Motor ends",
+      "2 x supplied RU00129 pigtails",
+      "Preserve original crimps",
+      "Factory transitions to main loom"
+    ],
+    [
+      "Cytron control",
+      "Supplied 5-way 2510 housing",
+      "Retain factory lead or qualified retermination",
+      "Follow printed signal names, not Core pin order"
+    ]
+  ],
+  "sources": [
+    [
+      "S1",
+      "Arduitronics RU00129: motor kit, photos and specification image",
+      "https://www.arduitronics.com/product/6047/"
+    ],
+    [
+      "S2",
+      "Yijia LA16: contact diagram p1; 22ZS/A selection p3",
+      "https://yijiabutton.com/wp-content/uploads/2023/10/28.-YJ-LA16-Specification.pdf"
+    ],
+    [
+      "S3",
+      "Molex PicoBlade mating drawing: 51047 + 51021, p2",
+      "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/510/51047/510470400_sd.pdf"
+    ],
+    [
+      "S4",
+      "Molex female terminal: 50058-8000",
+      "https://www.molex.com/en-us/products/part-detail/500588000"
+    ],
+    [
+      "S5",
+      "Molex male terminal: 50133-8000",
+      "https://www.molex.com/en-us/products/part-detail/501338000"
+    ],
+    [
+      "S6",
+      "JST SH and GH connector specifications",
+      "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf"
+    ],
+    [
+      "S7",
+      "JST GH terminal and insulation range",
+      "https://www.jst-mfg.com/product/pdf/eng/eGH.pdf"
+    ],
+    [
+      "S8",
+      "Cytron MDD10A official product/manual",
+      "https://www.cytron.io/p-10amp-5v-30v-dc-motor-driver-2-channels"
+    ],
+    [
+      "S9",
+      "Phoenix 1715721 terminals",
+      "https://www.phoenixcontact.com/en-pc/products/pcb-terminal-block-mkds-15-2-508-1715721"
+    ],
+    [
+      "S10",
+      "AMASS XT30U",
+      "https://www.china-amass.com/biao/649.html"
+    ],
+    [
+      "S11",
+      "JST PH: speaker termination",
+      "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
+    ],
+    [
+      "S12",
+      "JST XH: fan termination",
+      "https://www.jst-mfg.com/product/pdf/eng/eXH.pdf"
+    ],
+    [
+      "S13",
+      "Molex arm housing drawing",
+      "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/526/5264/050375023_sd.pdf"
+    ],
+    [
+      "S14",
+      "Molex arm contact drawing",
+      "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/526/5263/008701039_sd.pdf"
+    ]
+  ],
+  "stock_motor_policy": "Retain the six-wire pigtails supplied with Arduitronics RU00129. Trace them unpowered to M1/M2, GND/VCC and C1/C2 markings; record cavity map, gauge, OD, then freeze the factory wirelist. No OEM attribution or generic connector substitution.",
+  "stop_policy": "Quote YJ-LA16-22ZS/A red non-illuminated, factory-wired to C1-NC1 and C2-NC2. Existing unmarked button may be reused only after the same two NC loops are identified by continuity.",
+  "inline_spec": {
+    "housings": [
+      "51021-0400",
+      "51047-0400"
+    ],
+    "contacts": [
+      "50058-8000",
+      "50133-8000"
+    ],
+    "awg": 28,
+    "insulation_od_mm": [
+      0.5,
+      0.8
+    ],
+    "retention": "polarized friction retention; strain relief required"
+  },
+  "first_article_records": [
+    "Motor pigtail cavity/function map and wire dimensions",
+    "Two independent STOP NC pairs, tested released/pressed/disconnected",
+    "All connector mating and polarity checks",
+    "Closed-lid fit, service-loop access, retained USB cable storage",
+    "Electrical continuity/short test and factory crimp/splice process records"
+  ]
+}

@@ -1,10 +1,10 @@
 {
   "status": "SPARSE_TRIANGLE_PROXIMITY_SCREEN_NOT_CLEARANCE_CERTIFICATION",
-  "source_routes_sha256": "ced60cb6321cad7a4edc1983807427f520afecd069c392940326b95cadebba9a",
+  "source_routes_sha256": "8587f274812148099d6674957daa11994bdb6f4c3a333880cc77aee5fe719955",
   "source_meshes": {
-    "NON_CORE_CONTEXT_MESH.npz": "29296106b2c57635a61626e6f6f56fbeedc2d9d5eae4600abe3b142734f80da7",
-    "current_core_mesh.npz": "665663e1beb9b703f6ff8576e94d62e3a006792900e47b1d777766b186ec45ae",
-    "HULL_WITH_TIES_AND_NOTCH.npz": "adb02e3b1274cd7bfc3b2bda10c50846400bf657b9402ac728c1cf2146ec9802"
+    "assets/NON_CORE_CONTEXT_MESH.npz": "29296106b2c57635a61626e6f6f56fbeedc2d9d5eae4600abe3b142734f80da7",
+    "assets/current_core_mesh.npz": "665663e1beb9b703f6ff8576e94d62e3a006792900e47b1d777766b186ec45ae",
+    "assets/HULL_WITH_TIES_AND_NOTCH.npz": "adb02e3b1274cd7bfc3b2bda10c50846400bf657b9402ac728c1cf2146ec9802"
   },
   "method": "All provided spline sample points after trimming first/last12mm; vtkStaticCellLocator exact nearest triangle distance. Surface gap=distance-radius. Sleeve radius active13mm<s<L-16mm; otherwise radius includes conductor center offset and insulation. Sparse surface tests, not solid containment/Boolean proof.",
   "omitted": [
@@ -43,22 +43,22 @@
       "label": "STOP / chassis half",
       "obstacle": "Hull",
       "sample_index": 292,
-      "distance_along_route_mm": 257.435,
+      "distance_along_route_mm": 257.175,
       "point_mm": [
         18.0,
-        65.1679,
-        11.1402
+        64.9095,
+        11.1128
       ],
       "closest_mesh_point_mm": [
         18.0,
-        65.168,
+        65.0,
         9.113
       ],
-      "center_to_surface_mm": 2.027,
-      "modeled_radius_mm": 1.47,
-      "surface_gap_mm": 0.557,
+      "center_to_surface_mm": 2.0017,
+      "modeled_radius_mm": 1.33,
+      "surface_gap_mm": 0.6717,
       "sample_count_intersecting_radius": 0,
-      "sample_count_checked": 344
+      "sample_count_checked": 343
     },
     {
       "route": "H01",
@@ -83,28 +83,6 @@
       "sample_count_checked": 67
     },
     {
-      "route": "H08_lid",
-      "label": "STOP / removable lid tail",
-      "obstacle": "Hull",
-      "sample_index": 32,
-      "distance_along_route_mm": 27.118,
-      "point_mm": [
-        32.1731,
-        66.7669,
-        62.0766
-      ],
-      "closest_mesh_point_mm": [
-        32.0,
-        69.0,
-        62.077
-      ],
-      "center_to_surface_mm": 2.2398,
-      "modeled_radius_mm": 1.47,
-      "surface_gap_mm": 0.7698,
-      "sample_count_intersecting_radius": 0,
-      "sample_count_checked": 108
-    },
-    {
       "route": "O01",
       "label": "Arm bus input",
       "obstacle": "Hull",
@@ -125,6 +103,28 @@
       "surface_gap_mm": 0.8435,
       "sample_count_intersecting_radius": 0,
       "sample_count_checked": 238
+    },
+    {
+      "route": "H08_lid",
+      "label": "STOP / removable lid tail",
+      "obstacle": "Hull",
+      "sample_index": 40,
+      "distance_along_route_mm": 34.45,
+      "point_mm": [
+        31.9077,
+        66.7343,
+        62.0755
+      ],
+      "closest_mesh_point_mm": [
+        31.908,
+        69.0,
+        62.075
+      ],
+      "center_to_surface_mm": 2.2657,
+      "modeled_radius_mm": 1.33,
+      "surface_gap_mm": 0.9357,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 120
     },
     {
       "route": "U02",
@@ -215,28 +215,6 @@
       "sample_count_checked": 72
     },
     {
-      "route": "H08_lid",
-      "label": "STOP / removable lid tail",
-      "obstacle": "Closed_upper_cover",
-      "sample_index": 119,
-      "distance_along_route_mm": 103.147,
-      "point_mm": [
-        66.4861,
-        73.4315,
-        62.5691
-      ],
-      "closest_mesh_point_mm": [
-        66.546,
-        73.463,
-        66.0
-      ],
-      "center_to_surface_mm": 3.4316,
-      "modeled_radius_mm": 1.47,
-      "surface_gap_mm": 1.9616,
-      "sample_count_intersecting_radius": 0,
-      "sample_count_checked": 108
-    },
-    {
       "route": "H01",
       "label": "Battery supply",
       "obstacle": "Hull",
@@ -257,6 +235,28 @@
       "surface_gap_mm": 1.9976,
       "sample_count_intersecting_radius": 0,
       "sample_count_checked": 173
+    },
+    {
+      "route": "H08_lid",
+      "label": "STOP / removable lid tail",
+      "obstacle": "Closed_upper_cover",
+      "sample_index": 127,
+      "distance_along_route_mm": 110.69,
+      "point_mm": [
+        66.5423,
+        73.431,
+        62.5646
+      ],
+      "closest_mesh_point_mm": [
+        66.558,
+        73.439,
+        66.0
+      ],
+      "center_to_surface_mm": 3.4355,
+      "modeled_radius_mm": 1.33,
+      "surface_gap_mm": 2.1055,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 120
     },
     {
       "route": "H05",
@@ -457,28 +457,6 @@
       "sample_count_checked": 17
     },
     {
-      "route": "H08_chassis",
-      "label": "STOP / chassis half",
-      "obstacle": "Core",
-      "sample_index": 62,
-      "distance_along_route_mm": 54.912,
-      "point_mm": [
-        -78.8401,
-        -40.8579,
-        15.3131
-      ],
-      "closest_mesh_point_mm": [
-        -77.042,
-        -37.71,
-        11.56
-      ],
-      "center_to_surface_mm": 5.218,
-      "modeled_radius_mm": 1.47,
-      "surface_gap_mm": 3.748,
-      "sample_count_intersecting_radius": 0,
-      "sample_count_checked": 8
-    },
-    {
       "route": "H05",
       "label": "Right encoder",
       "obstacle": "Hull",
@@ -499,6 +477,28 @@
       "surface_gap_mm": 3.7804,
       "sample_count_intersecting_radius": 0,
       "sample_count_checked": 164
+    },
+    {
+      "route": "H08_chassis",
+      "label": "STOP / chassis half",
+      "obstacle": "Core",
+      "sample_index": 62,
+      "distance_along_route_mm": 54.852,
+      "point_mm": [
+        -78.8708,
+        -40.8103,
+        15.3326
+      ],
+      "closest_mesh_point_mm": [
+        -77.042,
+        -37.71,
+        11.56
+      ],
+      "center_to_surface_mm": 5.2142,
+      "modeled_radius_mm": 1.33,
+      "surface_gap_mm": 3.8842,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 8
     },
     {
       "route": "H04",
@@ -1102,22 +1102,22 @@
       "label": "STOP / chassis half",
       "obstacle": "Hull",
       "sample_index": 292,
-      "distance_along_route_mm": 257.435,
+      "distance_along_route_mm": 257.175,
       "point_mm": [
         18.0,
-        65.1679,
-        11.1402
+        64.9095,
+        11.1128
       ],
       "closest_mesh_point_mm": [
         18.0,
-        65.168,
+        65.0,
         9.113
       ],
-      "center_to_surface_mm": 2.027,
-      "modeled_radius_mm": 1.47,
-      "surface_gap_mm": 0.557,
+      "center_to_surface_mm": 2.0017,
+      "modeled_radius_mm": 1.33,
+      "surface_gap_mm": 0.6717,
       "sample_count_intersecting_radius": 0,
-      "sample_count_checked": 344
+      "sample_count_checked": 343
     },
     {
       "route": "H01",
@@ -1164,6 +1164,6 @@
       "sample_count_checked": 11
     }
   ],
-  "elapsed_seconds": 0.51,
+  "elapsed_seconds": 0.54,
   "hull_geometry": "Current five-anchor hull with rounded divider wire notch, replacing Hull_V07 from context archive."
 }

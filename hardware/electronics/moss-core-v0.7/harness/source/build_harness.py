@@ -32,8 +32,8 @@ route('H06c','Left motor / direct return',None,[[-137,-43,54],[-135,-55,53],[-11
 route('H07a','Right motor / shunt input','J13',[[-84,-23,18],[-90,-40,29],[-100,-51,47]],[-114,-43,54],1,2.6,['#347ba1'])
 route('H07b','Right motor / shunt output',None,[[-81.405,-25.535,16.395],[-87,-24,18],[-94,-13,19],[-111,-4,20]],[-128,-8,22.6],1,2.6,['#347ba1'])
 route('H07c','Right motor / direct return',None,[[-117,-43,54],[-111,-50,47],[-96,-42,30],[-96,-12,23],[-114,-2,24]],[-132,-8,23.5],1,2.6,['#d9dfdf'])
-route('H08_chassis','STOP / chassis half','J8',[[-73.6,.1,23],[-82,-3,24],[-84,-28,20],[-76,-44,14],[-48,-45,12.3],[-10,-45,12.2],[13,-42,13],[18,-25,12.3],[18,10,12.3],[18,38,12.3],[18,70,12.3],[18,85,28],[16,85,48]], [18,80,57],4,.8,['#347ba1','#eeeeea','#2e8b6e','#d6b648'],notes='Inline disconnect near STOP button. Closed-lid route includes service loop. Candidate connector geometry only.')
-route('H08_lid','STOP / removable lid tail',None,[[18,65,57],[21,65,61],[29,66,62],[41,66,62],[47,58,62],[72,58,62],[82,65,62],[76,72,62],[58,72,64]], [57,65,68],4,.8,['#347ba1','#eeeeea','#2e8b6e','#d6b648'],lid=True,notes='Moves with lid after unplugging. Service loop above battery provides slack to lift lid and reach latch. Two independent NC circuits; actual switch contacts unresolved. Uses rounded divider notch.')
+route('H08_chassis','STOP / chassis half','J8',[[-73.6,.1,23],[-82,-3,24],[-84,-28,20],[-76,-44,14],[-48,-45,12.3],[-10,-45,12.2],[13,-42,13],[18,-25,12.3],[18,10,12.3],[18,38,12.3],[18,70,12.3],[18,85,28],[16,85,48]], [18,80,57],4,.7,['#347ba1','#eeeeea','#2e8b6e','#d6b648'],notes='PicoBlade 51021/51047 four-way disconnect near STOP. Closed-lid service loop; 28 AWG, insulation OD 0.50-0.80 mm.')
+route('H08_lid','STOP / removable lid tail',None,[[18,65,57],[21,65,61],[29,66,62],[41,66,62],[47,58,62],[72,58,62],[82,65,62],[76,72,62],[58,72,64]], [57,65,68],4,.7,['#347ba1','#eeeeea','#2e8b6e','#d6b648'],lid=True,notes='Moves with lid after unplugging. Service loop above battery provides slack to lift lid and reach latch. Two independent NC circuits; documented new-kit switch YJ-LA16-22ZS/A. Existing unmarked switch requires continuity identification. Uses rounded divider notch.')
 route('O01','Arm bus input','J5',[[-58,-42,17],[-48,-47,17],[-10,-47,17],[19,-49,19],[28,-72,24],[73,-82,35],[111,-76,48]], [117,-45,67],3,1.6,['#d6b648','#bd302d','#20292c'],notes='Proposed arm-platform cable entry, not a verified existing passage. Arm harness stays on chassis; only the STOP tail moves with the removable lid. Existing servo chain retained.')
 route('O02','Speaker lead','J7',[[10,-26,17],[11,-42,17],[-6,-49,18],[-13,-58,19]], [-22,-61,18],2,1.2,notes='Speaker mating position is a reservation; reuse factory lead if suitable.')
 route('O03_left','Left cooling fan','J15',[[-27.75,-34.3,25],[-33,-44,22],[-55,-48,19],[-82,-47,20],[-85,-35,22],[-85,0,22],[-86,45,30],[-94,57,49],[-115,62,46],[-140,62,46],[-146,56,35]], [-148,53,25],2,1.0,notes='Proposed fan lead outlet; keep air aperture clear.')
@@ -58,9 +58,9 @@ change('H06c',[[-131.84,-45.4,54],[-131,-55,53],[-112,-57,46],[-94,-44,29],[-88,
 change('H07a',[[-81.405,-22.995,16.395],[-84,-23,18],[-90,-40,29],[-100,-52,47],[-116.84,-45.4,54]])
 change('H07b',[[-81.405,-25.535,16.395],[-88,-24,30],[-95,-5,29],[-108,-1,34],[-132,-1,34],[-151,-4,32],[-154,-7.8,21],[-142,-7.8,16.364]])
 change('H07c',[[-111.84,-45.4,54],[-109,-53,50],[-96,-42,34],[-92,-12,28],[-108,2,34],[-138,1,34],[-153,-7.8,33],[-142,-7.8,28.864]])
-# Disconnect remains near STOP, but now has the full 24.77mm mating envelope.
-rr['H08_chassis']['control_points_mm'][-3:]=[[18,83,27],[21,83,49],[21,89,61],[18,82,58]]
-rr['H08_lid']['control_points_mm'][0]=[18,57.23,58]
+# PicoBlade wire-to-wire pair: 9 mm mated length, 6.75 mm width.
+rr['H08_chassis']['control_points_mm'][-3:]=[[18,83,27],[21,83,49],[21,81,61],[18,74,58]]
+rr['H08_lid']['control_points_mm'][0]=[18,65,58]
 rr['H08_lid']['control_points_mm'][1]=[18,52,60]
 for rid in ['O03_left','O03_right']:
     rr[rid]['control_points_mm'][-1]=[-148,54 if rid=='O03_left' else -54,37]
@@ -73,7 +73,7 @@ rr['U03']['notes']='HB1 captive USB-A lead connected to the Orange Pi DATA USB-C
 for rid in ['H06b','H06c','H07b','H07c']:
     rr[rid]['notes']='Power leg changes to the existing thin six-way motor pigtail near the motor; the transition, gauge and terminal compatibility must be confirmed with the assembler. Visual wire order is not an electrical pinout.'
 for rid in ['H04','H05']:
-    rr[rid]['notes']='Four signal wires share the physical six-way motor plug with two power leads. Owner confirmed the current motor uses the workshop-photo connector. Vendor, pinout and mounting clocking remain unverified.'
+    rr[rid]['notes']='Retain the six-wire pigtail supplied with Arduitronics RU00129. Encoder functions share one motor plug with M1/M2. See INTERFACE_VERIFICATION.md for the first-article continuity map.'
 
 def curve(points,step=0.9):
     p=np.array(points,float); d=np.linalg.norm(np.diff(p,axis=0),axis=1)
@@ -141,9 +141,9 @@ for r in routes:
         if r['id']=='O01':targets_end=[np.array([117+(i-1)*2.5,-45,67]) for i in range(3)]
         if r['id']=='H02':targets_end=[np.array([-126.84,-45.4,54]),np.array([-121.84,-45.4,54])]
         if r['id']=='H01':targets_end=[np.array([82,57.5,62]),np.array([82,62.5,62])]
-        if r['id']=='H08_chassis':targets_end=[np.array([18+xx,82,58+zz]) for xx,zz in [(-1.5,-1.5),(1.5,-1.5),(-1.5,1.5),(1.5,1.5)]]
+        if r['id']=='H08_chassis':targets_end=[np.array([18+(i-1.5)*1.25,74,58]) for i in range(4)]
         if r['id']=='H08_lid':
-            target=np.array([18+[-1.5,1.5,-1.5,1.5][w],57.23,58+[-1.5,-1.5,1.5,1.5][w]])
+            target=np.array([18+(w-1.5)*1.25,65,58])
             v+=np.clip(1-s/12,0,1)[:,None]**2*(target-v[0])
         if targets_end is not None:
             v+=np.clip(1-(s[-1]-s)/16,0,1)[:,None]**2*(targets_end[w]-v[-1])
@@ -172,7 +172,7 @@ for r in routes:
                 if len(vv)>1:add(f'{group}__{r["id"]}__band_{j}',tube(vv,radius+.22,12),rgb('#171e22'),group,r['id'])
     route_records.append({**r,'points_mm':pts.round(4).tolist(),'centreline_mm':round(float(s[-1]),1),'individual_wire_lengths_mm':[round(x,1) for x in wirelengths],
       'sleeve_outer_diameter_mm':round(2*radius,2),'length_definition':'Modeled connector-exit-to-exit geometric path incl. drawn service slack; not a validated wire cut length.',
-      'endpoint_accuracy':'Dimensioned visual mating housings for Core; motor six-way topology photo-confirmed. Candidate/provisional device interfaces are listed in CONNECTOR_PLACEMENT.json.'})
+      'endpoint_accuracy':'Dimensioned visual mating housings for Core; motor six-way topology photo-confirmed. Device verification is documented in INTERFACE_VERIFICATION.md.'})
 # Dimensioned connector reconstructions + exact native fixed Core headers.
 connector_records=cv.add_models(add,box)
 cv.context_models(add,box,tube,curve)

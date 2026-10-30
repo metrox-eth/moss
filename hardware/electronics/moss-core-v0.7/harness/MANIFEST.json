@@ -1,366 +1,382 @@
 {
-  "date": "2026-10-30",
-  "status": "VISUAL_HARNESS_STUDY_NOT_MANUFACTURING_RELEASE",
+  "date": "2026-10-31",
+  "status": "PROTOTYPE_HARNESS_STUDY_NOT_MANUFACTURING_RELEASE",
   "files": {
     ".gitattributes": {
-      "sha256": "7aadf1246e797480e42cf2035c165bc4ec69a87e86ce8e1366f3dcde3c972d76",
-      "bytes": 35
+      "bytes": 35,
+      "sha256": "7aadf1246e797480e42cf2035c165bc4ec69a87e86ce8e1366f3dcde3c972d76"
     },
     ".gitignore": {
-      "sha256": "3045df9442691a4e3dc12db7512f174a98012e01795c089899bc47acca7435ca",
-      "bytes": 82
+      "bytes": 82,
+      "sha256": "3045df9442691a4e3dc12db7512f174a98012e01795c089899bc47acca7435ca"
     },
     "ATTRIBUTION.md": {
-      "sha256": "edc3d64f4ac2a1be2c4bd6e72243f96ced4d7a8da15e399122c5b080bcbc5bd3",
-      "bytes": 1143
+      "bytes": 1143,
+      "sha256": "edc3d64f4ac2a1be2c4bd6e72243f96ced4d7a8da15e399122c5b080bcbc5bd3"
     },
     "CONNECTIONS.md": {
-      "sha256": "012cf6874889572337410ab484e69ba02b0c208405e38f882db8a43e017c3c24",
-      "bytes": 4001
+      "bytes": 4298,
+      "sha256": "cfe9e9f6a565aab81e3ef0cbe8a512a7ad4404c5a3eeee6e10a67b45ae17594c"
+    },
+    "INTERFACE_VERIFICATION.md": {
+      "bytes": 4426,
+      "sha256": "ae7f20dea634986d31b8cb830f177dc89f646153dd2e2d539b2995c54e0f61ac"
     },
     "MODEL_PROVENANCE.md": {
-      "sha256": "667dae29b5e1bfb6154be3904569e02d9064c5bafedbfcf197d5a530c01f1975",
-      "bytes": 3328
+      "bytes": 3288,
+      "sha256": "a13e43d35652e878031f1532299caa74fab8742583d4a7bdaf58ee92b98d56f1"
     },
     "README.md": {
-      "sha256": "df424e5602c3fe1eead4f39e25b5b83d440a6c9e929d2165c438db9151535aab",
-      "bytes": 5996
+      "bytes": 2599,
+      "sha256": "8d9a9e013cd13ee7b7a944302b3b6cfc82e6644f240c0073e6fe63aeb0f5d7d1"
     },
     "assets/HOCO_HB1_VISUAL.npz": {
-      "sha256": "bba6e7bb55ce563b7dd7c2030da00878e3267baeb83b874dfbb4120c28bb14fd",
-      "bytes": 74246
+      "bytes": 74246,
+      "sha256": "bba6e7bb55ce563b7dd7c2030da00878e3267baeb83b874dfbb4120c28bb14fd"
     },
     "assets/HULL_WITH_TIES_AND_NOTCH.npz": {
-      "sha256": "adb02e3b1274cd7bfc3b2bda10c50846400bf657b9402ac728c1cf2146ec9802",
-      "bytes": 646990
+      "bytes": 646990,
+      "sha256": "adb02e3b1274cd7bfc3b2bda10c50846400bf657b9402ac728c1cf2146ec9802"
     },
     "assets/NON_CORE_CONTEXT_MESH.npz": {
-      "sha256": "29296106b2c57635a61626e6f6f56fbeedc2d9d5eae4600abe3b142734f80da7",
-      "bytes": 6275990
+      "bytes": 6275990,
+      "sha256": "29296106b2c57635a61626e6f6f56fbeedc2d9d5eae4600abe3b142734f80da7"
     },
     "assets/Speaker_3W_4Ohm_original.npz": {
-      "sha256": "eb1c653cea270075c66019e7e9678a6ab04373a886e8488963aa940c5c83e049",
-      "bytes": 45515
+      "bytes": 45515,
+      "sha256": "eb1c653cea270075c66019e7e9678a6ab04373a886e8488963aa940c5c83e049"
     },
     "assets/branding/MOSS_CORE_V07.png": {
-      "sha256": "4ad9536a889b19e70e7a8379c11cc0b51958f38f678076c7af352996b4e2d5d9",
-      "bytes": 11332
+      "bytes": 11332,
+      "sha256": "4ad9536a889b19e70e7a8379c11cc0b51958f38f678076c7af352996b4e2d5d9"
     },
     "assets/branding/Meet_the_fam_V07_PCBWay.png": {
-      "sha256": "5a96259f6cc9abfa2f8ad6ccd37bf4b4c87850a54229d009c984b067860355ba",
-      "bytes": 136490
+      "bytes": 136490,
+      "sha256": "5a96259f6cc9abfa2f8ad6ccd37bf4b4c87850a54229d009c984b067860355ba"
     },
     "assets/branding/OFL.txt": {
-      "sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943",
-      "bytes": 4401
+      "bytes": 4401,
+      "sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
     },
     "assets/branding/PCBWay_white.png": {
-      "sha256": "846c606a5e2d86b3635861d9d5b002f3e0db92405f0a0dad619b578adbccdefc",
-      "bytes": 23582
+      "bytes": 23582,
+      "sha256": "846c606a5e2d86b3635861d9d5b002f3e0db92405f0a0dad619b578adbccdefc"
     },
     "assets/branding/SpaceGrotesk.ttf": {
-      "sha256": "acad6de1fc93436f5c0f1f4137751ef04f1aea3063e7036535970ffcfbd79f72",
-      "bytes": 136676
+      "bytes": 136676,
+      "sha256": "acad6de1fc93436f5c0f1f4137751ef04f1aea3063e7036535970ffcfbd79f72"
     },
     "assets/connector_mesh_cache/Cytron_control_5.npz": {
-      "sha256": "01738bf753b28f70519b3f58da7786e8507e53b044513e27f34092d8f887dcab",
-      "bytes": 11117
+      "bytes": 11117,
+      "sha256": "01738bf753b28f70519b3f58da7786e8507e53b044513e27f34092d8f887dcab"
     },
     "assets/connector_mesh_cache/GH_4_1.25_6.25_5.7_3.75_2.2.npz": {
-      "sha256": "caff873d22bbdc7f1211939e400e313ce639d493a6d1f1251cda1d8a14ac9f25",
-      "bytes": 9231
+      "bytes": 9231,
+      "sha256": "caff873d22bbdc7f1211939e400e313ce639d493a6d1f1251cda1d8a14ac9f25"
     },
     "assets/connector_mesh_cache/GH_5_1.25_7.5_5.7_3.75_2.2.npz": {
-      "sha256": "0f991eaf5570faedb0ed6906005f41b664401dc4c28df94a12deb6c32c233cad",
-      "bytes": 11112
+      "bytes": 11112,
+      "sha256": "0f991eaf5570faedb0ed6906005f41b664401dc4c28df94a12deb6c32c233cad"
     },
     "assets/connector_mesh_cache/KiCad_S6B_XH.npz": {
-      "sha256": "54dec91d3b8c8021a8f0b4881787258e48885e92676f45c9ca4f0cb45787c9f6",
-      "bytes": 12949
+      "bytes": 12949,
+      "sha256": "54dec91d3b8c8021a8f0b4881787258e48885e92676f45c9ca4f0cb45787c9f6"
     },
     "assets/connector_mesh_cache/PH_2_2_5.8_6.35_4.5_2.npz": {
-      "sha256": "edd3a039a5dd43a37ce228ceacf439b1a9e753e86bcdd757dc0c4ab88efc9ed8",
-      "bytes": 5040
+      "bytes": 5040,
+      "sha256": "edd3a039a5dd43a37ce228ceacf439b1a9e753e86bcdd757dc0c4ab88efc9ed8"
     },
     "assets/connector_mesh_cache/SH_6_1_7_5_2.8_1.98.npz": {
-      "sha256": "c2fb4711a8134a9c4d8a0245ec82d3b1d72276b5a0e262697c99152b6f87e1bf",
-      "bytes": 13328
+      "bytes": 13328,
+      "sha256": "c2fb4711a8134a9c4d8a0245ec82d3b1d72276b5a0e262697c99152b6f87e1bf"
     },
     "assets/connector_mesh_cache/SPOX_3_2.5_8.9_8_4.2_2.6.npz": {
-      "sha256": "2e85c69a4b07b749c09dcedf0c3085dcdcf42ab03765123718d4c98bfc2e055b",
-      "bytes": 7304
+      "bytes": 7304,
+      "sha256": "2e85c69a4b07b749c09dcedf0c3085dcdcf42ab03765123718d4c98bfc2e055b"
     },
     "assets/connector_mesh_cache/USB_A_body.npz": {
-      "sha256": "2cd45694c76924c522b922b4b513eff3981cb62a69f64226e6c6144fd55072b7",
-      "bytes": 525
+      "bytes": 525,
+      "sha256": "2cd45694c76924c522b922b4b513eff3981cb62a69f64226e6c6144fd55072b7"
     },
     "assets/connector_mesh_cache/USB_A_tip.npz": {
-      "sha256": "1e970ed80ba7fd1a9e70bd545f652939180da5797314f154489fa2d0f952712e",
-      "bytes": 524
+      "bytes": 524,
+      "sha256": "1e970ed80ba7fd1a9e70bd545f652939180da5797314f154489fa2d0f952712e"
     },
     "assets/connector_mesh_cache/USB_C_body.npz": {
-      "sha256": "e2ead6191945b66812d54abf1eab02bbc7fa3fce2b97efdbae90b039e4d37500",
-      "bytes": 526
+      "bytes": 526,
+      "sha256": "e2ead6191945b66812d54abf1eab02bbc7fa3fce2b97efdbae90b039e4d37500"
     },
     "assets/connector_mesh_cache/USB_C_tip.npz": {
-      "sha256": "29a7ba9432cedd49bd633f54b3edf30a2a89fe783ba44874773e8a4f061e8700",
-      "bytes": 524
+      "bytes": 524,
+      "sha256": "29a7ba9432cedd49bd633f54b3edf30a2a89fe783ba44874773e8a4f061e8700"
     },
     "assets/connector_mesh_cache/XHP6_photo_proxy.npz": {
-      "sha256": "c3a70f2e239dec20cbc05217fac15fec592cb70cfa4d8b902342af784959936e",
-      "bytes": 12970
+      "bytes": 12970,
+      "sha256": "c3a70f2e239dec20cbc05217fac15fec592cb70cfa4d8b902342af784959936e"
     },
     "assets/connector_mesh_cache/XH_2_2.5_7.3_7.5_5.7_2.8.npz": {
-      "sha256": "923b118d32e3acf00cfeb27b31932aab8201fc6fb094c600d5ad223bf2fa8853",
-      "bytes": 5071
+      "bytes": 5071,
+      "sha256": "923b118d32e3acf00cfeb27b31932aab8201fc6fb094c600d5ad223bf2fa8853"
     },
     "assets/connector_mesh_cache/XT30U_legacy_envelope.npz": {
-      "sha256": "d8d01f59f34dd947f9962106e206112ed9d90a6f00920682a7fa69fd004af9ff",
-      "bytes": 4452
+      "bytes": 4452,
+      "sha256": "d8d01f59f34dd947f9962106e206112ed9d90a6f00920682a7fa69fd004af9ff"
     },
     "assets/connector_mesh_cache/fan3010_frame.npz": {
-      "sha256": "e2c374e64ad90bdbb42dae666b99b0d8ac9a3ff00f78f68d8e78b0a47944f002",
-      "bytes": 9899
+      "bytes": 9899,
+      "sha256": "e2c374e64ad90bdbb42dae666b99b0d8ac9a3ff00f78f68d8e78b0a47944f002"
     },
     "assets/connector_mesh_cache/usb_rib_0_0.npz": {
-      "sha256": "a3e64450183d0b073e7ebecc8395624fdefcb6232388236f6d719bec5fc9934a",
-      "bytes": 522
+      "bytes": 522,
+      "sha256": "a3e64450183d0b073e7ebecc8395624fdefcb6232388236f6d719bec5fc9934a"
     },
     "assets/connector_mesh_cache/usb_rib_0_1.npz": {
-      "sha256": "cb7bc685e8362b5244b5a7d3ee316dec375ab8c679c1141e5e2ee092ae30e5ec",
-      "bytes": 527
+      "bytes": 527,
+      "sha256": "cb7bc685e8362b5244b5a7d3ee316dec375ab8c679c1141e5e2ee092ae30e5ec"
     },
     "assets/connector_mesh_cache/usb_rib_0_2.npz": {
-      "sha256": "8a27d5f85f691c9425847d29fab482b53ece083957ddb8329e0ce622caa2afc0",
-      "bytes": 527
+      "bytes": 527,
+      "sha256": "8a27d5f85f691c9425847d29fab482b53ece083957ddb8329e0ce622caa2afc0"
     },
     "assets/connector_mesh_cache/usb_rib_1_0.npz": {
-      "sha256": "a3e64450183d0b073e7ebecc8395624fdefcb6232388236f6d719bec5fc9934a",
-      "bytes": 522
+      "bytes": 522,
+      "sha256": "a3e64450183d0b073e7ebecc8395624fdefcb6232388236f6d719bec5fc9934a"
     },
     "assets/connector_mesh_cache/usb_rib_1_1.npz": {
-      "sha256": "cb7bc685e8362b5244b5a7d3ee316dec375ab8c679c1141e5e2ee092ae30e5ec",
-      "bytes": 527
+      "bytes": 527,
+      "sha256": "cb7bc685e8362b5244b5a7d3ee316dec375ab8c679c1141e5e2ee092ae30e5ec"
     },
     "assets/connector_mesh_cache/usb_rib_1_2.npz": {
-      "sha256": "8a27d5f85f691c9425847d29fab482b53ece083957ddb8329e0ce622caa2afc0",
-      "bytes": 527
+      "bytes": 527,
+      "sha256": "8a27d5f85f691c9425847d29fab482b53ece083957ddb8329e0ce622caa2afc0"
     },
     "assets/current_core_mesh.npz": {
-      "sha256": "665663e1beb9b703f6ff8576e94d62e3a006792900e47b1d777766b186ec45ae",
-      "bytes": 3973524
+      "bytes": 3973524,
+      "sha256": "665663e1beb9b703f6ff8576e94d62e3a006792900e47b1d777766b186ec45ae"
     },
     "cad/HOCO_HB1_Visual_Reference.step": {
-      "sha256": "67ffa27085e4618757fa05b643b31f143fb124f3f1e9e4b7170abd5ce6830147",
-      "bytes": 1068967
+      "bytes": 1068967,
+      "sha256": "67ffa27085e4618757fa05b643b31f143fb124f3f1e9e4b7170abd5ce6830147"
     },
     "cad/Hull_MOSS_V07_Harness_Tie_Loops_PROTOTYPE.step": {
-      "sha256": "4f929cf451c5a6ce0cc9aa9c9259e3f6d5df7276f437f6eaea51d4b12ac4523a",
-      "bytes": 8999146
+      "bytes": 8999146,
+      "sha256": "4f929cf451c5a6ce0cc9aa9c9259e3f6d5df7276f437f6eaea51d4b12ac4523a"
     },
     "cad/Hull_MOSS_V07_Harness_Tie_Loops_PROTOTYPE.stl": {
-      "sha256": "6679c155ecef31f105d4daf78981c28765fdd6a3b6fc944c1687ccd13e7b4282",
-      "bytes": 3986884
+      "bytes": 3986884,
+      "sha256": "6679c155ecef31f105d4daf78981c28765fdd6a3b6fc944c1687ccd13e7b4282"
     },
     "cad/MOSS_HARNESS_CENTRELINES.step": {
-      "sha256": "70af472b4a7c6205e30e824d048c40cfa7a8509c80addf2973cd1f0296c2d51a",
-      "bytes": 129967
+      "bytes": 129965,
+      "sha256": "c9abbe004ca51c030027bf1dbc2bbaaeaabb98de753a3ab70bc863b220532d54"
     },
     "cad/MOSS_HARNESS_ROUTING.step": {
-      "sha256": "7556384fda2a752289318767e202d74e5bbd5b262ce0146d47c2f44e39fa019f",
-      "bytes": 6101328
+      "bytes": 6032453,
+      "sha256": "3c5505ecbdebfc4479568f0b71c5ec5400cb9fcab2d99a34d58e623f830385fc"
     },
     "cad/Speaker_3W_4Ohm_R92_original.step": {
-      "sha256": "f2586db77472281f3e2d9ab05c92cd54fe1e7da73c09edeb94cc15688f47c355",
-      "bytes": 164320
+      "bytes": 164320,
+      "sha256": "f2586db77472281f3e2d9ab05c92cd54fe1e7da73c09edeb94cc15688f47c355"
     },
     "cad/hull_tie_variant_QA.json": {
-      "sha256": "5f44f6c38427019a84ee500fd567aa7880c586449e85bc645646996f9dd8c3b3",
-      "bytes": 12383
+      "bytes": 12383,
+      "sha256": "5f44f6c38427019a84ee500fd567aa7880c586449e85bc645646996f9dd8c3b3"
     },
     "cad/tie_anchor_fit_coupon.png": {
-      "sha256": "8fc99b1fc567d730031c802f33d8dc06f03daa52ef766a2992e06e318ea4ad74",
-      "bytes": 182217
+      "bytes": 182217,
+      "sha256": "8fc99b1fc567d730031c802f33d8dc06f03daa52ef766a2992e06e318ea4ad74"
     },
     "cad/tie_anchor_fit_coupon.step": {
-      "sha256": "61f843ad8753da094cfc243da64be22c7ae8f0957a6a77e8bb7da4873af14126",
-      "bytes": 58536
+      "bytes": 58536,
+      "sha256": "61f843ad8753da094cfc243da64be22c7ae8f0957a6a77e8bb7da4873af14126"
     },
     "cad/tie_anchor_fit_coupon.stl": {
-      "sha256": "48f3da85b8a7d777a6201cd9492269e5671ec5add89f6a976a9ce2dc5f43d5eb",
-      "bytes": 34484
+      "bytes": 34484,
+      "sha256": "48f3da85b8a7d777a6201cd9492269e5671ec5add89f6a976a9ce2dc5f43d5eb"
     },
     "data/CONNECTOR_PLACEMENT.json": {
-      "sha256": "89d1f3a522ce6c75fbfb859e09315fd28f83b261ad5ff3f32acb25fcb6a76396",
-      "bytes": 4801
+      "bytes": 5098,
+      "sha256": "a3eef53e36f93b60016fb3f164242bba7e0e5d506c7bca436c7aaf139daa798d"
     },
     "data/HOCO_PROVENANCE.json": {
-      "sha256": "3955693cd9f785cf5b736c579588b5f9789f2663ecf069802844857e6b7cb848",
-      "bytes": 885
+      "bytes": 885,
+      "sha256": "3955693cd9f785cf5b736c579588b5f9789f2663ecf069802844857e6b7cb848"
     },
     "data/MODEL_SCOPE.json": {
-      "sha256": "15965b9b6de916911fe156b0b2599a71b459c740701dc89828cf0927961e094e",
-      "bytes": 715
+      "bytes": 715,
+      "sha256": "75db4ce58067ca3b5902d5a88c282e7b140d94d9371bd476b3802ba56f652bb8"
     },
     "data/ROUTE_LENGTHS.json": {
-      "sha256": "ced60cb6321cad7a4edc1983807427f520afecd069c392940326b95cadebba9a",
-      "bytes": 289184
+      "bytes": 289425,
+      "sha256": "8587f274812148099d6674957daa11994bdb6f4c3a333880cc77aee5fe719955"
     },
     "data/SPEAKER_PROVENANCE.json": {
-      "sha256": "02f26bda095d59052af1942ef8092f5a9f310ffc989db2e1d64512a4cf90739b",
-      "bytes": 481
+      "bytes": 481,
+      "sha256": "02f26bda095d59052af1942ef8092f5a9f310ffc989db2e1d64512a4cf90739b"
     },
     "evidence/AUDIO_QA.json": {
-      "sha256": "2b0e45120008214aae1c33e4f500916d7d0d7ebdbd205e03ad2088157588d797",
-      "bytes": 1075
+      "bytes": 1075,
+      "sha256": "2b0e45120008214aae1c33e4f500916d7d0d7ebdbd205e03ad2088157588d797"
     },
     "evidence/CONNECTION_CHECKS.json": {
-      "sha256": "aa8fd10b679caf9bd5e6a3c5176c419b149278370393ef3bfe736b6b91a0188f",
-      "bytes": 4421
+      "bytes": 4448,
+      "sha256": "985c33fd2671731d2e45ce0c8470d59ad0b26465ef53d8eaf92cff0bf737f1ac"
     },
     "evidence/DIVIDER_WIRE_NOTCH_QA.json": {
-      "sha256": "ea24723869f1ddd7b8ea6e80f24ead7bdc487f5568841ff5b45a43f7389c80ed",
-      "bytes": 2318
+      "bytes": 2318,
+      "sha256": "ea24723869f1ddd7b8ea6e80f24ead7bdc487f5568841ff5b45a43f7389c80ed"
     },
     "evidence/HARNESS_STEP_QA.json": {
-      "sha256": "7b002e58fa1866c9e4a16e262907f7dcc4b6185aaaea29ce15adae02c1af99ab",
-      "bytes": 19716
+      "bytes": 19723,
+      "sha256": "45dc318ee75c32c4a60578b12db74e03d59cd66a50bbf2641aa50f20052984d8"
     },
     "evidence/MUSIC_ONLY_QA.json": {
-      "sha256": "0333d89c54d30e999b89ea37e4787fa28f4d224ac4401b08423bdec9e89b7e49",
-      "bytes": 425
+      "bytes": 425,
+      "sha256": "0333d89c54d30e999b89ea37e4787fa28f4d224ac4401b08423bdec9e89b7e49"
     },
     "evidence/PUBLIC_BUILD_QA.json": {
-      "sha256": "8f9b34b32ce2499cd08171b0365db7654495957c1f147a041fd941073909145a",
-      "bytes": 652
+      "bytes": 652,
+      "sha256": "8f9b34b32ce2499cd08171b0365db7654495957c1f147a041fd941073909145a"
     },
     "evidence/RENDER_QA.json": {
-      "sha256": "5bf3df4d0c30180eb10ece66474981d346aaef165ce9644cd4ee4de603d1acde",
-      "bytes": 2131
+      "bytes": 1886,
+      "sha256": "283d8d0f023ba222f524ec05b59b6509fbd402011a6ff15270bf6a318795dad3"
     },
     "evidence/ROUTING_CLEARANCE_SCREEN.json": {
-      "sha256": "9492f81b50b65bffa35d86e27af2593a68acca4d1d5fa51c2358bc184bceb7d3",
-      "bytes": 28488
+      "bytes": 28510,
+      "sha256": "4728d671a11c518a9d3fb11a95a5e5afeeaf34bf754a82353b70a07acfc5e0a2"
     },
     "evidence/hull_tie_variant_QA.json": {
-      "sha256": "5f44f6c38427019a84ee500fd567aa7880c586449e85bc645646996f9dd8c3b3",
-      "bytes": 12383
+      "bytes": 12383,
+      "sha256": "5f44f6c38427019a84ee500fd567aa7880c586449e85bc645646996f9dd8c3b3"
     },
     "media/ASSEMBLY.jpg": {
-      "sha256": "64f57b0c78868850352671b003b60e4767d400e0dd0b6078484ee9f62a33db87",
-      "bytes": 164263
+      "bytes": 274930,
+      "sha256": "edaf2ab17abae321e8dc1d3e2adccd29927bd4d7bef46e7382d636baae2275bb"
     },
     "media/FAMILY.jpg": {
-      "sha256": "ffe6be8ebb31e61b3b1f597bce355cc41707c399e1eb48cfebc25f3547a68f4d",
-      "bytes": 131280
+      "bytes": 131280,
+      "sha256": "ffe6be8ebb31e61b3b1f597bce355cc41707c399e1eb48cfebc25f3547a68f4d"
     },
     "media/LID_DISCONNECT.jpg": {
-      "sha256": "1e5909b96d77546bd79200aec68ff97c9c7ad2c4eadb1558679582cfa5469bd1",
-      "bytes": 217424
+      "bytes": 217424,
+      "sha256": "1e5909b96d77546bd79200aec68ff97c9c7ad2c4eadb1558679582cfa5469bd1"
     },
     "media/LOOM.jpg": {
-      "sha256": "c61f5df719a890904c3f42ec656a13d084c0e4eafbd6e28e9e02db583f252d90",
-      "bytes": 117882
+      "bytes": 117882,
+      "sha256": "c61f5df719a890904c3f42ec656a13d084c0e4eafbd6e28e9e02db583f252d90"
     },
     "media/MOSS_Harness_Story.mp4": {
-      "sha256": "66e3aeeb2182d65df1dac40898d6dbe04ac8a3459cb961c49b46556078486417",
-      "bytes": 12342239
+      "bytes": 12362245,
+      "sha256": "8bf3bb37ab3db919c2874cd7b88ca3ec3fe0c11b097b3498b59691da1bfbebca"
     },
     "media/MOTOR_CONNECTOR.jpg": {
-      "sha256": "3e70c5c3d3ab029c014fe821609a048caeb4cf1b42d4f68536faf85cf7228c69",
-      "bytes": 179314
+      "bytes": 284463,
+      "sha256": "9c22fa4c6907793e0518666cad826b585ee4de3f2af6ea5ac353ace60b91148c"
     },
     "media/STOP_AND_BATTERY.jpg": {
-      "sha256": "85d0ec116cb81fba2e4f927cbcf22abcfe2b61335d39c2babb88bd8c41444074",
-      "bytes": 198900
+      "bytes": 296452,
+      "sha256": "89ae32e9c788d59a8f25d7fdbb74aeb0e285b9f05cdb37caae2957b8b4221127"
     },
     "media/TIE_MOUNTS.jpg": {
-      "sha256": "d3075beb05f99187b461013c873848f35892f78c9e28d5be574df46fd5135176",
-      "bytes": 191679
+      "bytes": 191679,
+      "sha256": "d3075beb05f99187b461013c873848f35892f78c9e28d5be574df46fd5135176"
     },
     "media/USB_HUB.jpg": {
-      "sha256": "f87899b8d2060a0fcf4dc818e7cf362265e1f44e6c29571515a347b2f0ef8151",
-      "bytes": 201776
+      "bytes": 308559,
+      "sha256": "3e75faae5b60f08260519c5b3a8fe5258ab50ee0aa178b31888e347a5d193249"
     },
     "requirements.txt": {
-      "sha256": "0856fa24fd34f9f8513369e0ce6250b46c314138925a2b534ef6f99c90a972fc",
-      "bytes": 109
+      "bytes": 109,
+      "sha256": "0856fa24fd34f9f8513369e0ce6250b46c314138925a2b534ef6f99c90a972fc"
+    },
+    "rfq/HARNESS_SPECIFICATION.json": {
+      "bytes": 11088,
+      "sha256": "f5328a28a34dd6a09427265d4f7c4d526a6dfe32f919c7f909838626c2c95208"
+    },
+    "rfq/MOSS_CORE_V07_HARNESS_RFQ.pdf": {
+      "bytes": 361709,
+      "sha256": "0cd68ea501fdf57b0b7cc8e121ece8ff2bd41cb17869a942948d99b321e59169"
+    },
+    "rfq/SOURCES.md": {
+      "bytes": 1621,
+      "sha256": "cf6c4134f58e3018afb3b5a0642b0ac3b990db921437f3fbb2d42659d0edad12"
     },
     "source/PCB_CONNECTOR_ANCHORS.json": {
-      "sha256": "3c293aacd05c502b2255779a3c1e70a62d5f312da81e1bf114889cfd0b0b1fda",
-      "bytes": 24410
+      "bytes": 24410,
+      "sha256": "3c293aacd05c502b2255779a3c1e70a62d5f312da81e1bf114889cfd0b0b1fda"
     },
     "source/README.md": {
-      "sha256": "a721b14032abe3357905d6742d546f359c95df4060c814064750f2b0e99d3539",
-      "bytes": 1931
+      "bytes": 1931,
+      "sha256": "a721b14032abe3357905d6742d546f359c95df4060c814064750f2b0e99d3539"
     },
     "source/ROUTE_CONTROL_POINTS.json": {
-      "sha256": "eb9d481ef122d127b79168508fc434c2519743c0eac98a807980e0a2a49d060f",
-      "bytes": 17481
+      "bytes": 17509,
+      "sha256": "bab0bfc4e664f603d35fc4149a38724ff46417084508e69e4715c74c478395c0"
     },
     "source/build_harness.py": {
-      "sha256": "22e1ff6789432379070404fcda6f24024e3e89f0bb9e2465f94b02208ace8133",
-      "bytes": 22803
+      "bytes": 22752,
+      "sha256": "221b2421bb06778e9fdabd41c01e9ed914d2659e91eac4f4345633e18ab13851"
     },
     "source/build_hoco.py": {
-      "sha256": "0a7f3f33d5b88fdd8241e66ad130727c75aa61fe1573c2281817e5e98d9dab73",
-      "bytes": 3146
+      "bytes": 3146,
+      "sha256": "0a7f3f33d5b88fdd8241e66ad130727c75aa61fe1573c2281817e5e98d9dab73"
     },
     "source/build_viewer.mjs": {
-      "sha256": "3a34718098f1e51b1e837e7f8b9eedfc64c07594ce3a09918bfe51bc0b6558b1",
-      "bytes": 3224
+      "bytes": 3224,
+      "sha256": "3a34718098f1e51b1e837e7f8b9eedfc64c07594ce3a09918bfe51bc0b6558b1"
     },
     "source/connector_visuals.py": {
-      "sha256": "07aeac8212293aaccd26b31edceb26a3b76abdaa5e29201dd97d7c7c42cad0bc",
-      "bytes": 12868
+      "bytes": 13246,
+      "sha256": "002476c21bd3abf77be1daf8f21cf3e8098d92d06ab72363ef7159b53c7bd9cc"
     },
     "source/export_harness_step.py": {
-      "sha256": "52ef86b1a67d2d4f973c733c7ca6d0b6e9653fcabd4fa5485dde728802050e15",
-      "bytes": 8103
+      "bytes": 8103,
+      "sha256": "52ef86b1a67d2d4f973c733c7ca6d0b6e9653fcabd4fa5485dde728802050e15"
     },
     "source/make_story_audio.py": {
-      "sha256": "efbfbc8cbd1534334c5c65d0937f2c5d2d4e709bb6700b8363719de3146d7b9e",
-      "bytes": 2848
+      "bytes": 2848,
+      "sha256": "efbfbc8cbd1534334c5c65d0937f2c5d2d4e709bb6700b8363719de3146d7b9e"
     },
     "source/render_harness.py": {
-      "sha256": "e6968f3a112637cd689cfa169952ad2af7c693a1a43600ddc88359d05a4c006c",
-      "bytes": 5950
+      "bytes": 5950,
+      "sha256": "e6968f3a112637cd689cfa169952ad2af7c693a1a43600ddc88359d05a4c006c"
     },
     "source/render_story.py": {
-      "sha256": "fd230c825f0f2836eda0539a6369985393721d7122b78829e64823de377e377d",
-      "bytes": 12529
+      "bytes": 12529,
+      "sha256": "fd230c825f0f2836eda0539a6369985393721d7122b78829e64823de377e377d"
     },
     "source/tie_anchor.py": {
-      "sha256": "0ceeaef36a354a066d7bb618b41f7da752cb05fec17dbce60968aa6999ac470f",
-      "bytes": 3708
+      "bytes": 3708,
+      "sha256": "0ceeaef36a354a066d7bb618b41f7da752cb05fec17dbce60968aa6999ac470f"
     },
     "source/viewer.css": {
-      "sha256": "9d391874579c1224a667e6545ddd7bb2578f1e84fe1cf2853b6a322dca0099f6",
-      "bytes": 12421
+      "bytes": 12421,
+      "sha256": "9d391874579c1224a667e6545ddd7bb2578f1e84fe1cf2853b6a322dca0099f6"
     },
     "source/viewer_app.js": {
-      "sha256": "03c0bae1ae5816312f14f9d37116b22d96ce007580bcea1571936692a925e183",
-      "bytes": 20784
+      "bytes": 20784,
+      "sha256": "03c0bae1ae5816312f14f9d37116b22d96ce007580bcea1571936692a925e183"
     },
     "source/viewer_shell.html": {
-      "sha256": "9549d12e335ce6b0ee3efd52c7cf1f02e09254774f4d963a6af2629ff0ee15fc",
-      "bytes": 5136
+      "bytes": 5136,
+      "sha256": "9549d12e335ce6b0ee3efd52c7cf1f02e09254774f4d963a6af2629ff0ee15fc"
     },
     "viewer/MOSS_HARNESS_VIEWER.zip": {
-      "sha256": "7992a80c204cb83bb17985d9b80dc35ebce22cfa34e9943fddd93edfa825acc2",
-      "bytes": 13952020
+      "bytes": 13885046,
+      "sha256": "f0fcbeb7287ffede2df860f6c88dda0175cf99c15cf21a78dd00ba1d78180bf6"
     },
     "viewer/THREE_LICENSE.txt": {
-      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
-      "bytes": 1081
+      "bytes": 1081,
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454"
     },
     "viewer_runtime/package-lock.json": {
-      "sha256": "1b5f29f74e919a5fb6d8ad586f894cd83b0e0024bc472822b9d4f50ad3718fff",
-      "bytes": 13134
+      "bytes": 13134,
+      "sha256": "1b5f29f74e919a5fb6d8ad586f894cd83b0e0024bc472822b9d4f50ad3718fff"
     },
     "viewer_runtime/package.json": {
-      "sha256": "a9bd6d7d280d0355b8cddc71b5a19c1a28fb73be9d58118da5fa1a01693e9f44",
-      "bytes": 78
+      "bytes": 78,
+      "sha256": "a9bd6d7d280d0355b8cddc71b5a19c1a28fb73be9d58118da5fa1a01693e9f44"
     }
   }
 }

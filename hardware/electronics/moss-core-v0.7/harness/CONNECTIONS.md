@@ -40,15 +40,17 @@ The current Core circuit contract expects two independent normally closed contac
 - J8.5 / J8.6: STATUS source and return.
 - J8.3 / J8.4: deliberately unconnected.
 
-The six terminals of the physical pushbutton have **not** been identified from a datasheet or continuity measurement. The NC/common terminal mapping must be checked before wiring. The drawing is not permission to assume a terminal order from appearance.
+For a newly supplied kit, specify **YJ-LA16-22ZS/A**, non-illuminated: C1-NC1 for CUT and C2-NC2 for STATUS. The existing unmarked button needs a continuity check to identify these pairs. The older LA16-11ZS/A BOM entry does not specify the two independent contacts required here.
 
-The four-way Micro-Fit-style inline body is a **candidate** for disconnecting the lid. Its contact/wire-insulation compatibility still needs resolution; it is not a frozen purchase or crimp specification.
+The lid disconnect is **Molex PicoBlade 51021-0400 / 51047-0400**, female contacts **50058-8000**, male contacts **50133-8000**. Use **28 AWG, insulation OD 0.50-0.80 mm** throughout H08. Map J8.1/2/5/6 to inline circuits 1/2/3/4 respectively, by the manufacturer's cavity numbers. The connector is friction-retained; disconnect by its housings.
 
 ## Motor plugs
 
-The current motors have the same white six-wire connector as the workshop reference photographs, confirmed by the owner. The visual model uses an XH-style 2.5 mm arrangement with a 17.3 mm-wide cable housing. Exact vendor identity, motor pin order and connector clocking still require confirmation. **Do not wire a motor from the colour order shown in the animation.**
+Use the six-wire pigtails included with **Arduitronics RU00129**, JGB37-520, 12 V / 110 rpm. The product photos show M1/M2, VCC/GND and C1/C2 on the encoder board. Preserve the motor-end plugs and trace the supplied wires to those labels before terminating the first kit; record the result for both motors.
 
-The heavier external motor-power legs transition to the existing thin motor pigtails in the model. A fabricator must confirm the actual wire gauges and transition method; a heavy power wire must not simply be forced into an incompatible small terminal.
+Core encoder pin order is **1 GND, 2 switched 3.3 V, 3 A, 4 B**. Motor power goes to M1/M2, separately from encoder VCC/GND. Heavy power legs require a factory transition to the stock pigtails; do not force 16 AWG into the small motor contacts. The animation's colours are illustrative, not a crimp drawing.
+
+Manufacturer references and the reason for retaining the stock motor plugs are in [interface verification](INTERFACE_VERIFICATION.md).
 
 ## Hub cable
 

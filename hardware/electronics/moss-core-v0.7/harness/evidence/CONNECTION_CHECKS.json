@@ -1,6 +1,6 @@
 {
   "status": "VISUAL_TOPOLOGY_AND_ENDPOINT_CHECK_PASSED",
-  "source_scene_sha256": "e91fcb7f2bdfd835f01c11977d8a6f66c7e2207c9ada16a3f68f679111eb911a",
+  "source_scene_sha256": "aa5189fd3d90b0e86e7b9ab5475aa18ec92ac18cd51857cdf2fff8b7478a989c",
   "connections": [
     {
       "route": "H03",
@@ -42,7 +42,7 @@
       "end": "Core",
       "description": "Wire centres coincide with J8 housing outlet cavities; same source coordinate frame.",
       "conductors": 4,
-      "maximum_mesh_endpoint_error_mm": 7.770311319888192e-06
+      "maximum_mesh_endpoint_error_mm": 7.767201626195375e-06
     },
     {
       "route": "O03_right",
@@ -114,7 +114,7 @@
   "limits": [
     "No physical mate test",
     "Photo-based motor housing identification, clocking and circuit order remain unverified",
-    "Micro-Fit candidate contact/wire selection unresolved",
+    "PicoBlade selected from manufacturer drawings; first-article mating test remains",
     "USB cable excess and installed bend radii remain provisional"
   ]
 }

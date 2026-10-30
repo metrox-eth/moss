@@ -1,8 +1,8 @@
 {
   "status": "EDITABLE_CONCEPT_CAD_NOT_FABRICATION_OR_COLLISION_RELEASE",
   "units": "mm",
-  "source": "ROUTE_LENGTHS.json",
-  "source_sha256": "ced60cb6321cad7a4edc1983807427f520afecd069c392940326b95cadebba9a",
+  "source": "data/ROUTE_LENGTHS.json",
+  "source_sha256": "8587f274812148099d6674957daa11994bdb6f4c3a333880cc77aee5fe719955",
   "method": "Exact piecewise cubic Bezier conversion of the build_harness.py cubic Hermite recipe; same control points and derivatives. Rounded recorded samples verified against reconstructed Hermite samples.",
   "envelope_definition": "Full-length circular outer route reservations: sleeve_outer_diameter_mm when sleeve=true, otherwise wire_od_mm. These are not literal braid, contacts or individual conductors.",
   "fallback": "If one sweep fails or yields invalid geometry, preserve its named centreline wire in the routing assembly. No changed route or reduced radius is substituted.",
@@ -321,13 +321,13 @@
       "curve_type": "Exact piecewise cubic Bezier (same cubic Hermite curve)",
       "curve_segments": 15,
       "wire_valid": true,
-      "step_curve_length_mm": 326.5445787440963,
-      "sampled_polyline_length_mm": 326.5041937115327,
-      "recorded_rounded_length_mm": 326.5,
-      "difference_vs_sampled_polyline_mm": 0.040385032563619916,
-      "difference_vs_recorded_rounded_mm": 0.04457874409632723,
-      "max_sample_reconstruction_error_mm": 8.059940589931891e-05,
-      "envelope_diameter_mm": 2.94,
+      "step_curve_length_mm": 325.38504129456027,
+      "sampled_polyline_length_mm": 325.35066886110974,
+      "recorded_rounded_length_mm": 325.4,
+      "difference_vs_sampled_polyline_mm": 0.034372433450528206,
+      "difference_vs_recorded_rounded_mm": -0.01495870543971023,
+      "max_sample_reconstruction_error_mm": 7.876084254937676e-05,
+      "envelope_diameter_mm": 2.66,
       "diameter_source": "sleeve_outer_diameter_mm",
       "start_mm": [
         -73.625,
@@ -336,12 +336,12 @@
       ],
       "end_mm": [
         18.0,
-        82.0,
+        74.0,
         58.0
       ],
       "envelope_status": "VALID_SINGLE_SOLID",
       "solid_count": 1,
-      "volume_mm3": 2216.8024108403506
+      "volume_mm3": 1808.2179935616966
     },
     {
       "id": "H08_lid",
@@ -349,17 +349,17 @@
       "curve_type": "Exact piecewise cubic Bezier (same cubic Hermite curve)",
       "curve_segments": 9,
       "wire_valid": true,
-      "step_curve_length_mm": 120.26973212447396,
-      "sampled_polyline_length_mm": 120.22840489241958,
-      "recorded_rounded_length_mm": 120.2,
-      "difference_vs_sampled_polyline_mm": 0.04132723205438538,
-      "difference_vs_recorded_rounded_mm": 0.06973212447395838,
-      "max_sample_reconstruction_error_mm": 7.674360777009298e-05,
-      "envelope_diameter_mm": 2.94,
+      "step_curve_length_mm": 127.86504021494363,
+      "sampled_polyline_length_mm": 127.82715528657998,
+      "recorded_rounded_length_mm": 127.8,
+      "difference_vs_sampled_polyline_mm": 0.03788492836365265,
+      "difference_vs_recorded_rounded_mm": 0.06504021494363599,
+      "max_sample_reconstruction_error_mm": 8.051203692161648e-05,
+      "envelope_diameter_mm": 2.66,
       "diameter_source": "sleeve_outer_diameter_mm",
       "start_mm": [
         18.0,
-        57.23,
+        65.0,
         58.0
       ],
       "end_mm": [
@@ -369,7 +369,7 @@
       ],
       "envelope_status": "VALID_SINGLE_SOLID",
       "solid_count": 1,
-      "volume_mm3": 816.4714227234093
+      "volume_mm3": 710.5666917438988
     },
     {
       "id": "O01",
@@ -576,8 +576,8 @@
     "expected_centerline_edge_count": 155,
     "centerline_route_names_preserved": true,
     "routing_route_names_preserved": true,
-    "total_reimported_centerline_length_mm": 2916.080093116322,
-    "total_original_curve_length_mm": 2916.0800931273834,
+    "total_reimported_centerline_length_mm": 2922.5158637553295,
+    "total_original_curve_length_mm": 2922.515863768317,
     "routing_solid_count": 20,
     "routing_all_solids_valid": true
   },
@@ -591,14 +591,14 @@
   ],
   "outputs": {
     "MOSS_HARNESS_CENTRELINES.step": {
-      "sha256": "70af472b4a7c6205e30e824d048c40cfa7a8509c80addf2973cd1f0296c2d51a",
-      "bytes": 129967
+      "sha256": "c9abbe004ca51c030027bf1dbc2bbaaeaabb98de753a3ab70bc863b220532d54",
+      "bytes": 129965
     },
     "MOSS_HARNESS_ROUTING.step": {
-      "sha256": "7556384fda2a752289318767e202d74e5bbd5b262ce0146d47c2f44e39fa019f",
-      "bytes": 6101328
+      "sha256": "3c5505ecbdebfc4479568f0b71c5ec5400cb9fcab2d99a34d58e623f830385fc",
+      "bytes": 6032453
     }
   },
   "source_unchanged": true,
-  "elapsed_seconds": 6.933146715164185
+  "elapsed_seconds": 6.200465202331543
 }
