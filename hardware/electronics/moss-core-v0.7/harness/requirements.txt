@@ -1,0 +1,7 @@
+cadquery>=2.6,<3
+numpy>=2,<3
+scipy>=1.14,<2
+trimesh>=4,<5
+vtk>=9.3,<10
+Pillow>=11,<13
+imageio-ffmpeg>=0.6,<1

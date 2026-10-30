@@ -1,0 +1,28 @@
+{
+  "status": "PHOTO_BASED_VISUAL_REFERENCE_NOT_MANUFACTURER_CAD",
+  "overall_body_mm": [
+    78,
+    25,
+    25
+  ],
+  "position_world_mm": {
+    "min": [
+      -78,
+      66,
+      12
+    ],
+    "max": [
+      0,
+      91,
+      37
+    ]
+  },
+  "ports": "Four top-facing USB-A receptacles; long axes perpendicular to hub length.",
+  "source": "https://hocotech.com/product/mobile-accessories/cables/hubs-organizers/usb-hub-hb1-four-ports-usb-2-0-charging-and-data-sync/",
+  "photo": "https://hocotech.com/wp-content/uploads/2018/07/hb1-four-usb-hub-silver-ports.jpg",
+  "estimated": [
+    "Port positions/fillets/wall thickness/end caps/wordmark shape",
+    "Colour chosen for visual presentation"
+  ],
+  "cable": "Manufacturer specifies an 80 cm captive USB-A lead. Only its routed connection and an illustrative USB-C OTG pigtail are shown; excess lead storage is not resolved."
+}

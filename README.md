@@ -40,6 +40,8 @@ I pick up litter by hand on my walks. MOSS is the robot I want next to me doing 
 
 ## News
 
+- 30 October 2026: **[MOSS CORE V0.7 harness study](hardware/electronics/moss-core-v0.7/harness/)** — a short film, offline 3D viewer, cable routing and a hull prototype with integrated cable-tie mounts. An unbuilt packaging proposal, published for review.
+
 - 28 October 2026: **[Build a custom 3S4P battery for MOSS](hardware/power/custom-3s4p-battery/)** — twelve EVE 21700 cells, illustrated assembly, wiring diagram and parts list. 20 Ah from the cell ratings, 910 g assembled; usable energy and collection runtime still to be measured.
 - 27 October 2026: **[Orange Pi + MightyCam experiment](experiments/orange-pi-mightycam/)** — dimOS, YOLO on the NPU and a first memory/load test with simulated rover I/O. Code, cockpit image and the limits of this early bench demo.
 - 27 October 2026: **[SO-101 dual-servo shoulder R2: complete upgrade guide](hardware/mechanical/dual-shoulder-r2/)** — editable CAD, two printable parts, screws, assembly, paired-servo setup and testing in one place.

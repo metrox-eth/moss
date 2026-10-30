@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f4f2ed">
+<title>MOSS / Harness study</title>
+<style>/* INLINE_VIEWER_CSS */</style>
+</head>
+<body>
+<div class="app">
+  <header class="masthead">
+    <div class="brand"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><div><div class="eyebrow">MOSS V0.7 · Assembly review</div><h1>MOSS <span>/</span> Harness study</h1></div></div>
+    <div class="header-right"><span class="status"><span></span>Routing prototype</span><button id="mobile-details" class="icon-button mobile-only" aria-expanded="false" aria-controls="details">Routes <span>↗</span></button></div>
+  </header>
+
+  <main id="stage" aria-label="Interactive three-dimensional harness assembly">
+    <canvas id="scene" aria-label="3D assembly. Drag to orbit, scroll to zoom, right drag to pan." tabindex="0"></canvas>
+    <div id="labels" aria-hidden="true"></div>
+    <div class="scene-kicker"><span class="tiny-rule"></span><span id="scene-mode">Installed assembly</span><span class="scene-kicker-divider">/</span><span id="scene-count">Preparing model</span></div>
+    <div id="loader" class="loader" role="status"><span class="loader-ring"></span><strong>Preparing the assembly</strong><span>Loading the embedded 3D model</span></div>
+    <div id="load-error" class="load-error" role="alert" hidden><strong>The 3D model could not be displayed.</strong><p id="load-error-detail"></p></div>
+    <div class="view-toolbar" role="group" aria-label="Assembly views">
+      <button class="view-button active" data-mode="installed" aria-pressed="true"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m3 6 7-3 7 3v8l-7 3-7-3Z M3 6l7 3 7-3 M10 9v8"/></svg>Installed</button>
+      <button class="view-button" data-mode="harness" aria-pressed="false"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 3v5c0 4 12 0 12 5v4M8 3v3M12 14v3M2 3h8M10 17h8"/></svg>Harness only</button>
+      <button class="view-button" data-mode="open" aria-pressed="false"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m3 12 7 3 7-3 M3 10v5l7 3 7-3v-5M3 5l7-3 7 3-7 3Z M10 10v2"/></svg>Open lid</button>
+      <span class="toolbar-divider"></span>
+      <button class="view-button" id="top-view" aria-pressed="false"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="4" y="4" width="12" height="12" rx="2"/><path d="M7 7h6v6H7z"/></svg>Top</button>
+      <button class="reset-button" id="reset-view" title="Reset view (R)" aria-label="Reset view"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 7a6 6 0 1 1 0 6M4 3v4h4"/></svg></button>
+    </div>
+    <div class="stage-bottom"><div class="interaction-hint"><span class="mouse-icon" aria-hidden="true"></span><span>Drag to orbit <b>·</b> Scroll to zoom <b>·</b> Right-drag to pan</span></div><span class="unit-note">WORLD FRAME <b>mm</b></span></div>
+    <div id="selection-chip" class="selection-chip" hidden><span id="selection-dot"></span><div><strong id="selection-name"></strong><span id="selection-length"></span></div><button id="clear-route" aria-label="Clear route selection">×</button></div>
+  </main>
+
+  <aside id="details" class="details" aria-label="Harness controls and routes">
+    <section class="overview"><span class="section-index">01 / INSPECT</span><h2>A clearer path<br>through the assembly.</h2><p>STOP → J8 · Battery → XT30 J10.<br>USB links the Orange Pi, hub and Core J1.<br>Core J20 supplies the Pi POWER port.</p></section>
+    <section class="layers"><div class="section-heading"><h3>Visible layers</h3><span>DISPLAY</span></div>
+      <label class="switch-row"><span><i class="layer-symbol sleeve-symbol"></i>Sleeves</span><input id="toggle-sleeves" type="checkbox" checked><i class="switch-track" aria-hidden="true"></i></label>
+      <label class="switch-row"><span><i class="layer-symbol tie-symbol"></i>Cable ties</span><input id="toggle-ties" type="checkbox" checked><i class="switch-track" aria-hidden="true"></i></label>
+      <input id="toggle-mounts" type="checkbox" checked hidden><p class="route-intro">The five tie mounts are part of the hull.</p>
+      <label class="switch-row"><span><i class="layer-symbol label-symbol">A</i>Route labels</span><input id="toggle-labels" type="checkbox"><i class="switch-track" aria-hidden="true"></i></label>
+    </section>
+    <section class="routes-section"><div class="section-heading"><h3>Routes</h3><span id="route-count">—</span></div><p class="route-intro">Select a route to trace its path.</p><div id="route-list" class="route-list" aria-label="Available wiring routes"><div class="route-empty">Routes will appear with the model.</div></div></section>
+    <footer class="panel-note"><span class="note-marker">i</span><p>Lengths follow the modeled centreline.<br>They are not wire cut lengths.</p></footer>
+  </aside>
+</div>
+<script id="model-data" type="application/octet-stream">INLINE_GLB_BASE64</script>
+<script id="route-data" type="application/json">INLINE_ROUTE_JSON</script>
+<script>/* INLINE_VIEWER_JS */</script>
+</body>
+</html>

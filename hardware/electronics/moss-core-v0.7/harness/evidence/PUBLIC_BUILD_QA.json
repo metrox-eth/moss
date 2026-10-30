@@ -1,0 +1,10 @@
+{
+  "status": "PUBLIC_REBUILD_MATCHED_AND_LINKS_CHECKED",
+  "original_glb_sha256": "62f4dfc442f1d292f39538dcee613a8bf903e37004becbddb8856e2c61797515",
+  "rebuilt_glb_sha256": "62f4dfc442f1d292f39538dcee613a8bf903e37004becbddb8856e2c61797515",
+  "routes_sha256": "ced60cb6321cad7a4edc1983807427f520afecd069c392940326b95cadebba9a",
+  "missing_relative_links": [],
+  "private_absolute_path_hits": [],
+  "video_sha256": "efc112fabf5b75d1eaca01dc8f95502f8644b7801f1f0ccf4ddf6c722353b42b",
+  "viewer_zip_sha256": "7992a80c204cb83bb17985d9b80dc35ebce22cfa34e9943fddd93edfa825acc2"
+}

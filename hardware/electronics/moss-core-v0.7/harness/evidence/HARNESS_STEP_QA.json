@@ -1,0 +1,604 @@
+{
+  "status": "EDITABLE_CONCEPT_CAD_NOT_FABRICATION_OR_COLLISION_RELEASE",
+  "units": "mm",
+  "source": "ROUTE_LENGTHS.json",
+  "source_sha256": "ced60cb6321cad7a4edc1983807427f520afecd069c392940326b95cadebba9a",
+  "method": "Exact piecewise cubic Bezier conversion of the build_harness.py cubic Hermite recipe; same control points and derivatives. Rounded recorded samples verified against reconstructed Hermite samples.",
+  "envelope_definition": "Full-length circular outer route reservations: sleeve_outer_diameter_mm when sleeve=true, otherwise wire_od_mm. These are not literal braid, contacts or individual conductors.",
+  "fallback": "If one sweep fails or yields invalid geometry, preserve its named centreline wire in the routing assembly. No changed route or reduced radius is substituted.",
+  "routes": [
+    {
+      "id": "H01",
+      "label": "Battery supply",
+      "curve_type": "Exact piecewise cubic Bezier (same cubic Hermite curve)",
+      "curve_segments": 12,
+      "wire_valid": true,
+      "step_curve_length_mm": 173.47662769654102,
+      "sampled_polyline_length_mm": 173.46036525740007,
+      "recorded_rounded_length_mm": 173.5,
+      "difference_vs_sampled_polyline_mm": 0.016262439140945162,
+      "difference_vs_recorded_rounded_mm": -0.023372303458984334,
+      "max_sample_reconstruction_error_mm": 7.487464209364555e-05,
+      "envelope_diameter_mm": 6.11,
+      "diameter_source": "sleeve_outer_diameter_mm",
+      "start_mm": [
+        -55.5,
+        50.1,
+        14.995
+      ],
+      "end_mm": [
+        82.0,
+        60.0,
+        62.0
+      ],
+      "envelope_status": "VALID_SINGLE_SOLID",
+      "solid_count": 1,
+      "volume_mm3": 5086.432976839518
+    },
+    {
+      "id": "H02",
+      "label": "Cytron supply",
+      "curve_type": "Exact piecewise cubic Bezier (same cubic Hermite curve)",
+      "curve_segments": 6,
+      "wire_valid": true,
+      "step_curve_length_mm": 111.51943970234059,
+      "sampled_polyline_length_mm": 111.5021450093148,
+      "recorded_rounded_length_mm": 111.5,
+      "difference_vs_sampled_polyline_mm": 0.017294693025789343,
+      "difference_vs_recorded_rounded_mm": 0.019439702340591225,
+      "max_sample_reconstruction_error_mm": 8.139220667452891e-05,
+      "envelope_diameter_mm": 6.11,
+      "diameter_source": "sleeve_outer_diameter_mm",
+      "start_mm": [
+        -81.405,
+        11.005,
+        16.395
+      ],
+      "end_mm": [
+        -124.34,
+        -45.4,
+        54.0
+      ],
+      "envelope_status": "VALID_SINGLE_SOLID",
+      "solid_count": 1,
+      "volume_mm3": 3269.8134849765
+    },
+    {
+      "id": "H03",
+      "label": "Cytron control",
+      "curve_type": "Exact piecewise cubic Bezier (same cubic Hermite curve)",
+      "curve_segments": 8,
+      "wire_valid": true,
+      "step_curve_length_mm": 138.1358814707109,
+      "sampled_polyline_length_mm": 138.1095193186053,
+      "recorded_rounded_length_mm": 138.1,
+      "difference_vs_sampled_polyline_mm": 0.02636215210560522,
+      "difference_vs_recorded_rounded_mm": 0.03588147071090475,
+      "max_sample_reconstruction_error_mm": 7.959214421693198e-05,
+      "envelope_diameter_mm": 3.5,
+      "diameter_source": "sleeve_outer_diameter_mm",
+      "start_mm": [
+        -32.5,
+        36.65,
+        13.245
+      ],
+      "end_mm": [
+        -124.0,
+        39.359,
+        65.4
+      ],
+      "envelope_status": "VALID_SINGLE_SOLID",
+      "solid_count": 1,
+      "volume_mm3": 1329.022563666652
+    },
+    {
+      "id": "H04",
+      "label": "Left encoder",
+      "curve_type": "Exact piecewise cubic Bezier (same cubic Hermite curve)",
+      "curve_segments": 7,
+      "wire_valid": true,
+      "step_curve_length_mm": 123.14345374217241,
+      "sampled_polyline_length_mm": 123.12166924669279,
+      "recorded_rounded_length_mm": 123.1,
+      "difference_vs_sampled_polyline_mm": 0.021784495479622024,
+      "difference_vs_recorded_rounded_mm": 0.043453742172417265,
+      "max_sample_reconstruction_error_mm": 7.871858850146212e-05,
+      "envelope_diameter_mm": 3.5,
+      "diameter_source": "sleeve_outer_diameter_mm",
+      "start_mm": [
+        -18.0,
+        36.65,
+        13.245
+      ],
+      "end_mm": [
+        -100.0,
+        7.8,
+        22.614
+      ],
+      "envelope_status": "VALID_SINGLE_SOLID",
+      "solid_count": 1,
+      "volume_mm3": 1184.7787439682784
+    },
+    {
+      "id": "H05",
+      "label": "Right encoder",
+      "curve_type": "Exact piecewise cubic Bezier (same cubic Hermite curve)",
+      "curve_segments": 10,
+      "wire_valid": true,
+      "step_curve_length_mm": 169.06975487257986,
+      "sampled_polyline_length_mm": 169.04401049396714,
+      "recorded_rounded_length_mm": 169.0,
+      "difference_vs_sampled_polyline_mm": 0.02574437861272827,
+      "difference_vs_recorded_rounded_mm": 0.06975487257986401,
+      "max_sample_reconstruction_error_mm": 7.484149882766401e-05,
+      "envelope_diameter_mm": 3.5,
+      "diameter_source": "sleeve_outer_diameter_mm",
+      "start_mm": [
+        -43.25,
+        36.65,
+        13.245
+      ],
+      "end_mm": [
+        -142.0,
+        -7.8,
+        22.614
+      ],
+      "envelope_status": "VALID_SINGLE_SOLID",
+      "solid_count": 1,
+      "volume_mm3": 1626.64193796805
+    },
+    {
+      "id": "H06a",
+      "label": "Left motor / shunt input",
+      "curve_type": "Exact piecewise cubic Bezier (same cubic Hermite curve)",
+      "curve_segments": 5,
+      "wire_valid": true,
+      "step_curve_length_mm": 103.33351953137915,
+      "sampled_polyline_length_mm": 103.32727034861769,
+      "recorded_rounded_length_mm": 103.3,
+      "difference_vs_sampled_polyline_mm": 0.006249182761465022,
+      "difference_vs_recorded_rounded_mm": 0.033519531379155865,
+      "max_sample_reconstruction_error_mm": 7.962993104029073e-05,
+      "envelope_diameter_mm": 3.3,
+      "diameter_source": "sleeve_outer_diameter_mm",
+      "start_mm": [
+        -81.405,
+        -8.255000000000003,
+        16.395
+      ],
+      "end_mm": [
+        -136.84,
+        -45.4,
+        54.0
+      ],
+      "envelope_status": "VALID_SINGLE_SOLID",
+      "solid_count": 1,
+      "volume_mm3": 883.8077252612408
+    },
+    {
+      "id": "H06b",
+      "label": "Left motor / shunt output",
+      "curve_type": "Exact piecewise cubic Bezier (same cubic Hermite curve)",
+      "curve_segments": 4,
+      "wire_valid": true,
+      "step_curve_length_mm": 44.58579103798865,
+      "sampled_polyline_length_mm": 44.57228544473232,
+      "recorded_rounded_length_mm": 44.6,
+      "difference_vs_sampled_polyline_mm": 0.013505593256326165,
+      "difference_vs_recorded_rounded_mm": -0.014208962011352355,
+      "max_sample_reconstruction_error_mm": 7.18708455671341e-05,
+      "envelope_diameter_mm": 3.3,
+      "diameter_source": "sleeve_outer_diameter_mm",
+      "start_mm": [
+        -81.405,
+        -13.335,
+        16.395
+      ],
+      "end_mm": [
+        -100.0,
+        7.8,
+        16.364
+      ],
+      "envelope_status": "VALID_SINGLE_SOLID",
+      "solid_count": 1,
+      "volume_mm3": 381.34171136935385
+    },
+    {
+      "id": "H06c",
+      "label": "Left motor / direct return",
+      "curve_type": "Exact piecewise cubic Bezier (same cubic Hermite curve)",
+      "curve_segments": 6,
+      "wire_valid": true,
+      "step_curve_length_mm": 126.6127369846649,
+      "sampled_polyline_length_mm": 126.59906635417323,
+      "recorded_rounded_length_mm": 126.6,
+      "difference_vs_sampled_polyline_mm": 0.013670630491674274,
+      "difference_vs_recorded_rounded_mm": 0.012736984664911688,
+      "max_sample_reconstruction_error_mm": 7.982838877710413e-05,
+      "envelope_diameter_mm": 3.3,
+      "diameter_source": "sleeve_outer_diameter_mm",
+      "start_mm": [
+        -131.84,
+        -45.4,
+        54.0
+      ],
+      "end_mm": [
+        -100.0,
+        7.8,
+        28.864
+      ],
+      "envelope_status": "VALID_SINGLE_SOLID",
+      "solid_count": 1,
+      "volume_mm3": 1082.917221917317
+    },
+    {
+      "id": "H07a",
+      "label": "Right motor / shunt input",
+      "curve_type": "Exact piecewise cubic Bezier (same cubic Hermite curve)",
+      "curve_segments": 4,
+      "wire_valid": true,
+      "step_curve_length_mm": 68.9039095270228,
+      "sampled_polyline_length_mm": 68.90004301484527,
+      "recorded_rounded_length_mm": 68.9,
+      "difference_vs_sampled_polyline_mm": 0.003866512177538084,
+      "difference_vs_recorded_rounded_mm": 0.003909527022798898,
+      "max_sample_reconstruction_error_mm": 7.805826899278415e-05,
+      "envelope_diameter_mm": 3.3,
+      "diameter_source": "sleeve_outer_diameter_mm",
+      "start_mm": [
+        -81.405,
+        -20.455,
+        16.395
+      ],
+      "end_mm": [
+        -116.84,
+        -45.4,
+        54.0
+      ],
+      "envelope_status": "VALID_SINGLE_SOLID",
+      "solid_count": 1,
+      "volume_mm3": 589.3341172567863
+    },
+    {
+      "id": "H07b",
+      "label": "Right motor / shunt output",
+      "curve_type": "Exact piecewise cubic Bezier (same cubic Hermite curve)",
+      "curve_segments": 7,
+      "wire_valid": true,
+      "step_curve_length_mm": 119.74618479002474,
+      "sampled_polyline_length_mm": 119.72795021209224,
+      "recorded_rounded_length_mm": 119.7,
+      "difference_vs_sampled_polyline_mm": 0.01823457793250327,
+      "difference_vs_recorded_rounded_mm": 0.046184790024739186,
+      "max_sample_reconstruction_error_mm": 8.216327482280056e-05,
+      "envelope_diameter_mm": 3.3,
+      "diameter_source": "sleeve_outer_diameter_mm",
+      "start_mm": [
+        -81.405,
+        -25.535,
+        16.395
+      ],
+      "end_mm": [
+        -142.0,
+        -7.8,
+        16.364
+      ],
+      "envelope_status": "VALID_SINGLE_SOLID",
+      "solid_count": 1,
+      "volume_mm3": 1024.187201484044
+    },
+    {
+      "id": "H07c",
+      "label": "Right motor / direct return",
+      "curve_type": "Exact piecewise cubic Bezier (same cubic Hermite curve)",
+      "curve_segments": 7,
+      "wire_valid": true,
+      "step_curve_length_mm": 146.95533827928077,
+      "sampled_polyline_length_mm": 146.92926950316323,
+      "recorded_rounded_length_mm": 146.9,
+      "difference_vs_sampled_polyline_mm": 0.026068776117540438,
+      "difference_vs_recorded_rounded_mm": 0.05533827928076107,
+      "max_sample_reconstruction_error_mm": 7.518753508104071e-05,
+      "envelope_diameter_mm": 3.3,
+      "diameter_source": "sleeve_outer_diameter_mm",
+      "start_mm": [
+        -111.84,
+        -45.4,
+        54.0
+      ],
+      "end_mm": [
+        -142.0,
+        -7.8,
+        28.864
+      ],
+      "envelope_status": "VALID_SINGLE_SOLID",
+      "solid_count": 1,
+      "volume_mm3": 1256.906378882108
+    },
+    {
+      "id": "H08_chassis",
+      "label": "STOP / chassis half",
+      "curve_type": "Exact piecewise cubic Bezier (same cubic Hermite curve)",
+      "curve_segments": 15,
+      "wire_valid": true,
+      "step_curve_length_mm": 326.5445787440963,
+      "sampled_polyline_length_mm": 326.5041937115327,
+      "recorded_rounded_length_mm": 326.5,
+      "difference_vs_sampled_polyline_mm": 0.040385032563619916,
+      "difference_vs_recorded_rounded_mm": 0.04457874409632723,
+      "max_sample_reconstruction_error_mm": 8.059940589931891e-05,
+      "envelope_diameter_mm": 2.94,
+      "diameter_source": "sleeve_outer_diameter_mm",
+      "start_mm": [
+        -73.625,
+        0.1,
+        17.895
+      ],
+      "end_mm": [
+        18.0,
+        82.0,
+        58.0
+      ],
+      "envelope_status": "VALID_SINGLE_SOLID",
+      "solid_count": 1,
+      "volume_mm3": 2216.8024108403506
+    },
+    {
+      "id": "H08_lid",
+      "label": "STOP / removable lid tail",
+      "curve_type": "Exact piecewise cubic Bezier (same cubic Hermite curve)",
+      "curve_segments": 9,
+      "wire_valid": true,
+      "step_curve_length_mm": 120.26973212447396,
+      "sampled_polyline_length_mm": 120.22840489241958,
+      "recorded_rounded_length_mm": 120.2,
+      "difference_vs_sampled_polyline_mm": 0.04132723205438538,
+      "difference_vs_recorded_rounded_mm": 0.06973212447395838,
+      "max_sample_reconstruction_error_mm": 7.674360777009298e-05,
+      "envelope_diameter_mm": 2.94,
+      "diameter_source": "sleeve_outer_diameter_mm",
+      "start_mm": [
+        18.0,
+        57.23,
+        58.0
+      ],
+      "end_mm": [
+        57.0,
+        65.0,
+        68.0
+      ],
+      "envelope_status": "VALID_SINGLE_SOLID",
+      "solid_count": 1,
+      "volume_mm3": 816.4714227234093
+    },
+    {
+      "id": "O01",
+      "label": "Arm bus input",
+      "curve_type": "Exact piecewise cubic Bezier (same cubic Hermite curve)",
+      "curve_segments": 8,
+      "wire_valid": true,
+      "step_curve_length_mm": 235.33465223318962,
+      "sampled_polyline_length_mm": 235.31807457930654,
+      "recorded_rounded_length_mm": 235.3,
+      "difference_vs_sampled_polyline_mm": 0.016577653883075527,
+      "difference_vs_recorded_rounded_mm": 0.034652233189603976,
+      "max_sample_reconstruction_error_mm": 7.747764150613485e-05,
+      "envelope_diameter_mm": 5.18,
+      "diameter_source": "sleeve_outer_diameter_mm",
+      "start_mm": [
+        -58.0,
+        -38.55,
+        14.045
+      ],
+      "end_mm": [
+        117.0,
+        -45.0,
+        67.0
+      ],
+      "envelope_status": "VALID_SINGLE_SOLID",
+      "solid_count": 1,
+      "volume_mm3": 4959.471267442479
+    },
+    {
+      "id": "O02",
+      "label": "Speaker lead",
+      "curve_type": "Exact piecewise cubic Bezier (same cubic Hermite curve)",
+      "curve_segments": 5,
+      "wire_valid": true,
+      "step_curve_length_mm": 64.1007113256547,
+      "sampled_polyline_length_mm": 64.08655513923146,
+      "recorded_rounded_length_mm": 64.1,
+      "difference_vs_sampled_polyline_mm": 0.014156186423235795,
+      "difference_vs_recorded_rounded_mm": 0.0007113256547057745,
+      "max_sample_reconstruction_error_mm": 7.840313871868833e-05,
+      "envelope_diameter_mm": 3.2,
+      "diameter_source": "sleeve_outer_diameter_mm",
+      "start_mm": [
+        2.8,
+        -26.0,
+        14.095
+      ],
+      "end_mm": [
+        -22.0,
+        -61.0,
+        18.0
+      ],
+      "envelope_status": "VALID_SINGLE_SOLID",
+      "solid_count": 1,
+      "volume_mm3": 515.5285979571053
+    },
+    {
+      "id": "O03_left",
+      "label": "Left cooling fan",
+      "curve_type": "Exact piecewise cubic Bezier (same cubic Hermite curve)",
+      "curve_segments": 12,
+      "wire_valid": true,
+      "step_curve_length_mm": 248.70439249249503,
+      "sampled_polyline_length_mm": 248.65210907548843,
+      "recorded_rounded_length_mm": 248.7,
+      "difference_vs_sampled_polyline_mm": 0.052283417006606214,
+      "difference_vs_recorded_rounded_mm": 0.004392492495043143,
+      "max_sample_reconstruction_error_mm": 8.048364012049343e-05,
+      "envelope_diameter_mm": 2.78,
+      "diameter_source": "sleeve_outer_diameter_mm",
+      "start_mm": [
+        -27.75,
+        -34.8,
+        21.395
+      ],
+      "end_mm": [
+        -148.0,
+        54.0,
+        37.0
+      ],
+      "envelope_status": "VALID_SINGLE_SOLID",
+      "solid_count": 1,
+      "volume_mm3": 1509.6034885268512
+    },
+    {
+      "id": "O03_right",
+      "label": "Right cooling fan",
+      "curve_type": "Exact piecewise cubic Bezier (same cubic Hermite curve)",
+      "curve_segments": 9,
+      "wire_valid": true,
+      "step_curve_length_mm": 148.49624536280132,
+      "sampled_polyline_length_mm": 148.45339197514437,
+      "recorded_rounded_length_mm": 148.5,
+      "difference_vs_sampled_polyline_mm": 0.04285338765694746,
+      "difference_vs_recorded_rounded_mm": -0.003754637198682076,
+      "max_sample_reconstruction_error_mm": 7.576927476746974e-05,
+      "envelope_diameter_mm": 2.78,
+      "diameter_source": "sleeve_outer_diameter_mm",
+      "start_mm": [
+        -39.25,
+        -34.8,
+        21.395
+      ],
+      "end_mm": [
+        -148.0,
+        -54.0,
+        37.0
+      ],
+      "envelope_status": "VALID_SINGLE_SOLID",
+      "solid_count": 1,
+      "volume_mm3": 901.3530675106043
+    },
+    {
+      "id": "U01",
+      "label": "Orange Pi power",
+      "curve_type": "Exact piecewise cubic Bezier (same cubic Hermite curve)",
+      "curve_segments": 6,
+      "wire_valid": true,
+      "step_curve_length_mm": 87.7629052670854,
+      "sampled_polyline_length_mm": 87.75001708949621,
+      "recorded_rounded_length_mm": 87.8,
+      "difference_vs_sampled_polyline_mm": 0.012888177589189809,
+      "difference_vs_recorded_rounded_mm": -0.03709473291459631,
+      "max_sample_reconstruction_error_mm": 8.074913872147643e-05,
+      "envelope_diameter_mm": 3.5,
+      "diameter_source": "wire_od_mm",
+      "start_mm": [
+        17.0,
+        13.0,
+        13.195
+      ],
+      "end_mm": [
+        -16.5241,
+        -18.8774,
+        33.887
+      ],
+      "envelope_status": "VALID_SINGLE_SOLID",
+      "solid_count": 1,
+      "volume_mm3": 844.3780298412718
+    },
+    {
+      "id": "U02",
+      "label": "Core USB data",
+      "curve_type": "Exact piecewise cubic Bezier (same cubic Hermite curve)",
+      "curve_segments": 7,
+      "wire_valid": true,
+      "step_curve_length_mm": 149.49724857096663,
+      "sampled_polyline_length_mm": 149.47674712990244,
+      "recorded_rounded_length_mm": 149.5,
+      "difference_vs_sampled_polyline_mm": 0.020501441064197934,
+      "difference_vs_recorded_rounded_mm": -0.0027514290333670033,
+      "max_sample_reconstruction_error_mm": 7.89511871962563e-05,
+      "envelope_diameter_mm": 3.5,
+      "diameter_source": "wire_od_mm",
+      "start_mm": [
+        17.0,
+        -7.2,
+        13.195
+      ],
+      "end_mm": [
+        -31.2,
+        78.5,
+        56.5
+      ],
+      "envelope_status": "VALID_SINGLE_SOLID",
+      "solid_count": 1,
+      "volume_mm3": 1438.3312269070843
+    },
+    {
+      "id": "U03",
+      "label": "Hub upstream",
+      "curve_type": "Exact piecewise cubic Bezier (same cubic Hermite curve)",
+      "curve_segments": 8,
+      "wire_valid": true,
+      "step_curve_length_mm": 209.88698937191464,
+      "sampled_polyline_length_mm": 209.8740059749319,
+      "recorded_rounded_length_mm": 209.9,
+      "difference_vs_sampled_polyline_mm": 0.012983396982747308,
+      "difference_vs_recorded_rounded_mm": -0.013010628085368126,
+      "max_sample_reconstruction_error_mm": 7.945711206064102e-05,
+      "envelope_diameter_mm": 3.8,
+      "diameter_source": "wire_od_mm",
+      "start_mm": [
+        -51.0,
+        -55.0,
+        37.5
+      ],
+      "end_mm": [
+        6.0,
+        78.5,
+        25.0
+      ],
+      "envelope_status": "VALID_SINGLE_SOLID",
+      "solid_count": 1,
+      "volume_mm3": 2380.355017040872
+    }
+  ],
+  "route_count": 20,
+  "successful_sweeps": 20,
+  "failed_sweep_ids": [],
+  "roundtrip": {
+    "centerline_edge_count": 155,
+    "expected_centerline_edge_count": 155,
+    "centerline_route_names_preserved": true,
+    "routing_route_names_preserved": true,
+    "total_reimported_centerline_length_mm": 2916.080093116322,
+    "total_original_curve_length_mm": 2916.0800931273834,
+    "routing_solid_count": 20,
+    "routing_all_solids_valid": true
+  },
+  "copied_verified_hull_and_coupon": [
+    "Hull_MOSS_V07_Harness_Tie_Loops_PROTOTYPE.step",
+    "Hull_MOSS_V07_Harness_Tie_Loops_PROTOTYPE.stl",
+    "tie_anchor_fit_coupon.step",
+    "tie_anchor_fit_coupon.stl",
+    "tie_anchor_fit_coupon.png",
+    "hull_tie_variant_QA.json"
+  ],
+  "outputs": {
+    "MOSS_HARNESS_CENTRELINES.step": {
+      "sha256": "70af472b4a7c6205e30e824d048c40cfa7a8509c80addf2973cd1f0296c2d51a",
+      "bytes": 129967
+    },
+    "MOSS_HARNESS_ROUTING.step": {
+      "sha256": "7556384fda2a752289318767e202d74e5bbd5b262ce0146d47c2f44e39fa019f",
+      "bytes": 6101328
+    }
+  },
+  "source_unchanged": true,
+  "elapsed_seconds": 6.933146715164185
+}

@@ -1,0 +1,113 @@
+{
+  "file": "AUDIO_MIX.wav",
+  "duration_seconds": 42,
+  "sample_rate": 48000,
+  "channels": 2,
+  "sample_format": "PCM signed 16-bit",
+  "music_source": "little_robot_reused.m4a",
+  "source_interval_seconds": [
+    0,
+    42
+  ],
+  "previous_music_gain": 1.4,
+  "requested_relative_music_gain": 0.33,
+  "music_gain": 0.46199999999999997,
+  "music_change_db": -9.62972120244225,
+  "music": {
+    "peak_dbfs": -17.165705827358956,
+    "rms_dbfs": -30.553511231752726
+  },
+  "effects": {
+    "peak_dbfs": -14.0,
+    "rms_dbfs": -34.62859983863577
+  },
+  "mix_float": {
+    "peak_dbfs": -11.46877057250835,
+    "rms_dbfs": -29.121511392198485
+  },
+  "mix_wav_readback": {
+    "peak_dbfs": -11.468837638748093,
+    "rms_dbfs": -29.121777111135046
+  },
+  "clipped_samples": 0,
+  "first_sample": [
+    0,
+    0
+  ],
+  "last_sample": [
+    0,
+    0
+  ],
+  "fades_seconds": {
+    "in": [
+      0,
+      0.5
+    ],
+    "out": [
+      40.5,
+      42
+    ]
+  },
+  "effects_original_synthesis": true,
+  "speech_or_tts": false,
+  "sound_family_reference": "sound_effects.py",
+  "events": [
+    {
+      "time_seconds": 3.1,
+      "duration_seconds": 0.34,
+      "cue": "soft transition cue",
+      "cue_peak_dbfs": -14.0,
+      "pan": 0
+    },
+    {
+      "time_seconds": 7.15,
+      "duration_seconds": 0.34,
+      "cue": "soft transition cue",
+      "cue_peak_dbfs": -14.0,
+      "pan": 0
+    },
+    {
+      "time_seconds": 10.2,
+      "duration_seconds": 0.34,
+      "cue": "soft transition cue",
+      "cue_peak_dbfs": -14.0,
+      "pan": 0
+    },
+    {
+      "time_seconds": 14.1,
+      "duration_seconds": 0.34,
+      "cue": "soft transition cue",
+      "cue_peak_dbfs": -14.0,
+      "pan": 0
+    },
+    {
+      "time_seconds": 22.1,
+      "duration_seconds": 0.34,
+      "cue": "soft transition cue",
+      "cue_peak_dbfs": -14.0,
+      "pan": 0
+    },
+    {
+      "time_seconds": 26.65,
+      "duration_seconds": 0.34,
+      "cue": "soft transition cue",
+      "cue_peak_dbfs": -14.0,
+      "pan": 0
+    },
+    {
+      "time_seconds": 30.15,
+      "duration_seconds": 0.44,
+      "cue": "soft transition cue",
+      "cue_peak_dbfs": -14.0,
+      "pan": 0
+    },
+    {
+      "time_seconds": 35.1,
+      "duration_seconds": 0.44,
+      "cue": "soft transition cue",
+      "cue_peak_dbfs": -14.0,
+      "pan": 0
+    }
+  ],
+  "sha256": "562989d8c7597898126cebac3d9db9be30f7f5a0504e0e51c8938c87b9e588fe"
+}

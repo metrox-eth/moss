@@ -1,0 +1,5 @@
+output/
+video/
+__pycache__/
+viewer_runtime/node_modules/
+assets/HARNESS_SCENE.npz

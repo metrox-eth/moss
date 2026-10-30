@@ -1,0 +1,21 @@
+{
+  "board_sha256": "cffb4a378502802a778fcee618310e6f3fa5c49ad201b0c372728368ae3520d1",
+  "routes": 20,
+  "scene_meshes": 424,
+  "triangles": 1603761,
+  "units_GLTF": "metres",
+  "units_source": "mm",
+  "conceptual_geometry": [
+    "Simplified connector housings reconstructed from public dimensions; fixed board connectors from KiCad",
+    "Inline stop connector",
+    "Battery envelope and outlet; photo-based HB1 visual model, shifted +10mm Y; 800mm commercial lead excess not represented",
+    "Sleeve diameters, wire OD, bend radii and routing",
+    "Cooler illustration",
+    "Arm exit location"
+  ],
+  "outputs": [
+    "MOSS_HARNESS_ASSEMBLY.glb",
+    "MOSS_HARNESS_ONLY.glb",
+    "ROUTE_LENGTHS.json"
+  ]
+}

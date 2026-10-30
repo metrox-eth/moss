@@ -1,0 +1,1057 @@
+{
+  "board": "MOSS_Core_V07_Prototype.kicad_pcb",
+  "sha256": "cffb4a378502802a778fcee618310e6f3fa5c49ad201b0c372728368ae3520d1",
+  "frame": "native R92 mm",
+  "connectors": {
+    "J5": {
+      "value": "ARM / DATA V+ GND",
+      "footprint": "Connector_Molex_Molex_SPOX_5268-03A_1x03_P2.50mm_Horizontal",
+      "pcb_xy_mm": [
+        17.5,
+        66.355
+      ],
+      "orientation_deg": 0.0,
+      "world_origin_mm": [
+        -60.5,
+        -29.355000000000004,
+        11.595
+      ],
+      "pads": [
+        {
+          "pad": "1",
+          "net": "SERVO_BUS",
+          "world_xy_mm": [
+            -60.5,
+            -29.355000000000004
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "ACTUATOR_SW",
+          "world_xy_mm": [
+            -58.0,
+            -29.355000000000004
+          ]
+        },
+        {
+          "pad": "3",
+          "net": "GND",
+          "world_xy_mm": [
+            -55.5,
+            -29.355000000000004
+          ]
+        }
+      ],
+      "routing_mouth_world_mm": [
+        -58.0,
+        -35.955,
+        14.045
+      ],
+      "outward_world_unit": [
+        0.0,
+        -1.0,
+        0
+      ],
+      "mouth_evidence": "XY estimated from F.Fab edge or cavity center; direction follows native horizontal/vertical footprint; Z is conceptual center within native connector body, not measured mating terminal. Confirm with mesh and prototype plug."
+    },
+    "J7": {
+      "value": "SPEAKER / 4 ohm 3 W",
+      "footprint": "Connector_JST_JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal",
+      "pcb_xy_mm": [
+        72.55,
+        64.0
+      ],
+      "orientation_deg": 90.0,
+      "world_origin_mm": [
+        -5.450000000000003,
+        -27.0,
+        11.595
+      ],
+      "pads": [
+        {
+          "pad": "1",
+          "net": "SPEAKER_P",
+          "world_xy_mm": [
+            -5.450000000000003,
+            -27.0
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "SPEAKER_N",
+          "world_xy_mm": [
+            -5.450000000000003,
+            -25.0
+          ]
+        }
+      ],
+      "routing_mouth_world_mm": [
+        0.8,
+        -26.0,
+        14.095
+      ],
+      "outward_world_unit": [
+        1.0,
+        -0.0,
+        0
+      ],
+      "mouth_evidence": "XY estimated from F.Fab edge or cavity center; direction follows native horizontal/vertical footprint; Z is conceptual center within native connector body, not measured mating terminal. Confirm with mesh and prototype plug."
+    },
+    "J4": {
+      "value": "ENCODER RIGHT",
+      "footprint": "Connector_JST_JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal",
+      "pcb_xy_mm": [
+        34.75,
+        5.0
+      ],
+      "orientation_deg": 180.0,
+      "world_origin_mm": [
+        -43.25,
+        32.0,
+        11.595
+      ],
+      "pads": [
+        {
+          "pad": "1",
+          "net": "GND",
+          "world_xy_mm": [
+            -41.375,
+            30.15
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "ENC_3V3",
+          "world_xy_mm": [
+            -42.625,
+            30.15
+          ]
+        },
+        {
+          "pad": "3",
+          "net": "ER_A_EXT",
+          "world_xy_mm": [
+            -43.875,
+            30.15
+          ]
+        },
+        {
+          "pad": "4",
+          "net": "ER_B_EXT",
+          "world_xy_mm": [
+            -45.125,
+            30.15
+          ]
+        },
+        {
+          "pad": "MP",
+          "net": "GND",
+          "world_xy_mm": [
+            -39.525,
+            33.35
+          ]
+        },
+        {
+          "pad": "MP",
+          "net": "GND",
+          "world_xy_mm": [
+            -46.975,
+            33.35
+          ]
+        }
+      ],
+      "routing_mouth_world_mm": [
+        -43.25,
+        34.45,
+        13.245
+      ],
+      "outward_world_unit": [
+        0.0,
+        1.0,
+        0
+      ],
+      "mouth_evidence": "XY estimated from F.Fab edge or cavity center; direction follows native horizontal/vertical footprint; Z is conceptual center within native connector body, not measured mating terminal. Confirm with mesh and prototype plug."
+    },
+    "J20": {
+      "value": "5V3A OUT TO ORANGE PI",
+      "footprint": "Connector_USB_USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal",
+      "pcb_xy_mm": [
+        77.0,
+        24.0
+      ],
+      "orientation_deg": 90.0,
+      "world_origin_mm": [
+        -1.0,
+        13.0,
+        11.595
+      ],
+      "pads": [
+        {
+          "pad": "A1",
+          "net": "GND",
+          "world_xy_mm": [
+            -4.680000000000007,
+            9.8
+          ]
+        },
+        {
+          "pad": "A4",
+          "net": "HOST_5V",
+          "world_xy_mm": [
+            -4.680000000000007,
+            10.600000000000001
+          ]
+        },
+        {
+          "pad": "A5",
+          "net": "HOST_CC1",
+          "world_xy_mm": [
+            -4.680000000000007,
+            11.75
+          ]
+        },
+        {
+          "pad": "A6",
+          "net": "unconnected-(J20-D+-PadA6)",
+          "world_xy_mm": [
+            -4.680000000000007,
+            12.75
+          ]
+        },
+        {
+          "pad": "A7",
+          "net": "unconnected-(J20-D--PadA7)",
+          "world_xy_mm": [
+            -4.680000000000007,
+            13.25
+          ]
+        },
+        {
+          "pad": "A8",
+          "net": "unconnected-(J20-SBU1-PadA8)",
+          "world_xy_mm": [
+            -4.680000000000007,
+            14.25
+          ]
+        },
+        {
+          "pad": "A9",
+          "net": "HOST_5V",
+          "world_xy_mm": [
+            -4.680000000000007,
+            15.399999999999999
+          ]
+        },
+        {
+          "pad": "A12",
+          "net": "GND",
+          "world_xy_mm": [
+            -4.680000000000007,
+            16.2
+          ]
+        },
+        {
+          "pad": "B1",
+          "net": "GND",
+          "world_xy_mm": [
+            -4.680000000000007,
+            16.2
+          ]
+        },
+        {
+          "pad": "B4",
+          "net": "HOST_5V",
+          "world_xy_mm": [
+            -4.680000000000007,
+            15.399999999999999
+          ]
+        },
+        {
+          "pad": "B5",
+          "net": "HOST_CC2",
+          "world_xy_mm": [
+            -4.680000000000007,
+            14.75
+          ]
+        },
+        {
+          "pad": "B6",
+          "net": "unconnected-(J20-D+-PadB6)",
+          "world_xy_mm": [
+            -4.680000000000007,
+            13.75
+          ]
+        },
+        {
+          "pad": "B7",
+          "net": "unconnected-(J20-D--PadB7)",
+          "world_xy_mm": [
+            -4.680000000000007,
+            12.25
+          ]
+        },
+        {
+          "pad": "B8",
+          "net": "unconnected-(J20-SBU2-PadB8)",
+          "world_xy_mm": [
+            -4.680000000000007,
+            11.25
+          ]
+        },
+        {
+          "pad": "B9",
+          "net": "HOST_5V",
+          "world_xy_mm": [
+            -4.680000000000007,
+            10.600000000000001
+          ]
+        },
+        {
+          "pad": "B12",
+          "net": "GND",
+          "world_xy_mm": [
+            -4.680000000000007,
+            9.8
+          ]
+        },
+        {
+          "pad": "SH",
+          "net": "GND",
+          "world_xy_mm": [
+            -4.105000000000004,
+            8.68
+          ]
+        },
+        {
+          "pad": "SH",
+          "net": "GND",
+          "world_xy_mm": [
+            0.07500000000000284,
+            8.68
+          ]
+        },
+        {
+          "pad": "SH",
+          "net": "GND",
+          "world_xy_mm": [
+            -4.105000000000004,
+            17.32
+          ]
+        },
+        {
+          "pad": "SH",
+          "net": "GND",
+          "world_xy_mm": [
+            0.07500000000000284,
+            17.32
+          ]
+        }
+      ],
+      "routing_mouth_world_mm": [
+        2.675,
+        13.0,
+        13.195
+      ],
+      "outward_world_unit": [
+        1.0,
+        -0.0,
+        0
+      ],
+      "mouth_evidence": "XY estimated from F.Fab edge or cavity center; direction follows native horizontal/vertical footprint; Z is conceptual center within native connector body, not measured mating terminal. Confirm with mesh and prototype plug."
+    },
+    "J14": {
+      "value": "FAN 1 / 3S",
+      "footprint": "Connector_JST_JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical",
+      "pcb_xy_mm": [
+        40.0,
+        71.8
+      ],
+      "orientation_deg": 180.0,
+      "world_origin_mm": [
+        -38.0,
+        -34.8,
+        11.595
+      ],
+      "pads": [
+        {
+          "pad": "1",
+          "net": "FAN_3S",
+          "world_xy_mm": [
+            -38.0,
+            -34.8
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "GND",
+          "world_xy_mm": [
+            -40.5,
+            -34.8
+          ]
+        }
+      ],
+      "routing_mouth_world_mm": [
+        -39.25,
+        -34.275,
+        18.595
+      ],
+      "outward_world_unit": [
+        0.0,
+        0.0,
+        1
+      ],
+      "mouth_evidence": "XY estimated from F.Fab edge or cavity center; direction follows native horizontal/vertical footprint; Z is conceptual center within native connector body, not measured mating terminal. Confirm with mesh and prototype plug."
+    },
+    "J2": {
+      "value": "CYTRON MDD10A SIGNAL",
+      "footprint": "Connector_JST_JST_GH_SM05B-GHS-TB_1x05-1MP_P1.25mm_Horizontal",
+      "pcb_xy_mm": [
+        45.5,
+        5.0
+      ],
+      "orientation_deg": 180.0,
+      "world_origin_mm": [
+        -32.5,
+        32.0,
+        11.595
+      ],
+      "pads": [
+        {
+          "pad": "1",
+          "net": "MDD_PWM1",
+          "world_xy_mm": [
+            -30.0,
+            30.15
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "MDD_DIR1",
+          "world_xy_mm": [
+            -31.25,
+            30.15
+          ]
+        },
+        {
+          "pad": "3",
+          "net": "MDD_PWM2",
+          "world_xy_mm": [
+            -32.5,
+            30.15
+          ]
+        },
+        {
+          "pad": "4",
+          "net": "MDD_DIR2",
+          "world_xy_mm": [
+            -33.75,
+            30.15
+          ]
+        },
+        {
+          "pad": "5",
+          "net": "GND",
+          "world_xy_mm": [
+            -35.0,
+            30.15
+          ]
+        },
+        {
+          "pad": "MP",
+          "net": "GND",
+          "world_xy_mm": [
+            -28.15,
+            33.35
+          ]
+        },
+        {
+          "pad": "MP",
+          "net": "GND",
+          "world_xy_mm": [
+            -36.85,
+            33.35
+          ]
+        }
+      ],
+      "routing_mouth_world_mm": [
+        -32.5,
+        34.45,
+        13.245
+      ],
+      "outward_world_unit": [
+        0.0,
+        1.0,
+        0
+      ],
+      "mouth_evidence": "XY estimated from F.Fab edge or cavity center; direction follows native horizontal/vertical footprint; Z is conceptual center within native connector body, not measured mating terminal. Confirm with mesh and prototype plug."
+    },
+    "J15": {
+      "value": "FAN 2 / 3S",
+      "footprint": "Connector_JST_JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical",
+      "pcb_xy_mm": [
+        51.5,
+        71.8
+      ],
+      "orientation_deg": 180.0,
+      "world_origin_mm": [
+        -26.5,
+        -34.8,
+        11.595
+      ],
+      "pads": [
+        {
+          "pad": "1",
+          "net": "FAN_3S",
+          "world_xy_mm": [
+            -26.5,
+            -34.8
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "GND",
+          "world_xy_mm": [
+            -29.0,
+            -34.8
+          ]
+        }
+      ],
+      "routing_mouth_world_mm": [
+        -27.75,
+        -34.275,
+        18.595
+      ],
+      "outward_world_unit": [
+        0.0,
+        0.0,
+        1
+      ],
+      "mouth_evidence": "XY estimated from F.Fab edge or cavity center; direction follows native horizontal/vertical footprint; Z is conceptual center within native connector body, not measured mating terminal. Confirm with mesh and prototype plug."
+    },
+    "J8": {
+      "value": "E-STOP / SIGNAL ONLY",
+      "footprint": "Connector_JST_JST_SH_BM06B-SRSS-TB_1x06-1MP_P1.00mm_Vertical",
+      "pcb_xy_mm": [
+        3.925,
+        36.9
+      ],
+      "orientation_deg": -90.0,
+      "world_origin_mm": [
+        -74.075,
+        0.10000000000000142,
+        11.595
+      ],
+      "pads": [
+        {
+          "pad": "1",
+          "net": "ESTOP_CUT_SOURCE",
+          "world_xy_mm": [
+            -75.4,
+            2.6000000000000014
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "ESTOP_CUT_RETURN",
+          "world_xy_mm": [
+            -75.4,
+            1.6000000000000014
+          ]
+        },
+        {
+          "pad": "3",
+          "net": "unconnected-(J8-DNC_3-Pad3)",
+          "world_xy_mm": [
+            -75.4,
+            0.6000000000000014
+          ]
+        },
+        {
+          "pad": "4",
+          "net": "unconnected-(J8-DNC_4-Pad4)",
+          "world_xy_mm": [
+            -75.4,
+            -0.3999999999999986
+          ]
+        },
+        {
+          "pad": "5",
+          "net": "ESTOP_STATUS_SOURCE",
+          "world_xy_mm": [
+            -75.4,
+            -1.3999999999999986
+          ]
+        },
+        {
+          "pad": "6",
+          "net": "ESTOP_STATUS_RAW",
+          "world_xy_mm": [
+            -75.4,
+            -2.3999999999999986
+          ]
+        },
+        {
+          "pad": "MP",
+          "net": "GND",
+          "world_xy_mm": [
+            -72.875,
+            3.8999999999999986
+          ]
+        },
+        {
+          "pad": "MP",
+          "net": "GND",
+          "world_xy_mm": [
+            -72.875,
+            -3.700000000000003
+          ]
+        }
+      ],
+      "routing_mouth_world_mm": [
+        -73.625,
+        0.1,
+        14.495
+      ],
+      "outward_world_unit": [
+        0.0,
+        -0.0,
+        1
+      ],
+      "mouth_evidence": "XY estimated from F.Fab edge or cavity center; direction follows native horizontal/vertical footprint; Z is conceptual center within native connector body, not measured mating terminal. Confirm with mesh and prototype plug."
+    },
+    "J1": {
+      "value": "USB2 device / 500mA max",
+      "footprint": "Connector_USB_USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal",
+      "pcb_xy_mm": [
+        77.0,
+        44.2
+      ],
+      "orientation_deg": 90.0,
+      "world_origin_mm": [
+        -1.0,
+        -7.200000000000003,
+        11.595
+      ],
+      "pads": [
+        {
+          "pad": "A1",
+          "net": "GND",
+          "world_xy_mm": [
+            -4.680000000000007,
+            -10.399999999999999
+          ]
+        },
+        {
+          "pad": "A4",
+          "net": "VBUS",
+          "world_xy_mm": [
+            -4.680000000000007,
+            -9.600000000000001
+          ]
+        },
+        {
+          "pad": "A5",
+          "net": "CC1",
+          "world_xy_mm": [
+            -4.680000000000007,
+            -8.450000000000003
+          ]
+        },
+        {
+          "pad": "A6",
+          "net": "USB_P",
+          "world_xy_mm": [
+            -4.680000000000007,
+            -7.450000000000003
+          ]
+        },
+        {
+          "pad": "A7",
+          "net": "USB_N",
+          "world_xy_mm": [
+            -4.680000000000007,
+            -6.950000000000003
+          ]
+        },
+        {
+          "pad": "A8",
+          "net": "unconnected-(J1-SBU1-PadA8)",
+          "world_xy_mm": [
+            -4.680000000000007,
+            -5.950000000000003
+          ]
+        },
+        {
+          "pad": "A9",
+          "net": "VBUS",
+          "world_xy_mm": [
+            -4.680000000000007,
+            -4.799999999999997
+          ]
+        },
+        {
+          "pad": "A12",
+          "net": "GND",
+          "world_xy_mm": [
+            -4.680000000000007,
+            -4.0
+          ]
+        },
+        {
+          "pad": "B1",
+          "net": "GND",
+          "world_xy_mm": [
+            -4.680000000000007,
+            -4.0
+          ]
+        },
+        {
+          "pad": "B4",
+          "net": "VBUS",
+          "world_xy_mm": [
+            -4.680000000000007,
+            -4.799999999999997
+          ]
+        },
+        {
+          "pad": "B5",
+          "net": "CC2",
+          "world_xy_mm": [
+            -4.680000000000007,
+            -5.450000000000003
+          ]
+        },
+        {
+          "pad": "B6",
+          "net": "USB_P",
+          "world_xy_mm": [
+            -4.680000000000007,
+            -6.450000000000003
+          ]
+        },
+        {
+          "pad": "B7",
+          "net": "USB_N",
+          "world_xy_mm": [
+            -4.680000000000007,
+            -7.950000000000003
+          ]
+        },
+        {
+          "pad": "B8",
+          "net": "unconnected-(J1-SBU2-PadB8)",
+          "world_xy_mm": [
+            -4.680000000000007,
+            -8.950000000000003
+          ]
+        },
+        {
+          "pad": "B9",
+          "net": "VBUS",
+          "world_xy_mm": [
+            -4.680000000000007,
+            -9.600000000000001
+          ]
+        },
+        {
+          "pad": "B12",
+          "net": "GND",
+          "world_xy_mm": [
+            -4.680000000000007,
+            -10.399999999999999
+          ]
+        },
+        {
+          "pad": "SH",
+          "net": "GND",
+          "world_xy_mm": [
+            -4.105000000000004,
+            -11.520000000000003
+          ]
+        },
+        {
+          "pad": "SH",
+          "net": "GND",
+          "world_xy_mm": [
+            0.07500000000000284,
+            -11.520000000000003
+          ]
+        },
+        {
+          "pad": "SH",
+          "net": "GND",
+          "world_xy_mm": [
+            -4.105000000000004,
+            -2.8800000000000026
+          ]
+        },
+        {
+          "pad": "SH",
+          "net": "GND",
+          "world_xy_mm": [
+            0.07500000000000284,
+            -2.8800000000000026
+          ]
+        }
+      ],
+      "routing_mouth_world_mm": [
+        2.675,
+        -7.2,
+        13.195
+      ],
+      "outward_world_unit": [
+        1.0,
+        -0.0,
+        0
+      ],
+      "mouth_evidence": "XY estimated from F.Fab edge or cavity center; direction follows native horizontal/vertical footprint; Z is conceptual center within native connector body, not measured mating terminal. Confirm with mesh and prototype plug."
+    },
+    "J12": {
+      "value": "L MOTOR SENSE LOOP",
+      "footprint": "TerminalBlock_Phoenix_TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
+      "pcb_xy_mm": [
+        6.195,
+        45.255
+      ],
+      "orientation_deg": -90.0,
+      "world_origin_mm": [
+        -71.805,
+        -8.255000000000003,
+        11.595
+      ],
+      "pads": [
+        {
+          "pad": "1",
+          "net": "CYTRON_L_LEAD",
+          "world_xy_mm": [
+            -71.805,
+            -8.255000000000003
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "MOTOR_L_LEAD",
+          "world_xy_mm": [
+            -71.805,
+            -13.335
+          ]
+        }
+      ],
+      "routing_mouth_world_mm": [
+        -76.405,
+        -10.795,
+        16.395
+      ],
+      "outward_world_unit": [
+        -1.0,
+        -0.0,
+        0
+      ],
+      "mouth_evidence": "XY estimated from F.Fab edge or cavity center; direction follows native horizontal/vertical footprint; Z is conceptual center within native connector body, not measured mating terminal. Confirm with mesh and prototype plug."
+    },
+    "J10": {
+      "value": "XT30PW-M / FUSED 3S INPUT",
+      "footprint": "Connector_AMASS_AMASS_XT30PW-M_1x02_P2.50mm_Horizontal_EdgeEntry",
+      "pcb_xy_mm": [
+        25.0,
+        11.1
+      ],
+      "orientation_deg": 0.0,
+      "world_origin_mm": [
+        -53.0,
+        25.9,
+        11.595
+      ],
+      "pads": [
+        {
+          "pad": "1",
+          "net": "GND",
+          "world_xy_mm": [
+            -53.0,
+            25.9
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "BAT_PROTECTED",
+          "world_xy_mm": [
+            -58.0,
+            25.9
+          ]
+        }
+      ],
+      "routing_mouth_world_mm": [
+        -55.5,
+        39.0,
+        14.995
+      ],
+      "outward_world_unit": [
+        0.0,
+        1.0,
+        0
+      ],
+      "mouth_evidence": "XY estimated from F.Fab edge or cavity center; direction follows native horizontal/vertical footprint; Z is conceptual center within native connector body, not measured mating terminal. Confirm with mesh and prototype plug."
+    },
+    "J3": {
+      "value": "ENCODER LEFT",
+      "footprint": "Connector_JST_JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal",
+      "pcb_xy_mm": [
+        60.0,
+        5.0
+      ],
+      "orientation_deg": 180.0,
+      "world_origin_mm": [
+        -18.0,
+        32.0,
+        11.595
+      ],
+      "pads": [
+        {
+          "pad": "1",
+          "net": "GND",
+          "world_xy_mm": [
+            -16.125,
+            30.15
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "ENC_3V3",
+          "world_xy_mm": [
+            -17.375,
+            30.15
+          ]
+        },
+        {
+          "pad": "3",
+          "net": "EL_A_EXT",
+          "world_xy_mm": [
+            -18.625,
+            30.15
+          ]
+        },
+        {
+          "pad": "4",
+          "net": "EL_B_EXT",
+          "world_xy_mm": [
+            -19.875,
+            30.15
+          ]
+        },
+        {
+          "pad": "MP",
+          "net": "GND",
+          "world_xy_mm": [
+            -14.274999999999999,
+            33.35
+          ]
+        },
+        {
+          "pad": "MP",
+          "net": "GND",
+          "world_xy_mm": [
+            -21.725,
+            33.35
+          ]
+        }
+      ],
+      "routing_mouth_world_mm": [
+        -18.0,
+        34.45,
+        13.245
+      ],
+      "outward_world_unit": [
+        0.0,
+        1.0,
+        0
+      ],
+      "mouth_evidence": "XY estimated from F.Fab edge or cavity center; direction follows native horizontal/vertical footprint; Z is conceptual center within native connector body, not measured mating terminal. Confirm with mesh and prototype plug."
+    },
+    "J13": {
+      "value": "R MOTOR SENSE LOOP",
+      "footprint": "TerminalBlock_Phoenix_TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
+      "pcb_xy_mm": [
+        6.195,
+        57.455
+      ],
+      "orientation_deg": -90.0,
+      "world_origin_mm": [
+        -71.805,
+        -20.455,
+        11.595
+      ],
+      "pads": [
+        {
+          "pad": "1",
+          "net": "CYTRON_R_LEAD",
+          "world_xy_mm": [
+            -71.805,
+            -20.455
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "MOTOR_R_LEAD",
+          "world_xy_mm": [
+            -71.805,
+            -25.534999999999997
+          ]
+        }
+      ],
+      "routing_mouth_world_mm": [
+        -76.405,
+        -22.995,
+        16.395
+      ],
+      "outward_world_unit": [
+        -1.0,
+        -0.0,
+        0
+      ],
+      "mouth_evidence": "XY estimated from F.Fab edge or cavity center; direction follows native horizontal/vertical footprint; Z is conceptual center within native connector body, not measured mating terminal. Confirm with mesh and prototype plug."
+    },
+    "J11": {
+      "value": "CYTRON POWER",
+      "footprint": "TerminalBlock_Phoenix_TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
+      "pcb_xy_mm": [
+        6.195,
+        23.455
+      ],
+      "orientation_deg": -90.0,
+      "world_origin_mm": [
+        -71.805,
+        13.545000000000002,
+        11.595
+      ],
+      "pads": [
+        {
+          "pad": "1",
+          "net": "ACTUATOR_SW",
+          "world_xy_mm": [
+            -71.805,
+            13.545000000000002
+          ]
+        },
+        {
+          "pad": "2",
+          "net": "GND",
+          "world_xy_mm": [
+            -71.805,
+            8.465
+          ]
+        }
+      ],
+      "routing_mouth_world_mm": [
+        -76.405,
+        11.005,
+        16.395
+      ],
+      "outward_world_unit": [
+        -1.0,
+        -0.0,
+        0
+      ],
+      "mouth_evidence": "XY estimated from F.Fab edge or cavity center; direction follows native horizontal/vertical footprint; Z is conceptual center within native connector body, not measured mating terminal. Confirm with mesh and prototype plug."
+    }
+  }
+}

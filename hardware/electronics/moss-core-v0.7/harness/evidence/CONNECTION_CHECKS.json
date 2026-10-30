@@ -1,0 +1,120 @@
+{
+  "status": "VISUAL_TOPOLOGY_AND_ENDPOINT_CHECK_PASSED",
+  "source_scene_sha256": "e91fcb7f2bdfd835f01c11977d8a6f66c7e2207c9ada16a3f68f679111eb911a",
+  "connections": [
+    {
+      "route": "H03",
+      "end": "Core",
+      "description": "Wire centres coincide with J2 housing outlet cavities; same source coordinate frame.",
+      "conductors": 5,
+      "maximum_mesh_endpoint_error_mm": 5.446340424084061e-06
+    },
+    {
+      "route": "H04",
+      "end": "Core",
+      "description": "Wire centres coincide with J3 housing outlet cavities; same source coordinate frame.",
+      "conductors": 4,
+      "maximum_mesh_endpoint_error_mm": 5.446340424084061e-06
+    },
+    {
+      "route": "H05",
+      "end": "Core",
+      "description": "Wire centres coincide with J4 housing outlet cavities; same source coordinate frame.",
+      "conductors": 4,
+      "maximum_mesh_endpoint_error_mm": 4.575092879528021e-06
+    },
+    {
+      "route": "O01",
+      "end": "Core",
+      "description": "Wire centres coincide with J5 housing outlet cavities; same source coordinate frame.",
+      "conductors": 3,
+      "maximum_mesh_endpoint_error_mm": 4.024279619193854e-06
+    },
+    {
+      "route": "O02",
+      "end": "Core",
+      "description": "Wire centres coincide with J7 housing outlet cavities; same source coordinate frame.",
+      "conductors": 2,
+      "maximum_mesh_endpoint_error_mm": 3.28152666324919e-07
+    },
+    {
+      "route": "H08_chassis",
+      "end": "Core",
+      "description": "Wire centres coincide with J8 housing outlet cavities; same source coordinate frame.",
+      "conductors": 4,
+      "maximum_mesh_endpoint_error_mm": 7.770311319888192e-06
+    },
+    {
+      "route": "O03_right",
+      "end": "Core",
+      "description": "Wire centres coincide with J14 housing outlet cavities; same source coordinate frame.",
+      "conductors": 2,
+      "maximum_mesh_endpoint_error_mm": 3.378538488938997e-06
+    },
+    {
+      "route": "O03_left",
+      "end": "Core",
+      "description": "Wire centres coincide with J15 housing outlet cavities; same source coordinate frame.",
+      "conductors": 2,
+      "maximum_mesh_endpoint_error_mm": 3.378538488938997e-06
+    },
+    {
+      "route": "H04",
+      "end": "device",
+      "description": "Four encoder wires enter the shared six-way motor housing.",
+      "conductors": 4,
+      "maximum_mesh_endpoint_error_mm": 8.682674169330707e-06
+    },
+    {
+      "route": "H05",
+      "end": "device",
+      "description": "Four encoder wires enter the shared six-way motor housing.",
+      "conductors": 4,
+      "maximum_mesh_endpoint_error_mm": 1.5264834636847105e-05
+    },
+    {
+      "route": "H06b",
+      "end": "device",
+      "description": "Motor power enters a remaining cavity of the same housing; physical pin order unverified.",
+      "conductors": 1,
+      "maximum_mesh_endpoint_error_mm": 7.404935634193362e-07
+    },
+    {
+      "route": "H06c",
+      "end": "device",
+      "description": "Motor power enters a remaining cavity of the same housing; physical pin order unverified.",
+      "conductors": 1,
+      "maximum_mesh_endpoint_error_mm": 4.2957285344570135e-07
+    },
+    {
+      "route": "H07b",
+      "end": "device",
+      "description": "Motor power enters a remaining cavity of the same housing; physical pin order unverified.",
+      "conductors": 1,
+      "maximum_mesh_endpoint_error_mm": 1.5360046110182386e-05
+    },
+    {
+      "route": "H07c",
+      "end": "device",
+      "description": "Motor power enters a remaining cavity of the same housing; physical pin order unverified.",
+      "conductors": 1,
+      "maximum_mesh_endpoint_error_mm": 4.2957285344570135e-07
+    },
+    {
+      "route": "H08",
+      "description": "The four coloured wire paths align in X/Z across the mated inline pair; vendor cavity numbers still require qualification."
+    }
+  ],
+  "topology": {
+    "STOP": "J8 via removable lid connector; four signal wires, positions 1/2/5/6",
+    "battery": "XT30 J10 via existing pack fuse",
+    "Pi_power": "Core J20 -> Orange Pi POWER",
+    "USB_data": "Pi DATA -> OTG adapter -> HB1 upstream; HB1 downstream -> Core J1"
+  },
+  "limits": [
+    "No physical mate test",
+    "Photo-based motor housing identification, clocking and circuit order remain unverified",
+    "Micro-Fit candidate contact/wire selection unresolved",
+    "USB cable excess and installed bend radii remain provisional"
+  ]
+}

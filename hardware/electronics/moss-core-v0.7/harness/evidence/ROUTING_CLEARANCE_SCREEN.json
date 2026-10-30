@@ -1,0 +1,1169 @@
+{
+  "status": "SPARSE_TRIANGLE_PROXIMITY_SCREEN_NOT_CLEARANCE_CERTIFICATION",
+  "source_routes_sha256": "ced60cb6321cad7a4edc1983807427f520afecd069c392940326b95cadebba9a",
+  "source_meshes": {
+    "NON_CORE_CONTEXT_MESH.npz": "29296106b2c57635a61626e6f6f56fbeedc2d9d5eae4600abe3b142734f80da7",
+    "current_core_mesh.npz": "665663e1beb9b703f6ff8576e94d62e3a006792900e47b1d777766b186ec45ae",
+    "HULL_WITH_TIES_AND_NOTCH.npz": "adb02e3b1274cd7bfc3b2bda10c50846400bf657b9402ac728c1cf2146ec9802"
+  },
+  "method": "All provided spline sample points after trimming first/last12mm; vtkStaticCellLocator exact nearest triangle distance. Surface gap=distance-radius. Sleeve radius active13mm<s<L-16mm; otherwise radius includes conductor center offset and insulation. Sparse surface tests, not solid containment/Boolean proof.",
+  "omitted": [
+    "Intentional connector/device outlet first/last12mm",
+    "Legacy encoder/contact envelopes",
+    "STOP reference switch contacts",
+    "Cable-vs-cable collisions",
+    "Cable ties/plug bodies/fasteners",
+    "Geometric surfaces deeper than modeled radius may require solid containment review"
+  ],
+  "results": [
+    {
+      "route": "H03",
+      "label": "Cytron control",
+      "obstacle": "Closed_upper_cover",
+      "sample_index": 138,
+      "distance_along_route_mm": 121.447,
+      "point_mm": [
+        -120.9991,
+        47.2595,
+        64.2619
+      ],
+      "closest_mesh_point_mm": [
+        -120.999,
+        48.0,
+        66.0
+      ],
+      "center_to_surface_mm": 1.8893,
+      "modeled_radius_mm": 1.75,
+      "surface_gap_mm": 0.1393,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 11
+    },
+    {
+      "route": "H08_chassis",
+      "label": "STOP / chassis half",
+      "obstacle": "Hull",
+      "sample_index": 292,
+      "distance_along_route_mm": 257.435,
+      "point_mm": [
+        18.0,
+        65.1679,
+        11.1402
+      ],
+      "closest_mesh_point_mm": [
+        18.0,
+        65.168,
+        9.113
+      ],
+      "center_to_surface_mm": 2.027,
+      "modeled_radius_mm": 1.47,
+      "surface_gap_mm": 0.557,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 344
+    },
+    {
+      "route": "H01",
+      "label": "Battery supply",
+      "obstacle": "Closed_upper_cover",
+      "sample_index": 137,
+      "distance_along_route_mm": 118.006,
+      "point_mm": [
+        28.2973,
+        60.1319,
+        62.2623
+      ],
+      "closest_mesh_point_mm": [
+        28.297,
+        60.132,
+        66.0
+      ],
+      "center_to_surface_mm": 3.7377,
+      "modeled_radius_mm": 3.055,
+      "surface_gap_mm": 0.6827,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 67
+    },
+    {
+      "route": "H08_lid",
+      "label": "STOP / removable lid tail",
+      "obstacle": "Hull",
+      "sample_index": 32,
+      "distance_along_route_mm": 27.118,
+      "point_mm": [
+        32.1731,
+        66.7669,
+        62.0766
+      ],
+      "closest_mesh_point_mm": [
+        32.0,
+        69.0,
+        62.077
+      ],
+      "center_to_surface_mm": 2.2398,
+      "modeled_radius_mm": 1.47,
+      "surface_gap_mm": 0.7698,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 108
+    },
+    {
+      "route": "O01",
+      "label": "Arm bus input",
+      "obstacle": "Hull",
+      "sample_index": 106,
+      "distance_along_route_mm": 92.032,
+      "point_mm": [
+        22.5983,
+        -56.4659,
+        20.5453
+      ],
+      "closest_mesh_point_mm": [
+        26.0,
+        -56.0,
+        20.545
+      ],
+      "center_to_surface_mm": 3.4335,
+      "modeled_radius_mm": 2.59,
+      "surface_gap_mm": 0.8435,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 238
+    },
+    {
+      "route": "U02",
+      "label": "Core USB data",
+      "obstacle": "Hull",
+      "sample_index": 20,
+      "distance_along_route_mm": 16.214,
+      "point_mm": [
+        23.2267,
+        -0.6865,
+        24.2408
+      ],
+      "closest_mesh_point_mm": [
+        26.0,
+        -0.686,
+        24.241
+      ],
+      "center_to_surface_mm": 2.7733,
+      "modeled_radius_mm": 1.75,
+      "surface_gap_mm": 1.0233,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 139
+    },
+    {
+      "route": "H01",
+      "label": "Battery supply",
+      "obstacle": "Battery_envelope",
+      "sample_index": 171,
+      "distance_along_route_mm": 147.337,
+      "point_mm": [
+        56.9124,
+        55.4004,
+        61.77
+      ],
+      "closest_mesh_point_mm": [
+        56.912,
+        55.4,
+        57.5
+      ],
+      "center_to_surface_mm": 4.27,
+      "modeled_radius_mm": 3.055,
+      "surface_gap_mm": 1.215,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 47
+    },
+    {
+      "route": "H07c",
+      "label": "Right motor / direct return",
+      "obstacle": "Hull",
+      "sample_index": 30,
+      "distance_along_route_mm": 27.184,
+      "point_mm": [
+        -98.7529,
+        -45.9789,
+        37.4074
+      ],
+      "closest_mesh_point_mm": [
+        -98.753,
+        -43.37,
+        39.5
+      ],
+      "center_to_surface_mm": 3.3444,
+      "modeled_radius_mm": 1.65,
+      "surface_gap_mm": 1.6944,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 136
+    },
+    {
+      "route": "U01",
+      "label": "Orange Pi power",
+      "obstacle": "Hull",
+      "sample_index": 15,
+      "distance_along_route_mm": 12.466,
+      "point_mm": [
+        22.5357,
+        9.4965,
+        21.909
+      ],
+      "closest_mesh_point_mm": [
+        26.0,
+        9.496,
+        21.909
+      ],
+      "center_to_surface_mm": 3.4643,
+      "modeled_radius_mm": 1.75,
+      "surface_gap_mm": 1.7143,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 72
+    },
+    {
+      "route": "H08_lid",
+      "label": "STOP / removable lid tail",
+      "obstacle": "Closed_upper_cover",
+      "sample_index": 119,
+      "distance_along_route_mm": 103.147,
+      "point_mm": [
+        66.4861,
+        73.4315,
+        62.5691
+      ],
+      "closest_mesh_point_mm": [
+        66.546,
+        73.463,
+        66.0
+      ],
+      "center_to_surface_mm": 3.4316,
+      "modeled_radius_mm": 1.47,
+      "surface_gap_mm": 1.9616,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 108
+    },
+    {
+      "route": "H01",
+      "label": "Battery supply",
+      "obstacle": "Hull",
+      "sample_index": 134,
+      "distance_along_route_mm": 115.217,
+      "point_mm": [
+        25.5163,
+        60.0294,
+        62.112
+      ],
+      "closest_mesh_point_mm": [
+        26.0,
+        55.0,
+        62.112
+      ],
+      "center_to_surface_mm": 5.0526,
+      "modeled_radius_mm": 3.055,
+      "surface_gap_mm": 1.9976,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 173
+    },
+    {
+      "route": "H05",
+      "label": "Right encoder",
+      "obstacle": "Core",
+      "sample_index": 46,
+      "distance_along_route_mm": 40.975,
+      "point_mm": [
+        -75.3368,
+        35.493,
+        15.5304
+      ],
+      "closest_mesh_point_mm": [
+        -75.337,
+        35.493,
+        11.56
+      ],
+      "center_to_surface_mm": 3.9704,
+      "modeled_radius_mm": 1.75,
+      "surface_gap_mm": 2.2204,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 34
+    },
+    {
+      "route": "U03",
+      "label": "Hub upstream",
+      "obstacle": "Hull",
+      "sample_index": 118,
+      "distance_along_route_mm": 102.819,
+      "point_mm": [
+        21.8279,
+        -20.3188,
+        40.5788
+      ],
+      "closest_mesh_point_mm": [
+        26.0,
+        -20.319,
+        40.579
+      ],
+      "center_to_surface_mm": 4.1721,
+      "modeled_radius_mm": 1.9,
+      "surface_gap_mm": 2.2721,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 210
+    },
+    {
+      "route": "H02",
+      "label": "Cytron supply",
+      "obstacle": "Hull",
+      "sample_index": 76,
+      "distance_along_route_mm": 67.35,
+      "point_mm": [
+        -91.2902,
+        -46.8729,
+        36.6905
+      ],
+      "closest_mesh_point_mm": [
+        -94.06,
+        -42.834,
+        39.5
+      ],
+      "center_to_surface_mm": 5.646,
+      "modeled_radius_mm": 3.055,
+      "surface_gap_mm": 2.591,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 99
+    },
+    {
+      "route": "H07a",
+      "label": "Right motor / shunt input",
+      "obstacle": "Hull",
+      "sample_index": 42,
+      "distance_along_route_mm": 37.035,
+      "point_mm": [
+        -94.0742,
+        -46.9781,
+        37.6715
+      ],
+      "closest_mesh_point_mm": [
+        -95.078,
+        -43.232,
+        39.5
+      ],
+      "center_to_surface_mm": 4.2875,
+      "modeled_radius_mm": 1.65,
+      "surface_gap_mm": 2.6375,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 52
+    },
+    {
+      "route": "U02",
+      "label": "Core USB data",
+      "obstacle": "Closed_upper_cover",
+      "sample_index": 154,
+      "distance_along_route_mm": 136.815,
+      "point_mm": [
+        -31.9226,
+        71.0889,
+        61.5583
+      ],
+      "closest_mesh_point_mm": [
+        -31.923,
+        71.089,
+        66.0
+      ],
+      "center_to_surface_mm": 4.4417,
+      "modeled_radius_mm": 1.75,
+      "surface_gap_mm": 2.6917,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 53
+    },
+    {
+      "route": "H06a",
+      "label": "Left motor / shunt input",
+      "obstacle": "Hull",
+      "sample_index": 52,
+      "distance_along_route_mm": 46.064,
+      "point_mm": [
+        -93.5958,
+        -45.9381,
+        36.3632
+      ],
+      "closest_mesh_point_mm": [
+        -94.692,
+        -43.129,
+        39.5
+      ],
+      "center_to_surface_mm": 4.3512,
+      "modeled_radius_mm": 1.65,
+      "surface_gap_mm": 2.7012,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 89
+    },
+    {
+      "route": "H01",
+      "label": "Battery supply",
+      "obstacle": "Hub_cradle",
+      "sample_index": 25,
+      "distance_along_route_mm": 20.627,
+      "point_mm": [
+        -41.5691,
+        59.2594,
+        17.235
+      ],
+      "closest_mesh_point_mm": [
+        -41.569,
+        64.6,
+        15.0
+      ],
+      "center_to_surface_mm": 5.7894,
+      "modeled_radius_mm": 3.055,
+      "surface_gap_mm": 2.7344,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 52
+    },
+    {
+      "route": "O01",
+      "label": "Arm bus input",
+      "obstacle": "Battery_envelope",
+      "sample_index": 238,
+      "distance_along_route_mm": 208.475,
+      "point_mm": [
+        114.4814,
+        -67.9907,
+        53.3976
+      ],
+      "closest_mesh_point_mm": [
+        110.0,
+        -65.0,
+        53.398
+      ],
+      "center_to_surface_mm": 5.3877,
+      "modeled_radius_mm": 2.59,
+      "surface_gap_mm": 2.7977,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 3
+    },
+    {
+      "route": "H06c",
+      "label": "Left motor / direct return",
+      "obstacle": "Motor_right",
+      "sample_index": 48,
+      "distance_along_route_mm": 42.164,
+      "point_mm": [
+        -103.7825,
+        -53.1865,
+        38.843
+      ],
+      "closest_mesh_point_mm": [
+        -107.439,
+        -53.187,
+        35.197
+      ],
+      "center_to_surface_mm": 5.1631,
+      "modeled_radius_mm": 1.65,
+      "surface_gap_mm": 3.5131,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 17
+    },
+    {
+      "route": "H08_chassis",
+      "label": "STOP / chassis half",
+      "obstacle": "Core",
+      "sample_index": 62,
+      "distance_along_route_mm": 54.912,
+      "point_mm": [
+        -78.8401,
+        -40.8579,
+        15.3131
+      ],
+      "closest_mesh_point_mm": [
+        -77.042,
+        -37.71,
+        11.56
+      ],
+      "center_to_surface_mm": 5.218,
+      "modeled_radius_mm": 1.47,
+      "surface_gap_mm": 3.748,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 8
+    },
+    {
+      "route": "H05",
+      "label": "Right encoder",
+      "obstacle": "Hull",
+      "sample_index": 46,
+      "distance_along_route_mm": 40.975,
+      "point_mm": [
+        -75.3368,
+        35.493,
+        15.5304
+      ],
+      "closest_mesh_point_mm": [
+        -75.337,
+        35.493,
+        10.0
+      ],
+      "center_to_surface_mm": 5.5304,
+      "modeled_radius_mm": 1.75,
+      "surface_gap_mm": 3.7804,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 164
+    },
+    {
+      "route": "H04",
+      "label": "Left encoder",
+      "obstacle": "Core",
+      "sample_index": 77,
+      "distance_along_route_mm": 67.808,
+      "point_mm": [
+        -76.9841,
+        38.4281,
+        16.9795
+      ],
+      "closest_mesh_point_mm": [
+        -76.61,
+        36.908,
+        11.56
+      ],
+      "center_to_surface_mm": 5.6412,
+      "modeled_radius_mm": 1.75,
+      "surface_gap_mm": 3.8912,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 18
+    },
+    {
+      "route": "O03_right",
+      "label": "Right cooling fan",
+      "obstacle": "Motor_mounts",
+      "sample_index": 133,
+      "distance_along_route_mm": 116.721,
+      "point_mm": [
+        -127.6132,
+        -64.7687,
+        46.9155
+      ],
+      "closest_mesh_point_mm": [
+        -127.613,
+        -70.5,
+        45.0
+      ],
+      "center_to_surface_mm": 6.0429,
+      "modeled_radius_mm": 1.39,
+      "surface_gap_mm": 4.6529,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 89
+    },
+    {
+      "route": "H07b",
+      "label": "Right motor / shunt output",
+      "obstacle": "Hull",
+      "sample_index": 121,
+      "distance_along_route_mm": 106.263,
+      "point_mm": [
+        -154.1488,
+        -7.6991,
+        21.3807
+      ],
+      "closest_mesh_point_mm": [
+        -159.0,
+        -11.5,
+        21.381
+      ],
+      "center_to_surface_mm": 6.1629,
+      "modeled_radius_mm": 1.3,
+      "surface_gap_mm": 4.8629,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 113
+    },
+    {
+      "route": "H03",
+      "label": "Cytron control",
+      "obstacle": "Hull",
+      "sample_index": 91,
+      "distance_along_route_mm": 79.263,
+      "point_mm": [
+        -91.7917,
+        49.3057,
+        40.2027
+      ],
+      "closest_mesh_point_mm": [
+        -94.676,
+        43.121,
+        40.203
+      ],
+      "center_to_surface_mm": 6.8239,
+      "modeled_radius_mm": 1.75,
+      "surface_gap_mm": 5.0739,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 126
+    },
+    {
+      "route": "H06c",
+      "label": "Left motor / direct return",
+      "obstacle": "Hull",
+      "sample_index": 131,
+      "distance_along_route_mm": 114.479,
+      "point_mm": [
+        -88.8053,
+        8.521,
+        33.4117
+      ],
+      "closest_mesh_point_mm": [
+        -92.06,
+        8.521,
+        39.5
+      ],
+      "center_to_surface_mm": 6.9037,
+      "modeled_radius_mm": 1.3,
+      "surface_gap_mm": 5.6037,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 116
+    },
+    {
+      "route": "H04",
+      "label": "Left encoder",
+      "obstacle": "Hull",
+      "sample_index": 76,
+      "distance_along_route_mm": 66.79,
+      "point_mm": [
+        -76.0875,
+        38.9079,
+        16.9433
+      ],
+      "closest_mesh_point_mm": [
+        -75.112,
+        36.054,
+        10.0
+      ],
+      "center_to_surface_mm": 7.5701,
+      "modeled_radius_mm": 1.75,
+      "surface_gap_mm": 5.8201,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 113
+    },
+    {
+      "route": "H07c",
+      "label": "Right motor / direct return",
+      "obstacle": "Motor_right",
+      "sample_index": 27,
+      "distance_along_route_mm": 23.958,
+      "point_mm": [
+        -100.437,
+        -47.8098,
+        39.4615
+      ],
+      "closest_mesh_point_mm": [
+        -106.568,
+        -47.81,
+        34.186
+      ],
+      "center_to_surface_mm": 8.0885,
+      "modeled_radius_mm": 1.65,
+      "surface_gap_mm": 6.4385,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 10
+    },
+    {
+      "route": "O03_left",
+      "label": "Left cooling fan",
+      "obstacle": "Motor_mounts",
+      "sample_index": 249,
+      "distance_along_route_mm": 219.074,
+      "point_mm": [
+        -128.2999,
+        62.8084,
+        46.8089
+      ],
+      "closest_mesh_point_mm": [
+        -128.3,
+        70.5,
+        45.0
+      ],
+      "center_to_surface_mm": 7.9014,
+      "modeled_radius_mm": 1.39,
+      "surface_gap_mm": 6.5114,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 72
+    },
+    {
+      "route": "O02",
+      "label": "Speaker lead",
+      "obstacle": "Hull",
+      "sample_index": 59,
+      "distance_along_route_mm": 51.703,
+      "point_mm": [
+        -11.1052,
+        -55.9487,
+        18.8648
+      ],
+      "closest_mesh_point_mm": [
+        -15.797,
+        -55.935,
+        12.0
+      ],
+      "center_to_surface_mm": 8.3152,
+      "modeled_radius_mm": 1.248,
+      "surface_gap_mm": 7.0672,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 45
+    },
+    {
+      "route": "O03_left",
+      "label": "Left cooling fan",
+      "obstacle": "Hull",
+      "sample_index": 192,
+      "distance_along_route_mm": 167.972,
+      "point_mm": [
+        -87.8942,
+        50.1048,
+        36.5852
+      ],
+      "closest_mesh_point_mm": [
+        -93.489,
+        42.434,
+        39.5
+      ],
+      "center_to_surface_mm": 9.9315,
+      "modeled_radius_mm": 1.39,
+      "surface_gap_mm": 8.5415,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 255
+    },
+    {
+      "route": "H06a",
+      "label": "Left motor / shunt input",
+      "obstacle": "Motor_right",
+      "sample_index": 71,
+      "distance_along_route_mm": 61.312,
+      "point_mm": [
+        -102.3048,
+        -55.1222,
+        44.3899
+      ],
+      "closest_mesh_point_mm": [
+        -108.967,
+        -55.122,
+        36.649
+      ],
+      "center_to_surface_mm": 10.213,
+      "modeled_radius_mm": 1.65,
+      "surface_gap_mm": 8.563,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 8
+    },
+    {
+      "route": "H02",
+      "label": "Cytron supply",
+      "obstacle": "Motor_right",
+      "sample_index": 95,
+      "distance_along_route_mm": 82.915,
+      "point_mm": [
+        -101.5995,
+        -53.1915,
+        46.0365
+      ],
+      "closest_mesh_point_mm": [
+        -109.375,
+        -53.191,
+        37.001
+      ],
+      "center_to_surface_mm": 11.9212,
+      "modeled_radius_mm": 3.055,
+      "surface_gap_mm": 8.8662,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 6
+    },
+    {
+      "route": "H06b",
+      "label": "Left motor / shunt output",
+      "obstacle": "Hull",
+      "sample_index": 24,
+      "distance_along_route_mm": 21.587,
+      "point_mm": [
+        -89.8824,
+        -0.656,
+        29.0482
+      ],
+      "closest_mesh_point_mm": [
+        -92.06,
+        -0.656,
+        39.5
+      ],
+      "center_to_surface_mm": 10.6762,
+      "modeled_radius_mm": 1.65,
+      "surface_gap_mm": 9.0262,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 22
+    },
+    {
+      "route": "O03_left",
+      "label": "Left cooling fan",
+      "obstacle": "Motor_left",
+      "sample_index": 269,
+      "distance_along_route_mm": 235.548,
+      "point_mm": [
+        -142.3506,
+        60.4517,
+        42.4805
+      ],
+      "closest_mesh_point_mm": [
+        -134.561,
+        60.452,
+        35.197
+      ],
+      "center_to_surface_mm": 10.6638,
+      "modeled_radius_mm": 1.04,
+      "surface_gap_mm": 9.6238,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 2
+    },
+    {
+      "route": "O03_right",
+      "label": "Right cooling fan",
+      "obstacle": "Motor_right",
+      "sample_index": 152,
+      "distance_along_route_mm": 132.314,
+      "point_mm": [
+        -141.7865,
+        -63.0718,
+        43.828
+      ],
+      "closest_mesh_point_mm": [
+        -133.859,
+        -63.072,
+        35.9
+      ],
+      "center_to_surface_mm": 11.2117,
+      "modeled_radius_mm": 1.39,
+      "surface_gap_mm": 9.8217,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 2
+    },
+    {
+      "route": "O03_right",
+      "label": "Right cooling fan",
+      "obstacle": "Hull",
+      "sample_index": 82,
+      "distance_along_route_mm": 71.305,
+      "point_mm": [
+        -91.7063,
+        -53.1368,
+        34.5784
+      ],
+      "closest_mesh_point_mm": [
+        -94.692,
+        -43.129,
+        39.5
+      ],
+      "center_to_surface_mm": 11.5454,
+      "modeled_radius_mm": 1.39,
+      "surface_gap_mm": 10.1554,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 142
+    },
+    {
+      "route": "H06c",
+      "label": "Left motor / direct return",
+      "obstacle": "Motor_mounts",
+      "sample_index": 30,
+      "distance_along_route_mm": 27.136,
+      "point_mm": [
+        -115.0714,
+        -57.4224,
+        47.4796
+      ],
+      "closest_mesh_point_mm": [
+        -115.071,
+        -70.5,
+        45.0
+      ],
+      "center_to_surface_mm": 13.3106,
+      "modeled_radius_mm": 1.65,
+      "surface_gap_mm": 11.6606,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 105
+    },
+    {
+      "route": "H06a",
+      "label": "Left motor / shunt input",
+      "obstacle": "Motor_mounts",
+      "sample_index": 81,
+      "distance_along_route_mm": 71.12,
+      "point_mm": [
+        -110.9226,
+        -57.2902,
+        48.5016
+      ],
+      "closest_mesh_point_mm": [
+        -110.923,
+        -70.5,
+        45.0
+      ],
+      "center_to_surface_mm": 13.666,
+      "modeled_radius_mm": 1.65,
+      "surface_gap_mm": 12.016,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 66
+    },
+    {
+      "route": "H02",
+      "label": "Cytron supply",
+      "obstacle": "Motor_mounts",
+      "sample_index": 100,
+      "distance_along_route_mm": 88.254,
+      "point_mm": [
+        -105.9381,
+        -54.1095,
+        49.0054
+      ],
+      "closest_mesh_point_mm": [
+        -105.938,
+        -70.5,
+        45.0
+      ],
+      "center_to_surface_mm": 16.8728,
+      "modeled_radius_mm": 3.055,
+      "surface_gap_mm": 13.8178,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 86
+    },
+    {
+      "route": "H07c",
+      "label": "Right motor / direct return",
+      "obstacle": "Motor_mounts",
+      "sample_index": 17,
+      "distance_along_route_mm": 13.403,
+      "point_mm": [
+        -106.4059,
+        -52.5065,
+        46.7509
+      ],
+      "closest_mesh_point_mm": [
+        -106.406,
+        -70.5,
+        45.0
+      ],
+      "center_to_surface_mm": 18.0785,
+      "modeled_radius_mm": 1.65,
+      "surface_gap_mm": 16.4285,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 136
+    },
+    {
+      "route": "H07b",
+      "label": "Right motor / shunt output",
+      "obstacle": "Motor_mounts",
+      "sample_index": 124,
+      "distance_along_route_mm": 107.386,
+      "point_mm": [
+        -153.5694,
+        -7.9165,
+        20.461
+      ],
+      "closest_mesh_point_mm": [
+        -153.569,
+        -7.917,
+        2.5
+      ],
+      "center_to_surface_mm": 17.961,
+      "modeled_radius_mm": 1.3,
+      "surface_gap_mm": 16.661,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 113
+    },
+    {
+      "route": "H07a",
+      "label": "Right motor / shunt input",
+      "obstacle": "Motor_mounts",
+      "sample_index": 57,
+      "distance_along_route_mm": 49.491,
+      "point_mm": [
+        -100.1358,
+        -52.014,
+        47.1149
+      ],
+      "closest_mesh_point_mm": [
+        -100.136,
+        -70.5,
+        45.0
+      ],
+      "center_to_surface_mm": 18.6066,
+      "modeled_radius_mm": 1.65,
+      "surface_gap_mm": 16.9566,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 47
+    },
+    {
+      "route": "H03",
+      "label": "Cytron control",
+      "obstacle": "Motor_mounts",
+      "sample_index": 102,
+      "distance_along_route_mm": 89.671,
+      "point_mm": [
+        -97.4618,
+        51.8735,
+        48.5184
+      ],
+      "closest_mesh_point_mm": [
+        -98.22,
+        70.5,
+        44.799
+      ],
+      "center_to_surface_mm": 19.0093,
+      "modeled_radius_mm": 1.75,
+      "surface_gap_mm": 17.2593,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 26
+    },
+    {
+      "route": "H06b",
+      "label": "Left motor / shunt output",
+      "obstacle": "Motor_mounts",
+      "sample_index": 36,
+      "distance_along_route_mm": 31.968,
+      "point_mm": [
+        -89.6702,
+        7.2525,
+        22.753
+      ],
+      "closest_mesh_point_mm": [
+        -89.67,
+        7.253,
+        2.5
+      ],
+      "center_to_surface_mm": 20.253,
+      "modeled_radius_mm": 1.3,
+      "surface_gap_mm": 18.953,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 22
+    },
+    {
+      "route": "H04",
+      "label": "Left encoder",
+      "obstacle": "Motor_mounts",
+      "sample_index": 128,
+      "distance_along_route_mm": 110.979,
+      "point_mm": [
+        -88.3622,
+        7.5769,
+        25.764
+      ],
+      "closest_mesh_point_mm": [
+        -89.4,
+        7.577,
+        2.5
+      ],
+      "center_to_surface_mm": 23.2871,
+      "modeled_radius_mm": 1.4,
+      "surface_gap_mm": 21.8871,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 29
+    },
+    {
+      "route": "H05",
+      "label": "Right encoder",
+      "obstacle": "Motor_mounts",
+      "sample_index": 179,
+      "distance_along_route_mm": 156.614,
+      "point_mm": [
+        -153.4611,
+        -7.3507,
+        25.7939
+      ],
+      "closest_mesh_point_mm": [
+        -153.461,
+        -7.351,
+        2.5
+      ],
+      "center_to_surface_mm": 23.2939,
+      "modeled_radius_mm": 1.4,
+      "surface_gap_mm": 21.8939,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 92
+    },
+    {
+      "route": "O01",
+      "label": "Arm bus input",
+      "obstacle": "Closed_upper_cover",
+      "sample_index": 247,
+      "distance_along_route_mm": 217.254,
+      "point_mm": [
+        115.4183,
+        -60.4942,
+        57.8622
+      ],
+      "closest_mesh_point_mm": [
+        23.5,
+        -60.2,
+        62.0
+      ],
+      "center_to_surface_mm": 92.0119,
+      "modeled_radius_mm": 2.59,
+      "surface_gap_mm": 89.4219,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 6
+    }
+  ],
+  "possible_collisions": [],
+  "near_contacts": [
+    {
+      "route": "H08_chassis",
+      "label": "STOP / chassis half",
+      "obstacle": "Hull",
+      "sample_index": 292,
+      "distance_along_route_mm": 257.435,
+      "point_mm": [
+        18.0,
+        65.1679,
+        11.1402
+      ],
+      "closest_mesh_point_mm": [
+        18.0,
+        65.168,
+        9.113
+      ],
+      "center_to_surface_mm": 2.027,
+      "modeled_radius_mm": 1.47,
+      "surface_gap_mm": 0.557,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 344
+    },
+    {
+      "route": "H01",
+      "label": "Battery supply",
+      "obstacle": "Closed_upper_cover",
+      "sample_index": 137,
+      "distance_along_route_mm": 118.006,
+      "point_mm": [
+        28.2973,
+        60.1319,
+        62.2623
+      ],
+      "closest_mesh_point_mm": [
+        28.297,
+        60.132,
+        66.0
+      ],
+      "center_to_surface_mm": 3.7377,
+      "modeled_radius_mm": 3.055,
+      "surface_gap_mm": 0.6827,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 67
+    },
+    {
+      "route": "H03",
+      "label": "Cytron control",
+      "obstacle": "Closed_upper_cover",
+      "sample_index": 138,
+      "distance_along_route_mm": 121.447,
+      "point_mm": [
+        -120.9991,
+        47.2595,
+        64.2619
+      ],
+      "closest_mesh_point_mm": [
+        -120.999,
+        48.0,
+        66.0
+      ],
+      "center_to_surface_mm": 1.8893,
+      "modeled_radius_mm": 1.75,
+      "surface_gap_mm": 0.1393,
+      "sample_count_intersecting_radius": 0,
+      "sample_count_checked": 11
+    }
+  ],
+  "elapsed_seconds": 0.51,
+  "hull_geometry": "Current five-anchor hull with rounded divider wire notch, replacing Hull_V07 from context archive."
+}

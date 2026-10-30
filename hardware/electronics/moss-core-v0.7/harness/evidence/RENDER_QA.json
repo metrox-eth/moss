@@ -1,0 +1,77 @@
+{
+  "duration_s": 42,
+  "fps": 24,
+  "size": [
+    1920,
+    1080
+  ],
+  "supersampling": 1.5,
+  "lighting": "Localised warm studio key + cool rim + soft fill; FXAA + Lanczos.",
+  "camera": "True 3D camera movement; stationary camera for STOP/battery callouts; labels projected from model coordinates.",
+  "captions": [
+    [
+      0,
+      3,
+      "I want MOSS to be easier to build.",
+      "A custom cable harness is the next idea I\u2019m exploring with AI."
+    ],
+    [
+      3,
+      7,
+      "Start with the connections.",
+      "One six-wire plug per motor. Separate power, USB and STOP paths."
+    ],
+    [
+      7,
+      10,
+      "Then bring the loom together.",
+      "Removable sleeves. Accessible branches. Less loose wiring."
+    ],
+    [
+      10,
+      14,
+      "Print the cable supports into the hull.",
+      "Five integrated tie loops hold the main routing corridors."
+    ],
+    [
+      14,
+      18,
+      "One motor. One six-wire connector.",
+      "4 encoder wires + 2 motor wires. Cutaway view."
+    ],
+    [
+      18,
+      22,
+      "Two circuits. Two different connectors.",
+      "STOP \u2192 JST J8. Battery \u2192 XT30 J10. Four low-current STOP wires; a separate battery feed."
+    ],
+    [
+      22,
+      26,
+      "USB has its own path.",
+      "Orange Pi DATA \u2192 hub \u2192 Core J1. Core J20 supplies the Pi POWER port."
+    ],
+    [
+      26,
+      30,
+      "Unplug the lid. Keep the loom in place.",
+      "STOP service loop and disconnect. Cutaway, then exploded service view."
+    ],
+    [
+      30,
+      35,
+      "Could PCBWay make this kit?",
+      "They list Cable Wire Harness Assembly. I\u2019m preparing the enquiry."
+    ],
+    [
+      35,
+      38,
+      "From an idea to something I can build.",
+      "Prototype CAD, routing notes and a 3D viewer are on GitHub."
+    ]
+  ],
+  "elapsed_s": 93.33503890037537,
+  "frames": 1008,
+  "video_decode": "Full final H.264/AAC stream decoded by FFmpeg without errors",
+  "video_sha256": "efc112fabf5b75d1eaca01dc8f95502f8644b7801f1f0ccf4ddf6c722353b42b"
+}

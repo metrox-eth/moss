@@ -18,6 +18,10 @@ The current design includes two chassis-fan outputs, corrected connector legends
 
 The fan outputs carry fused 3S battery voltage, up to 12.6 V, rather than regulated 12 V. Their combined 0.2 A running current is an estimate, not a measurement. See the [connector guide](CONNECTORS.md) and [F1 selection evidence](evidence/F1_SELECTION.md).
 
+## Harness packaging study
+
+The separate [harness study](harness/) adds a 3D viewer, a short film, a photo-based HB1 model, the original R92 speaker and a hull prototype with integral cable-tie supports. It is an unbuilt packaging proposal; the board files below are unchanged.
+
 ## Download and inspect
 
 - [Complete prototype review package](delivery/MOSS_CORE_V07_PROTOTYPE_REVIEW_20261030.zip).

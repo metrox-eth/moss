@@ -1,0 +1,1200 @@
+[
+  {
+    "id": "H01",
+    "label": "Battery supply",
+    "ref": "J10",
+    "control_points_mm": [
+      [
+        -55.5,
+        50.1,
+        14.995
+      ],
+      [
+        -55.5,
+        56,
+        16
+      ],
+      [
+        -45,
+        59,
+        17
+      ],
+      [
+        -29,
+        59,
+        18
+      ],
+      [
+        -6,
+        57,
+        20
+      ],
+      [
+        12,
+        55,
+        31
+      ],
+      [
+        17,
+        60,
+        57
+      ],
+      [
+        24,
+        60,
+        61.8
+      ],
+      [
+        36,
+        60,
+        62
+      ],
+      [
+        48,
+        56,
+        61.8
+      ],
+      [
+        64,
+        56,
+        61.8
+      ],
+      [
+        72,
+        60,
+        62
+      ],
+      [
+        82,
+        60,
+        62
+      ]
+    ],
+    "conductors": 2,
+    "wire_od_mm": 2.6,
+    "colours": [
+      "#bd302d",
+      "#20292c"
+    ],
+    "sleeve": true,
+    "lid": false,
+    "notes": "Battery cable outlet is a proposed reservation, not measured. Retain pack fuse. Route passes through the new rounded divider notch."
+  },
+  {
+    "id": "H02",
+    "label": "Cytron supply",
+    "ref": "J11",
+    "control_points_mm": [
+      [
+        -81.405,
+        11.005,
+        16.395
+      ],
+      [
+        -84,
+        11,
+        19
+      ],
+      [
+        -85,
+        -8,
+        21
+      ],
+      [
+        -85,
+        -31,
+        25
+      ],
+      [
+        -94,
+        -50,
+        40
+      ],
+      [
+        -115,
+        -54,
+        54
+      ],
+      [
+        -124.34,
+        -45.4,
+        54
+      ]
+    ],
+    "conductors": 2,
+    "wire_od_mm": 2.6,
+    "colours": [
+      "#bd302d",
+      "#20292c"
+    ],
+    "sleeve": true,
+    "lid": false,
+    "notes": ""
+  },
+  {
+    "id": "H03",
+    "label": "Cytron control",
+    "ref": "J2",
+    "control_points_mm": [
+      [
+        -32.5,
+        36.65,
+        13.245
+      ],
+      [
+        -32.5,
+        43,
+        17
+      ],
+      [
+        -53,
+        47,
+        19
+      ],
+      [
+        -77,
+        46,
+        19
+      ],
+      [
+        -91,
+        49,
+        39
+      ],
+      [
+        -98,
+        52,
+        49
+      ],
+      [
+        -117,
+        53,
+        57
+      ],
+      [
+        -124,
+        39.359,
+        71
+      ],
+      [
+        -124,
+        39.359,
+        65.4
+      ]
+    ],
+    "conductors": 5,
+    "wire_od_mm": 1.0,
+    "colours": [
+      "#d4b64b",
+      "#ededdd",
+      "#28866b",
+      "#357aa8",
+      "#20292c"
+    ],
+    "sleeve": true,
+    "lid": false,
+    "notes": ""
+  },
+  {
+    "id": "H04",
+    "label": "Left encoder",
+    "ref": "J3",
+    "control_points_mm": [
+      [
+        -18,
+        36.65,
+        13.245
+      ],
+      [
+        -18,
+        43,
+        17
+      ],
+      [
+        -42,
+        43,
+        17
+      ],
+      [
+        -66,
+        43,
+        17
+      ],
+      [
+        -82,
+        35,
+        18
+      ],
+      [
+        -87,
+        19,
+        33
+      ],
+      [
+        -88,
+        7.8,
+        26
+      ],
+      [
+        -100,
+        7.8,
+        22.614
+      ]
+    ],
+    "conductors": 4,
+    "wire_od_mm": 1.0,
+    "colours": [
+      "#20292c",
+      "#bd302d",
+      "#d4b64b",
+      "#eeeeea"
+    ],
+    "sleeve": true,
+    "lid": false,
+    "notes": "Four signal wires share the physical six-way motor plug with two power leads. Owner confirmed the current motor uses the workshop-photo connector. Vendor, pinout and mounting clocking remain unverified."
+  },
+  {
+    "id": "H05",
+    "label": "Right encoder",
+    "ref": "J4",
+    "control_points_mm": [
+      [
+        -43.25,
+        36.65,
+        13.245
+      ],
+      [
+        -43.25,
+        42.5,
+        16
+      ],
+      [
+        -63,
+        42.5,
+        16
+      ],
+      [
+        -80,
+        31,
+        16
+      ],
+      [
+        -85,
+        6,
+        27
+      ],
+      [
+        -93,
+        1,
+        29
+      ],
+      [
+        -108,
+        0,
+        34
+      ],
+      [
+        -134,
+        0,
+        34
+      ],
+      [
+        -153,
+        -2,
+        34
+      ],
+      [
+        -153,
+        -7.8,
+        25
+      ],
+      [
+        -142,
+        -7.8,
+        22.614
+      ]
+    ],
+    "conductors": 4,
+    "wire_od_mm": 1.0,
+    "colours": [
+      "#20292c",
+      "#bd302d",
+      "#d4b64b",
+      "#eeeeea"
+    ],
+    "sleeve": true,
+    "lid": false,
+    "notes": "Four signal wires share the physical six-way motor plug with two power leads. Owner confirmed the current motor uses the workshop-photo connector. Vendor, pinout and mounting clocking remain unverified."
+  },
+  {
+    "id": "H06a",
+    "label": "Left motor / shunt input",
+    "ref": "J12",
+    "control_points_mm": [
+      [
+        -81.405,
+        -8.255000000000003,
+        16.395
+      ],
+      [
+        -85,
+        -10.8,
+        20
+      ],
+      [
+        -88,
+        -33,
+        28
+      ],
+      [
+        -100,
+        -54,
+        43
+      ],
+      [
+        -126,
+        -57,
+        54
+      ],
+      [
+        -136.84,
+        -45.4,
+        54
+      ]
+    ],
+    "conductors": 1,
+    "wire_od_mm": 2.6,
+    "colours": [
+      "#347ba1"
+    ],
+    "sleeve": true,
+    "lid": false,
+    "notes": ""
+  },
+  {
+    "id": "H06b",
+    "label": "Left motor / shunt output",
+    "ref": null,
+    "control_points_mm": [
+      [
+        -81.405,
+        -13.335,
+        16.395
+      ],
+      [
+        -87,
+        -10,
+        25
+      ],
+      [
+        -90,
+        0,
+        29
+      ],
+      [
+        -90,
+        7.8,
+        22
+      ],
+      [
+        -100,
+        7.8,
+        16.364
+      ]
+    ],
+    "conductors": 1,
+    "wire_od_mm": 2.6,
+    "colours": [
+      "#347ba1"
+    ],
+    "sleeve": true,
+    "lid": false,
+    "notes": "Power leg changes to the existing thin six-way motor pigtail near the motor; the transition, gauge and terminal compatibility must be confirmed with the assembler. Visual wire order is not an electrical pinout."
+  },
+  {
+    "id": "H06c",
+    "label": "Left motor / direct return",
+    "ref": null,
+    "control_points_mm": [
+      [
+        -131.84,
+        -45.4,
+        54
+      ],
+      [
+        -131,
+        -55,
+        53
+      ],
+      [
+        -112,
+        -57,
+        46
+      ],
+      [
+        -94,
+        -44,
+        29
+      ],
+      [
+        -88,
+        -13,
+        30
+      ],
+      [
+        -87,
+        7.8,
+        34
+      ],
+      [
+        -100,
+        7.8,
+        28.864
+      ]
+    ],
+    "conductors": 1,
+    "wire_od_mm": 2.6,
+    "colours": [
+      "#d9dfdf"
+    ],
+    "sleeve": true,
+    "lid": false,
+    "notes": "Power leg changes to the existing thin six-way motor pigtail near the motor; the transition, gauge and terminal compatibility must be confirmed with the assembler. Visual wire order is not an electrical pinout."
+  },
+  {
+    "id": "H07a",
+    "label": "Right motor / shunt input",
+    "ref": "J13",
+    "control_points_mm": [
+      [
+        -81.405,
+        -20.455,
+        16.395
+      ],
+      [
+        -84,
+        -23,
+        18
+      ],
+      [
+        -90,
+        -40,
+        29
+      ],
+      [
+        -100,
+        -52,
+        47
+      ],
+      [
+        -116.84,
+        -45.4,
+        54
+      ]
+    ],
+    "conductors": 1,
+    "wire_od_mm": 2.6,
+    "colours": [
+      "#347ba1"
+    ],
+    "sleeve": true,
+    "lid": false,
+    "notes": ""
+  },
+  {
+    "id": "H07b",
+    "label": "Right motor / shunt output",
+    "ref": null,
+    "control_points_mm": [
+      [
+        -81.405,
+        -25.535,
+        16.395
+      ],
+      [
+        -88,
+        -24,
+        30
+      ],
+      [
+        -95,
+        -5,
+        29
+      ],
+      [
+        -108,
+        -1,
+        34
+      ],
+      [
+        -132,
+        -1,
+        34
+      ],
+      [
+        -151,
+        -4,
+        32
+      ],
+      [
+        -154,
+        -7.8,
+        21
+      ],
+      [
+        -142,
+        -7.8,
+        16.364
+      ]
+    ],
+    "conductors": 1,
+    "wire_od_mm": 2.6,
+    "colours": [
+      "#347ba1"
+    ],
+    "sleeve": true,
+    "lid": false,
+    "notes": "Power leg changes to the existing thin six-way motor pigtail near the motor; the transition, gauge and terminal compatibility must be confirmed with the assembler. Visual wire order is not an electrical pinout."
+  },
+  {
+    "id": "H07c",
+    "label": "Right motor / direct return",
+    "ref": null,
+    "control_points_mm": [
+      [
+        -111.84,
+        -45.4,
+        54
+      ],
+      [
+        -109,
+        -53,
+        50
+      ],
+      [
+        -96,
+        -42,
+        34
+      ],
+      [
+        -92,
+        -12,
+        28
+      ],
+      [
+        -108,
+        2,
+        34
+      ],
+      [
+        -138,
+        1,
+        34
+      ],
+      [
+        -153,
+        -7.8,
+        33
+      ],
+      [
+        -142,
+        -7.8,
+        28.864
+      ]
+    ],
+    "conductors": 1,
+    "wire_od_mm": 2.6,
+    "colours": [
+      "#d9dfdf"
+    ],
+    "sleeve": true,
+    "lid": false,
+    "notes": "Power leg changes to the existing thin six-way motor pigtail near the motor; the transition, gauge and terminal compatibility must be confirmed with the assembler. Visual wire order is not an electrical pinout."
+  },
+  {
+    "id": "H08_chassis",
+    "label": "STOP / chassis half",
+    "ref": "J8",
+    "control_points_mm": [
+      [
+        -73.625,
+        0.1,
+        17.895
+      ],
+      [
+        -73.6,
+        0.1,
+        23
+      ],
+      [
+        -82,
+        -3,
+        24
+      ],
+      [
+        -84,
+        -28,
+        20
+      ],
+      [
+        -76,
+        -44,
+        14
+      ],
+      [
+        -48,
+        -45,
+        12.3
+      ],
+      [
+        -10,
+        -45,
+        12.2
+      ],
+      [
+        13,
+        -42,
+        13
+      ],
+      [
+        18,
+        -25,
+        12.3
+      ],
+      [
+        18,
+        10,
+        12.3
+      ],
+      [
+        18,
+        38,
+        12.3
+      ],
+      [
+        18,
+        70,
+        12.3
+      ],
+      [
+        18,
+        83,
+        27
+      ],
+      [
+        21,
+        83,
+        49
+      ],
+      [
+        21,
+        89,
+        61
+      ],
+      [
+        18,
+        82,
+        58
+      ]
+    ],
+    "conductors": 4,
+    "wire_od_mm": 0.8,
+    "colours": [
+      "#347ba1",
+      "#eeeeea",
+      "#2e8b6e",
+      "#d6b648"
+    ],
+    "sleeve": true,
+    "lid": false,
+    "notes": "Inline disconnect near STOP button. Closed-lid route includes service loop. Candidate connector geometry only."
+  },
+  {
+    "id": "H08_lid",
+    "label": "STOP / removable lid tail",
+    "ref": null,
+    "control_points_mm": [
+      [
+        18,
+        57.23,
+        58
+      ],
+      [
+        18,
+        52,
+        60
+      ],
+      [
+        29,
+        66,
+        62
+      ],
+      [
+        41,
+        66,
+        62
+      ],
+      [
+        47,
+        58,
+        62
+      ],
+      [
+        72,
+        58,
+        62
+      ],
+      [
+        82,
+        65,
+        62
+      ],
+      [
+        76,
+        72,
+        62
+      ],
+      [
+        58,
+        72,
+        64
+      ],
+      [
+        57,
+        65,
+        68
+      ]
+    ],
+    "conductors": 4,
+    "wire_od_mm": 0.8,
+    "colours": [
+      "#347ba1",
+      "#eeeeea",
+      "#2e8b6e",
+      "#d6b648"
+    ],
+    "sleeve": true,
+    "lid": true,
+    "notes": "Moves with lid after unplugging. Service loop above battery provides slack to lift lid and reach latch. Two independent NC circuits; actual switch contacts unresolved. Uses rounded divider notch."
+  },
+  {
+    "id": "O01",
+    "label": "Arm bus input",
+    "ref": "J5",
+    "control_points_mm": [
+      [
+        -58,
+        -38.55,
+        14.045
+      ],
+      [
+        -58,
+        -42,
+        17
+      ],
+      [
+        -48,
+        -47,
+        17
+      ],
+      [
+        -10,
+        -47,
+        17
+      ],
+      [
+        19,
+        -49,
+        19
+      ],
+      [
+        28,
+        -72,
+        24
+      ],
+      [
+        73,
+        -82,
+        35
+      ],
+      [
+        111,
+        -76,
+        48
+      ],
+      [
+        117,
+        -45,
+        67
+      ]
+    ],
+    "conductors": 3,
+    "wire_od_mm": 1.6,
+    "colours": [
+      "#d6b648",
+      "#bd302d",
+      "#20292c"
+    ],
+    "sleeve": true,
+    "lid": false,
+    "notes": "Proposed arm-platform cable entry, not a verified existing passage. Arm harness stays on chassis; only the STOP tail moves with the removable lid. Existing servo chain retained."
+  },
+  {
+    "id": "O02",
+    "label": "Speaker lead",
+    "ref": "J7",
+    "control_points_mm": [
+      [
+        2.8,
+        -26,
+        14.095
+      ],
+      [
+        10,
+        -26,
+        17
+      ],
+      [
+        11,
+        -42,
+        17
+      ],
+      [
+        -6,
+        -49,
+        18
+      ],
+      [
+        -13,
+        -58,
+        19
+      ],
+      [
+        -22,
+        -61,
+        18
+      ]
+    ],
+    "conductors": 2,
+    "wire_od_mm": 1.2,
+    "colours": [
+      "#bd302d",
+      "#20292c"
+    ],
+    "sleeve": true,
+    "lid": false,
+    "notes": "Speaker mating position is a reservation; reuse factory lead if suitable."
+  },
+  {
+    "id": "O03_left",
+    "label": "Left cooling fan",
+    "ref": "J15",
+    "control_points_mm": [
+      [
+        -27.75,
+        -34.8,
+        21.395
+      ],
+      [
+        -27.75,
+        -34.3,
+        25
+      ],
+      [
+        -33,
+        -44,
+        22
+      ],
+      [
+        -55,
+        -48,
+        19
+      ],
+      [
+        -82,
+        -47,
+        20
+      ],
+      [
+        -85,
+        -35,
+        22
+      ],
+      [
+        -85,
+        0,
+        22
+      ],
+      [
+        -86,
+        45,
+        30
+      ],
+      [
+        -94,
+        57,
+        49
+      ],
+      [
+        -115,
+        62,
+        46
+      ],
+      [
+        -140,
+        62,
+        46
+      ],
+      [
+        -146,
+        56,
+        35
+      ],
+      [
+        -148,
+        54,
+        37
+      ]
+    ],
+    "conductors": 2,
+    "wire_od_mm": 1.0,
+    "colours": [
+      "#bd302d",
+      "#20292c"
+    ],
+    "sleeve": true,
+    "lid": false,
+    "notes": "Proposed fan lead outlet; keep air aperture clear."
+  },
+  {
+    "id": "O03_right",
+    "label": "Right cooling fan",
+    "ref": "J14",
+    "control_points_mm": [
+      [
+        -39.25,
+        -34.8,
+        21.395
+      ],
+      [
+        -39.25,
+        -34.3,
+        25
+      ],
+      [
+        -44,
+        -44,
+        23
+      ],
+      [
+        -65,
+        -49,
+        20
+      ],
+      [
+        -88,
+        -49,
+        26
+      ],
+      [
+        -96,
+        -59,
+        45
+      ],
+      [
+        -116,
+        -64,
+        46
+      ],
+      [
+        -140,
+        -64,
+        46
+      ],
+      [
+        -146,
+        -58,
+        35
+      ],
+      [
+        -148,
+        -54,
+        37
+      ]
+    ],
+    "conductors": 2,
+    "wire_od_mm": 1.0,
+    "colours": [
+      "#bd302d",
+      "#20292c"
+    ],
+    "sleeve": true,
+    "lid": false,
+    "notes": "Proposed fan lead outlet; keep air aperture clear."
+  },
+  {
+    "id": "U01",
+    "label": "Orange Pi power",
+    "ref": "J20",
+    "control_points_mm": [
+      [
+        17,
+        13,
+        13.195
+      ],
+      [
+        22,
+        13,
+        17
+      ],
+      [
+        22,
+        5,
+        27
+      ],
+      [
+        21,
+        -8,
+        39
+      ],
+      [
+        6,
+        -23,
+        43
+      ],
+      [
+        -13,
+        -25,
+        39
+      ],
+      [
+        -16.5241,
+        -18.8774,
+        33.887
+      ]
+    ],
+    "conductors": 1,
+    "wire_od_mm": 3.5,
+    "colours": [
+      "#333b3e"
+    ],
+    "sleeve": false,
+    "lid": false,
+    "notes": "Complete standard C-to-C 5V/3A cable; plug model/bend radius provisional."
+  },
+  {
+    "id": "U02",
+    "label": "Core USB data",
+    "ref": "J1",
+    "control_points_mm": [
+      [
+        17,
+        -7.2,
+        13.195
+      ],
+      [
+        22,
+        -7.2,
+        18
+      ],
+      [
+        22,
+        15,
+        35
+      ],
+      [
+        19,
+        49,
+        55
+      ],
+      [
+        -1,
+        55,
+        59
+      ],
+      [
+        -31.2,
+        63,
+        60
+      ],
+      [
+        -31.2,
+        78.5,
+        61.5
+      ],
+      [
+        -31.2,
+        78.5,
+        56.5
+      ]
+    ],
+    "conductors": 1,
+    "wire_od_mm": 3.5,
+    "colours": [
+      "#333b3e"
+    ],
+    "sleeve": false,
+    "lid": false,
+    "notes": "Complete standard USB data cable. Hub socket allocation is illustrative."
+  },
+  {
+    "id": "U03",
+    "label": "Hub upstream",
+    "ref": "",
+    "control_points_mm": [
+      [
+        -51,
+        -55,
+        37.5
+      ],
+      [
+        -51,
+        -61,
+        39
+      ],
+      [
+        -30,
+        -61,
+        42
+      ],
+      [
+        -5,
+        -57,
+        44
+      ],
+      [
+        19,
+        -39,
+        42
+      ],
+      [
+        21,
+        5,
+        39
+      ],
+      [
+        19,
+        49,
+        38
+      ],
+      [
+        15,
+        68,
+        25
+      ],
+      [
+        6,
+        78.5,
+        25
+      ]
+    ],
+    "conductors": 1,
+    "wire_od_mm": 3.8,
+    "colours": [
+      "#333b3e"
+    ],
+    "sleeve": false,
+    "lid": false,
+    "notes": "HB1 captive USB-A lead connected to the Orange Pi DATA USB-C port through an illustrative short OTG adapter. Only the routed portion is shown; the manufacturer specifies 800mm total cable. Excess cable storage and actual adapter dimensions remain to resolve."
+  }
+]

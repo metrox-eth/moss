@@ -1,0 +1,189 @@
+{
+  "status": "VISUAL_INTERFACE_STUDY_NOT_FIT_CERTIFICATION",
+  "connectors": [
+    {
+      "ref": "J2",
+      "family": "GH",
+      "circuits": 5,
+      "pitch_mm": 1.25,
+      "housing_width_mm": 7.5,
+      "housing_axial_length_mm": 5.7,
+      "wire_exit_world_mm": [
+        -32.5,
+        36.65,
+        13.245
+      ],
+      "mating_axis_world": [
+        0,
+        1,
+        0
+      ],
+      "evidence": "Public catalogue dimensions; simplified reconstructed housing, native fixed PCB model retained."
+    },
+    {
+      "ref": "J3",
+      "family": "GH",
+      "circuits": 4,
+      "pitch_mm": 1.25,
+      "housing_width_mm": 6.25,
+      "housing_axial_length_mm": 5.7,
+      "wire_exit_world_mm": [
+        -18,
+        36.65,
+        13.245
+      ],
+      "mating_axis_world": [
+        0,
+        1,
+        0
+      ],
+      "evidence": "Public catalogue dimensions; simplified reconstructed housing, native fixed PCB model retained."
+    },
+    {
+      "ref": "J4",
+      "family": "GH",
+      "circuits": 4,
+      "pitch_mm": 1.25,
+      "housing_width_mm": 6.25,
+      "housing_axial_length_mm": 5.7,
+      "wire_exit_world_mm": [
+        -43.25,
+        36.65,
+        13.245
+      ],
+      "mating_axis_world": [
+        0,
+        1,
+        0
+      ],
+      "evidence": "Public catalogue dimensions; simplified reconstructed housing, native fixed PCB model retained."
+    },
+    {
+      "ref": "J8",
+      "family": "SH",
+      "circuits": 6,
+      "pitch_mm": 1,
+      "housing_width_mm": 7,
+      "housing_axial_length_mm": 5,
+      "wire_exit_world_mm": [
+        -73.625,
+        0.1,
+        17.895
+      ],
+      "mating_axis_world": [
+        0,
+        0,
+        1
+      ],
+      "evidence": "Public catalogue dimensions; simplified reconstructed housing, native fixed PCB model retained."
+    },
+    {
+      "ref": "J14",
+      "family": "XH",
+      "circuits": 2,
+      "pitch_mm": 2.5,
+      "housing_width_mm": 7.3,
+      "housing_axial_length_mm": 7.5,
+      "wire_exit_world_mm": [
+        -39.25,
+        -34.8,
+        21.395
+      ],
+      "mating_axis_world": [
+        0,
+        0,
+        1
+      ],
+      "evidence": "Public catalogue dimensions; simplified reconstructed housing, native fixed PCB model retained."
+    },
+    {
+      "ref": "J15",
+      "family": "XH",
+      "circuits": 2,
+      "pitch_mm": 2.5,
+      "housing_width_mm": 7.3,
+      "housing_axial_length_mm": 7.5,
+      "wire_exit_world_mm": [
+        -27.75,
+        -34.8,
+        21.395
+      ],
+      "mating_axis_world": [
+        0,
+        0,
+        1
+      ],
+      "evidence": "Public catalogue dimensions; simplified reconstructed housing, native fixed PCB model retained."
+    },
+    {
+      "ref": "J7",
+      "family": "PH",
+      "circuits": 2,
+      "pitch_mm": 2,
+      "housing_width_mm": 5.8,
+      "housing_axial_length_mm": 6.35,
+      "wire_exit_world_mm": [
+        2.8,
+        -26,
+        14.095
+      ],
+      "mating_axis_world": [
+        1,
+        0,
+        0
+      ],
+      "evidence": "Public catalogue dimensions; simplified reconstructed housing, native fixed PCB model retained."
+    },
+    {
+      "ref": "J5",
+      "family": "SPOX",
+      "circuits": 3,
+      "pitch_mm": 2.5,
+      "housing_width_mm": 8.9,
+      "housing_axial_length_mm": 8,
+      "wire_exit_world_mm": [
+        -58,
+        -38.55,
+        14.045
+      ],
+      "mating_axis_world": [
+        0,
+        -1,
+        0
+      ],
+      "evidence": "Public catalogue dimensions; simplified reconstructed housing, native fixed PCB model retained."
+    },
+    {
+      "ref": "motor_left",
+      "family": "XH-style visual match; exact vendor unverified",
+      "circuits": 6,
+      "pitch_mm": 2.5,
+      "housing_width_mm": 17.3,
+      "wire_exit_world_mm": [
+        -100,
+        7.8,
+        22.614
+      ],
+      "evidence": "Owner confirmed same six-wire plug as 20 September workshop photographs. Native KiCad S6B-XH header is a visual reference, not a vendor identification. Circuit order and clocking remain to verify."
+    },
+    {
+      "ref": "motor_right",
+      "family": "XH-style visual match; exact vendor unverified",
+      "circuits": 6,
+      "pitch_mm": 2.5,
+      "housing_width_mm": 17.3,
+      "wire_exit_world_mm": [
+        -142,
+        -7.8,
+        22.614
+      ],
+      "evidence": "Owner confirmed same six-wire plug as 20 September workshop photographs. Native KiCad S6B-XH header is a visual reference, not a vendor identification. Circuit order and clocking remain to verify."
+    },
+    {
+      "ref": "X08",
+      "family": "Molex Micro-Fit 3.0 four-way candidate",
+      "mated_axial_length_mm": 24.77,
+      "evidence": "Molex 43025-0400 public drawing. Contacts/wire insulation transition remain an RFQ item; not fabrication-ready."
+    }
+  ]
+}

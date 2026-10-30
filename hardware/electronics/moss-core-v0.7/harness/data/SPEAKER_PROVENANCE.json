@@ -1,0 +1,21 @@
+{
+  "source_name": "MOSS_Reference_Hardware_R92.step",
+  "source_sha256": "3952c06149977e8dbb6ba2cd986bb4a91ae356381462d13268cf58302b0d419b",
+  "method": "Unchanged STEP entity dependency closure of the existing Speaker_3W_4Ohm product; re-tessellated for rendering.",
+  "entities": 3354,
+  "triangles": 3972,
+  "bounds_mm": [
+    [
+      -87.5600000000001,
+      -83.24,
+      10.73
+    ],
+    [
+      -16.44,
+      -52.76,
+      25.97
+    ]
+  ],
+  "valid": true,
+  "solids": 0
+}
