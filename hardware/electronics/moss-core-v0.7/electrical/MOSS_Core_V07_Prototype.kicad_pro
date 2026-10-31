@@ -471,6 +471,14 @@
       {
         "netclass": "USB",
         "pattern": "ESP_USB_N"
+      },
+      {
+        "netclass": "MotorPower",
+        "pattern": "MOTOR_L_RETURN"
+      },
+      {
+        "netclass": "MotorPower",
+        "pattern": "MOTOR_R_RETURN"
       }
     ]
   },

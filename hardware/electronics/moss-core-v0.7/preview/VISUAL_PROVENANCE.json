@@ -1,7 +1,8 @@
 {
   "date": "2026-10-31",
-  "native_board_sha256": "e277ba4ba0fd84cb487ffbdb3524b62d9eb6b3f39b2a7dbb1d6935366fd08642",
-  "source": "Current native KiCad PCB, rendered with its local component models.",
-  "visual_only_addition": "U60 has a simple 3 x 4 x 0.85 mm black package body in the preview only. It is not manufacturer mechanical CAD and is not added to the native PCB.",
+  "native_board_sha256": "ea19d9bdb0b6037542eb0b4bca53a04d0b0fecbf3d16e4198485bf43dcadbfc4",
+  "source": "Current native KiCad PCB with project-local component models.",
+  "visual_only_addition": "U60 has a simple 3 x 4 x 0.85 mm black package body in the preview only. It is not manufacturer mechanical CAD.",
+  "MicroFit_models": "Unmated visual approximations based on manufacturer housing envelope and the native KiCad footprint; see electrical/models/MICROFIT_VISUAL_PROVENANCE.json.",
   "native_files_modified_for_preview": false
 }

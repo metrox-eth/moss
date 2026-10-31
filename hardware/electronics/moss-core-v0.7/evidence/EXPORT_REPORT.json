@@ -1,7 +1,7 @@
 {
   "status": "PCBWAY_DFM_CORRECTED_NEW_QUOTATION",
-  "board_sha256": "e277ba4ba0fd84cb487ffbdb3524b62d9eb6b3f39b2a7dbb1d6935366fd08642",
-  "component_count": 210,
+  "board_sha256": "ea19d9bdb0b6037542eb0b4bca53a04d0b0fecbf3d16e4198485bf43dcadbfc4",
+  "component_count": 208,
   "article_count": 96,
   "DRC_errors": 0,
   "unconnected_items": 0,

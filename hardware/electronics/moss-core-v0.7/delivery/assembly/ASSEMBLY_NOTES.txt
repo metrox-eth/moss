@@ -1,5 +1,5 @@
 MOSS CORE V0.7 / PROTOTYPE / 2026-10-31 / NEW PCB + PCBA QUOTATION
-210 components per assembled board; 96 grouped purchase articles. Two assembled boards requested. Use the matched BOM, positions, Gerbers and drills.
+208 components per assembled board; 96 grouped purchase articles. Two assembled boards requested. Use the matched BOM, positions, Gerbers and drills.
 Updated 31 October 2026. Use this matched set of design and assembly files.
 
 RESOLUTIONS OF PCBWAY COMMENTS RECEIVED ON 2026-10-31
@@ -12,6 +12,7 @@ U2: Replaced by TI TPD2E2U06QDCKRQ1, DCK / SC-70-3. Pins 1 IO1, 2 IO2, 3 GND. Ma
 https://www.digikey.com/en/products/detail/texas-instruments/TPD2E2U06QDCKRQ1/6026260
 
 OTHER ASSEMBLY DETAILS
+J2: Molex 43045-1012, vertical 10-way Micro-Fit 3.0. J3/J4: Molex 43045-0612, vertical 6-way Micro-Fit 3.0. Fully seat the locating pegs before soldering. The two left PCB ears support their peg holes. J12/J13 have been removed. J11 remains Phoenix 1715721; do not substitute a second XT30. Mating harness housings/contacts are not PCBA items. See MOTOR_WIRING.md for pin assignments.
 U60: Exact MP9447GL-Z, 25-land MPS QFN 3 x 4 mm with FIVE DISTINCT exposed IN/SW lands. Not a generic QFN20 single thermal pad. Review paste/stencil and inspection for this footprint.
 L3: SRP6060FA-100M, same procurement article as L2. No unreviewed inductor/capacitor/ripple-network substitutions.
 H1: Grounding board feature, excluded from assembly BOM. Plated 2.7 mm mounting hole, 5.4 mm exposed copper ring on both faces, eight 0.5 mm plated stitch holes, no paste. Lug, screw and grounding strap are not PCBA items.

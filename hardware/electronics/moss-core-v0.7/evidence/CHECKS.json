@@ -1,18 +1,18 @@
 {
-  "board_sha256": "e277ba4ba0fd84cb487ffbdb3524b62d9eb6b3f39b2a7dbb1d6935366fd08642",
+  "board_sha256": "ea19d9bdb0b6037542eb0b4bca53a04d0b0fecbf3d16e4198485bf43dcadbfc4",
   "DRC_errors": 0,
   "unconnected_items": 0,
   "schematic_parity_issues": 0,
   "ERC_violations": 0,
   "known_DRC_warnings": 2,
   "file_hashes": {
-    "electrical/MOSS.kicad_sym": "6264353e95f05c081d1fcb6b6d8a6f674c8ad62ddc2f21af6aa2fa95c38218e7",
+    "electrical/MOSS.kicad_sym": "38b33478afa0b8b5b734b14a683ebf4839d31a395340a69fe901ba40664cad76",
     "electrical/19_Fans.kicad_sch": "9016812d051dcfe94462d556a78942b2705c91fa4e026a5279ac555ce54ababb",
     "electrical/01_USB_Power.kicad_sch": "1abb726b8bc5d814858eaf42ba5d2473a1b9010b124c9040208043a8af1ca3c7",
     "electrical/MOSS_Core_V07_Prototype.kicad_sch": "bec1a7bc8f26de9c6403a0ae8ccb967cdb98e0cdad72d2443e468bdb30197043",
-    "electrical/17_Motor_Current.kicad_sch": "424d7330bd83bba58b309d9f4dc109a57d66ae57dc8776f1a9baef6fa488e266",
-    "electrical/MOSS_Core_V07_Prototype.kicad_pro": "767aaf9e54603d55868c75de123f2f1c80f17ec50754247e94889ae5c9ee1d91",
-    "electrical/04_Drive_Encoders.kicad_sch": "3a75c5a2ad6b69b75ee6f98edbbb4e8af18f1d7acccce950bfcfbadf7e28a621",
+    "electrical/17_Motor_Current.kicad_sch": "f3f4c233e95c2d2e07528c7c70f574f5cd82617b179a31b98bb105a2ea842b15",
+    "electrical/MOSS_Core_V07_Prototype.kicad_pro": "0c548f7ee20e8282fbf137e8e06f2666582cf76c1acbeb1a7670a73ab2321f22",
+    "electrical/04_Drive_Encoders.kicad_sch": "3d33800c9cb9095ccce556607bdecfee2d21bbbc0eacb39667d7382c047f0fab",
     "electrical/05_Servo.kicad_sch": "f0a50aad1074ffd668727363ef7c0993ae88b0005e1e85b962c9d4bffa97c883",
     "electrical/03_Hardware_Interlock.kicad_sch": "a9d841d2bd1506a5e1dd9d8e78c3504d192b769a4d3fa5c89248123680ed40a1",
     "electrical/07_Battery_Voltage.kicad_sch": "1eb4e9de1676ca9bcb7f3c5f7c29a2f77f95a8ea9967e6eafac44e8c1f335be6",
@@ -22,7 +22,7 @@
     "electrical/02_Controller.kicad_sch": "37f94127ea569c006c2d5783c16b054575464a6cdea6793c19e8cadda528d460",
     "electrical/10_Battery_Power.kicad_sch": "7b3ad4c064680eb298e2fdce5af59cd6e63d1682fda7085f5a94a0b94b2f3302",
     "electrical/18_Actuator_Cutoff.kicad_sch": "c3d6d0e08e057c2286851b12f7a1e44c0fc811ec48ecd1ca3c866214776c7c44",
-    "electrical/MOSS_Core_V07_Prototype.kicad_pcb": "e277ba4ba0fd84cb487ffbdb3524b62d9eb6b3f39b2a7dbb1d6935366fd08642",
+    "electrical/MOSS_Core_V07_Prototype.kicad_pcb": "ea19d9bdb0b6037542eb0b4bca53a04d0b0fecbf3d16e4198485bf43dcadbfc4",
     "electrical/MOSS_Core_V07_Prototype.kicad_dru": "c39def057e204409fa042e1c68b905486cfb948b02db4ca079145826dfac18ea",
     "electrical/MOSS.pretty/Diode_SMD_D_SOD-523.kicad_mod": "5c47c9905d63faaa235e41aeae0412ed52138f9a9abf728615596bdbcd8fe717",
     "electrical/MOSS.pretty/Package_SO_VSSOP-8_2.3x2mm_P0.5mm.kicad_mod": "4e907b9c6a04ca98e5aaac52513b7d29f4d8572e3af1b1361616a23a384e2e23",
@@ -46,10 +46,13 @@
     "electrical/MOSS.pretty/Connector_JST_JST_GH_SM05B-GHS-TB_1x05-1MP_P1.25mm_Horizontal.kicad_mod": "60d78da749f952c41c3054f139553f9ebfe779eedf78031f67e05584f104be93",
     "electrical/MOSS.pretty/Package_SO_MSOP-10_3x3mm_P0.5mm.kicad_mod": "65c23add7af2f2a30edd0f0436230d4ad522fb11d7a4b801518724bd5856c4e8",
     "electrical/MOSS.pretty/Diode_SMD_D_SOD-323.kicad_mod": "bdbdc360aa5188f7fba3014a3d961be5645877452c0ba7ab299e1647249e521a",
+    "electrical/MOSS.pretty/Connector_Molex_Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical.kicad_mod": "4ee789ca0db376f1801b61fa09a5bd1a0c475eb76dd8ec1b114bec9d24611c2d",
     "electrical/MOSS.pretty/TerminalBlock_Phoenix_TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal.kicad_mod": "68ddf52ca63afa46954a2db2362c7b7e893678112ee22cd8cc0599b9e5d4cbfd",
     "electrical/MOSS.pretty/Capacitor_SMD_C_1206_3216Metric.kicad_mod": "cd32001f37c37af2833a65a56db69283fce14c07f211a4e25facce7767c4de3f",
     "electrical/MOSS.pretty/Connector_USB_USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.kicad_mod": "740f9da284b62354412233efc3a8e80f4c513bb5b64ea0f7821805fafaea95f6",
     "electrical/MOSS.pretty/Capacitor_SMD_C_1210_3225Metric.kicad_mod": "4422eca63653282f2cece15d05ebe82d035e23c2f081cf80b3d275214a9ac918",
+    "electrical/MOSS.pretty/Connector_Molex_Molex_Micro-Fit_3.0_43045-0600_2x03_P3.00mm_Horizontal.kicad_mod": "05f6ba88ba803eaeccbc9e611ac426283b4741106d9c3b01641f75bbb2c051a4",
+    "electrical/MOSS.pretty/Connector_Molex_Molex_Micro-Fit_3.0_43045-1000_2x05_P3.00mm_Horizontal.kicad_mod": "e046f67c4596e1ea228eeebe7722a12c79e9b57a82b685a343a36cb259326ef2",
     "electrical/MOSS.pretty/Diode_SMD_D_SOD-123.kicad_mod": "cf0853fd94d3ba2a3fef24a6592b93f10a06f2d8de6d719bbca042f99442b52c",
     "electrical/MOSS.pretty/Diode_SMD_Nexperia_CFP3_SOD-123W.kicad_mod": "d0b9f0cb100522c6d8d36fb623ba4112bafe228a00a113883c402919f05cb29f",
     "electrical/MOSS.pretty/Package_SON_VSON-8-1EP_3x3mm_P0.65mm_EP1.65x2.4mm.kicad_mod": "ec797b556ab94756fe7e33dee7551f5e3232c564d49501208f6cc15c3eb978f0",
@@ -60,6 +63,7 @@
     "electrical/MOSS.pretty/Connector_AMASS_AMASS_XT30PW-M_1x02_P2.50mm_Horizontal_EdgeEntry.kicad_mod": "e62d018d9f7e0924a7b0a34f380d747ca7526afdfb639b779af3b9d75ac7a8de",
     "electrical/MOSS.pretty/Resistor_SMD_R_0603_1608Metric.kicad_mod": "fbcf38e085a3d5a76df02ca931b641f0cd462ef4a97b4ceb14367d1a80608d11",
     "electrical/MOSS.pretty/Package_SO_TSSOP-8_4.4x3mm_P0.65mm.kicad_mod": "1b908731d09b6173ab87370f051b8ad42ce49073bfcb200cf0417c716c6634a5",
+    "electrical/MOSS.pretty/Connector_Molex_Molex_Micro-Fit_3.0_43045-1012_2x05_P3.00mm_Vertical.kicad_mod": "d3e1d93bfcb27a02cb1ef56c7c873154a6b38614ff58f9f199c2240752280611",
     "electrical/MOSS.pretty/Connector_JST_JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical.kicad_mod": "e6c8288e844619538cacedd7c3c0cd9a77f9c419b743ed312183a146ff98ee69",
     "electrical/MOSS.pretty/MOSS_V07_CSS2H_2512K_Bourns.kicad_mod": "ce0fc8efd753d3bc5091e20b827dabfe28ad53ae213442ad8f776f38ef76d193",
     "electrical/MOSS.pretty/TestPoint_TestPoint_Pad_D1.0mm.kicad_mod": "be28d30483ce15dc3f110c7fc6c311c84e9766305cb5a7c314aaf202419d76b3",
@@ -72,13 +76,8 @@
     "electrical/MOSS.pretty/Inductor_SMD_L_Bourns_SRP6060FA.kicad_mod": "16c4ddc13671453c35af1b57636d6e57074016bd1a93119aba40dd074c9c39f2",
     "electrical/MOSS.pretty/Package_TO_SOT_SMD_SOT-23-5.kicad_mod": "56665b9629bd9421fa1b5106294b94d7e931b7a444e3712dcaa7d3d298ced86f",
     "electrical/MOSS.pretty/Package_TO_SOT_SMD_SOT-23.kicad_mod": "1fc64a59ce10911e130c0050db406230830188e05d7a5cce2f1fb3d7879a8f10",
-    "electrical/circuit.json": "b3543ab4c5f686d78e329c382edd2c5ce70a76c7041210e87f8f265ca3ea7e91",
-    "electrical/BOM_PCBWAY_ASSEMBLY.json": "8a7bc009ba26055b61dcfa7627922ac34fc349f986b7da61aece7250e705d693"
+    "electrical/circuit.json": "40919f1c0f76e79a94b641d24efad15708571797b58ef4cab1f2f8668d1d959c",
+    "electrical/BOM_PCBWAY_ASSEMBLY.json": "fefede69174adaf0281608b09153711c53a10177cfbbae6d316dbd12fdaf62c7"
   },
-  "scope": "Native prototype checks; no hardware qualification.",
-  "publication_metadata_update": {
-    "date": "2026-10-31",
-    "scope": "Only the first BOM note was changed to remove private order context. Parts, quantities, MPNs, assembly preferences and every native design file are unchanged from the checked submission. Native checks were not rerun for this text-only publication step.",
-    "original_BOM_json_sha256": "9e152003333881fc9006dd35a3834a68d3f3afe9db7e2fc99bab52646b6519c8"
-  }
+  "scope": "Native prototype checks; no hardware qualification."
 }

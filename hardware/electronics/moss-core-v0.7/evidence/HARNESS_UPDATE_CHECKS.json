@@ -1,0 +1,213 @@
+{
+  "status": "PASS_READ_ONLY_NATIVE_CHECKS",
+  "pcb_sha256": "ea19d9bdb0b6037542eb0b4bca53a04d0b0fecbf3d16e4198485bf43dcadbfc4",
+  "baseline_pcb_sha256": "e277ba4ba0fd84cb487ffbdb3524b62d9eb6b3f39b2a7dbb1d6935366fd08642",
+  "hardware_qualified": false,
+  "unchanged_footprints_except_four_connector_changes": 218,
+  "removed": [
+    "J12",
+    "J13"
+  ],
+  "changed_connectors": [
+    "J2",
+    "J3",
+    "J4",
+    "J8"
+  ],
+  "footprints": 222,
+  "placed_components": 208,
+  "purchase_articles": 96,
+  "winding_terminals_are_not_ground": true,
+  "source_Kelvin_pickups_preserved": 20,
+  "GND_pads_connected_to_battery_negative": 208,
+  "ground_fill_regions": {
+    "In1.Cu": [
+      {
+        "area_mm2": 4.603091459942501,
+        "connected_through_conductors": 1
+      },
+      {
+        "area_mm2": 7.622053578608008,
+        "connected_through_conductors": 1
+      },
+      {
+        "area_mm2": 4865.121370073097,
+        "connected_through_conductors": 198
+      }
+    ],
+    "In2.Cu": [
+      {
+        "area_mm2": 58.896194015132004,
+        "connected_through_conductors": 1
+      },
+      {
+        "area_mm2": 35.287328591657456,
+        "connected_through_conductors": 3
+      },
+      {
+        "area_mm2": 5.093022670050997,
+        "connected_through_conductors": 1
+      },
+      {
+        "area_mm2": 1.285400036620502,
+        "connected_through_conductors": 1
+      },
+      {
+        "area_mm2": 77.39208521544305,
+        "connected_through_conductors": 4
+      },
+      {
+        "area_mm2": 16.99342826134602,
+        "connected_through_conductors": 1
+      },
+      {
+        "area_mm2": 58.65016772048103,
+        "connected_through_conductors": 4
+      },
+      {
+        "area_mm2": 9.880783964999994,
+        "connected_through_conductors": 1
+      },
+      {
+        "area_mm2": 18.604596336618005,
+        "connected_through_conductors": 1
+      },
+      {
+        "area_mm2": 4141.183552060312,
+        "connected_through_conductors": 156
+      },
+      {
+        "area_mm2": 12.228635791131504,
+        "connected_through_conductors": 1
+      },
+      {
+        "area_mm2": 91.61294484473105,
+        "connected_through_conductors": 23
+      },
+      {
+        "area_mm2": 32.17627731833895,
+        "connected_through_conductors": 3
+      }
+    ]
+  },
+  "force_trace_summary": {
+    "MOTOR_R_LEAD": {
+      "minimum_force_width_mm": 1.6,
+      "total_force_segment_length_mm": 24.800724543987265,
+      "sum_segment_resistance_ohm_20C": 0.006415921301976291,
+      "layers": [
+        "B.Cu",
+        "F.Cu"
+      ]
+    },
+    "MOTOR_R_RETURN": {
+      "minimum_force_width_mm": 1.6,
+      "total_force_segment_length_mm": 79.5040132885526,
+      "sum_segment_resistance_ohm_20C": 0.03231284381035075,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In2.Cu"
+      ]
+    },
+    "CYTRON_L_LEAD": {
+      "minimum_force_width_mm": 1.2,
+      "total_force_segment_length_mm": 54.78074715160562,
+      "sum_segment_resistance_ohm_20C": 0.021973097164135258,
+      "layers": [
+        "B.Cu",
+        "F.Cu"
+      ]
+    },
+    "MOTOR_L_RETURN": {
+      "minimum_force_width_mm": 1.2,
+      "total_force_segment_length_mm": 60.92742542252285,
+      "sum_segment_resistance_ohm_20C": 0.033260077567973924,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In1.Cu"
+      ]
+    },
+    "CYTRON_R_LEAD": {
+      "minimum_force_width_mm": 1.0,
+      "total_force_segment_length_mm": 99.42436101492721,
+      "sum_segment_resistance_ohm_20C": 0.08888019434863623,
+      "layers": [
+        "B.Cu",
+        "F.Cu",
+        "In1.Cu",
+        "In2.Cu"
+      ]
+    },
+    "MOTOR_L_LEAD": {
+      "minimum_force_width_mm": 1.6,
+      "total_force_segment_length_mm": 27.098730545804326,
+      "sum_segment_resistance_ohm_20C": 0.006938787351566662,
+      "layers": [
+        "B.Cu",
+        "F.Cu"
+      ]
+    }
+  },
+  "resistance_scope": "Sum of wide force segments only, including branches. Assumes 35 um outer and 17.5 um inner copper at 20 C. Excludes contacts, vias, shunts and thermal rise; not a measured loop resistance or current rating. Supplier motor: <=1 A rated, 2.3 A stall at 12 V; not measured on MOSS.",
+  "new_inner_layer_routes": {
+    "GND": 6,
+    "PWM_L": 2,
+    "MOTOR_R_RETURN": 9,
+    "ENC_3V3": 6,
+    "ER_A_EXT": 4,
+    "ACT_READY": 2,
+    "WD_ENABLE": 4,
+    "WD_TICK": 7,
+    "WD_RESET_N": 5,
+    "I2C_SCL": 5,
+    "DIR_R_SAFE": 1,
+    "DIR_R": 1,
+    "MDD_DIR2": 1,
+    "SERVO_TX": 4,
+    "MDD_PWM1": 5,
+    "MDD_DIR1": 2,
+    "MDD_PWM2": 2,
+    "MOTOR_L_RETURN": 8,
+    "CYTRON_R_LEAD": 23,
+    "EL_A_EXT": 10,
+    "EL_B_EXT": 10,
+    "AMP_ENABLE": 1,
+    "CURRENT_L_ADC": 5,
+    "ER_A_F": 4,
+    "ESTOP_CUT_SOURCE": 7,
+    "ESTOP_CUT_RETURN": 8,
+    "ESTOP_STATUS_SOURCE": 7,
+    "ESTOP_STATUS_RAW": 4,
+    "ER_B_F": 4,
+    "ESTOP_ACTIVE": 2,
+    "AUDIO_BCLK": 9,
+    "AUDIO_ENABLE": 1,
+    "ACT_POWER_ENABLE": 5
+  },
+  "native_polygon_decoding": [
+    {
+      "operation": "SHAPE_POLY_SET copy followed by native Unfracture; no repair/simplify",
+      "outlines_before": 3,
+      "outlines_after": 3,
+      "holes_before": 0,
+      "holes_after": 311,
+      "area_before_mm2": 4877.346449459447,
+      "area_after_mm2": 4877.346515111644,
+      "area_difference_mm2": 6.565219700860325e-05,
+      "one_IU_boundary_area_bound_mm2": 0.006436762755267438
+    },
+    {
+      "operation": "SHAPE_POLY_SET copy followed by native Unfracture; no repair/simplify",
+      "outlines_before": 13,
+      "outlines_after": 13,
+      "holes_before": 0,
+      "holes_after": 190,
+      "area_before_mm2": 4559.284359380834,
+      "area_after_mm2": 4559.284416826836,
+      "area_difference_mm2": 5.744600184698356e-05,
+      "one_IU_boundary_area_bound_mm2": 0.004943544967914963
+    }
+  ]
+}

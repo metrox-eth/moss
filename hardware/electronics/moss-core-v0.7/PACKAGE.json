@@ -1,7 +1,7 @@
 {
   "status": "PCBWAY_DFM_CORRECTED_NEW_QUOTATION",
-  "board_sha256": "e277ba4ba0fd84cb487ffbdb3524b62d9eb6b3f39b2a7dbb1d6935366fd08642",
-  "component_count": 210,
+  "board_sha256": "ea19d9bdb0b6037542eb0b4bca53a04d0b0fecbf3d16e4198485bf43dcadbfc4",
+  "component_count": 208,
   "article_count": 96,
   "DRC_errors": 0,
   "unconnected_items": 0,
@@ -9,22 +9,21 @@
   "ERC_violations": 0,
   "known_DRC_warnings": 2,
   "hardware_qualified": false,
-  "updated": "2026-10-31",
   "archives": [
     {
-      "path": "delivery/MOSS_CORE_V07_PROTOTYPE_GERBERS_20261031_DFM.zip",
-      "bytes": 318671,
-      "sha256": "9316edddffbcf3ac625665b923e021d192496770000ad90fd8583cf33bbbbb7f"
+      "path": "delivery/MOSS_CORE_V07_PROTOTYPE_GERBERS_20261031_HARNESS.zip",
+      "bytes": 436093,
+      "sha256": "f5d3ad355f2553b29789d7e19edbc517d1d71cdd6312dc35b478ade9b4c97e61"
     },
     {
-      "path": "delivery/MOSS_CORE_V07_PROTOTYPE_ASSEMBLY_NOTES_20261031_DFM.zip",
-      "bytes": 8794,
-      "sha256": "48389219868ad5b0d35312f9b5c8d4538c8a3696b55fb96e114827afb58df7ad"
+      "path": "delivery/MOSS_CORE_V07_PROTOTYPE_ASSEMBLY_NOTES_20261031_HARNESS.zip",
+      "bytes": 8951,
+      "sha256": "e2c04cf8ecd043401a9b454488841437d0c526a7469d9d0cfdc92810b47d61f4"
     },
     {
-      "path": "delivery/MOSS_CORE_V07_PROTOTYPE_REVIEW_20261031_DFM.zip",
-      "bytes": 5471417,
-      "sha256": "658aeaff6f95aaf1a242467a4625d735f1c7e6c3faee20ff892a0776a45e9b3d"
+      "path": "delivery/MOSS_CORE_V07_PROTOTYPE_REVIEW_20261031_HARNESS.zip",
+      "bytes": 5509812,
+      "sha256": "3d156583223d220d723511755765493214340d2e44a2aaff8e1ce73b3ec88c6c"
     }
   ]
 }

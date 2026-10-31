@@ -40,7 +40,7 @@ I pick up litter by hand on my walks. MOSS is the robot I want next to me doing 
 
 ## News
 
-- 31 October 2026: **[MOSS CORE V0.7 updated](hardware/electronics/moss-core-v0.7/)** — integrated Orange Pi power supply, a GND mounting connection and manufacturing-review corrections. Current KiCad sources, BOM, Gerbers and board views replace the previous files. The first prototype has not yet been built or tested.
+- 31 October 2026: **[MOSS CORE V0.7 updated](hardware/electronics/moss-core-v0.7/)** — one six-wire cable per motor, a consolidated Cytron link, integrated Orange Pi power supply, a GND mounting connection and manufacturing-review corrections. Current KiCad sources, BOM, Gerbers and board views replace the previous files. The first prototype has not yet been built or tested.
 
 - 30 October 2026: **[MOSS CORE V0.7 harness study](hardware/electronics/moss-core-v0.7/harness/)** — a short film, offline 3D viewer, cable routing and a hull prototype with integrated cable-tie mounts. An unbuilt packaging proposal, published for review.
 

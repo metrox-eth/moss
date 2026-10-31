@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>electrical/MOSS_Core_V07_Prototype.kicad_sch</source>
-    <date>2026-10-31T14:59:23</date>
+    <date>2026-10-31T19:11:21</date>
     <tool>Eeschema 10.0.6</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -78,10 +78,10 @@
     </sheet>
     <sheet number="5" name="/04 Drive Encoders/" tstamps="/51494b1c-0d88-5cf9-9cc1-71426b099cc8/">
       <title_block>
-        <title>MOSS Core V0.7 PROTOTYPE / 04 Drive Encoders</title>
+        <title>MOSS Core V0.7 PROTOTYPE / 04_Drive_Encoders</title>
         <company>MOSS / Laurent &amp; Codex</company>
         <rev>V0.7 PROTOTYPE</rev>
-        <date>2026-10-29</date>
+        <date>2026-10-31</date>
         <source>04_Drive_Encoders.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -204,10 +204,10 @@
     </sheet>
     <sheet number="12" name="/17 Motor Current/" tstamps="/03b51654-a433-5786-a696-ab37007e36ff/">
       <title_block>
-        <title>MOSS Core V0.7 PROTOTYPE / 17 Motor Current</title>
+        <title>MOSS Core V0.7 PROTOTYPE / 17_Motor_Current</title>
         <company>MOSS / Laurent &amp; Codex</company>
         <rev>V0.7 PROTOTYPE</rev>
-        <date>2026-10-29</date>
+        <date>2026-10-31</date>
         <source>17_Motor_Current.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -2292,17 +2292,17 @@
       </units>
     </comp>
     <comp ref="J2">
-      <value>CYTRON MDD10A SIGNAL</value>
-      <footprint>MOSS:Connector_JST_JST_GH_SM05B-GHS-TB_1x05-1MP_P1.25mm_Horizontal</footprint>
-      <description>Mating housing GHR-05V-S; crimp SSHL-002T-P0.2. Pin order is Core-specific.</description>
+      <value>CYTRON LINK</value>
+      <footprint>MOSS:Connector_Molex_Molex_Micro-Fit_3.0_43045-1012_2x05_P3.00mm_Vertical</footprint>
+      <description>Micro-Fit 3.0 vertical through-hole. Exact Molex header and matching 43025 housing. Motor contacts use 18 AWG; signal contacts use 24 AWG. Apply manufacturer populated-circuit/temperature derating; not the single-contact maximum. Pin10 has no harness terminal. Separate J11 supplies the Cytron. Neither motor-output pair is GND.</description>
       <fields>
-        <field name="MPN">SM05B-GHS-TB(LF)(SN)</field>
-        <field name="Footprint">MOSS:Connector_JST_JST_GH_SM05B-GHS-TB_1x05-1MP_P1.25mm_Horizontal</field>
+        <field name="MPN">43045-1012</field>
+        <field name="Footprint">MOSS:Connector_Molex_Molex_Micro-Fit_3.0_43045-1012_2x05_P3.00mm_Vertical</field>
         <field name="Datasheet"/>
-        <field name="Description">Mating housing GHR-05V-S; crimp SSHL-002T-P0.2. Pin order is Core-specific.</field>
+        <field name="Description">Micro-Fit 3.0 vertical through-hole. Exact Molex header and matching 43025 housing. Motor contacts use 18 AWG; signal contacts use 24 AWG. Apply manufacturer populated-circuit/temperature derating; not the single-contact maximum. Pin10 has no harness terminal. Separate J11 supplies the Cytron. Neither motor-output pair is GND.</field>
       </fields>
-      <libsource lib="MOSS" part="J2_CYTRON_MDD10A_SIGNAL" description="Mating housing GHR-05V-S; crimp SSHL-002T-P0.2. Pin order is Core-specific."/>
-      <property name="MPN" value="SM05B-GHS-TB(LF)(SN)"/>
+      <libsource lib="MOSS" part="J2_CYTRON_LINK" description="Micro-Fit 3.0 vertical through-hole. Exact Molex header and matching 43025 housing. Motor contacts use 18 AWG; signal contacts use 24 AWG. Apply manufacturer populated-circuit/temperature derating; not the single-contact maximum. Pin10 has no harness terminal. Separate J11 supplies the Cytron. Neither motor-output pair is GND."/>
+      <property name="MPN" value="43045-1012"/>
       <property name="Sheetname" value="04 Drive Encoders"/>
       <property name="Sheetfile" value="04_Drive_Encoders.kicad_sch"/>
       <sheetpath names="/04 Drive Encoders/" tstamps="/51494b1c-0d88-5cf9-9cc1-71426b099cc8/"/>
@@ -2311,27 +2311,31 @@
         <unit name="A">
           <pins>
             <pin num="5"/>
-            <pin num="MP"/>
             <pin num="1"/>
             <pin num="2"/>
             <pin num="3"/>
             <pin num="4"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
           </pins>
         </unit>
       </units>
     </comp>
     <comp ref="J3">
-      <value>ENCODER LEFT</value>
-      <footprint>MOSS:Connector_JST_JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal</footprint>
-      <description>Mating housing GHR-04V-S; crimp SSHL-002T-P0.2. Pin order is Core-specific.</description>
+      <value>LEFT MOTOR + ENCODER</value>
+      <footprint>MOSS:Connector_Molex_Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical</footprint>
+      <description>Micro-Fit 3.0 vertical through-hole. Exact Molex header and matching 43025 housing. Motor contacts use 18 AWG; signal contacts use 24 AWG. Apply manufacturer populated-circuit/temperature derating; not the single-contact maximum. One six-wire cable carries motor M1/M2 and four encoder wires. Retain the motor-supplied connector and verify its cavity map. Neither motor pin is encoder GND.</description>
       <fields>
-        <field name="MPN">SM04B-GHS-TB(LF)(SN)</field>
-        <field name="Footprint">MOSS:Connector_JST_JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal</field>
+        <field name="MPN">43045-0612</field>
+        <field name="Footprint">MOSS:Connector_Molex_Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical</field>
         <field name="Datasheet"/>
-        <field name="Description">Mating housing GHR-04V-S; crimp SSHL-002T-P0.2. Pin order is Core-specific.</field>
+        <field name="Description">Micro-Fit 3.0 vertical through-hole. Exact Molex header and matching 43025 housing. Motor contacts use 18 AWG; signal contacts use 24 AWG. Apply manufacturer populated-circuit/temperature derating; not the single-contact maximum. One six-wire cable carries motor M1/M2 and four encoder wires. Retain the motor-supplied connector and verify its cavity map. Neither motor pin is encoder GND.</field>
       </fields>
-      <libsource lib="MOSS" part="J3_ENCODER_LEFT" description="Mating housing GHR-04V-S; crimp SSHL-002T-P0.2. Pin order is Core-specific."/>
-      <property name="MPN" value="SM04B-GHS-TB(LF)(SN)"/>
+      <libsource lib="MOSS" part="J3_LEFT_MOTOR___ENCODER" description="Micro-Fit 3.0 vertical through-hole. Exact Molex header and matching 43025 housing. Motor contacts use 18 AWG; signal contacts use 24 AWG. Apply manufacturer populated-circuit/temperature derating; not the single-contact maximum. One six-wire cable carries motor M1/M2 and four encoder wires. Retain the motor-supplied connector and verify its cavity map. Neither motor pin is encoder GND."/>
+      <property name="MPN" value="43045-0612"/>
       <property name="Sheetname" value="04 Drive Encoders"/>
       <property name="Sheetfile" value="04_Drive_Encoders.kicad_sch"/>
       <sheetpath names="/04 Drive Encoders/" tstamps="/51494b1c-0d88-5cf9-9cc1-71426b099cc8/"/>
@@ -2339,27 +2343,28 @@
       <units>
         <unit name="A">
           <pins>
-            <pin num="1"/>
-            <pin num="MP"/>
-            <pin num="2"/>
             <pin num="3"/>
+            <pin num="1"/>
+            <pin num="2"/>
             <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
           </pins>
         </unit>
       </units>
     </comp>
     <comp ref="J4">
-      <value>ENCODER RIGHT</value>
-      <footprint>MOSS:Connector_JST_JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal</footprint>
-      <description>Mating housing GHR-04V-S; crimp SSHL-002T-P0.2. Pin order is Core-specific.</description>
+      <value>RIGHT MOTOR + ENCODER</value>
+      <footprint>MOSS:Connector_Molex_Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical</footprint>
+      <description>Micro-Fit 3.0 vertical through-hole. Exact Molex header and matching 43025 housing. Motor contacts use 18 AWG; signal contacts use 24 AWG. Apply manufacturer populated-circuit/temperature derating; not the single-contact maximum. One six-wire cable carries motor M1/M2 and four encoder wires. Retain the motor-supplied connector and verify its cavity map. Neither motor pin is encoder GND.</description>
       <fields>
-        <field name="MPN">SM04B-GHS-TB(LF)(SN)</field>
-        <field name="Footprint">MOSS:Connector_JST_JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal</field>
+        <field name="MPN">43045-0612</field>
+        <field name="Footprint">MOSS:Connector_Molex_Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical</field>
         <field name="Datasheet"/>
-        <field name="Description">Mating housing GHR-04V-S; crimp SSHL-002T-P0.2. Pin order is Core-specific.</field>
+        <field name="Description">Micro-Fit 3.0 vertical through-hole. Exact Molex header and matching 43025 housing. Motor contacts use 18 AWG; signal contacts use 24 AWG. Apply manufacturer populated-circuit/temperature derating; not the single-contact maximum. One six-wire cable carries motor M1/M2 and four encoder wires. Retain the motor-supplied connector and verify its cavity map. Neither motor pin is encoder GND.</field>
       </fields>
-      <libsource lib="MOSS" part="J4_ENCODER_RIGHT" description="Mating housing GHR-04V-S; crimp SSHL-002T-P0.2. Pin order is Core-specific."/>
-      <property name="MPN" value="SM04B-GHS-TB(LF)(SN)"/>
+      <libsource lib="MOSS" part="J4_RIGHT_MOTOR___ENCODER" description="Micro-Fit 3.0 vertical through-hole. Exact Molex header and matching 43025 housing. Motor contacts use 18 AWG; signal contacts use 24 AWG. Apply manufacturer populated-circuit/temperature derating; not the single-contact maximum. One six-wire cable carries motor M1/M2 and four encoder wires. Retain the motor-supplied connector and verify its cavity map. Neither motor pin is encoder GND."/>
+      <property name="MPN" value="43045-0612"/>
       <property name="Sheetname" value="04 Drive Encoders"/>
       <property name="Sheetfile" value="04_Drive_Encoders.kicad_sch"/>
       <sheetpath names="/04 Drive Encoders/" tstamps="/51494b1c-0d88-5cf9-9cc1-71426b099cc8/"/>
@@ -2367,11 +2372,12 @@
       <units>
         <unit name="A">
           <pins>
-            <pin num="1"/>
-            <pin num="MP"/>
-            <pin num="2"/>
             <pin num="3"/>
+            <pin num="1"/>
+            <pin num="2"/>
             <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
           </pins>
         </unit>
       </units>
@@ -5237,56 +5243,6 @@
         </unit>
       </units>
     </comp>
-    <comp ref="J12">
-      <value>L MOTOR SENSE LOOP</value>
-      <footprint>MOSS:TerminalBlock_Phoenix_TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</footprint>
-      <description>One motor lead only. Opposite motor lead stays directly atCytron. Neither terminal is GND. Terminal rating and copper path require final design verification.</description>
-      <fields>
-        <field name="MPN">1715721</field>
-        <field name="Footprint">MOSS:TerminalBlock_Phoenix_TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</field>
-        <field name="Datasheet"/>
-        <field name="Description">One motor lead only. Opposite motor lead stays directly atCytron. Neither terminal is GND. Terminal rating and copper path require final design verification.</field>
-      </fields>
-      <libsource lib="MOSS" part="J12_L_MOTOR_SENSE_LOOP" description="One motor lead only. Opposite motor lead stays directly atCytron. Neither terminal is GND. Terminal rating and copper path require final design verification."/>
-      <property name="MPN" value="1715721"/>
-      <property name="Sheetname" value="17 Motor Current"/>
-      <property name="Sheetfile" value="17_Motor_Current.kicad_sch"/>
-      <sheetpath names="/17 Motor Current/" tstamps="/03b51654-a433-5786-a696-ab37007e36ff/"/>
-      <tstamps>e2525842-55b3-5362-9379-a4cbda536ce0</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="J13">
-      <value>R MOTOR SENSE LOOP</value>
-      <footprint>MOSS:TerminalBlock_Phoenix_TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</footprint>
-      <description>One motor lead only. Opposite motor lead stays directly atCytron. Neither terminal is GND. Terminal rating and copper path require final design verification.</description>
-      <fields>
-        <field name="MPN">1715721</field>
-        <field name="Footprint">MOSS:TerminalBlock_Phoenix_TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</field>
-        <field name="Datasheet"/>
-        <field name="Description">One motor lead only. Opposite motor lead stays directly atCytron. Neither terminal is GND. Terminal rating and copper path require final design verification.</field>
-      </fields>
-      <libsource lib="MOSS" part="J13_R_MOTOR_SENSE_LOOP" description="One motor lead only. Opposite motor lead stays directly atCytron. Neither terminal is GND. Terminal rating and copper path require final design verification."/>
-      <property name="MPN" value="1715721"/>
-      <property name="Sheetname" value="17 Motor Current"/>
-      <property name="Sheetfile" value="17_Motor_Current.kicad_sch"/>
-      <sheetpath names="/17 Motor Current/" tstamps="/03b51654-a433-5786-a696-ab37007e36ff/"/>
-      <tstamps>66779b31-9115-5652-85fb-a9a8eb88c90b</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
     <comp ref="R180">
       <value>2mR 1% 5W</value>
       <footprint>MOSS:MOSS_V07_CSS2H_2512K_Bourns</footprint>
@@ -7205,36 +7161,6 @@
         <pin num="2" name="MOTOR_NEG" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="MOSS" part="J12_L_MOTOR_SENSE_LOOP">
-      <description>One motor lead only. Opposite motor lead stays directly atCytron. Neither terminal is GND. Terminal rating and copper path require final design verification.</description>
-      <fields>
-        <field name="Reference">J</field>
-        <field name="Value">L MOTOR SENSE LOOP</field>
-        <field name="Footprint">MOSS:TerminalBlock_Phoenix_TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</field>
-        <field name="Datasheet"/>
-        <field name="Description">One motor lead only. Opposite motor lead stays directly atCytron. Neither terminal is GND. Terminal rating and copper path require final design verification.</field>
-        <field name="MPN">1715721</field>
-      </fields>
-      <pins>
-        <pin num="1" name="FROM_CYTRON" type="passive"/>
-        <pin num="2" name="TO_MOTOR" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="MOSS" part="J13_R_MOTOR_SENSE_LOOP">
-      <description>One motor lead only. Opposite motor lead stays directly atCytron. Neither terminal is GND. Terminal rating and copper path require final design verification.</description>
-      <fields>
-        <field name="Reference">J</field>
-        <field name="Value">R MOTOR SENSE LOOP</field>
-        <field name="Footprint">MOSS:TerminalBlock_Phoenix_TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal</field>
-        <field name="Datasheet"/>
-        <field name="Description">One motor lead only. Opposite motor lead stays directly atCytron. Neither terminal is GND. Terminal rating and copper path require final design verification.</field>
-        <field name="MPN">1715721</field>
-      </fields>
-      <pins>
-        <pin num="1" name="FROM_CYTRON" type="passive"/>
-        <pin num="2" name="TO_MOTOR" type="passive"/>
-      </pins>
-    </libpart>
     <libpart lib="MOSS" part="J14_FAN_1___3S">
       <description>JST XH2.50mm two-pin vertical fan header.1=fused3S positive,2=GND. User measured pitch2.5mm and photo consistent with XH; actual mate and wire polarity require checking.12V nominal fans,estimated0.1A each; noPWM/tachometer. Fed before actuator cutoff.</description>
       <fields>
@@ -7325,59 +7251,65 @@
         <pin num="SH" name="SHIELD" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="MOSS" part="J2_CYTRON_MDD10A_SIGNAL">
-      <description>Mating housing GHR-05V-S; crimp SSHL-002T-P0.2. Pin order is Core-specific.</description>
+    <libpart lib="MOSS" part="J2_CYTRON_LINK">
+      <description>Micro-Fit 3.0 vertical through-hole. Exact Molex header and matching 43025 housing. Motor contacts use 18 AWG; signal contacts use 24 AWG. Apply manufacturer populated-circuit/temperature derating; not the single-contact maximum. Pin10 has no harness terminal. Separate J11 supplies the Cytron. Neither motor-output pair is GND.</description>
       <fields>
         <field name="Reference">J</field>
-        <field name="Value">CYTRON MDD10A SIGNAL</field>
-        <field name="Footprint">MOSS:Connector_JST_JST_GH_SM05B-GHS-TB_1x05-1MP_P1.25mm_Horizontal</field>
+        <field name="Value">CYTRON LINK</field>
+        <field name="Footprint">MOSS:Connector_Molex_Molex_Micro-Fit_3.0_43045-1012_2x05_P3.00mm_Vertical</field>
         <field name="Datasheet"/>
-        <field name="Description">Mating housing GHR-05V-S; crimp SSHL-002T-P0.2. Pin order is Core-specific.</field>
-        <field name="MPN">SM05B-GHS-TB(LF)(SN)</field>
+        <field name="Description">Micro-Fit 3.0 vertical through-hole. Exact Molex header and matching 43025 housing. Motor contacts use 18 AWG; signal contacts use 24 AWG. Apply manufacturer populated-circuit/temperature derating; not the single-contact maximum. Pin10 has no harness terminal. Separate J11 supplies the Cytron. Neither motor-output pair is GND.</field>
+        <field name="MPN">43045-1012</field>
       </fields>
       <pins>
-        <pin num="1" name="MDD_PWM1" type="passive"/>
-        <pin num="2" name="MDD_DIR1" type="passive"/>
-        <pin num="3" name="MDD_PWM2" type="passive"/>
-        <pin num="4" name="MDD_DIR2" type="passive"/>
-        <pin num="5" name="GND" type="passive"/>
-        <pin num="MP" name="MOUNT" type="passive"/>
+        <pin num="1" name="PWM1" type="passive"/>
+        <pin num="2" name="DIR1" type="passive"/>
+        <pin num="3" name="PWM2" type="passive"/>
+        <pin num="4" name="DIR2" type="passive"/>
+        <pin num="5" name="SIGNAL_GND" type="passive"/>
+        <pin num="6" name="LEFT_A" type="passive"/>
+        <pin num="7" name="LEFT_B" type="passive"/>
+        <pin num="8" name="RIGHT_A" type="passive"/>
+        <pin num="9" name="RIGHT_B" type="passive"/>
+        <pin num="10" name="UNUSED" type="no_connect"/>
       </pins>
     </libpart>
-    <libpart lib="MOSS" part="J3_ENCODER_LEFT">
-      <description>Mating housing GHR-04V-S; crimp SSHL-002T-P0.2. Pin order is Core-specific.</description>
+    <libpart lib="MOSS" part="J3_LEFT_MOTOR___ENCODER">
+      <description>Micro-Fit 3.0 vertical through-hole. Exact Molex header and matching 43025 housing. Motor contacts use 18 AWG; signal contacts use 24 AWG. Apply manufacturer populated-circuit/temperature derating; not the single-contact maximum. One six-wire cable carries motor M1/M2 and four encoder wires. Retain the motor-supplied connector and verify its cavity map. Neither motor pin is encoder GND.</description>
       <fields>
         <field name="Reference">J</field>
-        <field name="Value">ENCODER LEFT</field>
-        <field name="Footprint">MOSS:Connector_JST_JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal</field>
+        <field name="Value">LEFT MOTOR + ENCODER</field>
+        <field name="Footprint">MOSS:Connector_Molex_Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical</field>
         <field name="Datasheet"/>
-        <field name="Description">Mating housing GHR-04V-S; crimp SSHL-002T-P0.2. Pin order is Core-specific.</field>
-        <field name="MPN">SM04B-GHS-TB(LF)(SN)</field>
+        <field name="Description">Micro-Fit 3.0 vertical through-hole. Exact Molex header and matching 43025 housing. Motor contacts use 18 AWG; signal contacts use 24 AWG. Apply manufacturer populated-circuit/temperature derating; not the single-contact maximum. One six-wire cable carries motor M1/M2 and four encoder wires. Retain the motor-supplied connector and verify its cavity map. Neither motor pin is encoder GND.</field>
+        <field name="MPN">43045-0612</field>
       </fields>
       <pins>
-        <pin num="1" name="GND" type="passive"/>
-        <pin num="2" name="ENC_3V3" type="passive"/>
-        <pin num="3" name="EL_A_EXT" type="passive"/>
-        <pin num="4" name="EL_B_EXT" type="passive"/>
-        <pin num="MP" name="MOUNT" type="passive"/>
+        <pin num="1" name="M1" type="passive"/>
+        <pin num="2" name="M2" type="passive"/>
+        <pin num="3" name="ENC_GND" type="passive"/>
+        <pin num="4" name="ENC_3V3" type="passive"/>
+        <pin num="5" name="ENC_A" type="passive"/>
+        <pin num="6" name="ENC_B" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="MOSS" part="J4_ENCODER_RIGHT">
-      <description>Mating housing GHR-04V-S; crimp SSHL-002T-P0.2. Pin order is Core-specific.</description>
+    <libpart lib="MOSS" part="J4_RIGHT_MOTOR___ENCODER">
+      <description>Micro-Fit 3.0 vertical through-hole. Exact Molex header and matching 43025 housing. Motor contacts use 18 AWG; signal contacts use 24 AWG. Apply manufacturer populated-circuit/temperature derating; not the single-contact maximum. One six-wire cable carries motor M1/M2 and four encoder wires. Retain the motor-supplied connector and verify its cavity map. Neither motor pin is encoder GND.</description>
       <fields>
         <field name="Reference">J</field>
-        <field name="Value">ENCODER RIGHT</field>
-        <field name="Footprint">MOSS:Connector_JST_JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal</field>
+        <field name="Value">RIGHT MOTOR + ENCODER</field>
+        <field name="Footprint">MOSS:Connector_Molex_Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical</field>
         <field name="Datasheet"/>
-        <field name="Description">Mating housing GHR-04V-S; crimp SSHL-002T-P0.2. Pin order is Core-specific.</field>
-        <field name="MPN">SM04B-GHS-TB(LF)(SN)</field>
+        <field name="Description">Micro-Fit 3.0 vertical through-hole. Exact Molex header and matching 43025 housing. Motor contacts use 18 AWG; signal contacts use 24 AWG. Apply manufacturer populated-circuit/temperature derating; not the single-contact maximum. One six-wire cable carries motor M1/M2 and four encoder wires. Retain the motor-supplied connector and verify its cavity map. Neither motor pin is encoder GND.</field>
+        <field name="MPN">43045-0612</field>
       </fields>
       <pins>
-        <pin num="1" name="GND" type="passive"/>
-        <pin num="2" name="ENC_3V3" type="passive"/>
-        <pin num="3" name="ER_A_EXT" type="passive"/>
-        <pin num="4" name="ER_B_EXT" type="passive"/>
-        <pin num="MP" name="MOUNT" type="passive"/>
+        <pin num="1" name="M1" type="passive"/>
+        <pin num="2" name="M2" type="passive"/>
+        <pin num="3" name="ENC_GND" type="passive"/>
+        <pin num="4" name="ENC_3V3" type="passive"/>
+        <pin num="5" name="ENC_A" type="passive"/>
+        <pin num="6" name="ENC_B" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="MOSS" part="J5_ARM___DATA_V__GND">
@@ -9794,12 +9726,12 @@
       <node ref="U41" pin="8" pinfunction="OUT_8" pintype="output"/>
     </net>
     <net code="39" name="CYTRON_L_LEAD" class="MotorPower">
-      <node ref="J12" pin="1" pinfunction="FROM_CYTRON_1" pintype="passive"/>
+      <node ref="J2" pin="6" pinfunction="LEFT_A_6" pintype="passive"/>
       <node ref="R180" pin="1" pinfunction="I_FROM_CYTRON_1" pintype="passive"/>
       <node ref="U40" pin="2" pinfunction="IN+_2" pintype="input"/>
     </net>
     <net code="40" name="CYTRON_R_LEAD" class="MotorPower">
-      <node ref="J13" pin="1" pinfunction="FROM_CYTRON_1" pintype="passive"/>
+      <node ref="J2" pin="8" pinfunction="RIGHT_A_8" pintype="passive"/>
       <node ref="R181" pin="1" pinfunction="I_FROM_CYTRON_1" pintype="passive"/>
       <node ref="U41" pin="2" pinfunction="IN+_2" pintype="input"/>
     </net>
@@ -9840,7 +9772,7 @@
     </net>
     <net code="48" name="EL_A_EXT" class="Default">
       <node ref="D6" pin="1" pinfunction="1_1" pintype="passive"/>
-      <node ref="J3" pin="3" pinfunction="EL_A_EXT_3" pintype="passive"/>
+      <node ref="J3" pin="5" pinfunction="ENC_A_5" pintype="passive"/>
       <node ref="R35" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="49" name="EL_A_F" class="Default">
@@ -9852,7 +9784,7 @@
     </net>
     <net code="50" name="EL_B_EXT" class="Default">
       <node ref="D7" pin="1" pinfunction="1_1" pintype="passive"/>
-      <node ref="J3" pin="4" pinfunction="EL_B_EXT_4" pintype="passive"/>
+      <node ref="J3" pin="6" pinfunction="ENC_B_6" pintype="passive"/>
       <node ref="R37" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="51" name="EL_B_F" class="Default">
@@ -9864,8 +9796,8 @@
     </net>
     <net code="52" name="ENC_3V3" class="LogicPower">
       <node ref="C44" pin="1" pinfunction="1_1" pintype="passive"/>
-      <node ref="J3" pin="2" pinfunction="ENC_3V3_2" pintype="passive"/>
-      <node ref="J4" pin="2" pinfunction="ENC_3V3_2" pintype="passive"/>
+      <node ref="J3" pin="4" pinfunction="ENC_3V3_4" pintype="passive"/>
+      <node ref="J4" pin="4" pinfunction="ENC_3V3_4" pintype="passive"/>
       <node ref="R36" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="R38" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="R40" pin="1" pinfunction="1_1" pintype="passive"/>
@@ -9900,7 +9832,7 @@
     </net>
     <net code="59" name="ER_A_EXT" class="Default">
       <node ref="D8" pin="1" pinfunction="1_1" pintype="passive"/>
-      <node ref="J4" pin="3" pinfunction="ER_A_EXT_3" pintype="passive"/>
+      <node ref="J4" pin="5" pinfunction="ENC_A_5" pintype="passive"/>
       <node ref="R39" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="60" name="ER_A_F" class="Default">
@@ -9912,7 +9844,7 @@
     </net>
     <net code="61" name="ER_B_EXT" class="Default">
       <node ref="D9" pin="1" pinfunction="1_1" pintype="passive"/>
-      <node ref="J4" pin="4" pinfunction="ER_B_EXT_4" pintype="passive"/>
+      <node ref="J4" pin="6" pinfunction="ENC_B_6" pintype="passive"/>
       <node ref="R41" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="62" name="ER_B_F" class="Default">
@@ -10033,17 +9965,14 @@
       <node ref="J11" pin="2" pinfunction="MOTOR_NEG_2" pintype="passive"/>
       <node ref="J14" pin="2" pinfunction="FAN_NEG_2" pintype="passive"/>
       <node ref="J15" pin="2" pinfunction="FAN_NEG_2" pintype="passive"/>
-      <node ref="J2" pin="5" pinfunction="GND_5" pintype="passive"/>
-      <node ref="J2" pin="MP" pinfunction="MOUNT_MP" pintype="passive"/>
+      <node ref="J2" pin="5" pinfunction="SIGNAL_GND_5" pintype="passive"/>
       <node ref="J20" pin="A1" pinfunction="GND_A1" pintype="passive"/>
       <node ref="J20" pin="A12" pinfunction="GND_A12" pintype="passive"/>
       <node ref="J20" pin="B1" pinfunction="GND_B1" pintype="passive"/>
       <node ref="J20" pin="B12" pinfunction="GND_B12" pintype="passive"/>
       <node ref="J20" pin="SH" pinfunction="SHIELD_SH" pintype="passive"/>
-      <node ref="J3" pin="1" pinfunction="GND_1" pintype="passive"/>
-      <node ref="J3" pin="MP" pinfunction="MOUNT_MP" pintype="passive"/>
-      <node ref="J4" pin="1" pinfunction="GND_1" pintype="passive"/>
-      <node ref="J4" pin="MP" pinfunction="MOUNT_MP" pintype="passive"/>
+      <node ref="J3" pin="3" pinfunction="ENC_GND_3" pintype="passive"/>
+      <node ref="J4" pin="3" pinfunction="ENC_GND_3" pintype="passive"/>
       <node ref="J5" pin="3" pinfunction="GND_3" pintype="passive"/>
       <node ref="J8" pin="MP" pinfunction="MOUNT_MP" pintype="passive"/>
       <node ref="Q2" pin="2" pinfunction="E_2" pintype="passive"/>
@@ -10241,59 +10170,67 @@
       <node ref="R7" pin="2" pinfunction="2_2" pintype="passive"/>
     </net>
     <net code="91" name="MDD_DIR1" class="Default">
-      <node ref="J2" pin="2" pinfunction="MDD_DIR1_2" pintype="passive"/>
+      <node ref="J2" pin="2" pinfunction="DIR1_2" pintype="passive"/>
       <node ref="R25" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R26" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="92" name="MDD_DIR2" class="Default">
-      <node ref="J2" pin="4" pinfunction="MDD_DIR2_4" pintype="passive"/>
+      <node ref="J2" pin="4" pinfunction="DIR2_4" pintype="passive"/>
       <node ref="R29" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R30" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="93" name="MDD_PWM1" class="Default">
-      <node ref="J2" pin="1" pinfunction="MDD_PWM1_1" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="PWM1_1" pintype="passive"/>
       <node ref="R23" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R24" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="94" name="MDD_PWM2" class="Default">
-      <node ref="J2" pin="3" pinfunction="MDD_PWM2_3" pintype="passive"/>
+      <node ref="J2" pin="3" pinfunction="PWM2_3" pintype="passive"/>
       <node ref="R27" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R28" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
     <net code="95" name="MOTOR_L_LEAD" class="MotorPower">
-      <node ref="J12" pin="2" pinfunction="TO_MOTOR_2" pintype="passive"/>
+      <node ref="J3" pin="1" pinfunction="M1_1" pintype="passive"/>
       <node ref="R180" pin="2" pinfunction="I_TO_MOTOR_2" pintype="passive"/>
       <node ref="U40" pin="3" pinfunction="IN-_3" pintype="input"/>
     </net>
-    <net code="96" name="MOTOR_R_LEAD" class="MotorPower">
-      <node ref="J13" pin="2" pinfunction="TO_MOTOR_2" pintype="passive"/>
+    <net code="96" name="MOTOR_L_RETURN" class="MotorPower">
+      <node ref="J2" pin="7" pinfunction="LEFT_B_7" pintype="passive"/>
+      <node ref="J3" pin="2" pinfunction="M2_2" pintype="passive"/>
+    </net>
+    <net code="97" name="MOTOR_R_LEAD" class="MotorPower">
+      <node ref="J4" pin="1" pinfunction="M1_1" pintype="passive"/>
       <node ref="R181" pin="2" pinfunction="I_TO_MOTOR_2" pintype="passive"/>
       <node ref="U41" pin="3" pinfunction="IN-_3" pintype="input"/>
     </net>
-    <net code="97" name="PACK_VBUS" class="Default">
+    <net code="98" name="MOTOR_R_RETURN" class="MotorPower">
+      <node ref="J2" pin="9" pinfunction="RIGHT_B_9" pintype="passive"/>
+      <node ref="J4" pin="2" pinfunction="M2_2" pintype="passive"/>
+    </net>
+    <net code="99" name="PACK_VBUS" class="Default">
       <node ref="C31" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="R63" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="U17" pin="8" pinfunction="VBUS_8" pintype="input"/>
     </net>
-    <net code="98" name="PWM_L" class="Default">
+    <net code="100" name="PWM_L" class="Default">
       <node ref="R31" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U1" pin="11" pinfunction="IO18_11" pintype="bidirectional"/>
       <node ref="U11" pin="1" pinfunction="1A_1" pintype="input"/>
     </net>
-    <net code="99" name="PWM_L_SAFE" class="Default">
+    <net code="101" name="PWM_L_SAFE" class="Default">
       <node ref="R23" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U11" pin="3" pinfunction="1Y_3" pintype="output"/>
     </net>
-    <net code="100" name="PWM_R" class="Default">
+    <net code="102" name="PWM_R" class="Default">
       <node ref="R32" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U1" pin="17" pinfunction="IO9_17" pintype="bidirectional"/>
       <node ref="U11" pin="4" pinfunction="2A_4" pintype="input"/>
     </net>
-    <net code="101" name="PWM_R_SAFE" class="Default">
+    <net code="103" name="PWM_R_SAFE" class="Default">
       <node ref="R27" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U11" pin="6" pinfunction="2Y_6" pintype="output"/>
     </net>
-    <net code="102" name="RESET_N" class="Default">
+    <net code="104" name="RESET_N" class="Default">
       <node ref="R5" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="SW1" pin="1" pinfunction="A_1" pintype="passive"/>
       <node ref="TP7" pin="1" pinfunction="RESET_1" pintype="passive"/>
@@ -10302,85 +10239,85 @@
       <node ref="U6" pin="13" pinfunction="2D_13" pintype="input"/>
       <node ref="U6" pin="5" pinfunction="1D_5" pintype="input"/>
     </net>
-    <net code="103" name="SERVO_BIAS_3V3" class="Default">
+    <net code="105" name="SERVO_BIAS_3V3" class="Default">
       <node ref="R110" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U14" pin="3" pinfunction="2Y_3" pintype="tri_state"/>
     </net>
-    <net code="104" name="SERVO_BUS" class="Default">
+    <net code="106" name="SERVO_BUS" class="Default">
       <node ref="D5" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="J5" pin="1" pinfunction="DATA_1" pintype="passive"/>
       <node ref="R110" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R48" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R49" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="105" name="SERVO_OE_ON" class="Default">
+    <net code="107" name="SERVO_OE_ON" class="Default">
       <node ref="U14" pin="1" pinfunction="1OE_1" pintype="input"/>
       <node ref="U6" pin="8" pinfunction="2Y_8" pintype="output"/>
     </net>
-    <net code="106" name="SERVO_RX" class="Default">
+    <net code="108" name="SERVO_RX" class="Default">
       <node ref="R111" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="U1" pin="30" pinfunction="IO37_30" pintype="bidirectional"/>
       <node ref="U15" pin="4" pinfunction="Y_4" pintype="tri_state"/>
     </net>
-    <net code="107" name="SERVO_RX_IN" class="Default">
+    <net code="109" name="SERVO_RX_IN" class="Default">
       <node ref="R49" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="U15" pin="2" pinfunction="A_2" pintype="input"/>
     </net>
-    <net code="108" name="SERVO_TX" class="Default">
+    <net code="110" name="SERVO_TX" class="Default">
       <node ref="R93" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U1" pin="28" pinfunction="IO35_28" pintype="bidirectional"/>
       <node ref="U14" pin="2" pinfunction="1A_2" pintype="input"/>
     </net>
-    <net code="109" name="SERVO_TX_BUF" class="Default">
+    <net code="111" name="SERVO_TX_BUF" class="Default">
       <node ref="R48" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U14" pin="6" pinfunction="1Y_6" pintype="tri_state"/>
     </net>
-    <net code="110" name="SERVO_TX_ENABLE" class="Default">
+    <net code="112" name="SERVO_TX_ENABLE" class="Default">
       <node ref="R43" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U1" pin="29" pinfunction="IO36_29" pintype="bidirectional"/>
       <node ref="U6" pin="10" pinfunction="2B_10" pintype="input"/>
     </net>
-    <net code="111" name="SPEAKER_N" class="Default">
+    <net code="113" name="SPEAKER_N" class="Default">
       <node ref="J7" pin="2" pinfunction="SPK_N_2" pintype="passive"/>
       <node ref="U23" pin="10" pinfunction="OUTN_10" pintype="output"/>
     </net>
-    <net code="112" name="SPEAKER_P" class="Default">
+    <net code="114" name="SPEAKER_P" class="Default">
       <node ref="J7" pin="1" pinfunction="SPK_P_1" pintype="passive"/>
       <node ref="U23" pin="9" pinfunction="OUTP_9" pintype="output"/>
     </net>
-    <net code="113" name="STATUS_LED" class="Default">
+    <net code="115" name="STATUS_LED" class="Default">
       <node ref="R7" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U1" pin="8" pinfunction="IO15_8" pintype="bidirectional"/>
     </net>
-    <net code="114" name="USB_ILIM" class="Default">
+    <net code="116" name="USB_ILIM" class="Default">
       <node ref="R72" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U3" pin="5" pinfunction="ILIM_5" pintype="passive"/>
     </net>
-    <net code="115" name="USB_N" class="USB">
+    <net code="117" name="USB_N" class="USB">
       <node ref="J1" pin="A7" pinfunction="D-_A7" pintype="bidirectional"/>
       <node ref="J1" pin="B7" pinfunction="D-_B7" pintype="bidirectional"/>
       <node ref="R4" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U2" pin="2" pinfunction="IO2_2" pintype="passive"/>
     </net>
-    <net code="116" name="USB_P" class="USB">
+    <net code="118" name="USB_P" class="USB">
       <node ref="J1" pin="A6" pinfunction="D+_A6" pintype="bidirectional"/>
       <node ref="J1" pin="B6" pinfunction="D+_B6" pintype="bidirectional"/>
       <node ref="R3" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U2" pin="1" pinfunction="IO1_1" pintype="passive"/>
     </net>
-    <net code="117" name="USB_PWR_FAULT_N" class="Default">
+    <net code="119" name="USB_PWR_FAULT_N" class="Default">
       <node ref="R73" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="U1" pin="22" pinfunction="IO14_22" pintype="bidirectional"/>
       <node ref="U3" pin="4" pinfunction="FAULT_N_4" pintype="open_collector"/>
     </net>
-    <net code="118" name="V5" class="LogicPower">
+    <net code="120" name="V5" class="LogicPower">
       <node ref="C4" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="C40" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="R74" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U3" pin="6" pinfunction="OUT_6" pintype="power_out"/>
       <node ref="U4" pin="4" pinfunction="VIN_4" pintype="power_in"/>
     </net>
-    <net code="119" name="V5_HOST_RAW" class="AudioPower">
+    <net code="121" name="V5_HOST_RAW" class="AudioPower">
       <node ref="C140" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="C141" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="C164" pin="1" pinfunction="1_1" pintype="passive"/>
@@ -10395,13 +10332,13 @@
       <node ref="U42" pin="7" pinfunction="CHG_7" pintype="input"/>
       <node ref="U42" pin="8" pinfunction="CHG_HI_8" pintype="input"/>
     </net>
-    <net code="120" name="V5_PRE" class="LogicPower">
+    <net code="122" name="V5_PRE" class="LogicPower">
       <node ref="C2" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="D1" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U3" pin="1" pinfunction="IN_1" pintype="power_in"/>
       <node ref="U3" pin="3" pinfunction="EN_3" pintype="input"/>
     </net>
-    <net code="121" name="VBUS" class="LogicPower">
+    <net code="123" name="VBUS" class="LogicPower">
       <node ref="C1" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="D1" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="D22" pin="1" pinfunction="IO_1" pintype="passive"/>
@@ -10410,138 +10347,141 @@
       <node ref="J1" pin="B4" pinfunction="VBUS_B4" pintype="passive"/>
       <node ref="J1" pin="B9" pinfunction="VBUS_B9" pintype="passive"/>
     </net>
-    <net code="122" name="WD_ENABLE" class="Default">
+    <net code="124" name="WD_ENABLE" class="Default">
       <node ref="R12" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U1" pin="24" pinfunction="IO47_24" pintype="bidirectional"/>
       <node ref="U5" pin="5" pinfunction="SET1_5" pintype="input"/>
       <node ref="U6" pin="1" pinfunction="1A_1" pintype="input"/>
       <node ref="U6" pin="9" pinfunction="2A_9" pintype="input"/>
     </net>
-    <net code="123" name="WD_RESET_N" class="Default">
+    <net code="125" name="WD_RESET_N" class="Default">
       <node ref="Q52" pin="3" pinfunction="D_3" pintype="passive"/>
       <node ref="R11" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="U20" pin="3" pinfunction="MR_N_3" pintype="input"/>
       <node ref="U5" pin="7" pinfunction="WDO_N_7" pintype="open_collector"/>
       <node ref="U5" pin="8" pinfunction="ENOUT_8" pintype="open_collector"/>
     </net>
-    <net code="124" name="WD_TICK" class="Default">
+    <net code="126" name="WD_TICK" class="Default">
       <node ref="R13" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U1" pin="25" pinfunction="IO48_25" pintype="bidirectional"/>
       <node ref="U5" pin="6" pinfunction="WDI_6" pintype="input"/>
     </net>
-    <net code="125" name="WD_TIME" class="Default">
+    <net code="127" name="WD_TIME" class="Default">
       <node ref="R10" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="U5" pin="2" pinfunction="CWD_2" pintype="passive"/>
     </net>
-    <net code="126" name="unconnected-(J1-SBU1-PadA8)" class="Default">
+    <net code="128" name="unconnected-(J1-SBU1-PadA8)" class="Default">
       <node ref="J1" pin="A8" pinfunction="SBU1_A8" pintype="passive+no_connect"/>
     </net>
-    <net code="127" name="unconnected-(J1-SBU2-PadB8)" class="Default">
+    <net code="129" name="unconnected-(J1-SBU2-PadB8)" class="Default">
       <node ref="J1" pin="B8" pinfunction="SBU2_B8" pintype="passive+no_connect"/>
     </net>
-    <net code="128" name="unconnected-(J8-DNC_3-Pad3)" class="Default">
+    <net code="130" name="unconnected-(J2-UNUSED-Pad10)" class="Default">
+      <node ref="J2" pin="10" pinfunction="UNUSED_10" pintype="no_connect"/>
+    </net>
+    <net code="131" name="unconnected-(J8-DNC_3-Pad3)" class="Default">
       <node ref="J8" pin="3" pinfunction="DNC_3_3" pintype="passive+no_connect"/>
     </net>
-    <net code="129" name="unconnected-(J8-DNC_4-Pad4)" class="Default">
+    <net code="132" name="unconnected-(J8-DNC_4-Pad4)" class="Default">
       <node ref="J8" pin="4" pinfunction="DNC_4_4" pintype="passive+no_connect"/>
     </net>
-    <net code="130" name="unconnected-(J20-D+-PadA6)" class="Default">
+    <net code="133" name="unconnected-(J20-D+-PadA6)" class="Default">
       <node ref="J20" pin="A6" pinfunction="D+_A6" pintype="passive+no_connect"/>
     </net>
-    <net code="131" name="unconnected-(J20-D+-PadB6)" class="Default">
+    <net code="134" name="unconnected-(J20-D+-PadB6)" class="Default">
       <node ref="J20" pin="B6" pinfunction="D+_B6" pintype="passive+no_connect"/>
     </net>
-    <net code="132" name="unconnected-(J20-D--PadA7)" class="Default">
+    <net code="135" name="unconnected-(J20-D--PadA7)" class="Default">
       <node ref="J20" pin="A7" pinfunction="D-_A7" pintype="passive+no_connect"/>
     </net>
-    <net code="133" name="unconnected-(J20-D--PadB7)" class="Default">
+    <net code="136" name="unconnected-(J20-D--PadB7)" class="Default">
       <node ref="J20" pin="B7" pinfunction="D-_B7" pintype="passive+no_connect"/>
     </net>
-    <net code="134" name="unconnected-(J20-SBU1-PadA8)" class="Default">
+    <net code="137" name="unconnected-(J20-SBU1-PadA8)" class="Default">
       <node ref="J20" pin="A8" pinfunction="SBU1_A8" pintype="passive+no_connect"/>
     </net>
-    <net code="135" name="unconnected-(J20-SBU2-PadB8)" class="Default">
+    <net code="138" name="unconnected-(J20-SBU2-PadB8)" class="Default">
       <node ref="J20" pin="B8" pinfunction="SBU2_B8" pintype="passive+no_connect"/>
     </net>
-    <net code="136" name="unconnected-(U1-IO1_SPARE-Pad39)" class="Default">
+    <net code="139" name="unconnected-(U1-IO1_SPARE-Pad39)" class="Default">
       <node ref="U1" pin="39" pinfunction="IO1_SPARE_39" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="137" name="unconnected-(U1-IO2_SPARE-Pad38)" class="Default">
+    <net code="140" name="unconnected-(U1-IO2_SPARE-Pad38)" class="Default">
       <node ref="U1" pin="38" pinfunction="IO2_SPARE_38" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="138" name="unconnected-(U1-IO3-Pad15)" class="Default">
+    <net code="141" name="unconnected-(U1-IO3-Pad15)" class="Default">
       <node ref="U1" pin="15" pinfunction="IO3_15" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="139" name="unconnected-(U1-IO45-Pad26)" class="Default">
+    <net code="142" name="unconnected-(U1-IO45-Pad26)" class="Default">
       <node ref="U1" pin="26" pinfunction="IO45_26" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="140" name="unconnected-(U1-IO46-Pad16)" class="Default">
+    <net code="143" name="unconnected-(U1-IO46-Pad16)" class="Default">
       <node ref="U1" pin="16" pinfunction="IO46_16" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="141" name="unconnected-(U6-NC-Pad3)" class="Default">
+    <net code="144" name="unconnected-(U6-NC-Pad3)" class="Default">
       <node ref="U6" pin="3" pinfunction="NC_3" pintype="no_connect"/>
     </net>
-    <net code="142" name="unconnected-(U6-NC-Pad11)" class="Default">
+    <net code="145" name="unconnected-(U6-NC-Pad11)" class="Default">
       <node ref="U6" pin="11" pinfunction="NC_11" pintype="no_connect"/>
     </net>
-    <net code="143" name="unconnected-(U12-5Y-Pad10)" class="Default">
+    <net code="146" name="unconnected-(U12-5Y-Pad10)" class="Default">
       <node ref="U12" pin="10" pinfunction="5Y_10" pintype="output+no_connect"/>
     </net>
-    <net code="144" name="unconnected-(U12-6Y-Pad12)" class="Default">
+    <net code="147" name="unconnected-(U12-6Y-Pad12)" class="Default">
       <node ref="U12" pin="12" pinfunction="6Y_12" pintype="output+no_connect"/>
     </net>
-    <net code="145" name="unconnected-(U20-CT-Pad4)" class="Default">
+    <net code="148" name="unconnected-(U20-CT-Pad4)" class="Default">
       <node ref="U20" pin="4" pinfunction="CT_4" pintype="input+no_connect"/>
     </net>
-    <net code="146" name="unconnected-(U23-GAIN_SLOT_FLOAT_9DB-Pad2)" class="Default">
+    <net code="149" name="unconnected-(U23-GAIN_SLOT_FLOAT_9DB-Pad2)" class="Default">
       <node ref="U23" pin="2" pinfunction="GAIN_SLOT_FLOAT_9DB_2" pintype="input+no_connect"/>
     </net>
-    <net code="147" name="unconnected-(U23-NC-Pad5)" class="Default">
+    <net code="150" name="unconnected-(U23-NC-Pad5)" class="Default">
       <node ref="U23" pin="5" pinfunction="NC_5" pintype="no_connect"/>
     </net>
-    <net code="148" name="unconnected-(U23-NC-Pad6)" class="Default">
+    <net code="151" name="unconnected-(U23-NC-Pad6)" class="Default">
       <node ref="U23" pin="6" pinfunction="NC_6" pintype="no_connect"/>
     </net>
-    <net code="149" name="unconnected-(U23-NC-Pad12)" class="Default">
+    <net code="152" name="unconnected-(U23-NC-Pad12)" class="Default">
       <node ref="U23" pin="12" pinfunction="NC_12" pintype="no_connect"/>
     </net>
-    <net code="150" name="unconnected-(U23-NC-Pad13)" class="Default">
+    <net code="153" name="unconnected-(U23-NC-Pad13)" class="Default">
       <node ref="U23" pin="13" pinfunction="NC_13" pintype="no_connect"/>
     </net>
-    <net code="151" name="unconnected-(U27-CT-Pad4)" class="Default">
+    <net code="154" name="unconnected-(U27-CT-Pad4)" class="Default">
       <node ref="U27" pin="4" pinfunction="CT_4" pintype="input+no_connect"/>
     </net>
-    <net code="152" name="unconnected-(U40-NC-Pad1)" class="Default">
+    <net code="155" name="unconnected-(U40-NC-Pad1)" class="Default">
       <node ref="U40" pin="1" pinfunction="NC_1" pintype="no_connect"/>
     </net>
-    <net code="153" name="unconnected-(U41-NC-Pad1)" class="Default">
+    <net code="156" name="unconnected-(U41-NC-Pad1)" class="Default">
       <node ref="U41" pin="1" pinfunction="NC_1" pintype="no_connect"/>
     </net>
-    <net code="154" name="unconnected-(U42-AUDIO_N-Pad17)" class="Default">
+    <net code="157" name="unconnected-(U42-AUDIO_N-Pad17)" class="Default">
       <node ref="U42" pin="17" pinfunction="AUDIO_N_17" pintype="open_collector+no_connect"/>
     </net>
-    <net code="155" name="unconnected-(U42-DEBUG_N-Pad16)" class="Default">
+    <net code="158" name="unconnected-(U42-DEBUG_N-Pad16)" class="Default">
       <node ref="U42" pin="16" pinfunction="DEBUG_N_16" pintype="open_collector+no_connect"/>
     </net>
-    <net code="156" name="unconnected-(U42-FAULT_N-Pad1)" class="Default">
+    <net code="159" name="unconnected-(U42-FAULT_N-Pad1)" class="Default">
       <node ref="U42" pin="1" pinfunction="FAULT_N_1" pintype="open_collector+no_connect"/>
     </net>
-    <net code="157" name="unconnected-(U42-LD_DET_N-Pad20)" class="Default">
+    <net code="160" name="unconnected-(U42-LD_DET_N-Pad20)" class="Default">
       <node ref="U42" pin="20" pinfunction="LD_DET_N_20" pintype="open_collector+no_connect"/>
     </net>
-    <net code="158" name="unconnected-(U42-POL_N-Pad18)" class="Default">
+    <net code="161" name="unconnected-(U42-POL_N-Pad18)" class="Default">
       <node ref="U42" pin="18" pinfunction="POL_N_18" pintype="open_collector+no_connect"/>
     </net>
-    <net code="159" name="unconnected-(U42-UFP_N-Pad19)" class="Default">
+    <net code="162" name="unconnected-(U42-UFP_N-Pad19)" class="Default">
       <node ref="U42" pin="19" pinfunction="UFP_N_19" pintype="open_collector+no_connect"/>
     </net>
-    <net code="160" name="unconnected-(U43-ALERT_RDY-Pad2)" class="Default">
+    <net code="163" name="unconnected-(U43-ALERT_RDY-Pad2)" class="Default">
       <node ref="U43" pin="2" pinfunction="ALERT_RDY_2" pintype="open_collector+no_connect"/>
     </net>
-    <net code="161" name="unconnected-(U50-NC-Pad1)" class="Default">
+    <net code="164" name="unconnected-(U50-NC-Pad1)" class="Default">
       <node ref="U50" pin="1" pinfunction="NC_1" pintype="no_connect"/>
     </net>
-    <net code="162" name="unconnected-(U60-NC-Pad6)" class="Default">
+    <net code="165" name="unconnected-(U60-NC-Pad6)" class="Default">
       <node ref="U60" pin="6" pinfunction="NC_6" pintype="no_connect"/>
     </net>
   </nets>

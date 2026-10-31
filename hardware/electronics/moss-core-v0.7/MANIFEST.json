@@ -4,8 +4,8 @@
     "sha256": "71fab115a3a0af8ef0d664899bafee7e0cb47854ba8a8405e6330df853ad3a10"
   },
   "CONNECTORS.md": {
-    "bytes": 5752,
-    "sha256": "3626c85dd797500f4983cf9813abe3bc1507945460451f809b3792bdc121417e"
+    "bytes": 5628,
+    "sha256": "57af487af4b14543ce70f484840d452569cd0bffcb28b385c194aff30aca9a3a"
   },
   "KiCad_Libraries_LICENSE.md": {
     "bytes": 2105,
@@ -15,85 +15,89 @@
     "bytes": 13419,
     "sha256": "253ad3f89603e728abfa60c36fbcaf8225cf55c1eab12725f19fb3d74d647f3a"
   },
+  "MOTOR_WIRING.md": {
+    "bytes": 4097,
+    "sha256": "b15c84b3e5ced512dcae4cf5867193de15b2b1515555b3c703c1f44842cd84ab"
+  },
   "NOTICE": {
     "bytes": 1262,
     "sha256": "493f97004241642e6224d9b721e649ae233acfa7f7f3744c81ad1c3cd755b050"
   },
   "README.md": {
-    "bytes": 7287,
-    "sha256": "38d9b241983fdb5f15a3ff36538165e265672f9970f36f010c4eb3903625c59b"
+    "bytes": 8060,
+    "sha256": "0a2553af93cee7d050904c5567feaf25f34b623c60a3a9c4d138eef5a35dd3f0"
   },
   "delivery/assembly/ASSEMBLY_NOTES.txt": {
-    "bytes": 2683,
-    "sha256": "b85550fc8c5e09e954d6a18a6ef477c1093cdc710629947503b85a6b0f9b2114"
+    "bytes": 3068,
+    "sha256": "3594482b5b474721a737cc354756a0f260831f9687bc8b5e4886eead8efb0ff6"
   },
   "delivery/assembly/MOSS_CORE_V07_PROTOTYPE_BOM.csv": {
-    "bytes": 8516,
-    "sha256": "967a5437c0abd2555cd8d50ef778cd42acfb63fb2a9b4ddd0f295e82d2d4f720"
+    "bytes": 8496,
+    "sha256": "a425d67d16c80839cce02ee569cdc4d7b253c1f960865d402d71011ef829f2c9"
   },
   "delivery/assembly/MOSS_CORE_V07_PROTOTYPE_POSITIONS.csv": {
-    "bytes": 17453,
-    "sha256": "323b77f321c3310597a34dff9a6cb865cbeea4a0ed5f7416aca903521ae984d8"
+    "bytes": 17183,
+    "sha256": "79f565deb4e59cdf18bc530352f1e75394d3354d472327edd16ab2ed949baeb6"
   },
   "delivery/fabrication/FABRICATION_NOTES.txt": {
-    "bytes": 1173,
-    "sha256": "36555e1b952f91b5f16ccf469f45496bf47d6714ce42b5416ea6d6df00ba3761"
+    "bytes": 1427,
+    "sha256": "e45a65e2a4636b7e53ee67f7f5caf7f1e8ec0e5d218229bad15f5f4975c316e9"
   },
   "delivery/fabrication/MOSS_Core_V07_Prototype-B_Cu.gbl": {
-    "bytes": 76122,
-    "sha256": "a1db7488b74fc98d32de3a17bbe597bc973d1370649827189553a184b8e00fff"
+    "bytes": 86333,
+    "sha256": "2b6476f20545e92a559dc093bbd375a49da4949a1881dc5200bf661f95830d15"
   },
   "delivery/fabrication/MOSS_Core_V07_Prototype-B_Mask.gbs": {
-    "bytes": 10026,
-    "sha256": "19f3cefba082d0a9483e8e5b36d58c1adb5c31d547dd867d62c888f38279ecf1"
+    "bytes": 10751,
+    "sha256": "3706461382b95dd7e5bf042685b5d6f77626c2b0c1b6319424585faeb58f723f"
   },
   "delivery/fabrication/MOSS_Core_V07_Prototype-B_Paste.gbp": {
     "bytes": 7347,
-    "sha256": "d939035b6d7aa9f1b5e98d864e3c16f79e060cfec6fb53000ac24f275877f2d5"
+    "sha256": "aad98b569a27e7eaf490931c92efcc87fc92ebe47bc1f4eaa72780daaf48de99"
   },
   "delivery/fabrication/MOSS_Core_V07_Prototype-B_Silkscreen.gbo": {
-    "bytes": 135914,
-    "sha256": "9db80289e53d62c470f2ae5e69947e1ff3eb92b587a63556b16aa5d70251d6dc"
+    "bytes": 134608,
+    "sha256": "007983e5931eb05ec42b4e3b721b1ee589ae28ccb1f1a69cef5a2d2f22bdfb62"
   },
   "delivery/fabrication/MOSS_Core_V07_Prototype-Edge_Cuts.gm1": {
-    "bytes": 916,
-    "sha256": "264af305af5e6dea43f9bc5394834a01e2dfe03773ff4350e33956ff3442bac0"
+    "bytes": 1820,
+    "sha256": "0bad433a2ac9a40e513be53894f385c1557b30e7479071f80eb6b399734c0cb8"
   },
   "delivery/fabrication/MOSS_Core_V07_Prototype-F_Cu.gtl": {
-    "bytes": 142420,
-    "sha256": "30c155b3b3e13ca587758c50120bfd349474c4ef89318299e15a27f6cb3b5bf2"
+    "bytes": 148334,
+    "sha256": "e84d5daab4968f4f89b0a564c9fdcd0a246e9e722fcacd463ebb7d45c2af8b7b"
   },
   "delivery/fabrication/MOSS_Core_V07_Prototype-F_Mask.gts": {
-    "bytes": 26952,
-    "sha256": "a9c2f1e45cea4f26ce4c4cb5b90a2eb6b39bbce40428619719cd04b38e60533d"
+    "bytes": 26954,
+    "sha256": "8fd10cd12f01c69a0a1507c4f7f46ff33b9ab8e3e4483d1855fff6572aa0e0bc"
   },
   "delivery/fabrication/MOSS_Core_V07_Prototype-F_Paste.gtp": {
-    "bytes": 24224,
-    "sha256": "4ab0b3d08f5578f7af7e4cdb1e9a14dd31eafdf6ef2bfb9f07ba4425528fca34"
+    "bytes": 23496,
+    "sha256": "136ec08e7411e78ad80eb5a805331ee966d8895f2984a5661053ef5d4b543253"
   },
   "delivery/fabrication/MOSS_Core_V07_Prototype-F_Silkscreen.gto": {
-    "bytes": 117266,
-    "sha256": "91f2e9efe92e0b471e50f61c8a85ed01733f2d370057e331cc24414447a4ff98"
+    "bytes": 115984,
+    "sha256": "03d2937807d514d6ecce4d816b31d7a45d0556ff923edd40b2b0bb95dbf5af87"
   },
   "delivery/fabrication/MOSS_Core_V07_Prototype-In1_Cu.g1": {
-    "bytes": 408501,
-    "sha256": "b4b016fa7732cb97f654c6e1169c3b076f91fabfbef4a4ee729fa7efca24e796"
+    "bytes": 652954,
+    "sha256": "536d9d8a200d7ab13cbe24894f1591a2480e18a28880e27b45a24ac0f4de5a17"
   },
   "delivery/fabrication/MOSS_Core_V07_Prototype-In2_Cu.g2": {
-    "bytes": 392883,
-    "sha256": "4c1ffed98f6026f2f035aea883758d23194d616e906b94054ea91fdac55c02c6"
+    "bytes": 600260,
+    "sha256": "4981a77ee343c720ba41b07069b8525f79b291bde64731de44d0517bf7dc0d57"
   },
   "delivery/fabrication/MOSS_Core_V07_Prototype-NPTH.drl": {
-    "bytes": 534,
-    "sha256": "724c850db3e2fc0fa9d185d6bd32f10b69a7b8736868e41aaf9e38b0ea5e26e0"
+    "bytes": 672,
+    "sha256": "82b770edbd752393f52162f1d188619a1e492df04c39e46ba00ee5fa721ffd89"
   },
   "delivery/fabrication/MOSS_Core_V07_Prototype-PTH.drl": {
-    "bytes": 8882,
-    "sha256": "ab546a6f02797169de98979a164a7cac6f8d0113b3234c4b6d203a404b70e878"
+    "bytes": 10599,
+    "sha256": "43537aaaaf8f79fe8e11c764d051b329ec2e1537ece4341dbe87a1edbff2ed04"
   },
   "delivery/fabrication/MOSS_Core_V07_Prototype-job.gbrjob": {
     "bytes": 3803,
-    "sha256": "34a4b0c8f5cfeedd8da53d2dc2b9d4709a169633e9b9557f7ffe09ae711cbd5a"
+    "sha256": "44b8a4fe7d89fb32359517aff1cc011f7cc5fe43d865c621744b3be685742f43"
   },
   "electrical/01_USB_Power.kicad_sch": {
     "bytes": 76575,
@@ -108,8 +112,8 @@
     "sha256": "a9d841d2bd1506a5e1dd9d8e78c3504d192b769a4d3fa5c89248123680ed40a1"
   },
   "electrical/04_Drive_Encoders.kicad_sch": {
-    "bytes": 133114,
-    "sha256": "3a75c5a2ad6b69b75ee6f98edbbb4e8af18f1d7acccce950bfcfbadf7e28a621"
+    "bytes": 134595,
+    "sha256": "3d33800c9cb9095ccce556607bdecfee2d21bbbc0eacb39667d7382c047f0fab"
   },
   "electrical/05_Servo.kicad_sch": {
     "bytes": 38738,
@@ -136,8 +140,8 @@
     "sha256": "96327667fead1427c418236587ac46f09a56d00ce978c44a1034dd098b4cbbb0"
   },
   "electrical/17_Motor_Current.kicad_sch": {
-    "bytes": 55186,
-    "sha256": "424d7330bd83bba58b309d9f4dc109a57d66ae57dc8776f1a9baef6fa488e266"
+    "bytes": 48178,
+    "sha256": "f3f4c233e95c2d2e07528c7c70f574f5cd82617b179a31b98bb105a2ea842b15"
   },
   "electrical/18_Actuator_Cutoff.kicad_sch": {
     "bytes": 58150,
@@ -148,20 +152,20 @@
     "sha256": "9016812d051dcfe94462d556a78942b2705c91fa4e026a5279ac555ce54ababb"
   },
   "electrical/BOM.json": {
-    "bytes": 35838,
-    "sha256": "ec77a80f06274aadef037916ad2096fe3dac5cbe3ae8a0efadf715cd1f790cf9"
+    "bytes": 35902,
+    "sha256": "c3b426988f0af8368c37657c7db932adbed8fd9a852c71e994ed0e889346ed01"
   },
   "electrical/BOM_PCBWAY_ASSEMBLY.json": {
-    "bytes": 40243,
-    "sha256": "8a7bc009ba26055b61dcfa7627922ac34fc349f986b7da61aece7250e705d693"
+    "bytes": 40502,
+    "sha256": "fefede69174adaf0281608b09153711c53a10177cfbbae6d316dbd12fdaf62c7"
   },
   "electrical/MCU_PIN_MAP.json": {
     "bytes": 3059,
     "sha256": "e8a69e59be8a043d292b3be8a35a9f7c9c0a4c95bcab5e3d97f856fcd595d4b9"
   },
   "electrical/MOSS.kicad_sym": {
-    "bytes": 283906,
-    "sha256": "6264353e95f05c081d1fcb6b6d8a6f674c8ad62ddc2f21af6aa2fa95c38218e7"
+    "bytes": 283192,
+    "sha256": "38b33478afa0b8b5b734b14a683ebf4839d31a395340a69fe901ba40664cad76"
   },
   "electrical/MOSS.pretty/Button_Switch_SMD_SW_Push_1P1T_NO_CK_KMR2.kicad_mod": {
     "bytes": 4157,
@@ -210,6 +214,22 @@
   "electrical/MOSS.pretty/Connector_JST_JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical.kicad_mod": {
     "bytes": 3353,
     "sha256": "e6c8288e844619538cacedd7c3c0cd9a77f9c419b743ed312183a146ff98ee69"
+  },
+  "electrical/MOSS.pretty/Connector_Molex_Molex_Micro-Fit_3.0_43045-0600_2x03_P3.00mm_Horizontal.kicad_mod": {
+    "bytes": 4757,
+    "sha256": "05f6ba88ba803eaeccbc9e611ac426283b4741106d9c3b01641f75bbb2c051a4"
+  },
+  "electrical/MOSS.pretty/Connector_Molex_Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical.kicad_mod": {
+    "bytes": 8055,
+    "sha256": "4ee789ca0db376f1801b61fa09a5bd1a0c475eb76dd8ec1b114bec9d24611c2d"
+  },
+  "electrical/MOSS.pretty/Connector_Molex_Molex_Micro-Fit_3.0_43045-1000_2x05_P3.00mm_Horizontal.kicad_mod": {
+    "bytes": 5393,
+    "sha256": "e046f67c4596e1ea228eeebe7722a12c79e9b57a82b685a343a36cb259326ef2"
+  },
+  "electrical/MOSS.pretty/Connector_Molex_Molex_Micro-Fit_3.0_43045-1012_2x05_P3.00mm_Vertical.kicad_mod": {
+    "bytes": 8205,
+    "sha256": "d3e1d93bfcb27a02cb1ef56c7c873154a6b38614ff58f9f199c2240752280611"
   },
   "electrical/MOSS.pretty/Connector_Molex_Molex_SPOX_5268-03A_1x03_P2.50mm_Horizontal.kicad_mod": {
     "bytes": 4891,
@@ -360,20 +380,24 @@
     "sha256": "c39def057e204409fa042e1c68b905486cfb948b02db4ca079145826dfac18ea"
   },
   "electrical/MOSS_Core_V07_Prototype.kicad_pcb": {
-    "bytes": 2354778,
-    "sha256": "e277ba4ba0fd84cb487ffbdb3524b62d9eb6b3f39b2a7dbb1d6935366fd08642"
+    "bytes": 2866762,
+    "sha256": "ea19d9bdb0b6037542eb0b4bca53a04d0b0fecbf3d16e4198485bf43dcadbfc4"
+  },
+  "electrical/MOSS_Core_V07_Prototype.kicad_prl": {
+    "bytes": 2310,
+    "sha256": "9c637b3490a840e7a8abec6e3f5847263b956393d3260f87cc9cac8d73775287"
   },
   "electrical/MOSS_Core_V07_Prototype.kicad_pro": {
-    "bytes": 14131,
-    "sha256": "767aaf9e54603d55868c75de123f2f1c80f17ec50754247e94889ae5c9ee1d91"
+    "bytes": 14305,
+    "sha256": "0c548f7ee20e8282fbf137e8e06f2666582cf76c1acbeb1a7670a73ab2321f22"
   },
   "electrical/MOSS_Core_V07_Prototype.kicad_sch": {
     "bytes": 18125,
     "sha256": "bec1a7bc8f26de9c6403a0ae8ccb967cdb98e0cdad72d2443e468bdb30197043"
   },
   "electrical/circuit.json": {
-    "bytes": 249362,
-    "sha256": "b3543ab4c5f686d78e329c382edd2c5ce70a76c7041210e87f8f265ca3ea7e91"
+    "bytes": 249378,
+    "sha256": "40919f1c0f76e79a94b641d24efad15708571797b58ef4cab1f2f8668d1d959c"
   },
   "electrical/fp-lib-table": {
     "bytes": 137,
@@ -431,6 +455,22 @@
     "bytes": 144517,
     "sha256": "7287616fdad677e9b54cf5494f17efc4b3fb77be002659d73e215772393f20c6"
   },
+  "electrical/models/Connector_Molex_Molex_Micro-Fit_3.0_43045-0600_2x03_P3.00mm_Horizontal.step": {
+    "bytes": 311137,
+    "sha256": "21374dec4c26778e03b3936147675a54a940153150ca5daa96cd1be34de02e3d"
+  },
+  "electrical/models/Connector_Molex_Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical.step": {
+    "bytes": 222974,
+    "sha256": "6f690556ab4e93c8b7f977affc0e68c75bf6f6a7be0b0cf42290f7e280442406"
+  },
+  "electrical/models/Connector_Molex_Molex_Micro-Fit_3.0_43045-1000_2x05_P3.00mm_Horizontal.step": {
+    "bytes": 499778,
+    "sha256": "a30f5426dc1def9bbe9a608c8ef98377f1d47848db840b74083c36e4d9995ba9"
+  },
+  "electrical/models/Connector_Molex_Molex_Micro-Fit_3.0_43045-1012_2x05_P3.00mm_Vertical.step": {
+    "bytes": 351027,
+    "sha256": "fbbb5793083b5973267f8b0dabb12f926dfddbf0627ccb211730f7b97dd0cabc"
+  },
   "electrical/models/Connector_USB_USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step": {
     "bytes": 1059856,
     "sha256": "6338ce740fa231c2d3dcc6384e0576994a47240a312a21413cb85d76990a69a0"
@@ -478,6 +518,10 @@
   "electrical/models/MAX98357A_TQFN16_BODY_ENVELOPE.step": {
     "bytes": 17438,
     "sha256": "2e254212c1d595af31582ab1e79fedf41f1f658b087d826bd18a2de9bac6bb4d"
+  },
+  "electrical/models/MICROFIT_VISUAL_PROVENANCE.json": {
+    "bytes": 603,
+    "sha256": "b72ff2df7e8d9276eb4c1aeee67d587b2d75e3837e0843ff6d0b4e8b302a5f5a"
   },
   "electrical/models/Molex_22057035_VISUAL.step": {
     "bytes": 95171,
@@ -560,40 +604,44 @@
     "sha256": "e281d613cef681ed94420244e864e2b34916b376f093119993058baaac69a70f"
   },
   "evidence/CHECKS.json": {
-    "bytes": 9963,
-    "sha256": "522e79037c9b2424f86b968023fee3254f451a351e677da864d58853da0288f1"
+    "bytes": 10241,
+    "sha256": "df76bb4685bef062a9da9a169299bd3d1cdec74d7fe4ea0560b0693094911f52"
+  },
+  "evidence/CONNECTOR_EAR_FIT.json": {
+    "bytes": 534,
+    "sha256": "dddd6de3f1876ba7859752e2cfdf33db46d28cc3a39f16e6a7c1b5f13188bbab"
   },
   "evidence/DRC.json": {
     "bytes": 2097,
-    "sha256": "4ef7b244242481c3aa91d4ecc5c496666f082513fe28124cff9bf8299e6e5d33"
+    "sha256": "0655c487630d62ac0b0e18395b9c41af7d0f5b69cb8f2bb7f07a53bfdba1de97"
   },
   "evidence/DRILL_REPORT.txt": {
-    "bytes": 1240,
-    "sha256": "ce20c56836df2e503a76271c1e1d2c037da847160006b680a23d635b4304af38"
+    "bytes": 1355,
+    "sha256": "45809bccc8eb630e195b20c0dbade91aea4b3ed24315267d4bd8c268e17def22"
   },
   "evidence/ERC.json": {
     "bytes": 3530,
-    "sha256": "f68e8cd7ccfc390dcefe93521acedcf832e450213a38bab147b82485b06ed2ac"
+    "sha256": "b7b74aee646d1c045828d6bdcd3c83cdcac6935e789b54cfc902123eb5082a1f"
   },
   "evidence/EXPORT_REPORT.json": {
     "bytes": 346,
-    "sha256": "45e70cbfea8cbd700d75a800b488724ca87ee1f8fb6ea5d92aee7edd9757ad8d"
+    "sha256": "9c84573f265a3d17a01c2c51f1b3cb73638883c1de69dafb85bca183c608e503"
   },
   "evidence/F1_SELECTION.md": {
     "bytes": 3564,
     "sha256": "26052882174a581ac45b20940ef56f279fc5c61b697bbe035e6688ecfe3acaa7"
   },
-  "evidence/NETLIST.xml": {
-    "bytes": 496553,
-    "sha256": "76f3502c452045657c83c713f9bcaee2b124936cf901c1c523fcd3df0ebf24a0"
+  "evidence/HARNESS_UPDATE_CHECKS.json": {
+    "bytes": 5747,
+    "sha256": "bbf5764e1ced42eb06da3a15e15ae0f73a199a334dca52703b510fb965b0923b"
   },
-  "evidence/PCBWAY_DFM_CHANGES.json": {
-    "bytes": 7899,
-    "sha256": "de9d37402f3bab6e880ad5bed227eb1f9b962cd51bae28bccd0f47d75f5e5f41"
+  "evidence/NETLIST.xml": {
+    "bytes": 496796,
+    "sha256": "7d4d7de3c3cb833002ce108ed2e5e9f579f7cdb4ef5b1243b4058e7ae5e3d780"
   },
   "evidence/PUBLICATION_NOTES.json": {
-    "bytes": 1251,
-    "sha256": "09172d344f4ef8304fe93852ac6a428d7d04808074dfd413f35e951b65c7760f"
+    "bytes": 647,
+    "sha256": "27468b6aef1c7b82382746f705084373173363cc8b2ac25ba0afdead7b328787"
   },
   "evidence/U2_SUBSTITUTION.json": {
     "bytes": 1161,
@@ -615,20 +663,24 @@
     "bytes": 92857,
     "sha256": "2f4bd0e654328cd63a65c3a771ef5981e567bfd8ea5cbb17139f26acf5cd9bdb"
   },
+  "evidence/baseline_integrated_power/PCBWAY_DFM_CHANGES.json": {
+    "bytes": 7899,
+    "sha256": "de9d37402f3bab6e880ad5bed227eb1f9b962cd51bae28bccd0f47d75f5e5f41"
+  },
   "preview/BOARD_BOTTOM.png": {
-    "bytes": 865783,
-    "sha256": "e9f1f08d1a530dc95a098aba7f9f792bb52bc4d462a115022d708150c43edc79"
+    "bytes": 979178,
+    "sha256": "948750c2be15093b51082b83f51fccbf2279a24a63e951485fffbdd1ade32099"
   },
   "preview/BOARD_TOP.png": {
-    "bytes": 1898565,
-    "sha256": "6e2e62d0c2aeeb025d8937698fa57f03b6d87e008968c067a6c021bce9d4fcaf"
+    "bytes": 1328383,
+    "sha256": "9360b8c7df0ea47bc7a67352a2c9cf4b3b444cd0a9cd67be6b1ddf05d59faad8"
   },
   "preview/VISUAL_PROVENANCE.json": {
-    "bytes": 425,
-    "sha256": "4ce9c8e28d6c31fa3d868eb0b153dc9af911bc25b84ebda7571aabda802f7895"
+    "bytes": 564,
+    "sha256": "72821af2ebdd4aa0fa3fc0711fa2ffada4492165d47db781d8c714ddd75e5952"
   },
   "tools/export_package.py": {
-    "bytes": 10382,
-    "sha256": "e07cbdbea164b2a1354d7db387a50c347d4d727fc224de7d5fef449e9b64d52b"
+    "bytes": 11045,
+    "sha256": "71d7969ca373bc7302143bbf05a47718196de2886548e039c298ec3c77a56bbc"
   }
 }

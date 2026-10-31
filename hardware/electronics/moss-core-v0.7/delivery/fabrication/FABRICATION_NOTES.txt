@@ -1,5 +1,5 @@
 MOSS CORE V0.7 / PROTOTYPE / 2026-10-31 / NEW QUOTATION
-4 copper layers, 80 x 75 mm, 1.6 mm board. Layer order F.Cu / In1.Cu / In2.Cu / B.Cu.
+4 copper layers, 82 x 75 mm overall, 1.6 mm board. Main body 80 x 75 mm; two 2 mm connector locating-peg support ears on the left edge. Mounting holes unchanged. Layer order F.Cu / In1.Cu / In2.Cu / B.Cu. Request 1 oz copper on ALL FOUR copper layers, including the internal motor-current paths; confirm the final stackup in the quotation.
 Minimum plated hole 0.20 mm. Use the complete matched Gerber and separate PTH/NPTH files, including slots.
 PCBWAY SOLDER MASK COMMENT RESOLVED IN FILES: Common mask openings are provided locally over both pin rows of U14, U17 and U43, removing the 0.15 mm bridges that PCBWay cannot manufacture. No pad narrowing, copper rerouting or drill change is made by this DFM correction. Other mask openings and all paste apertures remain unchanged. Do not apply an additional global mask expansion. Please review CAM/stencil before production.
 H1 at (4,4) mm is now PTH, finished diameter 2.7 mm for M2.5: 5.4 mm exposed copper ring both faces, eight 0.5 mm stitch PTH to GND, no paste. Use the NEW drill files; do not reuse the previous NPTH file. The other seven mounting holes remain NPTH.

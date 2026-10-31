@@ -2,10 +2,11 @@
   "status": "NEW_PCBWAY_QUOTATION_SUBMISSION",
   "MOD1_included": false,
   "supplier_contact_or_submission_performed": false,
-  "component_count": 210,
+  "component_count": 208,
   "article_count": 96,
   "accessories_excluded_from_PCB_placement": [],
   "notes": [
+    "31 October 2026 harness update: J3/J4 six-way complete motor ports; J2 ten-way Cytron link; existing J11 supply retained. J12/J13 removed. Use the matching new native design and export files.",
     "Updated 31 October 2026. Use the matching current PCB, fabrication files and assembly positions.",
     "Integrated MP9447 converter and grounded H1 retained. U14/U17/U43 local soldermask bridges removed. Copper/paste/drill geometry unchanged by the DFM correction.",
     "U2 uses exact TPD2E2U06QDCKRQ1 DCK-3; J7 supported seating/through-hole solder; J8 manual placement approved for two prototypes.",
@@ -612,39 +613,43 @@
       "value": "USB4105-GF-A"
     },
     {
-      "mpn": "SM05B-GHS-TB(LF)(SN)",
-      "footprint": "Connector_JST:JST_GH_SM05B-GHS-TB_1x05-1MP_P1.25mm_Horizontal",
+      "mpn": "43045-1012",
+      "footprint": "Connector_Molex:Molex_Micro-Fit_3.0_43045-1012_2x05_P3.00mm_Vertical",
       "quantity": 1,
       "references": [
         "J2"
       ],
       "labels_by_reference": {
-        "J2": "CYTRON MDD10A SIGNAL"
+        "J2": "CYTRON LINK"
       },
       "values": [
-        "CYTRON MDD10A SIGNAL"
+        "CYTRON LINK"
       ],
       "is_pcb_item": true,
-      "value": "CYTRON MDD10A SIGNAL"
+      "manufacturer": "Molex",
+      "purchase_url": "https://www.molex.com/en-us/products/part-detail/430451012",
+      "value": "CYTRON LINK"
     },
     {
-      "mpn": "SM04B-GHS-TB(LF)(SN)",
-      "footprint": "Connector_JST:JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal",
+      "mpn": "43045-0612",
+      "footprint": "Connector_Molex:Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical",
       "quantity": 2,
       "references": [
         "J3",
         "J4"
       ],
       "labels_by_reference": {
-        "J3": "ENCODER LEFT",
-        "J4": "ENCODER RIGHT"
+        "J3": "LEFT MOTOR + ENCODER",
+        "J4": "RIGHT MOTOR + ENCODER"
       },
       "values": [
-        "ENCODER LEFT",
-        "ENCODER RIGHT"
+        "LEFT MOTOR + ENCODER",
+        "RIGHT MOTOR + ENCODER"
       ],
       "is_pcb_item": true,
-      "value": "SM04B-GHS-TB(LF)(SN)"
+      "manufacturer": "Molex",
+      "purchase_url": "https://www.molex.com/en-us/products/part-detail/430450612",
+      "value": "43045-0612"
     },
     {
       "mpn": "22-05-7035",
@@ -717,24 +722,18 @@
     {
       "mpn": "1715721",
       "footprint": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
-      "quantity": 3,
+      "quantity": 1,
       "references": [
-        "J11",
-        "J12",
-        "J13"
+        "J11"
       ],
       "labels_by_reference": {
-        "J11": "CYTRON POWER",
-        "J12": "L MOTOR SENSE LOOP",
-        "J13": "R MOTOR SENSE LOOP"
+        "J11": "CYTRON POWER"
       },
       "values": [
-        "CYTRON POWER",
-        "L MOTOR SENSE LOOP",
-        "R MOTOR SENSE LOOP"
+        "CYTRON POWER"
       ],
       "is_pcb_item": true,
-      "value": "1715721"
+      "value": "CYTRON POWER"
     },
     {
       "mpn": "B2B-XH-A(LF)(SN)",

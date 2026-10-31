@@ -1,15 +1,11 @@
 {
-  "status": "CURRENT_PUBLIC_PROTOTYPE_NOT_FABRICATED",
-  "updated": "2026-10-31",
-  "PCB_sha256": "e277ba4ba0fd84cb487ffbdb3524b62d9eb6b3f39b2a7dbb1d6935366fd08642",
-  "native_PCB_schematics_footprints_and_models_identical_to_submission": true,
-  "fabrication_layers_drills_assembly_BOM_and_positions_identical_to_submission": true,
-  "submission_review_archive_sha256": "139ec510a5dee3929664a721a4b9b00afb974d0a1841a42424ed04384d450da6",
-  "public_archive_differs_from_submission_archive": "Public documentation, previews and reproducible export tooling replace private supplier/order context. Manufacturing layers, drill files, assembly CSVs and native KiCad design bytes are preserved.",
-  "BOM_json_change": "Only notes[0] was replaced; all component and assembly data are unchanged. CHECKS.json records the original hash and this metadata-only change.",
-  "reports_local_paths_replaced_with_package_relative_paths": true,
-  "supplier_correspondence_account_and_order_data_excluded": true,
-  "manufactured_hardware_revision_letters_assigned": false,
+  "status": "CURRENT_UNBUILT_PROTOTYPE_HARNESS_UPDATE",
+  "date": "2026-10-31",
+  "PCB_sha256": "ea19d9bdb0b6037542eb0b4bca53a04d0b0fecbf3d16e4198485bf43dcadbfc4",
+  "native_design_and_manufacturing_data_exported_from_same_PCB": true,
+  "hardware_revision_letters_assigned": false,
   "hardware_qualified": false,
-  "harness": "Separate frozen packaging study based on the 30 October board. Its CAD, mesh hashes and recorded validation are not relabelled as this new design."
+  "harness_study": "Separate frozen 30 October packaging study; not relabelled as the current design.",
+  "baseline_reports": "Historical reports in baseline_integrated_power predate this harness update. Use CHECKS and HARNESS_UPDATE_CHECKS for the current PCB.",
+  "supplier_correspondence_account_and_order_data_excluded": true
 }

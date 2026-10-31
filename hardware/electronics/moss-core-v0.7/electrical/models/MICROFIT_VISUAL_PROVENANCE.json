@@ -1,0 +1,12 @@
+[
+  {
+    "file": "Connector_Molex_Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical.step",
+    "scope": "Unmated header visual approximation, not manufacturer mating CAD. Electrical footprint and drill pattern remain the native KiCad library geometry.",
+    "mated_height_reference_mm": 17.64
+  },
+  {
+    "file": "Connector_Molex_Molex_Micro-Fit_3.0_43045-1012_2x05_P3.00mm_Vertical.step",
+    "scope": "Unmated header visual approximation, not manufacturer mating CAD. Electrical footprint and drill pattern remain the native KiCad library geometry.",
+    "mated_height_reference_mm": 17.64
+  }
+]

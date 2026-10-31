@@ -2601,85 +2601,127 @@
     },
     {
       "ref": "J2",
-      "value": "CYTRON MDD10A SIGNAL",
-      "fp": "Connector_JST:JST_GH_SM05B-GHS-TB_1x05-1MP_P1.25mm_Horizontal",
+      "value": "CYTRON LINK",
+      "fp": "Connector_Molex:Molex_Micro-Fit_3.0_43045-1012_2x05_P3.00mm_Vertical",
       "group": "04_Drive_Encoders",
       "pins": {
         "1": [
-          "MDD_PWM1",
+          "PWM1",
           "MDD_PWM1",
           "passive"
         ],
         "2": [
-          "MDD_DIR1",
+          "DIR1",
           "MDD_DIR1",
           "passive"
         ],
         "3": [
-          "MDD_PWM2",
+          "PWM2",
           "MDD_PWM2",
           "passive"
         ],
         "4": [
-          "MDD_DIR2",
+          "DIR2",
           "MDD_DIR2",
           "passive"
         ],
         "5": [
-          "GND",
+          "SIGNAL_GND",
           "GND",
           "passive"
         ],
-        "MP": [
-          "MOUNT",
-          "GND",
+        "6": [
+          "LEFT_A",
+          "CYTRON_L_LEAD",
           "passive"
+        ],
+        "7": [
+          "LEFT_B",
+          "MOTOR_L_RETURN",
+          "passive"
+        ],
+        "8": [
+          "RIGHT_A",
+          "CYTRON_R_LEAD",
+          "passive"
+        ],
+        "9": [
+          "RIGHT_B",
+          "MOTOR_R_RETURN",
+          "passive"
+        ],
+        "10": [
+          "UNUSED",
+          null,
+          "no_connect"
         ]
       },
       "kind": "connector",
-      "mpn": "SM05B-GHS-TB(LF)(SN)",
-      "desc": "Mating housing GHR-05V-S; crimp SSHL-002T-P0.2. Pin order is Core-specific.",
+      "mpn": "43045-1012",
+      "desc": "Micro-Fit 3.0 vertical through-hole. Exact Molex header and matching 43025 housing. Motor contacts use 18 AWG; signal contacts use 24 AWG. Apply manufacturer populated-circuit/temperature derating; not the single-contact maximum. Pin10 has no harness terminal. Separate J11 supplies the Cytron. Neither motor-output pair is GND.",
       "near": null,
       "uuid": "3c3ec975-5355-53f6-b16d-86d27fe4a14b",
-      "fp_local": "MOSS:Connector_JST_JST_GH_SM05B-GHS-TB_1x05-1MP_P1.25mm_Horizontal",
-      "sym": "J2_CYTRON_MDD10A_SIGNAL",
+      "fp_local": "MOSS:Connector_Molex_Molex_Micro-Fit_3.0_43045-1012_2x05_P3.00mm_Vertical",
+      "sym": "J2_CYTRON_LINK",
       "symbol_angle": 0,
       "symbol_points": {
         "1": [
           17.78,
-          3.8099999999999996,
+          10.16,
           180
         ],
         "2": [
           17.78,
-          1.2699999999999996,
+          7.62,
           180
         ],
         "3": [
           17.78,
-          -1.2700000000000005,
+          5.08,
           180
         ],
         "4": [
           17.78,
-          -3.8100000000000005,
+          2.54,
+          180
+        ],
+        "6": [
+          17.78,
+          0.0,
+          180
+        ],
+        "7": [
+          17.78,
+          -2.539999999999999,
+          180
+        ],
+        "8": [
+          17.78,
+          -5.08,
+          180
+        ],
+        "9": [
+          17.78,
+          -7.620000000000001,
+          180
+        ],
+        "10": [
+          17.78,
+          -10.16,
           180
         ],
         "5": [
-          -1.27,
-          -8.89,
-          90
-        ],
-        "MP": [
-          1.27,
-          -8.89,
+          0.0,
+          -15.239999999999998,
           90
         ]
       },
       "symbol_size": [
         30.48,
-        12.7
-      ]
+        25.4
+      ],
+      "manufacturer": "Molex",
+      "purchase_url": "https://www.molex.com/en-us/products/part-detail/430451012"
     },
     {
       "ref": "R23",
@@ -3187,147 +3229,171 @@
     },
     {
       "ref": "J3",
-      "value": "ENCODER LEFT",
-      "fp": "Connector_JST:JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal",
+      "value": "LEFT MOTOR + ENCODER",
+      "fp": "Connector_Molex:Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical",
       "group": "04_Drive_Encoders",
       "pins": {
         "1": [
-          "GND",
-          "GND",
+          "M1",
+          "MOTOR_L_LEAD",
           "passive"
         ],
         "2": [
-          "ENC_3V3",
-          "ENC_3V3",
+          "M2",
+          "MOTOR_L_RETURN",
           "passive"
         ],
         "3": [
-          "EL_A_EXT",
-          "EL_A_EXT",
+          "ENC_GND",
+          "GND",
           "passive"
         ],
         "4": [
-          "EL_B_EXT",
-          "EL_B_EXT",
+          "ENC_3V3",
+          "ENC_3V3",
           "passive"
         ],
-        "MP": [
-          "MOUNT",
-          "GND",
+        "5": [
+          "ENC_A",
+          "EL_A_EXT",
+          "passive"
+        ],
+        "6": [
+          "ENC_B",
+          "EL_B_EXT",
           "passive"
         ]
       },
       "kind": "connector",
-      "mpn": "SM04B-GHS-TB(LF)(SN)",
-      "desc": "Mating housing GHR-04V-S; crimp SSHL-002T-P0.2. Pin order is Core-specific.",
+      "mpn": "43045-0612",
+      "desc": "Micro-Fit 3.0 vertical through-hole. Exact Molex header and matching 43025 housing. Motor contacts use 18 AWG; signal contacts use 24 AWG. Apply manufacturer populated-circuit/temperature derating; not the single-contact maximum. One six-wire cable carries motor M1/M2 and four encoder wires. Retain the motor-supplied connector and verify its cavity map. Neither motor pin is encoder GND.",
       "near": null,
       "uuid": "3825c3d3-4f93-5a97-9639-68cfa811e3dd",
-      "fp_local": "MOSS:Connector_JST_JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal",
-      "sym": "J3_ENCODER_LEFT",
+      "fp_local": "MOSS:Connector_Molex_Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical",
+      "sym": "J3_LEFT_MOTOR___ENCODER",
       "symbol_angle": 0,
       "symbol_points": {
-        "2": [
+        "1": [
           17.78,
-          3.8099999999999996,
+          5.08,
           180
         ],
-        "3": [
+        "2": [
           17.78,
-          1.2699999999999996,
+          2.54,
           180
         ],
         "4": [
           17.78,
-          -1.2700000000000005,
+          0.0,
           180
         ],
-        "1": [
-          -1.27,
-          -8.89,
-          90
+        "5": [
+          17.78,
+          -2.54,
+          180
         ],
-        "MP": [
-          1.27,
-          -8.89,
+        "6": [
+          17.78,
+          -5.08,
+          180
+        ],
+        "3": [
+          0.0,
+          -10.16,
           90
         ]
       },
       "symbol_size": [
         30.48,
-        12.7
-      ]
+        15.24
+      ],
+      "manufacturer": "Molex",
+      "purchase_url": "https://www.molex.com/en-us/products/part-detail/430450612"
     },
     {
       "ref": "J4",
-      "value": "ENCODER RIGHT",
-      "fp": "Connector_JST:JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal",
+      "value": "RIGHT MOTOR + ENCODER",
+      "fp": "Connector_Molex:Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical",
       "group": "04_Drive_Encoders",
       "pins": {
         "1": [
-          "GND",
-          "GND",
+          "M1",
+          "MOTOR_R_LEAD",
           "passive"
         ],
         "2": [
-          "ENC_3V3",
-          "ENC_3V3",
+          "M2",
+          "MOTOR_R_RETURN",
           "passive"
         ],
         "3": [
-          "ER_A_EXT",
-          "ER_A_EXT",
+          "ENC_GND",
+          "GND",
           "passive"
         ],
         "4": [
-          "ER_B_EXT",
-          "ER_B_EXT",
+          "ENC_3V3",
+          "ENC_3V3",
           "passive"
         ],
-        "MP": [
-          "MOUNT",
-          "GND",
+        "5": [
+          "ENC_A",
+          "ER_A_EXT",
+          "passive"
+        ],
+        "6": [
+          "ENC_B",
+          "ER_B_EXT",
           "passive"
         ]
       },
       "kind": "connector",
-      "mpn": "SM04B-GHS-TB(LF)(SN)",
-      "desc": "Mating housing GHR-04V-S; crimp SSHL-002T-P0.2. Pin order is Core-specific.",
+      "mpn": "43045-0612",
+      "desc": "Micro-Fit 3.0 vertical through-hole. Exact Molex header and matching 43025 housing. Motor contacts use 18 AWG; signal contacts use 24 AWG. Apply manufacturer populated-circuit/temperature derating; not the single-contact maximum. One six-wire cable carries motor M1/M2 and four encoder wires. Retain the motor-supplied connector and verify its cavity map. Neither motor pin is encoder GND.",
       "near": null,
       "uuid": "0d4ece17-8c11-50e6-b285-70697dae581c",
-      "fp_local": "MOSS:Connector_JST_JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal",
-      "sym": "J4_ENCODER_RIGHT",
+      "fp_local": "MOSS:Connector_Molex_Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical",
+      "sym": "J4_RIGHT_MOTOR___ENCODER",
       "symbol_angle": 0,
       "symbol_points": {
-        "2": [
+        "1": [
           17.78,
-          3.8099999999999996,
+          5.08,
           180
         ],
-        "3": [
+        "2": [
           17.78,
-          1.2699999999999996,
+          2.54,
           180
         ],
         "4": [
           17.78,
-          -1.2700000000000005,
+          0.0,
           180
         ],
-        "1": [
-          -1.27,
-          -8.89,
-          90
+        "5": [
+          17.78,
+          -2.54,
+          180
         ],
-        "MP": [
-          1.27,
-          -8.89,
+        "6": [
+          17.78,
+          -5.08,
+          180
+        ],
+        "3": [
+          0.0,
+          -10.16,
           90
         ]
       },
       "symbol_size": [
         30.48,
-        12.7
-      ]
+        15.24
+      ],
+      "manufacturer": "Molex",
+      "purchase_url": "https://www.molex.com/en-us/products/part-detail/430450612"
     },
     {
       "ref": "R35",
@@ -8471,7 +8537,7 @@
       "group": "17_Motor_Current",
       "mpn": "CSS2H-2512K-2L00F",
       "desc": "5W specified at70C TERMINAL,3W at130C terminal per curve. Two-terminal shunt, dedicated PCB Kelvin sense tracks required. 10A=0.2W,30A=1.8W. Range is not connector/copper ampacity.",
-      "near": "J12",
+      "near": "J2",
       "uuid": "471244a7-1964-5bc1-8323-0f20999e2ed7",
       "fp_local": "MOSS:MOSS_V07_CSS2H_2512K_Bourns",
       "sym": "R180_2mR_1__5W",
@@ -8662,48 +8728,6 @@
       ]
     },
     {
-      "ref": "J12",
-      "value": "L MOTOR SENSE LOOP",
-      "fp": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
-      "pins": {
-        "1": [
-          "FROM_CYTRON",
-          "CYTRON_L_LEAD",
-          "passive"
-        ],
-        "2": [
-          "TO_MOTOR",
-          "MOTOR_L_LEAD",
-          "passive"
-        ]
-      },
-      "kind": "connector",
-      "group": "17_Motor_Current",
-      "mpn": "1715721",
-      "desc": "One motor lead only. Opposite motor lead stays directly atCytron. Neither terminal is GND. Terminal rating and copper path require final design verification.",
-      "near": null,
-      "uuid": "e2525842-55b3-5362-9379-a4cbda536ce0",
-      "fp_local": "MOSS:TerminalBlock_Phoenix_TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
-      "sym": "J12_L_MOTOR_SENSE_LOOP",
-      "symbol_angle": 0,
-      "symbol_points": {
-        "1": [
-          17.78,
-          3.8099999999999996,
-          180
-        ],
-        "2": [
-          17.78,
-          1.2699999999999996,
-          180
-        ]
-      },
-      "symbol_size": [
-        30.48,
-        12.7
-      ]
-    },
-    {
       "ref": "U41",
       "value": "INA240A2PWR",
       "fp": "Package_SO:TSSOP-8_4.4x3mm_P0.65mm",
@@ -8825,7 +8849,7 @@
       "group": "17_Motor_Current",
       "mpn": "CSS2H-2512K-2L00F",
       "desc": "5W specified at70C TERMINAL,3W at130C terminal per curve. Two-terminal shunt, dedicated PCB Kelvin sense tracks required. 10A=0.2W,30A=1.8W. Range is not connector/copper ampacity.",
-      "near": "J13",
+      "near": "J2",
       "uuid": "d78ad9aa-a2dc-54db-bef8-e89ad9137913",
       "fp_local": "MOSS:MOSS_V07_CSS2H_2512K_Bourns",
       "sym": "R181_2mR_1__5W",
@@ -9013,48 +9037,6 @@
       "symbol_size": [
         12.7,
         10.16
-      ]
-    },
-    {
-      "ref": "J13",
-      "value": "R MOTOR SENSE LOOP",
-      "fp": "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
-      "pins": {
-        "1": [
-          "FROM_CYTRON",
-          "CYTRON_R_LEAD",
-          "passive"
-        ],
-        "2": [
-          "TO_MOTOR",
-          "MOTOR_R_LEAD",
-          "passive"
-        ]
-      },
-      "kind": "connector",
-      "group": "17_Motor_Current",
-      "mpn": "1715721",
-      "desc": "One motor lead only. Opposite motor lead stays directly atCytron. Neither terminal is GND. Terminal rating and copper path require final design verification.",
-      "near": null,
-      "uuid": "66779b31-9115-5652-85fb-a9a8eb88c90b",
-      "fp_local": "MOSS:TerminalBlock_Phoenix_TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",
-      "sym": "J13_R_MOTOR_SENSE_LOOP",
-      "symbol_angle": 0,
-      "symbol_points": {
-        "1": [
-          17.78,
-          3.8099999999999996,
-          180
-        ],
-        "2": [
-          17.78,
-          1.2699999999999996,
-          180
-        ]
-      },
-      "symbol_size": [
-        30.48,
-        12.7
       ]
     },
     {
@@ -11938,14 +11920,14 @@
     "01_USB_Power": "Core USB device powered by host hub; separate from OrangePi5V source. RF disabled; encoder supply only after enumeration. Verify USB budget.",
     "02_Controller": "ESP32-S3-WROOM-1U-N8. New firmware pin map; native USB serial/audio functions require implementation. External I2C ADC for left/right winding currents.",
     "03_Hardware_Interlock": "Watchdog resets MCU on timeout. Downstream ACT_READY inhibits drive and servo data when actuator rail is off. E-stop auxiliary contact also requests stretched reset; fresh manual arming required.",
-    "04_Drive_Encoders": "External CytronMDD10A PWM/DIR control and two encoder interfaces. No motor power inside the logic connector.",
+    "04_Drive_Encoders": "J3/J4 each carry one complete six-wire motor/encoder cable. J2 carries four Cytron motor-output legs plus four logic controls and signal ground. Pin10 intentionally unused. The existing J11 separately carries the Cytron battery supply.",
     "05_Servo": "Six addressed servos on one powered DATA/V+/GND connector. No external serial adapter and no shared2.5A current limiter. Verify harness rating.",
     "06_Audio": "MAX98357A integrated for4-ohm/3W speaker. Both output terminals active. Start muted; firmware volume/load tests required.",
     "07_Battery_Voltage": "INA226bus-voltage only,0x40. Shuntinputs shortedGND. Motor currents use independent PWM-compatible measurement channels.",
     "09_Audio_Power": "Existing separate5.077V audio buck retained to avoid spending hostUSB current budget on speaker peaks. F2 protects its input branch.",
     "10_Battery_Power": "Externally fused3S input and inputTVS. Q50 feeds Cytron/servo; host and audio remain unswitched. Conductor/connector/regeneration qualification remains required.",
     "16_Orange_Pi_Power": "Integrated MP9447 host supply and compact 3.15A SMD input fuse. USB-C 3A source retains U42/J20. Never bridge host output to USB device VBUS. Engineering candidate; not hardware qualified.",
-    "17_Motor_Current": "Separate left/right in-linebidirectional motor currents; two shunts andPWM-rejecting amplifiers. ValidateADCcalibration,transients and thermal performance.",
+    "17_Motor_Current": "J12/J13 removed. J2 LEFT_A/RIGHT_A feed the existing per-motor shunts; shunt outputs go to J3.1/J4.1. The other two motor leads pass through Core on distinct non-GND nets to J3.2/J4.2. Preserve dedicated Kelvin pickup.",
     "18_Actuator_Cutoff": "One physical NC opens Q50 gate sink regardless of MCU command. Second NC requests MCU reset; release requires fresh manual arming. Unknown actual button terminal orientation must be verified. Single MOSFET is not redundant or safety-certified; inrush, stored energy and regeneration require bench tests.",
     "19_Fans": "Two12V nominal3010 fans,common1A fuse upstream of Q50;0.2A combined assumed,not measured. Verify XH mate/polarity,voltage/startup and wire limits.",
     "PCBWay_review_20261031": "U14/U17/U43 mask bridges omitted locally; U2 changed to available TI Q1 DCK code; J7 fixture/seating and J8 manual placement specified. MOD1 removed and integrated converter/H1 grounding retained."

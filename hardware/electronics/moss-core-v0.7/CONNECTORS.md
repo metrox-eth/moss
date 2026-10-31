@@ -1,8 +1,8 @@
 # MOSS CORE V0.7 — prototype connector guide
 
-Updated 31 October 2026: integrated 5 V converter and H1 GND connection. The external connector assignments are unchanged.
+Updated 31 October 2026: simplified motor harness, integrated 5 V converter and H1 GND connection. J2/J3/J4 have new assignments; J12/J13 are removed. See the [motor wiring guide](MOTOR_WIRING.md).
 
-Read the numbers on the connector footprint, not the left-to-right order inferred from a top or bottom photograph. All fourteen external connectors have a numbered legend on the underside. Left/right refer to the rover's forward-driving direction.
+Read the numbers on the connector footprint, not the left-to-right order inferred from a top or bottom photograph. All twelve external connectors have a numbered legend on the underside. Left/right refer to the rover's forward-driving direction.
 
 | Connector | Underside label | Connect to | Pin assignment |
 |---|---|---|---|
@@ -10,11 +10,9 @@ Read the numbers on the connector footprint, not the left-to-right order inferre
 | J20 | PI 5V OUT / POWER ONLY | Orange Pi **POWER** USB-C port | Integrated 5 V / 3 A output; no USB data. |
 | J10 | BATTERY 3S | Existing fused 3S battery harness, XT30 | 1 GND/negative; 2 positive. Retain the external pack fuse. |
 | J11 | CYTRON POWER | Cytron MDD10A power input | 1 switched battery positive; 2 GND. |
-| J2 | CYTRON CTRL | Cytron control inputs | 1 PWM1; 2 DIR1; 3 PWM2; 4 DIR2; 5 GND. This order is specific to Core: check the other end of the cable. |
-| J3 | ENC LEFT | Left motor encoder | 1 GND; 2 switched 3V3; 3 A; 4 B. |
-| J4 | ENC RIGHT | Right motor encoder | 1 GND; 2 switched 3V3; 3 A; 4 B. |
-| J12 | LEFT MOTOR LOOP | One lead between the Cytron left channel and the left motor | 1 Cytron output lead; 2 motor lead. Neither terminal is GND. |
-| J13 | RIGHT MOTOR LOOP | One lead between the Cytron right channel and the right motor | 1 Cytron output lead; 2 motor lead. Neither terminal is GND. |
+| J2 | CYTRON LINK | Cytron controls and four winding outputs | 1 PWM1; 2 DIR1; 3 PWM2; 4 DIR2; 5 signal GND; 6 left A; 7 left B; 8 right A; 9 right B; **10 no wire**. Supply remains on J11. |
+| J3 | LEFT MOTOR | Complete left motor cable | 1 winding M1; 2 winding M2; 3 encoder GND; 4 switched 3V3; 5 encoder A; 6 encoder B. Neither winding terminal is GND. |
+| J4 | RIGHT MOTOR | Complete right motor cable | Same six assignments as J3. |
 | J5 | ARM | Powered arm servo daisy chain | 1 DATA; 2 switched battery positive; 3 GND. Six servos standard, seven with the optional double shoulder. |
 | J7 | SPEAKER / NO GND | 4-ohm speaker | 1 amplifier positive output; 2 amplifier negative output. Both are driven: do not connect either terminal to GND. |
 | J8 | STOP | Two independent normally closed contacts of the red stop button | 1/2 power-cut contact; **3/4 no wires or crimp contacts**; 5/6 status/reset contact. |
@@ -30,17 +28,16 @@ Orange Pi DATA → hub upstream. Hub downstream → Core J1, wrist camera, navig
 
 ## Motor-current loops
 
-For each motor, insert its measurement loop into only one output lead:
+The current shunts remain on Core. Their connections are now carried by the consolidated motor ports:
 
 ```text
-Cytron left output A  → J12.1 → onboard shunt → J12.2 → left motor lead A
-Cytron left output B ─────────────────────────────────→ left motor lead B
-
-Cytron right output A → J13.1 → onboard shunt → J13.2 → right motor lead A
-Cytron right output B ────────────────────────────────→ right motor lead B
+Cytron M1A → J2.6 → left shunt  → J3.1 → left winding M1
+Cytron M1B → J2.7 ─────────────→ J3.2 → left winding M2
+Cytron M2A → J2.8 → right shunt → J4.1 → right winding M1
+Cytron M2B → J2.9 ─────────────→ J4.2 → right winding M2
 ```
 
-These are H-bridge motor leads, not battery-return terminals. The current can reverse; the reading is winding current, not total battery consumption. Confirm direction/channel naming during firmware commissioning.
+Both winding legs are H-bridge outputs. The nets named `MOTOR_L_RETURN` and `MOTOR_R_RETURN` are the second winding leads, not ground returns. The measurement remains bidirectional winding current, not total battery consumption. Confirm direction/channel naming during firmware commissioning.
 
 ## Stop-button cable
 
