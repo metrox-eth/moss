@@ -40,6 +40,8 @@ I pick up litter by hand on my walks. MOSS is the robot I want next to me doing 
 
 ## News
 
+- 31 October 2026: **[MOSS CORE V0.7 updated](hardware/electronics/moss-core-v0.7/)** — integrated Orange Pi power supply, a GND mounting connection and manufacturing-review corrections. Current KiCad sources, BOM, Gerbers and board views replace the previous files. The first prototype has not yet been built or tested.
+
 - 30 October 2026: **[MOSS CORE V0.7 harness study](hardware/electronics/moss-core-v0.7/harness/)** — a short film, offline 3D viewer, cable routing and a hull prototype with integrated cable-tie mounts. An unbuilt packaging proposal, published for review.
 
 - 28 October 2026: **[Build a custom 3S4P battery for MOSS](hardware/power/custom-3s4p-battery/)** — twelve EVE 21700 cells, illustrated assembly, wiring diagram and parts list. 20 Ah from the cell ratings, 910 g assembled; usable energy and collection runtime still to be measured.

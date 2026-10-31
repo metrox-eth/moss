@@ -278,7 +278,7 @@
     },
     {
       "ref": "U2",
-      "value": "TPD2E2U06DCKR",
+      "value": "TPD2E2U06QDCKRQ1",
       "fp": "Package_TO_SOT_SMD:SOT-323_SC-70",
       "group": "01_USB_Power",
       "pins": {
@@ -299,12 +299,12 @@
         ]
       },
       "kind": "ic",
-      "mpn": "TPD2E2U06DCKR",
-      "desc": "Two-channel 1.5pF ESD. DCK: 1 IO1, 2 IO2, 3 GND. Place at USB connector, direct short GND vias.",
+      "mpn": "TPD2E2U06QDCKRQ1",
+      "desc": "Dual USB ESD protector, TI automotive Q1 ordering code chosen for availability; same DCK three-pad package and IO1/IO2/GND pin mapping. 5.5V, 1.5pF typical, +/-25kV contact. See substitution evidence.",
       "near": "J1",
       "uuid": "780303a1-8a7d-5058-855b-278c1c436c8e",
       "fp_local": "MOSS:Package_TO_SOT_SMD_SOT-323_SC-70",
-      "sym": "U2_TPD2E2U06DCKR",
+      "sym": "U2_TPD2E2U06QDCKRQ1",
       "symbol_angle": 0,
       "symbol_points": {
         "1": [
@@ -326,7 +326,10 @@
       "symbol_size": [
         35.56,
         12.7
-      ]
+      ],
+      "manufacturer": "Texas Instruments",
+      "purchase_url": "https://www.digikey.com/en/products/detail/texas-instruments/TPD2E2U06QDCKRQ1/6026260",
+      "assemblyPreference": "TPD2E2U06QDCKRQ1 replaces unavailable TPD2E2U06DCKR. Exact DCK / SC-70-3, pins 1 IO1, 2 IO2, 3 GND. Do not substitute DBZ or DRL. MSL2: follow moisture handling. DigiKey 296-44302-1-ND; stock shown at review, reconfirm for quotation."
     },
     {
       "ref": "D1",
@@ -4972,13 +4975,19 @@
     },
     {
       "ref": "H1",
-      "value": "M2.5 / drill 2.7 / keepout D8",
-      "fp": "MOSS:Mount_M2p5_2p7_D8",
+      "value": "M2.5 GND bond / drill2.7",
+      "fp": "MOSS:Mount_M2p5_GND_D8",
       "group": "02_Controller",
-      "pins": {},
+      "pins": {
+        "1": [
+          "GND",
+          "GND",
+          "passive"
+        ]
+      },
       "kind": "mount",
-      "mpn": "NPTH",
-      "desc": "",
+      "mpn": "PCB_FEATURE",
+      "desc": "H1: plated2.7mm M2.5 hole, exposed5.4mm GND contact on both sides, eight0.5mm plated stitch holes. D8 mechanical reservation retained. Bonding lug/strap provision, not a protective-earth or ESD certification.",
       "near": null,
       "uuid": "a9160f5c-2818-5d9c-a106-49794387e692",
       "fixed": [
@@ -4986,10 +4995,16 @@
         4,
         0
       ],
-      "fp_local": "MOSS:MOSS_Mount_M2p5_2p7_D8",
-      "sym": "H1_M2_5___drill_2_7___keepout_D8",
+      "fp_local": "MOSS:MOSS_Mount_M2p5_GND_D8",
+      "sym": "H1_M2p5_GND_bond",
       "symbol_angle": 0,
-      "symbol_points": {},
+      "symbol_points": {
+        "1": [
+          0,
+          -5.08,
+          90
+        ]
+      },
       "symbol_size": [
         12.7,
         7.62
@@ -5152,7 +5167,8 @@
       "symbol_size": [
         12.7,
         10.16
-      ]
+      ],
+      "assemblyPreference": "TI DYA0002A, 2 pins: TI catalog name SOT-5X3 and TI drawing name SOT (SOD-523) identify this same package. Keep exact TPD1E10B06DYAR and the supplied D_SOD-523 copper footprint."
     },
     {
       "ref": "D21",
@@ -5194,7 +5210,8 @@
       "symbol_size": [
         12.7,
         10.16
-      ]
+      ],
+      "assemblyPreference": "TI DYA0002A, 2 pins: TI catalog name SOT-5X3 and TI drawing name SOT (SOD-523) identify this same package. Keep exact TPD1E10B06DYAR and the supplied D_SOD-523 copper footprint."
     },
     {
       "ref": "D22",
@@ -5236,7 +5253,8 @@
       "symbol_size": [
         12.7,
         10.16
-      ]
+      ],
+      "assemblyPreference": "TI DYA0002A, 2 pins: TI catalog name SOT-5X3 and TI drawing name SOT (SOD-523) identify this same package. Keep exact TPD1E10B06DYAR and the supplied D_SOD-523 copper footprint."
     },
     {
       "ref": "R72",
@@ -7276,7 +7294,8 @@
       "symbol_size": [
         30.48,
         12.7
-      ]
+      ],
+      "assemblyPreference": "Manual through-hole insertion/soldering with suitable fixture and PCB support. Fully seat connector; do not bend PCB or damage housing when applying seating pressure. Inspect joints and seating."
     },
     {
       "ref": "U24",
@@ -9246,134 +9265,6 @@
       ]
     },
     {
-      "ref": "MOD1",
-      "value": "DC5-36-TO-DC3V3-5 / 5V",
-      "fp": "MOSS_Power:Waveshare_DC5_36_TO_DC3V3_5_SMD_33x16mm_HandSolder",
-      "group": "16_Orange_Pi_Power",
-      "pins": {
-        "1": [
-          "VIN+",
-          "HOST_BUCK_IN",
-          "power_in"
-        ],
-        "2": [
-          "VIN+",
-          "HOST_BUCK_IN",
-          "power_in"
-        ],
-        "3": [
-          "GND",
-          "GND",
-          "power_in"
-        ],
-        "4": [
-          "GND",
-          "GND",
-          "power_in"
-        ],
-        "5": [
-          "VOUT+",
-          "V5_HOST_RAW",
-          "power_out"
-        ],
-        "6": [
-          "VOUT+",
-          "V5_HOST_RAW",
-          "passive"
-        ],
-        "7": [
-          "VOUT+",
-          "V5_HOST_RAW",
-          "passive"
-        ],
-        "8": [
-          "GND",
-          "GND",
-          "power_in"
-        ],
-        "9": [
-          "GND",
-          "GND",
-          "power_in"
-        ],
-        "10": [
-          "GND",
-          "GND",
-          "power_in"
-        ]
-      },
-      "kind": "module",
-      "mpn": "29035",
-      "desc": "Waveshare SKU 29035 DC5-36-TO-DC3V3-5 SMD version, factory 5V output; not terminal/header SKU29036. 33x16x5.7mm with official PcbLib castellated lands. Prefer PCBWay sourcing/assembly if accepted; not quoted or confirmed. User soldering is fallback only. Host voltage and thermal budget remain unqualified.",
-      "near": "F1",
-      "manufacturer": "Waveshare",
-      "sku": "29035",
-      "purchase_url": "https://www.waveshare.com/dc5-36-to-dc3v3-5.htm?sku=29035",
-      "assemblyPreference": "PCBWay if sourcing/assembly accepted",
-      "procurementStatus": "not quoted/not confirmed",
-      "assemblyFallback": "User hand-soldering only if PCBWay sourcing or assembly is declined",
-      "uuid": "5650d25a-f455-587a-a7e5-815ed8f02f77",
-      "fp_local": "MOSS:MOSS_Power_Waveshare_DC5_36_TO_DC3V3_5_SMD_33x16mm_HandSolder",
-      "sym": "MOD1_DC5_36_TO_DC3V3_5___5V",
-      "symbol_angle": 0,
-      "symbol_points": {
-        "1": [
-          -20.32,
-          3.8099999999999996,
-          0
-        ],
-        "2": [
-          -20.32,
-          1.2699999999999996,
-          0
-        ],
-        "6": [
-          -20.32,
-          -1.2700000000000005,
-          0
-        ],
-        "7": [
-          -20.32,
-          -3.8100000000000005,
-          0
-        ],
-        "5": [
-          20.32,
-          3.8099999999999996,
-          180
-        ],
-        "3": [
-          -5.08,
-          -8.89,
-          90
-        ],
-        "4": [
-          -2.54,
-          -8.89,
-          90
-        ],
-        "8": [
-          0.0,
-          -8.89,
-          90
-        ],
-        "9": [
-          2.54,
-          -8.89,
-          90
-        ],
-        "10": [
-          5.08,
-          -8.89,
-          90
-        ]
-      },
-      "symbol_size": [
-        35.56,
-        12.7
-      ]
-    },
-    {
       "ref": "U42",
       "value": "TPS25810RVCR / USB-C source3A",
       "fp": "Package_DFN_QFN:Texas_RVC0020A_WQFN-20-1EP_3x4mm_P0.5mm_EP1.6x2.6mm_ThermalVias",
@@ -10035,7 +9926,8 @@
       "symbol_size": [
         35.56,
         15.24
-      ]
+      ],
+      "assemblyPreference": "Vishay order code SIRA99DP-T1-GE3 is accepted; difference from SiRA99DP-T1-GE3 is letter case only."
     },
     {
       "ref": "Q51",
@@ -10473,7 +10365,8 @@
       "symbol_size": [
         30.48,
         17.78
-      ]
+      ],
+      "assemblyPreference": "Manual placement accepted for these two prototypes because this exact part has no suction cap; solder/inspect using suitable process. Keep exact connector and mating interface. Do not omit J8."
     },
     {
       "ref": "R224",
@@ -11078,6 +10971,967 @@
         12.7,
         7.62
       ]
+    },
+    {
+      "ref": "U60",
+      "value": "MP9447GL-Z / integrated host buck",
+      "fp": "MOSS_Power:MP9447_QFN25_3x4",
+      "mpn": "MP9447GL-Z",
+      "pins": {
+        "1": [
+          "AGND",
+          "GND",
+          "power_in"
+        ],
+        "2": [
+          "FREQ",
+          "HOST_FREQ",
+          "passive"
+        ],
+        "3": [
+          "FB",
+          "HOST_FB",
+          "input"
+        ],
+        "4": [
+          "SS",
+          "HOST_SS",
+          "passive"
+        ],
+        "5": [
+          "EN",
+          "HOST_EN",
+          "input"
+        ],
+        "6": [
+          "NC",
+          null,
+          "no_connect"
+        ],
+        "7": [
+          "BST",
+          "HOST_BST",
+          "passive"
+        ],
+        "8": [
+          "IN",
+          "HOST_BUCK_IN",
+          "power_in"
+        ],
+        "9": [
+          "SW",
+          "HOST_SW",
+          "power_out"
+        ],
+        "10": [
+          "SW",
+          "HOST_SW",
+          "passive"
+        ],
+        "11": [
+          "PGND",
+          "GND",
+          "power_in"
+        ],
+        "12": [
+          "PGND",
+          "GND",
+          "power_in"
+        ],
+        "13": [
+          "PGND",
+          "GND",
+          "power_in"
+        ],
+        "14": [
+          "PGND",
+          "GND",
+          "power_in"
+        ],
+        "15": [
+          "PGND",
+          "GND",
+          "power_in"
+        ],
+        "16": [
+          "PGND",
+          "GND",
+          "power_in"
+        ],
+        "17": [
+          "SW",
+          "HOST_SW",
+          "passive"
+        ],
+        "18": [
+          "SW",
+          "HOST_SW",
+          "passive"
+        ],
+        "19": [
+          "IN",
+          "HOST_BUCK_IN",
+          "power_in"
+        ],
+        "20": [
+          "VCC",
+          "HOST_VCC",
+          "power_out"
+        ],
+        "21": [
+          "IN",
+          "HOST_BUCK_IN",
+          "power_in"
+        ],
+        "22": [
+          "IN",
+          "HOST_BUCK_IN",
+          "power_in"
+        ],
+        "23": [
+          "IN",
+          "HOST_BUCK_IN",
+          "power_in"
+        ],
+        "24": [
+          "SW",
+          "HOST_SW",
+          "passive"
+        ],
+        "25": [
+          "SW",
+          "HOST_SW",
+          "passive"
+        ]
+      },
+      "kind": "ic",
+      "desc": "MPS MP9447, 4.5-36V synchronous buck. 25 physical pads per manufacturer Rev1.22. 5V/500kHz application circuit. Intended 3S host branch; USB-C output remains limited by U42. Bench stability/thermal qualification required.",
+      "manufacturer": "MPS",
+      "group": "16_Orange_Pi_Power",
+      "near": "U60",
+      "uuid": "252b9384-ed5f-5c89-af9b-69d1d819ea22",
+      "fp_local": "MOSS:MOSS_Power_MP9447_QFN25_3x4",
+      "sym": "U60_MP9447GL_Z___integrated_host_buck",
+      "symbol_angle": 0,
+      "symbol_points": {
+        "2": [
+          -20.32,
+          19.05,
+          0
+        ],
+        "3": [
+          -20.32,
+          16.51,
+          0
+        ],
+        "4": [
+          -20.32,
+          13.97,
+          0
+        ],
+        "5": [
+          -20.32,
+          11.43,
+          0
+        ],
+        "6": [
+          -20.32,
+          8.89,
+          0
+        ],
+        "7": [
+          -20.32,
+          6.350000000000001,
+          0
+        ],
+        "8": [
+          -20.32,
+          3.8100000000000005,
+          0
+        ],
+        "10": [
+          -20.32,
+          1.2699999999999996,
+          0
+        ],
+        "17": [
+          -20.32,
+          -1.2699999999999996,
+          0
+        ],
+        "18": [
+          -20.32,
+          -3.8099999999999987,
+          0
+        ],
+        "19": [
+          -20.32,
+          -6.349999999999998,
+          0
+        ],
+        "21": [
+          -20.32,
+          -8.89,
+          0
+        ],
+        "22": [
+          -20.32,
+          -11.43,
+          0
+        ],
+        "23": [
+          -20.32,
+          -13.970000000000002,
+          0
+        ],
+        "24": [
+          -20.32,
+          -16.51,
+          0
+        ],
+        "25": [
+          -20.32,
+          -19.05,
+          0
+        ],
+        "9": [
+          20.32,
+          19.05,
+          180
+        ],
+        "20": [
+          20.32,
+          16.51,
+          180
+        ],
+        "1": [
+          -7.62,
+          -24.13,
+          90
+        ],
+        "11": [
+          -5.08,
+          -24.13,
+          90
+        ],
+        "12": [
+          -2.54,
+          -24.13,
+          90
+        ],
+        "13": [
+          0.0,
+          -24.13,
+          90
+        ],
+        "14": [
+          2.54,
+          -24.13,
+          90
+        ],
+        "15": [
+          5.08,
+          -24.13,
+          90
+        ],
+        "16": [
+          7.62,
+          -24.13,
+          90
+        ]
+      },
+      "symbol_size": [
+        35.56,
+        43.18
+      ]
+    },
+    {
+      "ref": "L3",
+      "value": "10uH",
+      "fp": "Inductor_SMD:L_Bourns_SRP6060FA",
+      "mpn": "SRP6060FA-100M",
+      "pins": {
+        "1": [
+          "1",
+          "HOST_SW",
+          "passive"
+        ],
+        "2": [
+          "2",
+          "V5_HOST_RAW",
+          "passive"
+        ]
+      },
+      "kind": "L",
+      "desc": "Bourns 10uH +/-20%, Isat7.6A typical, Irms5A for20C rise/7A for40C rise. Existing quoted BOM article reused. Verify inductance at temperature and fault-current behavior.",
+      "manufacturer": "Bourns",
+      "group": "16_Orange_Pi_Power",
+      "near": "U60",
+      "uuid": "a7a80635-6453-5808-af46-b3005224636b",
+      "fp_local": "MOSS:Inductor_SMD_L_Bourns_SRP6060FA",
+      "sym": "L3_10uH",
+      "symbol_angle": 90,
+      "symbol_points": {
+        "1": [
+          0.0,
+          3.81,
+          270.0
+        ],
+        "2": [
+          0.0,
+          -3.81,
+          90.0
+        ]
+      },
+      "symbol_size": [
+        12.7,
+        10.16
+      ]
+    },
+    {
+      "ref": "C160",
+      "value": "22uF / 25V X7R",
+      "fp": "Capacitor_SMD:C_1210_3225Metric",
+      "mpn": "GRM32ER71E226KE15L",
+      "pins": {
+        "1": [
+          "1",
+          "HOST_BUCK_IN",
+          "passive"
+        ],
+        "2": [
+          "2",
+          "GND",
+          "passive"
+        ]
+      },
+      "kind": "C",
+      "desc": "Local input reservoir per MPS Fig11, with C162/C163 HF bypasses at the two IN sides. DC-bias and RMS ripple derating apply.",
+      "manufacturer": "Murata",
+      "group": "16_Orange_Pi_Power",
+      "near": "U60",
+      "uuid": "d7246a0a-caf5-5a66-a232-230c02e74237",
+      "fp_local": "MOSS:Capacitor_SMD_C_1210_3225Metric",
+      "sym": "C160_22uF___25V_X7R",
+      "symbol_angle": 90,
+      "symbol_points": {
+        "1": [
+          0.0,
+          3.81,
+          270.0
+        ],
+        "2": [
+          0.0,
+          -3.81,
+          90.0
+        ]
+      },
+      "symbol_size": [
+        12.7,
+        10.16
+      ]
+    },
+    {
+      "ref": "C162",
+      "value": "100nF / 50V X7R",
+      "fp": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "GRM188R71H104KA93D",
+      "pins": {
+        "1": [
+          "1",
+          "HOST_BUCK_IN",
+          "passive"
+        ],
+        "2": [
+          "2",
+          "GND",
+          "passive"
+        ]
+      },
+      "kind": "C",
+      "desc": "HF input bypass at IN pin8/pin19, short PGND return.",
+      "manufacturer": "Murata",
+      "group": "16_Orange_Pi_Power",
+      "near": "U60",
+      "uuid": "64f40ef4-8618-5f06-bbb0-370ac6cc8bc5",
+      "fp_local": "MOSS:Capacitor_SMD_C_0603_1608Metric",
+      "sym": "C162_100nF___50V_X7R",
+      "symbol_angle": 90,
+      "symbol_points": {
+        "1": [
+          0.0,
+          3.81,
+          270.0
+        ],
+        "2": [
+          0.0,
+          -3.81,
+          90.0
+        ]
+      },
+      "symbol_size": [
+        12.7,
+        10.16
+      ]
+    },
+    {
+      "ref": "C163",
+      "value": "100nF / 50V X7R",
+      "fp": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "GRM188R71H104KA93D",
+      "pins": {
+        "1": [
+          "1",
+          "HOST_BUCK_IN",
+          "passive"
+        ],
+        "2": [
+          "2",
+          "GND",
+          "passive"
+        ]
+      },
+      "kind": "C",
+      "desc": "HF input bypass at IN pin8/pin19, short PGND return.",
+      "manufacturer": "Murata",
+      "group": "16_Orange_Pi_Power",
+      "near": "U60",
+      "uuid": "1c77a2ca-df4d-5750-ae53-a7371be7357c",
+      "fp_local": "MOSS:Capacitor_SMD_C_0603_1608Metric",
+      "sym": "C163_100nF___50V_X7R",
+      "symbol_angle": 90,
+      "symbol_points": {
+        "1": [
+          0.0,
+          3.81,
+          270.0
+        ],
+        "2": [
+          0.0,
+          -3.81,
+          90.0
+        ]
+      },
+      "symbol_size": [
+        12.7,
+        10.16
+      ]
+    },
+    {
+      "ref": "C164",
+      "value": "22uF / 10V X7R",
+      "fp": "Capacitor_SMD:C_1206_3216Metric",
+      "mpn": "GRM31CR71A226KE15L",
+      "pins": {
+        "1": [
+          "1",
+          "V5_HOST_RAW",
+          "passive"
+        ],
+        "2": [
+          "2",
+          "GND",
+          "passive"
+        ]
+      },
+      "kind": "C",
+      "desc": "Local output MLCC. Existing U42 input bulk C140 remains connected; qualify loop stability with total capacitance.",
+      "manufacturer": "Murata",
+      "group": "16_Orange_Pi_Power",
+      "near": "U60",
+      "uuid": "83c82fe9-1f15-5cc3-886b-1a3d5894a15a",
+      "fp_local": "MOSS:Capacitor_SMD_C_1206_3216Metric",
+      "sym": "C164_22uF___10V_X7R",
+      "symbol_angle": 90,
+      "symbol_points": {
+        "1": [
+          0.0,
+          3.81,
+          270.0
+        ],
+        "2": [
+          0.0,
+          -3.81,
+          90.0
+        ]
+      },
+      "symbol_size": [
+        12.7,
+        10.16
+      ]
+    },
+    {
+      "ref": "C165",
+      "value": "22uF / 10V X7R",
+      "fp": "Capacitor_SMD:C_1206_3216Metric",
+      "mpn": "GRM31CR71A226KE15L",
+      "pins": {
+        "1": [
+          "1",
+          "V5_HOST_RAW",
+          "passive"
+        ],
+        "2": [
+          "2",
+          "GND",
+          "passive"
+        ]
+      },
+      "kind": "C",
+      "desc": "Local output MLCC. Existing U42 input bulk C140 remains connected; qualify loop stability with total capacitance.",
+      "manufacturer": "Murata",
+      "group": "16_Orange_Pi_Power",
+      "near": "U60",
+      "uuid": "7732c046-47b0-5853-92bf-fb45f99c629d",
+      "fp_local": "MOSS:Capacitor_SMD_C_1206_3216Metric",
+      "sym": "C165_22uF___10V_X7R",
+      "symbol_angle": 90,
+      "symbol_points": {
+        "1": [
+          0.0,
+          3.81,
+          270.0
+        ],
+        "2": [
+          0.0,
+          -3.81,
+          90.0
+        ]
+      },
+      "symbol_size": [
+        12.7,
+        10.16
+      ]
+    },
+    {
+      "ref": "C166",
+      "value": "1uF / 10V",
+      "fp": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "GRM188R61A105KA61D",
+      "pins": {
+        "1": [
+          "1",
+          "HOST_VCC",
+          "passive"
+        ],
+        "2": [
+          "2",
+          "GND",
+          "passive"
+        ]
+      },
+      "kind": "C",
+      "desc": "MP9447 VCC local bypass.",
+      "manufacturer": "Murata",
+      "group": "16_Orange_Pi_Power",
+      "near": "U60",
+      "uuid": "0ff787a4-3985-58f0-b58e-fc3799bf827f",
+      "fp_local": "MOSS:Capacitor_SMD_C_0603_1608Metric",
+      "sym": "C166_1uF___10V",
+      "symbol_angle": 90,
+      "symbol_points": {
+        "1": [
+          0.0,
+          3.81,
+          270.0
+        ],
+        "2": [
+          0.0,
+          -3.81,
+          90.0
+        ]
+      },
+      "symbol_size": [
+        12.7,
+        10.16
+      ]
+    },
+    {
+      "ref": "C167",
+      "value": "100nF / 50V X7R",
+      "fp": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "GRM188R71H104KA93D",
+      "pins": {
+        "1": [
+          "1",
+          "HOST_BST_CAP",
+          "passive"
+        ],
+        "2": [
+          "2",
+          "HOST_SW",
+          "passive"
+        ]
+      },
+      "kind": "C",
+      "desc": "Bootstrap capacitor. R212 between BST and bootstrap capacitor.",
+      "manufacturer": "Murata",
+      "group": "16_Orange_Pi_Power",
+      "near": "U60",
+      "uuid": "fc209874-d722-5e54-b7c3-ce474ffca062",
+      "fp_local": "MOSS:Capacitor_SMD_C_0603_1608Metric",
+      "sym": "C167_100nF___50V_X7R",
+      "symbol_angle": 90,
+      "symbol_points": {
+        "1": [
+          0.0,
+          3.81,
+          270.0
+        ],
+        "2": [
+          0.0,
+          -3.81,
+          90.0
+        ]
+      },
+      "symbol_size": [
+        12.7,
+        10.16
+      ]
+    },
+    {
+      "ref": "C168",
+      "value": "33nF / 50V X7R",
+      "fp": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "GRM188R71H333KA61D",
+      "pins": {
+        "1": [
+          "1",
+          "HOST_SS",
+          "passive"
+        ],
+        "2": [
+          "2",
+          "GND",
+          "passive"
+        ]
+      },
+      "kind": "C",
+      "desc": "Soft-start capacitor. Approximately3.16ms nominal from0.815V and8.5uA.",
+      "manufacturer": "Murata",
+      "group": "16_Orange_Pi_Power",
+      "near": "U60",
+      "uuid": "c00876a0-7c91-5e7f-a69d-50de8df05a7b",
+      "fp_local": "MOSS:Capacitor_SMD_C_0603_1608Metric",
+      "sym": "C168_33nF___50V_X7R",
+      "symbol_angle": 90,
+      "symbol_points": {
+        "1": [
+          0.0,
+          3.81,
+          270.0
+        ],
+        "2": [
+          0.0,
+          -3.81,
+          90.0
+        ]
+      },
+      "symbol_size": [
+        12.7,
+        10.16
+      ]
+    },
+    {
+      "ref": "C169",
+      "value": "390pF / C0G",
+      "fp": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "GRM1885C1H391JA01D",
+      "pins": {
+        "1": [
+          "1",
+          "HOST_RAMP",
+          "passive"
+        ],
+        "2": [
+          "2",
+          "HOST_FB",
+          "passive"
+        ]
+      },
+      "kind": "C",
+      "desc": "AC ripple injection capacitor, MPS500kHz application circuit.",
+      "manufacturer": "Murata",
+      "group": "16_Orange_Pi_Power",
+      "near": "U60",
+      "uuid": "89eed230-e8ef-50c1-a019-0d0feefed865",
+      "fp_local": "MOSS:Capacitor_SMD_C_0603_1608Metric",
+      "sym": "C169_390pF___C0G",
+      "symbol_angle": 90,
+      "symbol_points": {
+        "1": [
+          0.0,
+          3.81,
+          270.0
+        ],
+        "2": [
+          0.0,
+          -3.81,
+          90.0
+        ]
+      },
+      "symbol_size": [
+        12.7,
+        10.16
+      ]
+    },
+    {
+      "ref": "R210",
+      "value": "499k",
+      "fp": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "RC0603FR-07499KL",
+      "pins": {
+        "1": [
+          "1",
+          "HOST_BUCK_IN",
+          "passive"
+        ],
+        "2": [
+          "2",
+          "HOST_EN",
+          "passive"
+        ]
+      },
+      "kind": "R",
+      "desc": "EN pullup per MPS reference. Host remains powered during actuator E-stop.",
+      "manufacturer": "Yageo",
+      "group": "16_Orange_Pi_Power",
+      "near": "U60",
+      "uuid": "1312499f-0b11-53b0-96bb-020e9673c548",
+      "fp_local": "MOSS:Resistor_SMD_R_0603_1608Metric",
+      "sym": "R210_499k",
+      "symbol_angle": 90,
+      "symbol_points": {
+        "1": [
+          0.0,
+          3.81,
+          270.0
+        ],
+        "2": [
+          0.0,
+          -3.81,
+          90.0
+        ]
+      },
+      "symbol_size": [
+        12.7,
+        10.16
+      ]
+    },
+    {
+      "ref": "R211",
+      "value": "100k",
+      "fp": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "RC0603FR-07100KL",
+      "pins": {
+        "1": [
+          "1",
+          "HOST_FREQ",
+          "passive"
+        ],
+        "2": [
+          "2",
+          "GND",
+          "passive"
+        ]
+      },
+      "kind": "R",
+      "desc": "Frequency setting, MPS nominal500kHz design.",
+      "manufacturer": "Yageo",
+      "group": "16_Orange_Pi_Power",
+      "near": "U60",
+      "uuid": "a6c29787-18b1-57e9-8c31-b2145d2619e2",
+      "fp_local": "MOSS:Resistor_SMD_R_0603_1608Metric",
+      "sym": "R211_100k",
+      "symbol_angle": 90,
+      "symbol_points": {
+        "1": [
+          0.0,
+          3.81,
+          270.0
+        ],
+        "2": [
+          0.0,
+          -3.81,
+          90.0
+        ]
+      },
+      "symbol_size": [
+        12.7,
+        10.16
+      ]
+    },
+    {
+      "ref": "R212",
+      "value": "4.7",
+      "fp": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "RC0603FR-074R7L",
+      "pins": {
+        "1": [
+          "1",
+          "HOST_BST",
+          "passive"
+        ],
+        "2": [
+          "2",
+          "HOST_BST_CAP",
+          "passive"
+        ]
+      },
+      "kind": "R",
+      "desc": "Bootstrap damping resistor per MPS5V reference.",
+      "manufacturer": "Yageo",
+      "group": "16_Orange_Pi_Power",
+      "near": "U60",
+      "uuid": "315e2001-b8f3-579a-9221-f655eb07728e",
+      "fp_local": "MOSS:Resistor_SMD_R_0603_1608Metric",
+      "sym": "R212_4_7",
+      "symbol_angle": 90,
+      "symbol_points": {
+        "1": [
+          0.0,
+          3.81,
+          270.0
+        ],
+        "2": [
+          0.0,
+          -3.81,
+          90.0
+        ]
+      },
+      "symbol_size": [
+        12.7,
+        10.16
+      ]
+    },
+    {
+      "ref": "R213",
+      "value": "53.6k",
+      "fp": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "RC0603FR-0753K6L",
+      "pins": {
+        "1": [
+          "1",
+          "V5_HOST_RAW",
+          "passive"
+        ],
+        "2": [
+          "2",
+          "HOST_FB",
+          "passive"
+        ]
+      },
+      "kind": "R",
+      "desc": "Feedback upper resistor per MPS5V external-ramp application. DC ripple injection affects output setpoint; simple divider arithmetic is insufficient.",
+      "manufacturer": "Yageo",
+      "group": "16_Orange_Pi_Power",
+      "near": "U60",
+      "uuid": "dde2cb20-8c3d-5f4c-aca5-ead2ace289da",
+      "fp_local": "MOSS:Resistor_SMD_R_0603_1608Metric",
+      "sym": "R213_53_6k",
+      "symbol_angle": 90,
+      "symbol_points": {
+        "1": [
+          0.0,
+          3.81,
+          270.0
+        ],
+        "2": [
+          0.0,
+          -3.81,
+          90.0
+        ]
+      },
+      "symbol_size": [
+        12.7,
+        10.16
+      ]
+    },
+    {
+      "ref": "R214",
+      "value": "10k",
+      "fp": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "RC0603FR-0710KL",
+      "pins": {
+        "1": [
+          "1",
+          "HOST_FB",
+          "passive"
+        ],
+        "2": [
+          "2",
+          "GND",
+          "passive"
+        ]
+      },
+      "kind": "R",
+      "desc": "Feedback lower resistor per MPS5V reference.",
+      "manufacturer": "Yageo",
+      "group": "16_Orange_Pi_Power",
+      "near": "U60",
+      "uuid": "6328793b-bd95-5a1a-acf0-66861cd44473",
+      "fp_local": "MOSS:Resistor_SMD_R_0603_1608Metric",
+      "sym": "R214_10k",
+      "symbol_angle": 90,
+      "symbol_points": {
+        "1": [
+          0.0,
+          3.81,
+          270.0
+        ],
+        "2": [
+          0.0,
+          -3.81,
+          90.0
+        ]
+      },
+      "symbol_size": [
+        12.7,
+        10.16
+      ]
+    },
+    {
+      "ref": "R215",
+      "value": "845k",
+      "fp": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "RC0603FR-07845KL",
+      "pins": {
+        "1": [
+          "1",
+          "HOST_SW",
+          "passive"
+        ],
+        "2": [
+          "2",
+          "HOST_RAMP",
+          "passive"
+        ]
+      },
+      "kind": "R",
+      "desc": "Ripple injection resistor per MPS500kHz reference.",
+      "manufacturer": "Yageo",
+      "group": "16_Orange_Pi_Power",
+      "near": "U60",
+      "uuid": "355267cc-a85f-5cd8-91ae-a61aeddc2293",
+      "fp_local": "MOSS:Resistor_SMD_R_0603_1608Metric",
+      "sym": "R215_845k",
+      "symbol_angle": 90,
+      "symbol_points": {
+        "1": [
+          0.0,
+          3.81,
+          270.0
+        ],
+        "2": [
+          0.0,
+          -3.81,
+          90.0
+        ]
+      },
+      "symbol_size": [
+        12.7,
+        10.16
+      ]
     }
   ],
   "notes": {
@@ -11090,10 +11944,11 @@
     "07_Battery_Voltage": "INA226bus-voltage only,0x40. Shuntinputs shortedGND. Motor currents use independent PWM-compatible measurement channels.",
     "09_Audio_Power": "Existing separate5.077V audio buck retained to avoid spending hostUSB current budget on speaker peaks. F2 protects its input branch.",
     "10_Battery_Power": "Externally fused3S input and inputTVS. Q50 feeds Cytron/servo; host and audio remain unswitched. Conductor/connector/regeneration qualification remains required.",
-    "16_Orange_Pi_Power": "Soldered Waveshare5Vmodule andcompact3.15ASMDinputfuse. USB-CsourceCC/attach/switch control. Never bridge host output to USBdeviceVBUS.",
+    "16_Orange_Pi_Power": "Integrated MP9447 host supply and compact 3.15A SMD input fuse. USB-C 3A source retains U42/J20. Never bridge host output to USB device VBUS. Engineering candidate; not hardware qualified.",
     "17_Motor_Current": "Separate left/right in-linebidirectional motor currents; two shunts andPWM-rejecting amplifiers. ValidateADCcalibration,transients and thermal performance.",
     "18_Actuator_Cutoff": "One physical NC opens Q50 gate sink regardless of MCU command. Second NC requests MCU reset; release requires fresh manual arming. Unknown actual button terminal orientation must be verified. Single MOSFET is not redundant or safety-certified; inrush, stored energy and regeneration require bench tests.",
-    "19_Fans": "Two12V nominal3010 fans,common1A fuse upstream of Q50;0.2A combined assumed,not measured. Verify XH mate/polarity,voltage/startup and wire limits."
+    "19_Fans": "Two12V nominal3010 fans,common1A fuse upstream of Q50;0.2A combined assumed,not measured. Verify XH mate/polarity,voltage/startup and wire limits.",
+    "PCBWay_review_20261031": "U14/U17/U43 mask bridges omitted locally; U2 changed to available TI Q1 DCK code; J7 fixture/seating and J8 manual placement specified. MOD1 removed and integrated converter/H1 grounding retained."
   },
   "root_uuid": "f243e979-af0d-59fe-ba61-8f0ca6ff181c"
 }

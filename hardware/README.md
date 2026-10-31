@@ -12,7 +12,7 @@ See the [print catalogue](../3DPrinting.md), [BOM](../BOM.md) and [assembly guid
 
 ## Electronics prototypes
 
-[MOSS CORE V0.7 — Prototype](electronics/moss-core-v0.7/) is the single current community design review: editable KiCad files, component views, grouped BOM, connector guide, Gerbers and static review evidence. It combines the Orange Pi power module, per-motor current sensing and fan outputs, with corrected connector legends and a compact host-branch fuse. **Not fabricated yet: not production-ready or hardware-qualified.** Electrical, connector and real-load review is welcome. Hardware revision letters are reserved for fabricated iterations.
+[MOSS CORE V0.7 — Prototype](electronics/moss-core-v0.7/) is the single current community design review: editable KiCad files, component views, grouped BOM, connector guide, Gerbers and static review evidence. **Updated 31 October 2026:** the Orange Pi converter is now integrated, H1 provides a GND connection, and manufacturing-review corrections are included. Per-motor current sensing, fan outputs and the compact host-branch fuse remain. **Not fabricated yet: not production-ready or hardware-qualified.** Electrical, connector and real-load review is welcome. Hardware revision letters are reserved for fabricated iterations.
 
 [MOSS Core V1D](electronics/moss-core-v1d/) is retained as the previous routed design review. Its assumptions and package are historical; it is not the current V0.7 design.
 

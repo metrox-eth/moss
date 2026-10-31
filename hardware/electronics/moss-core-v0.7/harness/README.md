@@ -6,6 +6,8 @@ A removable wiring loom for **MOSS, the litter-picking rover**, connecting the C
 
 **Design study for prototype quotation.** Physical fit has not yet been tested. The released rover remains V0.6/R92.
 
+**Board snapshot: 30 October 2026.** This viewer, film and CAD still show the separate Waveshare power module. The [current Core PCB](../) was updated on 31 October with an integrated converter and a GND mounting connection. The harness geometry and its recorded checks have not been updated to that board.
+
 ## Explore
 
 - [Studio film](media/MOSS_Harness_Story.mp4)

@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>electrical/MOSS_Core_V07_Prototype.kicad_sch</source>
-    <date>2026-10-30T19:00:07</date>
+    <date>2026-10-31T14:59:23</date>
     <tool>Eeschema 10.0.6</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -186,10 +186,10 @@
     </sheet>
     <sheet number="11" name="/16 Orange Pi Power/" tstamps="/28dd437e-34c6-5785-b3f5-1df4850f1439/">
       <title_block>
-        <title>MOSS Core V0.7 PROTOTYPE / 16 Orange Pi Power</title>
+        <title>MOSS Core V0.7 PROTOTYPE / Integrated host supply</title>
         <company>MOSS / Laurent &amp; Codex</company>
         <rev>V0.7 PROTOTYPE</rev>
-        <date>2026-10-29</date>
+        <date>2026-10-31</date>
         <source>16_Orange_Pi_Power.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -787,17 +787,17 @@
       </units>
     </comp>
     <comp ref="U2">
-      <value>TPD2E2U06DCKR</value>
+      <value>TPD2E2U06QDCKRQ1</value>
       <footprint>MOSS:Package_TO_SOT_SMD_SOT-323_SC-70</footprint>
       <description>Two-channel 1.5pF ESD. DCK: 1 IO1, 2 IO2, 3 GND. Place at USB connector, direct short GND vias.</description>
       <fields>
-        <field name="MPN">TPD2E2U06DCKR</field>
+        <field name="MPN">TPD2E2U06QDCKRQ1</field>
         <field name="Footprint">MOSS:Package_TO_SOT_SMD_SOT-323_SC-70</field>
         <field name="Datasheet"/>
         <field name="Description">Two-channel 1.5pF ESD. DCK: 1 IO1, 2 IO2, 3 GND. Place at USB connector, direct short GND vias.</field>
       </fields>
-      <libsource lib="MOSS" part="U2_TPD2E2U06DCKR" description="Two-channel 1.5pF ESD. DCK: 1 IO1, 2 IO2, 3 GND. Place at USB connector, direct short GND vias."/>
-      <property name="MPN" value="TPD2E2U06DCKR"/>
+      <libsource lib="MOSS" part="U2_TPD2E2U06QDCKRQ1" description="Two-channel 1.5pF ESD. DCK: 1 IO1, 2 IO2, 3 GND. Place at USB connector, direct short GND vias."/>
+      <property name="MPN" value="TPD2E2U06QDCKRQ1"/>
       <property name="Sheetname" value="01 USB Power"/>
       <property name="Sheetfile" value="01_USB_Power.kicad_sch"/>
       <sheetpath names="/01 USB Power/" tstamps="/cb99ba43-8952-5bb3-ae00-eb2656403989/"/>
@@ -966,16 +966,17 @@
       </units>
     </comp>
     <comp ref="H1">
-      <value>M2.5 / drill 2.7 / keepout D8</value>
-      <footprint>MOSS:MOSS_Mount_M2p5_2p7_D8</footprint>
+      <value>M2.5 GND bond / drill2.7</value>
+      <footprint>MOSS:MOSS_Mount_M2p5_GND_D8</footprint>
+      <description>H1: plated2.7mm M2.5 hole, exposed5.4mm GND contact on both sides, eight0.5mm plated stitch holes. D8 mechanical reservation retained. Bonding lug/strap provision, not a protective-earth or ESD certification.</description>
       <fields>
-        <field name="MPN">NPTH</field>
-        <field name="Footprint">MOSS:MOSS_Mount_M2p5_2p7_D8</field>
+        <field name="MPN">PCB_FEATURE</field>
+        <field name="Footprint">MOSS:MOSS_Mount_M2p5_GND_D8</field>
         <field name="Datasheet"/>
-        <field name="Description"/>
+        <field name="Description">H1: plated2.7mm M2.5 hole, exposed5.4mm GND contact on both sides, eight0.5mm plated stitch holes. D8 mechanical reservation retained. Bonding lug/strap provision, not a protective-earth or ESD certification.</field>
       </fields>
-      <libsource lib="MOSS" part="H1_M2_5___drill_2_7___keepout_D8" description=""/>
-      <property name="MPN" value="NPTH"/>
+      <libsource lib="MOSS" part="H1_M2p5_GND_bond" description=""/>
+      <property name="MPN" value="PCB_FEATURE"/>
       <property name="Sheetname" value="02 Controller"/>
       <property name="Sheetfile" value="02_Controller.kicad_sch"/>
       <property name="exclude_from_bom"/>
@@ -983,7 +984,9 @@
       <tstamps>a9160f5c-2818-5d9c-a106-49794387e692</tstamps>
       <units>
         <unit name="A">
-          <pins/>
+          <pins>
+            <pin num="1"/>
+          </pins>
         </unit>
       </units>
     </comp>
@@ -4477,6 +4480,231 @@
         </unit>
       </units>
     </comp>
+    <comp ref="C160">
+      <value>22uF / 25V X7R</value>
+      <footprint>MOSS:Capacitor_SMD_C_1210_3225Metric</footprint>
+      <description>Local input reservoir per MPS Fig11, with C162/C163 HF bypasses at the two IN sides. DC-bias and RMS ripple derating apply.</description>
+      <fields>
+        <field name="MPN">GRM32ER71E226KE15L</field>
+        <field name="Footprint">MOSS:Capacitor_SMD_C_1210_3225Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Local input reservoir per MPS Fig11, with C162/C163 HF bypasses at the two IN sides. DC-bias and RMS ripple derating apply.</field>
+      </fields>
+      <libsource lib="MOSS" part="C160_22uF___25V_X7R" description="Local input reservoir per MPS Fig11, with C162/C163 HF bypasses at the two IN sides. DC-bias and RMS ripple derating apply."/>
+      <property name="MPN" value="GRM32ER71E226KE15L"/>
+      <property name="Sheetname" value="16 Orange Pi Power"/>
+      <property name="Sheetfile" value="16_Orange_Pi_Power.kicad_sch"/>
+      <sheetpath names="/16 Orange Pi Power/" tstamps="/28dd437e-34c6-5785-b3f5-1df4850f1439/"/>
+      <tstamps>d7246a0a-caf5-5a66-a232-230c02e74237</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C162">
+      <value>100nF / 50V X7R</value>
+      <footprint>MOSS:Capacitor_SMD_C_0603_1608Metric</footprint>
+      <description>HF input bypass at IN pin8/pin19, short PGND return.</description>
+      <fields>
+        <field name="MPN">GRM188R71H104KA93D</field>
+        <field name="Footprint">MOSS:Capacitor_SMD_C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">HF input bypass at IN pin8/pin19, short PGND return.</field>
+      </fields>
+      <libsource lib="MOSS" part="C162_100nF___50V_X7R" description="HF input bypass at IN pin8/pin19, short PGND return."/>
+      <property name="MPN" value="GRM188R71H104KA93D"/>
+      <property name="Sheetname" value="16 Orange Pi Power"/>
+      <property name="Sheetfile" value="16_Orange_Pi_Power.kicad_sch"/>
+      <sheetpath names="/16 Orange Pi Power/" tstamps="/28dd437e-34c6-5785-b3f5-1df4850f1439/"/>
+      <tstamps>64f40ef4-8618-5f06-bbb0-370ac6cc8bc5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C163">
+      <value>100nF / 50V X7R</value>
+      <footprint>MOSS:Capacitor_SMD_C_0603_1608Metric</footprint>
+      <description>HF input bypass at IN pin8/pin19, short PGND return.</description>
+      <fields>
+        <field name="MPN">GRM188R71H104KA93D</field>
+        <field name="Footprint">MOSS:Capacitor_SMD_C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">HF input bypass at IN pin8/pin19, short PGND return.</field>
+      </fields>
+      <libsource lib="MOSS" part="C163_100nF___50V_X7R" description="HF input bypass at IN pin8/pin19, short PGND return."/>
+      <property name="MPN" value="GRM188R71H104KA93D"/>
+      <property name="Sheetname" value="16 Orange Pi Power"/>
+      <property name="Sheetfile" value="16_Orange_Pi_Power.kicad_sch"/>
+      <sheetpath names="/16 Orange Pi Power/" tstamps="/28dd437e-34c6-5785-b3f5-1df4850f1439/"/>
+      <tstamps>1c77a2ca-df4d-5750-ae53-a7371be7357c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C164">
+      <value>22uF / 10V X7R</value>
+      <footprint>MOSS:Capacitor_SMD_C_1206_3216Metric</footprint>
+      <description>Local output MLCC. Existing U42 input bulk C140 remains connected; qualify loop stability with total capacitance.</description>
+      <fields>
+        <field name="MPN">GRM31CR71A226KE15L</field>
+        <field name="Footprint">MOSS:Capacitor_SMD_C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Local output MLCC. Existing U42 input bulk C140 remains connected; qualify loop stability with total capacitance.</field>
+      </fields>
+      <libsource lib="MOSS" part="C164_22uF___10V_X7R" description="Local output MLCC. Existing U42 input bulk C140 remains connected; qualify loop stability with total capacitance."/>
+      <property name="MPN" value="GRM31CR71A226KE15L"/>
+      <property name="Sheetname" value="16 Orange Pi Power"/>
+      <property name="Sheetfile" value="16_Orange_Pi_Power.kicad_sch"/>
+      <sheetpath names="/16 Orange Pi Power/" tstamps="/28dd437e-34c6-5785-b3f5-1df4850f1439/"/>
+      <tstamps>83c82fe9-1f15-5cc3-886b-1a3d5894a15a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C165">
+      <value>22uF / 10V X7R</value>
+      <footprint>MOSS:Capacitor_SMD_C_1206_3216Metric</footprint>
+      <description>Local output MLCC. Existing U42 input bulk C140 remains connected; qualify loop stability with total capacitance.</description>
+      <fields>
+        <field name="MPN">GRM31CR71A226KE15L</field>
+        <field name="Footprint">MOSS:Capacitor_SMD_C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Local output MLCC. Existing U42 input bulk C140 remains connected; qualify loop stability with total capacitance.</field>
+      </fields>
+      <libsource lib="MOSS" part="C165_22uF___10V_X7R" description="Local output MLCC. Existing U42 input bulk C140 remains connected; qualify loop stability with total capacitance."/>
+      <property name="MPN" value="GRM31CR71A226KE15L"/>
+      <property name="Sheetname" value="16 Orange Pi Power"/>
+      <property name="Sheetfile" value="16_Orange_Pi_Power.kicad_sch"/>
+      <sheetpath names="/16 Orange Pi Power/" tstamps="/28dd437e-34c6-5785-b3f5-1df4850f1439/"/>
+      <tstamps>7732c046-47b0-5853-92bf-fb45f99c629d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C166">
+      <value>1uF / 10V</value>
+      <footprint>MOSS:Capacitor_SMD_C_0603_1608Metric</footprint>
+      <description>MP9447 VCC local bypass.</description>
+      <fields>
+        <field name="MPN">GRM188R61A105KA61D</field>
+        <field name="Footprint">MOSS:Capacitor_SMD_C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">MP9447 VCC local bypass.</field>
+      </fields>
+      <libsource lib="MOSS" part="C166_1uF___10V" description="MP9447 VCC local bypass."/>
+      <property name="MPN" value="GRM188R61A105KA61D"/>
+      <property name="Sheetname" value="16 Orange Pi Power"/>
+      <property name="Sheetfile" value="16_Orange_Pi_Power.kicad_sch"/>
+      <sheetpath names="/16 Orange Pi Power/" tstamps="/28dd437e-34c6-5785-b3f5-1df4850f1439/"/>
+      <tstamps>0ff787a4-3985-58f0-b58e-fc3799bf827f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C167">
+      <value>100nF / 50V X7R</value>
+      <footprint>MOSS:Capacitor_SMD_C_0603_1608Metric</footprint>
+      <description>Bootstrap capacitor. R212 between BST and bootstrap capacitor.</description>
+      <fields>
+        <field name="MPN">GRM188R71H104KA93D</field>
+        <field name="Footprint">MOSS:Capacitor_SMD_C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Bootstrap capacitor. R212 between BST and bootstrap capacitor.</field>
+      </fields>
+      <libsource lib="MOSS" part="C167_100nF___50V_X7R" description="Bootstrap capacitor. R212 between BST and bootstrap capacitor."/>
+      <property name="MPN" value="GRM188R71H104KA93D"/>
+      <property name="Sheetname" value="16 Orange Pi Power"/>
+      <property name="Sheetfile" value="16_Orange_Pi_Power.kicad_sch"/>
+      <sheetpath names="/16 Orange Pi Power/" tstamps="/28dd437e-34c6-5785-b3f5-1df4850f1439/"/>
+      <tstamps>fc209874-d722-5e54-b7c3-ce474ffca062</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C168">
+      <value>33nF / 50V X7R</value>
+      <footprint>MOSS:Capacitor_SMD_C_0603_1608Metric</footprint>
+      <description>Soft-start capacitor. Approximately3.16ms nominal from0.815V and8.5uA.</description>
+      <fields>
+        <field name="MPN">GRM188R71H333KA61D</field>
+        <field name="Footprint">MOSS:Capacitor_SMD_C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Soft-start capacitor. Approximately3.16ms nominal from0.815V and8.5uA.</field>
+      </fields>
+      <libsource lib="MOSS" part="C168_33nF___50V_X7R" description="Soft-start capacitor. Approximately3.16ms nominal from0.815V and8.5uA."/>
+      <property name="MPN" value="GRM188R71H333KA61D"/>
+      <property name="Sheetname" value="16 Orange Pi Power"/>
+      <property name="Sheetfile" value="16_Orange_Pi_Power.kicad_sch"/>
+      <sheetpath names="/16 Orange Pi Power/" tstamps="/28dd437e-34c6-5785-b3f5-1df4850f1439/"/>
+      <tstamps>c00876a0-7c91-5e7f-a69d-50de8df05a7b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C169">
+      <value>390pF / C0G</value>
+      <footprint>MOSS:Capacitor_SMD_C_0603_1608Metric</footprint>
+      <description>AC ripple injection capacitor, MPS500kHz application circuit.</description>
+      <fields>
+        <field name="MPN">GRM1885C1H391JA01D</field>
+        <field name="Footprint">MOSS:Capacitor_SMD_C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">AC ripple injection capacitor, MPS500kHz application circuit.</field>
+      </fields>
+      <libsource lib="MOSS" part="C169_390pF___C0G" description="AC ripple injection capacitor, MPS500kHz application circuit."/>
+      <property name="MPN" value="GRM1885C1H391JA01D"/>
+      <property name="Sheetname" value="16 Orange Pi Power"/>
+      <property name="Sheetfile" value="16_Orange_Pi_Power.kicad_sch"/>
+      <sheetpath names="/16 Orange Pi Power/" tstamps="/28dd437e-34c6-5785-b3f5-1df4850f1439/"/>
+      <tstamps>89eed230-e8ef-50c1-a019-0d0feefed865</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
     <comp ref="F1">
       <value>3.15A / compact host input fuse</value>
       <footprint>MOSS:Fuse_Fuse_Littelfuse-NANO2-885</footprint>
@@ -4542,35 +4770,27 @@
         </unit>
       </units>
     </comp>
-    <comp ref="MOD1">
-      <value>DC5-36-TO-DC3V3-5 / 5V</value>
-      <footprint>MOSS:MOSS_Power_Waveshare_DC5_36_TO_DC3V3_5_SMD_33x16mm_HandSolder</footprint>
-      <description>Waveshare SKU 29035 DC5-36-TO-DC3V3-5 SMD version, factory 5V output; not terminal/header SKU29036. 33x16x5.7mm with official PcbLib castellated lands. Prefer PCBWay sourcing/assembly if accepted; not quoted or confirmed. User soldering is fallback only. Host voltage and thermal budget remain unqualified.</description>
+    <comp ref="L3">
+      <value>10uH</value>
+      <footprint>MOSS:Inductor_SMD_L_Bourns_SRP6060FA</footprint>
+      <description>Bourns 10uH +/-20%, Isat7.6A typical, Irms5A for20C rise/7A for40C rise. Existing quoted BOM article reused. Verify inductance at temperature and fault-current behavior.</description>
       <fields>
-        <field name="MPN">29035</field>
-        <field name="Footprint">MOSS:MOSS_Power_Waveshare_DC5_36_TO_DC3V3_5_SMD_33x16mm_HandSolder</field>
+        <field name="MPN">SRP6060FA-100M</field>
+        <field name="Footprint">MOSS:Inductor_SMD_L_Bourns_SRP6060FA</field>
         <field name="Datasheet"/>
-        <field name="Description">Waveshare SKU 29035 DC5-36-TO-DC3V3-5 SMD version, factory 5V output; not terminal/header SKU29036. 33x16x5.7mm with official PcbLib castellated lands. Prefer PCBWay sourcing/assembly if accepted; not quoted or confirmed. User soldering is fallback only. Host voltage and thermal budget remain unqualified.</field>
+        <field name="Description">Bourns 10uH +/-20%, Isat7.6A typical, Irms5A for20C rise/7A for40C rise. Existing quoted BOM article reused. Verify inductance at temperature and fault-current behavior.</field>
       </fields>
-      <libsource lib="MOSS" part="MOD1_DC5_36_TO_DC3V3_5___5V" description="Waveshare SKU 29035 DC5-36-TO-DC3V3-5 SMD version, factory 5V output; not terminal/header SKU29036. 33x16x5.7mm with official PcbLib castellated lands. Prefer PCBWay sourcing/assembly if accepted; not quoted or confirmed. User soldering is fallback only. Host voltage and thermal budget remain unqualified."/>
-      <property name="MPN" value="29035"/>
+      <libsource lib="MOSS" part="L3_10uH" description="Bourns 10uH +/-20%, Isat7.6A typical, Irms5A for20C rise/7A for40C rise. Existing quoted BOM article reused. Verify inductance at temperature and fault-current behavior."/>
+      <property name="MPN" value="SRP6060FA-100M"/>
       <property name="Sheetname" value="16 Orange Pi Power"/>
       <property name="Sheetfile" value="16_Orange_Pi_Power.kicad_sch"/>
       <sheetpath names="/16 Orange Pi Power/" tstamps="/28dd437e-34c6-5785-b3f5-1df4850f1439/"/>
-      <tstamps>5650d25a-f455-587a-a7e5-815ed8f02f77</tstamps>
+      <tstamps>a7a80635-6453-5808-af46-b3005224636b</tstamps>
       <units>
         <unit name="A">
           <pins>
             <pin num="1"/>
             <pin num="2"/>
-            <pin num="6"/>
-            <pin num="7"/>
-            <pin num="3"/>
-            <pin num="4"/>
-            <pin num="8"/>
-            <pin num="9"/>
-            <pin num="10"/>
-            <pin num="5"/>
           </pins>
         </unit>
       </units>
@@ -4591,6 +4811,156 @@
       <property name="Sheetfile" value="16_Orange_Pi_Power.kicad_sch"/>
       <sheetpath names="/16 Orange Pi Power/" tstamps="/28dd437e-34c6-5785-b3f5-1df4850f1439/"/>
       <tstamps>de4cf840-b5c5-5191-84ee-fc2e74600601</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R210">
+      <value>499k</value>
+      <footprint>MOSS:Resistor_SMD_R_0603_1608Metric</footprint>
+      <description>EN pullup per MPS reference. Host remains powered during actuator E-stop.</description>
+      <fields>
+        <field name="MPN">RC0603FR-07499KL</field>
+        <field name="Footprint">MOSS:Resistor_SMD_R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">EN pullup per MPS reference. Host remains powered during actuator E-stop.</field>
+      </fields>
+      <libsource lib="MOSS" part="R210_499k" description="EN pullup per MPS reference. Host remains powered during actuator E-stop."/>
+      <property name="MPN" value="RC0603FR-07499KL"/>
+      <property name="Sheetname" value="16 Orange Pi Power"/>
+      <property name="Sheetfile" value="16_Orange_Pi_Power.kicad_sch"/>
+      <sheetpath names="/16 Orange Pi Power/" tstamps="/28dd437e-34c6-5785-b3f5-1df4850f1439/"/>
+      <tstamps>1312499f-0b11-53b0-96bb-020e9673c548</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R211">
+      <value>100k</value>
+      <footprint>MOSS:Resistor_SMD_R_0603_1608Metric</footprint>
+      <description>Frequency setting, MPS nominal500kHz design.</description>
+      <fields>
+        <field name="MPN">RC0603FR-07100KL</field>
+        <field name="Footprint">MOSS:Resistor_SMD_R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Frequency setting, MPS nominal500kHz design.</field>
+      </fields>
+      <libsource lib="MOSS" part="R211_100k" description="Frequency setting, MPS nominal500kHz design."/>
+      <property name="MPN" value="RC0603FR-07100KL"/>
+      <property name="Sheetname" value="16 Orange Pi Power"/>
+      <property name="Sheetfile" value="16_Orange_Pi_Power.kicad_sch"/>
+      <sheetpath names="/16 Orange Pi Power/" tstamps="/28dd437e-34c6-5785-b3f5-1df4850f1439/"/>
+      <tstamps>a6c29787-18b1-57e9-8c31-b2145d2619e2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R212">
+      <value>4.7</value>
+      <footprint>MOSS:Resistor_SMD_R_0603_1608Metric</footprint>
+      <description>Bootstrap damping resistor per MPS5V reference.</description>
+      <fields>
+        <field name="MPN">RC0603FR-074R7L</field>
+        <field name="Footprint">MOSS:Resistor_SMD_R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Bootstrap damping resistor per MPS5V reference.</field>
+      </fields>
+      <libsource lib="MOSS" part="R212_4_7" description="Bootstrap damping resistor per MPS5V reference."/>
+      <property name="MPN" value="RC0603FR-074R7L"/>
+      <property name="Sheetname" value="16 Orange Pi Power"/>
+      <property name="Sheetfile" value="16_Orange_Pi_Power.kicad_sch"/>
+      <sheetpath names="/16 Orange Pi Power/" tstamps="/28dd437e-34c6-5785-b3f5-1df4850f1439/"/>
+      <tstamps>315e2001-b8f3-579a-9221-f655eb07728e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R213">
+      <value>53.6k</value>
+      <footprint>MOSS:Resistor_SMD_R_0603_1608Metric</footprint>
+      <description>Feedback upper resistor per MPS5V external-ramp application. DC ripple injection affects output setpoint; simple divider arithmetic is insufficient.</description>
+      <fields>
+        <field name="MPN">RC0603FR-0753K6L</field>
+        <field name="Footprint">MOSS:Resistor_SMD_R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Feedback upper resistor per MPS5V external-ramp application. DC ripple injection affects output setpoint; simple divider arithmetic is insufficient.</field>
+      </fields>
+      <libsource lib="MOSS" part="R213_53_6k" description="Feedback upper resistor per MPS5V external-ramp application. DC ripple injection affects output setpoint; simple divider arithmetic is insufficient."/>
+      <property name="MPN" value="RC0603FR-0753K6L"/>
+      <property name="Sheetname" value="16 Orange Pi Power"/>
+      <property name="Sheetfile" value="16_Orange_Pi_Power.kicad_sch"/>
+      <sheetpath names="/16 Orange Pi Power/" tstamps="/28dd437e-34c6-5785-b3f5-1df4850f1439/"/>
+      <tstamps>dde2cb20-8c3d-5f4c-aca5-ead2ace289da</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R214">
+      <value>10k</value>
+      <footprint>MOSS:Resistor_SMD_R_0603_1608Metric</footprint>
+      <description>Feedback lower resistor per MPS5V reference.</description>
+      <fields>
+        <field name="MPN">RC0603FR-0710KL</field>
+        <field name="Footprint">MOSS:Resistor_SMD_R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Feedback lower resistor per MPS5V reference.</field>
+      </fields>
+      <libsource lib="MOSS" part="R214_10k" description="Feedback lower resistor per MPS5V reference."/>
+      <property name="MPN" value="RC0603FR-0710KL"/>
+      <property name="Sheetname" value="16 Orange Pi Power"/>
+      <property name="Sheetfile" value="16_Orange_Pi_Power.kicad_sch"/>
+      <sheetpath names="/16 Orange Pi Power/" tstamps="/28dd437e-34c6-5785-b3f5-1df4850f1439/"/>
+      <tstamps>6328793b-bd95-5a1a-acf0-66861cd44473</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R215">
+      <value>845k</value>
+      <footprint>MOSS:Resistor_SMD_R_0603_1608Metric</footprint>
+      <description>Ripple injection resistor per MPS500kHz reference.</description>
+      <fields>
+        <field name="MPN">RC0603FR-07845KL</field>
+        <field name="Footprint">MOSS:Resistor_SMD_R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Ripple injection resistor per MPS500kHz reference.</field>
+      </fields>
+      <libsource lib="MOSS" part="R215_845k" description="Ripple injection resistor per MPS500kHz reference."/>
+      <property name="MPN" value="RC0603FR-07845KL"/>
+      <property name="Sheetname" value="16 Orange Pi Power"/>
+      <property name="Sheetfile" value="16_Orange_Pi_Power.kicad_sch"/>
+      <sheetpath names="/16 Orange Pi Power/" tstamps="/28dd437e-34c6-5785-b3f5-1df4850f1439/"/>
+      <tstamps>355267cc-a85f-5cd8-91ae-a61aeddc2293</tstamps>
       <units>
         <unit name="A">
           <pins>
@@ -4639,6 +5009,54 @@
             <pin num="17"/>
             <pin num="18"/>
             <pin num="19"/>
+            <pin num="20"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U60">
+      <value>MP9447GL-Z / integrated host buck</value>
+      <footprint>MOSS:MOSS_Power_MP9447_QFN25_3x4</footprint>
+      <description>MPS MP9447, 4.5-36V synchronous buck. 25 physical pads per manufacturer Rev1.22. 5V/500kHz application circuit. Intended 3S host branch; USB-C output remains limited by U42. Bench stability/thermal qualification required.</description>
+      <fields>
+        <field name="MPN">MP9447GL-Z</field>
+        <field name="Footprint">MOSS:MOSS_Power_MP9447_QFN25_3x4</field>
+        <field name="Datasheet"/>
+        <field name="Description">MPS MP9447, 4.5-36V synchronous buck. 25 physical pads per manufacturer Rev1.22. 5V/500kHz application circuit. Intended 3S host branch; USB-C output remains limited by U42. Bench stability/thermal qualification required.</field>
+      </fields>
+      <libsource lib="MOSS" part="U60_MP9447GL_Z___integrated_host_buck" description="MPS MP9447, 4.5-36V synchronous buck. 25 physical pads per manufacturer Rev1.22. 5V/500kHz application circuit. Intended 3S host branch; USB-C output remains limited by U42. Bench stability/thermal qualification required."/>
+      <property name="MPN" value="MP9447GL-Z"/>
+      <property name="Sheetname" value="16 Orange Pi Power"/>
+      <property name="Sheetfile" value="16_Orange_Pi_Power.kicad_sch"/>
+      <sheetpath names="/16 Orange Pi Power/" tstamps="/28dd437e-34c6-5785-b3f5-1df4850f1439/"/>
+      <tstamps>252b9384-ed5f-5c89-af9b-69d1d819ea22</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="10"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="21"/>
+            <pin num="22"/>
+            <pin num="23"/>
+            <pin num="24"/>
+            <pin num="25"/>
+            <pin num="1"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="9"/>
             <pin num="20"/>
           </pins>
         </unit>
@@ -5857,6 +6275,141 @@
         <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="MOSS" part="C160_22uF___25V_X7R">
+      <description>Local input reservoir per MPS Fig11, with C162/C163 HF bypasses at the two IN sides. DC-bias and RMS ripple derating apply.</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">22uF / 25V X7R</field>
+        <field name="Footprint">MOSS:Capacitor_SMD_C_1210_3225Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Local input reservoir per MPS Fig11, with C162/C163 HF bypasses at the two IN sides. DC-bias and RMS ripple derating apply.</field>
+        <field name="MPN">GRM32ER71E226KE15L</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MOSS" part="C162_100nF___50V_X7R">
+      <description>HF input bypass at IN pin8/pin19, short PGND return.</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100nF / 50V X7R</field>
+        <field name="Footprint">MOSS:Capacitor_SMD_C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">HF input bypass at IN pin8/pin19, short PGND return.</field>
+        <field name="MPN">GRM188R71H104KA93D</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MOSS" part="C163_100nF___50V_X7R">
+      <description>HF input bypass at IN pin8/pin19, short PGND return.</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100nF / 50V X7R</field>
+        <field name="Footprint">MOSS:Capacitor_SMD_C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">HF input bypass at IN pin8/pin19, short PGND return.</field>
+        <field name="MPN">GRM188R71H104KA93D</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MOSS" part="C164_22uF___10V_X7R">
+      <description>Local output MLCC. Existing U42 input bulk C140 remains connected; qualify loop stability with total capacitance.</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">22uF / 10V X7R</field>
+        <field name="Footprint">MOSS:Capacitor_SMD_C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Local output MLCC. Existing U42 input bulk C140 remains connected; qualify loop stability with total capacitance.</field>
+        <field name="MPN">GRM31CR71A226KE15L</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MOSS" part="C165_22uF___10V_X7R">
+      <description>Local output MLCC. Existing U42 input bulk C140 remains connected; qualify loop stability with total capacitance.</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">22uF / 10V X7R</field>
+        <field name="Footprint">MOSS:Capacitor_SMD_C_1206_3216Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Local output MLCC. Existing U42 input bulk C140 remains connected; qualify loop stability with total capacitance.</field>
+        <field name="MPN">GRM31CR71A226KE15L</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MOSS" part="C166_1uF___10V">
+      <description>MP9447 VCC local bypass.</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">1uF / 10V</field>
+        <field name="Footprint">MOSS:Capacitor_SMD_C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">MP9447 VCC local bypass.</field>
+        <field name="MPN">GRM188R61A105KA61D</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MOSS" part="C167_100nF___50V_X7R">
+      <description>Bootstrap capacitor. R212 between BST and bootstrap capacitor.</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100nF / 50V X7R</field>
+        <field name="Footprint">MOSS:Capacitor_SMD_C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Bootstrap capacitor. R212 between BST and bootstrap capacitor.</field>
+        <field name="MPN">GRM188R71H104KA93D</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MOSS" part="C168_33nF___50V_X7R">
+      <description>Soft-start capacitor. Approximately3.16ms nominal from0.815V and8.5uA.</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">33nF / 50V X7R</field>
+        <field name="Footprint">MOSS:Capacitor_SMD_C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Soft-start capacitor. Approximately3.16ms nominal from0.815V and8.5uA.</field>
+        <field name="MPN">GRM188R71H333KA61D</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MOSS" part="C169_390pF___C0G">
+      <description>AC ripple injection capacitor, MPS500kHz application circuit.</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">390pF / C0G</field>
+        <field name="Footprint">MOSS:Capacitor_SMD_C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">AC ripple injection capacitor, MPS500kHz application circuit.</field>
+        <field name="MPN">GRM1885C1H391JA01D</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="MOSS" part="C18_100nF">
       <fields>
         <field name="Reference">C</field>
@@ -6536,15 +7089,17 @@
         <pin num="2" name="OUT" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="MOSS" part="H1_M2_5___drill_2_7___keepout_D8">
+    <libpart lib="MOSS" part="H1_M2p5_GND_bond">
       <fields>
         <field name="Reference">H</field>
-        <field name="Value">M2.5 / drill 2.7 / keepout D8</field>
-        <field name="Footprint">MOSS:MOSS_Mount_M2p5_2p7_D8</field>
+        <field name="Value">M2.5 GND bond</field>
+        <field name="Footprint">MOSS:MOSS_Mount_M2p5_GND_D8</field>
         <field name="Datasheet"/>
         <field name="Description"/>
-        <field name="MPN">NPTH</field>
       </fields>
+      <pins>
+        <pin num="1" name="GND" type="passive"/>
+      </pins>
     </libpart>
     <libpart lib="MOSS" part="H2_M2_5___drill_2_7___keepout_D8">
       <fields>
@@ -6906,27 +7461,19 @@
         <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="MOSS" part="MOD1_DC5_36_TO_DC3V3_5___5V">
-      <description>Waveshare SKU 29035 DC5-36-TO-DC3V3-5 SMD version, factory 5V output; not terminal/header SKU29036. 33x16x5.7mm with official PcbLib castellated lands. Prefer PCBWay sourcing/assembly if accepted; not quoted or confirmed. User soldering is fallback only. Host voltage and thermal budget remain unqualified.</description>
+    <libpart lib="MOSS" part="L3_10uH">
+      <description>Bourns 10uH +/-20%, Isat7.6A typical, Irms5A for20C rise/7A for40C rise. Existing quoted BOM article reused. Verify inductance at temperature and fault-current behavior.</description>
       <fields>
-        <field name="Reference">MOD</field>
-        <field name="Value">DC5-36-TO-DC3V3-5 / 5V</field>
-        <field name="Footprint">MOSS:MOSS_Power_Waveshare_DC5_36_TO_DC3V3_5_SMD_33x16mm_HandSolder</field>
+        <field name="Reference">L</field>
+        <field name="Value">10uH</field>
+        <field name="Footprint">MOSS:Inductor_SMD_L_Bourns_SRP6060FA</field>
         <field name="Datasheet"/>
-        <field name="Description">Waveshare SKU 29035 DC5-36-TO-DC3V3-5 SMD version, factory 5V output; not terminal/header SKU29036. 33x16x5.7mm with official PcbLib castellated lands. Prefer PCBWay sourcing/assembly if accepted; not quoted or confirmed. User soldering is fallback only. Host voltage and thermal budget remain unqualified.</field>
-        <field name="MPN">29035</field>
+        <field name="Description">Bourns 10uH +/-20%, Isat7.6A typical, Irms5A for20C rise/7A for40C rise. Existing quoted BOM article reused. Verify inductance at temperature and fault-current behavior.</field>
+        <field name="MPN">SRP6060FA-100M</field>
       </fields>
       <pins>
-        <pin num="1" name="VIN+" type="power_in"/>
-        <pin num="2" name="VIN+" type="power_in"/>
-        <pin num="3" name="GND" type="power_in"/>
-        <pin num="4" name="GND" type="power_in"/>
-        <pin num="5" name="VOUT+" type="power_out"/>
-        <pin num="6" name="VOUT+" type="passive"/>
-        <pin num="7" name="VOUT+" type="passive"/>
-        <pin num="8" name="GND" type="power_in"/>
-        <pin num="9" name="GND" type="power_in"/>
-        <pin num="10" name="GND" type="power_in"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="MOSS" part="Q2_MMBT3904">
@@ -7294,6 +7841,96 @@
         <field name="Datasheet"/>
         <field name="Description">TPS25810 reference resistor; compact route betweenpins10/9, noGNDconnection onpin9.</field>
         <field name="MPN">RC0603FR-07100KL</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MOSS" part="R210_499k">
+      <description>EN pullup per MPS reference. Host remains powered during actuator E-stop.</description>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">499k</field>
+        <field name="Footprint">MOSS:Resistor_SMD_R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">EN pullup per MPS reference. Host remains powered during actuator E-stop.</field>
+        <field name="MPN">RC0603FR-07499KL</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MOSS" part="R211_100k">
+      <description>Frequency setting, MPS nominal500kHz design.</description>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">100k</field>
+        <field name="Footprint">MOSS:Resistor_SMD_R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Frequency setting, MPS nominal500kHz design.</field>
+        <field name="MPN">RC0603FR-07100KL</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MOSS" part="R212_4_7">
+      <description>Bootstrap damping resistor per MPS5V reference.</description>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">4.7</field>
+        <field name="Footprint">MOSS:Resistor_SMD_R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Bootstrap damping resistor per MPS5V reference.</field>
+        <field name="MPN">RC0603FR-074R7L</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MOSS" part="R213_53_6k">
+      <description>Feedback upper resistor per MPS5V external-ramp application. DC ripple injection affects output setpoint; simple divider arithmetic is insufficient.</description>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">53.6k</field>
+        <field name="Footprint">MOSS:Resistor_SMD_R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Feedback upper resistor per MPS5V external-ramp application. DC ripple injection affects output setpoint; simple divider arithmetic is insufficient.</field>
+        <field name="MPN">RC0603FR-0753K6L</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MOSS" part="R214_10k">
+      <description>Feedback lower resistor per MPS5V reference.</description>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">10k</field>
+        <field name="Footprint">MOSS:Resistor_SMD_R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Feedback lower resistor per MPS5V reference.</field>
+        <field name="MPN">RC0603FR-0710KL</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MOSS" part="R215_845k">
+      <description>Ripple injection resistor per MPS500kHz reference.</description>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">845k</field>
+        <field name="Footprint">MOSS:Resistor_SMD_R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Ripple injection resistor per MPS500kHz reference.</field>
+        <field name="MPN">RC0603FR-07845KL</field>
       </fields>
       <pins>
         <pin num="1" name="1" type="passive"/>
@@ -8625,15 +9262,15 @@
         <pin num="6" name="VDD" type="power_in"/>
       </pins>
     </libpart>
-    <libpart lib="MOSS" part="U2_TPD2E2U06DCKR">
+    <libpart lib="MOSS" part="U2_TPD2E2U06QDCKRQ1">
       <description>Two-channel 1.5pF ESD. DCK: 1 IO1, 2 IO2, 3 GND. Place at USB connector, direct short GND vias.</description>
       <fields>
         <field name="Reference">U</field>
-        <field name="Value">TPD2E2U06DCKR</field>
+        <field name="Value">TPD2E2U06QDCKRQ1</field>
         <field name="Footprint">MOSS:Package_TO_SOT_SMD_SOT-323_SC-70</field>
         <field name="Datasheet"/>
         <field name="Description">Two-channel 1.5pF ESD. DCK: 1 IO1, 2 IO2, 3 GND. Place at USB connector, direct short GND vias.</field>
-        <field name="MPN">TPD2E2U06DCKR</field>
+        <field name="MPN">TPD2E2U06QDCKRQ1</field>
       </fields>
       <pins>
         <pin num="1" name="IO1" type="passive"/>
@@ -8815,6 +9452,44 @@
         <pin num="7" name="WDO_N" type="open_collector"/>
         <pin num="8" name="ENOUT" type="open_collector"/>
         <pin num="9" name="EP" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="MOSS" part="U60_MP9447GL_Z___integrated_host_buck">
+      <description>MPS MP9447, 4.5-36V synchronous buck. 25 physical pads per manufacturer Rev1.22. 5V/500kHz application circuit. Intended 3S host branch; USB-C output remains limited by U42. Bench stability/thermal qualification required.</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MP9447GL-Z / integrated host buck</field>
+        <field name="Footprint">MOSS:MOSS_Power_MP9447_QFN25_3x4</field>
+        <field name="Datasheet"/>
+        <field name="Description">MPS MP9447, 4.5-36V synchronous buck. 25 physical pads per manufacturer Rev1.22. 5V/500kHz application circuit. Intended 3S host branch; USB-C output remains limited by U42. Bench stability/thermal qualification required.</field>
+        <field name="MPN">MP9447GL-Z</field>
+      </fields>
+      <pins>
+        <pin num="1" name="AGND" type="power_in"/>
+        <pin num="2" name="FREQ" type="passive"/>
+        <pin num="3" name="FB" type="input"/>
+        <pin num="4" name="SS" type="passive"/>
+        <pin num="5" name="EN" type="input"/>
+        <pin num="6" name="NC" type="no_connect"/>
+        <pin num="7" name="BST" type="passive"/>
+        <pin num="8" name="IN" type="power_in"/>
+        <pin num="9" name="SW" type="power_out"/>
+        <pin num="10" name="SW" type="passive"/>
+        <pin num="11" name="PGND" type="power_in"/>
+        <pin num="12" name="PGND" type="power_in"/>
+        <pin num="13" name="PGND" type="power_in"/>
+        <pin num="14" name="PGND" type="power_in"/>
+        <pin num="15" name="PGND" type="power_in"/>
+        <pin num="16" name="PGND" type="power_in"/>
+        <pin num="17" name="SW" type="passive"/>
+        <pin num="18" name="SW" type="passive"/>
+        <pin num="19" name="IN" type="power_in"/>
+        <pin num="20" name="VCC" type="power_out"/>
+        <pin num="21" name="IN" type="power_in"/>
+        <pin num="22" name="IN" type="power_in"/>
+        <pin num="23" name="IN" type="power_in"/>
+        <pin num="24" name="SW" type="passive"/>
+        <pin num="25" name="SW" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="MOSS" part="U6_SN74HCS21PWR">
@@ -9302,6 +9977,13 @@
       <node ref="C150" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="C151" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="C153" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C160" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C162" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C163" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C164" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C165" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C166" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C168" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="C18" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="C19" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="C2" pin="2" pinfunction="2_2" pintype="passive"/>
@@ -9341,6 +10023,7 @@
       <node ref="D7" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="D8" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="D9" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="H1" pin="1" pinfunction="GND_1" pintype="passive"/>
       <node ref="J1" pin="A1" pinfunction="GND_A1" pintype="passive"/>
       <node ref="J1" pin="A12" pinfunction="GND_A12" pintype="passive"/>
       <node ref="J1" pin="B1" pinfunction="GND_B1" pintype="passive"/>
@@ -9363,11 +10046,6 @@
       <node ref="J4" pin="MP" pinfunction="MOUNT_MP" pintype="passive"/>
       <node ref="J5" pin="3" pinfunction="GND_3" pintype="passive"/>
       <node ref="J8" pin="MP" pinfunction="MOUNT_MP" pintype="passive"/>
-      <node ref="MOD1" pin="10" pinfunction="GND_10" pintype="power_in"/>
-      <node ref="MOD1" pin="3" pinfunction="GND_3" pintype="power_in"/>
-      <node ref="MOD1" pin="4" pinfunction="GND_4" pintype="power_in"/>
-      <node ref="MOD1" pin="8" pinfunction="GND_8" pintype="power_in"/>
-      <node ref="MOD1" pin="9" pinfunction="GND_9" pintype="power_in"/>
       <node ref="Q2" pin="2" pinfunction="E_2" pintype="passive"/>
       <node ref="Q51" pin="2" pinfunction="S_2" pintype="passive"/>
       <node ref="Q52" pin="2" pinfunction="S_2" pintype="passive"/>
@@ -9380,6 +10058,8 @@
       <node ref="R144" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R19" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R211" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R214" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R223" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R225" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R226" pin="2" pinfunction="2_2" pintype="passive"/>
@@ -9448,6 +10128,13 @@
       <node ref="U5" pin="9" pinfunction="EP_9" pintype="power_in"/>
       <node ref="U50" pin="3" pinfunction="GND_3" pintype="power_in"/>
       <node ref="U6" pin="7" pinfunction="GND_7" pintype="power_in"/>
+      <node ref="U60" pin="1" pinfunction="AGND_1" pintype="power_in"/>
+      <node ref="U60" pin="11" pinfunction="PGND_11" pintype="power_in"/>
+      <node ref="U60" pin="12" pinfunction="PGND_12" pintype="power_in"/>
+      <node ref="U60" pin="13" pinfunction="PGND_13" pintype="power_in"/>
+      <node ref="U60" pin="14" pinfunction="PGND_14" pintype="power_in"/>
+      <node ref="U60" pin="15" pinfunction="PGND_15" pintype="power_in"/>
+      <node ref="U60" pin="16" pinfunction="PGND_16" pintype="power_in"/>
     </net>
     <net code="72" name="HOST_5V" class="AudioPower">
       <node ref="C142" pin="1" pinfunction="1_1" pintype="passive"/>
@@ -9458,103 +10145,155 @@
       <node ref="U42" pin="14" pinfunction="OUT_14" pintype="power_out"/>
       <node ref="U42" pin="15" pinfunction="OUT_15" pintype="passive"/>
     </net>
-    <net code="73" name="HOST_BUCK_IN" class="MotorPower">
-      <node ref="F1" pin="2" pinfunction="2_2" pintype="passive"/>
-      <node ref="MOD1" pin="1" pinfunction="VIN+_1" pintype="power_in"/>
-      <node ref="MOD1" pin="2" pinfunction="VIN+_2" pintype="power_in"/>
+    <net code="73" name="HOST_BST" class="Default">
+      <node ref="R212" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U60" pin="7" pinfunction="BST_7" pintype="passive"/>
     </net>
-    <net code="74" name="HOST_CC1" class="Default">
+    <net code="74" name="HOST_BST_CAP" class="Default">
+      <node ref="C167" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R212" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="75" name="HOST_BUCK_IN" class="MotorPower">
+      <node ref="C160" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C162" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C163" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="F1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R210" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U60" pin="19" pinfunction="IN_19" pintype="power_in"/>
+      <node ref="U60" pin="21" pinfunction="IN_21" pintype="power_in"/>
+      <node ref="U60" pin="22" pinfunction="IN_22" pintype="power_in"/>
+      <node ref="U60" pin="23" pinfunction="IN_23" pintype="power_in"/>
+      <node ref="U60" pin="8" pinfunction="IN_8" pintype="power_in"/>
+    </net>
+    <net code="76" name="HOST_CC1" class="Default">
       <node ref="J20" pin="A5" pinfunction="CC1_A5" pintype="passive"/>
       <node ref="U42" pin="11" pinfunction="CC1_11" pintype="bidirectional"/>
     </net>
-    <net code="75" name="HOST_CC2" class="Default">
+    <net code="77" name="HOST_CC2" class="Default">
       <node ref="J20" pin="B5" pinfunction="CC2_B5" pintype="passive"/>
       <node ref="U42" pin="13" pinfunction="CC2_13" pintype="bidirectional"/>
     </net>
-    <net code="76" name="HOST_CC_REF" class="Default">
+    <net code="78" name="HOST_CC_REF" class="Default">
       <node ref="R200" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U42" pin="10" pinfunction="REF_10" pintype="passive"/>
     </net>
-    <net code="77" name="HOST_CC_REF_RTN" class="Default">
+    <net code="79" name="HOST_CC_REF_RTN" class="Default">
       <node ref="R200" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="U42" pin="9" pinfunction="REF_RTN_9" pintype="passive"/>
     </net>
-    <net code="78" name="I2C_SCL" class="Default">
+    <net code="80" name="HOST_EN" class="Default">
+      <node ref="R210" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U60" pin="5" pinfunction="EN_5" pintype="input"/>
+    </net>
+    <net code="81" name="HOST_FB" class="Default">
+      <node ref="C169" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R213" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R214" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U60" pin="3" pinfunction="FB_3" pintype="input"/>
+    </net>
+    <net code="82" name="HOST_FREQ" class="Default">
+      <node ref="R211" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U60" pin="2" pinfunction="FREQ_2" pintype="passive"/>
+    </net>
+    <net code="83" name="HOST_RAMP" class="Default">
+      <node ref="C169" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R215" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="84" name="HOST_SS" class="Default">
+      <node ref="C168" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U60" pin="4" pinfunction="SS_4" pintype="passive"/>
+    </net>
+    <net code="85" name="HOST_SW" class="Default">
+      <node ref="C167" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="L3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R215" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U60" pin="10" pinfunction="SW_10" pintype="passive"/>
+      <node ref="U60" pin="17" pinfunction="SW_17" pintype="passive"/>
+      <node ref="U60" pin="18" pinfunction="SW_18" pintype="passive"/>
+      <node ref="U60" pin="24" pinfunction="SW_24" pintype="passive"/>
+      <node ref="U60" pin="25" pinfunction="SW_25" pintype="passive"/>
+      <node ref="U60" pin="9" pinfunction="SW_9" pintype="power_out"/>
+    </net>
+    <net code="86" name="HOST_VCC" class="Default">
+      <node ref="C166" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U60" pin="20" pinfunction="VCC_20" pintype="power_out"/>
+    </net>
+    <net code="87" name="I2C_SCL" class="Default">
       <node ref="R9" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="TP6" pin="1" pinfunction="SCL_1" pintype="passive"/>
       <node ref="U1" pin="33" pinfunction="IO40_33" pintype="bidirectional"/>
       <node ref="U17" pin="5" pinfunction="SCL_5" pintype="input"/>
       <node ref="U43" pin="10" pinfunction="SCL_10" pintype="input"/>
     </net>
-    <net code="79" name="I2C_SDA" class="Default">
+    <net code="88" name="I2C_SDA" class="Default">
       <node ref="R8" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="TP5" pin="1" pinfunction="SDA_1" pintype="passive"/>
       <node ref="U1" pin="34" pinfunction="IO41_34" pintype="bidirectional"/>
       <node ref="U17" pin="4" pinfunction="SDA_4" pintype="bidirectional"/>
       <node ref="U43" pin="9" pinfunction="SDA_9" pintype="bidirectional"/>
     </net>
-    <net code="80" name="INA_ALERT_N" class="Default">
+    <net code="89" name="INA_ALERT_N" class="Default">
       <node ref="R64" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="U17" pin="3" pinfunction="ALERT_N_3" pintype="open_collector"/>
     </net>
-    <net code="81" name="LED_A" class="Default">
+    <net code="90" name="LED_A" class="Default">
       <node ref="D2" pin="2" pinfunction="A_2" pintype="passive"/>
       <node ref="R7" pin="2" pinfunction="2_2" pintype="passive"/>
     </net>
-    <net code="82" name="MDD_DIR1" class="Default">
+    <net code="91" name="MDD_DIR1" class="Default">
       <node ref="J2" pin="2" pinfunction="MDD_DIR1_2" pintype="passive"/>
       <node ref="R25" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R26" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="83" name="MDD_DIR2" class="Default">
+    <net code="92" name="MDD_DIR2" class="Default">
       <node ref="J2" pin="4" pinfunction="MDD_DIR2_4" pintype="passive"/>
       <node ref="R29" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R30" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="84" name="MDD_PWM1" class="Default">
+    <net code="93" name="MDD_PWM1" class="Default">
       <node ref="J2" pin="1" pinfunction="MDD_PWM1_1" pintype="passive"/>
       <node ref="R23" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R24" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="85" name="MDD_PWM2" class="Default">
+    <net code="94" name="MDD_PWM2" class="Default">
       <node ref="J2" pin="3" pinfunction="MDD_PWM2_3" pintype="passive"/>
       <node ref="R27" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R28" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="86" name="MOTOR_L_LEAD" class="MotorPower">
+    <net code="95" name="MOTOR_L_LEAD" class="MotorPower">
       <node ref="J12" pin="2" pinfunction="TO_MOTOR_2" pintype="passive"/>
       <node ref="R180" pin="2" pinfunction="I_TO_MOTOR_2" pintype="passive"/>
       <node ref="U40" pin="3" pinfunction="IN-_3" pintype="input"/>
     </net>
-    <net code="87" name="MOTOR_R_LEAD" class="MotorPower">
+    <net code="96" name="MOTOR_R_LEAD" class="MotorPower">
       <node ref="J13" pin="2" pinfunction="TO_MOTOR_2" pintype="passive"/>
       <node ref="R181" pin="2" pinfunction="I_TO_MOTOR_2" pintype="passive"/>
       <node ref="U41" pin="3" pinfunction="IN-_3" pintype="input"/>
     </net>
-    <net code="88" name="PACK_VBUS" class="Default">
+    <net code="97" name="PACK_VBUS" class="Default">
       <node ref="C31" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="R63" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="U17" pin="8" pinfunction="VBUS_8" pintype="input"/>
     </net>
-    <net code="89" name="PWM_L" class="Default">
+    <net code="98" name="PWM_L" class="Default">
       <node ref="R31" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U1" pin="11" pinfunction="IO18_11" pintype="bidirectional"/>
       <node ref="U11" pin="1" pinfunction="1A_1" pintype="input"/>
     </net>
-    <net code="90" name="PWM_L_SAFE" class="Default">
+    <net code="99" name="PWM_L_SAFE" class="Default">
       <node ref="R23" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U11" pin="3" pinfunction="1Y_3" pintype="output"/>
     </net>
-    <net code="91" name="PWM_R" class="Default">
+    <net code="100" name="PWM_R" class="Default">
       <node ref="R32" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U1" pin="17" pinfunction="IO9_17" pintype="bidirectional"/>
       <node ref="U11" pin="4" pinfunction="2A_4" pintype="input"/>
     </net>
-    <net code="92" name="PWM_R_SAFE" class="Default">
+    <net code="101" name="PWM_R_SAFE" class="Default">
       <node ref="R27" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U11" pin="6" pinfunction="2Y_6" pintype="output"/>
     </net>
-    <net code="93" name="RESET_N" class="Default">
+    <net code="102" name="RESET_N" class="Default">
       <node ref="R5" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="SW1" pin="1" pinfunction="A_1" pintype="passive"/>
       <node ref="TP7" pin="1" pinfunction="RESET_1" pintype="passive"/>
@@ -9563,90 +10302,91 @@
       <node ref="U6" pin="13" pinfunction="2D_13" pintype="input"/>
       <node ref="U6" pin="5" pinfunction="1D_5" pintype="input"/>
     </net>
-    <net code="94" name="SERVO_BIAS_3V3" class="Default">
+    <net code="103" name="SERVO_BIAS_3V3" class="Default">
       <node ref="R110" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U14" pin="3" pinfunction="2Y_3" pintype="tri_state"/>
     </net>
-    <net code="95" name="SERVO_BUS" class="Default">
+    <net code="104" name="SERVO_BUS" class="Default">
       <node ref="D5" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="J5" pin="1" pinfunction="DATA_1" pintype="passive"/>
       <node ref="R110" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R48" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R49" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="96" name="SERVO_OE_ON" class="Default">
+    <net code="105" name="SERVO_OE_ON" class="Default">
       <node ref="U14" pin="1" pinfunction="1OE_1" pintype="input"/>
       <node ref="U6" pin="8" pinfunction="2Y_8" pintype="output"/>
     </net>
-    <net code="97" name="SERVO_RX" class="Default">
+    <net code="106" name="SERVO_RX" class="Default">
       <node ref="R111" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="U1" pin="30" pinfunction="IO37_30" pintype="bidirectional"/>
       <node ref="U15" pin="4" pinfunction="Y_4" pintype="tri_state"/>
     </net>
-    <net code="98" name="SERVO_RX_IN" class="Default">
+    <net code="107" name="SERVO_RX_IN" class="Default">
       <node ref="R49" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="U15" pin="2" pinfunction="A_2" pintype="input"/>
     </net>
-    <net code="99" name="SERVO_TX" class="Default">
+    <net code="108" name="SERVO_TX" class="Default">
       <node ref="R93" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U1" pin="28" pinfunction="IO35_28" pintype="bidirectional"/>
       <node ref="U14" pin="2" pinfunction="1A_2" pintype="input"/>
     </net>
-    <net code="100" name="SERVO_TX_BUF" class="Default">
+    <net code="109" name="SERVO_TX_BUF" class="Default">
       <node ref="R48" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U14" pin="6" pinfunction="1Y_6" pintype="tri_state"/>
     </net>
-    <net code="101" name="SERVO_TX_ENABLE" class="Default">
+    <net code="110" name="SERVO_TX_ENABLE" class="Default">
       <node ref="R43" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U1" pin="29" pinfunction="IO36_29" pintype="bidirectional"/>
       <node ref="U6" pin="10" pinfunction="2B_10" pintype="input"/>
     </net>
-    <net code="102" name="SPEAKER_N" class="Default">
+    <net code="111" name="SPEAKER_N" class="Default">
       <node ref="J7" pin="2" pinfunction="SPK_N_2" pintype="passive"/>
       <node ref="U23" pin="10" pinfunction="OUTN_10" pintype="output"/>
     </net>
-    <net code="103" name="SPEAKER_P" class="Default">
+    <net code="112" name="SPEAKER_P" class="Default">
       <node ref="J7" pin="1" pinfunction="SPK_P_1" pintype="passive"/>
       <node ref="U23" pin="9" pinfunction="OUTP_9" pintype="output"/>
     </net>
-    <net code="104" name="STATUS_LED" class="Default">
+    <net code="113" name="STATUS_LED" class="Default">
       <node ref="R7" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U1" pin="8" pinfunction="IO15_8" pintype="bidirectional"/>
     </net>
-    <net code="105" name="USB_ILIM" class="Default">
+    <net code="114" name="USB_ILIM" class="Default">
       <node ref="R72" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U3" pin="5" pinfunction="ILIM_5" pintype="passive"/>
     </net>
-    <net code="106" name="USB_N" class="USB">
+    <net code="115" name="USB_N" class="USB">
       <node ref="J1" pin="A7" pinfunction="D-_A7" pintype="bidirectional"/>
       <node ref="J1" pin="B7" pinfunction="D-_B7" pintype="bidirectional"/>
       <node ref="R4" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U2" pin="2" pinfunction="IO2_2" pintype="passive"/>
     </net>
-    <net code="107" name="USB_P" class="USB">
+    <net code="116" name="USB_P" class="USB">
       <node ref="J1" pin="A6" pinfunction="D+_A6" pintype="bidirectional"/>
       <node ref="J1" pin="B6" pinfunction="D+_B6" pintype="bidirectional"/>
       <node ref="R3" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U2" pin="1" pinfunction="IO1_1" pintype="passive"/>
     </net>
-    <net code="108" name="USB_PWR_FAULT_N" class="Default">
+    <net code="117" name="USB_PWR_FAULT_N" class="Default">
       <node ref="R73" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="U1" pin="22" pinfunction="IO14_22" pintype="bidirectional"/>
       <node ref="U3" pin="4" pinfunction="FAULT_N_4" pintype="open_collector"/>
     </net>
-    <net code="109" name="V5" class="LogicPower">
+    <net code="118" name="V5" class="LogicPower">
       <node ref="C4" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="C40" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="R74" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U3" pin="6" pinfunction="OUT_6" pintype="power_out"/>
       <node ref="U4" pin="4" pinfunction="VIN_4" pintype="power_in"/>
     </net>
-    <net code="110" name="V5_HOST_RAW" class="AudioPower">
+    <net code="119" name="V5_HOST_RAW" class="AudioPower">
       <node ref="C140" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="C141" pin="1" pinfunction="1_1" pintype="passive"/>
-      <node ref="MOD1" pin="5" pinfunction="VOUT+_5" pintype="power_out"/>
-      <node ref="MOD1" pin="6" pinfunction="VOUT+_6" pintype="passive"/>
-      <node ref="MOD1" pin="7" pinfunction="VOUT+_7" pintype="passive"/>
+      <node ref="C164" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C165" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="L3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R213" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U42" pin="2" pinfunction="IN1_2" pintype="power_in"/>
       <node ref="U42" pin="3" pinfunction="IN1_3" pintype="power_in"/>
       <node ref="U42" pin="4" pinfunction="IN2_4" pintype="power_in"/>
@@ -9655,13 +10395,13 @@
       <node ref="U42" pin="7" pinfunction="CHG_7" pintype="input"/>
       <node ref="U42" pin="8" pinfunction="CHG_HI_8" pintype="input"/>
     </net>
-    <net code="111" name="V5_PRE" class="LogicPower">
+    <net code="120" name="V5_PRE" class="LogicPower">
       <node ref="C2" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="D1" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U3" pin="1" pinfunction="IN_1" pintype="power_in"/>
       <node ref="U3" pin="3" pinfunction="EN_3" pintype="input"/>
     </net>
-    <net code="112" name="VBUS" class="LogicPower">
+    <net code="121" name="VBUS" class="LogicPower">
       <node ref="C1" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="D1" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="D22" pin="1" pinfunction="IO_1" pintype="passive"/>
@@ -9670,136 +10410,139 @@
       <node ref="J1" pin="B4" pinfunction="VBUS_B4" pintype="passive"/>
       <node ref="J1" pin="B9" pinfunction="VBUS_B9" pintype="passive"/>
     </net>
-    <net code="113" name="WD_ENABLE" class="Default">
+    <net code="122" name="WD_ENABLE" class="Default">
       <node ref="R12" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U1" pin="24" pinfunction="IO47_24" pintype="bidirectional"/>
       <node ref="U5" pin="5" pinfunction="SET1_5" pintype="input"/>
       <node ref="U6" pin="1" pinfunction="1A_1" pintype="input"/>
       <node ref="U6" pin="9" pinfunction="2A_9" pintype="input"/>
     </net>
-    <net code="114" name="WD_RESET_N" class="Default">
+    <net code="123" name="WD_RESET_N" class="Default">
       <node ref="Q52" pin="3" pinfunction="D_3" pintype="passive"/>
       <node ref="R11" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="U20" pin="3" pinfunction="MR_N_3" pintype="input"/>
       <node ref="U5" pin="7" pinfunction="WDO_N_7" pintype="open_collector"/>
       <node ref="U5" pin="8" pinfunction="ENOUT_8" pintype="open_collector"/>
     </net>
-    <net code="115" name="WD_TICK" class="Default">
+    <net code="124" name="WD_TICK" class="Default">
       <node ref="R13" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U1" pin="25" pinfunction="IO48_25" pintype="bidirectional"/>
       <node ref="U5" pin="6" pinfunction="WDI_6" pintype="input"/>
     </net>
-    <net code="116" name="WD_TIME" class="Default">
+    <net code="125" name="WD_TIME" class="Default">
       <node ref="R10" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="U5" pin="2" pinfunction="CWD_2" pintype="passive"/>
     </net>
-    <net code="117" name="unconnected-(J1-SBU1-PadA8)" class="Default">
+    <net code="126" name="unconnected-(J1-SBU1-PadA8)" class="Default">
       <node ref="J1" pin="A8" pinfunction="SBU1_A8" pintype="passive+no_connect"/>
     </net>
-    <net code="118" name="unconnected-(J1-SBU2-PadB8)" class="Default">
+    <net code="127" name="unconnected-(J1-SBU2-PadB8)" class="Default">
       <node ref="J1" pin="B8" pinfunction="SBU2_B8" pintype="passive+no_connect"/>
     </net>
-    <net code="119" name="unconnected-(J8-DNC_3-Pad3)" class="Default">
+    <net code="128" name="unconnected-(J8-DNC_3-Pad3)" class="Default">
       <node ref="J8" pin="3" pinfunction="DNC_3_3" pintype="passive+no_connect"/>
     </net>
-    <net code="120" name="unconnected-(J8-DNC_4-Pad4)" class="Default">
+    <net code="129" name="unconnected-(J8-DNC_4-Pad4)" class="Default">
       <node ref="J8" pin="4" pinfunction="DNC_4_4" pintype="passive+no_connect"/>
     </net>
-    <net code="121" name="unconnected-(J20-D+-PadA6)" class="Default">
+    <net code="130" name="unconnected-(J20-D+-PadA6)" class="Default">
       <node ref="J20" pin="A6" pinfunction="D+_A6" pintype="passive+no_connect"/>
     </net>
-    <net code="122" name="unconnected-(J20-D+-PadB6)" class="Default">
+    <net code="131" name="unconnected-(J20-D+-PadB6)" class="Default">
       <node ref="J20" pin="B6" pinfunction="D+_B6" pintype="passive+no_connect"/>
     </net>
-    <net code="123" name="unconnected-(J20-D--PadA7)" class="Default">
+    <net code="132" name="unconnected-(J20-D--PadA7)" class="Default">
       <node ref="J20" pin="A7" pinfunction="D-_A7" pintype="passive+no_connect"/>
     </net>
-    <net code="124" name="unconnected-(J20-D--PadB7)" class="Default">
+    <net code="133" name="unconnected-(J20-D--PadB7)" class="Default">
       <node ref="J20" pin="B7" pinfunction="D-_B7" pintype="passive+no_connect"/>
     </net>
-    <net code="125" name="unconnected-(J20-SBU1-PadA8)" class="Default">
+    <net code="134" name="unconnected-(J20-SBU1-PadA8)" class="Default">
       <node ref="J20" pin="A8" pinfunction="SBU1_A8" pintype="passive+no_connect"/>
     </net>
-    <net code="126" name="unconnected-(J20-SBU2-PadB8)" class="Default">
+    <net code="135" name="unconnected-(J20-SBU2-PadB8)" class="Default">
       <node ref="J20" pin="B8" pinfunction="SBU2_B8" pintype="passive+no_connect"/>
     </net>
-    <net code="127" name="unconnected-(U1-IO1_SPARE-Pad39)" class="Default">
+    <net code="136" name="unconnected-(U1-IO1_SPARE-Pad39)" class="Default">
       <node ref="U1" pin="39" pinfunction="IO1_SPARE_39" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="128" name="unconnected-(U1-IO2_SPARE-Pad38)" class="Default">
+    <net code="137" name="unconnected-(U1-IO2_SPARE-Pad38)" class="Default">
       <node ref="U1" pin="38" pinfunction="IO2_SPARE_38" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="129" name="unconnected-(U1-IO3-Pad15)" class="Default">
+    <net code="138" name="unconnected-(U1-IO3-Pad15)" class="Default">
       <node ref="U1" pin="15" pinfunction="IO3_15" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="130" name="unconnected-(U1-IO45-Pad26)" class="Default">
+    <net code="139" name="unconnected-(U1-IO45-Pad26)" class="Default">
       <node ref="U1" pin="26" pinfunction="IO45_26" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="131" name="unconnected-(U1-IO46-Pad16)" class="Default">
+    <net code="140" name="unconnected-(U1-IO46-Pad16)" class="Default">
       <node ref="U1" pin="16" pinfunction="IO46_16" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="132" name="unconnected-(U6-NC-Pad3)" class="Default">
+    <net code="141" name="unconnected-(U6-NC-Pad3)" class="Default">
       <node ref="U6" pin="3" pinfunction="NC_3" pintype="no_connect"/>
     </net>
-    <net code="133" name="unconnected-(U6-NC-Pad11)" class="Default">
+    <net code="142" name="unconnected-(U6-NC-Pad11)" class="Default">
       <node ref="U6" pin="11" pinfunction="NC_11" pintype="no_connect"/>
     </net>
-    <net code="134" name="unconnected-(U12-5Y-Pad10)" class="Default">
+    <net code="143" name="unconnected-(U12-5Y-Pad10)" class="Default">
       <node ref="U12" pin="10" pinfunction="5Y_10" pintype="output+no_connect"/>
     </net>
-    <net code="135" name="unconnected-(U12-6Y-Pad12)" class="Default">
+    <net code="144" name="unconnected-(U12-6Y-Pad12)" class="Default">
       <node ref="U12" pin="12" pinfunction="6Y_12" pintype="output+no_connect"/>
     </net>
-    <net code="136" name="unconnected-(U20-CT-Pad4)" class="Default">
+    <net code="145" name="unconnected-(U20-CT-Pad4)" class="Default">
       <node ref="U20" pin="4" pinfunction="CT_4" pintype="input+no_connect"/>
     </net>
-    <net code="137" name="unconnected-(U23-GAIN_SLOT_FLOAT_9DB-Pad2)" class="Default">
+    <net code="146" name="unconnected-(U23-GAIN_SLOT_FLOAT_9DB-Pad2)" class="Default">
       <node ref="U23" pin="2" pinfunction="GAIN_SLOT_FLOAT_9DB_2" pintype="input+no_connect"/>
     </net>
-    <net code="138" name="unconnected-(U23-NC-Pad5)" class="Default">
+    <net code="147" name="unconnected-(U23-NC-Pad5)" class="Default">
       <node ref="U23" pin="5" pinfunction="NC_5" pintype="no_connect"/>
     </net>
-    <net code="139" name="unconnected-(U23-NC-Pad6)" class="Default">
+    <net code="148" name="unconnected-(U23-NC-Pad6)" class="Default">
       <node ref="U23" pin="6" pinfunction="NC_6" pintype="no_connect"/>
     </net>
-    <net code="140" name="unconnected-(U23-NC-Pad12)" class="Default">
+    <net code="149" name="unconnected-(U23-NC-Pad12)" class="Default">
       <node ref="U23" pin="12" pinfunction="NC_12" pintype="no_connect"/>
     </net>
-    <net code="141" name="unconnected-(U23-NC-Pad13)" class="Default">
+    <net code="150" name="unconnected-(U23-NC-Pad13)" class="Default">
       <node ref="U23" pin="13" pinfunction="NC_13" pintype="no_connect"/>
     </net>
-    <net code="142" name="unconnected-(U27-CT-Pad4)" class="Default">
+    <net code="151" name="unconnected-(U27-CT-Pad4)" class="Default">
       <node ref="U27" pin="4" pinfunction="CT_4" pintype="input+no_connect"/>
     </net>
-    <net code="143" name="unconnected-(U40-NC-Pad1)" class="Default">
+    <net code="152" name="unconnected-(U40-NC-Pad1)" class="Default">
       <node ref="U40" pin="1" pinfunction="NC_1" pintype="no_connect"/>
     </net>
-    <net code="144" name="unconnected-(U41-NC-Pad1)" class="Default">
+    <net code="153" name="unconnected-(U41-NC-Pad1)" class="Default">
       <node ref="U41" pin="1" pinfunction="NC_1" pintype="no_connect"/>
     </net>
-    <net code="145" name="unconnected-(U42-AUDIO_N-Pad17)" class="Default">
+    <net code="154" name="unconnected-(U42-AUDIO_N-Pad17)" class="Default">
       <node ref="U42" pin="17" pinfunction="AUDIO_N_17" pintype="open_collector+no_connect"/>
     </net>
-    <net code="146" name="unconnected-(U42-DEBUG_N-Pad16)" class="Default">
+    <net code="155" name="unconnected-(U42-DEBUG_N-Pad16)" class="Default">
       <node ref="U42" pin="16" pinfunction="DEBUG_N_16" pintype="open_collector+no_connect"/>
     </net>
-    <net code="147" name="unconnected-(U42-FAULT_N-Pad1)" class="Default">
+    <net code="156" name="unconnected-(U42-FAULT_N-Pad1)" class="Default">
       <node ref="U42" pin="1" pinfunction="FAULT_N_1" pintype="open_collector+no_connect"/>
     </net>
-    <net code="148" name="unconnected-(U42-LD_DET_N-Pad20)" class="Default">
+    <net code="157" name="unconnected-(U42-LD_DET_N-Pad20)" class="Default">
       <node ref="U42" pin="20" pinfunction="LD_DET_N_20" pintype="open_collector+no_connect"/>
     </net>
-    <net code="149" name="unconnected-(U42-POL_N-Pad18)" class="Default">
+    <net code="158" name="unconnected-(U42-POL_N-Pad18)" class="Default">
       <node ref="U42" pin="18" pinfunction="POL_N_18" pintype="open_collector+no_connect"/>
     </net>
-    <net code="150" name="unconnected-(U42-UFP_N-Pad19)" class="Default">
+    <net code="159" name="unconnected-(U42-UFP_N-Pad19)" class="Default">
       <node ref="U42" pin="19" pinfunction="UFP_N_19" pintype="open_collector+no_connect"/>
     </net>
-    <net code="151" name="unconnected-(U43-ALERT_RDY-Pad2)" class="Default">
+    <net code="160" name="unconnected-(U43-ALERT_RDY-Pad2)" class="Default">
       <node ref="U43" pin="2" pinfunction="ALERT_RDY_2" pintype="open_collector+no_connect"/>
     </net>
-    <net code="152" name="unconnected-(U50-NC-Pad1)" class="Default">
+    <net code="161" name="unconnected-(U50-NC-Pad1)" class="Default">
       <node ref="U50" pin="1" pinfunction="NC_1" pintype="no_connect"/>
+    </net>
+    <net code="162" name="unconnected-(U60-NC-Pad6)" class="Default">
+      <node ref="U60" pin="6" pinfunction="NC_6" pintype="no_connect"/>
     </net>
   </nets>
 </export>

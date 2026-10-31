@@ -1,11 +1,13 @@
 # MOSS CORE V0.7 — prototype connector guide
 
+Updated 31 October 2026: integrated 5 V converter and H1 GND connection. The external connector assignments are unchanged.
+
 Read the numbers on the connector footprint, not the left-to-right order inferred from a top or bottom photograph. All fourteen external connectors have a numbered legend on the underside. Left/right refer to the rover's forward-driving direction.
 
 | Connector | Underside label | Connect to | Pin assignment |
 |---|---|---|---|
 | J1 | USB TO HUB | One downstream port of the Hoco USB hub | USB data and incoming Core logic power; use a USB data cable. |
-| J20 | PI 5V OUT / POWER ONLY | Orange Pi **POWER** USB-C port | 5 V output; no USB data. |
+| J20 | PI 5V OUT / POWER ONLY | Orange Pi **POWER** USB-C port | Integrated 5 V / 3 A output; no USB data. |
 | J10 | BATTERY 3S | Existing fused 3S battery harness, XT30 | 1 GND/negative; 2 positive. Retain the external pack fuse. |
 | J11 | CYTRON POWER | Cytron MDD10A power input | 1 switched battery positive; 2 GND. |
 | J2 | CYTRON CTRL | Cytron control inputs | 1 PWM1; 2 DIR1; 3 PWM2; 4 DIR2; 5 GND. This order is specific to Core: check the other end of the cable. |
@@ -15,9 +17,12 @@ Read the numbers on the connector footprint, not the left-to-right order inferre
 | J13 | RIGHT MOTOR LOOP | One lead between the Cytron right channel and the right motor | 1 Cytron output lead; 2 motor lead. Neither terminal is GND. |
 | J5 | ARM | Powered arm servo daisy chain | 1 DATA; 2 switched battery positive; 3 GND. Six servos standard, seven with the optional double shoulder. |
 | J7 | SPEAKER / NO GND | 4-ohm speaker | 1 amplifier positive output; 2 amplifier negative output. Both are driven: do not connect either terminal to GND. |
-| J8 | STOP | Two independent normally closed contacts of the red stop button | 1/2 power-cut contact; **3/4 no wires or crimp contacts**; 5/6 status/reset contact. This is the new six-position connector, not the original four-position harness. |
-
+| J8 | STOP | Two independent normally closed contacts of the red stop button | 1/2 power-cut contact; **3/4 no wires or crimp contacts**; 5/6 status/reset contact. |
 | J14 / J15 | FAN 1 / FAN 2 | Two 12 V nominal chassis fans | 1 fused 3S battery positive; 2 GND. Shared F3 1 A fuse; not regulated 12 V. |
+
+## Grounding connection
+
+H1, at (4, 4) mm on the PCB, is a plated 2.7 mm hole for an M2.5 screw. Its 5.4 mm exposed copper ring is connected to GND on both faces, with eight 0.5 mm stitching holes and no solder paste. It provides an attachment point for a bonding lead. The other seven mounting holes remain unplated. A screw into the plastic hull alone does not create an earth connection; ESD performance still needs testing.
 
 ## Host USB wiring
 
@@ -53,8 +58,8 @@ J5 is one common power path for the whole arm. Its selected connector is rated 3
 
 ## Chassis fans
 
-J14 FAN 1 and J15 FAN 2: JST XH 2.50 mm, pin 1 = fused battery positive, pin 2 = GND. These are 3S battery-powered outputs (up to 12.6 V), not regulated 12 V. Two 12 V nominal fans, approximately 0.1 A each according to the user estimate; verify the actual fans. Shared F3 1 A fuse; fans remain powered during actuator stop. No PWM or tachometer. Verify actual plug and wire polarity.
+J14 FAN 1 and J15 FAN 2: JST XH 2.50 mm, pin 1 = fused battery positive, pin 2 = GND. These are 3S battery-powered outputs (up to 12.6 V), not regulated 12 V. The two 12 V nominal fans are estimated at 0.1 A each; their current has not been measured. Shared F3 1 A fuse; fans remain powered during actuator stop. No PWM or tachometer. Verify actual plug and wire polarity.
 
 ## Compact input fuse
 
-F1 is now a soldered Littelfuse 08853.15DR 3.15 A fuse on the Orange Pi power branch. The previous Schurter holder, cartridge and black cover are removed. Replacement requires soldering. F2 and F3 remain 1 A soldered branch fuses. The external 15 A battery fuse is retained.
+F1 is a soldered Littelfuse 08853.15DR 3.15 A fuse on the battery input to the integrated Orange Pi converter. There is no separate holder or cover. Replacement requires soldering. F2 and F3 remain 1 A soldered branch fuses. The external 15 A battery fuse is retained.

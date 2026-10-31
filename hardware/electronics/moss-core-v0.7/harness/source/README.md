@@ -1,6 +1,6 @@
 # Rebuilding the visual study
 
-Run commands from the `harness/` directory in a Python environment with the dependencies in `requirements.txt`. The frozen meshes in `assets/` preserve the current Core, native context, speaker and prototype hull positions. They are inputs, not additional hardware revisions.
+Run commands from the `harness/` directory in a Python environment with the dependencies in `requirements.txt`. The frozen meshes in `assets/` preserve the 30 October Core board, native context, speaker and prototype hull positions. They predate the 31 October integrated-power PCB update in the parent folder. Rebuilding this study reproduces that earlier packaging proposal; it does not regenerate a mesh from the current PCB.
 
 ```sh
 python source/build_hoco.py

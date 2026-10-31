@@ -1,6 +1,6 @@
 # F1 compact replacement — selection evidence
 
-2026-10-30. Component selection and metadata review only; no hardware qualification.
+Selected 30 October 2026; supply description updated 31 October 2026. Component selection and metadata review only; no hardware qualification.
 
 ## Selected component
 
@@ -20,7 +20,7 @@ The installed native footprint courtyard is **16.74 × 7.76 mm**, approximately 
 
 ## Circuit purpose and remaining checks
 
-Keep F1 between `BAT_PROTECTED` and `HOST_BUCK_IN`, protecting only the input branch of the Waveshare supply for the Orange Pi. The existing external 15 A pack fuse remains. Estimated 15 W output demand corresponds to approximately 1.3–2 A input over the selected battery/efficiency assumptions; the upper estimate leaves limited warm-enclosure margin after derating.
+Keep F1 between `BAT_PROTECTED` and `HOST_BUCK_IN`, protecting only the input branch of the integrated MP9447 5 V supply for the Orange Pi. The existing external 15 A pack fuse remains. Estimated 15 W output demand corresponds to approximately 1.3–2 A input over the selected battery/efficiency assumptions; the upper estimate leaves limited warm-enclosure margin after derating.
 
 Before hardware acceptance, check startup pulse energy and repetition, maximum continuous input current, enclosure temperature, available battery fault current, conductor withstand, and coordination with the external fuse and converter protections. Neither a high interrupting rating nor a clean PCB DRC proves that the fuse opens before every downstream conductor or semiconductor is damaged.
 

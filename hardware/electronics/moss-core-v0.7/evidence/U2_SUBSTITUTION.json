@@ -1,0 +1,43 @@
+{
+  "original": "TPD2E2U06DCKR",
+  "replacement": "TPD2E2U06QDCKRQ1",
+  "package": "DCK0003A / SC70 / 3 pins",
+  "manufacturer_package_drawing_text_identical": true,
+  "manufacturer_land_pattern_text_identical": true,
+  "pin_mapping": {
+    "1": "IO1",
+    "2": "IO2",
+    "3": "GND"
+  },
+  "electrical_comparison": {
+    "VIO_range_V": [
+      0,
+      5.5
+    ],
+    "CL_typ_pF": 1.5,
+    "CL_max_pF": 1.9,
+    "VCL_IO_GND_typ_5A_TLP_V": 12.4,
+    "RDYN_IO_GND_ohm": 0.6,
+    "IEC_contact_kV": 25,
+    "IEC_air_kV": 30,
+    "surge_8_20_us_A": 5.5,
+    "operating_range_C": [
+      -40,
+      125
+    ]
+  },
+  "assembly_difference": "Q1 MSL2 vs catalog MSL1; dry-pack/floor-life control required. No pad/copper/drill change.",
+  "stock_observation": {
+    "date": "2026-10-31",
+    "supplier": "DigiKey",
+    "supplier_part": "296-44302-1-ND",
+    "shown_stock": 82345,
+    "unit_USD_qty1": 0.86,
+    "url": "https://www.digikey.com/en/products/detail/texas-instruments/TPD2E2U06QDCKRQ1/6026260",
+    "reservation_or_purchase_performed": false
+  },
+  "sources": [
+    "https://www.ti.com/lit/gpn/TPD2E2U06",
+    "https://www.ti.com/lit/gpn/TPD2E2U06-Q1"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "date": "2026-10-31",
+  "native_board_sha256": "e277ba4ba0fd84cb487ffbdb3524b62d9eb6b3f39b2a7dbb1d6935366fd08642",
+  "source": "Current native KiCad PCB, rendered with its local component models.",
+  "visual_only_addition": "U60 has a simple 3 x 4 x 0.85 mm black package body in the preview only. It is not manufacturer mechanical CAD and is not added to the native PCB.",
+  "native_files_modified_for_preview": false
+}

@@ -2,7 +2,7 @@
 
 | Item | Source / status |
 | --- | --- |
-| MOSS CORE PCB | Current KiCad model, bound to the published native PCB hash. The fixed headers are retained. |
+| MOSS CORE PCB | Frozen 30 October 2026 KiCad model, SHA-256 `cffb4a378502802a778fcee618310e6f3fa5c49ad201b0c372728368ae3520d1`. It predates the 31 October integrated converter and H1 GND update. The fixed headers are retained. |
 | Orange Pi | Previously supplied Orange Pi Zero 3W CAD. The cooler is a visual illustration within the measured 16 mm board/cooler assembly height. |
 | Drive motors | Existing placed MOSS motor geometry. Encoder discs/magnets are visual references. |
 | Six-way motor connector | Arduitronics RU00129 and MOSS workshop photos. KiCad XH-style visual reference; procurement retains the motor-supplied cable. See INTERFACE_VERIFICATION.md. |

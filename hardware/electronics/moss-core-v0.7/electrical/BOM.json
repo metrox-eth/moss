@@ -2,24 +2,28 @@
   {
     "mpn": "GRM188R61A105KA61D",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "quantity": 4,
+    "quantity": 5,
     "references": [
       "C1",
       "C2",
       "C43",
-      "C44"
+      "C44",
+      "C166"
     ],
     "labels_by_reference": {
       "C1": "1uF",
       "C2": "1uF",
       "C43": "1uF",
-      "C44": "1uF"
+      "C44": "1uF",
+      "C166": "1uF / 10V"
     },
     "values": [
-      "1uF"
+      "1uF",
+      "1uF / 10V"
     ],
     "is_pcb_item": true,
-    "value": "1uF"
+    "manufacturer": "Murata",
+    "value": "GRM188R61A105KA61D"
   },
   {
     "mpn": "GRM21BR71A475KA73L",
@@ -125,23 +129,31 @@
   {
     "mpn": "GRM188R71H104KA93D",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "quantity": 3,
+    "quantity": 6,
     "references": [
       "C31",
       "C141",
-      "C151"
+      "C151",
+      "C162",
+      "C163",
+      "C167"
     ],
     "labels_by_reference": {
       "C31": "100nF",
       "C141": "100nF 50V X7R",
-      "C151": "100n"
+      "C151": "100n",
+      "C162": "100nF / 50V X7R",
+      "C163": "100nF / 50V X7R",
+      "C167": "100nF / 50V X7R"
     },
     "values": [
       "100n",
       "100nF",
+      "100nF / 50V X7R",
       "100nF 50V X7R"
     ],
     "is_pcb_item": true,
+    "manufacturer": "Murata",
     "value": "GRM188R71H104KA93D"
   },
   {
@@ -216,19 +228,24 @@
   {
     "mpn": "GRM31CR71A226KE15L",
     "footprint": "Capacitor_SMD:C_1206_3216Metric",
-    "quantity": 2,
+    "quantity": 4,
     "references": [
       "C85",
-      "C86"
+      "C86",
+      "C164",
+      "C165"
     ],
     "labels_by_reference": {
       "C85": "22uF / 10V X7R",
-      "C86": "22uF / 10V X7R"
+      "C86": "22uF / 10V X7R",
+      "C164": "22uF / 10V X7R",
+      "C165": "22uF / 10V X7R"
     },
     "values": [
       "22uF / 10V X7R"
     ],
     "is_pcb_item": true,
+    "manufacturer": "Murata",
     "value": "22uF / 10V X7R"
   },
   {
@@ -368,6 +385,57 @@
     "value": "1n"
   },
   {
+    "mpn": "GRM32ER71E226KE15L",
+    "footprint": "Capacitor_SMD:C_1210_3225Metric",
+    "quantity": 1,
+    "references": [
+      "C160"
+    ],
+    "labels_by_reference": {
+      "C160": "22uF / 25V X7R"
+    },
+    "values": [
+      "22uF / 25V X7R"
+    ],
+    "is_pcb_item": true,
+    "manufacturer": "Murata",
+    "value": "22uF / 25V X7R"
+  },
+  {
+    "mpn": "GRM188R71H333KA61D",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "quantity": 1,
+    "references": [
+      "C168"
+    ],
+    "labels_by_reference": {
+      "C168": "33nF / 50V X7R"
+    },
+    "values": [
+      "33nF / 50V X7R"
+    ],
+    "is_pcb_item": true,
+    "manufacturer": "Murata",
+    "value": "33nF / 50V X7R"
+  },
+  {
+    "mpn": "GRM1885C1H391JA01D",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "quantity": 1,
+    "references": [
+      "C169"
+    ],
+    "labels_by_reference": {
+      "C169": "390pF / C0G"
+    },
+    "values": [
+      "390pF / C0G"
+    ],
+    "is_pcb_item": true,
+    "manufacturer": "Murata",
+    "value": "390pF / C0G"
+  },
+  {
     "mpn": "PMEG2010ER,115",
     "footprint": "Diode_SMD:Nexperia_CFP3_SOD-123W",
     "quantity": 1,
@@ -441,6 +509,7 @@
       "TPD1E10B06DYAR"
     ],
     "is_pcb_item": true,
+    "assemblyPreference": "TI DYA0002A, 2 pins: TI catalog name SOT-5X3 and TI drawing name SOT (SOD-523) identify this same package. Keep exact TPD1E10B06DYAR and the supplied D_SOD-523 copper footprint.",
     "value": "TPD1E10B06DYAR"
   },
   {
@@ -594,6 +663,7 @@
       "SPEAKER / 4 ohm 3 W"
     ],
     "is_pcb_item": true,
+    "assemblyPreference": "Manual through-hole insertion/soldering with suitable fixture and PCB support. Fully seat connector; do not bend PCB or damage housing when applying seating pressure. Inspect joints and seating.",
     "value": "SPEAKER / 4 ohm 3 W"
   },
   {
@@ -610,6 +680,7 @@
       "E-STOP / SIGNAL ONLY"
     ],
     "is_pcb_item": true,
+    "assemblyPreference": "Manual placement accepted for these two prototypes because this exact part has no suction cap; solder/inspect using suitable process. Keep exact connector and mating interface. Do not omit J8.",
     "value": "E-STOP / SIGNAL ONLY"
   },
   {
@@ -691,40 +762,22 @@
   {
     "mpn": "SRP6060FA-100M",
     "footprint": "Inductor_SMD:L_Bourns_SRP6060FA",
-    "quantity": 1,
+    "quantity": 2,
     "references": [
-      "L2"
+      "L2",
+      "L3"
     ],
     "labels_by_reference": {
-      "L2": "10uH / 7.6A Isat typ"
+      "L2": "10uH / 7.6A Isat typ",
+      "L3": "10uH"
     },
     "values": [
+      "10uH",
       "10uH / 7.6A Isat typ"
     ],
     "is_pcb_item": true,
-    "value": "10uH / 7.6A Isat typ"
-  },
-  {
-    "mpn": "29035",
-    "footprint": "MOSS_Power:Waveshare_DC5_36_TO_DC3V3_5_SMD_33x16mm_HandSolder",
-    "quantity": 1,
-    "references": [
-      "MOD1"
-    ],
-    "labels_by_reference": {
-      "MOD1": "DC5-36-TO-DC3V3-5 / 5V"
-    },
-    "values": [
-      "DC5-36-TO-DC3V3-5 / 5V"
-    ],
-    "is_pcb_item": true,
-    "manufacturer": "Waveshare",
-    "sku": "29035",
-    "purchase_url": "https://www.waveshare.com/dc5-36-to-dc3v3-5.htm?sku=29035",
-    "assemblyPreference": "PCBWay if sourcing/assembly accepted",
-    "procurementStatus": "not quoted/not confirmed",
-    "assemblyFallback": "User hand-soldering only if PCBWay sourcing or assembly is declined",
-    "value": "DC5-36-TO-DC3V3-5 / 5V"
+    "manufacturer": "Bourns",
+    "value": "SRP6060FA-100M"
   },
   {
     "mpn": "MMBT3904,215",
@@ -756,6 +809,7 @@
       "SiRA99DP"
     ],
     "is_pcb_item": true,
+    "assemblyPreference": "Vishay order code SIRA99DP-T1-GE3 is accepted; difference from SiRA99DP-T1-GE3 is letter case only.",
     "value": "SiRA99DP"
   },
   {
@@ -815,7 +869,7 @@
   {
     "mpn": "RC0603FR-0710KL",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "quantity": 25,
+    "quantity": 26,
     "references": [
       "R5",
       "R6",
@@ -840,6 +894,7 @@
       "R110",
       "R111",
       "R143",
+      "R214",
       "R223",
       "R227"
     ],
@@ -868,12 +923,14 @@
       "R58": "10k",
       "R143": "10k",
       "R223": "10k",
-      "R227": "10k"
+      "R227": "10k",
+      "R214": "10k"
     },
     "values": [
       "10k"
     ],
     "is_pcb_item": true,
+    "manufacturer": "Yageo",
     "value": "10k"
   },
   {
@@ -1021,7 +1078,7 @@
   {
     "mpn": "RC0603FR-07100KL",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "quantity": 8,
+    "quantity": 9,
     "references": [
       "R55",
       "R74",
@@ -1030,7 +1087,8 @@
       "R78",
       "R79",
       "R144",
-      "R200"
+      "R200",
+      "R211"
     ],
     "labels_by_reference": {
       "R74": "100k",
@@ -1040,13 +1098,15 @@
       "R79": "100k",
       "R55": "100k",
       "R144": "100k",
-      "R200": "100k 1% 100ppm"
+      "R200": "100k 1% 100ppm",
+      "R211": "100k"
     },
     "values": [
       "100k",
       "100k 1% 100ppm"
     ],
     "is_pcb_item": true,
+    "manufacturer": "Yageo",
     "value": "RC0603FR-07100KL"
   },
   {
@@ -1249,6 +1309,74 @@
     "value": "470R 1%"
   },
   {
+    "mpn": "RC0603FR-07499KL",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "quantity": 1,
+    "references": [
+      "R210"
+    ],
+    "labels_by_reference": {
+      "R210": "499k"
+    },
+    "values": [
+      "499k"
+    ],
+    "is_pcb_item": true,
+    "manufacturer": "Yageo",
+    "value": "499k"
+  },
+  {
+    "mpn": "RC0603FR-074R7L",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "quantity": 1,
+    "references": [
+      "R212"
+    ],
+    "labels_by_reference": {
+      "R212": "4.7"
+    },
+    "values": [
+      "4.7"
+    ],
+    "is_pcb_item": true,
+    "manufacturer": "Yageo",
+    "value": "4.7"
+  },
+  {
+    "mpn": "RC0603FR-0753K6L",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "quantity": 1,
+    "references": [
+      "R213"
+    ],
+    "labels_by_reference": {
+      "R213": "53.6k"
+    },
+    "values": [
+      "53.6k"
+    ],
+    "is_pcb_item": true,
+    "manufacturer": "Yageo",
+    "value": "53.6k"
+  },
+  {
+    "mpn": "RC0603FR-07845KL",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "quantity": 1,
+    "references": [
+      "R215"
+    ],
+    "labels_by_reference": {
+      "R215": "845k"
+    },
+    "values": [
+      "845k"
+    ],
+    "is_pcb_item": true,
+    "manufacturer": "Yageo",
+    "value": "845k"
+  },
+  {
     "mpn": "RC1206FR-071KL",
     "footprint": "Resistor_SMD:R_1206_3216Metric",
     "quantity": 2,
@@ -1336,20 +1464,23 @@
     "value": "ESP32-S3-WROOM-1U-N8"
   },
   {
-    "mpn": "TPD2E2U06DCKR",
+    "mpn": "TPD2E2U06QDCKRQ1",
     "footprint": "Package_TO_SOT_SMD:SOT-323_SC-70",
     "quantity": 1,
     "references": [
       "U2"
     ],
     "labels_by_reference": {
-      "U2": "TPD2E2U06DCKR"
+      "U2": "TPD2E2U06QDCKRQ1"
     },
     "values": [
-      "TPD2E2U06DCKR"
+      "TPD2E2U06QDCKRQ1"
     ],
     "is_pcb_item": true,
-    "value": "TPD2E2U06DCKR"
+    "manufacturer": "Texas Instruments",
+    "purchase_url": "https://www.digikey.com/en/products/detail/texas-instruments/TPD2E2U06QDCKRQ1/6026260",
+    "assemblyPreference": "TPD2E2U06QDCKRQ1 replaces unavailable TPD2E2U06DCKR. Exact DCK / SC-70-3, pins 1 IO1, 2 IO2, 3 GND. Do not substitute DBZ or DRL. MSL2: follow moisture handling. DigiKey 296-44302-1-ND; stock shown at review, reconfirm for quotation.",
+    "value": "TPD2E2U06QDCKRQ1"
   },
   {
     "mpn": "TPS2553DBVR",
@@ -1656,5 +1787,22 @@
     ],
     "is_pcb_item": true,
     "value": "SN74LVC1G14"
+  },
+  {
+    "mpn": "MP9447GL-Z",
+    "footprint": "MOSS_Power:MP9447_QFN25_3x4",
+    "quantity": 1,
+    "references": [
+      "U60"
+    ],
+    "labels_by_reference": {
+      "U60": "MP9447GL-Z / integrated host buck"
+    },
+    "values": [
+      "MP9447GL-Z / integrated host buck"
+    ],
+    "is_pcb_item": true,
+    "manufacturer": "MPS",
+    "value": "MP9447GL-Z / integrated host buck"
   }
 ]

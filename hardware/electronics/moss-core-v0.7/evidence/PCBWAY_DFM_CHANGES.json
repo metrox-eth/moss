@@ -1,0 +1,291 @@
+{
+  "status": "PASS_MASK_ONLY_GEOMETRY_CHANGE",
+  "input_board_sha256": "62f82d49dc730cb7b3c141827aaf177df0a8d3aa735dc843e21ce32f8281a9b2",
+  "output_board_sha256": "e277ba4ba0fd84cb487ffbdb3524b62d9eb6b3f39b2a7dbb1d6935366fd08642",
+  "changed_layers": [
+    "F.Mask",
+    "B.Mask"
+  ],
+  "copper_tracks_unchanged": true,
+  "pad_geometry_nets_placement_drills_unchanged": true,
+  "paste_layers_unchanged": true,
+  "U2_value_and_MPN_change": {
+    "from": "TPD2E2U06DCKR",
+    "to": "TPD2E2U06QDCKRQ1"
+  },
+  "joined_mask_rows": [
+    {
+      "ref": "U43",
+      "pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "layer": "F.Mask",
+      "opening_bounds_mm": [
+        58.85,
+        39.185,
+        60.35,
+        41.535
+      ],
+      "added_open_area_mm2": 0.9330348301400304,
+      "unrelated_copper_exposed": false,
+      "existing_pad_lead_exposures": [
+        {
+          "uuid": "845388de-fe9f-4348-ab81-da770ab2641d",
+          "net": "GND",
+          "exposed_area_mm2": 8.862837245267742e-06
+        },
+        {
+          "uuid": "e54adceb-68c9-4273-8d5a-8094ca11376d",
+          "net": "GND",
+          "exposed_area_mm2": 8.862837245267742e-06
+        },
+        {
+          "uuid": "a9585864-0597-4326-999c-9a87fa7de6dc",
+          "net": "CURRENT_L_ADC",
+          "exposed_area_mm2": 2.2328580582720344e-07
+        },
+        {
+          "uuid": "5494890f-b5d1-43ad-b4e5-c0814556dead",
+          "net": "CURRENT_R_ADC",
+          "exposed_area_mm2": 2.2328580582720344e-07
+        }
+      ],
+      "uuid": "5af3c336-78f4-409f-9960-64825c11f9b1",
+      "parent": "footprint",
+      "allow_soldermask_bridges_explicit": true
+    },
+    {
+      "ref": "U43",
+      "pins": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "layer": "F.Mask",
+      "opening_bounds_mm": [
+        54.65,
+        39.185,
+        56.15,
+        41.535
+      ],
+      "added_open_area_mm2": 0.93303483014003,
+      "unrelated_copper_exposed": false,
+      "existing_pad_lead_exposures": [
+        {
+          "uuid": "91382f9f-5134-45de-b906-f533c1fd6d8d",
+          "net": "GND",
+          "exposed_area_mm2": 0.00021165118620416633
+        },
+        {
+          "uuid": "0aac741f-7031-4ea9-a4df-c3dbc28fbbda",
+          "net": "3V3",
+          "exposed_area_mm2": 0.0002116511862039442
+        },
+        {
+          "uuid": "24e0ba3e-a54f-4d74-9b0d-57a22079ccef",
+          "net": "3V3",
+          "exposed_area_mm2": 0.0002116511862039442
+        },
+        {
+          "uuid": "bc21dd3d-dc80-4fbb-a58c-8e06e7c358de",
+          "net": "I2C_SDA",
+          "exposed_area_mm2": 0.000500784957499986
+        }
+      ],
+      "uuid": "bcdbe272-0ce6-4256-8667-b24304e717ba",
+      "parent": "footprint",
+      "allow_soldermask_bridges_explicit": true
+    },
+    {
+      "ref": "U14",
+      "pins": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "layer": "F.Mask",
+      "opening_bounds_mm": [
+        9.175,
+        71.475,
+        11.025,
+        72.725
+      ],
+      "added_open_area_mm2": 0.5889278641120013,
+      "unrelated_copper_exposed": false,
+      "existing_pad_lead_exposures": [
+        {
+          "uuid": "5245b559-c588-4301-a7b6-ceddd4ba58c3",
+          "net": "SERVO_TX",
+          "exposed_area_mm2": 8.862837245442112e-06
+        },
+        {
+          "uuid": "0575854a-2133-4c42-b144-da9cd2a0e01f",
+          "net": "SERVO_OE_ON",
+          "exposed_area_mm2": 2.9816715007310636e-05
+        },
+        {
+          "uuid": "8e06c79e-e825-4083-ae24-43ae2d82227e",
+          "net": "SERVO_OE_ON",
+          "exposed_area_mm2": 8.862837245175545e-06
+        },
+        {
+          "uuid": "5122e8f0-b110-4937-916d-22e1938e1c5a",
+          "net": "SERVO_BIAS_3V3",
+          "exposed_area_mm2": 8.862837245175545e-06
+        },
+        {
+          "uuid": "93f9d1d2-cf3a-4934-ba34-2d109fae1fe2",
+          "net": "SERVO_BIAS_3V3",
+          "exposed_area_mm2": 2.022623290478255e-05
+        }
+      ],
+      "uuid": "095458ec-06b4-43e7-9109-66f3a1492b82",
+      "parent": "footprint",
+      "allow_soldermask_bridges_explicit": true
+    },
+    {
+      "ref": "U14",
+      "pins": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "layer": "F.Mask",
+      "opening_bounds_mm": [
+        9.175,
+        68.675,
+        11.025,
+        69.925
+      ],
+      "added_open_area_mm2": 0.5889278641120002,
+      "unrelated_copper_exposed": false,
+      "existing_pad_lead_exposures": [
+        {
+          "uuid": "48b74a80-e8bf-4b24-ba9f-79f197b214f9",
+          "net": "3V3",
+          "exposed_area_mm2": 0.059400040465500195
+        },
+        {
+          "uuid": "c4021ca3-a09d-4b21-8cb7-675d1bec1f38",
+          "net": "3V3",
+          "exposed_area_mm2": 0.06579856567258949
+        },
+        {
+          "uuid": "cc93da91-b145-4bfe-bc17-aed199fd599c",
+          "net": "3V3",
+          "exposed_area_mm2": 0.03750000000000009
+        },
+        {
+          "uuid": "3707e0f2-414e-46f7-aca8-7778bc56ee93",
+          "net": "SERVO_TX_BUF",
+          "exposed_area_mm2": 8.862837245353182e-06
+        }
+      ],
+      "uuid": "39d7875c-7802-4408-98d7-51c88ec37bef",
+      "parent": "footprint",
+      "allow_soldermask_bridges_explicit": true
+    },
+    {
+      "ref": "U17",
+      "pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "layer": "B.Mask",
+      "opening_bounds_mm": [
+        59.35,
+        44.325,
+        60.85,
+        46.675
+      ],
+      "added_open_area_mm2": 0.9330348301400297,
+      "unrelated_copper_exposed": false,
+      "existing_pad_lead_exposures": [
+        {
+          "uuid": "208c71d1-177d-4385-873a-7e3d2bf7f064",
+          "net": "GND",
+          "exposed_area_mm2": 0.00021165118620394423
+        },
+        {
+          "uuid": "8b3b8a30-4642-4cbd-98ef-d375610b733e",
+          "net": "I2C_SCL",
+          "exposed_area_mm2": 0.00026944403867114954
+        },
+        {
+          "uuid": "c21cd3c7-0cc7-4742-b6ad-4ccb501e464a",
+          "net": "I2C_SDA",
+          "exposed_area_mm2": 0.0005007849575000118
+        },
+        {
+          "uuid": "f2373148-4a51-4a0c-bbe2-af6a692a68d7",
+          "net": "INA_ALERT_N",
+          "exposed_area_mm2": 8.862837245267742e-06
+        }
+      ],
+      "uuid": "45688f56-992f-4d6b-b919-8b94b1007860",
+      "parent": "footprint",
+      "allow_soldermask_bridges_explicit": true
+    },
+    {
+      "ref": "U17",
+      "pins": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "layer": "B.Mask",
+      "opening_bounds_mm": [
+        55.15,
+        44.325,
+        56.65,
+        46.675
+      ],
+      "added_open_area_mm2": 0.9330348301400293,
+      "unrelated_copper_exposed": false,
+      "existing_pad_lead_exposures": [
+        {
+          "uuid": "35544ea9-0e54-4e89-95f5-188ad8de6cef",
+          "net": "GND",
+          "exposed_area_mm2": 0.0002116511862039442
+        },
+        {
+          "uuid": "8f843990-cb59-41a0-99e4-536d4731fd7a",
+          "net": "GND",
+          "exposed_area_mm2": 0.0002116511862039442
+        },
+        {
+          "uuid": "f410d3a1-d55d-48c5-9f83-4023b4a5dec7",
+          "net": "GND",
+          "exposed_area_mm2": 0.00021165118620416633
+        },
+        {
+          "uuid": "8d49e507-948d-4218-85ec-8b313e9918b5",
+          "net": "PACK_VBUS",
+          "exposed_area_mm2": 8.862837245267742e-06
+        }
+      ],
+      "uuid": "1693bf47-7ab0-40b5-a71c-df7a48864ae5",
+      "parent": "footprint",
+      "allow_soldermask_bridges_explicit": true
+    }
+  ],
+  "GND_pads_connected": 214,
+  "GND_regions": {
+    "In1.Cu": 1,
+    "In2.Cu": 10
+  },
+  "local_footprint_mask_bridge_policy": "Common mask apertures intentional on U14/U17/U43 only; native AllowSolderMaskBridges set for these footprints and their two local library entries. No global rule severity or copper clearance changed."
+}

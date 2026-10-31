@@ -1,7 +1,8 @@
-MOSS CORE V0.7 — PROTOTYPE
-4 copper layers, 80 x 75 mm, 1.6 mm board.
-Layer order: F.Cu, In1.Cu, In2.Cu, B.Cu.
-Minimum plated hole: 0.20 mm. Use the supplied separate PTH/NPTH drill files, including slots.
-The exported mask, paste and silkscreen layers correspond to this exact PCB.
-Confirm stackup, copper build, DFM and any impedance requirements during engineering review.
-No payment or production authorization.
+MOSS CORE V0.7 / PROTOTYPE / 2026-10-31 / NEW QUOTATION
+4 copper layers, 80 x 75 mm, 1.6 mm board. Layer order F.Cu / In1.Cu / In2.Cu / B.Cu.
+Minimum plated hole 0.20 mm. Use the complete matched Gerber and separate PTH/NPTH files, including slots.
+PCBWAY SOLDER MASK COMMENT RESOLVED IN FILES: Common mask openings are provided locally over both pin rows of U14, U17 and U43, removing the 0.15 mm bridges that PCBWay cannot manufacture. No pad narrowing, copper rerouting or drill change is made by this DFM correction. Other mask openings and all paste apertures remain unchanged. Do not apply an additional global mask expansion. Please review CAM/stencil before production.
+H1 at (4,4) mm is now PTH, finished diameter 2.7 mm for M2.5: 5.4 mm exposed copper ring both faces, eight 0.5 mm stitch PTH to GND, no paste. Use the NEW drill files; do not reuse the previous NPTH file. The other seven mounting holes remain NPTH.
+The converter is now integrated: no Waveshare module footprint or separate module procurement.
+Please confirm final stackup, copper build and DFM in the quotation.
+Quotation/review only; no payment or production authorization in this submission.
