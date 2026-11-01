@@ -1,0 +1,67 @@
+{
+  "target": "MOSS Core V0.7 commissioning",
+  "review_date": "2026-11-01",
+  "qualification": "Compiled and host-tested; not flashed or hardware-qualified",
+  "board_sha256": "456219f7eb97119b7e4328ed76f150012619131788f42d3a9d21fc4e40859cdb",
+  "electrical_sha256": {
+    "circuit.json": "80aceb62b867a158efafe1cccc0763384479b2f619c79f407a8b722f2816ec69",
+    "MCU_PIN_MAP.json": "64d7c9f4bf37b9fefce667e99dd607e88e90d8d0e479c9827932cba1aa8605fe"
+  },
+  "toolchain": {
+    "arduino_cli": "1.1.1",
+    "esp32_arduino_core": "3.2.0",
+    "fqbn": "esp32:esp32:esp32s3:USBMode=default,CDCOnBoot=cdc,FlashSize=8M,PSRAM=disabled,PartitionScheme=default_8MB",
+    "warnings": "all; zero reported"
+  },
+  "build": {
+    "status": "PASS",
+    "flash_bytes": 487042,
+    "globals_bytes": 57328,
+    "binary_sha256": "a94c09d13d8502a2465a6c4bbf7ee33631210b970a5825aaeed6c1ef9a8b1dad"
+  },
+  "tests": {
+    "status": "PASS",
+    "sanitizers": [
+      "address",
+      "undefined"
+    ],
+    "core_assertions": 502,
+    "uart_adapter_assertions": 32,
+    "legacy_control_regressions": "PASS",
+    "console_duration_validation": "PASS",
+    "contract_mutations_rejected": 4,
+    "all_gpio_roles_verified": 33,
+    "repository_layout_portability": "PASS"
+  },
+  "source_sha256": {
+    ".gitignore": "21b141c41c0cf2bcc4bed0ffe554208437e445beb419522b7576453bbc3da58c",
+    "HARDWARE_FIRMWARE_FINDINGS.md": "644a970da8a9dab4698a02c2557f662f8817316909f8f9c88d90342d62d762bf",
+    "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "README.md": "71e6d3eceda9d1e81c0cd60788dcd9c23965e1c05f76f6b966cd28a27f2028f0",
+    "src/MOSS_CORE_V07/Core.h": "27ffff83f4857ece58da2f4412656aa0944b027bcb9bd083c965078e3f0e4461",
+    "src/MOSS_CORE_V07/Feetech.h": "02a9b3dd64fa04840b54b0ca0480905baa58d790e4fd684f2f1de99904b2768e",
+    "src/MOSS_CORE_V07/LegacyControl.h": "a9bdde9a743b93d62e381bb58707474653af3fd08f59a25a7b93baf17d3b697e",
+    "src/MOSS_CORE_V07/MOSS_CORE_V07.ino": "1de36ca5b438811407c7c6e8572941aeae2ad0c827c0dea07c87201becbefb55",
+    "src/MOSS_CORE_V07/Pins.h": "bf9724c78c3040b5be96fb91aff4c3214241318fe195df6d015773aa79b2137a",
+    "src/MOSS_CORE_V07/Sensors.h": "aee9585167a05bb5cf84d69fd5ada98a7ff9a8cefe04e78642abac2b6af1e300",
+    "src/MOSS_CORE_V07/ServoBus.h": "aa612c8acdd7f96f54e40b6839accddfad6fd823ed74a930378af5f2262a408a",
+    "tests/console_test.py": "ac1e650b0853ca718d98b79927048cd7dc039f79012b17b19635f9775e6ea107",
+    "tests/contract_test.py": "7eced05b42dc125a087cd11703ccf73909257376a3f8f265aca1562a3c58b807",
+    "tests/core_test.cpp": "4ea16b48d4ecc8c613385ebffc6c5f34733b211c4c899efe3371f9992114ca9b",
+    "tests/legacy_control_test.cpp": "5d1876271c92569e4eb9fede1bfbdb4734eacaba0606fa0fca127c2aab0877d2",
+    "tests/servo_bus_test.cpp": "ddcc53ca904d9fbf5aa0985c9ea4e5634bae95fe99e09dae924dc15f14ce0ae0",
+    "tests/stubs/Arduino.h": "c204ee0cac7a9d21d832a9a59701c4cffbb6bce57c07735c301f6666be7db08f",
+    "tests/stubs/driver/uart.h": "cb68cdbc38094738a618a756f9baf451982d48c11bbcf0f13dc6fbbc317b51d2",
+    "tools/bench_console.py": "5325825951b1329777263453ed2e9533fb3563d4107ef1817077df74e7301bbe",
+    "tools/compile.sh": "6c2b275f1a63b1fc59305690db05fd61de67e730a668d09d88ea13993d408383",
+    "tools/contract_paths.py": "b7fd63b345ab51ab8f05e69991f45c933c157fedc37f5903b092c8d0ee6ff730",
+    "tools/test_host.sh": "345e06853c76bde9534dcdd6e34dc0a16d2f4a8ad1a2e117a605cc87da4de3f2",
+    "tools/validate_contract.py": "7273de916020dd175d885d7c0a4e357ba79d5c3b98f475c3fbd367c7d7b0d550"
+  },
+  "logs_sha256": {
+    "compile.log": "4071120bf2e0d26241915cd5ec6faf292547352cd99d3d3e1a0004197aa13354",
+    "host_tests.log": "a44a56f2742e68977887566da8f61cfcee4ef9a1046bc70f2d9827112257af7a",
+    "portability_test.log": "a44a56f2742e68977887566da8f61cfcee4ef9a1046bc70f2d9827112257af7a"
+  },
+  "log_path_redaction": "Local user/workspace prefixes only; original private log hashes retained in the workshop review."
+}

@@ -2,6 +2,8 @@
 
 **Current: [`MOSS_QTPY_MDD3A/`](MOSS_QTPY_MDD3A/)** (`qtpy-mdd3a-v4`; the MDD10A build, `-DMOSS_DRIVER_MDD10A`, drives the left track without the drive inversion the MDD3A needed and keeps its encoder inversion: measured straight, 1.065 m by tape for 1.066 m by the encoders, 5 s at 100 %), QT Py ESP32-S3 on its screw-terminal carrier, native USB, limit 100 % since the first drive on the floor (10 October 2026), `ramp` command, one build per driver (Cytron MDD3A by default, `-DMOSS_DRIVER_MDD10A` for the MDD10A, see its `bench/README.md`). Host test: `tests/control_v04_test.cpp`.
 
+**Experimental Core V0.7:** [commissioning firmware and bench console](core-v0.7/README.md) for the new custom PCB. The ESP32-S3 target compiles and passes host tests, but has not been flashed to or validated on an assembled Core board. It uses a dedicated rearm handshake and is not a drop-in replacement for the current QT Py firmware or dimOS arm adapter.
+
 The rest of this page is the V0.3 bench firmware on the DevKitC, kept as history.
 
 ## MOSS ESP32-S3 commissioning firmware (V0.3, history)

@@ -28,8 +28,8 @@
       "sha256": "4654b669569c8c41d409a2738d028a92768c7669cdad8aa20fd506cf8214ead3"
     },
     "README.md": {
-      "bytes": 4234,
-      "sha256": "00fa3fb66941edad704bdfcc6e59e7e5d189866e2147cbf78372c649ae5fe4d3"
+      "bytes": 4421,
+      "sha256": "8d8d0cb5068ae62055bdc2823d83bf0ee564067fd319072ae033bfae3f1c468f"
     },
     "README_CAD.md": {
       "bytes": 5103,
@@ -506,6 +506,12 @@
     "viewer_runtime/package.json": {
       "bytes": 78,
       "sha256": "a9bd6d7d280d0355b8cddc71b5a19c1a28fb73be9d58118da5fa1a01693e9f44"
+    },
+    "COMPATIBILITY.md": {
+      "bytes": 1204,
+      "sha256": "11dcc3ae6f27b2717768cfd9805b9e66b13e41e54fed488d059255468cff1891"
     }
-  }
+  },
+  "compatible_power_rearm_board_sha256": "456219f7eb97119b7e4328ed76f150012619131788f42d3a9d21fc4e40859cdb",
+  "compatibility_note": "COMPATIBILITY.md"
 }

@@ -1,0 +1,21 @@
+{
+  "status": "BOUNDED_READ_ONLY_POWER_NOISE_REVIEW",
+  "basis_sha256": "0aceb1a65dc098242d2a42d42ffc09bbf25e011ff58a2b3448105b7e828f6afd",
+  "report": "README.md",
+  "measurements": "POWER_LAYOUT_MEASUREMENTS.json",
+  "positive_rails_separate_on_Core": true,
+  "galvanic_isolation": false,
+  "logic_nominal_V": 3.384,
+  "Cff_decision": "Add isolated C170 6.8pF C0G across R70 per TI with R71=100k; prototype transient qualification remains required.",
+  "Cff_candidate": "../cff_candidate/CFF_CANDIDATE_REPORT.json",
+  "host_feedback_external_ramp_matches_MPS_Table4_values": true,
+  "host_loop_layout_qualification_points": [
+    "C160 22uF input bulk is6.77mm pad-centre from right VIN; immediate two-side caps are100nF, not22uF.",
+    "Feedback resistors4\u20136.5mm pad-centre from FB; noFBvia, In1GND under existing trace.",
+    "Pad-centre distances are lower bounds and cannot quantify hot-loop inductance or noise."
+  ],
+  "ground_correction": "J2.5 and J11.2 shareGND; if joined inCytron, parallel return paths exist. Signal-ground motorcurrent is not proven zero.",
+  "native_changes_made_by_this_readonly_review": false,
+  "new_heavy_simulations": false,
+  "general_verdict": "Coherent topology and real local decoupling; no static conclusion of EMC/stability compliance. No additional filter or power-loop modification proposed in this bounded review."
+}

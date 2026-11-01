@@ -1,15 +1,15 @@
 {
   "status": "PASS",
   "file_hashes": {
-    "electrical/MOSS_Core_V07_Prototype.kicad_pcb": "7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14",
-    "electrical/circuit.json": "f4739a5a124a02c29be7033f7368145dea789062d78fd761e20b8749df533125",
-    "electrical/BOM_PCBWAY_ASSEMBLY.json": "9310bf914b7bc76d479293a41e6bcc7c804a062dd338eae59bd460bdd4b47123",
-    "evidence/NETLIST.xml": "3d59572fbbc226c797da05c9f8c142e9c97005553e170208a65bf531237d8d78"
+    "electrical/MOSS_Core_V07_Prototype.kicad_pcb": "456219f7eb97119b7e4328ed76f150012619131788f42d3a9d21fc4e40859cdb",
+    "electrical/circuit.json": "80aceb62b867a158efafe1cccc0763384479b2f619c79f407a8b722f2816ec69",
+    "electrical/BOM_PCBWAY_ASSEMBLY.json": "2db3e8682de82b18961c9deae2b1f40a593e1697c60d6728299b51ed4c93cfd6",
+    "evidence/NETLIST.xml": "27c084d1fbab63de8406f9647e1f8d1f9ee7b7c1bb00c568e4da15ae0adb4aa8"
   },
-  "native_footprints": 222,
-  "assembled_components": 208,
-  "grouped_purchase_articles": 96,
-  "physical_pin_definitions_checked": 696,
+  "native_footprints": 230,
+  "assembled_components": 216,
+  "grouped_purchase_articles": 99,
+  "physical_pin_definitions_checked": 730,
   "scope": "Native physical pad nets and numbers, exact MPN fields, local footprint IDs, schematic netlist and grouped BOM are mutually consistent. No files modified.",
   "limits": "Not an independent datasheet/package-geometry review, electrical simulation or hardware test."
 }

@@ -2,7 +2,9 @@
 
 Updated **1 November 2026** for the current 82 x 79 mm Core PCB and the matching hull with a 74 x 71 mm mounting pattern. This is a prototype cable kit for **MOSS, the litter-picking rover**; the released rover remains V0.6/R92.
 
-![Current harness inside MOSS](media/ASSEMBLY.jpg)
+The [power/rearm update compatibility note](COMPATIBILITY.md) explains why this harness still fits the updated Core PCB and distinguishes the retained viewer model from the latest internal electronics.
+
+![Harness inside MOSS](media/ASSEMBLY.jpg)
 
 - **One six-wire cable per motor:** two winding leads and four encoder wires, through J3/J4 Micro-Fit connectors.
 - **Cytron link:** J2 carries four control signals, signal GND and four winding outputs. J11 remains the separate supply. These form one loom assembly with two Core terminations; J2 cavity 10 is empty.
@@ -26,6 +28,6 @@ Native PCB/schematic/contract comparison covers [76 pins on 12 connectors](evide
 
 Six full-diameter sleeve envelopes were checked against all 123 solids of the supplied Orange Pi CAD, including GPIO pins, and all four 20 mm standoffs: **zero intersection**, without trimming either end. The closest nominal Pi clearance is **1.77 mm** at J2's H03 trunk. See the [full CAD check](evidence/FULL_SLEEVE_OPI_QA.json), the separate [sampled route/context screen](evidence/CURRENT_ROUTE_CLEARANCE.json), and the [closed-cover/cooler screen](evidence/COOLER_LID_CLEARANCE.json). The latter includes all 42 complete wire paths and modeled sleeves, without endpoint exclusions: no contact with the closed cover or illustrative cooler. The real cooler shape was not supplied. H03 command loops stay below the Cytron cover roof; neither Cytron nor the cover was moved. The unchanged H03 trunk has 0.53 mm nominal clearance at the cover rib; physical wire/sleeve tolerances require first-article fitting. These are model checks, not physical-fit or electrical qualification.
 
-Retain the supplied motor pigtails and record their cavity/function map by continuity on the first article. Physical connector seating, wire/sleeve tolerances, closed-lid fit, strain relief, motor noise immunity and storage of the hub's 800 mm captive USB lead still require a fitted prototype. The old film shows the superseded 30 October layout and is not a current assembly reference. This session checked the offline bundle and static views; browser interaction was not tested.
+Retain the supplied motor pigtails and record their cavity/function map by continuity on the first article. Physical connector seating, wire/sleeve tolerances, closed-lid fit, strain relief, motor noise immunity and storage of the hub's 800 mm captive USB lead still require a fitted prototype. The old film shows the superseded 30 October layout and is not a current assembly reference. The offline bundle and static views were checked; browser interaction was not tested.
 
 See [geometry provenance](MODEL_PROVENANCE.md), [rebuild instructions](source/README.md) and [attribution/licensing](ATTRIBUTION.md). No PCB fabrication or assembly source is changed by this harness study.

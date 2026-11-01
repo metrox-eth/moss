@@ -1,0 +1,43 @@
+{
+  "date": "2026-11-01",
+  "status": "PASS_NATIVE_AND_ADDITIVE_GEOMETRY_CHECKS",
+  "baseline_pcb_sha256": "7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14",
+  "final_pcb_sha256": "456219f7eb97119b7e4328ed76f150012619131788f42d3a9d21fc4e40859cdb",
+  "native_checks": "CHECKS.json",
+  "physical_pin_checks": "DESIGN_CONTRACT.json",
+  "power_ground_checks": "POWER_AND_GROUND.json",
+  "mechanical_additions": "ADDITIVE_MECHANICAL_REVIEW.json",
+  "final_geometry_binding": "MECHANICAL_FINAL_EQUIVALENCE.json",
+  "preserved": [
+    "222 pre-existing footprint geometries, poses and model transforms",
+    "82x79mm outline, board thickness, all mounting centres",
+    "all external connector pin maps",
+    "motor force widths and vias, Kelvin routes and switching loops",
+    "routing candidate USB chamfers"
+  ],
+  "changed_existing_pin_maps": [
+    "U1 GPIO1/GPIO2 now ARM_COMMIT/ARM_LATCHED",
+    "U6 ACT_READY inputs now ARM_READY"
+  ],
+  "new_parts": [
+    "U51",
+    "U52",
+    "R228",
+    "R229",
+    "R230",
+    "C154",
+    "C155",
+    "C170"
+  ],
+  "retained_baseline_scope": {
+    "MECHANICAL_REVIEW.json": "Upper stack and existing connector bodies; unchanged physical geometry. New parts checked separately.",
+    "CABLE_CLEARANCE_ROUTES.json": "Existing outward wire reservations unchanged. No harness geometry change.",
+    "MOUNTING_CLEARANCE.json": "Outline/holes unchanged.",
+    "VERTICAL_CONNECTOR_CONTRACT.json": "All connectors and mating references unchanged."
+  },
+  "limits": [
+    "Saved copper connectivity does not establish EMC immunity.",
+    "No assembled board, powered measurement, firmware execution on hardware or thermal test.",
+    "Earlier evidence retains its original source hash; it is not relabeled as a new simulation."
+  ]
+}

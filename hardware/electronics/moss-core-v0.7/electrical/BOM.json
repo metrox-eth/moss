@@ -62,7 +62,7 @@
   {
     "mpn": "GRM188R71C104KA01D",
     "footprint": "Capacitor_SMD:C_0603_1608Metric",
-    "quantity": 15,
+    "quantity": 17,
     "references": [
       "C7",
       "C9",
@@ -78,7 +78,9 @@
       "C42",
       "C80",
       "C84",
-      "C100"
+      "C100",
+      "C154",
+      "C155"
     ],
     "labels_by_reference": {
       "C7": "100nF",
@@ -95,7 +97,9 @@
       "C27": "100nF",
       "C80": "100nF",
       "C84": "100nF",
-      "C100": "100n"
+      "C100": "100n",
+      "C154": "100nF",
+      "C155": "100nF"
     },
     "values": [
       "100n",
@@ -436,6 +440,23 @@
     "value": "390pF / C0G"
   },
   {
+    "mpn": "GRM1555C1H6R8DA01D",
+    "footprint": "Capacitor_SMD:C_0402_1005Metric",
+    "quantity": 1,
+    "references": [
+      "C170"
+    ],
+    "labels_by_reference": {
+      "C170": "6.8pF C0G 50V"
+    },
+    "values": [
+      "6.8pF C0G 50V"
+    ],
+    "is_pcb_item": true,
+    "manufacturer": "Murata",
+    "value": "6.8pF C0G 50V"
+  },
+  {
     "mpn": "PMEG2010ER,115",
     "footprint": "Diode_SMD:Nexperia_CFP3_SOD-123W",
     "quantity": 1,
@@ -651,8 +672,8 @@
       "ARM / DATA V+ GND"
     ],
     "is_pcb_item": true,
-    "value": "ARM / DATA V+ GND",
-    "purchase_url": "https://www.molex.com/en-us/products/part-detail/22035035"
+    "purchase_url": "https://www.molex.com/en-us/products/part-detail/22035035",
+    "value": "ARM / DATA V+ GND"
   },
   {
     "mpn": "B2B-PH-K-S(LF)(SN)",
@@ -668,9 +689,9 @@
       "SPEAKER / 4 ohm 3 W"
     ],
     "is_pcb_item": true,
+    "purchase_url": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf",
     "assemblyPreference": "Manual through-hole insertion/soldering with suitable fixture and PCB support. Fully seat connector; do not bend PCB or damage housing when applying seating pressure. Inspect joints and seating.",
-    "value": "SPEAKER / 4 ohm 3 W",
-    "purchase_url": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
+    "value": "SPEAKER / 4 ohm 3 W"
   },
   {
     "mpn": "BM06B-SRSS-TB(LF)(SN)",
@@ -869,7 +890,7 @@
   {
     "mpn": "RC0603FR-0710KL",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "quantity": 26,
+    "quantity": 27,
     "references": [
       "R5",
       "R6",
@@ -896,7 +917,8 @@
       "R143",
       "R214",
       "R223",
-      "R227"
+      "R227",
+      "R228"
     ],
     "labels_by_reference": {
       "R5": "10k",
@@ -924,7 +946,8 @@
       "R143": "10k",
       "R223": "10k",
       "R227": "10k",
-      "R214": "10k"
+      "R214": "10k",
+      "R228": "10k"
     },
     "values": [
       "10k"
@@ -982,18 +1005,20 @@
   {
     "mpn": "RC0603FR-07100RL",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "quantity": 4,
+    "quantity": 5,
     "references": [
       "R23",
       "R25",
       "R27",
-      "R29"
+      "R29",
+      "R230"
     ],
     "labels_by_reference": {
       "R23": "100",
       "R25": "100",
       "R27": "100",
-      "R29": "100"
+      "R29": "100",
+      "R230": "100"
     },
     "values": [
       "100"
@@ -1078,7 +1103,7 @@
   {
     "mpn": "RC0603FR-07100KL",
     "footprint": "Resistor_SMD:R_0603_1608Metric",
-    "quantity": 9,
+    "quantity": 10,
     "references": [
       "R55",
       "R74",
@@ -1088,7 +1113,8 @@
       "R79",
       "R144",
       "R200",
-      "R211"
+      "R211",
+      "R229"
     ],
     "labels_by_reference": {
       "R74": "100k",
@@ -1099,7 +1125,8 @@
       "R55": "100k",
       "R144": "100k",
       "R200": "100k 1% 100ppm",
-      "R211": "100k"
+      "R211": "100k",
+      "R229": "100k"
     },
     "values": [
       "100k",
@@ -1787,6 +1814,40 @@
     ],
     "is_pcb_item": true,
     "value": "SN74LVC1G14"
+  },
+  {
+    "mpn": "SN74LVC1G74DCUR",
+    "footprint": "Package_SO:VSSOP-8_2.3x2mm_P0.5mm",
+    "quantity": 1,
+    "references": [
+      "U51"
+    ],
+    "labels_by_reference": {
+      "U51": "SN74LVC1G74DCUR"
+    },
+    "values": [
+      "SN74LVC1G74DCUR"
+    ],
+    "is_pcb_item": true,
+    "manufacturer": "Texas Instruments",
+    "value": "SN74LVC1G74DCUR"
+  },
+  {
+    "mpn": "SN74HCS11PWR",
+    "footprint": "Package_SO:TSSOP-14_4.4x5mm_P0.65mm",
+    "quantity": 1,
+    "references": [
+      "U52"
+    ],
+    "labels_by_reference": {
+      "U52": "SN74HCS11PWR"
+    },
+    "values": [
+      "SN74HCS11PWR"
+    ],
+    "is_pcb_item": true,
+    "manufacturer": "Texas Instruments",
+    "value": "SN74HCS11PWR"
   },
   {
     "mpn": "MP9447GL-Z",

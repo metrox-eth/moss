@@ -1,5 +1,5 @@
 Drill report for MOSS_Core_V07_Prototype.kicad_pcb
-Created on 2026-11-01T16:51:12
+Created on 2026-11-01T21:56:26
 
 Copper Layer Stackup:
     =============================================================
@@ -12,22 +12,23 @@ Copper Layer Stackup:
 Drill file 'MOSS_Core_V07_Prototype-PTH.drl' contains
     plated through holes:
     =============================================================
-    T1  0.200mm  0.0079"  (18 holes))
-    T2  0.300mm  0.0118"  (463 holes))
-    T3  0.400mm  0.0157"  (34 holes))
-    T4  0.450mm  0.0177"  (4 holes))
-    T5  0.500mm  0.0197"  (8 holes))
-    T6  0.600mm  0.0236"  (12 holes))
-    T7  0.600mm  0.0236"  (8 holes)  (with 8 slots)
-    T8  0.750mm  0.0295"  (2 holes))
-    T9  0.850mm  0.0335"  (3 holes))
-    T10  1.000mm  0.0394"  (4 holes))
-    T11  1.020mm  0.0402"  (22 holes))
-    T12  1.300mm  0.0512"  (2 holes))
-    T13  1.800mm  0.0709"  (2 holes))
-    T14  2.700mm  0.1063"  (1 hole)
+    T1  0.200mm  0.0079"  (31 holes))
+    T2  0.200mm  0.0079"  (18 holes))
+    T3  0.300mm  0.0118"  (463 holes))
+    T4  0.400mm  0.0157"  (34 holes))
+    T5  0.450mm  0.0177"  (4 holes))
+    T6  0.500mm  0.0197"  (8 holes))
+    T7  0.600mm  0.0236"  (12 holes))
+    T8  0.600mm  0.0236"  (8 holes)  (with 8 slots)
+    T9  0.750mm  0.0295"  (2 holes))
+    T10  0.850mm  0.0335"  (3 holes))
+    T11  1.000mm  0.0394"  (4 holes))
+    T12  1.020mm  0.0402"  (22 holes))
+    T13  1.300mm  0.0512"  (2 holes))
+    T14  1.800mm  0.0709"  (2 holes))
+    T15  2.700mm  0.1063"  (1 hole)
 
-    Total plated holes count 583
+    Total plated holes count 614
 
 
 Drill file 'MOSS_Core_V07_Prototype-NPTH.drl' contains

@@ -1,8 +1,8 @@
 {
-  "input": "MOSS_Core_V07_Prototype.kicad_pcb",
-  "input_sha256": "7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14",
-  "basis": "MOSS_Core_V07_Prototype.kicad_pcb",
-  "basis_sha256": "9f0ef9f1bc34934417560cd6f2751c714f3643d7959bae822c8b48c13b259b03",
+  "input": "electrical/MOSS_Core_V07_Prototype.kicad_pcb",
+  "input_sha256": "456219f7eb97119b7e4328ed76f150012619131788f42d3a9d21fc4e40859cdb",
+  "basis": "review_inputs/routing/candidate/electrical/MOSS_Core_V07_Prototype.kicad_pcb",
+  "basis_sha256": "0aceb1a65dc098242d2a42d42ffc09bbf25e011ff58a2b3448105b7e828f6afd",
   "checks": {
     "critical_usb_switching_kelvin_exact": true,
     "all_checked_net_pads_connected": true,
@@ -13,7 +13,7 @@
     "motor_force_min_widths_not_reduced": true,
     "motor_load_via_counts_not_reduced": true
   },
-  "critical_objects_preserved": 313,
+  "critical_objects_preserved": 317,
   "critical_objects_by_net": {
     "MOTOR_R_LEAD": 43,
     "HOST_FB": 5,
@@ -28,23 +28,23 @@
     "MOTOR_L_LEAD": 40,
     "CURRENT_L_RAW": 2,
     "BUCK_FB": 5,
-    "USB_N": 14,
+    "USB_N": 17,
     "ESP_USB_N": 3,
     "CURRENT_R_RAW": 4,
-    "USB_P": 11,
+    "USB_P": 12,
     "ESP_USB_P": 3,
     "BUCK_SW": 3
   },
   "critical_changed_uuids": [],
   "connectivity": {
     "GND": {
-      "pad_count": 208,
+      "pad_count": 214,
       "connected_to_root": true,
       "root": "J10.1",
       "missing": []
     },
     "3V3": {
-      "pad_count": 59,
+      "pad_count": 67,
       "connected_to_root": true,
       "root": "TP2.1",
       "missing": []
@@ -212,7 +212,7 @@
       },
       {
         "region": 3,
-        "area_mm2": 5079.420370628879,
+        "area_mm2": 5035.6474703670865,
         "bounds_mm": [
           0.3,
           -3.6995,
@@ -309,6 +309,11 @@
             "uuid": "2524f04d-771b-460e-b7a4-01d1654023e7",
             "pad": null,
             "contact_mm2": 0.20950201825188072
+          },
+          {
+            "uuid": "274fadd1-1d4a-4bb6-b36b-42dc0f68a22f",
+            "pad": null,
+            "contact_mm2": 0.1648106716299988
           },
           {
             "uuid": "2b187eff-44ee-494f-8e1d-8d1266b94576",
@@ -671,6 +676,11 @@
             "contact_mm2": 0.21191340338399964
           },
           {
+            "uuid": "b93e408e-9a6b-4c27-a91d-5acefab59768",
+            "pad": null,
+            "contact_mm2": 0.16481067163000074
+          },
+          {
             "uuid": "b9b6e064-1030-48a0-a8eb-9b01d7f0376e",
             "pad": null,
             "contact_mm2": 0.21191340338399978
@@ -734,6 +744,11 @@
             "uuid": "ca09aba0-cb89-4126-9a01-66821a1fc7e6",
             "pad": null,
             "contact_mm2": 0.21191340338399986
+          },
+          {
+            "uuid": "ca7b3285-8175-4d7e-a1bb-77c8ffcda72b",
+            "pad": null,
+            "contact_mm2": 0.1648106716299988
           },
           {
             "uuid": "cb0018ae-937e-4b61-b471-0f3002b49882",
@@ -1129,7 +1144,7 @@
       },
       {
         "region": 4,
-        "area_mm2": 11.84102442451399,
+        "area_mm2": 11.84102602798199,
         "bounds_mm": [
           26.7755,
           44.342864,
@@ -1140,7 +1155,7 @@
           {
             "uuid": "40ca641c-a257-4df6-9161-4a07a52a7777",
             "pad": null,
-            "contact_mm2": 0.21151109090458564
+            "contact_mm2": 0.2115110946927432
           },
           {
             "uuid": "c5c1052d-5242-4b4e-9c19-2800ee87dfa4",
@@ -1153,7 +1168,7 @@
     "In2.Cu": [
       {
         "region": 0,
-        "area_mm2": 3.4319633573554924,
+        "area_mm2": 3.4319633573554906,
         "bounds_mm": [
           29.1755,
           10.706342,
@@ -1264,6 +1279,23 @@
       },
       {
         "region": 3,
+        "area_mm2": 0.49283109715950163,
+        "bounds_mm": [
+          38.760589,
+          29.7806,
+          39.6546,
+          30.653251
+        ],
+        "battery_connected_annular_ties": [
+          {
+            "uuid": "f7531f06-4658-406c-9df8-e4f73611239c",
+            "pad": null,
+            "contact_mm2": 0.18444424350947064
+          }
+        ]
+      },
+      {
+        "region": 4,
         "area_mm2": 1.2661285044780013,
         "bounds_mm": [
           37.4065,
@@ -1280,7 +1312,7 @@
         ]
       },
       {
-        "region": 4,
+        "region": 5,
         "area_mm2": 0.44538275508999914,
         "bounds_mm": [
           31.0988,
@@ -1297,7 +1329,7 @@
         ]
       },
       {
-        "region": 5,
+        "region": 6,
         "area_mm2": 205.6407327251174,
         "bounds_mm": [
           17.8462,
@@ -1359,8 +1391,8 @@
         ]
       },
       {
-        "region": 6,
-        "area_mm2": 97.39817427476946,
+        "region": 7,
+        "area_mm2": 96.02527564116401,
         "bounds_mm": [
           26.712356,
           38.775027,
@@ -1411,8 +1443,8 @@
         ]
       },
       {
-        "region": 7,
-        "area_mm2": 11.686243425117013,
+        "region": 8,
+        "area_mm2": 11.685932942552029,
         "bounds_mm": [
           32.3229,
           51.508341,
@@ -1428,7 +1460,7 @@
         ]
       },
       {
-        "region": 8,
+        "region": 9,
         "area_mm2": 32.81360421335547,
         "bounds_mm": [
           39.995424,
@@ -1460,25 +1492,8 @@
         ]
       },
       {
-        "region": 9,
-        "area_mm2": 0.49283109715950163,
-        "bounds_mm": [
-          38.760589,
-          29.7806,
-          39.6546,
-          30.653251
-        ],
-        "battery_connected_annular_ties": [
-          {
-            "uuid": "f7531f06-4658-406c-9df8-e4f73611239c",
-            "pad": null,
-            "contact_mm2": 0.18444424350947064
-          }
-        ]
-      },
-      {
         "region": 10,
-        "area_mm2": 4188.914104124648,
+        "area_mm2": 4068.125059107669,
         "bounds_mm": [
           0.3,
           -3.6995,
@@ -1486,11 +1501,6 @@
           74.6995
         ],
         "battery_connected_annular_ties": [
-          {
-            "uuid": "020d88b4-973a-4838-88a3-cafcceab4da8",
-            "pad": null,
-            "contact_mm2": 0.21191340338400044
-          },
           {
             "uuid": "03768766-de9f-49af-bb0d-320bd06548a3",
             "pad": null,
@@ -1565,11 +1575,6 @@
             "uuid": "2ba85d5d-6905-48a1-8706-2336da29c0ac",
             "pad": null,
             "contact_mm2": 0.21191340338400066
-          },
-          {
-            "uuid": "2f6b1181-8dec-4fa3-9677-8e36536c34c6",
-            "pad": null,
-            "contact_mm2": 0.21191340338399964
           },
           {
             "uuid": "311cce01-4798-43a9-8b89-be1ee04b8b3f",
@@ -1697,11 +1702,6 @@
             "contact_mm2": 0.3767941274419999
           },
           {
-            "uuid": "57f30694-19ea-4402-8791-ad910fa36f56",
-            "pad": null,
-            "contact_mm2": 0.20679661238518054
-          },
-          {
             "uuid": "5bfd6cc8-9a7f-45fd-ae51-63c320bd7462",
             "pad": null,
             "contact_mm2": 0.2119134033839992
@@ -1760,11 +1760,6 @@
             "uuid": "7c6e6dbd-cfde-46df-85b1-e9451c0d259c",
             "pad": null,
             "contact_mm2": 0.21191340338400022
-          },
-          {
-            "uuid": "7c95d681-f21d-4ca8-871e-c2224858ac40",
-            "pad": null,
-            "contact_mm2": 0.21191340338400055
           },
           {
             "uuid": "7d958d1f-9244-4107-9e0d-e5d4c6e10ce2",
@@ -1835,11 +1830,6 @@
             "uuid": "b268054f-3346-4540-9073-e7bc70dde010",
             "pad": null,
             "contact_mm2": 0.37679412744200036
-          },
-          {
-            "uuid": "b30f7b5b-4f2e-4922-b86d-377cc03f0d2a",
-            "pad": null,
-            "contact_mm2": 0.21191340338399964
           },
           {
             "uuid": "b9b6e064-1030-48a0-a8eb-9b01d7f0376e",
@@ -1945,11 +1935,6 @@
             "uuid": "dbaf9a3e-d304-49a7-8a42-8d6d8063b4b1",
             "pad": null,
             "contact_mm2": 0.21150163842438857
-          },
-          {
-            "uuid": "dc18f599-a163-4002-a5f2-4f84e98c815c",
-            "pad": null,
-            "contact_mm2": 0.21191340338399944
           },
           {
             "uuid": "dc2f3c1c-ecb0-4120-91fd-db6ce1a2a335",
@@ -2162,6 +2147,85 @@
             "contact_mm2": 5.9719623931719985
           },
           {
+            "uuid": "113ef978-cb55-41bc-9f9f-9c7d36ad3270",
+            "pad": "J11.2",
+            "contact_mm2": 3.97397248985661
+          }
+        ]
+      },
+      {
+        "region": 11,
+        "area_mm2": 10.773972778856011,
+        "bounds_mm": [
+          52.247566,
+          39.49075,
+          58.0467,
+          45.5921
+        ],
+        "battery_connected_annular_ties": [
+          {
+            "uuid": "1e2dfac2-b996-433e-8f73-04eaf78154c1",
+            "pad": null,
+            "contact_mm2": 0.20639278638734304
+          },
+          {
+            "uuid": "393360b6-e471-44ab-83dc-5f894d0d2562",
+            "pad": null,
+            "contact_mm2": 0.202908597738604
+          },
+          {
+            "uuid": "44dea50b-ecc7-4c42-976b-b2da7cf53399",
+            "pad": null,
+            "contact_mm2": 0.21191340338400005
+          }
+        ]
+      },
+      {
+        "region": 12,
+        "area_mm2": 77.36312860988048,
+        "bounds_mm": [
+          40.7755,
+          32.162688,
+          47.8563,
+          55.96037
+        ],
+        "battery_connected_annular_ties": [
+          {
+            "uuid": "020d88b4-973a-4838-88a3-cafcceab4da8",
+            "pad": null,
+            "contact_mm2": 0.21191340338400044
+          },
+          {
+            "uuid": "2f6b1181-8dec-4fa3-9677-8e36536c34c6",
+            "pad": null,
+            "contact_mm2": 0.21191340338399964
+          },
+          {
+            "uuid": "57f30694-19ea-4402-8791-ad910fa36f56",
+            "pad": null,
+            "contact_mm2": 0.20679661238518054
+          },
+          {
+            "uuid": "7c95d681-f21d-4ca8-871e-c2224858ac40",
+            "pad": null,
+            "contact_mm2": 0.21191340338400055
+          },
+          {
+            "uuid": "b30f7b5b-4f2e-4922-b86d-377cc03f0d2a",
+            "pad": null,
+            "contact_mm2": 0.21191340338399964
+          },
+          {
+            "uuid": "b93e408e-9a6b-4c27-a91d-5acefab59768",
+            "pad": null,
+            "contact_mm2": 0.16104585123318887
+          },
+          {
+            "uuid": "dc18f599-a163-4002-a5f2-4f84e98c815c",
+            "pad": null,
+            "contact_mm2": 0.21191340338399944
+          },
+          {
             "uuid": "986242e0-3479-4dbe-b0a9-0b4405761f13",
             "pad": "U1.41",
             "contact_mm2": 0.2511939406579998
@@ -2220,44 +2284,12 @@
             "uuid": "727fd050-877f-47de-b2d1-c9f583eca493",
             "pad": "U1.41",
             "contact_mm2": 0.2446909780017624
-          },
-          {
-            "uuid": "113ef978-cb55-41bc-9f9f-9c7d36ad3270",
-            "pad": "J11.2",
-            "contact_mm2": 3.97397248985661
           }
         ]
       },
       {
-        "region": 11,
-        "area_mm2": 10.58682392829051,
-        "bounds_mm": [
-          52.642768,
-          39.49075,
-          58.0467,
-          45.5921
-        ],
-        "battery_connected_annular_ties": [
-          {
-            "uuid": "1e2dfac2-b996-433e-8f73-04eaf78154c1",
-            "pad": null,
-            "contact_mm2": 0.20639278638734304
-          },
-          {
-            "uuid": "393360b6-e471-44ab-83dc-5f894d0d2562",
-            "pad": null,
-            "contact_mm2": 0.202908597738604
-          },
-          {
-            "uuid": "44dea50b-ecc7-4c42-976b-b2da7cf53399",
-            "pad": null,
-            "contact_mm2": 0.21191340338400005
-          }
-        ]
-      },
-      {
-        "region": 12,
-        "area_mm2": 10.818997364180989,
+        "region": 13,
+        "area_mm2": 10.818997360584996,
         "bounds_mm": [
           50.038242,
           39.9755,
@@ -2278,7 +2310,7 @@
         ]
       },
       {
-        "region": 13,
+        "region": 14,
         "area_mm2": 10.519716440122487,
         "bounds_mm": [
           51.898693,
@@ -2310,8 +2342,8 @@
         ]
       },
       {
-        "region": 14,
-        "area_mm2": 14.008282256858003,
+        "region": 15,
+        "area_mm2": 13.4478307520585,
         "bounds_mm": [
           50.852429,
           47.6692,
@@ -2323,6 +2355,28 @@
             "uuid": "d602189f-8279-4e26-90b2-fcc71a895d7b",
             "pad": null,
             "contact_mm2": 0.21191340338399967
+          }
+        ]
+      },
+      {
+        "region": 16,
+        "area_mm2": 3.481419143439501,
+        "bounds_mm": [
+          54.272837,
+          49.80003,
+          56.068657,
+          54.129202
+        ],
+        "battery_connected_annular_ties": [
+          {
+            "uuid": "274fadd1-1d4a-4bb6-b36b-42dc0f68a22f",
+            "pad": null,
+            "contact_mm2": 0.1648106716299988
+          },
+          {
+            "uuid": "ca7b3285-8175-4d7e-a1bb-77c8ffcda72b",
+            "pad": null,
+            "contact_mm2": 0.1543567754211935
           }
         ]
       }
@@ -3149,8 +3203,36 @@
       },
       "after": {
         "minimum_track_width_mm": 0.2,
-        "total_track_length_mm": 427.70319983090786,
+        "total_track_length_mm": 457.7184942029853,
         "via_diameter_drill_mm": [
+          [
+            0.5,
+            0.2
+          ],
+          [
+            0.5,
+            0.2
+          ],
+          [
+            0.5,
+            0.2
+          ],
+          [
+            0.5,
+            0.2
+          ],
+          [
+            0.5,
+            0.2
+          ],
+          [
+            0.5,
+            0.2
+          ],
+          [
+            0.5,
+            0.2
+          ],
           [
             0.6,
             0.3
@@ -3269,7 +3351,7 @@
           ]
         ]
       },
-      "length_delta_mm": 0.0
+      "length_delta_mm": 30.01529437207745
     }
   },
   "port_contracts": {
@@ -3417,11 +3499,8 @@
     }
   },
   "changed_footprint_refs": [
-    "J20",
-    "H1",
-    "H3",
-    "J1",
-    "H2"
+    "U6",
+    "U1"
   ],
   "non_octilinear_tracks": [],
   "native_errors": [],
@@ -3434,22 +3513,5 @@
     "Native stored geometry and saved zone fills only; no board mutation, router, hardware or thermal test.",
     "All separate ground regions are disclosed; annular ties establish DC connectivity, not EMC or high-frequency return impedance.",
     "Manufacturer part/drawing match is documented by the component contracts; no new electrical protection certification."
-  ],
-  "geometry_validation_basis": {
-    "review": "POWER_AND_GROUND_FINAL.json",
-    "review_sha256": "0cef3a2c7a9603059d059c6c31f4fe0db59162e21691118f84d2ded66e2d2caf",
-    "reviewed_board_sha256": "14aa8760d646ee0e3e36964cad0ea4a8e3336cd2288a2042369a42388a0e8f96",
-    "native_and_annular_checks_not_rerun": true
-  },
-  "ink_only_equivalence": {
-    "proof": "OPI_RING_CHANGE.json",
-    "proof_sha256": "d5c7d6ec635d8639f4dc3bb26b3cf83fddd40431bd2c770d79fdd20f6c9d6c71",
-    "source_board_sha256": "14aa8760d646ee0e3e36964cad0ea4a8e3336cd2288a2042369a42388a0e8f96",
-    "final_board_sha256": "7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14",
-    "exact_changed_circle_count": 8,
-    "all_other_top_level_native_blocks_verified_exactly_equal": true,
-    "scope": "H5-H8 silkscreen only: outer4.2mm, inner3.0mm, stroke0.6mm. Pads, holes, copper, zone fills, models and other labels unchanged."
-  },
-  "checks_origin": "Native power/connectivity/ground-annulus checks were performed on14aa; the exact eight-circle-only equivalence preserves those electrical results for7d88. Final silkscreen DRC/warning counts are authoritative in CHECKS.json and DRC.json.",
-  "native_warnings_scope": "Counts retained from the14aa validation baseline; final silkscreen counts are recorded separately in CHECKS.json."
+  ]
 }

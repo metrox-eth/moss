@@ -1,0 +1,1327 @@
+{
+  "status": "PASS_ADDITIVE_MECHANICAL_ENVELOPES",
+  "placement_input_sha256": "475069e183773ced96386730f95f24c9ff6d830fd4f78e957b9cc50190bcac65",
+  "native_sources": {
+    "baseline": {
+      "source": "review_inputs/routing/baseline/electrical/MOSS_Core_V07_Prototype.kicad_pcb",
+      "sha256": "7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14",
+      "sha256_after_read": "7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14",
+      "thickness_mm": 1.6,
+      "edges": [
+        {
+          "shape": 2,
+          "start": [
+            -2.0,
+            -2.0
+          ],
+          "end": [
+            0.0,
+            -4.0
+          ],
+          "width": 0.05,
+          "center": [
+            -1e-06,
+            -2.000001
+          ]
+        },
+        {
+          "shape": 2,
+          "start": [
+            0.0,
+            75.0
+          ],
+          "end": [
+            -2.0,
+            73.0
+          ],
+          "width": 0.05,
+          "center": [
+            -1e-06,
+            73.000001
+          ]
+        },
+        {
+          "shape": 0,
+          "start": [
+            -2.0,
+            73.0
+          ],
+          "end": [
+            -2.0,
+            -2.0
+          ],
+          "width": 0.05,
+          "center": [
+            -2.0,
+            35.5
+          ]
+        },
+        {
+          "shape": 0,
+          "start": [
+            0.0,
+            -4.0
+          ],
+          "end": [
+            78.0,
+            -4.0
+          ],
+          "width": 0.05,
+          "center": [
+            39.0,
+            -4.0
+          ]
+        },
+        {
+          "shape": 0,
+          "start": [
+            78.0,
+            75.0
+          ],
+          "end": [
+            0.0,
+            75.0
+          ],
+          "width": 0.05,
+          "center": [
+            39.0,
+            75.0
+          ]
+        },
+        {
+          "shape": 2,
+          "start": [
+            78.0,
+            -4.0
+          ],
+          "end": [
+            80.0,
+            -2.0
+          ],
+          "width": 0.05,
+          "center": [
+            78.0,
+            -2.0
+          ]
+        },
+        {
+          "shape": 2,
+          "start": [
+            80.0,
+            73.0
+          ],
+          "end": [
+            78.0,
+            75.0
+          ],
+          "width": 0.05,
+          "center": [
+            78.0,
+            73.0
+          ]
+        },
+        {
+          "shape": 0,
+          "start": [
+            80.0,
+            -2.0
+          ],
+          "end": [
+            80.0,
+            73.0
+          ],
+          "width": 0.05,
+          "center": [
+            80.0,
+            35.5
+          ]
+        }
+      ]
+    },
+    "latch": {
+      "source": "review_inputs/latch_layout/electrical/MOSS_Core_V07_Prototype.kicad_pcb",
+      "sha256": "0c2884c188dd75a84bb08e1efd18d2e41d516b9d5fe88ce3f574eff1606a3ec7",
+      "sha256_after_read": "0c2884c188dd75a84bb08e1efd18d2e41d516b9d5fe88ce3f574eff1606a3ec7",
+      "thickness_mm": 1.6,
+      "edges": [
+        {
+          "shape": 2,
+          "start": [
+            -2.0,
+            -2.0
+          ],
+          "end": [
+            0.0,
+            -4.0
+          ],
+          "width": 0.05,
+          "center": [
+            -1e-06,
+            -2.000001
+          ]
+        },
+        {
+          "shape": 2,
+          "start": [
+            0.0,
+            75.0
+          ],
+          "end": [
+            -2.0,
+            73.0
+          ],
+          "width": 0.05,
+          "center": [
+            -1e-06,
+            73.000001
+          ]
+        },
+        {
+          "shape": 0,
+          "start": [
+            -2.0,
+            73.0
+          ],
+          "end": [
+            -2.0,
+            -2.0
+          ],
+          "width": 0.05,
+          "center": [
+            -2.0,
+            35.5
+          ]
+        },
+        {
+          "shape": 0,
+          "start": [
+            0.0,
+            -4.0
+          ],
+          "end": [
+            78.0,
+            -4.0
+          ],
+          "width": 0.05,
+          "center": [
+            39.0,
+            -4.0
+          ]
+        },
+        {
+          "shape": 0,
+          "start": [
+            78.0,
+            75.0
+          ],
+          "end": [
+            0.0,
+            75.0
+          ],
+          "width": 0.05,
+          "center": [
+            39.0,
+            75.0
+          ]
+        },
+        {
+          "shape": 2,
+          "start": [
+            78.0,
+            -4.0
+          ],
+          "end": [
+            80.0,
+            -2.0
+          ],
+          "width": 0.05,
+          "center": [
+            78.0,
+            -2.0
+          ]
+        },
+        {
+          "shape": 2,
+          "start": [
+            80.0,
+            73.0
+          ],
+          "end": [
+            78.0,
+            75.0
+          ],
+          "width": 0.05,
+          "center": [
+            78.0,
+            73.0
+          ]
+        },
+        {
+          "shape": 0,
+          "start": [
+            80.0,
+            -2.0
+          ],
+          "end": [
+            80.0,
+            73.0
+          ],
+          "width": 0.05,
+          "center": [
+            80.0,
+            35.5
+          ]
+        }
+      ]
+    },
+    "cff": {
+      "source": "review_inputs/power/cff_candidate/electrical/MOSS_Core_V07_Prototype.kicad_pcb",
+      "sha256": "e1bae56f5fb3f49f3cade31e7b7a99c702cda396dd18d902151bc0d3279e359e",
+      "sha256_after_read": "e1bae56f5fb3f49f3cade31e7b7a99c702cda396dd18d902151bc0d3279e359e",
+      "thickness_mm": 1.6,
+      "edges": [
+        {
+          "shape": 2,
+          "start": [
+            -2.0,
+            -2.0
+          ],
+          "end": [
+            0.0,
+            -4.0
+          ],
+          "width": 0.05,
+          "center": [
+            -1e-06,
+            -2.000001
+          ]
+        },
+        {
+          "shape": 2,
+          "start": [
+            0.0,
+            75.0
+          ],
+          "end": [
+            -2.0,
+            73.0
+          ],
+          "width": 0.05,
+          "center": [
+            -1e-06,
+            73.000001
+          ]
+        },
+        {
+          "shape": 0,
+          "start": [
+            -2.0,
+            73.0
+          ],
+          "end": [
+            -2.0,
+            -2.0
+          ],
+          "width": 0.05,
+          "center": [
+            -2.0,
+            35.5
+          ]
+        },
+        {
+          "shape": 0,
+          "start": [
+            0.0,
+            -4.0
+          ],
+          "end": [
+            78.0,
+            -4.0
+          ],
+          "width": 0.05,
+          "center": [
+            39.0,
+            -4.0
+          ]
+        },
+        {
+          "shape": 0,
+          "start": [
+            78.0,
+            75.0
+          ],
+          "end": [
+            0.0,
+            75.0
+          ],
+          "width": 0.05,
+          "center": [
+            39.0,
+            75.0
+          ]
+        },
+        {
+          "shape": 2,
+          "start": [
+            78.0,
+            -4.0
+          ],
+          "end": [
+            80.0,
+            -2.0
+          ],
+          "width": 0.05,
+          "center": [
+            78.0,
+            -2.0
+          ]
+        },
+        {
+          "shape": 2,
+          "start": [
+            80.0,
+            73.0
+          ],
+          "end": [
+            78.0,
+            75.0
+          ],
+          "width": 0.05,
+          "center": [
+            78.0,
+            73.0
+          ]
+        },
+        {
+          "shape": 0,
+          "start": [
+            80.0,
+            -2.0
+          ],
+          "end": [
+            80.0,
+            73.0
+          ],
+          "width": 0.05,
+          "center": [
+            80.0,
+            35.5
+          ]
+        }
+      ]
+    }
+  },
+  "unchanged_existing_footprints": 222,
+  "contour_thickness_all_existing_component_pad_and_model_poses_preserved": true,
+  "native_hull": {
+    "file": "Hull_MOSS_V07_Harness_Tie_Loops_PROTOTYPE.step",
+    "sha256": "bdfd0b6d3a3fa2ff688d87edff741f517d6c7c8d3123c199e8d7bf481fff52b5",
+    "mount_pattern": "74x71mm current native hull"
+  },
+  "OrangePi": {
+    "file": "orpi.step",
+    "sha256": "d3fd550932f408df51b4174cb23e7146278d69728176bdea5215d239a55a464b",
+    "translation_mm": [
+      -26.124103,
+      0.822605,
+      32.8
+    ],
+    "bounds_world_mm": [
+      [
+        -70.50001917217101,
+        -4.0773951,
+        29.54994846117966
+      ],
+      [
+        -5.20229919248078,
+        29.244408807519225,
+        41.74
+      ]
+    ],
+    "rotation": "Supplied STEP already matches the established 180 degree orientation"
+  },
+  "assembly": {
+    "pcb_bottom_Z_mm": 10,
+    "pcb_top_Z_mm": 11.6,
+    "world_transform": "worldX=pcbX-78;worldY=37-pcbY",
+    "OPI_standoff_height_mm": 20,
+    "standoff_height_status": "Existing CAD assumption, not a new physical measurement",
+    "fastener_or_standoff_XY_reservation_diameter_mm": 6,
+    "cooler_height_total_user_measurement_mm": 16,
+    "cooler_detailed_shape": "Illustrative full-board envelope, not supplied real heatsink CAD"
+  },
+  "additions": [
+    {
+      "reference": "U51",
+      "side": "B.Cu",
+      "pose_pcb_mm": [
+        47.0,
+        50.5
+      ],
+      "angle_deg": 90.0,
+      "height_basis": "TI DCU0008A maximum 0.9 mm; SN74LVC1G74 datasheet page 22",
+      "nominal_max_height_from_basis_mm": 0.9,
+      "native_generic_model_height_mm": 0.8500000999999999,
+      "extra_Z_assembly_allowance_mm": 0.2,
+      "conservative_total_height_mm": 1.1,
+      "reservation_xy": "Native courtyard AABB including stroke; larger than component and leads",
+      "reservation_world_mm": [
+        [
+          -32.275,
+          -15.805,
+          8.9
+        ],
+        [
+          -29.725,
+          -11.195,
+          10.0
+        ]
+      ],
+      "model_sources": [
+        {
+          "file": "Package_SO_VSSOP-8_2.3x2mm_P0.5mm.step",
+          "sha256": "353552981eef35cb93635057d4aeb89aef22648c77af6fd095e328bfe6b834bd",
+          "local_bounds_mm": [
+            [
+              -1.55,
+              -1.0000001000000003,
+              -2.775557561563e-17
+            ],
+            [
+              1.55,
+              1.0000001000000003,
+              0.8500000999999999
+            ]
+          ]
+        }
+      ],
+      "hull_intersection_volume_mm3": 0.0,
+      "hull_distance_mm": 4.074924650261254,
+      "OPI_intersection_volume_mm3": 0,
+      "OPI_AABB_separation_lower_bound_mm": 20.805306639107364,
+      "cooler_reservation_separation_lower_bound_mm": 23.110151211102018,
+      "nearest_D6_mount_reservation": {
+        "mount": "H8",
+        "diameter_mm": 6,
+        "XY_reservation_gap_mm": 21.304087104847202,
+        "intersects": false
+      },
+      "all_D6_mount_reservations": [
+        {
+          "mount": "H1",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 62.07406280539121,
+          "intersects": false
+        },
+        {
+          "mount": "H2",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 52.60066231619908,
+          "intersects": false
+        },
+        {
+          "mount": "H3",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 44.35962045878324,
+          "intersects": false
+        },
+        {
+          "mount": "H4",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 30.162232283125938,
+          "intersects": false
+        },
+        {
+          "mount": "H5",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 46.799183226233744,
+          "intersects": false
+        },
+        {
+          "mount": "H6",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 38.27540005863057,
+          "intersects": false
+        },
+        {
+          "mount": "H7",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 33.97280960381561,
+          "intersects": false
+        },
+        {
+          "mount": "H8",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 21.304087104847202,
+          "intersects": false
+        }
+      ]
+    },
+    {
+      "reference": "U52",
+      "side": "B.Cu",
+      "pose_pcb_mm": [
+        54.0,
+        58.0
+      ],
+      "angle_deg": 0.0,
+      "height_basis": "TI PW0014A maximum 1.2 mm; SN74HCS11 datasheet page 23",
+      "nominal_max_height_from_basis_mm": 1.2,
+      "native_generic_model_height_mm": 1.0000001,
+      "extra_Z_assembly_allowance_mm": 0.2,
+      "conservative_total_height_mm": 1.4,
+      "reservation_xy": "Native courtyard AABB including stroke; larger than component and leads",
+      "reservation_world_mm": [
+        [
+          -27.875,
+          -23.775,
+          8.6
+        ],
+        [
+          -20.125,
+          -18.225,
+          10.0
+        ]
+      ],
+      "model_sources": [
+        {
+          "file": "Package_SO_TSSOP-14_4.4x5mm_P0.65mm.step",
+          "sha256": "3ee5786aae56190997aa793ba3cfc003fd616782770e29719b4562f012982245",
+          "local_bounds_mm": [
+            [
+              -3.2,
+              -2.5000001000000003,
+              -5.551115123126e-17
+            ],
+            [
+              3.2,
+              2.5000001000000003,
+              1.0000001
+            ]
+          ]
+        }
+      ],
+      "hull_intersection_volume_mm3": 0.0,
+      "hull_distance_mm": 3.799126891875614,
+      "OPI_intersection_volume_mm3": 0,
+      "OPI_AABB_separation_lower_bound_mm": 24.132036989058445,
+      "cooler_reservation_separation_lower_bound_mm": 26.439194560349225,
+      "nearest_D6_mount_reservation": {
+        "mount": "H4",
+        "diameter_mm": 6,
+        "XY_reservation_gap_mm": 17.810243871708952,
+        "intersects": false
+      },
+      "all_D6_mount_reservations": [
+        {
+          "mount": "H1",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 70.25173206143319,
+          "intersects": false
+        },
+        {
+          "mount": "H2",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 55.12328492093337,
+          "intersects": false
+        },
+        {
+          "mount": "H3",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 46.19925050242127,
+          "intersects": false
+        },
+        {
+          "mount": "H4",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 17.810243871708952,
+          "intersects": false
+        },
+        {
+          "mount": "H5",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 54.93264407913728,
+          "intersects": false
+        },
+        {
+          "mount": "H6",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 41.14964609144676,
+          "intersects": false
+        },
+        {
+          "mount": "H7",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 40.81599308471736,
+          "intersects": false
+        },
+        {
+          "mount": "H8",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 19.645998542788966,
+          "intersects": false
+        }
+      ]
+    },
+    {
+      "reference": "C154",
+      "side": "B.Cu",
+      "pose_pcb_mm": [
+        47.5,
+        46.0
+      ],
+      "angle_deg": 90.0,
+      "height_basis": "Declared conservative 1.0 mm allowance for 0603 capacitor",
+      "nominal_max_height_from_basis_mm": 1.0,
+      "native_generic_model_height_mm": 0.8,
+      "extra_Z_assembly_allowance_mm": 0.2,
+      "conservative_total_height_mm": 1.2,
+      "reservation_xy": "Native courtyard AABB including stroke; larger than component and leads",
+      "reservation_world_mm": [
+        [
+          -31.255000000000003,
+          -10.504999999999995,
+          8.8
+        ],
+        [
+          -29.745000000000005,
+          -7.494999999999997,
+          10.0
+        ]
+      ],
+      "model_sources": [
+        {
+          "file": "Capacitor_SMD_C_0603_1608Metric.step",
+          "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+          "local_bounds_mm": [
+            [
+              -0.8,
+              -0.4,
+              0.0
+            ],
+            [
+              0.8,
+              0.4,
+              0.8
+            ]
+          ]
+        }
+      ],
+      "hull_intersection_volume_mm3": 0.0,
+      "hull_distance_mm": 3.9810110435594637,
+      "OPI_intersection_volume_mm3": 0,
+      "OPI_AABB_separation_lower_bound_mm": 19.846423055233025,
+      "cooler_reservation_separation_lower_bound_mm": 22.0672447079376,
+      "nearest_D6_mount_reservation": {
+        "mount": "H8",
+        "diameter_mm": 6,
+        "XY_reservation_gap_mm": 19.611170911741837,
+        "intersects": false
+      },
+      "all_D6_mount_reservations": [
+        {
+          "mount": "H1",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 60.10245676675354,
+          "intersects": false
+        },
+        {
+          "mount": "H2",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 49.43653354294122,
+          "intersects": false
+        },
+        {
+          "mount": "H3",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 47.53840173570985,
+          "intersects": false
+        },
+        {
+          "mount": "H4",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 33.35656818237938,
+          "intersects": false
+        },
+        {
+          "mount": "H5",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 44.97275320429296,
+          "intersects": false
+        },
+        {
+          "mount": "H6",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 35.13181152266438,
+          "intersects": false
+        },
+        {
+          "mount": "H7",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 33.859395681427,
+          "intersects": false
+        },
+        {
+          "mount": "H8",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 19.611170911741837,
+          "intersects": false
+        }
+      ]
+    },
+    {
+      "reference": "C155",
+      "side": "B.Cu",
+      "pose_pcb_mm": [
+        59.0,
+        60.0
+      ],
+      "angle_deg": 90.0,
+      "height_basis": "Declared conservative 1.0 mm allowance for 0603 capacitor",
+      "nominal_max_height_from_basis_mm": 1.0,
+      "native_generic_model_height_mm": 0.8,
+      "extra_Z_assembly_allowance_mm": 0.2,
+      "conservative_total_height_mm": 1.2,
+      "reservation_xy": "Native courtyard AABB including stroke; larger than component and leads",
+      "reservation_world_mm": [
+        [
+          -19.755000000000003,
+          -24.504999999999995,
+          8.8
+        ],
+        [
+          -18.245000000000005,
+          -21.494999999999997,
+          10.0
+        ]
+      ],
+      "model_sources": [
+        {
+          "file": "Capacitor_SMD_C_0603_1608Metric.step",
+          "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+          "local_bounds_mm": [
+            [
+              -0.8,
+              -0.4,
+              0.0
+            ],
+            [
+              0.8,
+              0.4,
+              0.8
+            ]
+          ]
+        }
+      ],
+      "hull_intersection_volume_mm3": 0.0,
+      "hull_distance_mm": 4.0296571664729175,
+      "OPI_intersection_volume_mm3": 0,
+      "OPI_AABB_separation_lower_bound_mm": 26.183457473895324,
+      "cooler_reservation_separation_lower_bound_mm": 28.45064654801363,
+      "nearest_D6_mount_reservation": {
+        "mount": "H4",
+        "diameter_mm": 6,
+        "XY_reservation_gap_mm": 15.816350602600927,
+        "intersects": false
+      },
+      "all_D6_mount_reservations": [
+        {
+          "mount": "H1",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 78.14902987713408,
+          "intersects": false
+        },
+        {
+          "mount": "H2",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 57.708854790714014,
+          "intersects": false
+        },
+        {
+          "mount": "H3",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 54.0408191561096,
+          "intersects": false
+        },
+        {
+          "mount": "H4",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 15.816350602600927,
+          "intersects": false
+        },
+        {
+          "mount": "H5",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 62.9365607989983,
+          "intersects": false
+        },
+        {
+          "mount": "H6",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 43.914923531857106,
+          "intersects": false
+        },
+        {
+          "mount": "H7",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 49.543886894671196,
+          "intersects": false
+        },
+        {
+          "mount": "H8",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 21.783866728176214,
+          "intersects": false
+        }
+      ]
+    },
+    {
+      "reference": "R228",
+      "side": "B.Cu",
+      "pose_pcb_mm": [
+        51.0,
+        50.75
+      ],
+      "angle_deg": 0.0,
+      "height_basis": "Declared conservative 0.6 mm allowance for 0603 resistor",
+      "nominal_max_height_from_basis_mm": 0.6,
+      "native_generic_model_height_mm": 0.45,
+      "extra_Z_assembly_allowance_mm": 0.2,
+      "conservative_total_height_mm": 0.8,
+      "reservation_xy": "Native courtyard AABB including stroke; larger than component and leads",
+      "reservation_world_mm": [
+        [
+          -28.505000000000003,
+          -14.504999999999995,
+          9.2
+        ],
+        [
+          -25.495000000000005,
+          -12.994999999999997,
+          10.0
+        ]
+      ],
+      "model_sources": [
+        {
+          "file": "Resistor_SMD_R_0603_1608Metric.step",
+          "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+          "local_bounds_mm": [
+            [
+              -0.8,
+              -0.4,
+              -2.775557561563e-17
+            ],
+            [
+              0.8,
+              0.4,
+              0.45
+            ]
+          ]
+        }
+      ],
+      "hull_intersection_volume_mm3": 0.0,
+      "hull_distance_mm": 4.395984402286915,
+      "OPI_intersection_volume_mm3": 0,
+      "OPI_AABB_separation_lower_bound_mm": 21.487767729275298,
+      "cooler_reservation_separation_lower_bound_mm": 23.809667973325457,
+      "nearest_D6_mount_reservation": {
+        "mount": "H8",
+        "diameter_mm": 6,
+        "XY_reservation_gap_mm": 18.958826243677052,
+        "intersects": false
+      },
+      "all_D6_mount_reservations": [
+        {
+          "mount": "H1",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 65.95850237642927,
+          "intersects": false
+        },
+        {
+          "mount": "H2",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 52.24052000117305,
+          "intersects": false
+        },
+        {
+          "mount": "H3",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 48.34033550727926,
+          "intersects": false
+        },
+        {
+          "mount": "H4",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 27.529822305411482,
+          "intersects": false
+        },
+        {
+          "mount": "H5",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 50.73769673143797,
+          "intersects": false
+        },
+        {
+          "mount": "H6",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 37.962910663184076,
+          "intersects": false
+        },
+        {
+          "mount": "H7",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 38.133563546087274,
+          "intersects": false
+        },
+        {
+          "mount": "H8",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 18.958826243677052,
+          "intersects": false
+        }
+      ]
+    },
+    {
+      "reference": "R229",
+      "side": "B.Cu",
+      "pose_pcb_mm": [
+        51.0,
+        52.75
+      ],
+      "angle_deg": 0.0,
+      "height_basis": "Declared conservative 0.6 mm allowance for 0603 resistor",
+      "nominal_max_height_from_basis_mm": 0.6,
+      "native_generic_model_height_mm": 0.45,
+      "extra_Z_assembly_allowance_mm": 0.2,
+      "conservative_total_height_mm": 0.8,
+      "reservation_xy": "Native courtyard AABB including stroke; larger than component and leads",
+      "reservation_world_mm": [
+        [
+          -28.505000000000003,
+          -16.504999999999995,
+          9.2
+        ],
+        [
+          -25.495000000000005,
+          -14.994999999999997,
+          10.0
+        ]
+      ],
+      "model_sources": [
+        {
+          "file": "Resistor_SMD_R_0603_1608Metric.step",
+          "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+          "local_bounds_mm": [
+            [
+              -0.8,
+              -0.4,
+              -2.775557561563e-17
+            ],
+            [
+              0.8,
+              0.4,
+              0.45
+            ]
+          ]
+        }
+      ],
+      "hull_intersection_volume_mm3": 0.0,
+      "hull_distance_mm": 4.395983931865427,
+      "OPI_intersection_volume_mm3": 0,
+      "OPI_AABB_separation_lower_bound_mm": 22.39184185339127,
+      "cooler_reservation_separation_lower_bound_mm": 24.717772735422585,
+      "nearest_D6_mount_reservation": {
+        "mount": "H8",
+        "diameter_mm": 6,
+        "XY_reservation_gap_mm": 20.327452711344204,
+        "intersects": false
+      },
+      "all_D6_mount_reservations": [
+        {
+          "mount": "H1",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 67.42197845843299,
+          "intersects": false
+        },
+        {
+          "mount": "H2",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 54.056945677104025,
+          "intersects": false
+        },
+        {
+          "mount": "H3",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 47.614721672651726,
+          "intersects": false
+        },
+        {
+          "mount": "H4",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 26.29317411957947,
+          "intersects": false
+        },
+        {
+          "mount": "H5",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 52.15179099539742,
+          "intersects": false
+        },
+        {
+          "mount": "H6",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 39.80116879245239,
+          "intersects": false
+        },
+        {
+          "mount": "H7",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 38.88018684294519,
+          "intersects": false
+        },
+        {
+          "mount": "H8",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 20.327452711344204,
+          "intersects": false
+        }
+      ]
+    },
+    {
+      "reference": "R230",
+      "side": "B.Cu",
+      "pose_pcb_mm": [
+        36.25,
+        47.25
+      ],
+      "angle_deg": 0.0,
+      "height_basis": "Declared conservative 0.6 mm allowance for 0603 resistor",
+      "nominal_max_height_from_basis_mm": 0.6,
+      "native_generic_model_height_mm": 0.45,
+      "extra_Z_assembly_allowance_mm": 0.2,
+      "conservative_total_height_mm": 0.8,
+      "reservation_xy": "Native courtyard AABB including stroke; larger than component and leads",
+      "reservation_world_mm": [
+        [
+          -43.255,
+          -11.004999999999995,
+          9.2
+        ],
+        [
+          -40.245000000000005,
+          -9.494999999999997,
+          10.0
+        ]
+      ],
+      "model_sources": [
+        {
+          "file": "Resistor_SMD_R_0603_1608Metric.step",
+          "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+          "local_bounds_mm": [
+            [
+              -0.8,
+              -0.4,
+              -2.775557561563e-17
+            ],
+            [
+              0.8,
+              0.4,
+              0.45
+            ]
+          ]
+        }
+      ],
+      "hull_intersection_volume_mm3": 0.0,
+      "hull_distance_mm": 4.291657572090622,
+      "OPI_intersection_volume_mm3": 0,
+      "OPI_AABB_separation_lower_bound_mm": 20.286718011725924,
+      "cooler_reservation_separation_lower_bound_mm": 22.56172176497175,
+      "nearest_D6_mount_reservation": {
+        "mount": "H7",
+        "diameter_mm": 6,
+        "XY_reservation_gap_mm": 23.16706040043474,
+        "intersects": false
+      },
+      "all_D6_mount_reservations": [
+        {
+          "mount": "H1",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 53.86844511677807,
+          "intersects": false
+        },
+        {
+          "mount": "H2",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 57.20353021210633,
+          "intersects": false
+        },
+        {
+          "mount": "H3",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 37.01256115271803,
+          "intersects": false
+        },
+        {
+          "mount": "H4",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 41.62566582136339,
+          "intersects": false
+        },
+        {
+          "mount": "H5",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 38.46667396838092,
+          "intersects": false
+        },
+        {
+          "mount": "H6",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 43.17261147043776,
+          "intersects": false
+        },
+        {
+          "mount": "H7",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 23.16706040043474,
+          "intersects": false
+        },
+        {
+          "mount": "H8",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 30.123104474067645,
+          "intersects": false
+        }
+      ]
+    },
+    {
+      "reference": "C170",
+      "side": "F.Cu",
+      "pose_pcb_mm": [
+        52.05,
+        24.1
+      ],
+      "angle_deg": 180.0,
+      "height_basis": "Murata 0402 thickness 0.50 +/-0.05 mm",
+      "nominal_max_height_from_basis_mm": 0.55,
+      "native_generic_model_height_mm": 0.5,
+      "extra_Z_assembly_allowance_mm": 0.2,
+      "conservative_total_height_mm": 0.75,
+      "reservation_xy": "Native courtyard AABB including stroke; larger than component and leads",
+      "reservation_world_mm": [
+        [
+          -26.884999999999998,
+          12.415000000000003,
+          11.6
+        ],
+        [
+          -25.015,
+          13.385000000000002,
+          12.35
+        ]
+      ],
+      "model_sources": [
+        {
+          "file": "Capacitor_SMD_C_0402_1005Metric.step",
+          "sha256": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
+          "local_bounds_mm": [
+            [
+              -0.5,
+              -0.25,
+              0.0
+            ],
+            [
+              0.5,
+              0.25,
+              0.5
+            ]
+          ]
+        }
+      ],
+      "hull_intersection_volume_mm3": 0.0,
+      "hull_distance_mm": 6.8038053003109376,
+      "OPI_intersection_volume_mm3": 0,
+      "OPI_AABB_separation_lower_bound_mm": 17.19994846117966,
+      "cooler_reservation_separation_lower_bound_mm": 19.25,
+      "nearest_D6_mount_reservation": {
+        "mount": "H8",
+        "diameter_mm": 6,
+        "XY_reservation_gap_mm": 16.38085266442114,
+        "intersects": false
+      },
+      "all_D6_mount_reservations": [
+        {
+          "mount": "H1",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 51.49726094034452,
+          "intersects": false
+        },
+        {
+          "mount": "H2",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 29.975118650279335,
+          "intersects": false
+        },
+        {
+          "mount": "H3",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 64.57688547129115,
+          "intersects": false
+        },
+        {
+          "mount": "H4",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 48.80774507735307,
+          "intersects": false
+        },
+        {
+          "mount": "H5",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 38.62639126804052,
+          "intersects": false
+        },
+        {
+          "mount": "H6",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 16.494190160147713,
+          "intersects": false
+        },
+        {
+          "mount": "H7",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 38.57343442632567,
+          "intersects": false
+        },
+        {
+          "mount": "H8",
+          "diameter_mm": 6,
+          "XY_reservation_gap_mm": 16.38085266442114,
+          "intersects": false
+        }
+      ]
+    }
+  ],
+  "violations": [],
+  "pose_refresh": {
+    "recomputed_references": [
+      "U51",
+      "C154",
+      "R228",
+      "R229"
+    ],
+    "inherited_unchanged_references": [
+      "U52",
+      "C155",
+      "R230",
+      "C170"
+    ],
+    "prior_review_sha256": "2fffcad6f8892b6b297154f75a50bd9029405936a5b1069fb2ad3a89d2718f3f",
+    "inherited_obstacle_hashes_verified": true
+  },
+  "minimum_hull_clearance_mm": 3.799126891875614,
+  "minimum_D6_mount_XY_clearance_mm": 15.816350602600927,
+  "limits": [
+    "Additive review only; unchanged geometry of 222 components inherited from prior assembly evidence.",
+    "Native courtyard AABB and conservative height plus 0.2 mm cover new body envelopes; this does not verify electrical operation or physical assembly tolerances.",
+    "No board, hull or model modifications. Latch routing is still changing; the final combined PCB must retain these poses and be rebound by hash."
+  ]
+}

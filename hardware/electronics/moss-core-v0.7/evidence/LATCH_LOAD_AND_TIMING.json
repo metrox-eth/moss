@@ -1,0 +1,119 @@
+{
+  "timestamp_utc": "2026-11-01T14:06:20.721592+00:00",
+  "circuit_sha256": "15fb8a7e74ed88d7c14147e984e62e25ec6de5cd516d0a5b78f260d90912d949",
+  "nominal_rail_V": 3.384,
+  "actual_load_pins": {
+    "ARM_CLEAR_N": [
+      [
+        "U51",
+        "6"
+      ],
+      [
+        "U52",
+        "6"
+      ]
+    ],
+    "ARM_LATCHED": [
+      [
+        "U1",
+        "38"
+      ],
+      [
+        "U51",
+        "5"
+      ],
+      [
+        "U52",
+        "10"
+      ],
+      [
+        "R229",
+        "1"
+      ]
+    ],
+    "ARM_COMMIT_CLK": [
+      [
+        "U51",
+        "1"
+      ],
+      [
+        "R228",
+        "1"
+      ],
+      [
+        "R230",
+        "2"
+      ]
+    ]
+  },
+  "clear": {
+    "receiver_input_typical_pF": 5,
+    "receiver_max_leakage_uA": 5,
+    "HCS11_light_load_DC_test_uA": 20,
+    "VOH_min_nominal_V": 3.284,
+    "VOL_max_V": 0.1,
+    "LVC_input_VIH_min_V": 2.0,
+    "LVC_input_VIL_max_V": 0.8
+  },
+  "Q": {
+    "R229_ohm": 100000,
+    "R229_nominal_current_uA": 33.84,
+    "HCS11_input_max_leak_uA": 1.0,
+    "GPIO2_input_max_current_at_25C_uA": 0.05,
+    "total_illustrative_max_sink_uA": 34.89,
+    "DFF_light_load_DC_test_uA": 100,
+    "receiver_typical_pF_without_trace": 7,
+    "firmware": "GPIO2 input; no intentional opposing pull. GPIO DC data are specified at3.3V and25C, not qualified here across all temperatures."
+  },
+  "CLK": {
+    "R230_series_ohm": 100,
+    "R228_shunt_ohm": 10000,
+    "nominal_high_divider_V": 3.3504950495049504,
+    "nominal_divider_current_uA": 335.049504950495,
+    "DFF_max_leakage_voltage_drop_V": 0.0005,
+    "illustrative_not_extracted_total_C_pF": 20,
+    "external_RC_tau_ns": 1.9801980198019802,
+    "external_RC_10_90_ns": 4.3509397571014246,
+    "limit": "Excludes GPIO output dynamics; no intentional slow RC; not measured routed slew."
+  },
+  "HCS11_output": {
+    "test_CL_pF": 50,
+    "transition_measurement": "10to90percent",
+    "max_transition_ns_at_2V": 17,
+    "max_transition_ns_at_4V5": 8,
+    "max_transition_ns_at_3V384": null,
+    "comparison_only_17ns_over_nominal_10_90_ns_per_V": 6.279550827423167,
+    "not_a_guaranteed_bound": "Do not interpolate manufacturer maxima or scale them by typical capacitance. A short local push-pull connection is appropriate; final slew still needs the actual routed load or a measured waveform."
+  },
+  "first_board_checks": [
+    "Scope U51 CLR and CLK at DFF pins; verify the10ns/V limit",
+    "GPIO2 readback and GPIO1 fresh-pulse protocol",
+    "Fault and recovery with GPIO held high and old commands retained"
+  ],
+  "sources": [
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/sn74hcs11.pdf",
+      "sections": [
+        "5.3",
+        "5.5",
+        "5.6",
+        "6"
+      ],
+      "local_sha256": "9d2bd456aa0714be3975b05d4a12c9f7eec90c3416d7f2182676b4a940ac1268"
+    },
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g74.pdf",
+      "sections": [
+        "6.3",
+        "6.5",
+        "6.6"
+      ],
+      "local_sha256": "e46a5a867fec742290000dca5ed3b291535f3c4418ef2ae267acc4ab51b26d8a"
+    },
+    {
+      "url": "https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf",
+      "section": "Table6.3, specified at3.3V and25C",
+      "retrieved_by": "Official PDF read during review"
+    }
+  ]
+}

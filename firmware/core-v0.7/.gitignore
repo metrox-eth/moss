@@ -1,0 +1,5 @@
+fw_build/
+__pycache__/
+*.py[cod]
+evidence/*.log
+evidence/toolchain.txt

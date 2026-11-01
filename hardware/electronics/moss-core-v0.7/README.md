@@ -2,28 +2,19 @@
 
 This is my first custom PCB for **MOSS, the litter-picking rover**, designed with Codex and KiCad. I am publishing the editable design so people with electronics experience can help review it before the first assembled prototypes are tested.
 
-**Updated 1 November 2026.** The matched files below describe the current 1 November layout for PCBWay engineering review. This is still the first, unbuilt prototype; hardware revision letters are reserved for fabricated boards.
+**Updated 1 November 2026: power and rearm update.** The matched files below describe the current layout for PCBWay engineering review. This is still the first, unbuilt prototype; hardware revision letters are reserved for fabricated boards.
 
 ## What changed
 
-- **Balanced chassis fixings:** the four corner holes follow the new outline at a 4 mm centre setback. See [mounting dimensions](MOUNTING.md). The hull will be adapted afterward; the Orange Pi mounting pattern stays fixed.
-- **Logo orientation:** the MOSS logo retains its orientation; the added ESP shield marking has been removed from the renders.
+- **Supply recovery now requires a fresh arm pulse.** A hardware latch prevents held enable/PWM levels from automatically reopening the command gates after a qualified actuator-supply fault. GPIO1 provides the arm pulse; GPIO2 reads back the latch. The firmware must support this interface.
+- **Logic-regulator transient response:** C170 adds the 6.8 pF feedforward capacitor recommended by TI for the existing feedback divider. The nominal logic voltage remains 3.384 V. Its response under load still needs measurement.
+- **Targeted corner cleanup:** actual right-angle bends were chamfered on selected USB, audio, encoder and ADC paths. Track orientation and bend angle are now checked separately. Existing motor-power widths and shunt connections are preserved.
 
-- **Black board, white assembly markings:** large underside connector labels, thick mounting-screw rings and compact 0.6 mm wide Orange Pi standoff rings on both faces. The byline aligns with the MOSS logo.
-- **Connector access:** the top edge is extended to give the ten-contact connector a proper board margin; battery, servo and speaker connections use vertical headers, checked with their mating plugs and wire exits.
+The 82 × 79 mm black board, 74 × 71 mm Core fixing pattern, Orange Pi mounting pattern, vertical connectors and harness pinout are retained. The updated hull already follows these fixing centres. This remains the first, unbuilt prototype, without a new physical revision letter.
 
-- **Clean rectangular outline:** 82 × 79 mm with rounded corners, no protruding connector-support ears. The four Core mounting centres are now 4 mm from the board edges, giving a 74 × 71 mm pattern.
-- **Strict routing angles:** all native track segments use horizontal, vertical or 45-degree directions, including internal layers. The general interconnect was routed afresh; the critical load and sensing routes were rebuilt where needed.
-- **Cable placement:** both fan headers are shifted left along the lower edge; the speaker header remains on the right. Matching bottom-side legends and assembly positions are updated. Repeated functional IC and connector families were checked; the two branch fuses now share their orientation.
+See [power behavior, firmware rearming and bench checks](POWER_AND_REARM.md). The latch inhibits motor command signals and new servo UART transmission; it does not certify servo power-up behavior or EMI immunity.
 
-- **One six-wire cable per motor:** J3/J4 now carry winding power and encoder signals together. J2 combines the Cytron controls and its four bridge outputs; J11 retains the separate supply. The propulsion interface uses four connections instead of six. See the [motor wiring guide](MOTOR_WIRING.md).
-
-- The Orange Pi's **5 V converter is now integrated into the PCB**, using MP9447GL-Z, L3 and their supporting components. The separate Waveshare module is removed. J20 remains a **5 V / 3 A** USB-C power output.
-- **H1 now provides a GND connection:** a plated 2.7 mm mounting hole with an exposed copper ring on both sides and eight stitching holes. It accepts a bonding lead; the hole alone does not earth the rover or establish ESD protection.
-- Common solder-mask openings on **U14, U17 and U43** replace bridges too narrow for the manufacturer's process. This mask correction preserves the copper, drills and solder-paste apertures.
-- **U2 is now TPD2E2U06QDCKRQ1**, with the same DCK/SC70 footprint and pin assignment. Assembly notes include its MSL2 handling requirements, support for J7 insertion and manual placement of J8.
-
-KiCad sources, BOM, placement data, Gerbers, drills and the views below all correspond to this update.
+The native design, assembly inventory and fabrication outputs below form one matched set for engineering review.
 
 ![MOSS CORE V0.7 Prototype, component side](preview/BOARD_TOP.png)
 
@@ -47,19 +38,25 @@ The mated-connector and wire checks use supplier dimensions where available and 
 
 The [outward cable-route check](preview/CABLE_CLEARANCE_ROUTES.png) uses declared 5 mm bundles with 10 mm bend radii. These example routes clear the supplied Pi, standoffs and hull CAD, plus the conservative cooler envelope; they are clearance reservations, not manufacturing drawings for a finished harness. [Intersection results](evidence/CABLE_CLEARANCE_ROUTES.json).
 
-The [mounting table](MOUNTING.md) gives the current chassis fixing pattern; the earlier whole-hull assembly view is historical. The [power/ground check](evidence/POWER_AND_GROUND.json), [696-pin consistency check](evidence/DESIGN_CONTRACT.json) and [routing-angle check](evidence/TRACK_ANGLES.json) are tied to the same native-board hash. These are static design checks, not powered or thermal test results.
+The [mounting table](MOUNTING.md) gives the current chassis fixing pattern. The [update equivalence report](evidence/UPDATE_EQUIVALENCE.json) identifies the preserved geometry and prior evidence that remains applicable. The [730-pin consistency check](evidence/DESIGN_CONTRACT.json), [routing-angle check](evidence/TRACK_ANGLES.json) and [rearm state-model results](evidence/LOGIC_REARM_MODEL.json) cover the updated files. These are static and modeled checks, not powered or thermal test results.
 
 ## Harness packaging study
 
-The [updated harness study](https://github.com/metrox-eth/moss/tree/main/hardware/electronics/moss-core-v0.7/harness) follows the current integrated-power board and vertical connectors. Each motor uses one six-wire cable to J3/J4. A nine-wire link at J2 groups the Cytron control and motor-output circuits; J11 retains its separate supply. The model includes the updated hull fixings, five cable-tie bridges and the divider notch. The package contains current CAD, an offline viewer, wiring schedules and a prototype RFQ. The older film is historical and is not evidence for this layout. Physical fit and electrical operation remain first-prototype checks.
+The [harness study](https://github.com/metrox-eth/moss/tree/main/hardware/electronics/moss-core-v0.7/harness) follows the current integrated-power board and vertical connectors. Each motor uses one six-wire cable to J3/J4. A nine-wire link at J2 groups the Cytron control and motor-output circuits; J11 retains its separate supply. The model includes the updated hull fixings, five cable-tie bridges and the divider notch. The package contains current CAD, an offline viewer, wiring schedules and a prototype RFQ. The harness model retains the earlier board body; connector geometry and pin assignments are unchanged by this update. The latest internal-component views are the two images above. The older film is historical and is not evidence for this layout. Physical fit and electrical operation remain first-prototype checks.
+
+## Firmware and commissioning
+
+The separate [Core V0.7 commissioning firmware](https://github.com/metrox-eth/moss/tree/main/firmware/core-v0.7) reuses the current MDD10A ramp and encoder code. It implements the new rearm interface, USB commands/telemetry, battery and motor-current readings, half-duplex Feetech communication including group writes, and an I²S speaker test. The existing V0.6 controller remains the tested rover target.
+
+The ESP32-S3 build passes with zero compiler warnings. Shared-code host tests and a separate review cover faults, stale commands, timing, measurements and serial behavior. [Evidence and source hashes](evidence/FIRMWARE_CROSSCHECK.json). No firmware has been flashed to this new board, and no powered operation or EMI result is claimed. Its commissioning console is explicit; this is not yet a drop-in dimOS controller/arm adapter.
 
 ## Download and inspect
 
-- [Complete prototype review package](delivery/MOSS_CORE_V07_PROTOTYPE_REVIEW_20261101_MOUNTING.zip).
+- [Complete prototype review package](delivery/MOSS_CORE_V07_PROTOTYPE_REVIEW_20261101_POWER_REARM.zip).
 - [KiCad project](electrical/MOSS_Core_V07_Prototype.kicad_pro), [PCB](electrical/MOSS_Core_V07_Prototype.kicad_pcb) and [root schematic](electrical/MOSS_Core_V07_Prototype.kicad_sch).
 - [Physical-pin circuit contract](electrical/circuit.json), local symbols and footprints in `electrical/`.
-- [Grouped component BOM](delivery/assembly/MOSS_CORE_V07_PROTOTYPE_BOM.csv) and [placement file](delivery/assembly/MOSS_CORE_V07_PROTOTYPE_POSITIONS.csv): **208 placed components, 96 purchase articles**. The native board also contains mounting holes and test pads, for 222 footprints total.
-- [Gerbers and drills](delivery/MOSS_CORE_V07_PROTOTYPE_GERBERS_20261101_MOUNTING.zip), with [fabrication notes](delivery/fabrication/FABRICATION_NOTES.txt) and [assembly notes](delivery/assembly/ASSEMBLY_NOTES.txt).
+- [Grouped component BOM](delivery/assembly/MOSS_CORE_V07_PROTOTYPE_BOM.csv) and [placement file](delivery/assembly/MOSS_CORE_V07_PROTOTYPE_POSITIONS.csv): **216 placed components, 99 purchase articles**. The native board also contains mounting holes and test pads, for 230 footprints total.
+- [Gerbers and drills](delivery/MOSS_CORE_V07_PROTOTYPE_GERBERS_20261101_POWER_REARM.zip), with [fabrication notes](delivery/fabrication/FABRICATION_NOTES.txt) and [assembly notes](delivery/assembly/ASSEMBLY_NOTES.txt).
 - [File hashes](MANIFEST.json), [check results](evidence/CHECKS.json) and [publication provenance](evidence/PUBLICATION_NOTES.json).
 
 Use KiCad 10. Open the project from `electrical/` so `${KIPRJMOD}` resolves its local libraries and models. Preserve the native-board model settings when updating footprints: some library defaults reference KiCad's installed models. Several custom models are visual approximations, not manufacturer mating CAD. The previews add a simple U60 body and manufacturer-based IC markings, with the ESP shield left unmarked, documented in [visual provenance](preview/VISUAL_PROVENANCE.json); the native PCB is unchanged.
@@ -67,7 +64,7 @@ Use KiCad 10. Open the project from `electrical/` so `${KIPRJMOD}` resolves its 
 The native candidate PCB is identified by:
 
 ```text
-SHA-256: 7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14
+SHA-256: 456219f7eb97119b7e4328ed76f150012619131788f42d3a9d21fc4e40859cdb
 ```
 
 ## Community review welcome
@@ -89,7 +86,7 @@ Please [open an issue](https://github.com/metrox-eth/moss/issues) with **MOSS CO
 
 ## Editing and re-export
 
-Edit the native KiCad design in this folder. Update the circuit contract and assembly BOM when components change. `python3 tools/export_package.py` runs the native checks and regenerates the delivery files. It stops on errors, missing connections, parity differences or an unexpected assembly inventory. `--reuse-checks` requires every recorded design-file hash to match the successful checks. Review the results before manufacturing or powered tests.
+Edit the native KiCad design in this folder. Run `python3 tools/check_rearm_logic.py --design . --output evidence/LOGIC_REARM_MODEL.json` after regenerating the netlist to check the rearm state model. Update the circuit contract and assembly BOM when components change. `python3 tools/export_package.py` runs the native checks and regenerates the delivery files. It stops on errors, missing connections, parity differences or an unexpected assembly inventory. `--reuse-checks` requires every recorded design-file hash to match the successful checks. Review the results before manufacturing or powered tests.
 
 ## License and provenance
 
@@ -99,4 +96,4 @@ Code remains under Apache-2.0; documentation and media remain under CC BY 4.0. B
 
 Earlier copies and releases distributed under CERN-OHL-S-2.0 retain their original grants. This notice does not withdraw or retroactively replace those rights.
 
-Supplier correspondence, account/order information and unrelated workshop files are excluded. Local provenance paths in reports were converted to package-relative paths. The native PCB, schematic, footprints and matching fabrication/assembly data are preserved.
+Supplier correspondence, account/order information and unrelated workshop files are excluded. Local provenance paths in reports were converted to package-relative paths. File hashes identify each submitted design and its matching fabrication/assembly data. Earlier checks retain their original hashes and are identified as baseline evidence where applicable.

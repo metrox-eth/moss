@@ -1,47 +1,14 @@
 {
-  "source": "MOSS_Core_V07_Prototype.kicad_pcb",
-  "board_sha256": "7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14",
-  "final_native_board_sha256": "7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14",
-  "status": "PASS_UNCHANGED_UPPER_ASSEMBLY_WITH_EXPLICIT_CORE_MOUNT_CHANGE",
-  "baseline_native_board_sha256": "9f0ef9f1bc34934417560cd6f2751c714f3643d7959bae822c8b48c13b259b03",
-  "baseline_equivalence_report": "baseline_layout_before_mounting/MECHANICAL_FINAL_EQUIVALENCE_9f0ef9f1.json",
-  "total_footprints": 222,
-  "unchanged_non_Core_mount_footprints": 218,
-  "Core_mount_references": [
-    "H1",
-    "H2",
-    "H3",
-    "H4"
-  ],
-  "actual_pose_changes": [
-    "H1",
-    "H2",
-    "H3"
-  ],
-  "H4_pose_unchanged": true,
-  "all_non_Core_mount_pads_models_and_component_poses_unchanged": true,
-  "OrangePi_H5_H8_geometry_unchanged": true,
-  "board_outline_and_thickness_unchanged": true,
-  "track_via_objects_unchanged": 3986,
-  "current_ring_update": {
-    "source_sha256": "14aa8760d646ee0e3e36964cad0ea4a8e3336cd2288a2042369a42388a0e8f96",
-    "final_sha256": "7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14",
-    "changed_objects": 8,
-    "object_type": "Silkscreen circle",
-    "physical_geometry_unchanged": true
-  },
-  "native_copper_head_and_ground_proof_checked_on_sha256": "23902df03b7f927e88ff95eb70877a03d103497a0b000144ed716813501def4a",
-  "proof_inheritance_chain": [
-    {
-      "from_sha256": "23902df03b7f927e88ff95eb70877a03d103497a0b000144ed716813501def4a",
-      "to_sha256": "14aa8760d646ee0e3e36964cad0ea4a8e3336cd2288a2042369a42388a0e8f96",
-      "change": "One back battery pin legend shifted X8 to X11.5; every other native object preserved."
-    },
-    {
-      "from_sha256": "14aa8760d646ee0e3e36964cad0ea4a8e3336cd2288a2042369a42388a0e8f96",
-      "to_sha256": "7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14",
-      "change": "Only eight H5-H8 front/back silkscreen circles changed; every physical object preserved."
-    }
-  ],
-  "scope": "This does not assert that H1-H3 or the old hull post pattern are unchanged. Those changes are explicit in MOUNTING_DIFF.json."
+  "status": "PASS_FINAL_ADDITIVE_MECHANICAL_EQUIVALENCE",
+  "final_PCB": "MOSS_Core_V07_Prototype.kicad_pcb",
+  "final_sha256": "456219f7eb97119b7e4328ed76f150012619131788f42d3a9d21fc4e40859cdb",
+  "baseline_sha256": "7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14",
+  "additive_CAD_report_sha256": "6ea7b94b66600c2d4987e67d88a7c01d30d6267183893e86126ce42813514d58",
+  "original222physical_footprints_unchanged": true,
+  "all8additive_poses_models_and_pads_unchanged": true,
+  "outline_and_thickness_unchanged": true,
+  "changed_existing_references": [],
+  "changed_additive_references": [],
+  "no_new_geometric_solver_run": true,
+  "inheritance": "The CAD reservation proof applies to exactly the same physical geometry in the final PCB. Copper and electrical metadata are outside this mechanical equivalence comparison."
 }

@@ -187,13 +187,13 @@
       "bidirectional"
     ],
     "38": [
-      "IO2_SPARE",
-      null,
+      "IO2",
+      "ARM_LATCHED",
       "bidirectional"
     ],
     "39": [
-      "IO1_SPARE",
-      null,
+      "IO1",
+      "ARM_COMMIT",
       "bidirectional"
     ],
     "40": [
@@ -207,5 +207,10 @@
       "power_in"
     ]
   },
-  "status": "Firmware port required, untested on hardware"
+  "status": "Firmware port required, untested on hardware",
+  "hardware_rearm": {
+    "GPIO1": "ARM_COMMIT dedicated low-high-low pulse, never UART packet OE",
+    "GPIO2": "ARM_LATCHED hardware Q readback",
+    "firmware_update_required": true
+  }
 }

@@ -22,7 +22,7 @@ hashes = {str(p.relative_to(P)): sha(p) for p in inputs}
 board = k.LoadBoard(str(B))
 parts = json.loads(inputs[1].read_text())['parts']
 contract = {p['ref']: p for p in parts}
-assert len(contract) == len(parts) == 222
+assert len(contract) == len(parts) == 230
 native = {f.GetReference(): f for f in board.GetFootprints()}
 assert len(native) == len(list(board.GetFootprints())) and set(native) == set(contract)
 bm = json.loads(inputs[2].read_text())['parts']
@@ -32,7 +32,7 @@ for row in bm:
     for ref in row['references']:
         assert ref not in articles, ('Duplicate BOM reference', ref)
         articles[ref] = row
-assert len(articles) == 208 and len(bm) == 96
+assert len(articles) == 216 and len(bm) == 99
 
 xml = ET.parse(inputs[3]).getroot()
 schematic = {c.attrib['ref']: c for c in xml.findall('./components/comp')}
@@ -78,8 +78,8 @@ for ref, part in contract.items():
         pins += 1
 
 assert hashes == {str(p.relative_to(P)): sha(p) for p in inputs}
-report = dict(status='PASS', file_hashes=hashes, native_footprints=222,
-              assembled_components=208, grouped_purchase_articles=96,
+report = dict(status='PASS', file_hashes=hashes, native_footprints=230,
+              assembled_components=216, grouped_purchase_articles=99,
               physical_pin_definitions_checked=pins,
               scope='Native physical pad nets and numbers, exact MPN fields, local footprint IDs, schematic netlist and grouped BOM are mutually consistent. No files modified.',
               limits='Not an independent datasheet/package-geometry review, electrical simulation or hardware test.')

@@ -971,13 +971,13 @@
           "bidirectional"
         ],
         "38": [
-          "IO2_SPARE",
-          null,
+          "IO2",
+          "ARM_LATCHED",
           "bidirectional"
         ],
         "39": [
-          "IO1_SPARE",
-          null,
+          "IO1",
+          "ARM_COMMIT",
           "bidirectional"
         ],
         "40": [
@@ -993,7 +993,7 @@
       },
       "kind": "ic",
       "mpn": "ESP32-S3-WROOM-1U-N8",
-      "desc": "ESP32-S3-WROOM-1U-N8 only: no octalPSRAM. USB device, serial servo bridge, motor PWM/encoders, I2C dual motor-current ADC and battery voltage, I2S audio. Firmware port required; not QT-Py pin-compatible.",
+      "desc": "ESP32-S3-WROOM-1U-N8 only: no octalPSRAM. USB device, serial servo bridge, motor PWM/encoders, I2C dual motor-current ADC and battery voltage, I2S audio. Firmware port required; not QT-Py pin-compatible. GPIO1 is a dedicated ARM_COMMIT pulse; GPIO2 reads ARM_LATCHED. A UART packet enable is not an arming event.",
       "near": null,
       "uuid": "91169e23-c541-53b2-aaae-8c1d6e1a0b05",
       "fp_local": "MOSS:RF_Module_ESP32-S3-WROOM-1U",
@@ -2172,7 +2172,7 @@
         ],
         "4": [
           "1C",
-          "ACT_READY",
+          "ARM_READY",
           "input"
         ],
         "5": [
@@ -2212,7 +2212,7 @@
         ],
         "12": [
           "2C",
-          "ACT_READY",
+          "ARM_READY",
           "input"
         ],
         "13": [
@@ -2228,7 +2228,7 @@
       },
       "kind": "ic",
       "mpn": "SN74HCS21PWR",
-      "desc": "Two four-input gates: qualified PWM/DIR enable and half-duplex TX enable. No external protection interface or sticky power latches.",
+      "desc": "Two four-input Schmitt AND gates retain WD_ENABLE and RESET_N inhibition. ARM_READY requires the qualified actuator rail, ACT_POWER_ENABLE and a post-fault ARM_LATCHED permission. Drive and UART TX enable remain independent.",
       "near": null,
       "uuid": "3b57ced3-c339-5e1b-9067-fa673f77eeeb",
       "fp_local": "MOSS:Package_SO_TSSOP-14_4.4x5mm_P0.65mm",
@@ -9541,7 +9541,7 @@
       },
       "kind": "C",
       "mpn": "10SVPE220M",
-      "desc": "PanasonicOS-CON220uF±20%,10V,20mohm,6.3x5.9mm. Minimum176uF satisfiesTI120uF inputbulk; place next toU42IN1/GND.",
+      "desc": "PanasonicOS-CON220uF\u00b120%,10V,20mohm,6.3x5.9mm. Minimum176uF satisfiesTI120uF inputbulk; place next toU42IN1/GND.",
       "near": "U42",
       "uuid": "fe973677-04e1-5baf-9c14-f3c4661f42d6",
       "fp_local": "MOSS:Capacitor_SMD_CP_Elec_6.3x5.9",
@@ -11916,12 +11916,535 @@
         12.7,
         10.16
       ]
+    },
+    {
+      "ref": "U51",
+      "value": "SN74LVC1G74DCUR",
+      "mpn": "SN74LVC1G74DCUR",
+      "manufacturer": "Texas Instruments",
+      "fp": "Package_SO:VSSOP-8_2.3x2mm_P0.5mm",
+      "fp_local": "MOSS:Package_SO_VSSOP-8_2.3x2mm_P0.5mm",
+      "kind": "ic",
+      "group": "03_Hardware_Interlock",
+      "pins": {
+        "1": [
+          "CLK",
+          "ARM_COMMIT_CLK",
+          "input"
+        ],
+        "2": [
+          "D",
+          "3V3",
+          "input"
+        ],
+        "3": [
+          "Q_N",
+          null,
+          "no_connect"
+        ],
+        "4": [
+          "GND",
+          "GND",
+          "power_in"
+        ],
+        "5": [
+          "Q",
+          "ARM_LATCHED",
+          "output"
+        ],
+        "6": [
+          "CLR_N",
+          "ARM_CLEAR_N",
+          "input"
+        ],
+        "7": [
+          "PRE_N",
+          "3V3",
+          "input"
+        ],
+        "8": [
+          "VCC",
+          "3V3",
+          "power_in"
+        ]
+      },
+      "desc": "Positive-edge D flip-flop. D and active-low PRE tied high. Async CLR clears on any qualified fault. A held-high ARM_COMMIT cannot relatch after clear releases. GPIO1 must pulse only after fault inputs are stable; GPIO2 reads Q. No power latch or servo-motion guarantee.",
+      "datasheet": "https://www.ti.com/lit/ds/symlink/sn74lvc1g74.pdf",
+      "uuid": "4123c8d5-0557-514e-9d3c-cc1b8a1e691b",
+      "near": "U6",
+      "sym": "U51_SN74LVC1G74DCUR",
+      "symbol_angle": 0,
+      "symbol_points": {
+        "1": [
+          -20.32,
+          5.08,
+          0
+        ],
+        "2": [
+          -20.32,
+          2.54,
+          0
+        ],
+        "3": [
+          -20.32,
+          0.0,
+          0
+        ],
+        "6": [
+          -20.32,
+          -2.54,
+          0
+        ],
+        "7": [
+          -20.32,
+          -5.08,
+          0
+        ],
+        "5": [
+          20.32,
+          5.08,
+          180
+        ],
+        "8": [
+          0.0,
+          10.16,
+          270
+        ],
+        "4": [
+          0.0,
+          -10.16,
+          90
+        ]
+      },
+      "symbol_size": [
+        35.56,
+        15.24
+      ]
+    },
+    {
+      "ref": "U52",
+      "value": "SN74HCS11PWR",
+      "mpn": "SN74HCS11PWR",
+      "manufacturer": "Texas Instruments",
+      "fp": "Package_SO:TSSOP-14_4.4x5mm_P0.65mm",
+      "fp_local": "MOSS:Package_SO_TSSOP-14_4.4x5mm_P0.65mm",
+      "kind": "ic",
+      "group": "03_Hardware_Interlock",
+      "pins": {
+        "1": [
+          "1A",
+          "ACT_READY",
+          "input"
+        ],
+        "2": [
+          "1B",
+          "RESET_N",
+          "input"
+        ],
+        "13": [
+          "1C",
+          "WD_ENABLE",
+          "input"
+        ],
+        "12": [
+          "1Y",
+          "ARM_CLEAR_BASE",
+          "output"
+        ],
+        "3": [
+          "2A",
+          "ARM_CLEAR_BASE",
+          "input"
+        ],
+        "4": [
+          "2B",
+          "ACT_POWER_ENABLE",
+          "input"
+        ],
+        "5": [
+          "2C",
+          "3V3",
+          "input"
+        ],
+        "6": [
+          "2Y",
+          "ARM_CLEAR_N",
+          "output"
+        ],
+        "9": [
+          "3A",
+          "ACT_READY",
+          "input"
+        ],
+        "10": [
+          "3B",
+          "ARM_LATCHED",
+          "input"
+        ],
+        "11": [
+          "3C",
+          "ACT_POWER_ENABLE",
+          "input"
+        ],
+        "8": [
+          "3Y",
+          "ARM_READY",
+          "output"
+        ],
+        "7": [
+          "GND",
+          "GND",
+          "power_in"
+        ],
+        "14": [
+          "VCC",
+          "3V3",
+          "power_in"
+        ]
+      },
+      "desc": "Triple Schmitt AND, slow/noisy inputs allowed without input slew limit. Gate1 combines actuator-ready/reset/WD selection. Gate2 adds ACT_POWER_ENABLE to async clear. Gate3 directly qualifies ARM_LATCHED with rail-ready and power request. All inputs connected; do not substitute plain HC11 or an AND with restricted open-drain input slew.",
+      "datasheet": "https://www.ti.com/lit/ds/symlink/sn74hcs11.pdf",
+      "uuid": "c8df6cec-7929-5fe0-a07e-ece425603e04",
+      "near": "U6",
+      "sym": "U52_SN74HCS11PWR",
+      "symbol_angle": 0,
+      "symbol_points": {
+        "1": [
+          -20.32,
+          10.16,
+          0
+        ],
+        "2": [
+          -20.32,
+          7.62,
+          0
+        ],
+        "13": [
+          -20.32,
+          5.08,
+          0
+        ],
+        "3": [
+          -20.32,
+          2.54,
+          0
+        ],
+        "4": [
+          -20.32,
+          0.0,
+          0
+        ],
+        "5": [
+          -20.32,
+          -2.539999999999999,
+          0
+        ],
+        "9": [
+          -20.32,
+          -5.08,
+          0
+        ],
+        "10": [
+          -20.32,
+          -7.620000000000001,
+          0
+        ],
+        "11": [
+          -20.32,
+          -10.16,
+          0
+        ],
+        "12": [
+          20.32,
+          10.16,
+          180
+        ],
+        "6": [
+          20.32,
+          7.62,
+          180
+        ],
+        "8": [
+          20.32,
+          5.08,
+          180
+        ],
+        "14": [
+          0.0,
+          15.239999999999998,
+          270
+        ],
+        "7": [
+          0.0,
+          -15.239999999999998,
+          90
+        ]
+      },
+      "symbol_size": [
+        35.56,
+        25.4
+      ]
+    },
+    {
+      "ref": "R228",
+      "value": "10k",
+      "fp": "Resistor_SMD:R_0603_1608Metric",
+      "group": "03_Hardware_Interlock",
+      "pins": {
+        "1": [
+          "1",
+          "ARM_COMMIT_CLK",
+          "passive"
+        ],
+        "2": [
+          "2",
+          "GND",
+          "passive"
+        ]
+      },
+      "kind": "R",
+      "mpn": "RC0603FR-0710KL",
+      "desc": "10k CLK pulldown; default low when GPIO is high impedance. Not a clock gate or an RC delay.",
+      "near": "U51",
+      "uuid": "a630375e-7e33-5ac6-82ec-a9c6e9033cdd",
+      "fp_local": "MOSS:Resistor_SMD_R_0603_1608Metric",
+      "sym": "R228_10k",
+      "symbol_angle": 90,
+      "symbol_points": {
+        "1": [
+          0.0,
+          3.81,
+          270.0
+        ],
+        "2": [
+          0.0,
+          -3.81,
+          90.0
+        ]
+      },
+      "symbol_size": [
+        12.7,
+        10.16
+      ]
+    },
+    {
+      "ref": "R229",
+      "value": "100k",
+      "mpn": "RC0603FR-07100KL",
+      "fp": "Resistor_SMD:R_0603_1608Metric",
+      "group": "03_Hardware_Interlock",
+      "kind": "R",
+      "pins": {
+        "1": [
+          "1",
+          "ARM_LATCHED",
+          "passive"
+        ],
+        "2": [
+          "2",
+          "GND",
+          "passive"
+        ]
+      },
+      "desc": "100k weak Q pulldown while new logic is unpowered. Does not replace async clear or reset qualification.",
+      "near": "U51",
+      "uuid": "bdf5d4db-f9e3-5c12-bc7e-c84481e6528d",
+      "tolerance_pct": 1.0,
+      "fp_local": "MOSS:Resistor_SMD_R_0603_1608Metric",
+      "sym": "R229_100k",
+      "symbol_angle": 90,
+      "symbol_points": {
+        "1": [
+          0.0,
+          3.81,
+          270.0
+        ],
+        "2": [
+          0.0,
+          -3.81,
+          90.0
+        ]
+      },
+      "symbol_size": [
+        12.7,
+        10.16
+      ]
+    },
+    {
+      "ref": "R230",
+      "value": "100",
+      "fp": "Resistor_SMD:R_0603_1608Metric",
+      "group": "03_Hardware_Interlock",
+      "pins": {
+        "1": [
+          "1",
+          "ARM_COMMIT",
+          "passive"
+        ],
+        "2": [
+          "2",
+          "ARM_COMMIT_CLK",
+          "passive"
+        ]
+      },
+      "kind": "R",
+      "mpn": "RC0603FR-07100RL",
+      "desc": "100 ohm series CLK damping. Route short over continuous ground; no intentional slow RC on CLK.",
+      "near": "U51",
+      "uuid": "6e4bf47a-5940-544d-8ac6-4fdfed9ef34f",
+      "fp_local": "MOSS:Resistor_SMD_R_0603_1608Metric",
+      "sym": "R230_100",
+      "symbol_angle": 90,
+      "symbol_points": {
+        "1": [
+          0.0,
+          3.81,
+          270.0
+        ],
+        "2": [
+          0.0,
+          -3.81,
+          90.0
+        ]
+      },
+      "symbol_size": [
+        12.7,
+        10.16
+      ]
+    },
+    {
+      "ref": "C154",
+      "value": "100nF",
+      "fp": "Capacitor_SMD:C_0603_1608Metric",
+      "group": "03_Hardware_Interlock",
+      "pins": {
+        "1": [
+          "1",
+          "3V3",
+          "passive"
+        ],
+        "2": [
+          "2",
+          "GND",
+          "passive"
+        ]
+      },
+      "kind": "C",
+      "mpn": "GRM188R71C104KA01D",
+      "desc": "100nF local DFF decoupling at supply pins.",
+      "near": "U51",
+      "uuid": "688a9e75-2845-58f8-a441-4ecaa5024959",
+      "fp_local": "MOSS:Capacitor_SMD_C_0603_1608Metric",
+      "sym": "C154_100nF",
+      "symbol_angle": 90,
+      "symbol_points": {
+        "1": [
+          0.0,
+          3.81,
+          270.0
+        ],
+        "2": [
+          0.0,
+          -3.81,
+          90.0
+        ]
+      },
+      "symbol_size": [
+        12.7,
+        10.16
+      ]
+    },
+    {
+      "ref": "C155",
+      "value": "100nF",
+      "fp": "Capacitor_SMD:C_0603_1608Metric",
+      "group": "03_Hardware_Interlock",
+      "pins": {
+        "1": [
+          "1",
+          "3V3",
+          "passive"
+        ],
+        "2": [
+          "2",
+          "GND",
+          "passive"
+        ]
+      },
+      "kind": "C",
+      "mpn": "GRM188R71C104KA01D",
+      "desc": "100nF local Schmitt logic decoupling at supply pins.",
+      "near": "U52",
+      "uuid": "2190d56f-eb31-518a-8ed4-1cce3e37b8e6",
+      "fp_local": "MOSS:Capacitor_SMD_C_0603_1608Metric",
+      "sym": "C155_100nF",
+      "symbol_angle": 90,
+      "symbol_points": {
+        "1": [
+          0.0,
+          3.81,
+          270.0
+        ],
+        "2": [
+          0.0,
+          -3.81,
+          90.0
+        ]
+      },
+      "symbol_size": [
+        12.7,
+        10.16
+      ]
+    },
+    {
+      "ref": "C170",
+      "value": "6.8pF C0G 50V",
+      "fp": "Capacitor_SMD:C_0402_1005Metric",
+      "group": "01_USB_Power",
+      "pins": {
+        "1": [
+          "1",
+          "3V3",
+          "passive"
+        ],
+        "2": [
+          "2",
+          "BUCK_FB",
+          "passive"
+        ]
+      },
+      "kind": "C",
+      "mpn": "GRM1555C1H6R8DA01D",
+      "desc": "Optional TLV62569 feed-forward capacitor across R70. TI recommends 6.8pF with the existing 100k R71. C0G, 6.8pF +/-0.5pF, 50V, 0402. Fitted initially for prototype transient qualification; no EMI or loop-stability certification. Does not change the DC divider ratio.",
+      "near": "R70",
+      "uuid": "014c9b5f-5228-547e-9d17-9854082a9a3b",
+      "fp_local": "MOSS:Capacitor_SMD_C_0402_1005Metric",
+      "manufacturer": "Murata",
+      "datasheet": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM1555C1H6R8DA01-01.pdf",
+      "sym": "C170_6_8pF_C0G_50V",
+      "symbol_angle": 90,
+      "symbol_points": {
+        "1": [
+          0.0,
+          3.81,
+          270.0
+        ],
+        "2": [
+          0.0,
+          -3.81,
+          90.0
+        ]
+      },
+      "symbol_size": [
+        12.7,
+        10.16
+      ]
     }
   ],
   "notes": {
     "01_USB_Power": "Core USB device powered by host hub; separate from OrangePi5V source. RF disabled; encoder supply only after enumeration. Verify USB budget.",
     "02_Controller": "ESP32-S3-WROOM-1U-N8. New firmware pin map; native USB serial/audio functions require implementation. External I2C ADC for left/right winding currents.",
-    "03_Hardware_Interlock": "Watchdog resets MCU on timeout. Downstream ACT_READY inhibits drive and servo data when actuator rail is off. E-stop auxiliary contact also requests stretched reset; fresh manual arming required.",
+    "03_Hardware_Interlock": "Existing watchdog/reset/STOP remain. Hardware permission latch: ACT_READY, RESET_N, WD_ENABLE and ACT_POWER_ENABLE must be valid; any low asynchronously clears U51. A dedicated new GPIO1 ARM_COMMIT rising edge after qualification is required to restore ARM_LATCHED. GPIO2 reads Q. ACT_POWER_ENABLE can establish the rail before ACT_READY, preventing boot deadlock. UART packet enable is not ARM_COMMIT. Brownout/out-of-range and timing-window behavior require prototype qualification.",
     "04_Drive_Encoders": "J3/J4 each carry one complete six-wire motor/encoder cable. J2 carries four Cytron motor-output legs plus four logic controls and signal ground. Pin10 intentionally unused. The existing J11 separately carries the Cytron battery supply.",
     "05_Servo": "Six addressed servos on one powered DATA/V+/GND connector. No external serial adapter and no shared2.5A current limiter. Verify harness rating.",
     "06_Audio": "MAX98357A integrated for4-ohm/3W speaker. Both output terminals active. Start muted; firmware volume/load tests required.",

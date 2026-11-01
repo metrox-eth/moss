@@ -34,7 +34,7 @@ Retain the six-way plug supplied with the Arduitronics RU00129 motor. Terminate 
 | 9 | Right bridge output M2B |
 | 10 | Unused: no harness crimp terminal or wire |
 
-J11 retains its separate supply: **1 = switched battery positive; 2 = GND**. The Cytron's supply current does not pass through J2's signal-ground wire. J10 is the battery XT30 input and has its own polarity marking.
+J11 retains its separate supply: **1 = switched battery positive; 2 = GND**. J11 is the intended main supply path. J2.5 and J11.2 share Core ground; if they are also joined inside the Cytron, they form parallel return paths. Some power current can therefore flow in the signal-ground wire. Keep the main supply pair low impedance and verify the final harness under load; do not remove the logic reference ground without a reviewed interface change. J10 is the battery XT30 input and has its own polarity marking.
 
 The two wires of each winding stay together in the loom. Group the Cytron interconnect into one sleeved cable assembly with its J2 and J11 terminations. Each motor cable has its own sleeve and LEFT/RIGHT identification. Finished lengths need to follow the fitted routing; the earlier three-branch harness lengths are superseded.
 
