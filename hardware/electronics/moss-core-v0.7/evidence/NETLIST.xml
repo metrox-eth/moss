@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>electrical/MOSS_Core_V07_Prototype.kicad_sch</source>
-    <date>2026-10-31T19:11:21</date>
+    <date>2026-11-01T16:07:44</date>
     <tool>Eeschema 10.0.6</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -3160,16 +3160,17 @@
     </comp>
     <comp ref="J5">
       <value>ARM / DATA V+ GND</value>
-      <footprint>MOSS:Connector_Molex_Molex_SPOX_5268-03A_1x03_P2.50mm_Horizontal</footprint>
-      <description>Single powered SO-101-style daisy-chain connector. No common2.5A limiter. CandidateMolex22-05-7035 is3A/contact nominal; physical mate and actual duty-cycle temperature must be qualified. No claim of all-six-stall capacity.</description>
+      <footprint>MOSS:Connector_Molex_Molex_SPOX_5267-03A_1x03_P2.50mm_Vertical</footprint>
+      <datasheet>https://www.molex.com/pdm_docs/sd/022035035_sd.pdf</datasheet>
+      <description>Molex 22-03-5035 / 5267-03A vertical SPOX header, 2.50 mm pitch; mates with 5264-family cable housing. Pin 1 DATA, pin 2 actuator supply, pin 3 GND. Nominal 3 A per contact; aggregate arm current requires qualification.</description>
       <fields>
-        <field name="MPN">22-05-7035</field>
-        <field name="Footprint">MOSS:Connector_Molex_Molex_SPOX_5268-03A_1x03_P2.50mm_Horizontal</field>
-        <field name="Datasheet"/>
-        <field name="Description">Single powered SO-101-style daisy-chain connector. No common2.5A limiter. CandidateMolex22-05-7035 is3A/contact nominal; physical mate and actual duty-cycle temperature must be qualified. No claim of all-six-stall capacity.</field>
+        <field name="MPN">22-03-5035</field>
+        <field name="Footprint">MOSS:Connector_Molex_Molex_SPOX_5267-03A_1x03_P2.50mm_Vertical</field>
+        <field name="Datasheet">https://www.molex.com/pdm_docs/sd/022035035_sd.pdf</field>
+        <field name="Description">Molex 22-03-5035 / 5267-03A vertical SPOX header, 2.50 mm pitch; mates with 5264-family cable housing. Pin 1 DATA, pin 2 actuator supply, pin 3 GND. Nominal 3 A per contact; aggregate arm current requires qualification.</field>
       </fields>
-      <libsource lib="MOSS" part="J5_ARM___DATA_V__GND" description="Single powered SO-101-style daisy-chain connector. No common2.5A limiter. CandidateMolex22-05-7035 is3A/contact nominal; physical mate and actual duty-cycle temperature must be qualified. No claim of all-six-stall capacity."/>
-      <property name="MPN" value="22-05-7035"/>
+      <libsource lib="MOSS" part="J5_ARM___DATA_V__GND" description="Molex 22-03-5035 / 5267-03A vertical SPOX header, 2.50 mm pitch; mates with 5264-family cable housing. Pin 1 DATA, pin 2 actuator supply, pin 3 GND. Nominal 3 A per contact; aggregate arm current requires qualification."/>
+      <property name="MPN" value="22-03-5035"/>
       <property name="Sheetname" value="05 Servo"/>
       <property name="Sheetfile" value="05_Servo.kicad_sch"/>
       <sheetpath names="/05 Servo/" tstamps="/a397f9ec-30a6-5a7a-9972-ab684a5c5a06/"/>
@@ -3466,16 +3467,16 @@
     </comp>
     <comp ref="J7">
       <value>SPEAKER / 4 ohm 3 W</value>
-      <footprint>MOSS:Connector_JST_JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal</footprint>
-      <description>JST PH mate selected from user-confirmed 2 mm pitch and IMG_1428/1429 housing shape. Physical mating and red/black contact assignment require prototype confirmation. BTL output: neither speaker lead is ground.</description>
+      <footprint>MOSS:Connector_JST_JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</footprint>
+      <description>JST B2B-PH-K-S(LF)(SN) vertical PH header, 2.00 mm pitch, mates with PHR-2 housing. Pin 1 SPEAKER_P, pin 2 SPEAKER_N. Bridged amplifier output: neither lead is GND.</description>
       <fields>
-        <field name="MPN">S2B-PH-K-S(LF)(SN)</field>
-        <field name="Footprint">MOSS:Connector_JST_JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal</field>
+        <field name="MPN">B2B-PH-K-S(LF)(SN)</field>
+        <field name="Footprint">MOSS:Connector_JST_JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</field>
         <field name="Datasheet"/>
-        <field name="Description">JST PH mate selected from user-confirmed 2 mm pitch and IMG_1428/1429 housing shape. Physical mating and red/black contact assignment require prototype confirmation. BTL output: neither speaker lead is ground.</field>
+        <field name="Description">JST B2B-PH-K-S(LF)(SN) vertical PH header, 2.00 mm pitch, mates with PHR-2 housing. Pin 1 SPEAKER_P, pin 2 SPEAKER_N. Bridged amplifier output: neither lead is GND.</field>
       </fields>
-      <libsource lib="MOSS" part="J7_SPEAKER___4_ohm_3_W" description="JST PH mate selected from user-confirmed 2 mm pitch and IMG_1428/1429 housing shape. Physical mating and red/black contact assignment require prototype confirmation. BTL output: neither speaker lead is ground."/>
-      <property name="MPN" value="S2B-PH-K-S(LF)(SN)"/>
+      <libsource lib="MOSS" part="J7_SPEAKER___4_ohm_3_W" description="JST B2B-PH-K-S(LF)(SN) vertical PH header, 2.00 mm pitch, mates with PHR-2 housing. Pin 1 SPEAKER_P, pin 2 SPEAKER_N. Bridged amplifier output: neither lead is GND."/>
+      <property name="MPN" value="B2B-PH-K-S(LF)(SN)"/>
       <property name="Sheetname" value="06 Audio"/>
       <property name="Sheetfile" value="06_Audio.kicad_sch"/>
       <sheetpath names="/06 Audio/" tstamps="/c7f111bf-1ccc-5842-acc3-1d06c7645201/"/>
@@ -4362,17 +4363,18 @@
       </units>
     </comp>
     <comp ref="J10">
-      <value>XT30PW-M / FUSED 3S INPUT</value>
-      <footprint>MOSS:Connector_AMASS_AMASS_XT30PW-M_1x02_P2.50mm_Horizontal_EdgeEntry</footprint>
-      <description>AMASS XT30PW-M PCB male fused 3S input matching the existing rover XT30 harness. Footprint pad1 is negative/GND, pad2 positive/BAT_PROTECTED; do not reuse Phoenix numbering. Existing external15Apackfuse retained. Legacy connector15A nominal is not a30Acontinuous board rating. PCBWay must match the reviewed legacy part drawing; wire/contact temperature and actual mating access need prototype checks.</description>
+      <value>XT30UPB-M.G.Y / FUSED 3S INPUT</value>
+      <footprint>MOSS:Connector_AMASS_AMASS_XT30UPB-M_1x02_P5.0mm_Vertical</footprint>
+      <datasheet>https://www.china-amass.net/uploads/XT30UPB-FM.rar</datasheet>
+      <description>AMASS XT30UPB-M.G.Y vertical PCB male, 5.00 mm pitch, two 1.80 mm finished holes, no locating pegs. Mates with XT30U-F battery cable. Pin 1 GND, pin 2 protected battery positive.</description>
       <fields>
-        <field name="MPN">XT30PW-M</field>
-        <field name="Footprint">MOSS:Connector_AMASS_AMASS_XT30PW-M_1x02_P2.50mm_Horizontal_EdgeEntry</field>
-        <field name="Datasheet"/>
-        <field name="Description">AMASS XT30PW-M PCB male fused 3S input matching the existing rover XT30 harness. Footprint pad1 is negative/GND, pad2 positive/BAT_PROTECTED; do not reuse Phoenix numbering. Existing external15Apackfuse retained. Legacy connector15A nominal is not a30Acontinuous board rating. PCBWay must match the reviewed legacy part drawing; wire/contact temperature and actual mating access need prototype checks.</field>
+        <field name="MPN">XT30UPB-M.G.Y</field>
+        <field name="Footprint">MOSS:Connector_AMASS_AMASS_XT30UPB-M_1x02_P5.0mm_Vertical</field>
+        <field name="Datasheet">https://www.china-amass.net/uploads/XT30UPB-FM.rar</field>
+        <field name="Description">AMASS XT30UPB-M.G.Y vertical PCB male, 5.00 mm pitch, two 1.80 mm finished holes, no locating pegs. Mates with XT30U-F battery cable. Pin 1 GND, pin 2 protected battery positive.</field>
       </fields>
-      <libsource lib="MOSS" part="J10_XT30PW_M___FUSED_3S_INPUT" description="AMASS XT30PW-M PCB male fused 3S input matching the existing rover XT30 harness. Footprint pad1 is negative/GND, pad2 positive/BAT_PROTECTED; do not reuse Phoenix numbering. Existing external15Apackfuse retained. Legacy connector15A nominal is not a30Acontinuous board rating. PCBWay must match the reviewed legacy part drawing; wire/contact temperature and actual mating access need prototype checks."/>
-      <property name="MPN" value="XT30PW-M"/>
+      <libsource lib="MOSS" part="J10_XT30PW_M___FUSED_3S_INPUT" description="AMASS XT30UPB-M.G.Y vertical PCB male, 5.00 mm pitch, two 1.80 mm finished holes, no locating pegs. Mates with XT30U-F battery cable. Pin 1 GND, pin 2 protected battery positive."/>
+      <property name="MPN" value="XT30UPB-M.G.Y"/>
       <property name="Sheetname" value="10 Battery Power"/>
       <property name="Sheetfile" value="10_Battery_Power.kicad_sch"/>
       <sheetpath names="/10 Battery Power/" tstamps="/5b8e4b07-ec1a-5b56-89b4-eb2b18fe8a65/"/>
@@ -7132,14 +7134,15 @@
       </fields>
     </libpart>
     <libpart lib="MOSS" part="J10_XT30PW_M___FUSED_3S_INPUT">
-      <description>AMASS XT30PW-M PCB male fused 3S input matching the existing rover XT30 harness. Footprint pad1 is negative/GND, pad2 positive/BAT_PROTECTED; do not reuse Phoenix numbering. Existing external15Apackfuse retained. Legacy connector15A nominal is not a30Acontinuous board rating. PCBWay must match the reviewed legacy part drawing; wire/contact temperature and actual mating access need prototype checks.</description>
+      <description>AMASS XT30UPB-M.G.Y vertical PCB male, 5.00 mm pitch, two 1.80 mm finished holes, no locating pegs. Mates with XT30U-F battery cable. Pin 1 GND, pin 2 protected battery positive.</description>
+      <docs>https://www.china-amass.net/uploads/XT30UPB-FM.rar</docs>
       <fields>
         <field name="Reference">J</field>
-        <field name="Value">XT30PW-M / FUSED 3S INPUT</field>
-        <field name="Footprint">MOSS:Connector_AMASS_AMASS_XT30PW-M_1x02_P2.50mm_Horizontal_EdgeEntry</field>
-        <field name="Datasheet"/>
-        <field name="Description">AMASS XT30PW-M PCB male fused 3S input matching the existing rover XT30 harness. Footprint pad1 is negative/GND, pad2 positive/BAT_PROTECTED; do not reuse Phoenix numbering. Existing external15Apackfuse retained. Legacy connector15A nominal is not a30Acontinuous board rating. PCBWay must match the reviewed legacy part drawing; wire/contact temperature and actual mating access need prototype checks.</field>
-        <field name="MPN">XT30PW-M</field>
+        <field name="Value">XT30UPB-M.G.Y / FUSED 3S INPUT</field>
+        <field name="Footprint">MOSS:Connector_AMASS_AMASS_XT30UPB-M_1x02_P5.0mm_Vertical</field>
+        <field name="Datasheet">https://www.china-amass.net/uploads/XT30UPB-FM.rar</field>
+        <field name="Description">AMASS XT30UPB-M.G.Y vertical PCB male, 5.00 mm pitch, two 1.80 mm finished holes, no locating pegs. Mates with XT30U-F battery cable. Pin 1 GND, pin 2 protected battery positive.</field>
+        <field name="MPN">XT30UPB-M.G.Y</field>
       </fields>
       <pins>
         <pin num="1" name="BAT_NEG" type="passive"/>
@@ -7313,14 +7316,15 @@
       </pins>
     </libpart>
     <libpart lib="MOSS" part="J5_ARM___DATA_V__GND">
-      <description>Single powered SO-101-style daisy-chain connector. No common2.5A limiter. CandidateMolex22-05-7035 is3A/contact nominal; physical mate and actual duty-cycle temperature must be qualified. No claim of all-six-stall capacity.</description>
+      <description>Molex 22-03-5035 / 5267-03A vertical SPOX header, 2.50 mm pitch; mates with 5264-family cable housing. Pin 1 DATA, pin 2 actuator supply, pin 3 GND. Nominal 3 A per contact; aggregate arm current requires qualification.</description>
+      <docs>https://www.molex.com/pdm_docs/sd/022035035_sd.pdf</docs>
       <fields>
         <field name="Reference">J</field>
         <field name="Value">ARM / DATA V+ GND</field>
-        <field name="Footprint">MOSS:Connector_Molex_Molex_SPOX_5268-03A_1x03_P2.50mm_Horizontal</field>
-        <field name="Datasheet"/>
-        <field name="Description">Single powered SO-101-style daisy-chain connector. No common2.5A limiter. CandidateMolex22-05-7035 is3A/contact nominal; physical mate and actual duty-cycle temperature must be qualified. No claim of all-six-stall capacity.</field>
-        <field name="MPN">22-05-7035</field>
+        <field name="Footprint">MOSS:Connector_Molex_Molex_SPOX_5267-03A_1x03_P2.50mm_Vertical</field>
+        <field name="Datasheet">https://www.molex.com/pdm_docs/sd/022035035_sd.pdf</field>
+        <field name="Description">Molex 22-03-5035 / 5267-03A vertical SPOX header, 2.50 mm pitch; mates with 5264-family cable housing. Pin 1 DATA, pin 2 actuator supply, pin 3 GND. Nominal 3 A per contact; aggregate arm current requires qualification.</field>
+        <field name="MPN">22-03-5035</field>
       </fields>
       <pins>
         <pin num="1" name="DATA" type="passive"/>
@@ -7329,14 +7333,14 @@
       </pins>
     </libpart>
     <libpart lib="MOSS" part="J7_SPEAKER___4_ohm_3_W">
-      <description>JST PH mate selected from user-confirmed 2 mm pitch and IMG_1428/1429 housing shape. Physical mating and red/black contact assignment require prototype confirmation. BTL output: neither speaker lead is ground.</description>
+      <description>JST B2B-PH-K-S(LF)(SN) vertical PH header, 2.00 mm pitch, mates with PHR-2 housing. Pin 1 SPEAKER_P, pin 2 SPEAKER_N. Bridged amplifier output: neither lead is GND.</description>
       <fields>
         <field name="Reference">J</field>
         <field name="Value">SPEAKER / 4 ohm 3 W</field>
-        <field name="Footprint">MOSS:Connector_JST_JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal</field>
+        <field name="Footprint">MOSS:Connector_JST_JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical</field>
         <field name="Datasheet"/>
-        <field name="Description">JST PH mate selected from user-confirmed 2 mm pitch and IMG_1428/1429 housing shape. Physical mating and red/black contact assignment require prototype confirmation. BTL output: neither speaker lead is ground.</field>
-        <field name="MPN">S2B-PH-K-S(LF)(SN)</field>
+        <field name="Description">JST B2B-PH-K-S(LF)(SN) vertical PH header, 2.00 mm pitch, mates with PHR-2 housing. Pin 1 SPEAKER_P, pin 2 SPEAKER_N. Bridged amplifier output: neither lead is GND.</field>
+        <field name="MPN">B2B-PH-K-S(LF)(SN)</field>
       </fields>
       <pins>
         <pin num="1" name="SPK_P" type="passive"/>

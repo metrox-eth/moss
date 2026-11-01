@@ -1,0 +1,15 @@
+{
+  "scope": "Bounded isolated native Gerber export of exact C21 silk segment, not a circuit variant",
+  "source_segment_UUID": "72fc5d9e-02a9-4a24-89ec-3dfc75fa8296",
+  "line_length_mm": 0.28116,
+  "line_width_mm": 0.12,
+  "native_warning": "silk_over_copper against J10 pad1",
+  "unclipped_Gerber_has_positive_C21_stroke": true,
+  "clipped_Gerber_has_J10_pad1_negative_polarity_flash": true,
+  "clear_flash": "D26 RoundRect:3x3mm,0.75mm radius at(25,-2) in Gerber coordinates",
+  "clipping_mechanism": "KiCad --subtract-soldermask adds negative-polarity soldermask openings over the silk; ink intersecting the pad opening is removed without changing the component footprint.",
+  "approx_ink_area_removed_mm2": 0.0106987956460142,
+  "approx_ink_area_retained_mm2": 0.03434985403810531,
+  "native_design_not_changed": true,
+  "production_export_must_use_flag": "--subtract-soldermask"
+}

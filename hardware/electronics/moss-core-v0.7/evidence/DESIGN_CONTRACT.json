@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "file_hashes": {
+    "electrical/MOSS_Core_V07_Prototype.kicad_pcb": "9f0ef9f1bc34934417560cd6f2751c714f3643d7959bae822c8b48c13b259b03",
+    "electrical/circuit.json": "f4739a5a124a02c29be7033f7368145dea789062d78fd761e20b8749df533125",
+    "electrical/BOM_PCBWAY_ASSEMBLY.json": "bcc33d9db3b0ab1cb5072de7cf4d43193ac1ddba7ca5a99de4ffcd7db13a0c2e",
+    "evidence/NETLIST.xml": "daa496d3dee9b5dd9827e5fd20f4db75170eca618ef0553800781b96972dac82"
+  },
+  "native_footprints": 222,
+  "assembled_components": 208,
+  "grouped_purchase_articles": 96,
+  "physical_pin_definitions_checked": 696,
+  "scope": "Native physical pad nets and numbers, exact MPN fields, local footprint IDs, schematic netlist and grouped BOM are mutually consistent. No files modified.",
+  "limits": "Not an independent datasheet/package-geometry review, electrical simulation or hardware test."
+}

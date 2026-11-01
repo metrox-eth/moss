@@ -1,11 +1,23 @@
 {
-  "status": "CURRENT_UNBUILT_PROTOTYPE_HARNESS_UPDATE",
-  "date": "2026-10-31",
-  "PCB_sha256": "ea19d9bdb0b6037542eb0b4bca53a04d0b0fecbf3d16e4198485bf43dcadbfc4",
-  "native_design_and_manufacturing_data_exported_from_same_PCB": true,
-  "hardware_revision_letters_assigned": false,
-  "hardware_qualified": false,
-  "harness_study": "Separate frozen 30 October packaging study; not relabelled as the current design.",
-  "baseline_reports": "Historical reports in baseline_integrated_power predate this harness update. Use CHECKS and HARNESS_UPDATE_CHECKS for the current PCB.",
-  "supplier_correspondence_account_and_order_data_excluded": true
+  "updated": "2026-11-01",
+  "hardware_name": "MOSS CORE V0.7 Prototype",
+  "native_board_sha256": "9f0ef9f1bc34934417560cd6f2751c714f3643d7959bae822c8b48c13b259b03",
+  "fabricated": false,
+  "hardware_revision_letters_reserved_for_fabricated_boards": true,
+  "matching_file_set": "20261101_LAYOUT",
+  "historical_reports": "baseline_integrated_power/ is explicitly historical; the separate harness/ study remains frozen to 30 October.",
+  "static_checks": [
+    "DRC/ERC/parity",
+    "696 physical pin definitions and grouped BOM",
+    "all four layers strict45/90",
+    "critical power/USB/Kelvin preservation and GND continuity",
+    "combined CAD and declared cable clearance reservations"
+  ],
+  "excluded": [
+    "supplier correspondence",
+    "account and order information",
+    "local routing caches",
+    "unrelated workshop files"
+  ],
+  "limits": "No manufactured-board, thermal or full-load test has been performed."
 }

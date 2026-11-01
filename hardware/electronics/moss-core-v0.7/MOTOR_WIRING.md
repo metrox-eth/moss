@@ -1,6 +1,6 @@
 # MOSS CORE V0.7 — motor wiring
 
-Updated 31 October 2026. Each motor now has one six-wire cable to Core. The Cytron stays in its existing position. Its supply uses J11; its four motor outputs and four control signals share J2, with a signal-ground wire.
+Updated 1 November 2026. Each motor has one six-wire cable to Core. The Cytron stays in its existing position. Its supply uses J11; its four motor outputs and four control signals share J2, with a signal-ground wire.
 
 ## Motor cables
 
@@ -56,3 +56,9 @@ Both contact selections require insulation OD **no greater than 1.85 mm**. Use w
 Manufacturer references: [six-way header](https://www.molex.com/en-us/products/part-detail/430450612), [ten-way header](https://www.molex.com/en-us/products/part-detail/430451012), [six-way housing](https://www.molex.com/en-us/products/part-detail/430250600), [ten-way housing](https://www.molex.com/en-us/products/part-detail/430251000), [18 AWG contact](https://www.molex.com/en-us/products/part-detail/430300038), [20–24 AWG contact](https://www.molex.com/en-us/products/part-detail/430300001), [populated-circuit current derating](https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/productspecificationpdf/430/43045/PS-43045-001.pdf).
 
 The distributor's [RU00129 specification](https://www.arduitronics.com/product/6047/) lists the 12 V, 90:1, 110 rpm version at no more than 1 A rated current and 2.3 A stall current. These are supplier values, not measurements on MOSS. The Cytron's 10 A channel specification is not the current rating of the complete Core/harness assembly. Actual load, startup, temperature and wire/crimp performance remain prototype bench checks.
+
+## Prototype encoder test before a larger run
+
+**Planned hardware validation; not yet performed.** Use the actual finished harness, with its final lengths, crimps and sleeves. Compare encoder counts and direction with an independent rotation reference during forward/reverse operation and repeated motor reversals under load. Check for missing or extra counts, resets and supply dips, and compare the results with the existing wiring. Inspect the encoder waveforms during switching if test equipment is available.
+
+The two winding wires and the four encoder wires remain separate, insulated conductors. Sharing a sleeve and connector does not electrically join those circuits. The test checks the complete assembly for interference and connection problems before committing to a larger batch.

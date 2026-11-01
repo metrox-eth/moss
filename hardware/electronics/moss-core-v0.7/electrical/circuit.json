@@ -4106,7 +4106,7 @@
     {
       "ref": "J5",
       "value": "ARM / DATA V+ GND",
-      "fp": "Connector_Molex:Molex_SPOX_5268-03A_1x03_P2.50mm_Horizontal",
+      "fp": "Connector_Molex:Molex_SPOX_5267-03A_1x03_P2.50mm_Vertical",
       "group": "05_Servo",
       "pins": {
         "1": [
@@ -4126,11 +4126,11 @@
         ]
       },
       "kind": "connector",
-      "mpn": "22-05-7035",
-      "desc": "Single powered SO-101-style daisy-chain connector. No common2.5A limiter. CandidateMolex22-05-7035 is3A/contact nominal; physical mate and actual duty-cycle temperature must be qualified. No claim of all-six-stall capacity.",
+      "mpn": "22-03-5035",
+      "desc": "Molex 22-03-5035 / 5267-03A vertical SPOX header, 2.50 mm pitch; mates with 5264-family cable housing. Pin 1 DATA, pin 2 actuator supply, pin 3 GND. Nominal 3 A per contact; aggregate arm current requires qualification.",
       "near": null,
       "uuid": "f1ff0927-fbc4-55c9-b4e7-8ef91543fc09",
-      "fp_local": "MOSS:Connector_Molex_Molex_SPOX_5268-03A_1x03_P2.50mm_Horizontal",
+      "fp_local": "MOSS:Connector_Molex_Molex_SPOX_5267-03A_1x03_P2.50mm_Vertical",
       "sym": "J5_ARM___DATA_V__GND",
       "symbol_angle": 0,
       "symbol_points": {
@@ -4153,7 +4153,8 @@
       "symbol_size": [
         30.48,
         12.7
-      ]
+      ],
+      "purchase_url": "https://www.molex.com/en-us/products/part-detail/22035035"
     },
     {
       "ref": "R43",
@@ -7323,7 +7324,7 @@
     {
       "ref": "J7",
       "value": "SPEAKER / 4 ohm 3 W",
-      "fp": "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal",
+      "fp": "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical",
       "group": "06_Audio",
       "pins": {
         "1": [
@@ -7338,11 +7339,11 @@
         ]
       },
       "kind": "connector",
-      "mpn": "S2B-PH-K-S(LF)(SN)",
-      "desc": "JST PH mate selected from user-confirmed 2 mm pitch and IMG_1428/1429 housing shape. Physical mating and red/black contact assignment require prototype confirmation. BTL output: neither speaker lead is ground.",
+      "mpn": "B2B-PH-K-S(LF)(SN)",
+      "desc": "JST B2B-PH-K-S(LF)(SN) vertical PH header, 2.00 mm pitch, mates with PHR-2 housing. Pin 1 SPEAKER_P, pin 2 SPEAKER_N. Bridged amplifier output: neither lead is GND.",
       "near": null,
       "uuid": "fc8b3722-c9f6-550f-b728-73aee6a325b6",
-      "fp_local": "MOSS:Connector_JST_JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal",
+      "fp_local": "MOSS:Connector_JST_JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical",
       "sym": "J7_SPEAKER___4_ohm_3_W",
       "symbol_angle": 0,
       "symbol_points": {
@@ -7361,7 +7362,8 @@
         30.48,
         12.7
       ],
-      "assemblyPreference": "Manual through-hole insertion/soldering with suitable fixture and PCB support. Fully seat connector; do not bend PCB or damage housing when applying seating pressure. Inspect joints and seating."
+      "assemblyPreference": "Manual through-hole insertion/soldering with suitable fixture and PCB support. Fully seat connector; do not bend PCB or damage housing when applying seating pressure. Inspect joints and seating.",
+      "purchase_url": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
     },
     {
       "ref": "U24",
@@ -8289,8 +8291,8 @@
     },
     {
       "ref": "J10",
-      "value": "XT30PW-M / FUSED 3S INPUT",
-      "fp": "Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal_EdgeEntry",
+      "value": "XT30UPB-M.G.Y / FUSED 3S INPUT",
+      "fp": "Connector_AMASS:AMASS_XT30UPB-M_1x02_P5.0mm_Vertical",
       "group": "10_Battery_Power",
       "pins": {
         "1": [
@@ -8305,13 +8307,13 @@
         ]
       },
       "kind": "connector",
-      "mpn": "XT30PW-M",
-      "desc": "AMASS XT30PW-M PCB male fused 3S input matching the existing rover XT30 harness. Footprint pad1 is negative/GND, pad2 positive/BAT_PROTECTED; do not reuse Phoenix numbering. Existing external15Apackfuse retained. Legacy connector15A nominal is not a30Acontinuous board rating. PCBWay must match the reviewed legacy part drawing; wire/contact temperature and actual mating access need prototype checks.",
+      "mpn": "XT30UPB-M.G.Y",
+      "desc": "AMASS XT30UPB-M.G.Y vertical PCB male, 5.00 mm pitch, two 1.80 mm finished holes, no locating pegs. Mates with XT30U-F battery cable. Pin 1 GND, pin 2 protected battery positive.",
       "near": null,
       "uuid": "b95b8e31-28dc-5a83-8ab8-261773d48c92",
       "manufacturer": "AMASS",
-      "purchase_url": "https://www.tme.eu/gb/details/xt30pw-m/dc-power-connectors/amass/",
-      "fp_local": "MOSS:Connector_AMASS_AMASS_XT30PW-M_1x02_P2.50mm_Horizontal_EdgeEntry",
+      "purchase_url": "https://www.china-amass.net/uploads/XT30UPB-FM.rar",
+      "fp_local": "MOSS:Connector_AMASS_AMASS_XT30UPB-M_1x02_P5.0mm_Vertical",
       "sym": "J10_XT30PW_M___FUSED_3S_INPUT",
       "symbol_angle": 0,
       "symbol_points": {
@@ -9539,7 +9541,7 @@
       },
       "kind": "C",
       "mpn": "10SVPE220M",
-      "desc": "PanasonicOS-CON220uF\u00b120%,10V,20mohm,6.3x5.9mm. Minimum176uF satisfiesTI120uF inputbulk; place next toU42IN1/GND.",
+      "desc": "PanasonicOS-CON220uF±20%,10V,20mohm,6.3x5.9mm. Minimum176uF satisfiesTI120uF inputbulk; place next toU42IN1/GND.",
       "near": "U42",
       "uuid": "fe973677-04e1-5baf-9c14-f3c4661f42d6",
       "fp_local": "MOSS:Capacitor_SMD_CP_Elec_6.3x5.9",

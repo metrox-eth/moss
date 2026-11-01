@@ -1,0 +1,147 @@
+{
+  "mode": "apply",
+  "board": "MOSS_Core_V07_Prototype.kicad_pcb",
+  "board_sha256": "9f0ef9f1bc34934417560cd6f2751c714f3643d7959bae822c8b48c13b259b03",
+  "native_PCB_not_edited": true,
+  "references": {
+    "J5": {
+      "mpn": "22-03-5035",
+      "fp_local": "MOSS:Connector_Molex_Molex_SPOX_5267-03A_1x03_P2.50mm_Vertical",
+      "fp": "Connector_Molex:Molex_SPOX_5267-03A_1x03_P2.50mm_Vertical",
+      "value": "ARM / DATA V+ GND",
+      "desc": "Molex 22-03-5035 / 5267-03A vertical SPOX header, 2.50 mm pitch; mates with 5264-family cable housing. Pin 1 DATA, pin 2 actuator supply, pin 3 GND. Nominal 3 A per contact; aggregate arm current requires qualification.",
+      "symbol": "J5_ARM___DATA_V__GND",
+      "source_url": "https://www.molex.com/en-us/products/part-detail/22035035",
+      "fields": {
+        "Footprint": "MOSS:Connector_Molex_Molex_SPOX_5267-03A_1x03_P2.50mm_Vertical",
+        "MPN": "22-03-5035",
+        "Description": "Molex 22-03-5035 / 5267-03A vertical SPOX header, 2.50 mm pitch; mates with 5264-family cable housing. Pin 1 DATA, pin 2 actuator supply, pin 3 GND. Nominal 3 A per contact; aggregate arm current requires qualification.",
+        "Value": "ARM / DATA V+ GND",
+        "Datasheet": "https://www.molex.com/pdm_docs/sd/022035035_sd.pdf"
+      },
+      "native_models": [
+        {
+          "path": "Molex_22035035_VERTICAL_DIMENSIONED_REFERENCE.step",
+          "sha256": "03aee1269e2dddcd27cde96ea4c44753ebe60a13bfe4396765f68b3842d2504f"
+        }
+      ],
+      "library_models": [
+        {
+          "path": "Molex_22035035_VERTICAL_DIMENSIONED_REFERENCE.step",
+          "sha256": "03aee1269e2dddcd27cde96ea4c44753ebe60a13bfe4396765f68b3842d2504f"
+        }
+      ],
+      "local_footprint": "Connector_Molex_Molex_SPOX_5267-03A_1x03_P2.50mm_Vertical.kicad_mod"
+    },
+    "J7": {
+      "mpn": "B2B-PH-K-S(LF)(SN)",
+      "fp_local": "MOSS:Connector_JST_JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical",
+      "fp": "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical",
+      "value": "SPEAKER / 4 ohm 3 W",
+      "desc": "JST B2B-PH-K-S(LF)(SN) vertical PH header, 2.00 mm pitch, mates with PHR-2 housing. Pin 1 SPEAKER_P, pin 2 SPEAKER_N. Bridged amplifier output: neither lead is GND.",
+      "symbol": "J7_SPEAKER___4_ohm_3_W",
+      "source_url": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf",
+      "fields": {
+        "Footprint": "MOSS:Connector_JST_JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical",
+        "MPN": "B2B-PH-K-S(LF)(SN)",
+        "Description": "JST B2B-PH-K-S(LF)(SN) vertical PH header, 2.00 mm pitch, mates with PHR-2 housing. Pin 1 SPEAKER_P, pin 2 SPEAKER_N. Bridged amplifier output: neither lead is GND.",
+        "Value": "SPEAKER / 4 ohm 3 W",
+        "Datasheet": ""
+      },
+      "native_models": [
+        {
+          "path": "Connector_JST_JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical.step",
+          "sha256": "cab512a9b16c7568ed6e0047c17de04c4dd11893cdee71cb33fb51768543f927"
+        }
+      ],
+      "library_models": [
+        {
+          "path": "Connector_JST_JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical.step",
+          "sha256": "cab512a9b16c7568ed6e0047c17de04c4dd11893cdee71cb33fb51768543f927"
+        }
+      ],
+      "local_footprint": "Connector_JST_JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical.kicad_mod"
+    },
+    "J10": {
+      "mpn": "XT30UPB-M.G.Y",
+      "fp_local": "MOSS:Connector_AMASS_AMASS_XT30UPB-M_1x02_P5.0mm_Vertical",
+      "fp": "Connector_AMASS:AMASS_XT30UPB-M_1x02_P5.0mm_Vertical",
+      "value": "XT30UPB-M.G.Y / FUSED 3S INPUT",
+      "desc": "AMASS XT30UPB-M.G.Y vertical PCB male, 5.00 mm pitch, two 1.80 mm finished holes, no locating pegs. Mates with XT30U-F battery cable. Pin 1 GND, pin 2 protected battery positive.",
+      "symbol": "J10_XT30PW_M___FUSED_3S_INPUT",
+      "source_url": "https://www.china-amass.net/uploads/XT30UPB-FM.rar",
+      "fields": {
+        "Footprint": "MOSS:Connector_AMASS_AMASS_XT30UPB-M_1x02_P5.0mm_Vertical",
+        "MPN": "XT30UPB-M.G.Y",
+        "Description": "AMASS XT30UPB-M.G.Y vertical PCB male, 5.00 mm pitch, two 1.80 mm finished holes, no locating pegs. Mates with XT30U-F battery cable. Pin 1 GND, pin 2 protected battery positive.",
+        "Value": "XT30UPB-M.G.Y / FUSED 3S INPUT",
+        "Datasheet": "https://www.china-amass.net/uploads/XT30UPB-FM.rar"
+      },
+      "native_models": [
+        {
+          "path": "XT30UPB-M_REFERENCE.step",
+          "sha256": "c1d027e0359f35ec4e0e37047a1463c70507c714c46f50fb66df226e35d89347"
+        }
+      ],
+      "library_models": [
+        {
+          "path": "XT30UPB-M_REFERENCE.step",
+          "sha256": "c1d027e0359f35ec4e0e37047a1463c70507c714c46f50fb66df226e35d89347"
+        }
+      ],
+      "local_footprint": "Connector_AMASS_AMASS_XT30UPB-M_1x02_P5.0mm_Vertical.kicad_mod"
+    }
+  },
+  "changed_files": [
+    {
+      "path": "05_Servo.kicad_sch",
+      "before_sha256": "5a257c528657ce8f9d8e1e744f20f896e4cfdc65d0515c78d7a71fafcd64ab70",
+      "after_sha256": "6a7c82a46b745ddd6cf6030c52398f58da0f9229ebeccac58d55ee1f6eca454a"
+    },
+    {
+      "path": "06_Audio.kicad_sch",
+      "before_sha256": "14b7c94db9474311a6d851554749c58238ba3b327608343385fb8add18dfe690",
+      "after_sha256": "799d90d8179718f06e8e7b7a5483041e17c1600a9ce50519884eb2eb525e5bd3"
+    },
+    {
+      "path": "10_Battery_Power.kicad_sch",
+      "before_sha256": "0c9a300cf277be54f81c3b83412d375fe666fbc8bec95be66b27d0e589f210e8",
+      "after_sha256": "074947d57428eba15134572bde5e1cb4ddc074649d1677a95604281a71fcd3b5"
+    },
+    {
+      "path": "MOSS.kicad_sym",
+      "before_sha256": "b0463772f66ff1500808fc718a8751883dbe94d6711add8a885c386ef86b89f2",
+      "after_sha256": "1039a1db1bd77bc60b9dc31d7b57b905b0d160c0379019de487fd8984d9a13e4"
+    }
+  ],
+  "files_covered": [
+    "circuit.json",
+    "BOM.json",
+    "BOM_PCBWAY_ASSEMBLY.json",
+    "target symbol instances and cached lib_symbols in *.kicad_sch",
+    "MOSS.kicad_sym target definitions"
+  ],
+  "grouped_BOM_articles": 96,
+  "grouped_BOM_parts": 208,
+  "schematic_counts": {
+    "instances": {
+      "J5": 1,
+      "J7": 1,
+      "J10": 1
+    },
+    "cached_symbols": {
+      "J5": 1,
+      "J7": 1,
+      "J10": 1
+    }
+  },
+  "local_symbol_counts": {
+    "J5": 1,
+    "J7": 1,
+    "J10": 1
+  },
+  "all_pins_wires_symbol_IDs_UUIDs_geometry_preserved": true,
+  "purchase_URL_policy": "Only J5/J7/J10 source references replaced with verified primary manufacturer pages/drawings; no unrelated rows changed",
+  "netlist_XML": null,
+  "next_step": "Regenerate NETLIST.xml using KiCad, then run --check-netlist on the new XML; native ERC/DRC and full pin contract remain required."
+}

@@ -1,8 +1,34 @@
 {
-  "date": "2026-10-31",
-  "native_board_sha256": "ea19d9bdb0b6037542eb0b4bca53a04d0b0fecbf3d16e4198485bf43dcadbfc4",
-  "source": "Current native KiCad PCB with project-local component models.",
-  "visual_only_addition": "U60 has a simple 3 x 4 x 0.85 mm black package body in the preview only. It is not manufacturer mechanical CAD.",
-  "MicroFit_models": "Unmated visual approximations based on manufacturer housing envelope and the native KiCad footprint; see electrical/models/MICROFIT_VISUAL_PROVENANCE.json.",
+  "date": "2026-11-01",
+  "native_board_sha256": "9f0ef9f1bc34934417560cd6f2751c714f3643d7959bae822c8b48c13b259b03",
+  "projection": "Native KiCad orthographic top/bottom, no perspective",
+  "visual_only_addition": "U60 simple 3 x 4 x 0.85mm black body, not manufacturer mechanical CAD",
+  "verified_component_marking_overlays": {
+    "scope": "PREVIEW ONLY",
+    "native_geometry_and_electrical_fields_edited": false,
+    "added_markings": [
+      {
+        "reference": "U1",
+        "asset": "ESP32_S3_WROOM_1U_LASER_OVERLAY.step",
+        "transform_copied_from_existing_model": true
+      },
+      {
+        "reference": "U40",
+        "asset": "INA240A2_I240A2_MARKING.step",
+        "transform_copied_from_existing_model": true
+      },
+      {
+        "reference": "U41",
+        "asset": "INA240A2_I240A2_MARKING.step",
+        "transform_copied_from_existing_model": true
+      },
+      {
+        "reference": "U43",
+        "asset": "ADS1115_BOGI_MARKING.step",
+        "transform_copied_from_existing_model": true
+      }
+    ],
+    "source_markings_manifest": "VISUAL_MARKINGS_SOURCES.json"
+  },
   "native_files_modified_for_preview": false
 }

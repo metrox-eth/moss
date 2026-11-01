@@ -638,8 +638,8 @@
     "value": "43045-0612"
   },
   {
-    "mpn": "22-05-7035",
-    "footprint": "Connector_Molex:Molex_SPOX_5268-03A_1x03_P2.50mm_Horizontal",
+    "mpn": "22-03-5035",
+    "footprint": "Connector_Molex:Molex_SPOX_5267-03A_1x03_P2.50mm_Vertical",
     "quantity": 1,
     "references": [
       "J5"
@@ -651,11 +651,12 @@
       "ARM / DATA V+ GND"
     ],
     "is_pcb_item": true,
-    "value": "ARM / DATA V+ GND"
+    "value": "ARM / DATA V+ GND",
+    "purchase_url": "https://www.molex.com/en-us/products/part-detail/22035035"
   },
   {
-    "mpn": "S2B-PH-K-S(LF)(SN)",
-    "footprint": "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal",
+    "mpn": "B2B-PH-K-S(LF)(SN)",
+    "footprint": "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical",
     "quantity": 1,
     "references": [
       "J7"
@@ -668,7 +669,8 @@
     ],
     "is_pcb_item": true,
     "assemblyPreference": "Manual through-hole insertion/soldering with suitable fixture and PCB support. Fully seat connector; do not bend PCB or damage housing when applying seating pressure. Inspect joints and seating.",
-    "value": "SPEAKER / 4 ohm 3 W"
+    "value": "SPEAKER / 4 ohm 3 W",
+    "purchase_url": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
   },
   {
     "mpn": "BM06B-SRSS-TB(LF)(SN)",
@@ -688,22 +690,22 @@
     "value": "E-STOP / SIGNAL ONLY"
   },
   {
-    "mpn": "XT30PW-M",
-    "footprint": "Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal_EdgeEntry",
+    "mpn": "XT30UPB-M.G.Y",
+    "footprint": "Connector_AMASS:AMASS_XT30UPB-M_1x02_P5.0mm_Vertical",
     "quantity": 1,
     "references": [
       "J10"
     ],
     "labels_by_reference": {
-      "J10": "XT30PW-M / FUSED 3S INPUT"
+      "J10": "XT30UPB-M.G.Y / FUSED 3S INPUT"
     },
     "values": [
-      "XT30PW-M / FUSED 3S INPUT"
+      "XT30UPB-M.G.Y / FUSED 3S INPUT"
     ],
     "is_pcb_item": true,
     "manufacturer": "AMASS",
-    "purchase_url": "https://www.tme.eu/gb/details/xt30pw-m/dc-power-connectors/amass/",
-    "value": "XT30PW-M / FUSED 3S INPUT"
+    "purchase_url": "https://www.china-amass.net/uploads/XT30UPB-FM.rar",
+    "value": "XT30UPB-M.G.Y / FUSED 3S INPUT"
   },
   {
     "mpn": "1715721",

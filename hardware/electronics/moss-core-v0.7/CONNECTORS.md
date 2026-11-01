@@ -1,26 +1,38 @@
 # MOSS CORE V0.7 — prototype connector guide
 
-Updated 31 October 2026: simplified motor harness, integrated 5 V converter and H1 GND connection. J2/J3/J4 have new assignments; J12/J13 are removed. See the [motor wiring guide](MOTOR_WIRING.md).
+Updated 1 November 2026: black solder mask, large white connector-function labels on the underside, fan headers shifted left and the speaker header retained on the right. The outline is a rounded 82 × 79 mm rectangle without protruding ears. The integrated 5 V converter, consolidated motor cables and H1 GND connection are retained. See the [motor wiring guide](MOTOR_WIRING.md).
 
 Read the numbers on the connector footprint, not the left-to-right order inferred from a top or bottom photograph. All twelve external connectors have a numbered legend on the underside. Left/right refer to the rover's forward-driving direction.
 
 | Connector | Underside label | Connect to | Pin assignment |
 |---|---|---|---|
-| J1 | USB TO HUB | One downstream port of the Hoco USB hub | USB data and incoming Core logic power; use a USB data cable. |
-| J20 | PI 5V OUT / POWER ONLY | Orange Pi **POWER** USB-C port | Integrated 5 V / 3 A output; no USB data. |
-| J10 | BATTERY 3S | Existing fused 3S battery harness, XT30 | 1 GND/negative; 2 positive. Retain the external pack fuse. |
-| J11 | CYTRON POWER | Cytron MDD10A power input | 1 switched battery positive; 2 GND. |
-| J2 | CYTRON LINK | Cytron controls and four winding outputs | 1 PWM1; 2 DIR1; 3 PWM2; 4 DIR2; 5 signal GND; 6 left A; 7 left B; 8 right A; 9 right B; **10 no wire**. Supply remains on J11. |
-| J3 | LEFT MOTOR | Complete left motor cable | 1 winding M1; 2 winding M2; 3 encoder GND; 4 switched 3V3; 5 encoder A; 6 encoder B. Neither winding terminal is GND. |
-| J4 | RIGHT MOTOR | Complete right motor cable | Same six assignments as J3. |
-| J5 | ARM | Powered arm servo daisy chain | 1 DATA; 2 switched battery positive; 3 GND. Six servos standard, seven with the optional double shoulder. |
-| J7 | SPEAKER / NO GND | 4-ohm speaker | 1 amplifier positive output; 2 amplifier negative output. Both are driven: do not connect either terminal to GND. |
-| J8 | STOP | Two independent normally closed contacts of the red stop button | 1/2 power-cut contact; **3/4 no wires or crimp contacts**; 5/6 status/reset contact. |
-| J14 / J15 | FAN 1 / FAN 2 | Two 12 V nominal chassis fans | 1 fused 3S battery positive; 2 GND. Shared F3 1 A fuse; not regulated 12 V. |
+| J1 | USB Data | One downstream port of the Hoco USB hub | USB data and incoming Core logic power; use a USB data cable. |
+| J20 | USB Power Out | Orange Pi **POWER** USB-C port | Integrated 5 V / 3 A output; no USB data. |
+| J10 | Battery In / 3S / 12 V | Existing fused 3S battery harness, XT30 | 1 GND/negative; 2 positive. A charged 3S pack reaches 12.6 V. Retain the external pack fuse. |
+| J11 | Motor Driver Power | Cytron MDD10A power input | 1 switched battery positive; 2 GND. |
+| J2 | Motor Driver | Cytron controls and four winding outputs | 1 PWM1; 2 DIR1; 3 PWM2; 4 DIR2; 5 signal GND; 6 left A; 7 left B; 8 right A; 9 right B; **10 no wire**. Supply remains on J11. |
+| J3 | Left Motor | Complete left motor cable | 1 winding M1; 2 winding M2; 3 encoder GND; 4 switched 3V3; 5 encoder A; 6 encoder B. Neither winding terminal is GND. |
+| J4 | Right Motor | Complete right motor cable | Same six assignments as J3. |
+| J5 | Arm Servos | Powered arm servo daisy chain | 1 DATA; 2 switched battery positive; 3 GND. Six servos standard, seven with the optional double shoulder. |
+| J7 | Speaker | 4-ohm speaker | 1 amplifier positive output; 2 amplifier negative output. Both are driven: do not connect either terminal to GND. |
+| J8 | Stop | Two independent normally closed contacts of the red stop button | 1/2 power-cut contact; **3/4 no wires or crimp contacts**; 5/6 status/reset contact. |
+| J14 / J15 | Fan 1 / Fan 2 | Two 12 V nominal chassis fans | 1 fused 3S battery positive; 2 GND. Shared F3 1 A fuse; not regulated 12 V. |
+
+## Vertical cable headers
+
+Battery J10 uses **AMASS XT30UPB-M.G.Y** (5.00 mm pin pitch), servo bus J5 uses **Molex 22-03-5035 / 5267-03A** (2.50 mm), and speaker J7 uses **JST B2B-PH-K-S(LF)(SN)** (2.00 mm). Their cable mates insert from above the PCB. J5 retains the 5264-family cable housing; J7 retains the PHR-2 housing. Use the new footprints and purchasing list together: the former horizontal headers are not substitutes.
+
+With the Orange Pi on 20 mm standoffs, route the J2 driver bundle rearward and the J3 left-motor bundle leftward, away from the Orange Pi, before turning upward. Do not force either bundle vertically against the SBC. See the [combined assembly check](evidence/MECHANICAL_REVIEW.json).
+
+The motor/driver Micro-Fit headers, fan headers and stop header are also top-entry. The two USB-C sockets remain side-entry. The Orange Pi mounting checks include header bodies, mating-plug envelopes and reserved wire-exit space; the exact seating, cable bend and assembly access still need a physical prototype check.
+
+Manufacturer references: [AMASS XT30UPB-M](https://www.china-amass.net/xt30upb-m-product/), [Molex 22-03-5035](https://www.molex.com/en-us/products/part-detail/22035035), [JST PH series](https://www.jst-mfg.com/product/pdf/eng/ePH.pdf).
 
 ## Grounding connection
 
 H1, at (4, 4) mm on the PCB, is a plated 2.7 mm hole for an M2.5 screw. Its 5.4 mm exposed copper ring is connected to GND on both faces, with eight 0.5 mm stitching holes and no solder paste. It provides an attachment point for a bonding lead. The other seven mounting holes remain unplated. A screw into the plastic hull alone does not create an earth connection; ESD performance still needs testing.
+
+White silkscreen rings identify the other mounting positions on both faces: thick rings for the Core mounting screws H2–H4, and thin circles for the Orange Pi standoffs H5–H8. All markers have the same 5.4 mm outer diameter as H1's contact ring. These are printed assembly guides; the seven holes retain their existing unplated 2.7 mm drills.
 
 ## Host USB wiring
 

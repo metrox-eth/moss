@@ -1,0 +1,15 @@
+{
+  "pcb_sha256": "9f0ef9f1bc34934417560cd6f2751c714f3643d7959bae822c8b48c13b259b03",
+  "segments": 3473,
+  "segments_per_layer": {
+    "F.Cu": 1697,
+    "In2.Cu": 441,
+    "B.Cu": 950,
+    "In1.Cu": 385
+  },
+  "off_angle_segments": 0,
+  "copper_arcs": 0,
+  "tolerance_native_IU_nm": 2,
+  "scope": "Every native segment, with no net, length or layer exception. Legal axes: horizontal, vertical and both 45-degree diagonals.",
+  "status": "PASS"
+}

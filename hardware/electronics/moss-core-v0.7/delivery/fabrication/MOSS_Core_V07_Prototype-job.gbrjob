@@ -5,7 +5,7 @@
       "Application": "Pcbnew",
       "Version": "10.0.6"
     },
-    "CreationDate": "2026-10-31T19:14:38+07:00"
+    "CreationDate": "2026-11-01T16:20:34+07:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
@@ -15,11 +15,11 @@
     },
     "Size": {
       "X": 82.05,
-      "Y": 75.05
+      "Y": 79.05
     },
     "LayerNumber": 4,
     "BoardThickness": 1.6,
-    "Finish": "None"
+    "Finish": "ENIG"
   },
   "DesignRules": [
     {
@@ -107,53 +107,44 @@
     },
     {
       "Type": "SolderMask",
-      "Thickness": 0.01,
       "Name": "Top Solder Mask"
     },
     {
       "Type": "Copper",
-      "Thickness": 0.035,
       "Name": "F.Cu"
     },
     {
       "Type": "Dielectric",
-      "Thickness": 0.48,
       "Material": "FR4",
       "Name": "F.Cu/In1.Cu",
       "Notes": "Type: dielectric layer 1 (from F.Cu to In1.Cu)"
     },
     {
       "Type": "Copper",
-      "Thickness": 0.035,
       "Name": "In1.Cu"
     },
     {
       "Type": "Dielectric",
-      "Thickness": 0.48,
       "Material": "FR4",
       "Name": "In1.Cu/In2.Cu",
       "Notes": "Type: dielectric layer 2 (from In1.Cu to In2.Cu)"
     },
     {
       "Type": "Copper",
-      "Thickness": 0.035,
       "Name": "In2.Cu"
     },
     {
       "Type": "Dielectric",
-      "Thickness": 0.48,
       "Material": "FR4",
       "Name": "In2.Cu/B.Cu",
       "Notes": "Type: dielectric layer 3 (from In2.Cu to B.Cu)"
     },
     {
       "Type": "Copper",
-      "Thickness": 0.035,
       "Name": "B.Cu"
     },
     {
       "Type": "SolderMask",
-      "Thickness": 0.01,
       "Name": "Bottom Solder Mask"
     },
     {

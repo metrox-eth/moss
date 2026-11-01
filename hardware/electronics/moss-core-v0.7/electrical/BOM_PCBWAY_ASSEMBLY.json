@@ -6,8 +6,7 @@
   "article_count": 96,
   "accessories_excluded_from_PCB_placement": [],
   "notes": [
-    "31 October 2026 harness update: J3/J4 six-way complete motor ports; J2 ten-way Cytron link; existing J11 supply retained. J12/J13 removed. Use the matching new native design and export files.",
-    "Updated 31 October 2026. Use the matching current PCB, fabrication files and assembly positions.",
+    "Updated 1 November 2026: black 82 x 79 mm rectangular board; fan headers shifted left; all copper track segments use 45/90-degree directions. Battery, servo and speaker connectors now use verified vertical variants. Their numbered pin functions are retained; use the new footprint, purchasing and placement files together. Use only the matching 20261101_LAYOUT files.",
     "Integrated MP9447 converter and grounded H1 retained. U14/U17/U43 local soldermask bridges removed. Copper/paste/drill geometry unchanged by the DFM correction.",
     "U2 uses exact TPD2E2U06QDCKRQ1 DCK-3; J7 supported seating/through-hole solder; J8 manual placement approved for two prototypes.",
     "Engineering checks do not constitute hardware qualification. Supplier to confirm availability and process in quotation."
@@ -652,8 +651,8 @@
       "value": "43045-0612"
     },
     {
-      "mpn": "22-05-7035",
-      "footprint": "Connector_Molex:Molex_SPOX_5268-03A_1x03_P2.50mm_Horizontal",
+      "mpn": "22-03-5035",
+      "footprint": "Connector_Molex:Molex_SPOX_5267-03A_1x03_P2.50mm_Vertical",
       "quantity": 1,
       "references": [
         "J5"
@@ -665,11 +664,12 @@
         "ARM / DATA V+ GND"
       ],
       "is_pcb_item": true,
-      "value": "ARM / DATA V+ GND"
+      "value": "ARM / DATA V+ GND",
+      "purchase_url": "https://www.molex.com/en-us/products/part-detail/22035035"
     },
     {
-      "mpn": "S2B-PH-K-S(LF)(SN)",
-      "footprint": "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal",
+      "mpn": "B2B-PH-K-S(LF)(SN)",
+      "footprint": "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical",
       "quantity": 1,
       "references": [
         "J7"
@@ -682,7 +682,8 @@
       ],
       "is_pcb_item": true,
       "assemblyPreference": "Manual through-hole insertion/soldering with suitable fixture and PCB support. Fully seat connector; do not bend PCB or damage housing when applying seating pressure. Inspect joints and seating.",
-      "value": "SPEAKER / 4 ohm 3 W"
+      "value": "SPEAKER / 4 ohm 3 W",
+      "purchase_url": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
     },
     {
       "mpn": "BM06B-SRSS-TB(LF)(SN)",
@@ -702,22 +703,22 @@
       "value": "E-STOP / SIGNAL ONLY"
     },
     {
-      "mpn": "XT30PW-M",
-      "footprint": "Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal_EdgeEntry",
+      "mpn": "XT30UPB-M.G.Y",
+      "footprint": "Connector_AMASS:AMASS_XT30UPB-M_1x02_P5.0mm_Vertical",
       "quantity": 1,
       "references": [
         "J10"
       ],
       "labels_by_reference": {
-        "J10": "XT30PW-M / FUSED 3S INPUT"
+        "J10": "XT30UPB-M.G.Y / FUSED 3S INPUT"
       },
       "values": [
-        "XT30PW-M / FUSED 3S INPUT"
+        "XT30UPB-M.G.Y / FUSED 3S INPUT"
       ],
       "is_pcb_item": true,
       "manufacturer": "AMASS",
-      "purchase_url": "https://www.tme.eu/gb/details/xt30pw-m/dc-power-connectors/amass/",
-      "value": "XT30PW-M / FUSED 3S INPUT"
+      "purchase_url": "https://www.china-amass.net/uploads/XT30UPB-FM.rar",
+      "value": "XT30UPB-M.G.Y / FUSED 3S INPUT"
     },
     {
       "mpn": "1715721",

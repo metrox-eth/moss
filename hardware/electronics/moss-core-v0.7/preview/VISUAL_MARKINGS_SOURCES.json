@@ -1,0 +1,109 @@
+{
+  "scope": "Preview-only 3D ink/laser overlays; not fabrication or physical package changes",
+  "source_models_modified": false,
+  "native_board_modified": false,
+  "typography_and_placement": "Representative; verified manufacturer strings/logo, not a scanned physical-unit marking",
+  "omitted": "Production batch and certification identifiers are not represented.",
+  "step_units": "mm",
+  "wrl_units": "KiCad legacy units = mm / 2.54",
+  "attachment": "Add as second model of the same footprint, copying its existing model offset/scale/rotation",
+  "models": {
+    "ESP32_S3_WROOM_1U_LASER_OVERLAY": {
+      "step": "ESP32_S3_WROOM_1U_LASER_OVERLAY.step",
+      "wrl": "ESP32_S3_WROOM_1U_LASER_OVERLAY.wrl",
+      "bbox_mm": [
+        -6.200000100000005,
+        6.200000100000002,
+        2.3569147851131036,
+        6.816624785138542,
+        3.1800673561762394,
+        3.2399326438237606
+      ],
+      "triangles": 25754,
+      "color_rgb": [
+        0.22,
+        0.23,
+        0.24
+      ],
+      "sha256_step": "9d1e217259cb17483308f8c3b41f1fde972d9b71e9d0ae5b6ab4b9d250be4c41",
+      "sha256_wrl": "9226de326b13924da18bead6ba221e385941f07cf2863fc184ffe4d469267c02"
+    },
+    "INA240A2_I240A2_MARKING": {
+      "step": "INA240A2_I240A2_MARKING.step",
+      "wrl": "INA240A2_I240A2_MARKING.wrl",
+      "bbox_mm": [
+        -0.9247022484375,
+        0.9498292015625002,
+        -0.21241313531970113,
+        0.24087778399306256,
+        1.103551752794463,
+        1.116448247205537
+      ],
+      "triangles": 4112,
+      "color_rgb": [
+        0.7,
+        0.71,
+        0.7
+      ],
+      "sha256_step": "abe9765b5f27bb0bc662ea18720ffd02172dce132197f0414fe57a50489a94c2",
+      "sha256_wrl": "c60d73b50124fd3b420f31f8bf3ffeb905721f655516d589484239154a8fb53b"
+    },
+    "ADS1115_BOGI_MARKING": {
+      "step": "ADS1115_BOGI_MARKING.step",
+      "wrl": "ADS1115_BOGI_MARKING.wrl",
+      "bbox_mm": [
+        -0.7768213890625002,
+        0.7658643578125002,
+        -0.22612536307935188,
+        0.262855561384988,
+        1.104494696674301,
+        1.115505303325699
+      ],
+      "triangles": 4330,
+      "color_rgb": [
+        0.7,
+        0.71,
+        0.7
+      ],
+      "sha256_step": "6049cf009d493bc1bd9c7840b61b3dce5d03bc952f97e102381332d492a2b5da",
+      "sha256_wrl": "f81ed208df993a3d70355176f121fcf69ac3645183d8a92d0e88b1da9e0e8be0"
+    }
+  },
+  "references": {
+    "U1": {
+      "asset": "ESP32_S3_WROOM_1U_LASER_OVERLAY",
+      "expected_value_contains": "ESP32-S3-WROOM-1U",
+      "manufacturer_fields": [
+        "official Espressif logo",
+        "ESP32-S3-WROOM-1U"
+      ],
+      "source_url": "https://docs.espressif.com/projects/esp-packaging/en/latest/esp32s3/01-marking/index_module.html"
+    },
+    "U40": {
+      "asset": "INA240A2_I240A2_MARKING",
+      "expected_value_contains": "INA240A2PWR",
+      "manufacturer_code": "I240A2",
+      "source_pdf_page": 27,
+      "source_url": "https://www.ti.com/lit/ds/symlink/ina240.pdf"
+    },
+    "U41": {
+      "asset": "INA240A2_I240A2_MARKING",
+      "expected_value_contains": "INA240A2PWR",
+      "manufacturer_code": "I240A2",
+      "source_pdf_page": 27,
+      "source_url": "https://www.ti.com/lit/ds/symlink/ina240.pdf"
+    },
+    "U43": {
+      "asset": "ADS1115_BOGI_MARKING",
+      "expected_value_contains": "ADS1115IDGSR",
+      "manufacturer_code": "BOGI",
+      "source_pdf_page": 42,
+      "source_url": "https://www.ti.com/lit/ds/symlink/ads1115.pdf"
+    }
+  },
+  "source_model_sha256": {
+    "RF_Module_ESP32-S3-WROOM-1U.step": "9255fcb7efa11e68753c797987752cc076df8914b6cfecd30d7d0dd8c97bb46a",
+    "Package_SO_TSSOP-8_4.4x3mm_P0.65mm.step": "2299fb3b85d686800712b24f5411cd4896ad7de29f3aab656d6dc1006211629b",
+    "Package_SO_MSOP-10_3x3mm_P0.5mm.step": "b8f88eac3ce221c2ccb0b5048f9ad49c2ef4af148f8ae50c4e232e357683f547"
+  }
+}

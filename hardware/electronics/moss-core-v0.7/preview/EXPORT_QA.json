@@ -1,0 +1,27 @@
+{
+  "source_pcb_sha256": "9f0ef9f1bc34934417560cd6f2751c714f3643d7959bae822c8b48c13b259b03",
+  "view": "Native KiCad orthographic top/bottom, no perspective",
+  "size_px": [
+    2400,
+    2400
+  ],
+  "shared_crop_px": [
+    20,
+    56,
+    2364,
+    2327
+  ],
+  "shared_scale": 0.9556313993174061,
+  "background_rgb": [
+    184,
+    185,
+    203
+  ],
+  "added_text_or_badges": false,
+  "solder_mask": "Black",
+  "silkscreen": "White",
+  "outputs": {
+    "01_MOSS_CORE_V07_TOP_FLAT.png": "1a54a5761dbbbd9742b8405aadaca871354f3ec8370b469191008d9e144399de",
+    "02_MOSS_CORE_V07_BOTTOM_FLAT.png": "25ce3ec169381df29c109a2af743490a37917b7a4538913d4d863f643062a520"
+  }
+}
