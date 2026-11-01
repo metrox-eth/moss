@@ -1,0 +1,5 @@
+arduino-cli  Version: 1.1.1 Commit: fa6eafcb Date: 2024-11-22T09:31:37Z
+Apple clang version 17.0.0 (clang-1700.4.4.1)
+Target: arm64-apple-darwin24.6.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin

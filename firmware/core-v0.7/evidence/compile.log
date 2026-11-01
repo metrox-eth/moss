@@ -1,0 +1,8 @@
+Sketch uses 487042 bytes (14%) of program storage space. Maximum is 3342336 bytes.
+Global variables use 57328 bytes (17%) of dynamic memory, leaving 270352 bytes for local variables. Maximum is 327680 bytes.
+
+Used library Version Path
+Wire         3.2.0   $HOME/Library/Arduino15/packages/esp32/hardware/esp32/3.2.0/libraries/Wire
+
+Used platform Version Path
+esp32:esp32   3.2.0   $HOME/Library/Arduino15/packages/esp32/hardware/esp32/3.2.0

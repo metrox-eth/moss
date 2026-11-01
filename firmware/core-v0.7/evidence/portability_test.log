@@ -1,0 +1,14 @@
+PASS 502 assertions: state, faults, stale commands, leases, rollover, lines, sensors, protocol, watchdog, ramp
+PASS 32 assertions: real ServoBus adapter, echo, id, errors, timeout, rollover, TX partial/stall, cancel
+control_v04_test: OK (protocol + ramp)
+PASS console bounded drive validation; no ports opened
+{
+  "status": "PASS",
+  "gpio_count": 33,
+  "parts_checked": 230,
+  "sha256": {
+    "circuit.json": "80aceb62b867a158efafe1cccc0763384479b2f619c79f407a8b722f2816ec69",
+    "MCU_PIN_MAP.json": "64d7c9f4bf37b9fefce667e99dd607e88e90d8d0e479c9827932cba1aa8605fe"
+  }
+}
+PASS 4 contract mutations rejected: both GPIO maps, ADC address, OE polarity part, shunt value
