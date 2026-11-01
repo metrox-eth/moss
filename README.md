@@ -65,7 +65,7 @@ I pick up litter by hand on my walks. MOSS is the robot I want next to me doing 
 
 ## Friends
 
-OpenAI (Codex Physical Builds), [Dimensional](https://x.com/dimensionalos) (dimOS), [NormaCore](https://x.com/norma_core_dev) (gripper), [Tnkr](https://x.com/tnkrdotai) (kits and guide), [Dirac Robotics](https://x.com/diracrobotics) (calibrated simulation), [microduck-lab](https://github.com/jonathanhawkins/microduck-lab) (reinforcement learning). We help each other.
+OpenAI (Codex Physical Builds), [PCBWay](https://www.pcbway.com/) (custom PCB prototyping), [Dimensional](https://x.com/dimensionalos) (dimOS), [NormaCore](https://x.com/norma_core_dev) (gripper), [Tnkr](https://x.com/tnkrdotai) (kits and guide), [Dirac Robotics](https://x.com/diracrobotics) (calibrated simulation), [microduck-lab](https://github.com/jonathanhawkins/microduck-lab) (reinforcement learning). We help each other.
 
 ## Supporters
 
