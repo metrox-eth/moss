@@ -17,15 +17,19 @@ MOSS is a small litter-picking rover you print and build yourself: a tracked bas
 
 **Base assembly: about $460 in parts.** Includes the chassis and tracks, arm and gripper, motors, servos, control electronics, power system, wrist camera, 2D lidar, wiring and filament. **Only the computer and navigation camera are additional.**
 
-Add **one** configuration: **Jetson + RealSense**, **or Pi + Hailo + Gemini**, **or Orange Pi + MightyCam (experimental)**.
+**Choose ONE of the three options below, depending on your budget.** They are alternative computer + navigation-camera configurations for the same rover base. You do not need to buy all three.
 
-| Choose one computer + navigation camera configuration | Additional cost above the base (USD) |
-|---|---:|
-| Jetson Orin Nano Super, RealSense D455 | about $930 |
-| Raspberry Pi 5, Hailo AI HAT, Orbbec Gemini 2 | about $740 |
-| Orange Pi Zero 3W (6 GB, $60), MightyCam ($80) **(experimental)** | about $140 |
+| Option | Computer + navigation camera | Additional cost (USD) | Estimated rover total, including the $460 base (USD) |
+|---|---|---:|---:|
+| **Option 1: higher budget** | Jetson Orin Nano Super + RealSense D455 | about $930 | **about $1,390** |
+| **Option 2: mid-range budget** | Raspberry Pi 5 + Hailo AI HAT + Orbbec Gemini 2 | about $740 | **about $1,200** |
+| **Option 3: lowest budget, experimental** | Orange Pi Zero 3W (6 GB, $60) + MightyCam ($80) | about $140 | **about $600** |
 
-These option prices exclude the $460 base assembly. The [BOM](BOM.md) covers the established configurations. **Orange Pi + MightyCam is experimental:** early bench tests are documented in the [experiment folder](experiments/orange-pi-mightycam/); this combination is not yet validated as a complete rover configuration.
+**Option 1 offers the most computing headroom for the autonomy software being developed.** It does not guarantee autonomous operation: autonomous litter collection has not yet been demonstrated on any of these configurations.
+
+The goal is to bring as much of the stack as possible to smaller, lower-cost hardware. This work involves porting, optimizing and testing features progressively, and **it will take time**. Equivalent autonomy capabilities across all three options are a development goal, not something available today.
+
+**Option 3 is experimental for now.** Early Orange Pi + MightyCam bench tests are documented in the [experiment folder](experiments/orange-pi-mightycam/); the combination is not yet validated as a complete rover configuration. The [BOM](BOM.md) covers the established configurations.
 
 ## What it is made of
 
