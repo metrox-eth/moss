@@ -44,6 +44,10 @@ The [mounting table](MOUNTING.md) gives the current chassis fixing pattern. The 
 
 The [harness study](https://github.com/metrox-eth/moss/tree/main/hardware/electronics/moss-core-v0.7/harness) follows the current integrated-power board and vertical connectors. Each motor uses one six-wire cable to J3/J4. A nine-wire link at J2 groups the Cytron control and motor-output circuits; J11 retains its separate supply. The model includes the updated hull fixings, five cable-tie bridges and the divider notch. The package contains current CAD, an offline viewer, wiring schedules and a prototype RFQ. The harness model retains the earlier board body; connector geometry and pin assignments are unchanged by this update. The latest internal-component views are the two images above. The older film is historical and is not evidence for this layout. Physical fit and electrical operation remain first-prototype checks.
 
+## Assembly review
+
+A [focused mask/paste and BOM review](evidence/assembly_review/README.md) checked the current-sense shunts and amplifiers. Their apertures remain separate; the PCB and production CSV are unchanged. A classified BOM view makes semiconductors, passives and connectors easier to inspect. Stencil and reflow-process confirmation remains with PCBWay.
+
 ## Firmware and commissioning
 
 The separate [Core V0.7 commissioning firmware](https://github.com/metrox-eth/moss/tree/main/firmware/core-v0.7) reuses the current MDD10A ramp and encoder code. It implements the new rearm interface, USB commands/telemetry, battery and motor-current readings, half-duplex Feetech communication including group writes, and an I²S speaker test. The existing V0.6 controller remains the tested rover target.

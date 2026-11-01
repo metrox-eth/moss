@@ -81,7 +81,7 @@
     "electrical/MOSS.pretty/Package_TO_SOT_SMD_SOT-23-5.kicad_mod": "56665b9629bd9421fa1b5106294b94d7e931b7a444e3712dcaa7d3d298ced86f",
     "electrical/MOSS.pretty/Package_TO_SOT_SMD_SOT-23.kicad_mod": "1fc64a59ce10911e130c0050db406230830188e05d7a5cce2f1fb3d7879a8f10",
     "electrical/circuit.json": "80aceb62b867a158efafe1cccc0763384479b2f619c79f407a8b722f2816ec69",
-    "electrical/BOM_PCBWAY_ASSEMBLY.json": "2db3e8682de82b18961c9deae2b1f40a593e1697c60d6728299b51ed4c93cfd6"
+    "electrical/BOM_PCBWAY_ASSEMBLY.json": "71da646b3510c4bde3c74a2439709639ef2d049ae413256dcd4d535723bcaf92"
   },
   "scope": "Native prototype checks; no hardware qualification.",
   "reviewed_warning": {
@@ -107,5 +107,6 @@
       "a6ddedfb-20ac-41c9-8492-ec9bc296efca"
     ],
     "reason": "Tiny C21 underside outline meets J10.1 mask aperture. Gerbers are exported with --subtract-soldermask; ink over the aperture is removed without changing any copper, pad or drill."
-  }
+  },
+  "metadata_only_rebinding": "BOM_NOTE_REFRESH.json"
 }

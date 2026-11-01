@@ -3,7 +3,7 @@
   "file_hashes": {
     "electrical/MOSS_Core_V07_Prototype.kicad_pcb": "456219f7eb97119b7e4328ed76f150012619131788f42d3a9d21fc4e40859cdb",
     "electrical/circuit.json": "80aceb62b867a158efafe1cccc0763384479b2f619c79f407a8b722f2816ec69",
-    "electrical/BOM_PCBWAY_ASSEMBLY.json": "2db3e8682de82b18961c9deae2b1f40a593e1697c60d6728299b51ed4c93cfd6",
+    "electrical/BOM_PCBWAY_ASSEMBLY.json": "71da646b3510c4bde3c74a2439709639ef2d049ae413256dcd4d535723bcaf92",
     "evidence/NETLIST.xml": "27c084d1fbab63de8406f9647e1f8d1f9ee7b7c1bb00c568e4da15ae0adb4aa8"
   },
   "native_footprints": 230,

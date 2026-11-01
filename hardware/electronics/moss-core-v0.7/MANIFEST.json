@@ -36,8 +36,8 @@
     "sha256": "9dcd67d0b52a8de283fbfede2e295020c022de740269124641e37de35407b231"
   },
   "README.md": {
-    "bytes": 12892,
-    "sha256": "fe2ffaf206ce2842751e3b240deb0da0dd9d72f86cb259ab424da14709dd7e4f"
+    "bytes": 13259,
+    "sha256": "4db680aca2ca9b0e627bbe9dfb2d0d00435dcaa8ed33bc85a1df28ff9bb0fc84"
   },
   "delivery/assembly/ASSEMBLY_NOTES.txt": {
     "bytes": 3816,
@@ -168,8 +168,8 @@
     "sha256": "79766035398571fca3857600901ec3591c8fa5cb1f7a5f3743247f9527ccc2a7"
   },
   "electrical/BOM_PCBWAY_ASSEMBLY.json": {
-    "bytes": 42780,
-    "sha256": "2db3e8682de82b18961c9deae2b1f40a593e1697c60d6728299b51ed4c93cfd6"
+    "bytes": 42731,
+    "sha256": "71da646b3510c4bde3c74a2439709639ef2d049ae413256dcd4d535723bcaf92"
   },
   "electrical/MCU_PIN_MAP.json": {
     "bytes": 3254,
@@ -647,6 +647,10 @@
     "bytes": 33365,
     "sha256": "6efd62cebf64aa5bae5b4f392a50cad5f5578a4bc032360a75f1943a56dccf6a"
   },
+  "evidence/BOM_NOTE_REFRESH.json": {
+    "bytes": 586,
+    "sha256": "815c51ed3bbd29ca48325bdd2849594eb09dcac34813b881ee76891538ac568e"
+  },
   "evidence/C21_SILK_GERBER_PROOF.json": {
     "bytes": 887,
     "sha256": "ab3a7b5dac7bfd9b229b3629478a5c5675d45779b47be45789696c5f812b454e"
@@ -656,12 +660,12 @@
     "sha256": "4fe7e0f38fad3dd58cad61bf172bd4420f623f5231d0af9ffd24abf0f78185e5"
   },
   "evidence/CHECKS.json": {
-    "bytes": 11637,
-    "sha256": "05b758a2ba9b61bf9d9d720b77f2720c7cefdf157bcd0d436ef1c0623105197a"
+    "bytes": 11691,
+    "sha256": "75117a6aa12645e99299555ca1a57d405188dc8b31934f91fc617b2261414299"
   },
   "evidence/DESIGN_CONTRACT.json": {
     "bytes": 887,
-    "sha256": "8e46fdbeda9b7c61a5e855bf1e738105131641f00acebf2cd2f8d00f4035a90d"
+    "sha256": "693bf3a8b8df088134ce2fb1ecb837eca9e87daadd2b011b6eaa511e70378dd6"
   },
   "evidence/DRC.json": {
     "bytes": 2383,
@@ -704,8 +708,8 @@
     "sha256": "cae05e7554e8a3747a8ca6a60edc5ab18dfd675cf9526218dcb5a37267612d09"
   },
   "evidence/MECHANICAL_FINAL_EQUIVALENCE.json": {
-    "bytes": 845,
-    "sha256": "b7770719e8cb04b0fabc44b54eac6fb1f971d8ed6ac1ede677dac70c5f26d519"
+    "bytes": 1417,
+    "sha256": "54607733e358d1e04ecc69949ebcef02d48bd6e2e5d35c40e0d2729a6a599ec0"
   },
   "evidence/MECHANICAL_REVIEW.json": {
     "bytes": 4164,
@@ -758,6 +762,22 @@
   "evidence/VERTICAL_CONNECTOR_CONTRACT.json": {
     "bytes": 6831,
     "sha256": "f23efc0d060e1d932b83136ebdda3f0d71632dca43317a88e3a90097e44f019d"
+  },
+  "evidence/assembly_review/BOM_CLASSIFICATION_PROOF.json": {
+    "bytes": 960,
+    "sha256": "65b074ea8638ac51f31ce0e71f0640c0185901cf4a02b351e4df607a99e339f9"
+  },
+  "evidence/assembly_review/BOM_CLASSIFIED_REVIEW.csv": {
+    "bytes": 10952,
+    "sha256": "76fc5834e54b64a8f7e8bac0ce8ddfd24a5ad72fb2116498313dbaa8c5ae0548"
+  },
+  "evidence/assembly_review/CURRENT_SENSE_MASK_PASTE.json": {
+    "bytes": 5177,
+    "sha256": "83460a021cd5d6ae54cd0f3d6b1f2b0c5d44ab76625678f444ffffd2d3c2afd0"
+  },
+  "evidence/assembly_review/README.md": {
+    "bytes": 1855,
+    "sha256": "5f892dbc071a01447ea5e2acbd6969e5c4df9f0d3ea40845b8b3d58df342b493"
   },
   "evidence/baseline_before_power_rearm/MECHANICAL_FINAL_EQUIVALENCE.json": {
     "bytes": 2174,
@@ -854,6 +874,10 @@
   "tools/check_track_angles.py": {
     "bytes": 1928,
     "sha256": "1504cea30a52bf922abd08045b45656f926ded96089ae2ededda0fef345fa6a2"
+  },
+  "tools/classify_bom.py": {
+    "bytes": 3464,
+    "sha256": "048cf66c928ff1e92374127bd09327d6c74ab7467bd043f2b660d24095d2eaa0"
   },
   "tools/export_package.py": {
     "bytes": 14113,

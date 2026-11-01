@@ -1,0 +1,153 @@
+{
+  "timestamp_utc": "2026-11-01T15:46:45.709789+00:00",
+  "scope": "Read-only aperture/net/primary-drawing check for R180/R181 and U40/U41, not reflow process simulation.",
+  "board_sha256": "456219f7eb97119b7e4328ed76f150012619131788f42d3a9d21fc4e40859cdb",
+  "status": "NO_CONCRETE_FABRICATION_BLOCKER_FOUND",
+  "gerbers": {
+    "F_Mask.gts": {
+      "sha256": "287b8aab613bd63b50f5bcfe2ba0e68ffae0ef01079bc2e97bec4c5028c1c62f",
+      "parts": {
+        "R180": {
+          "aperture": "R,3.400000X1.800000",
+          "flashes": [
+            "X15300000Y-41700000D03*",
+            "X15300000Y-46900000D03*"
+          ]
+        },
+        "U41": {
+          "aperture": "RoundRect,0.100000X0.100000X-0.637500X0.100000X0.637500X-0.100000X0.637500X-0.100000X-0.637500X0",
+          "flashes": [
+            "X20325000Y-60662500D03*",
+            "X20975000Y-60662500D03*",
+            "X21625000Y-60662500D03*",
+            "X22275000Y-60662500D03*",
+            "X22275000Y-54937500D03*",
+            "X21625000Y-54937500D03*",
+            "X20975000Y-54937500D03*",
+            "X20325000Y-54937500D03*"
+          ]
+        },
+        "R181": {
+          "aperture": "R,3.400000X1.800000",
+          "flashes": [
+            "X15300000Y-55900000D03*",
+            "X15300000Y-61100000D03*"
+          ]
+        },
+        "U40": {
+          "aperture": "RoundRect,0.100000X0.100000X-0.637500X0.100000X0.637500X-0.100000X0.637500X-0.100000X-0.637500X0",
+          "flashes": [
+            "X20325000Y-47162500D03*",
+            "X20975000Y-47162500D03*",
+            "X21625000Y-47162500D03*",
+            "X22275000Y-47162500D03*",
+            "X22275000Y-41437500D03*",
+            "X21625000Y-41437500D03*",
+            "X20975000Y-41437500D03*",
+            "X20325000Y-41437500D03*"
+          ]
+        }
+      }
+    },
+    "F_Paste.gtp": {
+      "sha256": "eb6e188bd64a15cf51794b16150b257265163fc742d6685c8d9afd21be9aa94e",
+      "parts": {
+        "R180": {
+          "aperture": "R,3.400000X1.800000",
+          "flashes": [
+            "X15300000Y-41700000D03*",
+            "X15300000Y-46900000D03*"
+          ]
+        },
+        "U41": {
+          "aperture": "RoundRect,0.100000X0.100000X-0.637500X0.100000X0.637500X-0.100000X0.637500X-0.100000X-0.637500X0",
+          "flashes": [
+            "X20325000Y-60662500D03*",
+            "X20975000Y-60662500D03*",
+            "X21625000Y-60662500D03*",
+            "X22275000Y-60662500D03*",
+            "X22275000Y-54937500D03*",
+            "X21625000Y-54937500D03*",
+            "X20975000Y-54937500D03*",
+            "X20325000Y-54937500D03*"
+          ]
+        },
+        "R181": {
+          "aperture": "R,3.400000X1.800000",
+          "flashes": [
+            "X15300000Y-55900000D03*",
+            "X15300000Y-61100000D03*"
+          ]
+        },
+        "U40": {
+          "aperture": "RoundRect,0.100000X0.100000X-0.637500X0.100000X0.637500X-0.100000X0.637500X-0.100000X-0.637500X0",
+          "flashes": [
+            "X20325000Y-47162500D03*",
+            "X20975000Y-47162500D03*",
+            "X21625000Y-47162500D03*",
+            "X22275000Y-47162500D03*",
+            "X22275000Y-41437500D03*",
+            "X21625000Y-41437500D03*",
+            "X20975000Y-41437500D03*",
+            "X20325000Y-41437500D03*"
+          ]
+        }
+      }
+    }
+  },
+  "measurements_mm": {
+    "shunt_pads_global": [
+      3.4,
+      1.8
+    ],
+    "shunt_center_pitch": 5.2,
+    "shunt_aperture_edge_gap": 3.4,
+    "INA_pitch": 0.65,
+    "INA_aperture_width_across_pitch": 0.4,
+    "INA_mask_and_paste_gap": 0.25,
+    "effective_native_mask_expansion": 0.0,
+    "sense_track_width": 0.18,
+    "Kelvin_pickup_overlap_inside_shunt_inner_edge": 0.05
+  },
+  "Kelvin_pickups": {
+    "R180.1": [
+      15.3,
+      42.55
+    ],
+    "R180.2": [
+      15.3,
+      46.05
+    ],
+    "R181.1": [
+      15.3,
+      56.75
+    ],
+    "R181.2": [
+      15.3,
+      60.25
+    ]
+  },
+  "existing_native_checks": {
+    "DRC_errors": 0,
+    "unconnected_items": 0,
+    "schematic_parity_issues": 0,
+    "ERC_violations": 0
+  },
+  "sources": [
+    {
+      "url": "https://www.bourns.com/docs/Product-Datasheets/css2h-2512.pdf",
+      "local_file_sha256": "7e32b223f4b0f086d9e08cd5a4fb42e9935cf119db3dd9cf3ea7969bdd643909",
+      "relevant": "Page2 recommended pad layout: 1.80mm pad depth,3.40mm width,3.40mm gap; separate sense pickup guidance."
+    },
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/ina240.pdf",
+      "local_file_sha256": "c9d26e72ebdb52a169cbaca8f47d3811833c0afb765335a14f53f05c1a8b1854",
+      "relevant": "PW TSSOP8,0.65mm pitch; example land/paste drawings allow assembly-site stencil recommendations."
+    }
+  ],
+  "limits": [
+    "No guarantee of reflow yield, stencil thickness or mask registration from a file-only check.",
+    "The shunt is intentionally a two-terminal2mOhm component between different nets; do not merge them or mistake its body for a PCB copper short."
+  ],
+  "BOM_view": "An additional grouped semantic view can help review. Preserve the existing supplier BOM as one uniqueMPN row with all designators and quantity; do not split identical parts across active/passive copies."
+}
