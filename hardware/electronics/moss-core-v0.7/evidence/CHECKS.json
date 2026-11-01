@@ -1,5 +1,5 @@
 {
-  "board_sha256": "9f0ef9f1bc34934417560cd6f2751c714f3643d7959bae822c8b48c13b259b03",
+  "board_sha256": "7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14",
   "DRC_errors": 0,
   "unconnected_items": 0,
   "schematic_parity_issues": 0,
@@ -22,7 +22,7 @@
     "electrical/02_Controller.kicad_sch": "37f94127ea569c006c2d5783c16b054575464a6cdea6793c19e8cadda528d460",
     "electrical/10_Battery_Power.kicad_sch": "074947d57428eba15134572bde5e1cb4ddc074649d1677a95604281a71fcd3b5",
     "electrical/18_Actuator_Cutoff.kicad_sch": "c3d6d0e08e057c2286851b12f7a1e44c0fc811ec48ecd1ca3c866214776c7c44",
-    "electrical/MOSS_Core_V07_Prototype.kicad_pcb": "9f0ef9f1bc34934417560cd6f2751c714f3643d7959bae822c8b48c13b259b03",
+    "electrical/MOSS_Core_V07_Prototype.kicad_pcb": "7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14",
     "electrical/MOSS_Core_V07_Prototype.kicad_dru": "c39def057e204409fa042e1c68b905486cfb948b02db4ca079145826dfac18ea",
     "electrical/MOSS.pretty/Diode_SMD_D_SOD-523.kicad_mod": "5c47c9905d63faaa235e41aeae0412ed52138f9a9abf728615596bdbcd8fe717",
     "electrical/MOSS.pretty/Package_SO_VSSOP-8_2.3x2mm_P0.5mm.kicad_mod": "4e907b9c6a04ca98e5aaac52513b7d29f4d8572e3af1b1361616a23a384e2e23",
@@ -80,7 +80,7 @@
     "electrical/MOSS.pretty/Package_TO_SOT_SMD_SOT-23-5.kicad_mod": "56665b9629bd9421fa1b5106294b94d7e931b7a444e3712dcaa7d3d298ced86f",
     "electrical/MOSS.pretty/Package_TO_SOT_SMD_SOT-23.kicad_mod": "1fc64a59ce10911e130c0050db406230830188e05d7a5cce2f1fb3d7879a8f10",
     "electrical/circuit.json": "f4739a5a124a02c29be7033f7368145dea789062d78fd761e20b8749df533125",
-    "electrical/BOM_PCBWAY_ASSEMBLY.json": "bcc33d9db3b0ab1cb5072de7cf4d43193ac1ddba7ca5a99de4ffcd7db13a0c2e"
+    "electrical/BOM_PCBWAY_ASSEMBLY.json": "9310bf914b7bc76d479293a41e6bcc7c804a062dd338eae59bd460bdd4b47123"
   },
   "scope": "Native prototype checks; no hardware qualification.",
   "reviewed_warning": {

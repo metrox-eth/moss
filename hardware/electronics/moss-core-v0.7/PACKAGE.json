@@ -1,6 +1,6 @@
 {
   "status": "LAYOUT_REFRESH_FOR_PCBWAY_ENGINEERING_REVIEW",
-  "board_sha256": "9f0ef9f1bc34934417560cd6f2751c714f3643d7959bae822c8b48c13b259b03",
+  "board_sha256": "7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14",
   "component_count": 208,
   "article_count": 96,
   "DRC_errors": 0,
@@ -11,19 +11,19 @@
   "hardware_qualified": false,
   "archives": [
     {
-      "path": "delivery/MOSS_CORE_V07_PROTOTYPE_GERBERS_20261101_LAYOUT.zip",
-      "bytes": 372772,
-      "sha256": "d66a6908c865628be087da81f76f93e56eafbffa712863d956421bac7f98a610"
+      "path": "delivery/MOSS_CORE_V07_PROTOTYPE_GERBERS_20261101_MOUNTING.zip",
+      "bytes": 371530,
+      "sha256": "8dd54ce961989971f6c3344d19eefa92b52d5858ffaf59c61fc98200e4654bba"
     },
     {
-      "path": "delivery/MOSS_CORE_V07_PROTOTYPE_ASSEMBLY_NOTES_20261101_LAYOUT.zip",
-      "bytes": 9164,
-      "sha256": "c5beca01dac4ef05b57b576484b68b2dbf7cece08080bbd9df098d453dac010b"
+      "path": "delivery/MOSS_CORE_V07_PROTOTYPE_ASSEMBLY_NOTES_20261101_MOUNTING.zip",
+      "bytes": 9165,
+      "sha256": "e245d84354354a4e4222bf165dcfc16699c1edd1d5750bd41d811ec632de387e"
     },
     {
-      "path": "delivery/MOSS_CORE_V07_PROTOTYPE_REVIEW_20261101_LAYOUT.zip",
-      "bytes": 6697258,
-      "sha256": "85b95b5ca8393f7ab72f6c987700bdf58fbea8d1222adfaff9d94731b1c31944"
+      "path": "delivery/MOSS_CORE_V07_PROTOTYPE_REVIEW_20261101_MOUNTING.zip",
+      "bytes": 6668298,
+      "sha256": "bdf7d91a44c7067eff47871891ad8449c3dd0fedaaf4c5f2c1801ae373e70652"
     }
   ]
 }

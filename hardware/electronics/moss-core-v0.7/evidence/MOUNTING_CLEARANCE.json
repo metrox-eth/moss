@@ -1,0 +1,573 @@
+{
+  "source": "MOSS_Core_V07_Prototype.kicad_pcb",
+  "board_sha256": "7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14",
+  "final_native_board_sha256": "7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14",
+  "status": "PASS_INHERITED_ACTUAL_MOUNT_HEAD_COPPER_AND_GROUND_CHECKS",
+  "geometry_checked_on_sha256": "23902df03b7f927e88ff95eb70877a03d103497a0b000144ed716813501def4a",
+  "annotation_equivalent_variant_sha256": "14aa8760d646ee0e3e36964cad0ea4a8e3336cd2288a2042369a42388a0e8f96",
+  "binding": "Physical geometry was preserved through the battery legend shift and the eight Pi silkscreen ring updates. No clearance recomputation is claimed for ink-only changes.",
+  "rounded_outline_and_copper_checks": [
+    {
+      "reference": "H1",
+      "target_xy_mm": [
+        2,
+        0
+      ],
+      "D6_head_inside_R2_native_board": true,
+      "D6_head_margin_to_native_outline_mm": 1.0,
+      "nonGND_outer_copper_under_D6_head": [],
+      "closest_nonGND_outer_copper": [
+        {
+          "object": "R10.2",
+          "net": "WD_TIME",
+          "layer": "F.Cu",
+          "head_gap_mm": 4.611615334251431
+        },
+        {
+          "object": "19f922b8-fcb6-4b61-977a-c30d8d860cf8",
+          "net": "WD_TIME",
+          "layer": "F.Cu",
+          "head_gap_mm": 5.0755160058888595
+        },
+        {
+          "object": "b5ebb083-a43d-46db-9163-4cd8396e15ae",
+          "net": "WD_TIME",
+          "layer": "F.Cu",
+          "head_gap_mm": 5.093446124169063
+        }
+      ]
+    },
+    {
+      "reference": "H2",
+      "target_xy_mm": [
+        76,
+        0
+      ],
+      "D6_head_inside_R2_native_board": true,
+      "D6_head_margin_to_native_outline_mm": 1.0,
+      "nonGND_outer_copper_under_D6_head": [],
+      "closest_nonGND_outer_copper": [
+        {
+          "object": "c0a93cf6-5663-4f27-946f-006f2b36a938",
+          "net": "ENC_3V3",
+          "layer": "F.Cu",
+          "head_gap_mm": 4.007965443469289
+        },
+        {
+          "object": "a20f420e-1ba3-4f65-a72e-9eba8d9a7a05",
+          "net": "ENC_3V3",
+          "layer": "F.Cu",
+          "head_gap_mm": 4.007965443469291
+        },
+        {
+          "object": "a91001e7-d67f-402d-932d-0f3e7d4e0c83",
+          "net": "ENC_3V3",
+          "layer": "F.Cu",
+          "head_gap_mm": 4.030221837899322
+        }
+      ]
+    },
+    {
+      "reference": "H3",
+      "target_xy_mm": [
+        2,
+        71
+      ],
+      "D6_head_inside_R2_native_board": true,
+      "D6_head_margin_to_native_outline_mm": 1.0,
+      "nonGND_outer_copper_under_D6_head": [],
+      "closest_nonGND_outer_copper": [
+        {
+          "object": "U14.1",
+          "net": "SERVO_OE_ON",
+          "layer": "F.Cu",
+          "head_gap_mm": 4.196408164529642
+        },
+        {
+          "object": "U14.8",
+          "net": "3V3",
+          "layer": "F.Cu",
+          "head_gap_mm": 4.266960765563876
+        },
+        {
+          "object": "48b74a80-e8bf-4b24-ba9f-79f197b214f9",
+          "net": "3V3",
+          "layer": "F.Cu",
+          "head_gap_mm": 4.294094109848102
+        }
+      ]
+    },
+    {
+      "reference": "H4",
+      "target_xy_mm": [
+        76,
+        71
+      ],
+      "D6_head_inside_R2_native_board": true,
+      "D6_head_margin_to_native_outline_mm": 1.0,
+      "nonGND_outer_copper_under_D6_head": [],
+      "closest_nonGND_outer_copper": [
+        {
+          "object": "TP3.1",
+          "net": "DEBUG_TX",
+          "layer": "F.Cu",
+          "head_gap_mm": 3.570672742253807
+        },
+        {
+          "object": "TP5.1",
+          "net": "I2C_SDA",
+          "layer": "F.Cu",
+          "head_gap_mm": 3.6584579601957814
+        },
+        {
+          "object": "J7.1",
+          "net": "SPEAKER_P",
+          "layer": "F.Cu",
+          "head_gap_mm": 3.794289275377712
+        }
+      ]
+    }
+  ],
+  "H1_ground_pad_details": [
+    {
+      "uuid": "2b538003-072d-49ab-90b5-f264383fffce",
+      "number": "1",
+      "net": "GND",
+      "target_xy_mm": [
+        -0.025,
+        0.0
+      ],
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "drill_mm": [
+        0.5,
+        0.5
+      ],
+      "copper_inside_outline": true,
+      "copper_edge_clearance_mm": 1.5750000000000002
+    },
+    {
+      "uuid": "c2c8a20a-86c0-4069-ace3-8f758e6d2884",
+      "number": "1",
+      "net": "GND",
+      "target_xy_mm": [
+        0.568109,
+        -1.431891
+      ],
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "drill_mm": [
+        0.5,
+        0.5
+      ],
+      "copper_inside_outline": true,
+      "copper_edge_clearance_mm": 2.168109
+    },
+    {
+      "uuid": "76954f57-9171-4521-b142-ab7693be9c5f",
+      "number": "1",
+      "net": "GND",
+      "target_xy_mm": [
+        0.568109,
+        1.431891
+      ],
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "drill_mm": [
+        0.5,
+        0.5
+      ],
+      "copper_inside_outline": true,
+      "copper_edge_clearance_mm": 2.168109
+    },
+    {
+      "uuid": "942ad247-5b74-4a61-ba58-0353245fcb10",
+      "number": "1",
+      "net": "GND",
+      "target_xy_mm": [
+        2.0,
+        -2.025
+      ],
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "drill_mm": [
+        0.5,
+        0.5
+      ],
+      "copper_inside_outline": true,
+      "copper_edge_clearance_mm": 1.5750000000000002
+    },
+    {
+      "uuid": "94a4180c-086d-48d7-8f15-977cd2a358c9",
+      "number": "1",
+      "net": "GND",
+      "target_xy_mm": [
+        2.0,
+        0.0
+      ],
+      "size_mm": [
+        5.4,
+        5.4
+      ],
+      "drill_mm": [
+        2.7,
+        2.7
+      ],
+      "copper_inside_outline": true,
+      "copper_edge_clearance_mm": 1.3
+    },
+    {
+      "uuid": "02057c56-b0e4-4d9e-86c4-32b6ca54d49e",
+      "number": "1",
+      "net": "GND",
+      "target_xy_mm": [
+        2.0,
+        2.025
+      ],
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "drill_mm": [
+        0.5,
+        0.5
+      ],
+      "copper_inside_outline": true,
+      "copper_edge_clearance_mm": 3.6
+    },
+    {
+      "uuid": "5a590a2e-448a-4273-a269-53f8929ccc0d",
+      "number": "1",
+      "net": "GND",
+      "target_xy_mm": [
+        3.431891,
+        -1.431891
+      ],
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "drill_mm": [
+        0.5,
+        0.5
+      ],
+      "copper_inside_outline": true,
+      "copper_edge_clearance_mm": 2.1681090000000003
+    },
+    {
+      "uuid": "3f5340fb-80df-4436-a253-e75b45a77749",
+      "number": "1",
+      "net": "GND",
+      "target_xy_mm": [
+        3.431891,
+        1.431891
+      ],
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "drill_mm": [
+        0.5,
+        0.5
+      ],
+      "copper_inside_outline": true,
+      "copper_edge_clearance_mm": 5.031891
+    },
+    {
+      "uuid": "4adbce28-8664-4b6d-a9af-e7778544fb4d",
+      "number": "1",
+      "net": "GND",
+      "target_xy_mm": [
+        4.025,
+        0.0
+      ],
+      "size_mm": [
+        0.8,
+        0.8
+      ],
+      "drill_mm": [
+        0.5,
+        0.5
+      ],
+      "copper_inside_outline": true,
+      "copper_edge_clearance_mm": 3.6
+    }
+  ],
+  "H1_copper_minimum_edge_clearance_mm": 1.3,
+  "H1_all_pads_GND": true,
+  "nonGND_copper_contacts_under_D6_heads": 0,
+  "nearest_component_body_checks": [
+    {
+      "reference": "H1",
+      "target_pcb_xy_mm": [
+        2,
+        0
+      ],
+      "world_xy_mm": [
+        -76,
+        37
+      ],
+      "centre_inset_from_straight_board_edges_mm": 4,
+      "D6_head_to_straight_edge_land_mm": 1,
+      "D5_4_head_to_straight_edge_land_mm": 1.2999999999999998,
+      "drill_D2_7_to_straight_edge_land_mm": 2.65,
+      "nearest_top_body_lower_bound_checks": [
+        {
+          "reference": "R10",
+          "centre_to_body_AABB_distance_mm": 7.823042886243171,
+          "body_clearance_from_D6_head_mm": 4.823042886243171,
+          "body_clearance_from_D5_4_head_mm": 5.123042886243171
+        },
+        {
+          "reference": "D32",
+          "centre_to_body_AABB_distance_mm": 8.724999899999997,
+          "body_clearance_from_D6_head_mm": 5.724999899999997,
+          "body_clearance_from_D5_4_head_mm": 6.0249998999999965
+        },
+        {
+          "reference": "C9",
+          "centre_to_body_AABB_distance_mm": 9.265527507918804,
+          "body_clearance_from_D6_head_mm": 6.265527507918804,
+          "body_clearance_from_D5_4_head_mm": 6.565527507918804
+        },
+        {
+          "reference": "U5",
+          "centre_to_body_AABB_distance_mm": 9.486832980505138,
+          "body_clearance_from_D6_head_mm": 6.486832980505138,
+          "body_clearance_from_D5_4_head_mm": 6.786832980505138
+        },
+        {
+          "reference": "R13",
+          "centre_to_body_AABB_distance_mm": 12.427791436936817,
+          "body_clearance_from_D6_head_mm": 9.427791436936817,
+          "body_clearance_from_D5_4_head_mm": 9.727791436936815
+        }
+      ]
+    },
+    {
+      "reference": "H2",
+      "target_pcb_xy_mm": [
+        76,
+        0
+      ],
+      "world_xy_mm": [
+        -2,
+        37
+      ],
+      "centre_inset_from_straight_board_edges_mm": 4,
+      "D6_head_to_straight_edge_land_mm": 1,
+      "D5_4_head_to_straight_edge_land_mm": 1.2999999999999998,
+      "drill_D2_7_to_straight_edge_land_mm": 2.65,
+      "nearest_top_body_lower_bound_checks": [
+        {
+          "reference": "R37",
+          "centre_to_body_AABB_distance_mm": 8.24621125123532,
+          "body_clearance_from_D6_head_mm": 5.246211251235319,
+          "body_clearance_from_D5_4_head_mm": 5.546211251235319
+        },
+        {
+          "reference": "R36",
+          "centre_to_body_AABB_distance_mm": 8.769264507357502,
+          "body_clearance_from_D6_head_mm": 5.7692645073575015,
+          "body_clearance_from_D5_4_head_mm": 6.069264507357501
+        },
+        {
+          "reference": "R38",
+          "centre_to_body_AABB_distance_mm": 9.404786015641184,
+          "body_clearance_from_D6_head_mm": 6.404786015641184,
+          "body_clearance_from_D5_4_head_mm": 6.704786015641184
+        },
+        {
+          "reference": "C20",
+          "centre_to_body_AABB_distance_mm": 10.119288512538814,
+          "body_clearance_from_D6_head_mm": 7.119288512538814,
+          "body_clearance_from_D5_4_head_mm": 7.419288512538814
+        },
+        {
+          "reference": "D7",
+          "centre_to_body_AABB_distance_mm": 10.426079019698632,
+          "body_clearance_from_D6_head_mm": 7.426079019698632,
+          "body_clearance_from_D5_4_head_mm": 7.7260790196986315
+        }
+      ]
+    },
+    {
+      "reference": "H3",
+      "target_pcb_xy_mm": [
+        2,
+        71
+      ],
+      "world_xy_mm": [
+        -76,
+        -34
+      ],
+      "centre_inset_from_straight_board_edges_mm": 4,
+      "D6_head_to_straight_edge_land_mm": 1,
+      "D5_4_head_to_straight_edge_land_mm": 1.2999999999999998,
+      "drill_D2_7_to_straight_edge_land_mm": 2.65,
+      "nearest_top_body_lower_bound_checks": [
+        {
+          "reference": "U14",
+          "centre_to_body_AABB_distance_mm": 7.0999999,
+          "body_clearance_from_D6_head_mm": 4.0999999,
+          "body_clearance_from_D5_4_head_mm": 4.3999999
+        },
+        {
+          "reference": "R43",
+          "centre_to_body_AABB_distance_mm": 8.76641317757725,
+          "body_clearance_from_D6_head_mm": 5.766413177577251,
+          "body_clearance_from_D5_4_head_mm": 6.0664131775772505
+        },
+        {
+          "reference": "C25",
+          "centre_to_body_AABB_distance_mm": 10.5,
+          "body_clearance_from_D6_head_mm": 7.5,
+          "body_clearance_from_D5_4_head_mm": 7.8
+        },
+        {
+          "reference": "J4",
+          "centre_to_body_AABB_distance_mm": 10.600000000000001,
+          "body_clearance_from_D6_head_mm": 7.600000000000001,
+          "body_clearance_from_D5_4_head_mm": 7.900000000000001
+        },
+        {
+          "reference": "R48",
+          "centre_to_body_AABB_distance_mm": 11.423659658795856,
+          "body_clearance_from_D6_head_mm": 8.423659658795856,
+          "body_clearance_from_D5_4_head_mm": 8.723659658795857
+        }
+      ]
+    },
+    {
+      "reference": "H4",
+      "target_pcb_xy_mm": [
+        76,
+        71
+      ],
+      "world_xy_mm": [
+        -2,
+        -34
+      ],
+      "centre_inset_from_straight_board_edges_mm": 4,
+      "D6_head_to_straight_edge_land_mm": 1,
+      "D5_4_head_to_straight_edge_land_mm": 1.2999999999999998,
+      "drill_D2_7_to_straight_edge_land_mm": 2.65,
+      "nearest_top_body_lower_bound_checks": [
+        {
+          "reference": "J7",
+          "centre_to_body_AABB_distance_mm": 5.052227231627648,
+          "body_clearance_from_D6_head_mm": 2.052227231627648,
+          "body_clearance_from_D5_4_head_mm": 2.352227231627648
+        },
+        {
+          "reference": "SW2",
+          "centre_to_body_AABB_distance_mm": 8.7,
+          "body_clearance_from_D6_head_mm": 5.699999999999999,
+          "body_clearance_from_D5_4_head_mm": 5.999999999999999
+        },
+        {
+          "reference": "D2",
+          "centre_to_body_AABB_distance_mm": 8.72066511224918,
+          "body_clearance_from_D6_head_mm": 5.720665112249179,
+          "body_clearance_from_D5_4_head_mm": 6.020665112249179
+        },
+        {
+          "reference": "SW1",
+          "centre_to_body_AABB_distance_mm": 9.660745312862767,
+          "body_clearance_from_D6_head_mm": 6.660745312862767,
+          "body_clearance_from_D5_4_head_mm": 6.960745312862767
+        },
+        {
+          "reference": "R75",
+          "centre_to_body_AABB_distance_mm": 10.601886624558855,
+          "body_clearance_from_D6_head_mm": 7.601886624558855,
+          "body_clearance_from_D5_4_head_mm": 7.901886624558855
+        }
+      ]
+    }
+  ],
+  "fan_XH_mounting_interaction": [
+    {
+      "reference": "J14",
+      "minimum_header_or_declared_sameXY_mated_body_gap_to_D6_head_mm": 21.25,
+      "nearest_corner": "H3",
+      "header_body_bottom_edge_land_mm": 0.8499999999999943,
+      "mated_scope": "DeclaredmatedbodyusesheaderXY, as incombinedreview; upwardwirevolume startsaboveheadZ. ExactXHPplugbody notprovided."
+    },
+    {
+      "reference": "J15",
+      "minimum_header_or_declared_sameXY_mated_body_gap_to_D6_head_mm": 30.15,
+      "nearest_corner": "H3",
+      "header_body_bottom_edge_land_mm": 0.8499999999999943,
+      "mated_scope": "DeclaredmatedbodyusesheaderXY, as incombinedreview; upwardwirevolume startsaboveheadZ. ExactXHPplugbody notprovided."
+    }
+  ],
+  "ground_summary": {
+    "all_GND_pads_connected_to_J10_1": true,
+    "missing_GND_pads": [],
+    "connected_GND_pad_count": 208,
+    "all_regions_have_battery_connected_annular_tie": true
+  },
+  "selection_note": "4mm centre inset leaves 1mm land with the assessed D6 head, so a5mm inset is not required for those dimensions. Hardware D8 would have zero radial edge land and needs a new check.",
+  "native_DRC_at_mounting_variant": {
+    "report": "DRC_FINAL.json",
+    "errors": 0,
+    "unconnected_items": 0,
+    "same_original_reviewed_warnings": 2
+  },
+  "hull_compatibility": {
+    "status": "HULL_MOUNT_PATTERN_UPDATE_REQUIRED",
+    "old_hull_compatible": false,
+    "unchanged_old_post": "H4",
+    "old_post_coordinates_pcb_mm": {
+      "H1": [
+        4,
+        4
+      ],
+      "old_bottom_left": [
+        4,
+        71
+      ],
+      "old_top_right": [
+        76,
+        4
+      ],
+      "H4": [
+        76,
+        71
+      ]
+    },
+    "new_core_mounts_pcb_mm": {
+      "H1": [
+        2,
+        0
+      ],
+      "H2": [
+        76,
+        0
+      ],
+      "H3": [
+        2,
+        71
+      ],
+      "H4": [
+        76,
+        71
+      ]
+    },
+    "scope": "Three old hull posts must be repositioned. The hull update is explicitly planned and has not been performed or qualified by this evidence refresh. Historical zero-volume board/hull and cable/hull tests must not be read as proof of compatibility with the new mounting pattern."
+  },
+  "limits": [
+    "Actual fastener MPN, assembly tool access and physical mounting have not been qualified.",
+    "The mated XH body uses the previously declared header-XY envelope; exact selected cable bodies are not supplied.",
+    "Full plane/annular proof applies to the identified unchanged physical geometry; this is not EMC or ampacity qualification."
+  ]
+}

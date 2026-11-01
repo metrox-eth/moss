@@ -1,0 +1,120 @@
+{
+  "source_sha256": "14aa8760d646ee0e3e36964cad0ea4a8e3336cd2288a2042369a42388a0e8f96",
+  "final_board_sha256": "7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14",
+  "only_eight_silkscreen_circle_blocks_changed": true,
+  "electrical_pads_holes_copper_models_and_other_labels_exactly_preserved": true,
+  "rings": [
+    {
+      "ref": "H5",
+      "layer": "F.SilkS",
+      "uuid": "b155aaa9-8d6a-5dfa-94d1-e37752b72a27",
+      "centre_mm": [
+        11.0,
+        12.5
+      ],
+      "outer_diameter_mm": 4.2,
+      "inner_diameter_mm": 3.0,
+      "stroke_mm": 0.6,
+      "hole_diameter_mm": 2.7,
+      "ink_to_hole_gap_mm": 0.15
+    },
+    {
+      "ref": "H5",
+      "layer": "B.SilkS",
+      "uuid": "b4a0efe0-e8ac-5ede-988b-e0565878af75",
+      "centre_mm": [
+        11.0,
+        12.5
+      ],
+      "outer_diameter_mm": 4.2,
+      "inner_diameter_mm": 3.0,
+      "stroke_mm": 0.6,
+      "hole_diameter_mm": 2.7,
+      "ink_to_hole_gap_mm": 0.15
+    },
+    {
+      "ref": "H6",
+      "layer": "F.SilkS",
+      "uuid": "a5bc657f-bb5a-588f-8e01-4c1ebc786a7f",
+      "centre_mm": [
+        69.0,
+        12.5
+      ],
+      "outer_diameter_mm": 4.2,
+      "inner_diameter_mm": 3.0,
+      "stroke_mm": 0.6,
+      "hole_diameter_mm": 2.7,
+      "ink_to_hole_gap_mm": 0.15
+    },
+    {
+      "ref": "H6",
+      "layer": "B.SilkS",
+      "uuid": "805aaa3e-8ce1-5b41-9b29-50ff67a4b5c5",
+      "centre_mm": [
+        69.0,
+        12.5
+      ],
+      "outer_diameter_mm": 4.2,
+      "inner_diameter_mm": 3.0,
+      "stroke_mm": 0.6,
+      "hole_diameter_mm": 2.7,
+      "ink_to_hole_gap_mm": 0.15
+    },
+    {
+      "ref": "H7",
+      "layer": "F.SilkS",
+      "uuid": "ad3f3389-88b3-5e84-9cbe-6620e71ab7f4",
+      "centre_mm": [
+        11.0,
+        35.5
+      ],
+      "outer_diameter_mm": 4.2,
+      "inner_diameter_mm": 3.0,
+      "stroke_mm": 0.6,
+      "hole_diameter_mm": 2.7,
+      "ink_to_hole_gap_mm": 0.15
+    },
+    {
+      "ref": "H7",
+      "layer": "B.SilkS",
+      "uuid": "ad8eb792-4a72-50d1-b69c-73915d5dc298",
+      "centre_mm": [
+        11.0,
+        35.5
+      ],
+      "outer_diameter_mm": 4.2,
+      "inner_diameter_mm": 3.0,
+      "stroke_mm": 0.6,
+      "hole_diameter_mm": 2.7,
+      "ink_to_hole_gap_mm": 0.15
+    },
+    {
+      "ref": "H8",
+      "layer": "F.SilkS",
+      "uuid": "dfa06f43-2d17-578a-ac35-26a515669be8",
+      "centre_mm": [
+        69.0,
+        35.5
+      ],
+      "outer_diameter_mm": 4.2,
+      "inner_diameter_mm": 3.0,
+      "stroke_mm": 0.6,
+      "hole_diameter_mm": 2.7,
+      "ink_to_hole_gap_mm": 0.15
+    },
+    {
+      "ref": "H8",
+      "layer": "B.SilkS",
+      "uuid": "9ca9404a-b470-5cf4-9bae-177cc001fea7",
+      "centre_mm": [
+        69.0,
+        35.5
+      ],
+      "outer_diameter_mm": 4.2,
+      "inner_diameter_mm": 3.0,
+      "stroke_mm": 0.6,
+      "hole_diameter_mm": 2.7,
+      "ink_to_hole_gap_mm": 0.15
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "status": "PASS_EXACT_FINAL_PHYSICAL_PLACEMENT_EQUIVALENCE",
+  "reviewed_source": "MOSS_Core_V07_Prototype.kicad_pcb",
+  "reviewed_source_sha256": "05a14f5c05a1280aa6d47647801e8148e22546e6828159fe85da943e6bcbec8d",
+  "final_source": "MOSS_Core_V07_Prototype.kicad_pcb",
+  "final_sha256": "9f0ef9f1bc34934417560cd6f2751c714f3643d7959bae822c8b48c13b259b03",
+  "footprints_compared": 222,
+  "comparison": "Every footprintposition/orientation/side and everypadnumber/centre/size/drill/shape identical; graphical/text/MPN/librarynormalization excluded",
+  "changed_references": []
+}

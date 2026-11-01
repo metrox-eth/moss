@@ -1,50 +1,4 @@
 {
-  "input": "MOSS_Core_V07_Prototype.kicad_pcb",
-  "input_sha256": "c802d94a7106356b28e75e4e5be18cdb335b2e8797a227433f85051e5b856970",
-  "output_sha256": "efd41074fa43d902f3006287c10ab2fdd70585bc1381eb0b63db9e5ffbb530b6",
-  "black_mask_both_sides": true,
-  "silkscreen": "White",
-  "source_url": "https://www.pcbway.com/helpcenter/soldermask_issues/Soldermask_bridge.html",
-  "black_mask_min_pad_gap_mm": 0.22,
-  "U60_native_min_pad_gap_mm": 0.25,
-  "U60_mask_change_needed": false,
-  "mask_only_USB_row_windows": [
-    {
-      "ref": "J1",
-      "layer": "F.Mask",
-      "bbox_mm": [
-        72.745,
-        40.7,
-        73.895,
-        47.7
-      ],
-      "native_min_positive_pad_gap_mm": 0.2,
-      "footprint_owned": true,
-      "intentional_bridge_attribute": true,
-      "common_aperture_type": "Full USB pad-row opening; no narrow inter-pad mask tongues"
-    },
-    {
-      "ref": "J20",
-      "layer": "F.Mask",
-      "bbox_mm": [
-        72.745,
-        20.5,
-        73.895,
-        27.5
-      ],
-      "native_min_positive_pad_gap_mm": 0.2,
-      "footprint_owned": true,
-      "intentional_bridge_attribute": true,
-      "common_aperture_type": "Full USB pad-row opening; no narrow inter-pad mask tongues"
-    }
-  ],
-  "heading_size_mm_range": [
-    1.3,
-    1.4
-  ],
-  "pin_legend_size_mm": 0.8,
-  "pin_legend_stroke_mm": 0.15,
-  "silkscreen_guidance_url": "https://www.pcbway.com/helpcenter/design_instruction/How_to_make_my_silkscreen_clear_and_beautiful_on_PCB__.html",
   "labels": [
     {
       "ref": "J10",
@@ -79,15 +33,15 @@
     {
       "ref": "J10",
       "text": "J10 | 1 GND | 2 +",
-      "x": 8.0,
+      "x": 11.5,
       "y": -1.5,
       "size_mm": 0.8,
       "angle_deg": 0,
       "heading": false,
       "native_text_bbox_mm": [
-        1.721666,
+        5.221666,
         -2.23125,
-        14.278335,
+        17.778335,
         -0.76875
       ]
     },
@@ -572,38 +526,13 @@
       ]
     }
   ],
-  "removed_old_connector_labels": [
-    "J14 FAN 1 1+ 2-",
-    "J15 FAN 2 1+ 2-",
-    "J3 LEFT MOTOR\n1 M1 | 2 M2 | 3 GND\n4 3V3 | 5 A | 6 B",
-    "J4 RIGHT MOTOR\n1 M1 | 2 M2 | 3 GND\n4 3V3 | 5 A | 6 B",
-    "ARM J5\n3 GND | 2 + | 1 DATA",
-    "J10 BATTERY 3S\n1 GND | 2 +",
-    "J2 CYTRON LINK\n1 PWM1 | 2 DIR1 | 3 PWM2 | 4 DIR2 | 5 GND\n6 LA | 7 LB | 8 RA | 9 RB | 10 NO WIRE",
-    "J8 STOP\n1/2 CUT | 5/6 STATUS\n3/4 NO WIRE",
-    "J11 CYTRON POWER\n1 + | 2 GND",
-    "J7 SPEAKER\n1 + | 2 -\nNO GND",
-    "J20 PI 5V OUT\nPOWER ONLY",
-    "J1 USB TO HUB"
-  ],
-  "electrical_geometry_exact_blocks_unchanged_except_explicit_USB_mask_intent": true,
-  "USB_footprint_normalized_comparison": "Only deterministic added F.Mask rectangle and per-footprint allow_soldermask_bridges attribute excluded; all other footprint tokens identical",
-  "back_mask_pad_bbox_collisions_with_0_15mm_clearance": [],
-  "new_text_bbox_collisions": [],
-  "stackup_note": "Nominal 1.6mm display descriptor, four0.035mm Cu layers; illustrative FR4 dielectric thicknesses, dielectric_constraints=no, no controlled impedance. Final manufacturer stackup must be confirmed; fabrication request remains1oz on allfour Cu layers.",
-  "byline_alignment": {
-    "logo_M_left_mm": 35.5,
-    "old_byline_left_mm": 36.087714,
-    "new_anchor_x_mm": 40.412286,
-    "new_byline_left_mm": 35.5
-  },
   "white_mounting_rings": [
     {
       "ref": "H2",
       "role": "Core mounting screw",
       "centre_mm": [
-        4.0,
-        71.0
+        76,
+        0
       ],
       "outer_diameter_mm": 5.4,
       "inner_diameter_mm": 3.0,
@@ -618,8 +547,8 @@
       "ref": "H3",
       "role": "Core mounting screw",
       "centre_mm": [
-        76.0,
-        4.0
+        2,
+        71
       ],
       "outer_diameter_mm": 5.4,
       "inner_diameter_mm": 3.0,
@@ -634,8 +563,8 @@
       "ref": "H4",
       "role": "Core mounting screw",
       "centre_mm": [
-        76.0,
-        71.0
+        76,
+        71
       ],
       "outer_diameter_mm": 5.4,
       "inner_diameter_mm": 3.0,
@@ -653,9 +582,9 @@
         11.0,
         12.5
       ],
-      "outer_diameter_mm": 5.4,
-      "inner_diameter_mm": 4.9,
-      "stroke_mm": 0.25,
+      "outer_diameter_mm": 4.2,
+      "inner_diameter_mm": 3.0,
+      "stroke_mm": 0.6,
       "layers": [
         "F.SilkS",
         "B.SilkS"
@@ -669,9 +598,9 @@
         69.0,
         12.5
       ],
-      "outer_diameter_mm": 5.4,
-      "inner_diameter_mm": 4.9,
-      "stroke_mm": 0.25,
+      "outer_diameter_mm": 4.2,
+      "inner_diameter_mm": 3.0,
+      "stroke_mm": 0.6,
       "layers": [
         "F.SilkS",
         "B.SilkS"
@@ -685,9 +614,9 @@
         11.0,
         35.5
       ],
-      "outer_diameter_mm": 5.4,
-      "inner_diameter_mm": 4.9,
-      "stroke_mm": 0.25,
+      "outer_diameter_mm": 4.2,
+      "inner_diameter_mm": 3.0,
+      "stroke_mm": 0.6,
       "layers": [
         "F.SilkS",
         "B.SilkS"
@@ -701,14 +630,59 @@
         69.0,
         35.5
       ],
-      "outer_diameter_mm": 5.4,
-      "inner_diameter_mm": 4.9,
-      "stroke_mm": 0.25,
+      "outer_diameter_mm": 4.2,
+      "inner_diameter_mm": 3.0,
+      "stroke_mm": 0.6,
       "layers": [
         "F.SilkS",
         "B.SilkS"
       ],
       "copper_and_drill_unchanged": true
     }
-  ]
+  ],
+  "byline_alignment": {
+    "logo_M_left_mm": 35.5,
+    "old_byline_left_mm": 36.087714,
+    "new_anchor_x_mm": 40.412286,
+    "new_byline_left_mm": 35.5
+  },
+  "mask_only_USB_row_windows": [
+    {
+      "ref": "J1",
+      "layer": "F.Mask",
+      "bbox_mm": [
+        72.745,
+        40.7,
+        73.895,
+        47.7
+      ],
+      "native_min_positive_pad_gap_mm": 0.2,
+      "footprint_owned": true,
+      "intentional_bridge_attribute": true,
+      "common_aperture_type": "Full USB pad-row opening; no narrow inter-pad mask tongues"
+    },
+    {
+      "ref": "J20",
+      "layer": "F.Mask",
+      "bbox_mm": [
+        72.745,
+        20.5,
+        73.895,
+        27.5
+      ],
+      "native_min_positive_pad_gap_mm": 0.2,
+      "footprint_owned": true,
+      "intentional_bridge_attribute": true,
+      "common_aperture_type": "Full USB pad-row opening; no narrow inter-pad mask tongues"
+    }
+  ],
+  "heading_size_mm_range": [
+    1.3,
+    1.4
+  ],
+  "pin_legend_size_mm": 0.8,
+  "pin_legend_stroke_mm": 0.15,
+  "final_board_sha256": "7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14",
+  "scope": "Current silkscreen placement. Earlier color/mask transformation proof is archived in baseline_layout_before_mounting. Subsequent mounting and Orange Pi ink changes are recorded separately.",
+  "native_DRC_report": "DRC.json"
 }

@@ -1,4 +1,4 @@
-MOSS CORE V0.7 / PROTOTYPE / 2026-11-01 / LAYOUT REFRESH
+MOSS CORE V0.7 / PROTOTYPE / 2026-11-01 / MOUNTING UPDATE
 208 components per assembled board; 96 grouped purchase articles. Two assembled boards requested. Use the matched BOM, positions, Gerbers and drills.
 Updated 1 November 2026. Use this matched set of design and assembly files.
 

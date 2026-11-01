@@ -1,10 +1,10 @@
 {
   "updated": "2026-11-01",
   "hardware_name": "MOSS CORE V0.7 Prototype",
-  "native_board_sha256": "9f0ef9f1bc34934417560cd6f2751c714f3643d7959bae822c8b48c13b259b03",
+  "native_board_sha256": "7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14",
   "fabricated": false,
   "hardware_revision_letters_reserved_for_fabricated_boards": true,
-  "matching_file_set": "20261101_LAYOUT",
+  "matching_file_set": "20261101_MOUNTING",
   "historical_reports": "baseline_integrated_power/ is explicitly historical; the separate harness/ study remains frozen to 30 October.",
   "static_checks": [
     "DRC/ERC/parity",
@@ -19,5 +19,6 @@
     "local routing caches",
     "unrelated workshop files"
   ],
-  "limits": "No manufactured-board, thermal or full-load test has been performed."
+  "limits": "No manufactured-board, thermal or full-load test has been performed.",
+  "mounting_update": "Core 74 x 71 mm pitch,4 mm edge setback. Hull posts require later adaptation. Orange Pi holes fixed; printed rings4.2/3.0mm. ESP shield unmarked; MOSS orientation unchanged."
 }

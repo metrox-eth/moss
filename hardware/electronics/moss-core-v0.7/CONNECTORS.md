@@ -30,9 +30,11 @@ Manufacturer references: [AMASS XT30UPB-M](https://www.china-amass.net/xt30upb-m
 
 ## Grounding connection
 
-H1, at (4, 4) mm on the PCB, is a plated 2.7 mm hole for an M2.5 screw. Its 5.4 mm exposed copper ring is connected to GND on both faces, with eight 0.5 mm stitching holes and no solder paste. It provides an attachment point for a bonding lead. The other seven mounting holes remain unplated. A screw into the plastic hull alone does not create an earth connection; ESD performance still needs testing.
+The four Core chassis fixings now use a **74 × 71 mm** pattern, with centres 4 mm from the enlarged board edges. The hull mounting posts need adapting to this new pattern. The four Orange Pi mounting holes are unchanged. See [mounting dimensions](MOUNTING.md).
 
-White silkscreen rings identify the other mounting positions on both faces: thick rings for the Core mounting screws H2–H4, and thin circles for the Orange Pi standoffs H5–H8. All markers have the same 5.4 mm outer diameter as H1's contact ring. These are printed assembly guides; the seven holes retain their existing unplated 2.7 mm drills.
+H1, at native KiCad coordinates (2, 0) mm on the PCB, is a plated 2.7 mm hole for an M2.5 screw. Its 5.4 mm exposed copper ring is connected to GND on both faces, with eight 0.5 mm stitching holes and no solder paste. It provides an attachment point for a bonding lead. The other seven mounting holes remain unplated. A screw into the plastic hull alone does not create an earth connection; ESD performance still needs testing.
+
+White silkscreen rings identify the other mounting positions on both faces: thick rings for the Core mounting screws H2–H4, and compact rings for the Orange Pi standoffs H5–H8. The Core fixing markers retain a 5.4 mm outer diameter. The Orange Pi rings have a 4.2 mm outer diameter, 3.0 mm inner diameter and 0.6 mm ink width, leaving 0.15 mm around each hole. These are printed assembly guides; the seven holes retain their existing unplated 2.7 mm drills.
 
 ## Host USB wiring
 

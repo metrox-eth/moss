@@ -143,5 +143,7 @@
   "all_pins_wires_symbol_IDs_UUIDs_geometry_preserved": true,
   "purchase_URL_policy": "Only J5/J7/J10 source references replaced with verified primary manufacturer pages/drawings; no unrelated rows changed",
   "netlist_XML": null,
-  "next_step": "Regenerate NETLIST.xml using KiCad, then run --check-netlist on the new XML; native ERC/DRC and full pin contract remain required."
+  "next_step": "Regenerate NETLIST.xml using KiCad, then run --check-netlist on the new XML; native ERC/DRC and full pin contract remain required.",
+  "final_board_sha256": "7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14",
+  "latest_revalidation": "DESIGN_CONTRACT.json; connector geometry and fields unchanged by mounting/ink update."
 }

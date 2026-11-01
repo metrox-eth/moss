@@ -6,7 +6,8 @@
   "article_count": 96,
   "accessories_excluded_from_PCB_placement": [],
   "notes": [
-    "Updated 1 November 2026: black 82 x 79 mm rectangular board; fan headers shifted left; all copper track segments use 45/90-degree directions. Battery, servo and speaker connectors now use verified vertical variants. Their numbered pin functions are retained; use the new footprint, purchasing and placement files together. Use only the matching 20261101_LAYOUT files.",
+    "1 November mounting update: four Core fixing centres now have 74 x 71 mm pitch, 4 mm setback from all board edges. Orange Pi standoff holes remain fixed. Use current drill files; earlier hull mounting posts need adapting. Component inventory is unchanged.",
+    "Updated 1 November 2026: black 82 x 79 mm rectangular board; fan headers shifted left; all copper track segments use 45/90-degree directions. Battery, servo and speaker connectors now use verified vertical variants. Their numbered pin functions are retained; use the new footprint, purchasing and placement files together. Use only the matching 20261101_MOUNTING files.",
     "Integrated MP9447 converter and grounded H1 retained. U14/U17/U43 local soldermask bridges removed. Copper/paste/drill geometry unchanged by the DFM correction.",
     "U2 uses exact TPD2E2U06QDCKRQ1 DCK-3; J7 supported seating/through-hole solder; J8 manual placement approved for two prototypes.",
     "Engineering checks do not constitute hardware qualification. Supplier to confirm availability and process in quotation."

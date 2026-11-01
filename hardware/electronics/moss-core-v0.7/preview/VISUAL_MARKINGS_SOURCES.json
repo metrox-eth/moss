@@ -8,26 +8,6 @@
   "wrl_units": "KiCad legacy units = mm / 2.54",
   "attachment": "Add as second model of the same footprint, copying its existing model offset/scale/rotation",
   "models": {
-    "ESP32_S3_WROOM_1U_LASER_OVERLAY": {
-      "step": "ESP32_S3_WROOM_1U_LASER_OVERLAY.step",
-      "wrl": "ESP32_S3_WROOM_1U_LASER_OVERLAY.wrl",
-      "bbox_mm": [
-        -6.200000100000005,
-        6.200000100000002,
-        2.3569147851131036,
-        6.816624785138542,
-        3.1800673561762394,
-        3.2399326438237606
-      ],
-      "triangles": 25754,
-      "color_rgb": [
-        0.22,
-        0.23,
-        0.24
-      ],
-      "sha256_step": "9d1e217259cb17483308f8c3b41f1fde972d9b71e9d0ae5b6ab4b9d250be4c41",
-      "sha256_wrl": "9226de326b13924da18bead6ba221e385941f07cf2863fc184ffe4d469267c02"
-    },
     "INA240A2_I240A2_MARKING": {
       "step": "INA240A2_I240A2_MARKING.step",
       "wrl": "INA240A2_I240A2_MARKING.wrl",
@@ -70,15 +50,6 @@
     }
   },
   "references": {
-    "U1": {
-      "asset": "ESP32_S3_WROOM_1U_LASER_OVERLAY",
-      "expected_value_contains": "ESP32-S3-WROOM-1U",
-      "manufacturer_fields": [
-        "official Espressif logo",
-        "ESP32-S3-WROOM-1U"
-      ],
-      "source_url": "https://docs.espressif.com/projects/esp-packaging/en/latest/esp32s3/01-marking/index_module.html"
-    },
     "U40": {
       "asset": "INA240A2_I240A2_MARKING",
       "expected_value_contains": "INA240A2PWR",

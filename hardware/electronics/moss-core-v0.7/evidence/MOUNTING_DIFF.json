@@ -1,0 +1,383 @@
+{
+  "source": "NATIVE_BEFORE_MOUNTING.kicad_pcb",
+  "source_sha256": "9f0ef9f1bc34934417560cd6f2751c714f3643d7959bae822c8b48c13b259b03",
+  "candidate": "MOSS_Core_V07_Prototype.kicad_pcb",
+  "candidate_sha256": "7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14",
+  "source_untouched": true,
+  "status": "CURRENT_CORE_MOUNTING_CHANGE_PROVENANCE",
+  "moves": [
+    {
+      "ref": "H1",
+      "before_mm": [
+        4.0,
+        4.0
+      ],
+      "after_mm": [
+        2,
+        0
+      ],
+      "delta_mm": [
+        -2.0,
+        -4.0
+      ],
+      "rule_area_uuid": "8946533f-b73c-40e4-9eb1-c252bcfcfb94"
+    },
+    {
+      "ref": "H2",
+      "before_mm": [
+        4.0,
+        71.0
+      ],
+      "after_mm": [
+        76,
+        0
+      ],
+      "delta_mm": [
+        72.0,
+        -71.0
+      ],
+      "rule_area_uuid": "39a572bb-d15f-4424-8592-6104859392cf"
+    },
+    {
+      "ref": "H3",
+      "before_mm": [
+        76.0,
+        4.0
+      ],
+      "after_mm": [
+        2,
+        71
+      ],
+      "delta_mm": [
+        -74.0,
+        67.0
+      ],
+      "rule_area_uuid": "8fe7907f-db7d-47cf-a170-a27addf0884e"
+    },
+    {
+      "ref": "H4",
+      "before_mm": [
+        76.0,
+        71.0
+      ],
+      "after_mm": [
+        76,
+        71
+      ],
+      "delta_mm": [
+        0.0,
+        0.0
+      ],
+      "rule_area_uuid": "cc7d7afa-2e00-41a4-88bd-b9bd8ea8cee7"
+    }
+  ],
+  "changed_drawings": [
+    {
+      "uuid": "79464a9c-fd33-45e3-9b00-5a1d5d14cca2",
+      "kind": "GND_label",
+      "layer": "F.Silkscreen"
+    },
+    {
+      "uuid": "f4420a8a-dd94-49bb-a535-6909bd1e7882",
+      "kind": "GND_label",
+      "layer": "B.Silkscreen"
+    },
+    {
+      "uuid": "87582531-e28c-518a-a069-cd8edd8be8d8",
+      "kind": "white_mounting_ring",
+      "ref": "H2",
+      "layer": "F.Silkscreen"
+    },
+    {
+      "uuid": "28697153-4e7c-5544-90e4-4b8db6b2bda1",
+      "kind": "white_mounting_ring",
+      "ref": "H2",
+      "layer": "B.Silkscreen"
+    },
+    {
+      "uuid": "e0db7f90-57db-5fe2-a8b7-cfd738a199c7",
+      "kind": "white_mounting_ring",
+      "ref": "H3",
+      "layer": "F.Silkscreen"
+    },
+    {
+      "uuid": "1d6275d9-f75d-5843-ad32-085814e0357c",
+      "kind": "white_mounting_ring",
+      "ref": "H3",
+      "layer": "B.Silkscreen"
+    },
+    {
+      "uuid": "20288566-2c7e-5372-9402-7b1d5ac03031",
+      "kind": "white_mounting_ring",
+      "ref": "H4",
+      "layer": "F.Silkscreen"
+    },
+    {
+      "uuid": "42e725c7-f0d3-574d-bbe2-67de1a511aaf",
+      "kind": "white_mounting_ring",
+      "ref": "H4",
+      "layer": "B.Silkscreen"
+    }
+  ],
+  "track_via_objects_unchanged": 3986,
+  "non_Core_mount_pads_unchanged": true,
+  "OrangePi_H5_H8_unchanged": true,
+  "new_pitch_mm": [
+    74,
+    71
+  ],
+  "new_centres_mm": {
+    "H1": [
+      2,
+      0
+    ],
+    "H2": [
+      76,
+      0
+    ],
+    "H3": [
+      2,
+      71
+    ],
+    "H4": [
+      76,
+      71
+    ]
+  },
+  "board_outline_mm": [
+    [
+      -2,
+      -4
+    ],
+    [
+      80,
+      75
+    ]
+  ],
+  "centre_inset_from_each_straight_edge_mm": 4,
+  "H1_retained": {
+    "main_drill_mm": 2.7,
+    "exposed_copper_annulus_outer_mm": 5.4,
+    "eight_stitch_PTH_drill_mm": 0.5,
+    "stitch_copper_diameter_mm": 0.8,
+    "stitch_circle_radius_mm": 2.025
+  },
+  "MOSS_logo_and_byline_unchanged": true,
+  "project_and_custom_rules_unchanged": true,
+  "native_refill_completed": true,
+  "hull_mount_pattern_update_required_after_board_review": true,
+  "initial_candidate_sha256": "23902df03b7f927e88ff95eb70877a03d103497a0b000144ed716813501def4a",
+  "additional_annotation_only": {
+    "uuid": "1fd8049e-0823-526e-a132-08e4591880c6",
+    "text": "J10 | 1 GND | 2 +",
+    "before_mm": [
+      8,
+      -1.5
+    ],
+    "after_mm": [
+      11.5,
+      -1.5
+    ],
+    "final_bbox_mm": [
+      5.221666,
+      -2.23125,
+      17.778335,
+      -0.76875
+    ],
+    "all_other_objects_exactly_preserved_vs_initial_mount_candidate": true
+  },
+  "native_DRC_final": {
+    "report": "DRC_FINAL.json",
+    "errors": 0,
+    "unconnected_items": 0,
+    "same_original_reviewed_warnings": 2
+  },
+  "new_mount_centres_world_mm": {
+    "H1": [
+      -76,
+      37,
+      10
+    ],
+    "H2": [
+      -2,
+      37,
+      10
+    ],
+    "H3": [
+      -76,
+      -34,
+      10
+    ],
+    "H4": [
+      -2,
+      -34,
+      10
+    ]
+  },
+  "original_mounting_variant_sha256": "14aa8760d646ee0e3e36964cad0ea4a8e3336cd2288a2042369a42388a0e8f96",
+  "board_sha256": "7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14",
+  "final_board_sha256": "7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14",
+  "source_untouched_scope": "The archived pre-mounting baseline is preserved; current design intentionally includes the mounting change.",
+  "post_mounting_silkscreen_only_update": {
+    "source_sha256": "14aa8760d646ee0e3e36964cad0ea4a8e3336cd2288a2042369a42388a0e8f96",
+    "final_board_sha256": "7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14",
+    "only_eight_silkscreen_circle_blocks_changed": true,
+    "electrical_pads_holes_copper_models_and_other_labels_exactly_preserved": true,
+    "rings": [
+      {
+        "ref": "H5",
+        "layer": "F.SilkS",
+        "uuid": "b155aaa9-8d6a-5dfa-94d1-e37752b72a27",
+        "centre_mm": [
+          11.0,
+          12.5
+        ],
+        "outer_diameter_mm": 4.2,
+        "inner_diameter_mm": 3.0,
+        "stroke_mm": 0.6,
+        "hole_diameter_mm": 2.7,
+        "ink_to_hole_gap_mm": 0.15
+      },
+      {
+        "ref": "H5",
+        "layer": "B.SilkS",
+        "uuid": "b4a0efe0-e8ac-5ede-988b-e0565878af75",
+        "centre_mm": [
+          11.0,
+          12.5
+        ],
+        "outer_diameter_mm": 4.2,
+        "inner_diameter_mm": 3.0,
+        "stroke_mm": 0.6,
+        "hole_diameter_mm": 2.7,
+        "ink_to_hole_gap_mm": 0.15
+      },
+      {
+        "ref": "H6",
+        "layer": "F.SilkS",
+        "uuid": "a5bc657f-bb5a-588f-8e01-4c1ebc786a7f",
+        "centre_mm": [
+          69.0,
+          12.5
+        ],
+        "outer_diameter_mm": 4.2,
+        "inner_diameter_mm": 3.0,
+        "stroke_mm": 0.6,
+        "hole_diameter_mm": 2.7,
+        "ink_to_hole_gap_mm": 0.15
+      },
+      {
+        "ref": "H6",
+        "layer": "B.SilkS",
+        "uuid": "805aaa3e-8ce1-5b41-9b29-50ff67a4b5c5",
+        "centre_mm": [
+          69.0,
+          12.5
+        ],
+        "outer_diameter_mm": 4.2,
+        "inner_diameter_mm": 3.0,
+        "stroke_mm": 0.6,
+        "hole_diameter_mm": 2.7,
+        "ink_to_hole_gap_mm": 0.15
+      },
+      {
+        "ref": "H7",
+        "layer": "F.SilkS",
+        "uuid": "ad3f3389-88b3-5e84-9cbe-6620e71ab7f4",
+        "centre_mm": [
+          11.0,
+          35.5
+        ],
+        "outer_diameter_mm": 4.2,
+        "inner_diameter_mm": 3.0,
+        "stroke_mm": 0.6,
+        "hole_diameter_mm": 2.7,
+        "ink_to_hole_gap_mm": 0.15
+      },
+      {
+        "ref": "H7",
+        "layer": "B.SilkS",
+        "uuid": "ad8eb792-4a72-50d1-b69c-73915d5dc298",
+        "centre_mm": [
+          11.0,
+          35.5
+        ],
+        "outer_diameter_mm": 4.2,
+        "inner_diameter_mm": 3.0,
+        "stroke_mm": 0.6,
+        "hole_diameter_mm": 2.7,
+        "ink_to_hole_gap_mm": 0.15
+      },
+      {
+        "ref": "H8",
+        "layer": "F.SilkS",
+        "uuid": "dfa06f43-2d17-578a-ac35-26a515669be8",
+        "centre_mm": [
+          69.0,
+          35.5
+        ],
+        "outer_diameter_mm": 4.2,
+        "inner_diameter_mm": 3.0,
+        "stroke_mm": 0.6,
+        "hole_diameter_mm": 2.7,
+        "ink_to_hole_gap_mm": 0.15
+      },
+      {
+        "ref": "H8",
+        "layer": "B.SilkS",
+        "uuid": "9ca9404a-b470-5cf4-9bae-177cc001fea7",
+        "centre_mm": [
+          69.0,
+          35.5
+        ],
+        "outer_diameter_mm": 4.2,
+        "inner_diameter_mm": 3.0,
+        "stroke_mm": 0.6,
+        "hole_diameter_mm": 2.7,
+        "ink_to_hole_gap_mm": 0.15
+      }
+    ]
+  },
+  "hull_compatibility": {
+    "status": "HULL_MOUNT_PATTERN_UPDATE_REQUIRED",
+    "old_hull_compatible": false,
+    "unchanged_old_post": "H4",
+    "old_post_coordinates_pcb_mm": {
+      "H1": [
+        4,
+        4
+      ],
+      "old_bottom_left": [
+        4,
+        71
+      ],
+      "old_top_right": [
+        76,
+        4
+      ],
+      "H4": [
+        76,
+        71
+      ]
+    },
+    "new_core_mounts_pcb_mm": {
+      "H1": [
+        2,
+        0
+      ],
+      "H2": [
+        76,
+        0
+      ],
+      "H3": [
+        2,
+        71
+      ],
+      "H4": [
+        76,
+        71
+      ]
+    },
+    "scope": "Three old hull posts must be repositioned. The hull update is explicitly planned and has not been performed or qualified by this evidence refresh. Historical zero-volume board/hull and cable/hull tests must not be read as proof of compatibility with the new mounting pattern."
+  }
+}

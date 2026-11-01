@@ -1,8 +1,8 @@
 {
   "input": "MOSS_Core_V07_Prototype.kicad_pcb",
-  "input_sha256": "9f0ef9f1bc34934417560cd6f2751c714f3643d7959bae822c8b48c13b259b03",
+  "input_sha256": "7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14",
   "basis": "MOSS_Core_V07_Prototype.kicad_pcb",
-  "basis_sha256": "45393c53f2a5f16e4885e2bd2f766b835087a85ed1fa03437e2002f047716999",
+  "basis_sha256": "9f0ef9f1bc34934417560cd6f2751c714f3643d7959bae822c8b48c13b259b03",
   "checks": {
     "critical_usb_switching_kelvin_exact": true,
     "all_checked_net_pads_connected": true,
@@ -212,7 +212,7 @@
       },
       {
         "region": 3,
-        "area_mm2": 5066.83313866853,
+        "area_mm2": 5079.420370628879,
         "bounds_mm": [
           0.3,
           -3.6995,
@@ -993,32 +993,32 @@
           {
             "uuid": "2b538003-072d-49ab-90b5-f264383fffce",
             "pad": "H1.1",
-            "contact_mm2": 0.3060952831999999
+            "contact_mm2": 0.02376228326591049
           },
           {
             "uuid": "c2c8a20a-86c0-4069-ace3-8f758e6d2884",
             "pad": "H1.1",
-            "contact_mm2": 0.3060952831999999
+            "contact_mm2": 0.25192963240181554
           },
           {
             "uuid": "76954f57-9171-4521-b142-ab7693be9c5f",
             "pad": "H1.1",
-            "contact_mm2": 0.3060952832
+            "contact_mm2": 0.25192963240181554
           },
           {
             "uuid": "942ad247-5b74-4a61-ba58-0353245fcb10",
             "pad": "H1.1",
-            "contact_mm2": 0.3060952832000001
+            "contact_mm2": 0.3060952831999999
           },
           {
             "uuid": "94a4180c-086d-48d7-8f15-977cd2a358c9",
             "pad": "H1.1",
-            "contact_mm2": 17.175270832364006
+            "contact_mm2": 14.255477907082035
           },
           {
             "uuid": "02057c56-b0e4-4d9e-86c4-32b6ca54d49e",
             "pad": "H1.1",
-            "contact_mm2": 0.30609528320000035
+            "contact_mm2": 0.30609528320000007
           },
           {
             "uuid": "5a590a2e-448a-4273-a269-53f8929ccc0d",
@@ -1028,12 +1028,12 @@
           {
             "uuid": "3f5340fb-80df-4436-a253-e75b45a77749",
             "pad": "H1.1",
-            "contact_mm2": 0.3060952831999998
+            "contact_mm2": 0.30609528320000023
           },
           {
             "uuid": "4adbce28-8664-4b6d-a9af-e7778544fb4d",
             "pad": "H1.1",
-            "contact_mm2": 0.3060952832
+            "contact_mm2": 0.3060952831999999
           },
           {
             "uuid": "ef547470-cccb-4a7b-b795-2ba7faeb60e3",
@@ -1478,7 +1478,7 @@
       },
       {
         "region": 10,
-        "area_mm2": 4176.326872174666,
+        "area_mm2": 4188.914104124648,
         "bounds_mm": [
           0.3,
           -3.6995,
@@ -2094,32 +2094,32 @@
           {
             "uuid": "2b538003-072d-49ab-90b5-f264383fffce",
             "pad": "H1.1",
-            "contact_mm2": 0.3060952831999999
+            "contact_mm2": 0.02376228326591049
           },
           {
             "uuid": "c2c8a20a-86c0-4069-ace3-8f758e6d2884",
             "pad": "H1.1",
-            "contact_mm2": 0.3060952831999999
+            "contact_mm2": 0.25192963240181554
           },
           {
             "uuid": "76954f57-9171-4521-b142-ab7693be9c5f",
             "pad": "H1.1",
-            "contact_mm2": 0.3060952832
+            "contact_mm2": 0.25192963240181554
           },
           {
             "uuid": "942ad247-5b74-4a61-ba58-0353245fcb10",
             "pad": "H1.1",
-            "contact_mm2": 0.3060952832000001
+            "contact_mm2": 0.3060952831999999
           },
           {
             "uuid": "94a4180c-086d-48d7-8f15-977cd2a358c9",
             "pad": "H1.1",
-            "contact_mm2": 17.175270832364006
+            "contact_mm2": 14.255477907082035
           },
           {
             "uuid": "02057c56-b0e4-4d9e-86c4-32b6ca54d49e",
             "pad": "H1.1",
-            "contact_mm2": 0.30609528320000035
+            "contact_mm2": 0.30609528320000007
           },
           {
             "uuid": "5a590a2e-448a-4273-a269-53f8929ccc0d",
@@ -2129,12 +2129,12 @@
           {
             "uuid": "3f5340fb-80df-4436-a253-e75b45a77749",
             "pad": "H1.1",
-            "contact_mm2": 0.3060952831999998
+            "contact_mm2": 0.30609528320000023
           },
           {
             "uuid": "4adbce28-8664-4b6d-a9af-e7778544fb4d",
             "pad": "H1.1",
-            "contact_mm2": 0.3060952832
+            "contact_mm2": 0.3060952831999999
           },
           {
             "uuid": "ef547470-cccb-4a7b-b795-2ba7faeb60e3",
@@ -2333,7 +2333,7 @@
     "MOTOR_L_RETURN": {
       "before": {
         "minimum_track_width_mm": 1.2,
-        "total_track_length_mm": 63.14284989122459,
+        "total_track_length_mm": 63.37716446627535,
         "via_diameter_drill_mm": [
           [
             1.1,
@@ -2367,7 +2367,7 @@
           ]
         ]
       },
-      "length_delta_mm": 0.23431457505076025
+      "length_delta_mm": 0.0
     },
     "MOTOR_R_RETURN": {
       "before": {
@@ -2807,7 +2807,7 @@
     "BAT_PROTECTED": {
       "before": {
         "minimum_track_width_mm": 0.25,
-        "total_track_length_mm": 217.0990751480015,
+        "total_track_length_mm": 227.5990751480015,
         "via_diameter_drill_mm": [
           [
             0.6,
@@ -2905,7 +2905,7 @@
           ]
         ]
       },
-      "length_delta_mm": 10.5
+      "length_delta_mm": 0.0
     },
     "ACTUATOR_SW": {
       "before": {
@@ -3417,13 +3417,11 @@
     }
   },
   "changed_footprint_refs": [
-    "J5",
-    "J7",
     "J20",
+    "H1",
+    "H3",
     "J1",
-    "J10",
-    "R49",
-    "C22"
+    "H2"
   ],
   "non_octilinear_tracks": [],
   "native_errors": [],
@@ -3436,5 +3434,22 @@
     "Native stored geometry and saved zone fills only; no board mutation, router, hardware or thermal test.",
     "All separate ground regions are disclosed; annular ties establish DC connectivity, not EMC or high-frequency return impedance.",
     "Manufacturer part/drawing match is documented by the component contracts; no new electrical protection certification."
-  ]
+  ],
+  "geometry_validation_basis": {
+    "review": "POWER_AND_GROUND_FINAL.json",
+    "review_sha256": "0cef3a2c7a9603059d059c6c31f4fe0db59162e21691118f84d2ded66e2d2caf",
+    "reviewed_board_sha256": "14aa8760d646ee0e3e36964cad0ea4a8e3336cd2288a2042369a42388a0e8f96",
+    "native_and_annular_checks_not_rerun": true
+  },
+  "ink_only_equivalence": {
+    "proof": "OPI_RING_CHANGE.json",
+    "proof_sha256": "d5c7d6ec635d8639f4dc3bb26b3cf83fddd40431bd2c770d79fdd20f6c9d6c71",
+    "source_board_sha256": "14aa8760d646ee0e3e36964cad0ea4a8e3336cd2288a2042369a42388a0e8f96",
+    "final_board_sha256": "7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14",
+    "exact_changed_circle_count": 8,
+    "all_other_top_level_native_blocks_verified_exactly_equal": true,
+    "scope": "H5-H8 silkscreen only: outer4.2mm, inner3.0mm, stroke0.6mm. Pads, holes, copper, zone fills, models and other labels unchanged."
+  },
+  "checks_origin": "Native power/connectivity/ground-annulus checks were performed on14aa; the exact eight-circle-only equivalence preserves those electrical results for7d88. Final silkscreen DRC/warning counts are authoritative in CHECKS.json and DRC.json.",
+  "native_warnings_scope": "Counts retained from the14aa validation baseline; final silkscreen counts are recorded separately in CHECKS.json."
 }
