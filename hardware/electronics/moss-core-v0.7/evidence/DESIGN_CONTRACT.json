@@ -1,10 +1,10 @@
 {
   "status": "PASS",
   "file_hashes": {
-    "electrical/MOSS_Core_V07_Prototype.kicad_pcb": "456219f7eb97119b7e4328ed76f150012619131788f42d3a9d21fc4e40859cdb",
+    "electrical/MOSS_Core_V07_Prototype.kicad_pcb": "4f456f0563e9dc5a3b7cbab98eaa8d9f24485d14dc79a7656af5ab04b983b6b1",
     "electrical/circuit.json": "80aceb62b867a158efafe1cccc0763384479b2f619c79f407a8b722f2816ec69",
-    "electrical/BOM_PCBWAY_ASSEMBLY.json": "71da646b3510c4bde3c74a2439709639ef2d049ae413256dcd4d535723bcaf92",
-    "evidence/NETLIST.xml": "27c084d1fbab63de8406f9647e1f8d1f9ee7b7c1bb00c568e4da15ae0adb4aa8"
+    "electrical/BOM_PCBWAY_ASSEMBLY.json": "839e01073b6a335dcfb4fd190e032e41c16d86785f60f05f1ccca957accfa4c2",
+    "evidence/NETLIST.xml": "ed90f9dd85748446c873a69aaf9864c0a9e95c02d4e0fd148efccc4cb9d734e6"
   },
   "native_footprints": 230,
   "assembled_components": 216,

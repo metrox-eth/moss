@@ -1,0 +1,107 @@
+{
+  "status": "PASS",
+  "protected_outputs": [
+    {
+      "file": "MOSS_Core_V07_Prototype-B_Cu.gbl",
+      "baseline_sha256": "09af4d4347dc155a101d9e2215a2bffaf6e1eaadb499bc91c01cc09c28640d41",
+      "candidate_sha256": "1d2572e1b49e6b9e06529aba83fb0e935fa7de049f00f96f7bf0065800a8173d",
+      "non_timestamp_content_byte_identical": true,
+      "geometry_and_aperture_operations_identical": true,
+      "verified_route_block_relocation": null
+    },
+    {
+      "file": "MOSS_Core_V07_Prototype-B_Mask.gbs",
+      "baseline_sha256": "1134640a01acd015b89950d0fddcc2dec6e8be210cc31139c0ae879fba30166f",
+      "candidate_sha256": "b3e66a7ccf7f5f309d679a3c2f9729f6d23554b5b39f90b024f6068940f42970",
+      "non_timestamp_content_byte_identical": true,
+      "geometry_and_aperture_operations_identical": true,
+      "verified_route_block_relocation": null
+    },
+    {
+      "file": "MOSS_Core_V07_Prototype-B_Paste.gbp",
+      "baseline_sha256": "fcddae47afc15c907c5391a606be280255644ac5f6793860ff6b3206a96e16b4",
+      "candidate_sha256": "f460a503c1d5e0d9869d827731dc6618b4981de9302517170874ac7ec9d4313f",
+      "non_timestamp_content_byte_identical": true,
+      "geometry_and_aperture_operations_identical": true,
+      "verified_route_block_relocation": null
+    },
+    {
+      "file": "MOSS_Core_V07_Prototype-Edge_Cuts.gm1",
+      "baseline_sha256": "0335044ee6eb11fdc298addb790b2b2f05b51ecb02e3bd22f61dd2d6e6f132c0",
+      "candidate_sha256": "9c7167ccbd462661b90f385379cee6206cfbd168811f3d5aae0becdca653dac5",
+      "non_timestamp_content_byte_identical": true,
+      "geometry_and_aperture_operations_identical": true,
+      "verified_route_block_relocation": null
+    },
+    {
+      "file": "MOSS_Core_V07_Prototype-F_Cu.gtl",
+      "baseline_sha256": "7c21fbc3e43f1c077178477ade7821d9ac7a06131479a06f2f63a98742a7e5dd",
+      "candidate_sha256": "0c92f7d59512b3ec6caf400624ed62763e12a6216e92b69e7d6d2f18a3e056ac",
+      "non_timestamp_content_byte_identical": false,
+      "geometry_and_aperture_operations_identical": true,
+      "verified_route_block_relocation": {
+        "net_attribute": "%TO.N,BUCK_FB*%",
+        "aperture": "D97*",
+        "complete_line_segments": 8,
+        "block_sha256": "079a1606b8a84fa0ab8cc305dd66e7b3b083cf745c64f91af50b5f16f83b9fe7",
+        "context": {
+          "polarity": "%LPD*%",
+          "interpolation": "G01*",
+          "format": "%FSLAX46Y46*%",
+          "region": null
+        },
+        "reason": "One identical self-contained route block changed output order. All other non-timestamp content is identical."
+      }
+    },
+    {
+      "file": "MOSS_Core_V07_Prototype-F_Mask.gts",
+      "baseline_sha256": "287b8aab613bd63b50f5bcfe2ba0e68ffae0ef01079bc2e97bec4c5028c1c62f",
+      "candidate_sha256": "8ff411b6eadca65195ca80d759f54822cc887d7e17430e2434fc84f0a5eedae3",
+      "non_timestamp_content_byte_identical": true,
+      "geometry_and_aperture_operations_identical": true,
+      "verified_route_block_relocation": null
+    },
+    {
+      "file": "MOSS_Core_V07_Prototype-F_Paste.gtp",
+      "baseline_sha256": "eb6e188bd64a15cf51794b16150b257265163fc742d6685c8d9afd21be9aa94e",
+      "candidate_sha256": "a0fc45b085c16b4958531e5aaf889ee5a65e05472d97121e8fdafb17aff40e5d",
+      "non_timestamp_content_byte_identical": true,
+      "geometry_and_aperture_operations_identical": true,
+      "verified_route_block_relocation": null
+    },
+    {
+      "file": "MOSS_Core_V07_Prototype-In1_Cu.g1",
+      "baseline_sha256": "9384838104daf9de3d8f4e5470ec98c89b59580ac6ed394afecdc7d2e360535e",
+      "candidate_sha256": "49930259615651fe12ebf2eff305c8c08c3760833a66857279283364ed161d63",
+      "non_timestamp_content_byte_identical": true,
+      "geometry_and_aperture_operations_identical": true,
+      "verified_route_block_relocation": null
+    },
+    {
+      "file": "MOSS_Core_V07_Prototype-In2_Cu.g2",
+      "baseline_sha256": "ba7f3817e6d11efe060ae31cb5c43ef4d1a86eec443c24e801535a7d60e9ae1f",
+      "candidate_sha256": "ad7aaf5bb96b4c8e66fcf46d02541c5fd427d1d1796cc01378f3967df6fe5bd1",
+      "non_timestamp_content_byte_identical": true,
+      "geometry_and_aperture_operations_identical": true,
+      "verified_route_block_relocation": null
+    },
+    {
+      "file": "MOSS_Core_V07_Prototype-NPTH.drl",
+      "baseline_sha256": "4d93270188f7d33881a014af69ec378b71fdd8827639fc0137dfc5e45d6c09a1",
+      "candidate_sha256": "5666e5175dafe38e3feef9a331ad68b77ed80b3f5942420f97ea3e2c3e7caed4",
+      "non_timestamp_content_byte_identical": true,
+      "geometry_and_aperture_operations_identical": true,
+      "verified_route_block_relocation": null
+    },
+    {
+      "file": "MOSS_Core_V07_Prototype-PTH.drl",
+      "baseline_sha256": "62f3bafeb27e074f261838854cc7814e3736687443d706a655a1857bf656c6ec",
+      "candidate_sha256": "1ac5c1198869d4bdc7e64b13146e294e3e116cafe8b3f8837c93923d799371fc",
+      "non_timestamp_content_byte_identical": true,
+      "geometry_and_aperture_operations_identical": true,
+      "verified_route_block_relocation": null
+    }
+  ],
+  "gerber_job_unchanged_except_timestamp": true,
+  "scope": "Copper, solder mask, paste, outline, plated and non-plated drills and Gerber job compared; exporter creation timestamps ignored. One relocated self-contained block of complete absolute line segments may be accepted only with identical drawing state, exact block bytes and otherwise identical content; it is separately reported. Printed legend files intentionally differ. This does not constitute hardware qualification."
+}

@@ -1,0 +1,4066 @@
+{
+  "status": "PASS_NEW_INK_OPENING_CHECK",
+  "board_sha256": "4f456f0563e9dc5a3b7cbab98eaa8d9f24485d14dc79a7656af5ab04b983b6b1",
+  "layout_sha256": "89468bce8167e96b60637a9c2ca21d8b0aaa7072fff6f45c46c964c6065d31ca",
+  "script_sha256": "83186501bd6add5745e82953e38804fb893f699a4e4b5db83941c35a0a3ef3be",
+  "method": "Native TransformTextToPolySet strokes and native pad/mask shapes, including common openings and untented vias; no full-text bounding-box clearance substitution.",
+  "minimum_required_clearance_mm": 0.15,
+  "native_polygon_error_mm": 5e-05,
+  "rounding_and_two_polygon_errors_mm": 0.000102,
+  "conservative_mask_graphic_bbox_fallback_uuids": [],
+  "opening_source_counts": {
+    "F.Silkscreen": {
+      "pad_apertures": 617,
+      "mask_graphics": 6,
+      "untented_vias": 0
+    },
+    "B.Silkscreen": {
+      "pad_apertures": 234,
+      "mask_graphics": 4,
+      "untented_vias": 0
+    }
+  },
+  "objects_checked": [
+    {
+      "kind": "native_reference",
+      "reference": "R77",
+      "uuid": "b91299a7-1cfd-455f-bceb-11f67c886ab8",
+      "text": "R77",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.30019786435841583,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        71.415421,
+        57.775697,
+        73.584611,
+        58.725892
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C2",
+      "uuid": "70ab5869-5d5b-43ad-bc89-4521f6f8897d",
+      "text": "C2",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20191938779621763,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        69.796331,
+        30.975697,
+        71.203669,
+        31.925893
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "TP2",
+      "uuid": "3018789e-d23e-41ab-b62c-038791044f44",
+      "text": "TP2",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.7854215479422504,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        70.225426,
+        67.025097,
+        72.318431,
+        67.975245
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R31",
+      "uuid": "25fa54e6-798b-462a-a87e-447be95c1d87",
+      "text": "R31",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20070736367117084,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        29.434521,
+        7.624097,
+        31.565573,
+        8.574293
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "J4",
+      "uuid": "72b03f85-c556-40a1-b9f8-c770f697a8f5",
+      "text": "J4",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 1.421334445790997,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        -1.644144,
+        56.25352,
+        -0.655854,
+        57.546478
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R143",
+      "uuid": "f8718659-cf71-4d2c-b5b7-564582d446b2",
+      "text": "R143",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.3966246741807674,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        3.281269,
+        14.005903,
+        6.174274,
+        14.994193
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "U5",
+      "uuid": "d1e916e2-3ecd-4f35-b7fa-73c24e632cde",
+      "text": "U5",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20077893072901676,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        14.575778,
+        4.024899,
+        15.983116,
+        4.975093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R48",
+      "uuid": "b9e9b705-e41d-429d-8036-b1fca3a724fd",
+      "text": "R48",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.2443531101500445,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        10.693121,
+        65.505902,
+        12.824221,
+        66.494192
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "TP6",
+      "uuid": "2bb340fe-e032-4091-9233-54d814a9d6af",
+      "text": "TP6",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.19660700000000023,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        59.453326,
+        52.225697,
+        61.546331,
+        53.175893
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "U60",
+      "uuid": "6b28bdff-5651-47d9-8f7c-391e4b354ef1",
+      "text": "U60",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20070699999999775,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        34.715426,
+        22.049097,
+        36.884668,
+        22.999293
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C170",
+      "uuid": "dda0187a-6dcb-4be5-9ad0-87c605e8f13c",
+      "text": "C170",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20062699999999722,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        48.158226,
+        23.624897,
+        51.089373,
+        24.575093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "U11",
+      "uuid": "de0bcc23-2030-4e16-854e-1496aa08020c",
+      "text": "U11",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 1.3526994285686658,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        34.315526,
+        7.39911,
+        36.484721,
+        8.349293
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R210",
+      "uuid": "9be5475a-411c-4489-91ae-064d43307627",
+      "text": "R210",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20046899999999823,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        23.425469,
+        24.524897,
+        26.318473,
+        25.475093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C163",
+      "uuid": "061e626a-5db6-46d6-b3e8-85822778ec7a",
+      "text": "C163",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.21306077246871136,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        30.534426,
+        26.725697,
+        33.465574,
+        27.675893
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R214",
+      "uuid": "e364ee78-32c1-4458-ad8f-a23c3612c64c",
+      "text": "R214",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.35364075273785883,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        33.534469,
+        20.425703,
+        36.465522,
+        21.413992
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R19",
+      "uuid": "3411dcd8-7c52-4f6e-b3fa-16389927679c",
+      "text": "R19",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.35070765472770454,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        24.434321,
+        57.224097,
+        26.565421,
+        58.174293
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R213",
+      "uuid": "152ea73d-b1e6-49d9-a9ab-2a6b7988e726",
+      "text": "R213",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20046967410970654,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        36.425469,
+        16.124896,
+        39.318474,
+        17.075092
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "D5",
+      "uuid": "4a099b02-c793-4e32-b164-db9826d8b2c9",
+      "text": "D5",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20047399999999982,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        29.050474,
+        65.524898,
+        30.419669,
+        66.475093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C7",
+      "uuid": "f752ecb9-5c25-432f-8b7e-3002b7b37888",
+      "text": "C7",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.2006310000000013,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        56.925631,
+        49.824897,
+        58.371059,
+        50.775093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R13",
+      "uuid": "0f2cbab9-220c-46ee-b830-02a420063d27",
+      "text": "R13",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.2004210000000004,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        14.425421,
+        7.024897,
+        16.556521,
+        7.975093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R29",
+      "uuid": "5727c3e9-6b1b-4df1-a828-7d8f408bb636",
+      "text": "R29",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.3507076547277016,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        51.434321,
+        1.224097,
+        53.565421,
+        2.174293
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C45",
+      "uuid": "c6d41181-1d67-414d-9df4-83e95405e7da",
+      "text": "C45",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.2009029999999967,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        72.915346,
+        50.085855,
+        75.084589,
+        51.074145
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C19",
+      "uuid": "ae09e62a-fc9e-4613-8ba0-c7cb1ec37c1c",
+      "text": "C19",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20075500000000088,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        60.915378,
+        7.624097,
+        63.084621,
+        8.574293
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C86",
+      "uuid": "7b101be2-795e-4c06-9f06-6865ff2ceade",
+      "text": "C86",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20077954370770426,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        15.279978,
+        34.524897,
+        17.449221,
+        35.475093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R93",
+      "uuid": "81745cd5-ceb1-4ebb-a1a5-1d3ceaf6f857",
+      "text": "R93",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.3899866290489975,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        10.043121,
+        63.524897,
+        12.174221,
+        64.475093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C122",
+      "uuid": "f0d60e82-e5e6-40c5-ad25-3bbe0ca5cf84",
+      "text": "C122",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.2007259999999995,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        16.543126,
+        48.764897,
+        19.474274,
+        49.715093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C85",
+      "uuid": "12a0e90a-3262-4311-a809-c816d7ee3bce",
+      "text": "C85",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20070742721457252,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        22.315378,
+        31.299097,
+        24.484621,
+        32.249293
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "U3",
+      "uuid": "7e534b87-2fa9-4e69-896b-e418a3578095",
+      "text": "U3",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.6007330037718971,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        66.446378,
+        31.400733,
+        67.853716,
+        32.350893
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "J2",
+      "uuid": "d4893ae9-4955-42c9-9131-abd3e81f4227",
+      "text": "J2",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 1.9712826131155676,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        39.872421,
+        -2.370902,
+        41.127331,
+        -1.420707
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R35",
+      "uuid": "67f995ba-fa37-460c-9813-8f358d08dbf9",
+      "text": "R35",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20922200000000046,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        60.549997,
+        8.959678,
+        61.500193,
+        11.090778
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R27",
+      "uuid": "92044feb-1cd0-4883-9a40-5c6bb3235d16",
+      "text": "R27",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.35069779389689665,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        47.915421,
+        13.325697,
+        50.084611,
+        14.275892
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "D1",
+      "uuid": "5831d8fb-1c90-4eaa-82a2-d8678afa882d",
+      "text": "D1",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.2006980000000027,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        71.700698,
+        39.065378,
+        72.650893,
+        40.434525
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C81",
+      "uuid": "17a06094-a4e2-4f4b-93d0-753c157db44b",
+      "text": "C81",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.200678440741546,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        37.150678,
+        54.024897,
+        39.319873,
+        54.975093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "U42",
+      "uuid": "bb024d2c-cbcc-413f-8148-4ba176426669",
+      "text": "U42",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20072599999998886,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        65.600726,
+        16.005903,
+        67.769969,
+        16.994193
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C4",
+      "uuid": "e37fb878-b82b-4c2a-a830-39233a7db65d",
+      "text": "C4",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.2007078975267603,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        57.877431,
+        18.161003,
+        59.322817,
+        19.149293
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R102",
+      "uuid": "60c617aa-33ea-4072-9aa2-e444690d7bbd",
+      "text": "R102",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.2006969999999981,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        30.453369,
+        47.425697,
+        33.346374,
+        48.375893
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "U20",
+      "uuid": "64e28839-4f01-497f-b959-4b4c383d6f93",
+      "text": "U20",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20070719544544047,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        54.049097,
+        46.415331,
+        54.999293,
+        48.584573
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C83",
+      "uuid": "69b1266a-4ff6-4cb3-aba4-5c9e11ac757c",
+      "text": "C83",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.2007795596757605,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        22.779978,
+        40.424897,
+        24.949221,
+        41.375093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R212",
+      "uuid": "6e8e25cb-a60a-4733-bf04-7d6c5b501d0e",
+      "text": "R212",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.3506979974633545,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        30.053369,
+        22.125697,
+        32.946374,
+        23.075892
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "H7",
+      "uuid": "b1e6075a-e482-4126-9ae1-9ffe7a02bda7",
+      "text": "H7",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 1.9524313798069892,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        10.277326,
+        38.800503,
+        11.722706,
+        39.750687
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "J5",
+      "uuid": "2ab749ad-3fe7-4dbb-958f-1192130ab7a3",
+      "text": "J5",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 2.5783038911943645,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        19.372421,
+        69.855799,
+        20.627331,
+        70.805993
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "L2",
+      "uuid": "ef31a47f-d451-4ba9-a6f9-4b49e066cc95",
+      "text": "L2",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 1.2356296249548306,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        29.191464,
+        31.349397,
+        30.408278,
+        32.299545
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R33",
+      "uuid": "4c76795f-bffb-4518-abc5-2014392eef0a",
+      "text": "R33",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.3506978401097643,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        42.934321,
+        13.325697,
+        45.065421,
+        14.275893
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R10",
+      "uuid": "04b22ea0-4360-4f01-bdb1-e2e97f0ef320",
+      "text": "R10",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20071049718471462,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        7.934321,
+        6.425697,
+        10.06542,
+        7.375893
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C43",
+      "uuid": "57ededb7-5db9-4beb-b14c-de35eda5a285",
+      "text": "C43",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.3077626126627489,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        75.240346,
+        49.485855,
+        77.409589,
+        50.474145
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "TP3",
+      "uuid": "c4ed2d4a-74db-4244-ad63-871083e83467",
+      "text": "TP3",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.7854803763124812,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        70.225426,
+        69.524897,
+        72.318431,
+        70.475093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C84",
+      "uuid": "95cce2a6-c1e8-47bb-9300-61ee7722d69d",
+      "text": "C84",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.1962309999999974,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        32.096478,
+        43.325703,
+        34.303769,
+        44.313993
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "U27",
+      "uuid": "833d2655-ae2c-4540-bd1d-bb7b8f620969",
+      "text": "U27",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20077400000000087,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        13.800726,
+        17.524897,
+        16.008059,
+        18.475093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "D7",
+      "uuid": "a664cd04-09dd-4712-8693-142b7ab4e2d9",
+      "text": "D7",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.39217400000000424,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        63.192174,
+        6.524898,
+        64.599459,
+        7.475092
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "J7",
+      "uuid": "41d1b887-bad9-47ef-92d6-a0ca71a5b7c7",
+      "text": "J7",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 2.010545560134091,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        72.748521,
+        66.610503,
+        74.041521,
+        67.560692
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R180",
+      "uuid": "a61f0d2b-6126-4530-b640-6e3a100ab577",
+      "text": "R180",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20062599999999975,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        14.824897,
+        48.000626,
+        15.775093,
+        50.89363
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "D21",
+      "uuid": "2a5be512-fe74-4884-858d-e04417d0eb2e",
+      "text": "D21",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20042100000000573,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        77.200421,
+        37.524897,
+        79.331473,
+        38.475092
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C41",
+      "uuid": "4e121a8a-b2b8-42e9-a573-416e1fec757d",
+      "text": "C41",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20075500000000088,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        58.915478,
+        45.086003,
+        61.084673,
+        46.074293
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "SW2",
+      "uuid": "e882f108-fb9a-46ed-9d49-f2369fe0d629",
+      "text": "SW2",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20078399999999874,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        60.015734,
+        70.724897,
+        62.299264,
+        71.675093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "U23",
+      "uuid": "64a9e1b7-54a9-4c61-95f2-230e92cc38be",
+      "text": "U23",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20074499999999773,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        30.415426,
+        55.525697,
+        32.584669,
+        56.475893
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C162",
+      "uuid": "3f9af618-c7bf-4834-82a5-bf24b21ec75d",
+      "text": "C162",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.22569700000000026,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        36.684426,
+        27.025697,
+        39.615574,
+        27.975893
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R74",
+      "uuid": "299e4826-21c7-48f8-9978-1137a4dfc4f2",
+      "text": "R74",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20042099999999863,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        55.925421,
+        29.005903,
+        58.094569,
+        29.994192
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R182",
+      "uuid": "402beaff-b7fd-48ec-984b-83c24607e593",
+      "text": "R182",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20072605706284913,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        13.981269,
+        38.874897,
+        16.874274,
+        39.825093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R28",
+      "uuid": "156ddfca-853f-4dbf-b369-46c6d621ed54",
+      "text": "R28",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20069729533025546,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        53.925697,
+        3.934578,
+        54.875893,
+        6.065678
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R25",
+      "uuid": "75b73e64-278f-487c-8a0e-4614201ac0a0",
+      "text": "R25",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20079729532846627,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        45.434321,
+        13.425797,
+        47.565421,
+        14.375993
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "F2",
+      "uuid": "b5ca773d-a8b4-425c-8231-7693d2073e79",
+      "text": "F2",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.8876714350619856,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        46.872417,
+        68.574397,
+        48.127326,
+        69.524545
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "J3",
+      "uuid": "0cb9f264-11a9-4e0a-aea2-2d041ce53f03",
+      "text": "J3",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 1.4458663188116672,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        -1.625066,
+        44.872687,
+        -0.674906,
+        46.127597
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R71",
+      "uuid": "6eab56f7-7041-4701-8778-3007a5149e43",
+      "text": "R71",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.21653857442735389,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        50.943521,
+        25.024997,
+        53.074573,
+        25.975192
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R4",
+      "uuid": "231b4367-b427-4983-ad01-e28c08349ef2",
+      "text": "R4",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20047399999999985,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        56.580474,
+        35.005903,
+        57.987717,
+        35.994192
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "TP1",
+      "uuid": "d65cc38a-d6d9-465e-9e3d-28588d83266a",
+      "text": "TP1",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.1966549999999998,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        61.953526,
+        52.225697,
+        64.046483,
+        53.175845
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "J20",
+      "uuid": "4aa6e9f9-98d9-4a6b-87a3-6fa139e20495",
+      "text": "J20",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.22539542453566394,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        75.726468,
+        18.029097,
+        77.743282,
+        18.979293
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C9",
+      "uuid": "2ba2696a-0c71-4f8c-acb6-13e39dd5b2a4",
+      "text": "C9",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.2006309999999996,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        13.425631,
+        1.024897,
+        14.832969,
+        1.975093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R73",
+      "uuid": "4312aa23-cf65-4b27-95e0-ebe83b27bff7",
+      "text": "R73",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.3506978401097628,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        58.734321,
+        31.125697,
+        60.865421,
+        32.075893
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R103",
+      "uuid": "5ee235b1-3a04-4037-b838-72999f03be7a",
+      "text": "R103",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20548168830221633,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        26.953369,
+        47.425697,
+        29.846374,
+        48.375893
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "J14",
+      "uuid": "eb2f5670-001b-4bdc-8975-037f27b52073",
+      "text": "J14",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.9710981529634289,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        28.922568,
+        67.011003,
+        30.977431,
+        67.999292
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "TP7",
+      "uuid": "9654aa49-e939-4692-b099-727fb395d440",
+      "text": "TP7",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.7525645972280391,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        61.934426,
+        46.324297,
+        64.065521,
+        47.274487
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R5",
+      "uuid": "2d93454f-4586-414e-bf8d-43a810b8c46e",
+      "text": "R5",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.38965554192388946,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        55.825474,
+        43.524897,
+        57.194669,
+        44.475093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "SW1",
+      "uuid": "44a526fb-02b7-4c46-aad2-5f507e431334",
+      "text": "SW1",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.7096207966540921,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        63.858434,
+        62.649097,
+        66.141916,
+        63.599293
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "TP5",
+      "uuid": "84265598-bcbf-4238-9637-27cac415411d",
+      "text": "TP5",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.7258450000000067,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        67.953326,
+        73.725797,
+        70.046331,
+        74.675993
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C1",
+      "uuid": "ae46d180-8eab-41e5-937f-88b69bc08d0d",
+      "text": "C1",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.3677373485152184,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        69.796431,
+        42.825697,
+        71.203721,
+        43.775893
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R37",
+      "uuid": "8fb5de50-5454-4211-b768-d12c0a19ef74",
+      "text": "R37",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.3896058352809902,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        68.825421,
+        3.524897,
+        70.994611,
+        4.475093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R24",
+      "uuid": "5ac3dc5b-7f94-4663-b6e6-d76bee5a8934",
+      "text": "R24",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20055512037672452,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        48.915421,
+        7.586203,
+        51.084569,
+        8.574492
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R6",
+      "uuid": "f25425f3-f44d-4766-9f3a-902eb15e9439",
+      "text": "R6",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20073160227669376,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        17.705074,
+        32.024897,
+        19.074269,
+        32.975093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R104",
+      "uuid": "f6825d4b-ec23-405c-b43c-1be39182e315",
+      "text": "R104",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.3094696045163281,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        29.034469,
+        50.025703,
+        31.965522,
+        51.013993
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C5",
+      "uuid": "21ec2a9b-dbe5-41d2-8996-bbac6a13366f",
+      "text": "C5",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20063117978584524,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        68.450631,
+        26.274897,
+        69.857969,
+        27.225093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R34",
+      "uuid": "7a720483-a174-4d36-b139-dfdfbd118f58",
+      "text": "R34",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.35075532171141866,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        42.915421,
+        8.686003,
+        45.084569,
+        9.674293
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R78",
+      "uuid": "d37adf8f-5fbe-4eae-961b-f35d2ce48860",
+      "text": "R78",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20042100000000573,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        76.425421,
+        58.524897,
+        78.556521,
+        59.475093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "U41",
+      "uuid": "af9c43c8-ccd5-4f57-8769-9d5821aba38c",
+      "text": "U41",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.3550538755154593,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        23.200703,
+        56.215278,
+        24.188993,
+        58.384473
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R3",
+      "uuid": "49eb53cf-c019-4bf0-9cbf-17e330016188",
+      "text": "R3",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20047399999999982,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        56.580474,
+        33.024897,
+        57.949669,
+        33.975093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C40",
+      "uuid": "7ff99060-8848-4bbf-a4f2-27958b0f4048",
+      "text": "C40",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20067799999999633,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        62.925678,
+        22.505903,
+        65.09492,
+        23.494193
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "F1",
+      "uuid": "7e88898d-03de-4b4a-bc75-8c73e407c854",
+      "text": "F1",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 1.4469100000000028,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        55.372617,
+        52.22191,
+        56.627478,
+        53.172045
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C23",
+      "uuid": "df33afe8-2613-4e8b-80cd-774f13de3755",
+      "text": "C23",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20069699999999813,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        65.165378,
+        51.425697,
+        67.334621,
+        52.375893
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R38",
+      "uuid": "b4b66f0a-7b8b-42d2-8e1c-36c9733908b7",
+      "text": "R38",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.3896058352809903,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        69.825421,
+        7.024897,
+        71.956521,
+        7.975093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R76",
+      "uuid": "1857f51a-effe-4e4e-8105-13c9f1cd70f5",
+      "text": "R76",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.4534796555336348,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        65.543121,
+        59.024897,
+        67.674221,
+        59.975093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C25",
+      "uuid": "3ac2c01e-74a9-4fe8-8b87-c70e5ac48caf",
+      "text": "C25",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20079700000000855,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        11.815378,
+        72.125797,
+        13.984621,
+        73.075993
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R181",
+      "uuid": "fb10496e-41df-4846-9bdd-c1d40d512d26",
+      "text": "R181",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20070700000000127,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        13.853569,
+        53.849097,
+        16.746526,
+        54.799293
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R30",
+      "uuid": "0def579d-860f-494d-b497-2f1c48ab5b07",
+      "text": "R30",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.48745859293300287,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        49.543221,
+        17.024897,
+        51.67432,
+        17.975093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C20",
+      "uuid": "1756f633-c776-44fb-8925-a4c854435405",
+      "text": "C20",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.23200974901056978,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        62.915378,
+        1.624097,
+        65.08462,
+        2.574293
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C11",
+      "uuid": "c2a60457-94e2-48e7-a0a4-4f9fd6e19719",
+      "text": "C11",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.17490727740618608,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        33.805378,
+        56.824897,
+        35.974573,
+        57.775093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C124",
+      "uuid": "577cc841-b199-4abd-a019-3a3aef7bc03c",
+      "text": "C124",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.35070380499403625,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        61.915526,
+        43.025703,
+        64.884722,
+        44.013993
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "U43",
+      "uuid": "e383d09d-fe60-4b12-9092-63322118cad9",
+      "text": "U43",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.8302422297335915,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        56.415426,
+        42.260703,
+        58.584669,
+        43.248993
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R111",
+      "uuid": "5751be5a-70ca-4c5d-8f95-8d2f7473308a",
+      "text": "R111",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20046899999999823,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        29.425469,
+        63.524997,
+        32.318426,
+        64.475192
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "J15",
+      "uuid": "79944399-5f03-4201-9aa4-63bbd7bc896c",
+      "text": "J15",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 2.800707888427763,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        37.841468,
+        67.049099,
+        39.858283,
+        67.999293
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C80",
+      "uuid": "85aca9af-1ba6-4b5c-a93d-189de23db786",
+      "text": "C80",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.2006969999999981,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        27.415378,
+        55.425697,
+        29.58462,
+        56.375893
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C164",
+      "uuid": "9d9175f2-7922-4b3f-9649-c0c6ec2bd378",
+      "text": "C164",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.2006264419957276,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        44.550626,
+        29.805903,
+        47.519822,
+        30.794193
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C168",
+      "uuid": "1991a148-1bb9-4c98-b18d-d1b4a9f8ce72",
+      "text": "C168",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20062599999999972,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        28.425626,
+        28.524897,
+        31.356774,
+        29.475093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "D22",
+      "uuid": "b70cb02e-8748-43be-931b-4d52177bef6c",
+      "text": "D22",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.5006973279588255,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        66.434321,
+        42.850697,
+        68.565421,
+        43.800892
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C160",
+      "uuid": "dd32b2ec-9a08-4d70-ae81-0f0e9ac549ed",
+      "text": "C160",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20070728435059787,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        40.534426,
+        14.799097,
+        43.465573,
+        15.749293
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "H6",
+      "uuid": "5f78bb36-2cf4-4bd1-9754-7ef7623c94f8",
+      "text": "H6",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 1.9550638059621335,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        68.296226,
+        15.800697,
+        69.703516,
+        16.750893
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C100",
+      "uuid": "2472dcc6-1dd6-471e-bf78-a743134fb2ea",
+      "text": "C100",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.2998974476494218,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        3.643226,
+        19.524897,
+        6.574373,
+        20.475093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C120",
+      "uuid": "0c872733-da11-4048-97ea-63479c45b043",
+      "text": "C120",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.35075499999999943,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        20.534426,
+        37.574097,
+        23.465573,
+        38.524293
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R26",
+      "uuid": "700e8651-b1ea-491b-8840-b80b086ac0ca",
+      "text": "R26",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.4534778666703262,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        52.024897,
+        7.825778,
+        52.975093,
+        9.956878
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "U14",
+      "uuid": "5d43c8ce-79bb-4b04-9230-91b2fecc2302",
+      "text": "U14",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.2007030000000043,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        8.996526,
+        72.925703,
+        11.203817,
+        73.913993
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R40",
+      "uuid": "ee75dd9f-7744-4198-90c7-7fb5bf6d72dc",
+      "text": "R40",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.23879790017618951,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        50.934321,
+        22.425703,
+        53.06542,
+        23.413993
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C141",
+      "uuid": "c74e47fd-debb-4784-a667-3c659996490e",
+      "text": "C141",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.23881000000000083,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        59.684526,
+        19.225703,
+        62.615626,
+        20.213993
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C44",
+      "uuid": "bcb90630-b0b2-4b28-b519-b8c39df7babb",
+      "text": "C44",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.30085499999999854,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        77.571465,
+        49.485855,
+        79.778756,
+        50.474145
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "J8",
+      "uuid": "2e50d3ed-f0e9-47ec-8d31-394e7e74b9c1",
+      "text": "J8",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 2.619649102431272,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        59.372421,
+        1.749097,
+        60.627331,
+        2.699293
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "H1",
+      "uuid": "142563a6-5365-44a8-b912-4536ee7c1443",
+      "text": "H1",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.6004259999999997,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        5.300426,
+        -0.475089,
+        6.707668,
+        0.475045
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C140",
+      "uuid": "8ad437af-e9f7-4d6d-9049-bc3ba138b67f",
+      "text": "C140",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.3538018870172964,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        55.134426,
+        7.411003,
+        58.065573,
+        8.399293
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "H3",
+      "uuid": "7a67d32f-6731-4c5e-8e2b-1df035c908e5",
+      "text": "H3",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 1.9550737928501376,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        1.296226,
+        66.749133,
+        2.703516,
+        67.699293
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R1",
+      "uuid": "9f1d36ac-0795-4115-bce3-83481b1ae31a",
+      "text": "R1",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.2062947415350201,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        71.524997,
+        42.955378,
+        72.475192,
+        44.324525
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R183",
+      "uuid": "77e0c20e-f496-41ea-bb34-d032223b5368",
+      "text": "R183",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.2007266022766957,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        13.981269,
+        52.374897,
+        16.874274,
+        53.325093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C121",
+      "uuid": "3c4080a6-afbb-448b-9320-9e659ae3f57c",
+      "text": "C121",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.35070784200066873,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        61.934526,
+        37.574097,
+        64.865626,
+        38.524293
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "U24",
+      "uuid": "e46d67ba-b4b1-4e96-bade-598024d899bc",
+      "text": "U24",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.3970891852501584,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        27.561003,
+        41.896182,
+        28.549293,
+        44.103473
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R79",
+      "uuid": "059d6dc7-9771-403b-b350-9f927653bd37",
+      "text": "R79",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.17490353703080477,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        71.524897,
+        46.193478,
+        72.475093,
+        48.324578
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "H8",
+      "uuid": "1b2187d4-d201-4097-a70d-426edef30f81",
+      "text": "H8",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 1.9520871782684353,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        64.291926,
+        35.024897,
+        65.699216,
+        35.975093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "L3",
+      "uuid": "464ad40f-c11e-47d9-ab48-e31b0b0b534e",
+      "text": "L3",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.8004640000000052,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        47.100464,
+        25.024933,
+        48.317278,
+        25.975093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "H4",
+      "uuid": "a748fa22-abf7-4606-986b-bd1aaa61577f",
+      "text": "H4",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 1.9557544642457023,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        75.277326,
+        66.711303,
+        76.722664,
+        67.699545
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R70",
+      "uuid": "03c46fc7-16b2-49c3-9848-7b722f36e445",
+      "text": "R70",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.3507075615806547,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        53.434321,
+        21.724097,
+        55.56542,
+        22.674293
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C42",
+      "uuid": "f07344e3-eaf2-48ed-aebc-2984b982c151",
+      "text": "C42",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20077899999999713,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        50.904978,
+        27.005903,
+        53.074221,
+        27.994193
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R36",
+      "uuid": "1a103398-0fd9-4edf-a982-721645cbda56",
+      "text": "R36",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20042100000000573,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        67.925421,
+        1.024897,
+        70.056521,
+        1.975093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "D20",
+      "uuid": "347e8ae2-87ca-46ee-a8e2-951189943868",
+      "text": "D20",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20068126584138946,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        64.16822,
+        44.524897,
+        66.299319,
+        45.475093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "U40",
+      "uuid": "58063dc6-1c7c-4b87-a320-200237eaa887",
+      "text": "U40",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 1.4142720193640244,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        18.411003,
+        43.215331,
+        19.399293,
+        45.384573
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "D32",
+      "uuid": "c31bc5d3-9112-4c40-8b7e-cde5032f4632",
+      "text": "D32",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20077936305905558,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        -1.731878,
+        10.024897,
+        0.399221,
+        10.975093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "H5",
+      "uuid": "22f02126-554c-4c85-925c-77dd133a479a",
+      "text": "H5",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.39537300475500303,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        10.296226,
+        8.249099,
+        11.703516,
+        9.199293
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "J10",
+      "uuid": "8d992fef-c23b-4c09-ad89-141416d52607",
+      "text": "J10",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 1.8941533808743078,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        21.491468,
+        -2.150902,
+        23.508282,
+        -1.200706
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R8",
+      "uuid": "47251063-dc18-4a68-b9a4-9bb19ed1e744",
+      "text": "R8",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.4534319540206944,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        23.805074,
+        48.024897,
+        25.174269,
+        48.975093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C126",
+      "uuid": "9fb23cd3-0030-4a26-aa44-b1bf6568fcce",
+      "text": "C126",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20062599999999972,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        57.135626,
+        37.084897,
+        60.066774,
+        38.035093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "U22",
+      "uuid": "9c2135e1-8484-47ca-a2ea-049c4e587c2e",
+      "text": "U22",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.2144871382373091,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        76.415426,
+        57.350697,
+        78.584669,
+        58.300893
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "U4",
+      "uuid": "d9076e2c-e262-4a91-9429-fefb51a1488e",
+      "text": "U4",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20070380502099347,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        57.027478,
+        27.000703,
+        58.472864,
+        27.988993
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R72",
+      "uuid": "cb0ddf79-6b3e-4ecd-ba06-8b281b590106",
+      "text": "R72",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.3506970659855478,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        62.034321,
+        31.325697,
+        64.165421,
+        32.275892
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "D6",
+      "uuid": "5131f0cd-a39c-46d1-aa1c-c3ee21a73f4b",
+      "text": "D6",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.8754740000000112,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        65.600474,
+        9.024897,
+        66.969669,
+        9.975093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "D2",
+      "uuid": "f6b918ef-3a88-48c8-87b7-2b979783e1bc",
+      "text": "D2",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.2039749999999998,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        69.560197,
+        59.95183,
+        70.510393,
+        61.321025
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C166",
+      "uuid": "51e90466-1a59-4069-8bbe-fa2a74380c30",
+      "text": "C166",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.39010109498481066,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        39.975626,
+        20.774897,
+        42.906774,
+        21.725093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R215",
+      "uuid": "bf629971-2f76-4ef1-ad30-012fdf69db1e",
+      "text": "R215",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.2007266022766957,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        24.281269,
+        18.224897,
+        27.174274,
+        19.175093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R2",
+      "uuid": "06bc4358-e17c-492a-a682-94732fc714cf",
+      "text": "R2",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20050877236240885,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        72.815274,
+        34.624297,
+        74.184469,
+        35.574492
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C169",
+      "uuid": "38512a42-aaec-4ab1-8237-7a38c62f54c6",
+      "text": "C169",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20075500000000088,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        30.534426,
+        16.324097,
+        33.465574,
+        17.274293
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C165",
+      "uuid": "9411e044-6e80-4ebf-9f93-5977ebef62f6",
+      "text": "C165",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.2007265437077083,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        31.718126,
+        29.324897,
+        34.649274,
+        30.275093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R49",
+      "uuid": "5d857c14-56e5-40bf-a876-6ee14b322a73",
+      "text": "R49",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.15457800000000077,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        13.736003,
+        62.154578,
+        14.724293,
+        64.285678
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "H2",
+      "uuid": "e1ee9632-aa41-4cd3-bc2d-c32bd4fb7ece",
+      "text": "H2",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 1.9550638059621341,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        75.296226,
+        3.300697,
+        76.703516,
+        4.250845
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C123",
+      "uuid": "62e43015-2636-482a-aca8-1152999d0188",
+      "text": "C123",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.3507523418823617,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        20.534426,
+        51.074097,
+        23.465574,
+        52.024293
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R23",
+      "uuid": "6a6ddf08-ae74-41da-9f05-1d80a50b306f",
+      "text": "R23",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.3507074684336064,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        46.434321,
+        7.724097,
+        48.565421,
+        8.674293
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "U2",
+      "uuid": "6f9a02eb-c05f-4281-aadd-9ca441b9ff3c",
+      "text": "U2",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.22437944972968865,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        67.041878,
+        46.524897,
+        68.449216,
+        47.475093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C101",
+      "uuid": "c8160839-438f-4c31-8773-f748aac66807",
+      "text": "C101",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20070999999999728,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        11.784526,
+        22.925697,
+        14.715626,
+        23.875893
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "U12",
+      "uuid": "97410d7b-12c3-469e-96b9-bcc158354532",
+      "text": "U12",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 1.142524999999992,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        65.230025,
+        53.374897,
+        67.399268,
+        54.325093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R42",
+      "uuid": "179be765-e26c-4843-9edc-8807d9a13999",
+      "text": "R42",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20042099999999863,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        56.425421,
+        16.505903,
+        58.556521,
+        17.494192
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C82",
+      "uuid": "c322842a-0e55-4be5-b2c0-527fed3ba986",
+      "text": "C82",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20069712260184835,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        23.115378,
+        46.750697,
+        25.284621,
+        47.700893
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C26",
+      "uuid": "fe446621-2ac9-49d0-bf03-86e7c3541bc9",
+      "text": "C26",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20077899999999713,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        18.404978,
+        62.524897,
+        20.574221,
+        63.475093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R200",
+      "uuid": "27da33e4-8932-4dc8-8bee-785b34f5b6c5",
+      "text": "R200",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20046800000000073,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        65.625468,
+        19.524897,
+        68.518472,
+        20.475093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R105",
+      "uuid": "4bd1bf8b-f279-4805-a9b8-a3a36889f666",
+      "text": "R105",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.5643072756865322,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        34.088869,
+        52.260497,
+        36.981874,
+        53.210693
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C167",
+      "uuid": "24036476-d1ef-4af0-964f-e8f4a42b63b2",
+      "text": "C167",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.2224972380719501,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        24.005226,
+        20.824897,
+        26.974464,
+        21.775093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C142",
+      "uuid": "fdd59f5d-e1f0-4e26-a95b-b0deb007a54a",
+      "text": "C142",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.2007550756449836,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        69.034426,
+        20.761003,
+        71.965574,
+        21.749293
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R110",
+      "uuid": "843f2372-54e2-41af-8c0f-e8073dd1fcb1",
+      "text": "R110",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.2004699999999957,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        18.024897,
+        56.681526,
+        18.975093,
+        59.57453
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R43",
+      "uuid": "c24ca8d5-076c-4b47-86a5-91918e30862a",
+      "text": "R43",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20077963644625904,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        7.443121,
+        67.005903,
+        9.574221,
+        67.994193
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R144",
+      "uuid": "8be3a974-8727-4da6-8213-496b222e5716",
+      "text": "R144",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.4928477759416957,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        1.743469,
+        17.505903,
+        4.674522,
+        18.494192
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "U6",
+      "uuid": "ccde5825-5043-4925-be6b-546491916e66",
+      "text": "U6",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20070712571158217,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        26.249097,
+        59.646283,
+        27.199293,
+        61.053621
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R211",
+      "uuid": "4295d30a-f3c6-4d8e-bb41-35d3249fc1e9",
+      "text": "R211",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20055500000000134,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        36.453569,
+        17.324297,
+        39.346526,
+        18.274492
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R140",
+      "uuid": "c7e2d890-18d6-4189-853b-fbc6da304895",
+      "text": "R140",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.2808558329944679,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        3.331369,
+        15.505903,
+        6.224373,
+        16.494193
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C87",
+      "uuid": "ac85567c-7311-4bf2-90e9-72df2ab7d7fb",
+      "text": "C87",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.324106999999998,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        33.225697,
+        44.896288,
+        34.175893,
+        47.103621
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "U1",
+      "uuid": "e6bf99e1-51ba-46ff-8a13-d2f45960e3c8",
+      "text": "U1",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 3.25483600997807,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        43.296478,
+        52.17541,
+        44.703768,
+        53.125593
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C18",
+      "uuid": "24fc4d60-b690-4431-a95d-88ed56fecbd0",
+      "text": "C18",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.2007549999999991,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        40.415378,
+        8.924097,
+        42.584621,
+        9.874293
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "L1",
+      "uuid": "97ef9516-b366-4a2a-8f20-f88bca75d33b",
+      "text": "L1",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.29995501800275054,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        64.950464,
+        24.52491,
+        66.16723,
+        25.475045
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C125",
+      "uuid": "460bbbac-d819-4c9a-8cc5-849595eccc78",
+      "text": "C125",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.35075499999999943,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        24.534426,
+        53.224097,
+        27.465574,
+        54.174293
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R9",
+      "uuid": "2ac764c6-9e77-4d72-89f8-8d36939e6985",
+      "text": "R9",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20073105706284716,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        24.705074,
+        50.524897,
+        26.074269,
+        51.475093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R75",
+      "uuid": "f0988c76-7785-4e76-b533-e59b524a9a57",
+      "text": "R75",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20078060227670283,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        65.44312,
+        61.524897,
+        67.57422,
+        62.475093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "J11",
+      "uuid": "5a6134f7-ebc4-464b-850a-60b64684ea9d",
+      "text": "J11",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 4.066336147129255,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        -0.822231,
+        25.51971,
+        1.194535,
+        26.469892
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C154",
+      "uuid": "02f36da0-df8e-4986-b2c0-2f27dc17dc54",
+      "text": "C154",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20075500000000088,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        46.015277,
+        43.586003,
+        48.984473,
+        44.574293
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R52",
+      "uuid": "906fa0a4-9345-451a-b76c-e4026ab853bd",
+      "text": "R52",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.35075499999999943,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        43.934578,
+        32.224097,
+        46.065678,
+        33.174293
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R32",
+      "uuid": "877d4dff-0696-4b3b-a471-828652550a2a",
+      "text": "R32",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20042199999999968,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        25.643478,
+        15.224897,
+        27.774578,
+        16.175093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R220",
+      "uuid": "4cef7c65-ad42-4294-9489-e659e6dac328",
+      "text": "R220",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20069713676279616,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        25.753626,
+        25.325697,
+        28.64663,
+        26.275893
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "U16",
+      "uuid": "ba832809-715e-4b7e-839c-810d70aa6e92",
+      "text": "U16",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20077500000000015,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        33.53003,
+        35.524897,
+        35.699273,
+        36.475093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R53",
+      "uuid": "217ce8eb-0ef7-40cd-a752-1554b762133b",
+      "text": "R53",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20077895157192993,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        46.425778,
+        37.024897,
+        48.556878,
+        37.975093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C150",
+      "uuid": "ffc1e120-16e5-4827-a4ed-0f8da3de781c",
+      "text": "C150",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20075500000000088,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        25.534426,
+        31.124097,
+        28.465573,
+        32.074293
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "U50",
+      "uuid": "9c47725e-dfd9-4c04-a45d-ee2405c1aeeb",
+      "text": "U50",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20077500000000015,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        18.830031,
+        33.024897,
+        20.999273,
+        33.975093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R41",
+      "uuid": "d5ce4ab8-df4c-4e45-ba50-7d4ef8053e83",
+      "text": "R41",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20042199999999966,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        9.943526,
+        2.305903,
+        12.074578,
+        3.294193
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C21",
+      "uuid": "a2b480cc-b1ce-4a4e-a326-9f6cad9575a9",
+      "text": "C21",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.2223719868710955,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        27.425426,
+        3.524897,
+        29.594621,
+        4.475092
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "D8",
+      "uuid": "51b72362-f682-4999-a08e-1eea3e4e9553",
+      "text": "D8",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20047500000000085,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        12.58033,
+        15.224897,
+        13.949525,
+        16.175093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R51",
+      "uuid": "ad7d3517-5f28-4ed4-bc20-6bc1f01626cf",
+      "text": "R51",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.38960677313414005,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        35.543526,
+        40.024897,
+        37.674578,
+        40.975093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R229",
+      "uuid": "8c84eacc-69da-4d92-a72f-54d8552ef517",
+      "text": "R229",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20072560229458666,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        52.425725,
+        52.274897,
+        55.31873,
+        53.225093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C155",
+      "uuid": "a18a84ef-fa83-4e07-a3f6-ef778f1671c6",
+      "text": "C155",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.2007989999999964,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        57.534425,
+        61.425798,
+        60.465573,
+        62.375993
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "U17",
+      "uuid": "9f8cedff-d55c-4e4a-bec6-543b49af4240",
+      "text": "U17",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.5694820858263636,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        56.89624,
+        47.400503,
+        59.103573,
+        48.350693
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R12",
+      "uuid": "f1c01df1-45b3-47e0-8fa3-a3b9228c7476",
+      "text": "R12",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20077894275224342,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        17.925778,
+        5.024997,
+        20.056878,
+        5.975193
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R58",
+      "uuid": "8d869f2e-a296-4d89-92c6-f8504bd0cb3b",
+      "text": "R58",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20070729533025863,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        37.934578,
+        45.624097,
+        40.065678,
+        46.574293
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R54",
+      "uuid": "d8f55728-1154-4830-a4be-20c3ad8586db",
+      "text": "R54",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.35070379391890255,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        43.91543,
+        38.825703,
+        46.084578,
+        39.813993
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C151",
+      "uuid": "c1770ed9-e6ad-4b7b-b3cf-8817287cffc3",
+      "text": "C151",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.22241698446386565,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        28.325473,
+        29.524898,
+        31.256573,
+        30.475093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R39",
+      "uuid": "53641eb4-4dc8-4d18-9182-54d8568329d1",
+      "text": "R39",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20070722717897221,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        15.734578,
+        8.924097,
+        17.865678,
+        9.874293
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "U52",
+      "uuid": "348a1bff-85c9-4f77-8828-3b6bae7e84bd",
+      "text": "U52",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20077500000000015,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        48.03003,
+        57.524897,
+        50.199273,
+        58.475093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "Q50",
+      "uuid": "ad077a8e-44ab-491a-bcb3-dfe783636430",
+      "text": "Q50",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.23090323973557894,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        16.287031,
+        22.486797,
+        18.494368,
+        23.513183
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "F3",
+      "uuid": "93d214d5-5e22-40fa-a472-3bcc482b9564",
+      "text": "F3",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.8877575365210925,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        55.372673,
+        68.574133,
+        56.627582,
+        69.524293
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R228",
+      "uuid": "5b01ebcf-e354-4a16-a9da-00539c3c2f6c",
+      "text": "R228",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20072505708073812,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        52.425725,
+        50.274897,
+        55.31873,
+        51.225093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R63",
+      "uuid": "9f643eb8-ce99-4339-a644-d87edbb99aee",
+      "text": "R63",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20042199999999613,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        53.443478,
+        42.024897,
+        55.574578,
+        42.975093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C6",
+      "uuid": "157dcf85-2256-4e78-8496-fdffb026ac96",
+      "text": "C6",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20063244073111028,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        48.94203,
+        48.024897,
+        50.349368,
+        48.975093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R222",
+      "uuid": "0d209596-1046-4f81-a372-53c79cd27359",
+      "text": "R222",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.200470000000001,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        8.181525,
+        25.524997,
+        11.07453,
+        26.475193
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R90",
+      "uuid": "c31a99b3-c04e-4c31-9f26-26e359455c05",
+      "text": "R90",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20042199999999613,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        33.943479,
+        42.524897,
+        36.074578,
+        43.475093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R92",
+      "uuid": "ece34de5-8c80-4cda-93b4-df3e766a6b4d",
+      "text": "R92",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20070749966424825,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        46.434578,
+        33.124097,
+        48.565678,
+        34.074293
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R141",
+      "uuid": "22ab5731-4f81-4abe-b847-e7d17cd3b4e6",
+      "text": "R141",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.23090373088301253,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        15.825473,
+        12.755903,
+        18.71843,
+        13.744193
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R221",
+      "uuid": "3e9d1beb-6ca8-4df1-9267-c755d83589ac",
+      "text": "R221",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20047317983137164,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        24.225473,
+        28.224997,
+        27.11843,
+        29.175193
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R227",
+      "uuid": "39fc9e9e-3999-45b5-85a2-fe9781cb041d",
+      "text": "R227",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20046999999999926,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        24.643435,
+        39.324997,
+        27.57453,
+        40.275193
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R230",
+      "uuid": "9df7c441-a5c8-41b2-bda3-09ede372968d",
+      "text": "R230",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.2004699999999957,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        31.931526,
+        46.774897,
+        34.82453,
+        47.725093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R50",
+      "uuid": "89f8a510-2666-41e5-97a2-89a25dc853c4",
+      "text": "R50",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20042199999999608,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        33.693479,
+        31.274897,
+        35.824578,
+        32.225093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R11",
+      "uuid": "5656e151-cf2a-4410-8f3d-cd763d8e18ab",
+      "text": "R11",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.35055499999999995,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        15.434425,
+        1.724297,
+        17.565477,
+        2.674493
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "Q51",
+      "uuid": "7e0393f3-2abf-401c-98f0-d96eb73db5ec",
+      "text": "Q51",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.6769551876273333,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        15.896278,
+        26.922897,
+        18.103568,
+        27.949283
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R57",
+      "uuid": "206a5cfb-441e-4813-94ab-8c2c336a63cc",
+      "text": "R57",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20042199999999613,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        38.405388,
+        50.524897,
+        40.574578,
+        51.475093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "U51",
+      "uuid": "bbeea2b1-dc1d-4fed-ba5c-d0f768aa93b6",
+      "text": "U51",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.2007990000000035,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        45.915278,
+        52.725799,
+        48.084473,
+        53.675993
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R56",
+      "uuid": "281fa206-fea1-4a46-ae64-b600badd449a",
+      "text": "R56",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.4135974403340369,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        38.399278,
+        43.888597,
+        40.530378,
+        44.838793
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C31",
+      "uuid": "07657618-4cf7-4cc9-91f6-afda41f5e3ec",
+      "text": "C31",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.2007449999999977,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        52.665326,
+        45.925698,
+        54.834521,
+        46.875893
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C22",
+      "uuid": "4f58ec02-3dbf-4628-a741-f7dd5be3d219",
+      "text": "C22",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.2007779999999997,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        24.925778,
+        5.224897,
+        27.095021,
+        6.175092
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "D9",
+      "uuid": "ec840827-4834-49c7-8ea0-9b24eecbe5ee",
+      "text": "D9",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.2004749999999991,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        10.38033,
+        4.324897,
+        11.749525,
+        5.275093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C153",
+      "uuid": "770e7d75-3aa0-4635-9ce1-510dc041f20a",
+      "text": "C153",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20062700000000075,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        8.143225,
+        29.524898,
+        11.074373,
+        30.475093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R223",
+      "uuid": "9a164b46-de19-4409-ba54-d4a4186f5fbd",
+      "text": "R223",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.200470000000001,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        8.181525,
+        27.524897,
+        11.07453,
+        28.475093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R91",
+      "uuid": "bd33dca3-d91c-4e14-a008-c86928623bbd",
+      "text": "R91",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.21651101614467236,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        42.425426,
+        42.524897,
+        44.556478,
+        43.475093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R224",
+      "uuid": "b807fcd1-b61e-4de4-9c76-10af3454d36b",
+      "text": "R224",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.23879705695723707,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        16.534477,
+        34.925703,
+        19.46553,
+        35.913993
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "D50",
+      "uuid": "38c07ad3-94e2-4cb5-9ccd-be293bd36984",
+      "text": "D50",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20079899999999995,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        28.934579,
+        25.400797,
+        31.065678,
+        26.350993
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R64",
+      "uuid": "c62a5d02-5fde-4177-b71c-3212165995f8",
+      "text": "R64",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.23879753401980178,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        60.91543,
+        47.925703,
+        63.084578,
+        48.913993
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "Q52",
+      "uuid": "f6886b1f-666b-4ed7-b6f3-5c727825e3bf",
+      "text": "Q52",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.4396176337375449,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        24.91703,
+        36.486797,
+        27.124368,
+        37.513183
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C29",
+      "uuid": "3fd1f9bd-aecb-425a-9b76-ffe069abf22c",
+      "text": "C29",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.4175647469375242,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        56.825778,
+        48.524897,
+        58.995021,
+        49.475093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R225",
+      "uuid": "d212919e-00b5-4da6-bfcc-51a119441407",
+      "text": "R225",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20072505708073793,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        19.425725,
+        36.524897,
+        22.31873,
+        37.475093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C152",
+      "uuid": "49e2c6c7-b80c-4fbf-a00c-b56f19d2288f",
+      "text": "C152",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20072499999999846,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        27.825725,
+        26.824897,
+        30.756873,
+        27.775093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R226",
+      "uuid": "863b0924-f99f-4b87-a568-bb40ce15a862",
+      "text": "R226",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20047017990291327,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        13.381525,
+        18.024897,
+        16.27453,
+        18.975093
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R55",
+      "uuid": "a9c3c3de-95cd-44c1-bc26-b076c42046a1",
+      "text": "R55",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20079984202537948,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        34.434578,
+        51.425797,
+        36.565678,
+        52.375993
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "C27",
+      "uuid": "311a386e-b56d-4f60-ad9f-3d29594a5a09",
+      "text": "C27",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.3675348063585262,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        43.325488,
+        40.024897,
+        45.532821,
+        40.975092
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "R7",
+      "uuid": "c10ce181-9d01-488c-ae53-e2d275fcf643",
+      "text": "R7",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.2004749999999973,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        57.16724,
+        67.524997,
+        58.574525,
+        68.475193
+      ]
+    },
+    {
+      "kind": "native_reference",
+      "reference": "Q2",
+      "uuid": "852a5760-b641-4560-b328-57cb22b8b335",
+      "text": "Q2",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.20487535536028048,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        43.875783,
+        47.486797,
+        45.321216,
+        48.513183
+      ]
+    },
+    {
+      "kind": "adjusted_legacy_caption",
+      "reference": null,
+      "uuid": "79464a9c-fd33-45e3-9b00-5a1d5d14cca2",
+      "text": "GND",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.39545526912608175,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        0.858236,
+        3.087197,
+        3.141764,
+        4.037393
+      ]
+    },
+    {
+      "kind": "adjusted_legacy_caption",
+      "reference": null,
+      "uuid": "7a769086-caad-4994-853a-b4bd42f05424",
+      "text": "by Show Robotics",
+      "face": "F.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 1.099361661940037,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        35.699361,
+        59.687197,
+        46.24956,
+        60.904059
+      ]
+    },
+    {
+      "kind": "adjusted_legacy_caption",
+      "reference": null,
+      "uuid": "f4420a8a-dd94-49bb-a535-6909bd1e7882",
+      "text": "GND",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.39545519669627105,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        0.858235,
+        3.087197,
+        3.141763,
+        4.037393
+      ]
+    },
+    {
+      "kind": "adjusted_legacy_caption",
+      "reference": null,
+      "uuid": "ffdc04b0-a517-525d-9ad1-a1c0deb7ddd6",
+      "text": "MOSS CORE V0.7\nPROTOTYPE",
+      "face": "B.Silkscreen",
+      "font_height_mm": 0.8,
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 3.391616999999997,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true,
+      "glyph_bounds_mm": [
+        36.915383,
+        59.34322,
+        47.008403,
+        61.581371
+      ]
+    },
+    {
+      "kind": "new_leader",
+      "reference": "R35",
+      "uuid": "164120a1-8748-4ae5-9790-6b7170e61188",
+      "face": "F.Silkscreen",
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.45000035092313484,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true
+    },
+    {
+      "kind": "new_leader",
+      "reference": "R35",
+      "uuid": "1c8b0f5c-b7dd-422d-a975-6b869986e70d",
+      "face": "F.Silkscreen",
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.2490710000000007,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true
+    },
+    {
+      "kind": "new_leader",
+      "reference": "R56",
+      "uuid": "22c8cc1a-1018-4e59-9e53-d4a930f86b4a",
+      "face": "B.Silkscreen",
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.37503891916706916,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true
+    },
+    {
+      "kind": "new_leader",
+      "reference": "R56",
+      "uuid": "42e93314-6a8c-48bc-b4ef-a9fd7304541b",
+      "face": "B.Silkscreen",
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.23531499999999994,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true
+    },
+    {
+      "kind": "new_leader",
+      "reference": "D2",
+      "uuid": "5b0f417d-6ca1-415f-9979-07750cfbc7f6",
+      "face": "F.Silkscreen",
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.5249990000000082,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true
+    },
+    {
+      "kind": "new_leader",
+      "reference": "D2",
+      "uuid": "fd80f12e-3e6d-4204-8ac4-627b36dc9bdf",
+      "face": "F.Silkscreen",
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.4111290000000025,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true
+    },
+    {
+      "kind": "new_leader",
+      "reference": "R105",
+      "uuid": "11681b65-090d-43d7-b94d-e3425063eced",
+      "face": "F.Silkscreen",
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.5250270960207729,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true
+    },
+    {
+      "kind": "new_leader",
+      "reference": "R105",
+      "uuid": "0404a138-da3d-4032-8d38-3edc46ebe29a",
+      "face": "F.Silkscreen",
+      "stroke_mm": 0.15,
+      "opening_clearance_mm": 0.48842057640679365,
+      "meets_0_15mm_with_polygon_rounding_tolerance": true
+    }
+  ],
+  "violations": [],
+  "minimum_observed_clearance_mm": 0.15457800000000077,
+  "coverage": {
+    "assembled_components": 216,
+    "new_native_assembled_reference_labels": 214,
+    "existing_manual_labels": {
+      "J1": [
+        {
+          "text": "J1 | USB2 DEVICE",
+          "uuid": "0c9f6718-baf0-5ec5-b408-eeee3cc49524",
+          "face": "B.Silkscreen"
+        }
+      ]
+    },
+    "assembled_identified": 215,
+    "assembled_without_printed_reference": [
+      "U15"
+    ],
+    "all_native_reference_labels_printed": 228
+  },
+  "limits": [
+    "Read-only saved native geometry check, not a fabricated-board test or guarantee of print registration.",
+    "Polygon rounding is reported explicitly; it is not additional PCBWay manufacturing tolerance.",
+    "Actual exported ink and label-to-body association still require preview inspection."
+  ]
+}

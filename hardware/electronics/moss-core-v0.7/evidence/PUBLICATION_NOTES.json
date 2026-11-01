@@ -1,10 +1,13 @@
 {
-  "date": "2026-11-01",
-  "scope": "MOSS Core V0.7 prototype power/rearm update with compiled and host-tested commissioning firmware; ready for supplier engineering review",
-  "native_board_sha256": "456219f7eb97119b7e4328ed76f150012619131788f42d3a9d21fc4e40859cdb",
+  "date": "2026-11-02",
+  "scope": "MOSS Core V0.7 prototype reference legend update; exact existing numbering and electrical/physical design retained; ready for supplier engineering review",
+  "native_board_sha256": "4f456f0563e9dc5a3b7cbab98eaa8d9f24485d14dc79a7656af5ab04b983b6b1",
   "physical_revision_letter_added": false,
   "supplier_correspondence_included": false,
   "hardware_qualified": false,
-  "previous_public_commit": "f3146afb183932436b41754969278afd1709ee91",
-  "firmware_crosscheck": "FIRMWARE_CROSSCHECK.json"
+  "previous_public_commit": "6d4017031bef5348a3d058caffdd0e11fc293d55",
+  "firmware_crosscheck": "FIRMWARE_CROSSCHECK.json",
+  "silkscreen_review": "SILKSCREEN_UPDATE.md",
+  "native_equivalence": "SILK_ONLY_EQUIVALENCE.json",
+  "retained_electrical_review": "UPDATE_EQUIVALENCE.json"
 }

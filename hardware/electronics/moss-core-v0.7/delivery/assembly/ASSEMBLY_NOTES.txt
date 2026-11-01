@@ -1,6 +1,6 @@
-MOSS CORE V0.7 / PROTOTYPE / 2026-11-01 / POWER AND REARM UPDATE
+MOSS CORE V0.7 / PROTOTYPE / 2026-11-02 / SILKSCREEN REFERENCE UPDATE
 216 components per assembled board; 99 grouped purchase articles. Two assembled boards requested. Use the matched BOM, positions, Gerbers and drills.
-Updated 1 November 2026. Use this matched set of design and assembly files.
+Updated 2 November 2026: component reference legends added. Existing numbering, all parts, placements, copper, solder mask, paste and drill data are unchanged from the power/rearm design. Use this matched set of design and assembly files.
 
 RESOLUTIONS OF PCBWAY COMMENTS RECEIVED ON 2026-10-31
 D20-D22: Keep exact TI TPD1E10B06DYAR. TI catalog SOT-5X3 / DYA and drawing DYA0002A SOT (SOD-523) refer to the same two-pin package. The copper footprint remains D_SOD-523.

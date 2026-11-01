@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-01",
-  "native_board_sha256": "456219f7eb97119b7e4328ed76f150012619131788f42d3a9d21fc4e40859cdb",
+  "date": "2026-11-02",
+  "native_board_sha256": "4f456f0563e9dc5a3b7cbab98eaa8d9f24485d14dc79a7656af5ab04b983b6b1",
   "projection": "Native KiCad orthographic top/bottom, no perspective",
   "visual_only_addition": "U60 simple 3 x 4 x 0.85mm black body, not manufacturer mechanical CAD",
   "verified_component_marking_overlays": {

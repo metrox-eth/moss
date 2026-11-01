@@ -6,10 +6,11 @@
   "article_count": 99,
   "accessories_excluded_from_PCB_placement": [],
   "notes": [
+    "2 November 2026: printed component reference legends added. Existing designator numbering, parts, values, footprints and placements remain unchanged from the power/rearm update.",
     "1 November 2026 power/rearm update: U51/U52 permission latch, R228-R230, C154/C155 and populated C170 6.8pF C0G feedforward capacitor. 216 assembled components, 99 grouped purchase articles. Exact MPNs; no unreviewed gate or package substitutions.",
     "Hardware permission latch: U51 SN74LVC1G74DCUR, U52 SN74HCS11PWR; dedicated GPIO1 ARM_COMMIT and GPIO2 ARM_LATCHED. The current native design is routed and checked. Firmware is compiled/host-tested, not hardware-qualified.",
     "Black 82 x 79 mm board; Core fixing centres have 74 x 71 mm pitch with 4 mm edge setbacks. Orange Pi holes and all external connector interfaces are retained. The matching hull guide already follows this pattern.",
-    "Use only the matching 20261101_POWER_REARM design, fabrication and placement files. Battery, servo and speaker headers are vertical. Earlier package files are superseded for this quotation.",
+    "Use only the matching 20261102_SILKSCREEN design, fabrication and placement files. Battery, servo and speaker headers are vertical. Earlier package files are superseded for this quotation.",
     "Integrated MP9447 converter and grounded H1 retained. U14/U17/U43/U51 and J1/J20 use local common soldermask openings where documented. The current-sense mask/paste review is supplied separately; no global mask expansion is requested.",
     "U2 uses exact TPD2E2U06QDCKRQ1 DCK-3; J7 supported seating/through-hole solder; J8 manual placement accepted for two prototypes.",
     "Engineering checks do not constitute hardware qualification. Supplier to confirm part availability, mask registration, stencil and assembly process in the quotation."

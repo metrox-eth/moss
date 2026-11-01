@@ -20,13 +20,16 @@ Read the numbers on the connector footprint, not the left-to-right order inferre
 
 ## Vertical cable headers
 
-Battery J10 uses **AMASS XT30UPB-M.G.Y** (5.00 mm pin pitch), servo bus J5 uses **Molex 22-03-5035 / 5267-03A** (2.50 mm), and speaker J7 uses **JST B2B-PH-K-S(LF)(SN)** (2.00 mm). Their cable mates insert from above the PCB. J5 retains the 5264-family cable housing; J7 retains the PHR-2 housing. Use the new footprints and purchasing list together: the former horizontal headers are not substitutes.
+Battery J10 uses **AMASS XT30UPB-M.G.Y** (5.00 mm pin pitch), servo bus J5 uses **Molex 22-03-5035 / 5267-03A** (2.50 mm), and speaker J7 uses **JST B2B-PH-K-S(LF)(SN)** (2.00 mm). Their cable mates insert from above the PCB. J5 is intended for the 5264-family cable housing; J7 retains the PHR-2 housing. Use the new footprints and purchasing list together: the former horizontal headers are not substitutes.
 
 With the Orange Pi on 20 mm standoffs, route the J2 driver bundle rearward and the J3 left-motor bundle leftward, away from the Orange Pi, before turning upward. Do not force either bundle vertically against the SBC. See the [combined assembly check](evidence/MECHANICAL_REVIEW.json).
 
 The motor/driver Micro-Fit headers, fan headers and stop header are also top-entry. The two USB-C sockets remain side-entry. The Orange Pi mounting checks include header bodies, mating-plug envelopes and reserved wire-exit space; the exact seating, cable bend and assembly access still need a physical prototype check.
 
 Manufacturer references: [AMASS XT30UPB-M](https://www.china-amass.net/xt30upb-m-product/), [Molex 22-03-5035](https://www.molex.com/en-us/products/part-detail/22035035), [JST PH series](https://www.jst-mfg.com/product/pdf/eng/ePH.pdf).
+
+**J5 connector identification:** Feetech specifies **5264-3P** for [STS3215](https://files.seeedstudio.com/products/Feetech/108090023_STS3215-C001_Datasheet.pdf#page=4) and [STS3235](https://pages.switch-science.com/comparison/files/feetech/serial-sts/STS3235_datasheet.pdf#page=4). The [Molex 5267 drawing](https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/526/5267/022035025_sd.pdf) includes 22035035/526703A and identifies 5264N as the mating housing. The family choice is documented, but Feetech does not identify an exact Molex housing MPN; fit and cable pin orientation must be confirmed with the supplied servo cable. The rendered J5 model is a dimensioned visual reconstruction with simplified small locking features, not manufacturer mating CAD. Missing fine notches in that model are not evidence of the actual ordered part's profile.
+
 
 ## Grounding connection
 

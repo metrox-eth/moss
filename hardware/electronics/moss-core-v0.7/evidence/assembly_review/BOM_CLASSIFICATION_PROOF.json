@@ -1,6 +1,6 @@
 {
   "status": "PASS_EXACT_MPN_DESIGNATORS_QUANTITIES_FOOTPRINTS_PRESERVED",
-  "source_bom_sha256": "71da646b3510c4bde3c74a2439709639ef2d049ae413256dcd4d535723bcaf92",
+  "source_bom_sha256": "839e01073b6a335dcfb4fd190e032e41c16d86785f60f05f1ccca957accfa4c2",
   "source_circuit_sha256": "80aceb62b867a158efafe1cccc0763384479b2f619c79f407a8b722f2816ec69",
   "classified_csv_sha256": "76fc5834e54b64a8f7e8bac0ce8ddfd24a5ad72fb2116498313dbaa8c5ae0548",
   "totals": {

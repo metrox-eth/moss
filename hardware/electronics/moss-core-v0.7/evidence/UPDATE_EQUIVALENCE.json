@@ -1,43 +1,58 @@
 {
-  "date": "2026-11-01",
-  "status": "PASS_NATIVE_AND_ADDITIVE_GEOMETRY_CHECKS",
-  "baseline_pcb_sha256": "7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14",
-  "final_pcb_sha256": "456219f7eb97119b7e4328ed76f150012619131788f42d3a9d21fc4e40859cdb",
+  "date": "2026-11-02",
+  "status": "SILKSCREEN_ONLY_UPDATE_VERIFIED",
+  "baseline_git_commit": "6d4017031bef5348a3d058caffdd0e11fc293d55",
+  "baseline_pcb_sha256": "456219f7eb97119b7e4328ed76f150012619131788f42d3a9d21fc4e40859cdb",
+  "final_pcb_sha256": "4f456f0563e9dc5a3b7cbab98eaa8d9f24485d14dc79a7656af5ab04b983b6b1",
   "native_checks": "CHECKS.json",
-  "physical_pin_checks": "DESIGN_CONTRACT.json",
-  "power_ground_checks": "POWER_AND_GROUND.json",
-  "mechanical_additions": "ADDITIVE_MECHANICAL_REVIEW.json",
-  "final_geometry_binding": "MECHANICAL_FINAL_EQUIVALENCE.json",
-  "preserved": [
-    "222 pre-existing footprint geometries, poses and model transforms",
-    "82x79mm outline, board thickness, all mounting centres",
-    "all external connector pin maps",
-    "motor force widths and vias, Kelvin routes and switching loops",
-    "routing candidate USB chamfers"
-  ],
-  "changed_existing_pin_maps": [
-    "U1 GPIO1/GPIO2 now ARM_COMMIT/ARM_LATCHED",
-    "U6 ACT_READY inputs now ARM_READY"
-  ],
-  "new_parts": [
-    "U51",
-    "U52",
-    "R228",
-    "R229",
-    "R230",
-    "C154",
-    "C155",
-    "C170"
-  ],
-  "retained_baseline_scope": {
-    "MECHANICAL_REVIEW.json": "Upper stack and existing connector bodies; unchanged physical geometry. New parts checked separately.",
-    "CABLE_CLEARANCE_ROUTES.json": "Existing outward wire reservations unchanged. No harness geometry change.",
-    "MOUNTING_CLEARANCE.json": "Outline/holes unchanged.",
-    "VERTICAL_CONNECTOR_CONTRACT.json": "All connectors and mating references unchanged."
+  "protected_native_comparison": "SILK_ONLY_EQUIVALENCE.json",
+  "manufactured_layers_comparison": "FABRICATION_INK_ONLY.json",
+  "reference_layout": "SILKSCREEN_REFERENCE_LAYOUT.json",
+  "opening_clearance_check": "SILK_OPENING_CLEARANCE.json",
+  "previous_electrical_update": "baseline_before_silkscreen/UPDATE_EQUIVALENCE.json",
+  "inherited_evidence": {
+    "POWER_AND_GROUND.json": {
+      "sha256": "cc9ec89f77f722fa734a157261eb6e80391e5a632cfbc10b239b83e349f24f0e",
+      "applicability": "Identical protected copper, pads, models, poses, outline and circuit contract; original evidence keeps its original input hashes."
+    },
+    "POWER_NOISE_REVIEW.json": {
+      "sha256": "57e59ab7fe777c51c596233b7f5b0f0e7f255fe34599c1582df15a56ef4be62c",
+      "applicability": "Identical protected copper, pads, models, poses, outline and circuit contract; original evidence keeps its original input hashes."
+    },
+    "ADDITIVE_MECHANICAL_REVIEW.json": {
+      "sha256": "6efd62cebf64aa5bae5b4f392a50cad5f5578a4bc032360a75f1943a56dccf6a",
+      "applicability": "Identical protected copper, pads, models, poses, outline and circuit contract; original evidence keeps its original input hashes."
+    },
+    "MECHANICAL_FINAL_EQUIVALENCE.json": {
+      "sha256": "54607733e358d1e04ecc69949ebcef02d48bd6e2e5d35c40e0d2729a6a599ec0",
+      "applicability": "Identical protected copper, pads, models, poses, outline and circuit contract; original evidence keeps its original input hashes."
+    },
+    "MOUNTING_CLEARANCE.json": {
+      "sha256": "f92bd62f915e221df491e86e52b407925152d68b45e1c22fc7caa55a0abd2714",
+      "applicability": "Identical protected copper, pads, models, poses, outline and circuit contract; original evidence keeps its original input hashes."
+    },
+    "CABLE_CLEARANCE_ROUTES.json": {
+      "sha256": "4fe7e0f38fad3dd58cad61bf172bd4420f623f5231d0af9ffd24abf0f78185e5",
+      "applicability": "Identical protected copper, pads, models, poses, outline and circuit contract; original evidence keeps its original input hashes."
+    },
+    "FIRMWARE_CROSSCHECK.json": {
+      "sha256": "fe1571da792b0188d932c6ce32edab89bba4ac5bd48968d8a1086be96de1acb9",
+      "applicability": "Identical protected copper, pads, models, poses, outline and circuit contract; original evidence keeps its original input hashes."
+    }
   },
-  "limits": [
-    "Saved copper connectivity does not establish EMC immunity.",
-    "No assembled board, powered measurement, firmware execution on hardware or thermal test.",
-    "Earlier evidence retains its original source hash; it is not relabeled as a new simulation."
-  ]
+  "scope": "Silk/Fab presentation change only. BOM explanatory notes updated; all purchasing and electrical inventory unchanged. No component renumbering or physical revision letter.",
+  "rerun_checks": [
+    "Native ERC/DRC/parity",
+    "730-pad schematic/PCB/inventory contract",
+    "same bounded rearm state model on regenerated netlist",
+    "track directions",
+    "new legend style and opening clearances",
+    "protected non-legend fabrication outputs"
+  ],
+  "not_rerun": [
+    "Analog transient simulation",
+    "Mechanical solid solver for whole robot",
+    "Firmware compiler and host suite"
+  ],
+  "hardware_qualified": false
 }

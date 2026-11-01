@@ -1,0 +1,4920 @@
+{
+  "baseline_board_sha256": "456219f7eb97119b7e4328ed76f150012619131788f42d3a9d21fc4e40859cdb",
+  "candidate_board_sha256": "4f456f0563e9dc5a3b7cbab98eaa8d9f24485d14dc79a7656af5ab04b983b6b1",
+  "protected_native_tree_equal": true,
+  "protected_native_tree_sha256": {
+    "baseline": "22283f38bfa6eea66bda8e31e82d2ad87fa6a94779375b57a10846744fd06afe",
+    "candidate": "22283f38bfa6eea66bda8e31e82d2ad87fa6a94779375b57a10846744fd06afe"
+  },
+  "sections": {
+    "footprint_identity": {
+      "baseline_sha256": "09b52d0ee380e58c7f37bbc2eb2be393881fbb8072d815417445f92215e6e79b",
+      "candidate_sha256": "09b52d0ee380e58c7f37bbc2eb2be393881fbb8072d815417445f92215e6e79b",
+      "equal": true
+    },
+    "footprints_protected": {
+      "baseline_sha256": "71eb744d7c7679013de35c16d9bb697c4d9883f9d89f7b4ffb40d47ae43b742c",
+      "candidate_sha256": "71eb744d7c7679013de35c16d9bb697c4d9883f9d89f7b4ffb40d47ae43b742c",
+      "equal": true
+    },
+    "pads": {
+      "baseline_sha256": "4ec75c8ea3897db6d9814a78003a99722410bf76dc10d1a23bf0cc6112b9c3d5",
+      "candidate_sha256": "4ec75c8ea3897db6d9814a78003a99722410bf76dc10d1a23bf0cc6112b9c3d5",
+      "equal": true
+    },
+    "models": {
+      "baseline_sha256": "1992c9292d8d2ad07db28da130587fc4b10a0277b26245abbb1e1b8cabcca8a4",
+      "candidate_sha256": "1992c9292d8d2ad07db28da130587fc4b10a0277b26245abbb1e1b8cabcca8a4",
+      "equal": true
+    },
+    "copper_and_vias": {
+      "baseline_sha256": "40840e7ec76ab589d86271daedb3fa7040043ef9a6ae50cfd818c3da64592e70",
+      "candidate_sha256": "40840e7ec76ab589d86271daedb3fa7040043ef9a6ae50cfd818c3da64592e70",
+      "equal": true
+    },
+    "zones_and_stored_fills": {
+      "baseline_sha256": "f6f91e0e4c772c9ccc8ac35486d9dbbf2e1080320f0ea1ca5492c576cd51e081",
+      "candidate_sha256": "f6f91e0e4c772c9ccc8ac35486d9dbbf2e1080320f0ea1ca5492c576cd51e081",
+      "equal": true
+    },
+    "outline": {
+      "baseline_sha256": "dc3c5e73263996ba8e4527ee97275d5d50f25f4c16d5d9ee3db840b51b210573",
+      "candidate_sha256": "dc3c5e73263996ba8e4527ee97275d5d50f25f4c16d5d9ee3db840b51b210573",
+      "equal": true
+    },
+    "other_protected_board_content": {
+      "baseline_sha256": "703d7ba4ddf36c1ea1eb9a1cd469cea5299039715c71c7d6d2867c8e2cb7f0a1",
+      "candidate_sha256": "703d7ba4ddf36c1ea1eb9a1cd469cea5299039715c71c7d6d2867c8e2cb7f0a1",
+      "equal": true
+    }
+  },
+  "baseline_text_count": 1604,
+  "candidate_text_count": 1616,
+  "new_silk_leaders": {
+    "status": "PASS_EXACT_NEW_SILK_LEADER_WHITELIST",
+    "valid": true,
+    "objects": [
+      {
+        "reference": "R35",
+        "uuid": "164120a1-8748-4ae5-9790-6b7170e61188",
+        "native_kind": "gr_line",
+        "face": "F.SilkS",
+        "width_mm": 0.15,
+        "start_mm": [
+          61.675,
+          12.2625
+        ],
+        "end_mm": [
+          61.700929,
+          12.23657
+        ],
+        "coordinate_frame": "board",
+        "native_object_sha256": "effcfb9b08969820a44afc92755c0fbdefad1cdd6d17dfa6fee0b39ea10e49f3"
+      },
+      {
+        "reference": "R35",
+        "uuid": "1c8b0f5c-b7dd-422d-a975-6b869986e70d",
+        "native_kind": "gr_line",
+        "face": "F.SilkS",
+        "width_mm": 0.15,
+        "start_mm": [
+          61.700929,
+          12.23657
+        ],
+        "end_mm": [
+          61.700929,
+          10.025085
+        ],
+        "coordinate_frame": "board",
+        "native_object_sha256": "98840010c9d121d23067d97de2f3d13d63bba38746b499daf65f6e4419382e0c"
+      },
+      {
+        "reference": "R56",
+        "uuid": "22c8cc1a-1018-4e59-9e53-d4a930f86b4a",
+        "native_kind": "gr_line",
+        "face": "B.SilkS",
+        "width_mm": 0.15,
+        "start_mm": [
+          39.425,
+          41.1125
+        ],
+        "end_mm": [
+          39.464685,
+          41.152185
+        ],
+        "coordinate_frame": "board",
+        "native_object_sha256": "713cc238b7afcabf3f130f110d5fc619698fe0f6d7b0acf7cc830fdfe9cb4087"
+      },
+      {
+        "reference": "R56",
+        "uuid": "42e93314-6a8c-48bc-b4ef-a9fd7304541b",
+        "native_kind": "gr_line",
+        "face": "B.SilkS",
+        "width_mm": 0.15,
+        "start_mm": [
+          39.464685,
+          41.152185
+        ],
+        "end_mm": [
+          39.464685,
+          43.687835
+        ],
+        "coordinate_frame": "board",
+        "native_object_sha256": "a049d7f9195b933e1cb95005356f48f08445f95e923b9ac476f1daaa4777cdcb"
+      },
+      {
+        "reference": "D2",
+        "uuid": "5b0f417d-6ca1-415f-9979-07750cfbc7f6",
+        "native_kind": "gr_line",
+        "face": "F.SilkS",
+        "width_mm": 0.15,
+        "start_mm": [
+          70.074999,
+          63.887499
+        ],
+        "end_mm": [
+          70.711129,
+          63.25137
+        ],
+        "coordinate_frame": "board",
+        "native_object_sha256": "d659236598269e21ae4e14920597ec83226d8d55bc552b228532efc1dd722d98"
+      },
+      {
+        "reference": "D2",
+        "uuid": "fd80f12e-3e6d-4204-8ac4-627b36dc9bdf",
+        "native_kind": "gr_line",
+        "face": "F.SilkS",
+        "width_mm": 0.15,
+        "start_mm": [
+          70.711129,
+          63.25137
+        ],
+        "end_mm": [
+          70.711129,
+          60.636285
+        ],
+        "coordinate_frame": "board",
+        "native_object_sha256": "10f8fca2b8c73105f04135130fa4ef7ae16db359c3868a7bbb87ff13686a935d"
+      },
+      {
+        "reference": "R105",
+        "uuid": "11681b65-090d-43d7-b94d-e3425063eced",
+        "native_kind": "gr_line",
+        "face": "F.SilkS",
+        "width_mm": 0.15,
+        "start_mm": [
+          32.612499,
+          50.275
+        ],
+        "end_mm": [
+          33.88842,
+          51.55092
+        ],
+        "coordinate_frame": "board",
+        "native_object_sha256": "0c90e66e0b7bcc7dfb3645d285c28ae3a5779d37c778cdd75d99be8c61abb4b3"
+      },
+      {
+        "reference": "R105",
+        "uuid": "0404a138-da3d-4032-8d38-3edc46ebe29a",
+        "native_kind": "gr_line",
+        "face": "F.SilkS",
+        "width_mm": 0.15,
+        "start_mm": [
+          33.88842,
+          51.55092
+        ],
+        "end_mm": [
+          33.88842,
+          52.735581
+        ],
+        "coordinate_frame": "board",
+        "native_object_sha256": "cc2f94bcf23ece73dd670bcb570c8513eefb5badc3d853259adb51f9073af5a7"
+      }
+    ],
+    "rejected": [],
+    "native_endpoint_tolerance_mm": 2e-06,
+    "existing_non_text_graphics_must_remain_exact": true
+  },
+  "silk_style": {
+    "changed_or_new_printed_texts": [
+      {
+        "owner": "R77",
+        "kind": "property",
+        "uuid": "b91299a7-1cfd-455f-bceb-11f67c886ab8",
+        "text": "R77",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "17ae466e95f03afcfa6fb2368fdd8f382b9b3ea7659f007e22c97c5bc5a3127f",
+        "reference_label": true
+      },
+      {
+        "owner": "C2",
+        "kind": "property",
+        "uuid": "70ab5869-5d5b-43ad-bc89-4521f6f8897d",
+        "text": "C2",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "ca5e814576761066f78817a0d1b8e7784d04a29f5776bb3f79a53fbd90f75d9b",
+        "reference_label": true
+      },
+      {
+        "owner": "TP2",
+        "kind": "property",
+        "uuid": "3018789e-d23e-41ab-b62c-038791044f44",
+        "text": "TP2",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "abb45862a327182f28dde832924fd6dcb813e785c31e70d20881dbf0fb02fdd4",
+        "reference_label": true
+      },
+      {
+        "owner": "R31",
+        "kind": "property",
+        "uuid": "25fa54e6-798b-462a-a87e-447be95c1d87",
+        "text": "R31",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "861862894450d73eee07ff3e2a3a8e9e885dc86fd6724d55483575d6bcba883b",
+        "reference_label": true
+      },
+      {
+        "owner": "J4",
+        "kind": "property",
+        "uuid": "72b03f85-c556-40a1-b9f8-c770f697a8f5",
+        "text": "J4",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "8dcf6d2c4e01fc8cdc69d9be78aa29ba4d871838a69bf1a26fab3402152241e0",
+        "reference_label": true
+      },
+      {
+        "owner": "R143",
+        "kind": "property",
+        "uuid": "f8718659-cf71-4d2c-b5b7-564582d446b2",
+        "text": "R143",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "a408876a63046aa547ce10435548ad7a629c3a0bc5b245fd6802b75af633acb1",
+        "reference_label": true
+      },
+      {
+        "owner": "U5",
+        "kind": "property",
+        "uuid": "d1e916e2-3ecd-4f35-b7fa-73c24e632cde",
+        "text": "U5",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "84bff567660025311e7dccb554c3d85082f28c5cb054d7207ae3282ae14839ba",
+        "reference_label": true
+      },
+      {
+        "owner": "R48",
+        "kind": "property",
+        "uuid": "b9e9b705-e41d-429d-8036-b1fca3a724fd",
+        "text": "R48",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "be375826905d5a94073edc9e747f3fc3629d36696e894462464795c1a44b1e18",
+        "reference_label": true
+      },
+      {
+        "owner": "TP6",
+        "kind": "property",
+        "uuid": "2bb340fe-e032-4091-9233-54d814a9d6af",
+        "text": "TP6",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "a22108532bb4ef4ee233b5ea135358a765557284014136a5200f0d0f95970ae7",
+        "reference_label": true
+      },
+      {
+        "owner": "U60",
+        "kind": "property",
+        "uuid": "6b28bdff-5651-47d9-8f7c-391e4b354ef1",
+        "text": "U60",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "a5c473c1eb5fd3e5efaefe495b99769428889910271b6dff070ebe35777443a6",
+        "reference_label": true
+      },
+      {
+        "owner": "C170",
+        "kind": "property",
+        "uuid": "dda0187a-6dcb-4be5-9ad0-87c605e8f13c",
+        "text": "C170",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "3baddd61c747db970554a2aca78b72f464b592d1624674c51a6be53ca472333d",
+        "reference_label": true
+      },
+      {
+        "owner": "U11",
+        "kind": "property",
+        "uuid": "de0bcc23-2030-4e16-854e-1496aa08020c",
+        "text": "U11",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "69eca86f351776d8884e85435ece98a6aad105ecf865ecf45e25ea971b25704a",
+        "reference_label": true
+      },
+      {
+        "owner": "R210",
+        "kind": "property",
+        "uuid": "9be5475a-411c-4489-91ae-064d43307627",
+        "text": "R210",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "914f48fb8302e62a3e8615fcadf913f147a1f7ea94a2b11708872470193ae2a7",
+        "reference_label": true
+      },
+      {
+        "owner": "C163",
+        "kind": "property",
+        "uuid": "061e626a-5db6-46d6-b3e8-85822778ec7a",
+        "text": "C163",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "582535d279d808392c9579d9529db82ff90a65ebd1d2f2c34f2448640e566f5e",
+        "reference_label": true
+      },
+      {
+        "owner": "R214",
+        "kind": "property",
+        "uuid": "e364ee78-32c1-4458-ad8f-a23c3612c64c",
+        "text": "R214",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "103004ca7756290ebe71fa50ce6f6423f5febb16fd886a2d07e5d904adb3e9cb",
+        "reference_label": true
+      },
+      {
+        "owner": "R19",
+        "kind": "property",
+        "uuid": "3411dcd8-7c52-4f6e-b3fa-16389927679c",
+        "text": "R19",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "b1a1a7b30414a61062eb78699657250ba3b78839563bfcd59892deedd43d1da0",
+        "reference_label": true
+      },
+      {
+        "owner": "R213",
+        "kind": "property",
+        "uuid": "152ea73d-b1e6-49d9-a9ab-2a6b7988e726",
+        "text": "R213",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "a077864e35d1d222a0de8eeb0d1f6214bee853bc0507c7eba930aac679372779",
+        "reference_label": true
+      },
+      {
+        "owner": "D5",
+        "kind": "property",
+        "uuid": "4a099b02-c793-4e32-b164-db9826d8b2c9",
+        "text": "D5",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "da58ee006bb76820aaa388b38f2f1989f383d1233803a7d56a11a78bb648d2cc",
+        "reference_label": true
+      },
+      {
+        "owner": "C7",
+        "kind": "property",
+        "uuid": "f752ecb9-5c25-432f-8b7e-3002b7b37888",
+        "text": "C7",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "882d229f87438ec8fee7e737aa969f2e50f2a62ad3080fcfc4744f1f484c257c",
+        "reference_label": true
+      },
+      {
+        "owner": "R13",
+        "kind": "property",
+        "uuid": "0f2cbab9-220c-46ee-b830-02a420063d27",
+        "text": "R13",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "129e53e84ef3c92c687b8fcc31dad2040a0fc2e8fe299e05ede8e4b714465659",
+        "reference_label": true
+      },
+      {
+        "owner": "R29",
+        "kind": "property",
+        "uuid": "5727c3e9-6b1b-4df1-a828-7d8f408bb636",
+        "text": "R29",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "a411813ff5761dffab00a2c3a23772647bc2b5597a76bcb71fa8c8c2845d567b",
+        "reference_label": true
+      },
+      {
+        "owner": "C45",
+        "kind": "property",
+        "uuid": "c6d41181-1d67-414d-9df4-83e95405e7da",
+        "text": "C45",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "ebcd0ff8f93426b6697a7eee74cce10bc41c1f8c49bb7ad862a989439d9da833",
+        "reference_label": true
+      },
+      {
+        "owner": "C19",
+        "kind": "property",
+        "uuid": "ae09e62a-fc9e-4613-8ba0-c7cb1ec37c1c",
+        "text": "C19",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "db05bec38f5cc0b5b094ca8c2e3e31f7dd95e89316274a861d0a0cef0d38c803",
+        "reference_label": true
+      },
+      {
+        "owner": "C86",
+        "kind": "property",
+        "uuid": "7b101be2-795e-4c06-9f06-6865ff2ceade",
+        "text": "C86",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "cb47524bb7bffdc6b0d4cc21d8e9e4e812e296fbda9a7df66fc8d12be76708a6",
+        "reference_label": true
+      },
+      {
+        "owner": "R93",
+        "kind": "property",
+        "uuid": "81745cd5-ceb1-4ebb-a1a5-1d3ceaf6f857",
+        "text": "R93",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "92e3455bc8c538f7fc864b6cc47e2eec63d548d5a3d9526d5b5372a1bc1d3225",
+        "reference_label": true
+      },
+      {
+        "owner": "C122",
+        "kind": "property",
+        "uuid": "f0d60e82-e5e6-40c5-ad25-3bbe0ca5cf84",
+        "text": "C122",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "a02c38c604efff2b01b563daa8643770c372f36c34a6379d212bbd797b9de842",
+        "reference_label": true
+      },
+      {
+        "owner": "C85",
+        "kind": "property",
+        "uuid": "12a0e90a-3262-4311-a809-c816d7ee3bce",
+        "text": "C85",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "2ed6e2d45650e51f62cf1c0fb0096a0e7bd193de9f6dd69b2e7e3d95463a675b",
+        "reference_label": true
+      },
+      {
+        "owner": "U3",
+        "kind": "property",
+        "uuid": "7e534b87-2fa9-4e69-896b-e418a3578095",
+        "text": "U3",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "3513365b1cb0d1b5140b8ca65925f613065c14ff73f686364f55242e69a428ec",
+        "reference_label": true
+      },
+      {
+        "owner": "J2",
+        "kind": "property",
+        "uuid": "d4893ae9-4955-42c9-9131-abd3e81f4227",
+        "text": "J2",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "1cbe9560889bbff1a6836cfa4132a08fd6ecaca74cef20353f81afc870c6e7d3",
+        "reference_label": true
+      },
+      {
+        "owner": "R35",
+        "kind": "property",
+        "uuid": "67f995ba-fa37-460c-9813-8f358d08dbf9",
+        "text": "R35",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "0280e03734a85881de2cd4e2f53930a3dde1fd3f4f78ef35d4586c380ee88440",
+        "reference_label": true
+      },
+      {
+        "owner": "R27",
+        "kind": "property",
+        "uuid": "92044feb-1cd0-4883-9a40-5c6bb3235d16",
+        "text": "R27",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "03c17295de2b38f60d1eae9293ed82af6c82182d84249d9c6eed656f38b59e24",
+        "reference_label": true
+      },
+      {
+        "owner": "D1",
+        "kind": "property",
+        "uuid": "5831d8fb-1c90-4eaa-82a2-d8678afa882d",
+        "text": "D1",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "e1daeb622e867afe96abe9917466f65311616cc4d67370c08a5fd3ce59c5c242",
+        "reference_label": true
+      },
+      {
+        "owner": "C81",
+        "kind": "property",
+        "uuid": "17a06094-a4e2-4f4b-93d0-753c157db44b",
+        "text": "C81",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "169ba95739b83596323214d9d8b9568e40a316c62de1d886fa738610ff5aa5ef",
+        "reference_label": true
+      },
+      {
+        "owner": "U42",
+        "kind": "property",
+        "uuid": "bb024d2c-cbcc-413f-8148-4ba176426669",
+        "text": "U42",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "66f1c9c80169497459bcdf5d40b79d98cd8d3dee0db6a02241dc5711300b56cf",
+        "reference_label": true
+      },
+      {
+        "owner": "C4",
+        "kind": "property",
+        "uuid": "e37fb878-b82b-4c2a-a830-39233a7db65d",
+        "text": "C4",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "2c16732c262c2acf07dd33c9e659249425b4e5e4c7a4781b640017906859bacc",
+        "reference_label": true
+      },
+      {
+        "owner": "R102",
+        "kind": "property",
+        "uuid": "60c617aa-33ea-4072-9aa2-e444690d7bbd",
+        "text": "R102",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "760d1862ca634a47a854367c758271eb499bd56d6541540bf91907cf82480fdf",
+        "reference_label": true
+      },
+      {
+        "owner": "U20",
+        "kind": "property",
+        "uuid": "64e28839-4f01-497f-b959-4b4c383d6f93",
+        "text": "U20",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "3239882f4e6d88ef11d853ae4541c0e4775a3aafe00aa516141b616249db4ea4",
+        "reference_label": true
+      },
+      {
+        "owner": "C83",
+        "kind": "property",
+        "uuid": "69b1266a-4ff6-4cb3-aba4-5c9e11ac757c",
+        "text": "C83",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "64d161a8b629b16e6a36e61808d3a3f2f7897cb750f5e48d0743dd3e11cbbabe",
+        "reference_label": true
+      },
+      {
+        "owner": "R212",
+        "kind": "property",
+        "uuid": "6e8e25cb-a60a-4733-bf04-7d6c5b501d0e",
+        "text": "R212",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "2c41fe9bdef1ad59e3acaaf76cb95629af7ffa8ec58649d247f26839cb68a898",
+        "reference_label": true
+      },
+      {
+        "owner": "H7",
+        "kind": "property",
+        "uuid": "b1e6075a-e482-4126-9ae1-9ffe7a02bda7",
+        "text": "H7",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "8ab3959bd2e8c37dc518ee3c76d70ba3b1f1c305c0ba2e31119d52d34dff5ef5",
+        "reference_label": true
+      },
+      {
+        "owner": "J5",
+        "kind": "property",
+        "uuid": "2ab749ad-3fe7-4dbb-958f-1192130ab7a3",
+        "text": "J5",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "ebe8b37778014a4726244b31ae02bfb660fdb2c01e41e9a4e93b4cf0a5a4ae9e",
+        "reference_label": true
+      },
+      {
+        "owner": "L2",
+        "kind": "property",
+        "uuid": "ef31a47f-d451-4ba9-a6f9-4b49e066cc95",
+        "text": "L2",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "85190c26482b63e351448823869b173d213f39d050d95102e6be2b3f13878153",
+        "reference_label": true
+      },
+      {
+        "owner": "R33",
+        "kind": "property",
+        "uuid": "4c76795f-bffb-4518-abc5-2014392eef0a",
+        "text": "R33",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "b186ba870048572590a0a11e310d6802037f35c0bd8a4213c16eea538effd2e3",
+        "reference_label": true
+      },
+      {
+        "owner": "R10",
+        "kind": "property",
+        "uuid": "04b22ea0-4360-4f01-bdb1-e2e97f0ef320",
+        "text": "R10",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "86336e5a4ac5b965cbdd37619ed073738dc4db1f6f9dc1282d3c11127d4dc914",
+        "reference_label": true
+      },
+      {
+        "owner": "C43",
+        "kind": "property",
+        "uuid": "57ededb7-5db9-4beb-b14c-de35eda5a285",
+        "text": "C43",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "96c0177e47f322350543431deb72053863401eaf175c9eca84b8828664f71bf1",
+        "reference_label": true
+      },
+      {
+        "owner": "TP3",
+        "kind": "property",
+        "uuid": "c4ed2d4a-74db-4244-ad63-871083e83467",
+        "text": "TP3",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "2af993a07f8cd8a7b07673fd4194e6816838b1be0f455b0ac9aadec542f1ccc0",
+        "reference_label": true
+      },
+      {
+        "owner": "C84",
+        "kind": "property",
+        "uuid": "95cce2a6-c1e8-47bb-9300-61ee7722d69d",
+        "text": "C84",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "8b64e80a08240c52a2b1efac9f97488bc9946b744a35ff8e2726b6d8b655308b",
+        "reference_label": true
+      },
+      {
+        "owner": "U27",
+        "kind": "property",
+        "uuid": "833d2655-ae2c-4540-bd1d-bb7b8f620969",
+        "text": "U27",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "4d8bde37767c4302de23696c5630254b4f8ae7189f37bf171a3578c9f60b25de",
+        "reference_label": true
+      },
+      {
+        "owner": "D7",
+        "kind": "property",
+        "uuid": "a664cd04-09dd-4712-8693-142b7ab4e2d9",
+        "text": "D7",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "b7173ac0b3f14721cf4905fb838dee30a78b266b23c1a7ab6444c00d1b8719e1",
+        "reference_label": true
+      },
+      {
+        "owner": "J7",
+        "kind": "property",
+        "uuid": "41d1b887-bad9-47ef-92d6-a0ca71a5b7c7",
+        "text": "J7",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "533f2b53e51baef00405b41a17b0847a99a5104e6fbfb413bfdf8556837e83a1",
+        "reference_label": true
+      },
+      {
+        "owner": "R180",
+        "kind": "property",
+        "uuid": "a61f0d2b-6126-4530-b640-6e3a100ab577",
+        "text": "R180",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "59d667d909acd7f774be8cbc986067bc6655a69b3fa1f0f3faa9570179cc1340",
+        "reference_label": true
+      },
+      {
+        "owner": "D21",
+        "kind": "property",
+        "uuid": "2a5be512-fe74-4884-858d-e04417d0eb2e",
+        "text": "D21",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "701422429987ae8a4c4a4553def68ed44b80a6392ed7d574ed98e290f87ed18a",
+        "reference_label": true
+      },
+      {
+        "owner": "C41",
+        "kind": "property",
+        "uuid": "4e121a8a-b2b8-42e9-a573-416e1fec757d",
+        "text": "C41",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "1e4374769f1a5496f9415555c75dfc7ab93f5fcedfd7e91f741854c23cbf538f",
+        "reference_label": true
+      },
+      {
+        "owner": "SW2",
+        "kind": "property",
+        "uuid": "e882f108-fb9a-46ed-9d49-f2369fe0d629",
+        "text": "SW2",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "ef67874db28f8b91b5504b681f563772cb2d898bc22f8c16fd3d0d4a43ba97f3",
+        "reference_label": true
+      },
+      {
+        "owner": "U23",
+        "kind": "property",
+        "uuid": "64a9e1b7-54a9-4c61-95f2-230e92cc38be",
+        "text": "U23",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "6add2fbea69a70120444e1c4c1c1a834c980bbaee4557f5b99658391ec110d0b",
+        "reference_label": true
+      },
+      {
+        "owner": "C162",
+        "kind": "property",
+        "uuid": "3f9af618-c7bf-4834-82a5-bf24b21ec75d",
+        "text": "C162",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "8e91d1f48f639528a24056e95e3bb96d361ecfd60d635225b2b5a953d185a875",
+        "reference_label": true
+      },
+      {
+        "owner": "R74",
+        "kind": "property",
+        "uuid": "299e4826-21c7-48f8-9978-1137a4dfc4f2",
+        "text": "R74",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "2a13224ddcad2b7947f89b43b90b3bbf0c27fac3715742be7dbacadb5a04f2ba",
+        "reference_label": true
+      },
+      {
+        "owner": "R182",
+        "kind": "property",
+        "uuid": "402beaff-b7fd-48ec-984b-83c24607e593",
+        "text": "R182",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "7717c5a1b5371b25c54ec1e39b829cc39a43ca4da4522701e877865913c493f9",
+        "reference_label": true
+      },
+      {
+        "owner": "R28",
+        "kind": "property",
+        "uuid": "156ddfca-853f-4dbf-b369-46c6d621ed54",
+        "text": "R28",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "4cafa3c519e5061c5bf376e7dbbf040faf449d244b945796af713e6a3f1462c6",
+        "reference_label": true
+      },
+      {
+        "owner": "R25",
+        "kind": "property",
+        "uuid": "75b73e64-278f-487c-8a0e-4614201ac0a0",
+        "text": "R25",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "9619f7baf28e8e77682afe1afb6c0dbd28116e43b4b0739cfe73471707b49caa",
+        "reference_label": true
+      },
+      {
+        "owner": "F2",
+        "kind": "property",
+        "uuid": "b5ca773d-a8b4-425c-8231-7693d2073e79",
+        "text": "F2",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "a4c827ac9daa5005a15dcbef6f761ae4f04807bcd6beb83e097cf82064b9358d",
+        "reference_label": true
+      },
+      {
+        "owner": "J3",
+        "kind": "property",
+        "uuid": "0cb9f264-11a9-4e0a-aea2-2d041ce53f03",
+        "text": "J3",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "f0ba9d0e826fa66f7b8ac792899796b21b78aeed048087d525093f842bdf52fa",
+        "reference_label": true
+      },
+      {
+        "owner": "R71",
+        "kind": "property",
+        "uuid": "6eab56f7-7041-4701-8778-3007a5149e43",
+        "text": "R71",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "3c94185e1b9048631162c46c95b780f4da66dd358bc327786d6d026ff77d999b",
+        "reference_label": true
+      },
+      {
+        "owner": "R4",
+        "kind": "property",
+        "uuid": "231b4367-b427-4983-ad01-e28c08349ef2",
+        "text": "R4",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "078220649879b5c0b95cbc9196dd33f668467e86f5e9ec678bf80ac1e437274a",
+        "reference_label": true
+      },
+      {
+        "owner": "TP1",
+        "kind": "property",
+        "uuid": "d65cc38a-d6d9-465e-9e3d-28588d83266a",
+        "text": "TP1",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "8cd10c1229a0b72639f11942c5463bd030ebac0ec5e080b9001aa268cbb2ecfe",
+        "reference_label": true
+      },
+      {
+        "owner": "J20",
+        "kind": "property",
+        "uuid": "4aa6e9f9-98d9-4a6b-87a3-6fa139e20495",
+        "text": "J20",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "a3deb74c3e69f636c5f6174f53f57477ce8dc0a0e7accfbe9da1c7ca78f88bfa",
+        "reference_label": true
+      },
+      {
+        "owner": "C9",
+        "kind": "property",
+        "uuid": "2ba2696a-0c71-4f8c-acb6-13e39dd5b2a4",
+        "text": "C9",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "6632b2cecc1be7e57b520005fa2b2f916cc72c3986174d3f5cc854d829e828bf",
+        "reference_label": true
+      },
+      {
+        "owner": "R73",
+        "kind": "property",
+        "uuid": "4312aa23-cf65-4b27-95e0-ebe83b27bff7",
+        "text": "R73",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "676a8faaf4897fc18159417065659fbeff5b42d3a34e7d453d88d34bd678adf7",
+        "reference_label": true
+      },
+      {
+        "owner": "R103",
+        "kind": "property",
+        "uuid": "5ee235b1-3a04-4037-b838-72999f03be7a",
+        "text": "R103",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "dbf4b45a20fe5cac13f551fc21db7dfe5ab1116b32c4e3f898b76032859deb72",
+        "reference_label": true
+      },
+      {
+        "owner": "J14",
+        "kind": "property",
+        "uuid": "eb2f5670-001b-4bdc-8975-037f27b52073",
+        "text": "J14",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "97b00bde1ac6ff371df75acbe18cc2666873d89d9927896095630e89ce0a2a4c",
+        "reference_label": true
+      },
+      {
+        "owner": "TP7",
+        "kind": "property",
+        "uuid": "9654aa49-e939-4692-b099-727fb395d440",
+        "text": "TP7",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "2ed503ae6bfaa5037b2d90eb608963cadf0eee35144873fbaf50737fe8fd868f",
+        "reference_label": true
+      },
+      {
+        "owner": "R5",
+        "kind": "property",
+        "uuid": "2d93454f-4586-414e-bf8d-43a810b8c46e",
+        "text": "R5",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "529ea6fb5f6848c31353ce47eec25c9a4b110aa4d434f96440015486f3b971ab",
+        "reference_label": true
+      },
+      {
+        "owner": "SW1",
+        "kind": "property",
+        "uuid": "44a526fb-02b7-4c46-aad2-5f507e431334",
+        "text": "SW1",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "0ce3b39847cc9f22ae45ffb87fab10db1d501218d35555b475fdb39c006c8b05",
+        "reference_label": true
+      },
+      {
+        "owner": "TP5",
+        "kind": "property",
+        "uuid": "84265598-bcbf-4238-9637-27cac415411d",
+        "text": "TP5",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "780b537a00b9b2264151140559ba58ba19ceb37bb254933c482002e2536d6fe4",
+        "reference_label": true
+      },
+      {
+        "owner": "C1",
+        "kind": "property",
+        "uuid": "ae46d180-8eab-41e5-937f-88b69bc08d0d",
+        "text": "C1",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "6f16ed536f7849852cde3e68d30708b9320c29318da273c098c91abf2a5eb46b",
+        "reference_label": true
+      },
+      {
+        "owner": "R37",
+        "kind": "property",
+        "uuid": "8fb5de50-5454-4211-b768-d12c0a19ef74",
+        "text": "R37",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "838ee5393c91a8142f22c797496b7120faf0e8e4742c002c0625ceb6ead5f701",
+        "reference_label": true
+      },
+      {
+        "owner": "R24",
+        "kind": "property",
+        "uuid": "5ac3dc5b-7f94-4663-b6e6-d76bee5a8934",
+        "text": "R24",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "49a2e8cc17a401bfeac890a2536f04cf4b079f4155ce8b86723d9670b2a6eb93",
+        "reference_label": true
+      },
+      {
+        "owner": "R6",
+        "kind": "property",
+        "uuid": "f25425f3-f44d-4766-9f3a-902eb15e9439",
+        "text": "R6",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "04e31c887247fb15f6fa71a3224f25be3ceb7a93d78834eac68e2f964f1d7e36",
+        "reference_label": true
+      },
+      {
+        "owner": "R104",
+        "kind": "property",
+        "uuid": "f6825d4b-ec23-405c-b43c-1be39182e315",
+        "text": "R104",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "2c2483c5db2d4ea5972df0529f31ea18f1146fbab26ad1dc263d92d1d2434eb5",
+        "reference_label": true
+      },
+      {
+        "owner": "C5",
+        "kind": "property",
+        "uuid": "21ec2a9b-dbe5-41d2-8996-bbac6a13366f",
+        "text": "C5",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "f6665ab50cf25667286111144cf421e1304f688d96927c58fbfc7949e0fbf43d",
+        "reference_label": true
+      },
+      {
+        "owner": "R34",
+        "kind": "property",
+        "uuid": "7a720483-a174-4d36-b139-dfdfbd118f58",
+        "text": "R34",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "391ed1d850dcc9a934bab738618195c4e9850b1b2228f653bf55a8acbf1c736e",
+        "reference_label": true
+      },
+      {
+        "owner": "R78",
+        "kind": "property",
+        "uuid": "d37adf8f-5fbe-4eae-961b-f35d2ce48860",
+        "text": "R78",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "ab46246d223762e23439fc57936e18f5637dafb786b78856ba6bbafde87755f6",
+        "reference_label": true
+      },
+      {
+        "owner": "U41",
+        "kind": "property",
+        "uuid": "af9c43c8-ccd5-4f57-8769-9d5821aba38c",
+        "text": "U41",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "dd9d63986f677e27e105e7d4b6a35faa8b2e77891f10dc0b84e4cd5b62aa71ca",
+        "reference_label": true
+      },
+      {
+        "owner": "R3",
+        "kind": "property",
+        "uuid": "49eb53cf-c019-4bf0-9cbf-17e330016188",
+        "text": "R3",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "00df72637d143038d896cd901d81f0ead8a55b29bb9d5292bd05b8c3a99637b6",
+        "reference_label": true
+      },
+      {
+        "owner": "C40",
+        "kind": "property",
+        "uuid": "7ff99060-8848-4bbf-a4f2-27958b0f4048",
+        "text": "C40",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "be430267a292ccceac427f98db708531d8c3c2b75a83a4b8d4069cd43d7ac5db",
+        "reference_label": true
+      },
+      {
+        "owner": "F1",
+        "kind": "property",
+        "uuid": "7e88898d-03de-4b4a-bc75-8c73e407c854",
+        "text": "F1",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "d921ca7c8c62bc46b819e7ce56e07d2f19fa2dfed135a6a0b447c8e2ac86d38b",
+        "reference_label": true
+      },
+      {
+        "owner": "C23",
+        "kind": "property",
+        "uuid": "df33afe8-2613-4e8b-80cd-774f13de3755",
+        "text": "C23",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "6ad8439ad698a2d8943660ed44f74b706a071148436aaa516e4cd426f3fc0616",
+        "reference_label": true
+      },
+      {
+        "owner": "R38",
+        "kind": "property",
+        "uuid": "b4b66f0a-7b8b-42d2-8e1c-36c9733908b7",
+        "text": "R38",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "8ca7bf12c16cddd1eacceee7ebddd74bf6d9171a4cc4c809306990f92b5783ff",
+        "reference_label": true
+      },
+      {
+        "owner": "R76",
+        "kind": "property",
+        "uuid": "1857f51a-effe-4e4e-8105-13c9f1cd70f5",
+        "text": "R76",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "8fa75d8228e95d8b960030357e95f993135ff09c0768af7856bdf4e7550bedb7",
+        "reference_label": true
+      },
+      {
+        "owner": "C25",
+        "kind": "property",
+        "uuid": "3ac2c01e-74a9-4fe8-8b87-c70e5ac48caf",
+        "text": "C25",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "ad44aa77301bcfc6ec313981c47c2ca25de24e1358a41aa9322da033dc86ca56",
+        "reference_label": true
+      },
+      {
+        "owner": "R181",
+        "kind": "property",
+        "uuid": "fb10496e-41df-4846-9bdd-c1d40d512d26",
+        "text": "R181",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "541f3f17ac9f308b5761fa497a000632beec6c2fd37742eddde2c09478d01543",
+        "reference_label": true
+      },
+      {
+        "owner": "R30",
+        "kind": "property",
+        "uuid": "0def579d-860f-494d-b497-2f1c48ab5b07",
+        "text": "R30",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "e96205d1ecc7667de9dedfc36caa19a637190986dcc8f30e12a4182d81540825",
+        "reference_label": true
+      },
+      {
+        "owner": "C20",
+        "kind": "property",
+        "uuid": "1756f633-c776-44fb-8925-a4c854435405",
+        "text": "C20",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "9e13cb247cdf088f377faf286b7e63a7504084514addf8bd9ab4a68a217612c3",
+        "reference_label": true
+      },
+      {
+        "owner": "C11",
+        "kind": "property",
+        "uuid": "c2a60457-94e2-48e7-a0a4-4f9fd6e19719",
+        "text": "C11",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "5b4df627f9a6d5951317ce4d0bc91f736678db99dcd9c826ada7b4a0aad6f5e3",
+        "reference_label": true
+      },
+      {
+        "owner": "C124",
+        "kind": "property",
+        "uuid": "577cc841-b199-4abd-a019-3a3aef7bc03c",
+        "text": "C124",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "af9a2e71f19d24dc40dfc72dd20425b6c052b0a0fa89df3271917aa03ce81658",
+        "reference_label": true
+      },
+      {
+        "owner": "U43",
+        "kind": "property",
+        "uuid": "e383d09d-fe60-4b12-9092-63322118cad9",
+        "text": "U43",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "c45119d476c771269641ceae37a1d89a8a1edddc76f24ed3217f1cc6662c88c1",
+        "reference_label": true
+      },
+      {
+        "owner": "R111",
+        "kind": "property",
+        "uuid": "5751be5a-70ca-4c5d-8f95-8d2f7473308a",
+        "text": "R111",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "37b996f070c52646a4223c86ba7c55be82747898b12e1b6857df4c37a0cc2f4e",
+        "reference_label": true
+      },
+      {
+        "owner": "J15",
+        "kind": "property",
+        "uuid": "79944399-5f03-4201-9aa4-63bbd7bc896c",
+        "text": "J15",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "eba7322b02affa8fb0b6fd80d291fd458326258cfe702d5ec7d98e12b4dfe8b2",
+        "reference_label": true
+      },
+      {
+        "owner": "C80",
+        "kind": "property",
+        "uuid": "85aca9af-1ba6-4b5c-a93d-189de23db786",
+        "text": "C80",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "6ab7aba7516ca4ba48c7fd2539ffb0de6de13bae9f54dcd5453bd77fda39849a",
+        "reference_label": true
+      },
+      {
+        "owner": "C164",
+        "kind": "property",
+        "uuid": "9d9175f2-7922-4b3f-9649-c0c6ec2bd378",
+        "text": "C164",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "742aaf1ed0790a12e4643dc74013af4c0771e84702cb90bf7a05b7087dd8b244",
+        "reference_label": true
+      },
+      {
+        "owner": "C168",
+        "kind": "property",
+        "uuid": "1991a148-1bb9-4c98-b18d-d1b4a9f8ce72",
+        "text": "C168",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "c5850136e224eae56234092986d83f424697d0b4a5b0cb7e5b57a8f4b6a843d2",
+        "reference_label": true
+      },
+      {
+        "owner": "D22",
+        "kind": "property",
+        "uuid": "b70cb02e-8748-43be-931b-4d52177bef6c",
+        "text": "D22",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "5c09f01286a6da6b381218be761a690ebba1ec1a692cf25b59777ff1003a02cf",
+        "reference_label": true
+      },
+      {
+        "owner": "C160",
+        "kind": "property",
+        "uuid": "dd32b2ec-9a08-4d70-ae81-0f0e9ac549ed",
+        "text": "C160",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "36889f9bf22c7993626ad3b6ac3dcfcb1b85cd18ef3c073b0b29b22a1f011e89",
+        "reference_label": true
+      },
+      {
+        "owner": "H6",
+        "kind": "property",
+        "uuid": "5f78bb36-2cf4-4bd1-9754-7ef7623c94f8",
+        "text": "H6",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "9447c4e5f61ee1b7a2e13e365b2afdde5c64bdb9f50ebfacccadc4ec7e002c69",
+        "reference_label": true
+      },
+      {
+        "owner": "C100",
+        "kind": "property",
+        "uuid": "2472dcc6-1dd6-471e-bf78-a743134fb2ea",
+        "text": "C100",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "e5a2d7ba53ede6017f7af28c120eec4cddf045f75d07679cd1c9b4dfc4cfdac2",
+        "reference_label": true
+      },
+      {
+        "owner": "C120",
+        "kind": "property",
+        "uuid": "0c872733-da11-4048-97ea-63479c45b043",
+        "text": "C120",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "456f400c7d0cf32254bb341f6d430760e32f27d789791bd70182f70ae7bdfced",
+        "reference_label": true
+      },
+      {
+        "owner": "R26",
+        "kind": "property",
+        "uuid": "700e8651-b1ea-491b-8840-b80b086ac0ca",
+        "text": "R26",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "05fd17a532e016c523641a649af81125c38239535c78d998a02ea91044fb2076",
+        "reference_label": true
+      },
+      {
+        "owner": "U14",
+        "kind": "property",
+        "uuid": "5d43c8ce-79bb-4b04-9230-91b2fecc2302",
+        "text": "U14",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "9a921edb214594d572c52eaaf1c880a86c74c6b028fba7e8908fdf733cb400ad",
+        "reference_label": true
+      },
+      {
+        "owner": "R40",
+        "kind": "property",
+        "uuid": "ee75dd9f-7744-4198-90c7-7fb5bf6d72dc",
+        "text": "R40",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "aba144f9cbca7610d5d21241d91d12d1b10550b03b742442822331ff16bf8bee",
+        "reference_label": true
+      },
+      {
+        "owner": "C141",
+        "kind": "property",
+        "uuid": "c74e47fd-debb-4784-a667-3c659996490e",
+        "text": "C141",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "85c5994b225d867c900da8569b7e225a41c2d36b08f0ea7dee0bce8a7fa3ce5a",
+        "reference_label": true
+      },
+      {
+        "owner": "C44",
+        "kind": "property",
+        "uuid": "bcb90630-b0b2-4b28-b519-b8c39df7babb",
+        "text": "C44",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "67ae60c1a548cbda468c9409c76e8331e94bf3d0ad983cbd902be06f6a5a0503",
+        "reference_label": true
+      },
+      {
+        "owner": "J8",
+        "kind": "property",
+        "uuid": "2e50d3ed-f0e9-47ec-8d31-394e7e74b9c1",
+        "text": "J8",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "433e29ca303fa7dedf7cd9599037abf8df5d9dc51420741fea9789b8067b7bc1",
+        "reference_label": true
+      },
+      {
+        "owner": "H1",
+        "kind": "property",
+        "uuid": "142563a6-5365-44a8-b912-4536ee7c1443",
+        "text": "H1",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "513f430b14a27fa340d59bcc07136277347cd2fb6b69994d23ca3b4ae135aa00",
+        "reference_label": true
+      },
+      {
+        "owner": "C140",
+        "kind": "property",
+        "uuid": "8ad437af-e9f7-4d6d-9049-bc3ba138b67f",
+        "text": "C140",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "1648edba5932ec70570f9737616d6ffc38a381bb28aaac7880eea8a96f7dd291",
+        "reference_label": true
+      },
+      {
+        "owner": "H3",
+        "kind": "property",
+        "uuid": "7a67d32f-6731-4c5e-8e2b-1df035c908e5",
+        "text": "H3",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "fb0c9156548afaa21a8db4f0ac4e8be9df072c1d64d2c8f23d11dad548fa0409",
+        "reference_label": true
+      },
+      {
+        "owner": "R1",
+        "kind": "property",
+        "uuid": "9f1d36ac-0795-4115-bce3-83481b1ae31a",
+        "text": "R1",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "eb991522b73f2534ed50552fbf872bb8fc5326beccb11c4e814a69e083347a79",
+        "reference_label": true
+      },
+      {
+        "owner": "R183",
+        "kind": "property",
+        "uuid": "77e0c20e-f496-41ea-bb34-d032223b5368",
+        "text": "R183",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "21a456b53850fad5a4028a4e8d2ee3c59dfaaefa91e96a2b4907cd4b751f5dad",
+        "reference_label": true
+      },
+      {
+        "owner": "C121",
+        "kind": "property",
+        "uuid": "3c4080a6-afbb-448b-9320-9e659ae3f57c",
+        "text": "C121",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "3b9e97f0dfcc68920d244375af1b52291ffc7266c0ac893c429d12c5200b2c57",
+        "reference_label": true
+      },
+      {
+        "owner": "U24",
+        "kind": "property",
+        "uuid": "e46d67ba-b4b1-4e96-bade-598024d899bc",
+        "text": "U24",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "01d34aaf6d7984ff806952d53b2e2bdb347c8e97b9d9633829f1423e7d53de2f",
+        "reference_label": true
+      },
+      {
+        "owner": "R79",
+        "kind": "property",
+        "uuid": "059d6dc7-9771-403b-b350-9f927653bd37",
+        "text": "R79",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "d6134a934565f325f87e72651dbf6a43bf4bf2d09012ac57da3bfe266c0c3f93",
+        "reference_label": true
+      },
+      {
+        "owner": "H8",
+        "kind": "property",
+        "uuid": "1b2187d4-d201-4097-a70d-426edef30f81",
+        "text": "H8",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "21365ece95948d54fdaea9e9af9114d25555a78694d4f6e20f0840daa5280c14",
+        "reference_label": true
+      },
+      {
+        "owner": "L3",
+        "kind": "property",
+        "uuid": "464ad40f-c11e-47d9-ab48-e31b0b0b534e",
+        "text": "L3",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "f0b9a47a0272447f11698e2c2a43fbe1689a46aeffa58f1f4d40ea92feb40c64",
+        "reference_label": true
+      },
+      {
+        "owner": "H4",
+        "kind": "property",
+        "uuid": "a748fa22-abf7-4606-986b-bd1aaa61577f",
+        "text": "H4",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "b1da3f0c3977ad0de6453013958f8aeb8c9aa0e6f69ea7c4ec2961cbe72728c1",
+        "reference_label": true
+      },
+      {
+        "owner": "R70",
+        "kind": "property",
+        "uuid": "03c46fc7-16b2-49c3-9848-7b722f36e445",
+        "text": "R70",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "2eb2be2237a8db66c4deededf552e0fdcf5980adfe6a0c6e6d8597046be73182",
+        "reference_label": true
+      },
+      {
+        "owner": "C42",
+        "kind": "property",
+        "uuid": "f07344e3-eaf2-48ed-aebc-2984b982c151",
+        "text": "C42",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "f2d91aa3de29544ff6c20ce4419b64e0059a100a0f516cd1807fc36d59a820d6",
+        "reference_label": true
+      },
+      {
+        "owner": "R36",
+        "kind": "property",
+        "uuid": "1a103398-0fd9-4edf-a982-721645cbda56",
+        "text": "R36",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "280fe687938d43047893253c7f70f75afd78a372a33b3265be8843869069172c",
+        "reference_label": true
+      },
+      {
+        "owner": "D20",
+        "kind": "property",
+        "uuid": "347e8ae2-87ca-46ee-a8e2-951189943868",
+        "text": "D20",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "6c151fa3b3541cfc5025ace66b27eb52519ae90dc4b654247f9cbc0bf0f2d7db",
+        "reference_label": true
+      },
+      {
+        "owner": "U40",
+        "kind": "property",
+        "uuid": "58063dc6-1c7c-4b87-a320-200237eaa887",
+        "text": "U40",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "208cdab729e0d8bc39fce3226c53b0d6b570b1cdeeb53aa9221916454cf1d89f",
+        "reference_label": true
+      },
+      {
+        "owner": "D32",
+        "kind": "property",
+        "uuid": "c31bc5d3-9112-4c40-8b7e-cde5032f4632",
+        "text": "D32",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "a10bb5510b2e6b0e8bcd94c11201320348e9e896b5e34d003f5251229b042d04",
+        "reference_label": true
+      },
+      {
+        "owner": "H5",
+        "kind": "property",
+        "uuid": "22f02126-554c-4c85-925c-77dd133a479a",
+        "text": "H5",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "bb949a1cbedb73a2a3dcdbe35c70b69544b34f0a034f8ccc91ec4974178b53a1",
+        "reference_label": true
+      },
+      {
+        "owner": "J10",
+        "kind": "property",
+        "uuid": "8d992fef-c23b-4c09-ad89-141416d52607",
+        "text": "J10",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "fe05e655b82c1be8e26a9bca2c5ee74e62954c5d5b13e38c4ca65fb1942d033a",
+        "reference_label": true
+      },
+      {
+        "owner": "R8",
+        "kind": "property",
+        "uuid": "47251063-dc18-4a68-b9a4-9bb19ed1e744",
+        "text": "R8",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "0e8db716f0bf84c6f6407fcaeb1ba6a1a210251a0997f0cc7573519b48431ec6",
+        "reference_label": true
+      },
+      {
+        "owner": "C126",
+        "kind": "property",
+        "uuid": "9fb23cd3-0030-4a26-aa44-b1bf6568fcce",
+        "text": "C126",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "31c2b2a4224277592c8bdbeb4a2e49a5e326a5328b8fde52665d377178a1c478",
+        "reference_label": true
+      },
+      {
+        "owner": "U22",
+        "kind": "property",
+        "uuid": "9c2135e1-8484-47ca-a2ea-049c4e587c2e",
+        "text": "U22",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "bc77264c22a01a29aed7d6028168374f968af67592858c18d0c1f3c4a1a2f6bc",
+        "reference_label": true
+      },
+      {
+        "owner": "U4",
+        "kind": "property",
+        "uuid": "d9076e2c-e262-4a91-9429-fefb51a1488e",
+        "text": "U4",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "91f5e9cab5b11a229591305225057db6a9a6ea8a711b71d513176a77f81af5c9",
+        "reference_label": true
+      },
+      {
+        "owner": "R72",
+        "kind": "property",
+        "uuid": "cb0ddf79-6b3e-4ecd-ba06-8b281b590106",
+        "text": "R72",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "90d5864e504e3521dcbae67c95542f19d8252a0d3fd2d2db2948b9451c7823a9",
+        "reference_label": true
+      },
+      {
+        "owner": "D6",
+        "kind": "property",
+        "uuid": "5131f0cd-a39c-46d1-aa1c-c3ee21a73f4b",
+        "text": "D6",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "67649b1fbb8765eb58174f56aa141989c62fcbc77532468fee97ab30b8e4f008",
+        "reference_label": true
+      },
+      {
+        "owner": "D2",
+        "kind": "property",
+        "uuid": "f6b918ef-3a88-48c8-87b7-2b979783e1bc",
+        "text": "D2",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "e77c9a0c929bf5bf8508660247bc90e5377ab7b497d8cb8a7c7e3d3cde44da87",
+        "reference_label": true
+      },
+      {
+        "owner": "C166",
+        "kind": "property",
+        "uuid": "51e90466-1a59-4069-8bbe-fa2a74380c30",
+        "text": "C166",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "e230a62fbc0e9bf03aa61919bb52285047c71cecadd29ee6a47e74aa6fab6b87",
+        "reference_label": true
+      },
+      {
+        "owner": "R215",
+        "kind": "property",
+        "uuid": "bf629971-2f76-4ef1-ad30-012fdf69db1e",
+        "text": "R215",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "e5fe4b0893e13628f629cb83af943ce252b5524fe393daad89edf0ce936f2eb1",
+        "reference_label": true
+      },
+      {
+        "owner": "R2",
+        "kind": "property",
+        "uuid": "06bc4358-e17c-492a-a682-94732fc714cf",
+        "text": "R2",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "ff89623c1c873336321aa556d4525bd027cbaed361634b5934a197c4189fcf31",
+        "reference_label": true
+      },
+      {
+        "owner": "C169",
+        "kind": "property",
+        "uuid": "38512a42-aaec-4ab1-8237-7a38c62f54c6",
+        "text": "C169",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "7423d88f74173df902cc15aa33562e78a8db04b3c4ebadf904dc3bb89632b881",
+        "reference_label": true
+      },
+      {
+        "owner": "C165",
+        "kind": "property",
+        "uuid": "9411e044-6e80-4ebf-9f93-5977ebef62f6",
+        "text": "C165",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "a268f217e1e85b99921401de887f4e0fbf1e45cfd5089378f70f39540437de55",
+        "reference_label": true
+      },
+      {
+        "owner": "R49",
+        "kind": "property",
+        "uuid": "5d857c14-56e5-40bf-a876-6ee14b322a73",
+        "text": "R49",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "0accf963fb7272021af20bf09ed5fdc290102949feada074fe94c1893418f5ee",
+        "reference_label": true
+      },
+      {
+        "owner": "H2",
+        "kind": "property",
+        "uuid": "e1ee9632-aa41-4cd3-bc2d-c32bd4fb7ece",
+        "text": "H2",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "15199851c3e09f2559f51a53075f5c5ba1b59a01397e8bfc846c01e73651c760",
+        "reference_label": true
+      },
+      {
+        "owner": "C123",
+        "kind": "property",
+        "uuid": "62e43015-2636-482a-aca8-1152999d0188",
+        "text": "C123",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "e39fe4d06307448a71615004d129fec5274429b1936f95cb02bee1b881f0dc76",
+        "reference_label": true
+      },
+      {
+        "owner": "R23",
+        "kind": "property",
+        "uuid": "6a6ddf08-ae74-41da-9f05-1d80a50b306f",
+        "text": "R23",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "932bd187529bf4a439097bd1a6a00654d401ca232bfca9d45d1122da11e71d2b",
+        "reference_label": true
+      },
+      {
+        "owner": "U2",
+        "kind": "property",
+        "uuid": "6f9a02eb-c05f-4281-aadd-9ca441b9ff3c",
+        "text": "U2",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "3737c3ad5bdc27186b541bd179dea8d1c6d36df8aa54250938bc1b3d2168dc81",
+        "reference_label": true
+      },
+      {
+        "owner": "C101",
+        "kind": "property",
+        "uuid": "c8160839-438f-4c31-8773-f748aac66807",
+        "text": "C101",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "ed062d992298f92152e9d20bed7f93ff5c382b74a1651c56424526fbfbe75676",
+        "reference_label": true
+      },
+      {
+        "owner": "U12",
+        "kind": "property",
+        "uuid": "97410d7b-12c3-469e-96b9-bcc158354532",
+        "text": "U12",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "d008bcca1adf82fb2d76b9eb0397870b0abacd89567f31f72f959886143a75a2",
+        "reference_label": true
+      },
+      {
+        "owner": "R42",
+        "kind": "property",
+        "uuid": "179be765-e26c-4843-9edc-8807d9a13999",
+        "text": "R42",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "9c8a57d0def1a59cf7e5bf4185050c10ee396d303b1321e9c91767ad087c8eda",
+        "reference_label": true
+      },
+      {
+        "owner": "C82",
+        "kind": "property",
+        "uuid": "c322842a-0e55-4be5-b2c0-527fed3ba986",
+        "text": "C82",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "72988fac5683a854db568c35282e23266498facc1455904132205278bafbe105",
+        "reference_label": true
+      },
+      {
+        "owner": "C26",
+        "kind": "property",
+        "uuid": "fe446621-2ac9-49d0-bf03-86e7c3541bc9",
+        "text": "C26",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "cdae390e1284dcbe705f9c172556a02d502c3097f3836759e190aa51999eaff4",
+        "reference_label": true
+      },
+      {
+        "owner": "R200",
+        "kind": "property",
+        "uuid": "27da33e4-8932-4dc8-8bee-785b34f5b6c5",
+        "text": "R200",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "0e730caa0f45e9b640d5d619a9c8c675d2c0da63ce1c2e29a5210b1f61f22b01",
+        "reference_label": true
+      },
+      {
+        "owner": "R105",
+        "kind": "property",
+        "uuid": "4bd1bf8b-f279-4805-a9b8-a3a36889f666",
+        "text": "R105",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "d070ff5c31456c3ee37dbd18bb04499f2f9ec3bf0acc54079f2408ffa36b77fd",
+        "reference_label": true
+      },
+      {
+        "owner": "C167",
+        "kind": "property",
+        "uuid": "24036476-d1ef-4af0-964f-e8f4a42b63b2",
+        "text": "C167",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "ae7486e999e812580c867de6668b46b6a7d01abd569ac0aee88cc5becebb658b",
+        "reference_label": true
+      },
+      {
+        "owner": "C142",
+        "kind": "property",
+        "uuid": "fdd59f5d-e1f0-4e26-a95b-b0deb007a54a",
+        "text": "C142",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "761c751d7d828960077ff03cb076c3c8fa1393132a040bf61adbb0c5e2e0c71b",
+        "reference_label": true
+      },
+      {
+        "owner": "R110",
+        "kind": "property",
+        "uuid": "843f2372-54e2-41af-8c0f-e8073dd1fcb1",
+        "text": "R110",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "c6cb278da15a20672d983de34ee7031d7c7128b274b1c1be031edcc10c306f29",
+        "reference_label": true
+      },
+      {
+        "owner": "R43",
+        "kind": "property",
+        "uuid": "c24ca8d5-076c-4b47-86a5-91918e30862a",
+        "text": "R43",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "1bda2d6e609418c54e53d018f81d5ba2a245c8f29a084cd164369f03770847bc",
+        "reference_label": true
+      },
+      {
+        "owner": "R144",
+        "kind": "property",
+        "uuid": "8be3a974-8727-4da6-8213-496b222e5716",
+        "text": "R144",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "337b5f5e3423b0357a5c1fbf5a82c46c0e26434f04fb016ddd81685301106a28",
+        "reference_label": true
+      },
+      {
+        "owner": "U6",
+        "kind": "property",
+        "uuid": "ccde5825-5043-4925-be6b-546491916e66",
+        "text": "U6",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "648f8a758ef0c51bb20e70e01630733ec80953bc9039bbde70bd563d17f9dce5",
+        "reference_label": true
+      },
+      {
+        "owner": "R211",
+        "kind": "property",
+        "uuid": "4295d30a-f3c6-4d8e-bb41-35d3249fc1e9",
+        "text": "R211",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "a22438c7099cebbb64828b1af4ee2e533814dcacce29d85ec8d8c2ee698ecce5",
+        "reference_label": true
+      },
+      {
+        "owner": "R140",
+        "kind": "property",
+        "uuid": "c7e2d890-18d6-4189-853b-fbc6da304895",
+        "text": "R140",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "e5711b71cfa6afa0485ded34c005cf8e890c1f0e201bbe618a3cef2b16b53477",
+        "reference_label": true
+      },
+      {
+        "owner": "C87",
+        "kind": "property",
+        "uuid": "ac85567c-7311-4bf2-90e9-72df2ab7d7fb",
+        "text": "C87",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "eb369eb0b0477a19515ec9d4aaa1fd0a45dd463132e76e89dd367044e3785b43",
+        "reference_label": true
+      },
+      {
+        "owner": "U1",
+        "kind": "property",
+        "uuid": "e6bf99e1-51ba-46ff-8a13-d2f45960e3c8",
+        "text": "U1",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "7af764619747052b7a3add3337fa5b191421b923538f8b400938b006775c23af",
+        "reference_label": true
+      },
+      {
+        "owner": "C18",
+        "kind": "property",
+        "uuid": "24fc4d60-b690-4431-a95d-88ed56fecbd0",
+        "text": "C18",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "ac22e0a63561953f43b09649eb7e28b42ff7cfed9291ef444f1b6c1ae4a20d16",
+        "reference_label": true
+      },
+      {
+        "owner": "L1",
+        "kind": "property",
+        "uuid": "97ef9516-b366-4a2a-8f20-f88bca75d33b",
+        "text": "L1",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "693e485262cc12029e78d548fe5d600d2e51850a8b9bf43a5c391a7d909ba8c5",
+        "reference_label": true
+      },
+      {
+        "owner": "C125",
+        "kind": "property",
+        "uuid": "460bbbac-d819-4c9a-8cc5-849595eccc78",
+        "text": "C125",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "bd0e25bde83375bbb5d1a86837c17301f682e1b95c466dbd71f65fffb04ba298",
+        "reference_label": true
+      },
+      {
+        "owner": "R9",
+        "kind": "property",
+        "uuid": "2ac764c6-9e77-4d72-89f8-8d36939e6985",
+        "text": "R9",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "e13f1eec937b983836b2d29930afc194fa337b8c133697c7e6c5118325099fa0",
+        "reference_label": true
+      },
+      {
+        "owner": "R75",
+        "kind": "property",
+        "uuid": "f0988c76-7785-4e76-b533-e59b524a9a57",
+        "text": "R75",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "aa7bcad6317e6b1f4b18c7b36b35d4465015401bf70de077378479adf9934917",
+        "reference_label": true
+      },
+      {
+        "owner": "J11",
+        "kind": "property",
+        "uuid": "5a6134f7-ebc4-464b-850a-60b64684ea9d",
+        "text": "J11",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "3d6de50c6289b115ea49c49fd3feb8ef970a6b8aa78af43f442b0272a9440474",
+        "reference_label": true
+      },
+      {
+        "owner": "C154",
+        "kind": "property",
+        "uuid": "02f36da0-df8e-4986-b2c0-2f27dc17dc54",
+        "text": "C154",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "4d1275bb1f1641797d970d9213bd29504dd5230dd1877ae2852b832b7e0a1525",
+        "reference_label": true
+      },
+      {
+        "owner": "R52",
+        "kind": "property",
+        "uuid": "906fa0a4-9345-451a-b76c-e4026ab853bd",
+        "text": "R52",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "6179a4efb5c0be2aa1f5bbbc519e1060b69a7121f7988245625b829f98b2c150",
+        "reference_label": true
+      },
+      {
+        "owner": "R32",
+        "kind": "property",
+        "uuid": "877d4dff-0696-4b3b-a471-828652550a2a",
+        "text": "R32",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "b5ce153253da0ecca045f76e754a84539139fb9feb8f205a5211ca962a9ce348",
+        "reference_label": true
+      },
+      {
+        "owner": "R220",
+        "kind": "property",
+        "uuid": "4cef7c65-ad42-4294-9489-e659e6dac328",
+        "text": "R220",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "1cf7f988c5b81b5d905dab32698cdf89105f3790820d6887ec5e56ecd92395f5",
+        "reference_label": true
+      },
+      {
+        "owner": "U16",
+        "kind": "property",
+        "uuid": "ba832809-715e-4b7e-839c-810d70aa6e92",
+        "text": "U16",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "bd7055c8a27a8af340b7e6055115b9fae51c41633b447425a4f8bed86ea78780",
+        "reference_label": true
+      },
+      {
+        "owner": "R53",
+        "kind": "property",
+        "uuid": "217ce8eb-0ef7-40cd-a752-1554b762133b",
+        "text": "R53",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "1ddcfb6b90e055378a64a85712bcf7c0d6399a574c195b550d6c6b2457a80611",
+        "reference_label": true
+      },
+      {
+        "owner": "C150",
+        "kind": "property",
+        "uuid": "ffc1e120-16e5-4827-a4ed-0f8da3de781c",
+        "text": "C150",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "bd5c7c1291e7bb086467c934d389c38cb9ad6e5fe3f20d73c952f64d6c755933",
+        "reference_label": true
+      },
+      {
+        "owner": "U50",
+        "kind": "property",
+        "uuid": "9c47725e-dfd9-4c04-a45d-ee2405c1aeeb",
+        "text": "U50",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "ea89c5b8339869252d25105c3e57e8ba8f2177e2cb718c3d66658663117c4ac7",
+        "reference_label": true
+      },
+      {
+        "owner": "R41",
+        "kind": "property",
+        "uuid": "d5ce4ab8-df4c-4e45-ba50-7d4ef8053e83",
+        "text": "R41",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "7e4ad5f927af687d83c4031c7719d74b7681cced465988b2b5908582b146f0c6",
+        "reference_label": true
+      },
+      {
+        "owner": "C21",
+        "kind": "property",
+        "uuid": "a2b480cc-b1ce-4a4e-a326-9f6cad9575a9",
+        "text": "C21",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "4ff6189a33dbfc55f98deb5f89529b39cb7be225e1313f7ef4ffb470ec8cd338",
+        "reference_label": true
+      },
+      {
+        "owner": "D8",
+        "kind": "property",
+        "uuid": "51b72362-f682-4999-a08e-1eea3e4e9553",
+        "text": "D8",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "33a120ce0ce2b584ba4b6cf2346064d116da904db2cd35c73305d07545cb02bf",
+        "reference_label": true
+      },
+      {
+        "owner": "R51",
+        "kind": "property",
+        "uuid": "ad7d3517-5f28-4ed4-bc20-6bc1f01626cf",
+        "text": "R51",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "8ff982977540f8926ab5efcfc07a25ae0f186ac94f2387831bbd6568b7fc8af4",
+        "reference_label": true
+      },
+      {
+        "owner": "R229",
+        "kind": "property",
+        "uuid": "8c84eacc-69da-4d92-a72f-54d8552ef517",
+        "text": "R229",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "29da1f7af480325706a00efac0deb81b21758fa5d51976da42672fd18149e426",
+        "reference_label": true
+      },
+      {
+        "owner": "C155",
+        "kind": "property",
+        "uuid": "a18a84ef-fa83-4e07-a3f6-ef778f1671c6",
+        "text": "C155",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "ae31f7525cb0771f4243aed10e62a0eae9bdd0286b1256f6b26eace7c0e12cdc",
+        "reference_label": true
+      },
+      {
+        "owner": "U17",
+        "kind": "property",
+        "uuid": "9f8cedff-d55c-4e4a-bec6-543b49af4240",
+        "text": "U17",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "a0e2d48efa5deb218fdb0aa03d8d8f369e0ada6252b948ad7b6bd1b7ed472afa",
+        "reference_label": true
+      },
+      {
+        "owner": "R12",
+        "kind": "property",
+        "uuid": "f1c01df1-45b3-47e0-8fa3-a3b9228c7476",
+        "text": "R12",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "a1fad87b9b583133d368352f93fe3e864d35f94fcf6ebd7e91b1a28ba9fef7d1",
+        "reference_label": true
+      },
+      {
+        "owner": "R58",
+        "kind": "property",
+        "uuid": "8d869f2e-a296-4d89-92c6-f8504bd0cb3b",
+        "text": "R58",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "1ce03e3f1b4ec5440ee399ad56fdea0043a16f6ea568d6a8e3207ccf1bded797",
+        "reference_label": true
+      },
+      {
+        "owner": "R54",
+        "kind": "property",
+        "uuid": "d8f55728-1154-4830-a4be-20c3ad8586db",
+        "text": "R54",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "b620d2c51f24f4514c0b201175de6a223cd7b9c99d0b520f913256e551903585",
+        "reference_label": true
+      },
+      {
+        "owner": "C151",
+        "kind": "property",
+        "uuid": "c1770ed9-e6ad-4b7b-b3cf-8817287cffc3",
+        "text": "C151",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "c937a57c205e51dc3bfaf04001a4f2f888ae69e61f136b4ccdd7258e232f4ad9",
+        "reference_label": true
+      },
+      {
+        "owner": "R39",
+        "kind": "property",
+        "uuid": "53641eb4-4dc8-4d18-9182-54d8568329d1",
+        "text": "R39",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "13c9e617c32f54b3766d03119f7c5e45d94f4cf677a0185a64e44578db61e97e",
+        "reference_label": true
+      },
+      {
+        "owner": "U52",
+        "kind": "property",
+        "uuid": "348a1bff-85c9-4f77-8828-3b6bae7e84bd",
+        "text": "U52",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "e628d5fbbbd19d135280bca9c366ffec5fa889fe2a8e653703b9f83f3ee37c81",
+        "reference_label": true
+      },
+      {
+        "owner": "Q50",
+        "kind": "property",
+        "uuid": "ad077a8e-44ab-491a-bcb3-dfe783636430",
+        "text": "Q50",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "e794895a107a0242ae36ce417221395d5a1b89efaf2732d6d86cf5e52e854345",
+        "reference_label": true
+      },
+      {
+        "owner": "F3",
+        "kind": "property",
+        "uuid": "93d214d5-5e22-40fa-a472-3bcc482b9564",
+        "text": "F3",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "16d4616f1b2d27b0c2c8a8db494d9b236c3cf30d517ef8a765c083f37ad53b94",
+        "reference_label": true
+      },
+      {
+        "owner": "R228",
+        "kind": "property",
+        "uuid": "5b01ebcf-e354-4a16-a9da-00539c3c2f6c",
+        "text": "R228",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "7f3c11d9de66aeb59ca92be924f69afc38f7c2e6fbf1de890f2e3f773c54e0b3",
+        "reference_label": true
+      },
+      {
+        "owner": "R63",
+        "kind": "property",
+        "uuid": "9f643eb8-ce99-4339-a644-d87edbb99aee",
+        "text": "R63",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "e0539a47ea3509fba9a6c489b45ff91c2086d271d1044da5126c6ecea8b78798",
+        "reference_label": true
+      },
+      {
+        "owner": "C6",
+        "kind": "property",
+        "uuid": "157dcf85-2256-4e78-8496-fdffb026ac96",
+        "text": "C6",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "8741fddb11322ad2a1c0899e06a8794b1ccf2d6592887bccd037cb02f094c1f4",
+        "reference_label": true
+      },
+      {
+        "owner": "R222",
+        "kind": "property",
+        "uuid": "0d209596-1046-4f81-a372-53c79cd27359",
+        "text": "R222",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "e0d58c705ee87e71227311f444302f7aafd0d2cf5ef7987fb1c5f932e5a5b198",
+        "reference_label": true
+      },
+      {
+        "owner": "R90",
+        "kind": "property",
+        "uuid": "c31a99b3-c04e-4c31-9f26-26e359455c05",
+        "text": "R90",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "d3c7be116321634e6c6824caaf3b8731673c07cc717b090f81024c2ee56ae4a8",
+        "reference_label": true
+      },
+      {
+        "owner": "R92",
+        "kind": "property",
+        "uuid": "ece34de5-8c80-4cda-93b4-df3e766a6b4d",
+        "text": "R92",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "7a3d3e58aab632cf0cb91f95c96acbead56f033b4d734289d1704d1de1d86f6d",
+        "reference_label": true
+      },
+      {
+        "owner": "R141",
+        "kind": "property",
+        "uuid": "22ab5731-4f81-4abe-b847-e7d17cd3b4e6",
+        "text": "R141",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "0694a63f6e0fff8d7c853177a57abb9ee4c1edd78b69fc3f8a58882877cf818a",
+        "reference_label": true
+      },
+      {
+        "owner": "R221",
+        "kind": "property",
+        "uuid": "3e9d1beb-6ca8-4df1-9267-c755d83589ac",
+        "text": "R221",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "1ad0d598170d4be189ac64461ebb92e4dba74e878fbef368eb1fedb0b1c998c0",
+        "reference_label": true
+      },
+      {
+        "owner": "R227",
+        "kind": "property",
+        "uuid": "39fc9e9e-3999-45b5-85a2-fe9781cb041d",
+        "text": "R227",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "e82df401076a624ff1c44fad7d3433bbb4378512e0998eb4681941e2568cb489",
+        "reference_label": true
+      },
+      {
+        "owner": "R230",
+        "kind": "property",
+        "uuid": "9df7c441-a5c8-41b2-bda3-09ede372968d",
+        "text": "R230",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "407cb3205eba5d99c26856a392f85ccee100eae61964872ecd263b02828e02e5",
+        "reference_label": true
+      },
+      {
+        "owner": "R50",
+        "kind": "property",
+        "uuid": "89f8a510-2666-41e5-97a2-89a25dc853c4",
+        "text": "R50",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "35cb2fb9d1388e3b5bff137332ebe83079c45f530b79a672de22874282d91877",
+        "reference_label": true
+      },
+      {
+        "owner": "R11",
+        "kind": "property",
+        "uuid": "5656e151-cf2a-4410-8f3d-cd763d8e18ab",
+        "text": "R11",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "6a1b58c15e74afb1d5e76472272fa3b9998592a863f8d9deb5ea4ae84b03394d",
+        "reference_label": true
+      },
+      {
+        "owner": "Q51",
+        "kind": "property",
+        "uuid": "7e0393f3-2abf-401c-98f0-d96eb73db5ec",
+        "text": "Q51",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "0bceba033eea994b9771fa485a3713c7164b1fe56eae463dcc4aa039aec1a6c3",
+        "reference_label": true
+      },
+      {
+        "owner": "R57",
+        "kind": "property",
+        "uuid": "206a5cfb-441e-4813-94ab-8c2c336a63cc",
+        "text": "R57",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "2df5d47ea2582bf6cb8be955b3bd542cd71f78b3528548cfbac6072057fef12b",
+        "reference_label": true
+      },
+      {
+        "owner": "U51",
+        "kind": "property",
+        "uuid": "bbeea2b1-dc1d-4fed-ba5c-d0f768aa93b6",
+        "text": "U51",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "ae86d7c432a6b321831316e2fef5673e16ef07882bedd599e671213b000bc4e5",
+        "reference_label": true
+      },
+      {
+        "owner": "R56",
+        "kind": "property",
+        "uuid": "281fa206-fea1-4a46-ae64-b600badd449a",
+        "text": "R56",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "64c605e0527f8357bd4c6a21840484cd905aedbe69b522b97d518b749b5515ff",
+        "reference_label": true
+      },
+      {
+        "owner": "C31",
+        "kind": "property",
+        "uuid": "07657618-4cf7-4cc9-91f6-afda41f5e3ec",
+        "text": "C31",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "2f0f96b477886bfa41164dd01dc3b547b1fed443c537b799fd3c56e44a578639",
+        "reference_label": true
+      },
+      {
+        "owner": "C22",
+        "kind": "property",
+        "uuid": "4f58ec02-3dbf-4628-a741-f7dd5be3d219",
+        "text": "C22",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "fba4ad0abe395cfdb21f39b15bf3c1f7e4232f022260dba2008e7258e9c6017f",
+        "reference_label": true
+      },
+      {
+        "owner": "D9",
+        "kind": "property",
+        "uuid": "ec840827-4834-49c7-8ea0-9b24eecbe5ee",
+        "text": "D9",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "d4aeadeaf32c144dcc0474bfbca47c5c29dbbb0fd8acc9eb8c029ac64617cf32",
+        "reference_label": true
+      },
+      {
+        "owner": "C153",
+        "kind": "property",
+        "uuid": "770e7d75-3aa0-4635-9ce1-510dc041f20a",
+        "text": "C153",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "0194e0f09ec249a72cc5bb72ecc496c84f3f06e223d1c5fab4bef0f2fcb8fef8",
+        "reference_label": true
+      },
+      {
+        "owner": "R223",
+        "kind": "property",
+        "uuid": "9a164b46-de19-4409-ba54-d4a4186f5fbd",
+        "text": "R223",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "82da155eca2904880478121cb785f83b0f11d18daaeb559b3f20ee6813216fc1",
+        "reference_label": true
+      },
+      {
+        "owner": "R91",
+        "kind": "property",
+        "uuid": "bd33dca3-d91c-4e14-a008-c86928623bbd",
+        "text": "R91",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "994686f4a3381fb7967c8180b0388b92bf7fcabdcb93b00df545aa1c0ff39e77",
+        "reference_label": true
+      },
+      {
+        "owner": "R224",
+        "kind": "property",
+        "uuid": "b807fcd1-b61e-4de4-9c76-10af3454d36b",
+        "text": "R224",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "cdbe2bf4217c6d5513f55ae4bc51b2f17ee83cb48424f0c562f8f4f73d27b160",
+        "reference_label": true
+      },
+      {
+        "owner": "D50",
+        "kind": "property",
+        "uuid": "38c07ad3-94e2-4cb5-9ccd-be293bd36984",
+        "text": "D50",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "413819c02c7bf696e0deb6eace8493e391450e5e2edbb1c25ff13a9ede4bf72d",
+        "reference_label": true
+      },
+      {
+        "owner": "R64",
+        "kind": "property",
+        "uuid": "c62a5d02-5fde-4177-b71c-3212165995f8",
+        "text": "R64",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "f2f73d108ce9d8528db4681586207e83b651acda2c61002c1806c4bc3e126286",
+        "reference_label": true
+      },
+      {
+        "owner": "Q52",
+        "kind": "property",
+        "uuid": "f6886b1f-666b-4ed7-b6f3-5c727825e3bf",
+        "text": "Q52",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "c3e0f90acbbd3e3a0cdad0572021d15c5bae42e1f61f85e9c3f110c4dff6c07a",
+        "reference_label": true
+      },
+      {
+        "owner": "C29",
+        "kind": "property",
+        "uuid": "3fd1f9bd-aecb-425a-9b76-ffe069abf22c",
+        "text": "C29",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "aa2af2f1a84600f1cada930a203f563897946a8f90a073133403c229286b9722",
+        "reference_label": true
+      },
+      {
+        "owner": "R225",
+        "kind": "property",
+        "uuid": "d212919e-00b5-4da6-bfcc-51a119441407",
+        "text": "R225",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "5b0e5cd49398dac62a3a62ccd46c38dd6de526f21cf70fba6ad104f067974670",
+        "reference_label": true
+      },
+      {
+        "owner": "C152",
+        "kind": "property",
+        "uuid": "49e2c6c7-b80c-4fbf-a00c-b56f19d2288f",
+        "text": "C152",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "f32cedff26a8a1d74e326a6a51aa21bfbb7759beed1f25eb71d1f395ae763c1c",
+        "reference_label": true
+      },
+      {
+        "owner": "R226",
+        "kind": "property",
+        "uuid": "863b0924-f99f-4b87-a568-bb40ce15a862",
+        "text": "R226",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "2744f02b7a2d7dc8ccd23a3a7a3234466a117493bfca512aad8cc21136d4ec0c",
+        "reference_label": true
+      },
+      {
+        "owner": "R55",
+        "kind": "property",
+        "uuid": "a9c3c3de-95cd-44c1-bc26-b076c42046a1",
+        "text": "R55",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "3cae81185d689ee6d0e2ca05aa216e16c4a196265a8330fb867739a73421c9e7",
+        "reference_label": true
+      },
+      {
+        "owner": "C27",
+        "kind": "property",
+        "uuid": "311a386e-b56d-4f60-ad9f-3d29594a5a09",
+        "text": "C27",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "83b6c1624ba4de2cfd4a3f47f4449477c3988453555af51dd526b3d6c4fe2c41",
+        "reference_label": true
+      },
+      {
+        "owner": "R7",
+        "kind": "property",
+        "uuid": "c10ce181-9d01-488c-ae53-e2d275fcf643",
+        "text": "R7",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "7d5f38d6ab1bfabd6be463572cd0bd273cedcc37cf6e6a8e36b6fd245349f996",
+        "reference_label": true
+      },
+      {
+        "owner": "Q2",
+        "kind": "property",
+        "uuid": "852a5760-b641-4560-b328-57cb22b8b335",
+        "text": "Q2",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "56819f2619298f30ad8d997013dc6fa3982fe3e01940827ee7289ac98c15faef",
+        "reference_label": true
+      },
+      {
+        "owner": null,
+        "kind": "gr_text",
+        "uuid": "79464a9c-fd33-45e3-9b00-5a1d5d14cca2",
+        "text": "GND",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "854a7c651727e161ad1cee2319f9e5977696172ebf245f495d0ba8078e75bd55",
+        "reference_label": false
+      },
+      {
+        "owner": null,
+        "kind": "gr_text",
+        "uuid": "7a769086-caad-4994-853a-b4bd42f05424",
+        "text": "by Show Robotics",
+        "layer": "F.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "e2d7a9592b7da9ae18101245c0f9be6a5971cd0fd742825ac7e0a415f826f60f",
+        "reference_label": false
+      },
+      {
+        "owner": null,
+        "kind": "gr_text",
+        "uuid": "f4420a8a-dd94-49bb-a535-6909bd1e7882",
+        "text": "GND",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "f1b59e7407d2babfd794acb097e6f55b555f7c28d48a1c627c220e9642be5dca",
+        "reference_label": false
+      },
+      {
+        "owner": null,
+        "kind": "gr_text",
+        "uuid": "ffdc04b0-a517-525d-9ad1-a1c0deb7ddd6",
+        "text": "MOSS CORE V0.7\nPROTOTYPE",
+        "layer": "B.SilkS",
+        "hidden": false,
+        "font_size_mm": [
+          0.8,
+          0.8
+        ],
+        "stroke_mm": 0.15,
+        "native_text_sha256": "1ced8700d896d7aba71b1d1d26023ab6b3e3cff94f6f6a2014bf9818c9740bd2",
+        "reference_label": false
+      }
+    ],
+    "new_printed_style_violations": [],
+    "inherited_small_printed_texts_not_new_failures": [],
+    "native_reference_labels_printed": 228,
+    "references_with_printed_native_labels": [
+      "C1",
+      "C100",
+      "C101",
+      "C11",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C140",
+      "C141",
+      "C142",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C160",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C18",
+      "C19",
+      "C2",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C25",
+      "C26",
+      "C27",
+      "C29",
+      "C31",
+      "C4",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C5",
+      "C6",
+      "C7",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C9",
+      "D1",
+      "D2",
+      "D20",
+      "D21",
+      "D22",
+      "D32",
+      "D5",
+      "D50",
+      "D6",
+      "D7",
+      "D8",
+      "D9",
+      "F1",
+      "F2",
+      "F3",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "J10",
+      "J11",
+      "J14",
+      "J15",
+      "J2",
+      "J20",
+      "J3",
+      "J4",
+      "J5",
+      "J7",
+      "J8",
+      "L1",
+      "L2",
+      "L3",
+      "Q2",
+      "Q50",
+      "Q51",
+      "Q52",
+      "R1",
+      "R10",
+      "R102",
+      "R103",
+      "R104",
+      "R105",
+      "R11",
+      "R110",
+      "R111",
+      "R12",
+      "R13",
+      "R140",
+      "R141",
+      "R143",
+      "R144",
+      "R180",
+      "R181",
+      "R182",
+      "R183",
+      "R19",
+      "R2",
+      "R200",
+      "R210",
+      "R211",
+      "R212",
+      "R213",
+      "R214",
+      "R215",
+      "R220",
+      "R221",
+      "R222",
+      "R223",
+      "R224",
+      "R225",
+      "R226",
+      "R227",
+      "R228",
+      "R229",
+      "R23",
+      "R230",
+      "R24",
+      "R25",
+      "R26",
+      "R27",
+      "R28",
+      "R29",
+      "R3",
+      "R30",
+      "R31",
+      "R32",
+      "R33",
+      "R34",
+      "R35",
+      "R36",
+      "R37",
+      "R38",
+      "R39",
+      "R4",
+      "R40",
+      "R41",
+      "R42",
+      "R43",
+      "R48",
+      "R49",
+      "R5",
+      "R50",
+      "R51",
+      "R52",
+      "R53",
+      "R54",
+      "R55",
+      "R56",
+      "R57",
+      "R58",
+      "R6",
+      "R63",
+      "R64",
+      "R7",
+      "R70",
+      "R71",
+      "R72",
+      "R73",
+      "R74",
+      "R75",
+      "R76",
+      "R77",
+      "R78",
+      "R79",
+      "R8",
+      "R9",
+      "R90",
+      "R91",
+      "R92",
+      "R93",
+      "SW1",
+      "SW2",
+      "TP1",
+      "TP2",
+      "TP3",
+      "TP5",
+      "TP6",
+      "TP7",
+      "U1",
+      "U11",
+      "U12",
+      "U14",
+      "U16",
+      "U17",
+      "U2",
+      "U20",
+      "U22",
+      "U23",
+      "U24",
+      "U27",
+      "U3",
+      "U4",
+      "U40",
+      "U41",
+      "U42",
+      "U43",
+      "U5",
+      "U50",
+      "U51",
+      "U52",
+      "U6",
+      "U60"
+    ],
+    "requirements": {
+      "minimum_font_height_mm": 0.8,
+      "minimum_stroke_mm": 0.15,
+      "minimum_opening_clearance_mm": 0.15
+    },
+    "opening_clearance_result": "NOT_CHECKED_BY_THIS_AST_SCRIPT; use native text-stroke/mask geometry, final DRC and previews.",
+    "sources": [
+      "https://www.pcbway.com/helpcenter/design_instruction/How_to_make_my_silkscreen_clear_and_beautiful_on_PCB__.html",
+      "https://www.pcbway.com/helpcenter/Engineering_Questions/Spacing_between_silkscreen_and_openings.html"
+    ]
+  },
+  "footprint_differences": [],
+  "source_file_comparison": [
+    {
+      "path": "delivery/assembly/MOSS_CORE_V07_PROTOTYPE_BOM.csv",
+      "baseline_sha256": "2e7059a0ebacc8bf465b89b45eb893c72502f77aad264f50c6d3619857f119cf",
+      "candidate_sha256": "2e7059a0ebacc8bf465b89b45eb893c72502f77aad264f50c6d3619857f119cf",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "delivery/assembly/MOSS_CORE_V07_PROTOTYPE_POSITIONS.csv",
+      "baseline_sha256": "4aa81d1fb6d76dacc544c80812897f205e3378d3b9cc2998407291dd25d689ca",
+      "candidate_sha256": "4aa81d1fb6d76dacc544c80812897f205e3378d3b9cc2998407291dd25d689ca",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/01_USB_Power.kicad_sch",
+      "baseline_sha256": "3fa5e87a542a1ea22954ff650a782216367a9cacaaa49d4fdf572812fd62acbf",
+      "candidate_sha256": "3fa5e87a542a1ea22954ff650a782216367a9cacaaa49d4fdf572812fd62acbf",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/02_Controller.kicad_sch",
+      "baseline_sha256": "f852944702e2f69acaa46aa1bd669ac16bed7d5c5ab3745de6e79dfef7d2778c",
+      "candidate_sha256": "f852944702e2f69acaa46aa1bd669ac16bed7d5c5ab3745de6e79dfef7d2778c",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/03_Hardware_Interlock.kicad_sch",
+      "baseline_sha256": "0d732ba938d4a6c67ac6d1bfd92b344c867d402daa4f3149b73a7345e0d35a52",
+      "candidate_sha256": "0d732ba938d4a6c67ac6d1bfd92b344c867d402daa4f3149b73a7345e0d35a52",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/04_Drive_Encoders.kicad_sch",
+      "baseline_sha256": "3d33800c9cb9095ccce556607bdecfee2d21bbbc0eacb39667d7382c047f0fab",
+      "candidate_sha256": "3d33800c9cb9095ccce556607bdecfee2d21bbbc0eacb39667d7382c047f0fab",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/05_Servo.kicad_sch",
+      "baseline_sha256": "6a7c82a46b745ddd6cf6030c52398f58da0f9229ebeccac58d55ee1f6eca454a",
+      "candidate_sha256": "6a7c82a46b745ddd6cf6030c52398f58da0f9229ebeccac58d55ee1f6eca454a",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/06_Audio.kicad_sch",
+      "baseline_sha256": "799d90d8179718f06e8e7b7a5483041e17c1600a9ce50519884eb2eb525e5bd3",
+      "candidate_sha256": "799d90d8179718f06e8e7b7a5483041e17c1600a9ce50519884eb2eb525e5bd3",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/07_Battery_Voltage.kicad_sch",
+      "baseline_sha256": "1eb4e9de1676ca9bcb7f3c5f7c29a2f77f95a8ea9967e6eafac44e8c1f335be6",
+      "candidate_sha256": "1eb4e9de1676ca9bcb7f3c5f7c29a2f77f95a8ea9967e6eafac44e8c1f335be6",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/09_Audio_Power.kicad_sch",
+      "baseline_sha256": "5e61de9b1aa96b58ebb81700320da25143f553d86607009a9301dd5813ade424",
+      "candidate_sha256": "5e61de9b1aa96b58ebb81700320da25143f553d86607009a9301dd5813ade424",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/10_Battery_Power.kicad_sch",
+      "baseline_sha256": "074947d57428eba15134572bde5e1cb4ddc074649d1677a95604281a71fcd3b5",
+      "candidate_sha256": "074947d57428eba15134572bde5e1cb4ddc074649d1677a95604281a71fcd3b5",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/16_Orange_Pi_Power.kicad_sch",
+      "baseline_sha256": "96327667fead1427c418236587ac46f09a56d00ce978c44a1034dd098b4cbbb0",
+      "candidate_sha256": "96327667fead1427c418236587ac46f09a56d00ce978c44a1034dd098b4cbbb0",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/17_Motor_Current.kicad_sch",
+      "baseline_sha256": "f3f4c233e95c2d2e07528c7c70f574f5cd82617b179a31b98bb105a2ea842b15",
+      "candidate_sha256": "f3f4c233e95c2d2e07528c7c70f574f5cd82617b179a31b98bb105a2ea842b15",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/18_Actuator_Cutoff.kicad_sch",
+      "baseline_sha256": "c3d6d0e08e057c2286851b12f7a1e44c0fc811ec48ecd1ca3c866214776c7c44",
+      "candidate_sha256": "c3d6d0e08e057c2286851b12f7a1e44c0fc811ec48ecd1ca3c866214776c7c44",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/19_Fans.kicad_sch",
+      "baseline_sha256": "9016812d051dcfe94462d556a78942b2705c91fa4e026a5279ac555ce54ababb",
+      "candidate_sha256": "9016812d051dcfe94462d556a78942b2705c91fa4e026a5279ac555ce54ababb",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/BOM.json",
+      "baseline_sha256": "79766035398571fca3857600901ec3591c8fa5cb1f7a5f3743247f9527ccc2a7",
+      "candidate_sha256": "79766035398571fca3857600901ec3591c8fa5cb1f7a5f3743247f9527ccc2a7",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/BOM_PCBWAY_ASSEMBLY.json",
+      "baseline_sha256": "71da646b3510c4bde3c74a2439709639ef2d049ae413256dcd4d535723bcaf92",
+      "candidate_sha256": "839e01073b6a335dcfb4fd190e032e41c16d86785f60f05f1ccca957accfa4c2",
+      "identical": false,
+      "accepted": true,
+      "notes_only_exception": {
+        "accepted": true,
+        "inventory_and_all_non_notes_data_exact": true,
+        "non_notes_data_sha256": {
+          "baseline": "8c3b5585ceb6748eb86148c354d0b6ae9d65392185ee9a322de5ef747900b09a",
+          "candidate": "8c3b5585ceb6748eb86148c354d0b6ae9d65392185ee9a322de5ef747900b09a"
+        },
+        "notes_before": [
+          "1 November 2026 power/rearm update: U51/U52 permission latch, R228-R230, C154/C155 and populated C170 6.8pF C0G feedforward capacitor. 216 assembled components, 99 grouped purchase articles. Exact MPNs; no unreviewed gate or package substitutions.",
+          "Hardware permission latch: U51 SN74LVC1G74DCUR, U52 SN74HCS11PWR; dedicated GPIO1 ARM_COMMIT and GPIO2 ARM_LATCHED. The current native design is routed and checked. Firmware is compiled/host-tested, not hardware-qualified.",
+          "Black 82 x 79 mm board; Core fixing centres have 74 x 71 mm pitch with 4 mm edge setbacks. Orange Pi holes and all external connector interfaces are retained. The matching hull guide already follows this pattern.",
+          "Use only the matching 20261101_POWER_REARM design, fabrication and placement files. Battery, servo and speaker headers are vertical. Earlier package files are superseded for this quotation.",
+          "Integrated MP9447 converter and grounded H1 retained. U14/U17/U43/U51 and J1/J20 use local common soldermask openings where documented. The current-sense mask/paste review is supplied separately; no global mask expansion is requested.",
+          "U2 uses exact TPD2E2U06QDCKRQ1 DCK-3; J7 supported seating/through-hole solder; J8 manual placement accepted for two prototypes.",
+          "Engineering checks do not constitute hardware qualification. Supplier to confirm part availability, mask registration, stencil and assembly process in the quotation."
+        ],
+        "notes_after": [
+          "2 November 2026: printed component reference legends added. Existing designator numbering, parts, values, footprints and placements remain unchanged from the power/rearm update.",
+          "1 November 2026 power/rearm update: U51/U52 permission latch, R228-R230, C154/C155 and populated C170 6.8pF C0G feedforward capacitor. 216 assembled components, 99 grouped purchase articles. Exact MPNs; no unreviewed gate or package substitutions.",
+          "Hardware permission latch: U51 SN74LVC1G74DCUR, U52 SN74HCS11PWR; dedicated GPIO1 ARM_COMMIT and GPIO2 ARM_LATCHED. The current native design is routed and checked. Firmware is compiled/host-tested, not hardware-qualified.",
+          "Black 82 x 79 mm board; Core fixing centres have 74 x 71 mm pitch with 4 mm edge setbacks. Orange Pi holes and all external connector interfaces are retained. The matching hull guide already follows this pattern.",
+          "Use only the matching 20261102_SILKSCREEN design, fabrication and placement files. Battery, servo and speaker headers are vertical. Earlier package files are superseded for this quotation.",
+          "Integrated MP9447 converter and grounded H1 retained. U14/U17/U43/U51 and J1/J20 use local common soldermask openings where documented. The current-sense mask/paste review is supplied separately; no global mask expansion is requested.",
+          "U2 uses exact TPD2E2U06QDCKRQ1 DCK-3; J7 supported seating/through-hole solder; J8 manual placement accepted for two prototypes.",
+          "Engineering checks do not constitute hardware qualification. Supplier to confirm part availability, mask registration, stencil and assembly process in the quotation."
+        ],
+        "removed_notes": [
+          "Use only the matching 20261101_POWER_REARM design, fabrication and placement files. Battery, servo and speaker headers are vertical. Earlier package files are superseded for this quotation."
+        ],
+        "added_notes": [
+          "2 November 2026: printed component reference legends added. Existing designator numbering, parts, values, footprints and placements remain unchanged from the power/rearm update.",
+          "Use only the matching 20261102_SILKSCREEN design, fabrication and placement files. Battery, servo and speaker headers are vertical. Earlier package files are superseded for this quotation."
+        ],
+        "scope": "Only the top-level notes array may differ; all purchasing rows and other metadata remain exact JSON data."
+      }
+    },
+    {
+      "path": "electrical/MCU_PIN_MAP.json",
+      "baseline_sha256": "64d7c9f4bf37b9fefce667e99dd607e88e90d8d0e479c9827932cba1aa8605fe",
+      "candidate_sha256": "64d7c9f4bf37b9fefce667e99dd607e88e90d8d0e479c9827932cba1aa8605fe",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.kicad_sym",
+      "baseline_sha256": "f34892c1c1045e520463837666cd53c4e688985722dd749fd7cd713dd6fc83ff",
+      "candidate_sha256": "f34892c1c1045e520463837666cd53c4e688985722dd749fd7cd713dd6fc83ff",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Button_Switch_SMD_SW_Push_1P1T_NO_CK_KMR2.kicad_mod",
+      "baseline_sha256": "433ba4b677161514c7809202cb49e1e4d299c2399fc57327077b67e83a30ae15",
+      "candidate_sha256": "433ba4b677161514c7809202cb49e1e4d299c2399fc57327077b67e83a30ae15",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Capacitor_SMD_CP_Elec_6.3x5.9.kicad_mod",
+      "baseline_sha256": "31667e472901e55b4853e6378d1f6734cf346544668d6445ef56f87266c8e839",
+      "candidate_sha256": "31667e472901e55b4853e6378d1f6734cf346544668d6445ef56f87266c8e839",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Capacitor_SMD_C_0402_1005Metric.kicad_mod",
+      "baseline_sha256": "59a574359ce9d2edc5ffb85d2b28af6e99fdff63aa419bb839918c8216a7e404",
+      "candidate_sha256": "59a574359ce9d2edc5ffb85d2b28af6e99fdff63aa419bb839918c8216a7e404",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Capacitor_SMD_C_0603_1608Metric.kicad_mod",
+      "baseline_sha256": "d868255d0ce37cb5f53470bf3464a652008dd262c7733b6f3f3d6ba023803c6e",
+      "candidate_sha256": "d868255d0ce37cb5f53470bf3464a652008dd262c7733b6f3f3d6ba023803c6e",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Capacitor_SMD_C_0805_2012Metric.kicad_mod",
+      "baseline_sha256": "1711192f7b24ee9d3f49a3e7614564af1163d448a923de3e43dc4d7a6963c163",
+      "candidate_sha256": "1711192f7b24ee9d3f49a3e7614564af1163d448a923de3e43dc4d7a6963c163",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Capacitor_SMD_C_1206_3216Metric.kicad_mod",
+      "baseline_sha256": "cd32001f37c37af2833a65a56db69283fce14c07f211a4e25facce7767c4de3f",
+      "candidate_sha256": "cd32001f37c37af2833a65a56db69283fce14c07f211a4e25facce7767c4de3f",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Capacitor_SMD_C_1210_3225Metric.kicad_mod",
+      "baseline_sha256": "4422eca63653282f2cece15d05ebe82d035e23c2f081cf80b3d275214a9ac918",
+      "candidate_sha256": "4422eca63653282f2cece15d05ebe82d035e23c2f081cf80b3d275214a9ac918",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Connector_AMASS_AMASS_XT30PW-M_1x02_P2.50mm_Horizontal_EdgeEntry.kicad_mod",
+      "baseline_sha256": "e62d018d9f7e0924a7b0a34f380d747ca7526afdfb639b779af3b9d75ac7a8de",
+      "candidate_sha256": "e62d018d9f7e0924a7b0a34f380d747ca7526afdfb639b779af3b9d75ac7a8de",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Connector_AMASS_AMASS_XT30UPB-M_1x02_P5.0mm_Vertical.kicad_mod",
+      "baseline_sha256": "88cb05166a7f4715fdc86497f13c5df9f3334352bf0e1f1a3e8122538ba4fb74",
+      "candidate_sha256": "88cb05166a7f4715fdc86497f13c5df9f3334352bf0e1f1a3e8122538ba4fb74",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Connector_JST_JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal.kicad_mod",
+      "baseline_sha256": "bd3d91f06a7e137a9121c233155e634b54c6f2cba622dd3a03fd805e84fd9278",
+      "candidate_sha256": "bd3d91f06a7e137a9121c233155e634b54c6f2cba622dd3a03fd805e84fd9278",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Connector_JST_JST_GH_SM05B-GHS-TB_1x05-1MP_P1.25mm_Horizontal.kicad_mod",
+      "baseline_sha256": "60d78da749f952c41c3054f139553f9ebfe779eedf78031f67e05584f104be93",
+      "candidate_sha256": "60d78da749f952c41c3054f139553f9ebfe779eedf78031f67e05584f104be93",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Connector_JST_JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical.kicad_mod",
+      "baseline_sha256": "e9a3ca055ab784da0e8c721b835873fad06ba80fd7e5d83fa2712ff220b3bb14",
+      "candidate_sha256": "e9a3ca055ab784da0e8c721b835873fad06ba80fd7e5d83fa2712ff220b3bb14",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Connector_JST_JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal.kicad_mod",
+      "baseline_sha256": "f6cf0f972b346df942f394a1dd52d6e17b9ad53efe064b356b37fa45a978f149",
+      "candidate_sha256": "f6cf0f972b346df942f394a1dd52d6e17b9ad53efe064b356b37fa45a978f149",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Connector_JST_JST_SH_BM06B-SRSS-TB_1x06-1MP_P1.00mm_Vertical.kicad_mod",
+      "baseline_sha256": "53c3c819d715331e1707f16c4a5a722e7fd6ca2e1e240fb0de652927e39590ac",
+      "candidate_sha256": "53c3c819d715331e1707f16c4a5a722e7fd6ca2e1e240fb0de652927e39590ac",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Connector_JST_JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical.kicad_mod",
+      "baseline_sha256": "e6c8288e844619538cacedd7c3c0cd9a77f9c419b743ed312183a146ff98ee69",
+      "candidate_sha256": "e6c8288e844619538cacedd7c3c0cd9a77f9c419b743ed312183a146ff98ee69",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Connector_Molex_Molex_Micro-Fit_3.0_43045-0600_2x03_P3.00mm_Horizontal.kicad_mod",
+      "baseline_sha256": "05f6ba88ba803eaeccbc9e611ac426283b4741106d9c3b01641f75bbb2c051a4",
+      "candidate_sha256": "05f6ba88ba803eaeccbc9e611ac426283b4741106d9c3b01641f75bbb2c051a4",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Connector_Molex_Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical.kicad_mod",
+      "baseline_sha256": "4ee789ca0db376f1801b61fa09a5bd1a0c475eb76dd8ec1b114bec9d24611c2d",
+      "candidate_sha256": "4ee789ca0db376f1801b61fa09a5bd1a0c475eb76dd8ec1b114bec9d24611c2d",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Connector_Molex_Molex_Micro-Fit_3.0_43045-1000_2x05_P3.00mm_Horizontal.kicad_mod",
+      "baseline_sha256": "e046f67c4596e1ea228eeebe7722a12c79e9b57a82b685a343a36cb259326ef2",
+      "candidate_sha256": "e046f67c4596e1ea228eeebe7722a12c79e9b57a82b685a343a36cb259326ef2",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Connector_Molex_Molex_Micro-Fit_3.0_43045-1012_2x05_P3.00mm_Vertical.kicad_mod",
+      "baseline_sha256": "d3e1d93bfcb27a02cb1ef56c7c873154a6b38614ff58f9f199c2240752280611",
+      "candidate_sha256": "d3e1d93bfcb27a02cb1ef56c7c873154a6b38614ff58f9f199c2240752280611",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Connector_Molex_Molex_SPOX_5267-03A_1x03_P2.50mm_Vertical.kicad_mod",
+      "baseline_sha256": "26691bcf747cff198411da827ed8ba2a2a6b2f1abc661a80553a6b8660d84777",
+      "candidate_sha256": "26691bcf747cff198411da827ed8ba2a2a6b2f1abc661a80553a6b8660d84777",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Connector_Molex_Molex_SPOX_5268-03A_1x03_P2.50mm_Horizontal.kicad_mod",
+      "baseline_sha256": "91f2bb20791b342aa62a908dda0c1242bb1539132c36341bdbcf2a90ebcd0f0b",
+      "candidate_sha256": "91f2bb20791b342aa62a908dda0c1242bb1539132c36341bdbcf2a90ebcd0f0b",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Connector_USB_USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.kicad_mod",
+      "baseline_sha256": "21eb03a8b57a777dd1012d747daa9be8f2842ee8019c6badced9a9651d403e81",
+      "candidate_sha256": "21eb03a8b57a777dd1012d747daa9be8f2842ee8019c6badced9a9651d403e81",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Diode_SMD_D_SMB.kicad_mod",
+      "baseline_sha256": "3a4a45ad27a1e82c3a12538c50afd80671bf8c6b5112d1caba663eae8737f9bd",
+      "candidate_sha256": "3a4a45ad27a1e82c3a12538c50afd80671bf8c6b5112d1caba663eae8737f9bd",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Diode_SMD_D_SOD-123.kicad_mod",
+      "baseline_sha256": "cf0853fd94d3ba2a3fef24a6592b93f10a06f2d8de6d719bbca042f99442b52c",
+      "candidate_sha256": "cf0853fd94d3ba2a3fef24a6592b93f10a06f2d8de6d719bbca042f99442b52c",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Diode_SMD_D_SOD-323.kicad_mod",
+      "baseline_sha256": "bdbdc360aa5188f7fba3014a3d961be5645877452c0ba7ab299e1647249e521a",
+      "candidate_sha256": "bdbdc360aa5188f7fba3014a3d961be5645877452c0ba7ab299e1647249e521a",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Diode_SMD_D_SOD-523.kicad_mod",
+      "baseline_sha256": "5c47c9905d63faaa235e41aeae0412ed52138f9a9abf728615596bdbcd8fe717",
+      "candidate_sha256": "5c47c9905d63faaa235e41aeae0412ed52138f9a9abf728615596bdbcd8fe717",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Diode_SMD_Nexperia_CFP3_SOD-123W.kicad_mod",
+      "baseline_sha256": "d0b9f0cb100522c6d8d36fb623ba4112bafe228a00a113883c402919f05cb29f",
+      "candidate_sha256": "d0b9f0cb100522c6d8d36fb623ba4112bafe228a00a113883c402919f05cb29f",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Fuse_Fuse_Littelfuse-NANO2-885.kicad_mod",
+      "baseline_sha256": "c42ca6b6efda451e0ca830a6aa214c22de1219db7bbe1a1874973e7051a232b2",
+      "candidate_sha256": "c42ca6b6efda451e0ca830a6aa214c22de1219db7bbe1a1874973e7051a232b2",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Fuse_Littelfuse_0451_Nano2.kicad_mod",
+      "baseline_sha256": "057d57cebfd29bc7120ccee7cdb7a9efffba938da76ecbcf996372ab026a6d5b",
+      "candidate_sha256": "057d57cebfd29bc7120ccee7cdb7a9efffba938da76ecbcf996372ab026a6d5b",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Inductor_SMD_L_Bourns_SRP6060FA.kicad_mod",
+      "baseline_sha256": "16c4ddc13671453c35af1b57636d6e57074016bd1a93119aba40dd074c9c39f2",
+      "candidate_sha256": "16c4ddc13671453c35af1b57636d6e57074016bd1a93119aba40dd074c9c39f2",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Inductor_SMD_L_Coilcraft_XAL4020-XXX.kicad_mod",
+      "baseline_sha256": "31aac3dfe38eb8f324989c6da7d57770fd85f2db7a782e4f56074d87a59f6cc1",
+      "candidate_sha256": "31aac3dfe38eb8f324989c6da7d57770fd85f2db7a782e4f56074d87a59f6cc1",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/LED_SMD_LED_0603_1608Metric.kicad_mod",
+      "baseline_sha256": "90c23978eb2345ec7167c83127b9c7135e01b12f9db4970bca540b17191e8894",
+      "candidate_sha256": "90c23978eb2345ec7167c83127b9c7135e01b12f9db4970bca540b17191e8894",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/MOSS_Mount_M2p5_2p7_D6.kicad_mod",
+      "baseline_sha256": "e05f35331f08cd3596d3ef16e74223605ce0eb15a4a827c8a16d8bbad14db7fd",
+      "candidate_sha256": "e05f35331f08cd3596d3ef16e74223605ce0eb15a4a827c8a16d8bbad14db7fd",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/MOSS_Mount_M2p5_2p7_D8.kicad_mod",
+      "baseline_sha256": "50f0e219bd3e5eb0f3f19fca97143da3ce7cacf7ab95c7c484c00bbe43e1d376",
+      "candidate_sha256": "50f0e219bd3e5eb0f3f19fca97143da3ce7cacf7ab95c7c484c00bbe43e1d376",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/MOSS_Mount_M2p5_GND_D8.kicad_mod",
+      "baseline_sha256": "0c41d5bf4b925ab665bf0ba0d9f77a2a60a1db0ca2437a8f02c1db53283503da",
+      "candidate_sha256": "0c41d5bf4b925ab665bf0ba0d9f77a2a60a1db0ca2437a8f02c1db53283503da",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/MOSS_Power_MP9447_QFN25_3x4.kicad_mod",
+      "baseline_sha256": "d214415c1dfd672b42f872d6756fe85f1f479423d1cc55126413202ccf6e3dd1",
+      "candidate_sha256": "d214415c1dfd672b42f872d6756fe85f1f479423d1cc55126413202ccf6e3dd1",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/MOSS_V07_CSS2H_2512K_Bourns.kicad_mod",
+      "baseline_sha256": "ce0fc8efd753d3bc5091e20b827dabfe28ad53ae213442ad8f776f38ef76d193",
+      "candidate_sha256": "ce0fc8efd753d3bc5091e20b827dabfe28ad53ae213442ad8f776f38ef76d193",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Package_DFN_QFN_MAX98357A_T1633_4_90_0031.kicad_mod",
+      "baseline_sha256": "79518dce3fdd1c5714fd628dfb0cd3454f2b0af9a4b69cd5e621b099f8ffe7c4",
+      "candidate_sha256": "79518dce3fdd1c5714fd628dfb0cd3454f2b0af9a4b69cd5e621b099f8ffe7c4",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Package_DFN_QFN_Texas_RVC0020A_WQFN-20-1EP_3x4mm_P0.5mm_EP1.6x2.6mm_ThermalVias.kicad_mod",
+      "baseline_sha256": "d5fad165e23c7328af9a19bacb3e5d8b0ee4a7fd10656c870e0c0c8a8cf7e573",
+      "candidate_sha256": "d5fad165e23c7328af9a19bacb3e5d8b0ee4a7fd10656c870e0c0c8a8cf7e573",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Package_SON_VSON-8-1EP_3x3mm_P0.65mm_EP1.65x2.4mm.kicad_mod",
+      "baseline_sha256": "ec797b556ab94756fe7e33dee7551f5e3232c564d49501208f6cc15c3eb978f0",
+      "candidate_sha256": "ec797b556ab94756fe7e33dee7551f5e3232c564d49501208f6cc15c3eb978f0",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Package_SO_MSOP-10_3x3mm_P0.5mm.kicad_mod",
+      "baseline_sha256": "65c23add7af2f2a30edd0f0436230d4ad522fb11d7a4b801518724bd5856c4e8",
+      "candidate_sha256": "65c23add7af2f2a30edd0f0436230d4ad522fb11d7a4b801518724bd5856c4e8",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Package_SO_PowerPAK_SO-8_Single.kicad_mod",
+      "baseline_sha256": "5ab58d78514fd49ecb9def985369d467044eba75ff53ceaf37f47640391f4063",
+      "candidate_sha256": "5ab58d78514fd49ecb9def985369d467044eba75ff53ceaf37f47640391f4063",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Package_SO_TSSOP-14_4.4x5mm_P0.65mm.kicad_mod",
+      "baseline_sha256": "ab8826b0c30a16c4c79a1d9cc43277e4198530d890b0b4486025b0249871b4f3",
+      "candidate_sha256": "ab8826b0c30a16c4c79a1d9cc43277e4198530d890b0b4486025b0249871b4f3",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Package_SO_TSSOP-8_4.4x3mm_P0.65mm.kicad_mod",
+      "baseline_sha256": "1b908731d09b6173ab87370f051b8ad42ce49073bfcb200cf0417c716c6634a5",
+      "candidate_sha256": "1b908731d09b6173ab87370f051b8ad42ce49073bfcb200cf0417c716c6634a5",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Package_SO_VSSOP-8_2.3x2mm_P0.5mm.kicad_mod",
+      "baseline_sha256": "4e907b9c6a04ca98e5aaac52513b7d29f4d8572e3af1b1361616a23a384e2e23",
+      "candidate_sha256": "4e907b9c6a04ca98e5aaac52513b7d29f4d8572e3af1b1361616a23a384e2e23",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Package_TO_SOT_SMD_SOT-23-5.kicad_mod",
+      "baseline_sha256": "56665b9629bd9421fa1b5106294b94d7e931b7a444e3712dcaa7d3d298ced86f",
+      "candidate_sha256": "56665b9629bd9421fa1b5106294b94d7e931b7a444e3712dcaa7d3d298ced86f",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Package_TO_SOT_SMD_SOT-23-6.kicad_mod",
+      "baseline_sha256": "a624b3d7fd0733da18f9d4544486ce7d69d363b541db22d3e7a8e875d74e5405",
+      "candidate_sha256": "a624b3d7fd0733da18f9d4544486ce7d69d363b541db22d3e7a8e875d74e5405",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Package_TO_SOT_SMD_SOT-23.kicad_mod",
+      "baseline_sha256": "1fc64a59ce10911e130c0050db406230830188e05d7a5cce2f1fb3d7879a8f10",
+      "candidate_sha256": "1fc64a59ce10911e130c0050db406230830188e05d7a5cce2f1fb3d7879a8f10",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Package_TO_SOT_SMD_SOT-323_SC-70.kicad_mod",
+      "baseline_sha256": "fa9a3ed068d67ac84eb0c127d6efaf2cc19ca4458d0e44b8ba92e1df315e8e63",
+      "candidate_sha256": "fa9a3ed068d67ac84eb0c127d6efaf2cc19ca4458d0e44b8ba92e1df315e8e63",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Package_TO_SOT_SMD_SOT-353_SC-70-5.kicad_mod",
+      "baseline_sha256": "ebb3e3a60fae926649e3c2607c1b39bcb585d1cad10c6205b32edc9f5f38a039",
+      "candidate_sha256": "ebb3e3a60fae926649e3c2607c1b39bcb585d1cad10c6205b32edc9f5f38a039",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/RF_Module_ESP32-S3-WROOM-1U.kicad_mod",
+      "baseline_sha256": "75475cdd2aa5c3d15dccbcd6b8adba1e19ca63330b08a4931f5fb6a175e273b6",
+      "candidate_sha256": "75475cdd2aa5c3d15dccbcd6b8adba1e19ca63330b08a4931f5fb6a175e273b6",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Resistor_SMD_R_0402_1005Metric.kicad_mod",
+      "baseline_sha256": "cac0c58feb3a3a908debd1bddbefbe3a76fb0483436c0e91ae122cd454ac37ec",
+      "candidate_sha256": "cac0c58feb3a3a908debd1bddbefbe3a76fb0483436c0e91ae122cd454ac37ec",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Resistor_SMD_R_0603_1608Metric.kicad_mod",
+      "baseline_sha256": "fbcf38e085a3d5a76df02ca931b641f0cd462ef4a97b4ceb14367d1a80608d11",
+      "candidate_sha256": "fbcf38e085a3d5a76df02ca931b641f0cd462ef4a97b4ceb14367d1a80608d11",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/Resistor_SMD_R_1206_3216Metric.kicad_mod",
+      "baseline_sha256": "105f91691a8aaebe8f8a381f975304307551e70973ad93dee10adc50bdf2cd10",
+      "candidate_sha256": "105f91691a8aaebe8f8a381f975304307551e70973ad93dee10adc50bdf2cd10",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/TerminalBlock_Phoenix_TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal.kicad_mod",
+      "baseline_sha256": "68ddf52ca63afa46954a2db2362c7b7e893678112ee22cd8cc0599b9e5d4cbfd",
+      "candidate_sha256": "68ddf52ca63afa46954a2db2362c7b7e893678112ee22cd8cc0599b9e5d4cbfd",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS.pretty/TestPoint_TestPoint_Pad_D1.0mm.kicad_mod",
+      "baseline_sha256": "be28d30483ce15dc3f110c7fc6c311c84e9766305cb5a7c314aaf202419d76b3",
+      "candidate_sha256": "be28d30483ce15dc3f110c7fc6c311c84e9766305cb5a7c314aaf202419d76b3",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS_Core_V07_Prototype.kicad_dru",
+      "baseline_sha256": "c39def057e204409fa042e1c68b905486cfb948b02db4ca079145826dfac18ea",
+      "candidate_sha256": "c39def057e204409fa042e1c68b905486cfb948b02db4ca079145826dfac18ea",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS_Core_V07_Prototype.kicad_pro",
+      "baseline_sha256": "874d73c022a1a29260d729258ec7fcdaf404e1cc32ba3cd578a0277e957481ff",
+      "candidate_sha256": "874d73c022a1a29260d729258ec7fcdaf404e1cc32ba3cd578a0277e957481ff",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/MOSS_Core_V07_Prototype.kicad_sch",
+      "baseline_sha256": "bec1a7bc8f26de9c6403a0ae8ccb967cdb98e0cdad72d2443e468bdb30197043",
+      "candidate_sha256": "bec1a7bc8f26de9c6403a0ae8ccb967cdb98e0cdad72d2443e468bdb30197043",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/circuit.json",
+      "baseline_sha256": "80aceb62b867a158efafe1cccc0763384479b2f619c79f407a8b722f2816ec69",
+      "candidate_sha256": "80aceb62b867a158efafe1cccc0763384479b2f619c79f407a8b722f2816ec69",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/fp-lib-table",
+      "baseline_sha256": "649e163907570b09af9ca8809bee1f3385e72e50e2eb9bb8e229923ea7f13fd0",
+      "candidate_sha256": "649e163907570b09af9ca8809bee1f3385e72e50e2eb9bb8e229923ea7f13fd0",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/AMASS_XT30PW_M_VISUAL.step",
+      "baseline_sha256": "de81e8ebe5cef55718bb26e466d684b3cc7d613785e53b787968c24c6ae3f3f7",
+      "candidate_sha256": "de81e8ebe5cef55718bb26e466d684b3cc7d613785e53b787968c24c6ae3f3f7",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Bourns_CSS2H_2512K_2L00F_ENVELOPE.step",
+      "baseline_sha256": "2935d9fe6762f96ef8f63ecf8878f15ce7797ececc3786e9df4f7165bb3de0cf",
+      "candidate_sha256": "2935d9fe6762f96ef8f63ecf8878f15ce7797ececc3786e9df4f7165bb3de0cf",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Button_Switch_SMD_SW_Push_1P1T_NO_CK_KMR2.step",
+      "baseline_sha256": "3bc8d332afe2964b582d8caddfabf0912a948d62325ecb4300adcefa2eadc874",
+      "candidate_sha256": "3bc8d332afe2964b582d8caddfabf0912a948d62325ecb4300adcefa2eadc874",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Capacitor_SMD_CP_Elec_6.3x5.9.step",
+      "baseline_sha256": "db9f56772f8759b93f4ba0b274e293a14bbd3c7d5f2de835feeabb78b0c02d76",
+      "candidate_sha256": "db9f56772f8759b93f4ba0b274e293a14bbd3c7d5f2de835feeabb78b0c02d76",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Capacitor_SMD_C_0402_1005Metric.step",
+      "baseline_sha256": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
+      "candidate_sha256": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Capacitor_SMD_C_0603_1608Metric.step",
+      "baseline_sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "candidate_sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Capacitor_SMD_C_0805_2012Metric.step",
+      "baseline_sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "candidate_sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Capacitor_SMD_C_1206_3216Metric.step",
+      "baseline_sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a",
+      "candidate_sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Capacitor_SMD_C_1210_3225Metric.step",
+      "baseline_sha256": "f8510481c5044113cf49b0fa6dd54ddab9224508bd6808e1afab8ef0cefdefc9",
+      "candidate_sha256": "f8510481c5044113cf49b0fa6dd54ddab9224508bd6808e1afab8ef0cefdefc9",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Connector_JST_JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal.step",
+      "baseline_sha256": "aacba39c0ebf407941d81e202e5fc85121532adadfd38f26725330dea8815ac7",
+      "candidate_sha256": "aacba39c0ebf407941d81e202e5fc85121532adadfd38f26725330dea8815ac7",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Connector_JST_JST_GH_SM05B-GHS-TB_1x05-1MP_P1.25mm_Horizontal.step",
+      "baseline_sha256": "83904d0811d071430211aa3207f46b5940102c2bdb39218e713e5751c04c26fe",
+      "candidate_sha256": "83904d0811d071430211aa3207f46b5940102c2bdb39218e713e5751c04c26fe",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Connector_JST_JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical.step",
+      "baseline_sha256": "cab512a9b16c7568ed6e0047c17de04c4dd11893cdee71cb33fb51768543f927",
+      "candidate_sha256": "cab512a9b16c7568ed6e0047c17de04c4dd11893cdee71cb33fb51768543f927",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Connector_JST_JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal.step",
+      "baseline_sha256": "5343f72b9fe095ba999c44c2d42c2045032162dd11066bd4d36865caf3d1fba2",
+      "candidate_sha256": "5343f72b9fe095ba999c44c2d42c2045032162dd11066bd4d36865caf3d1fba2",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Connector_JST_JST_SH_BM06B-SRSS-TB_1x06-1MP_P1.00mm_Vertical.step",
+      "baseline_sha256": "3542ff3606fe531a56b4051935716b0f13dd857908b5cb5237af98bdbe29716a",
+      "candidate_sha256": "3542ff3606fe531a56b4051935716b0f13dd857908b5cb5237af98bdbe29716a",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Connector_JST_JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical.step",
+      "baseline_sha256": "7287616fdad677e9b54cf5494f17efc4b3fb77be002659d73e215772393f20c6",
+      "candidate_sha256": "7287616fdad677e9b54cf5494f17efc4b3fb77be002659d73e215772393f20c6",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Connector_Molex_Molex_Micro-Fit_3.0_43045-0600_2x03_P3.00mm_Horizontal.step",
+      "baseline_sha256": "21374dec4c26778e03b3936147675a54a940153150ca5daa96cd1be34de02e3d",
+      "candidate_sha256": "21374dec4c26778e03b3936147675a54a940153150ca5daa96cd1be34de02e3d",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Connector_Molex_Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical.step",
+      "baseline_sha256": "6f690556ab4e93c8b7f977affc0e68c75bf6f6a7be0b0cf42290f7e280442406",
+      "candidate_sha256": "6f690556ab4e93c8b7f977affc0e68c75bf6f6a7be0b0cf42290f7e280442406",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Connector_Molex_Molex_Micro-Fit_3.0_43045-1000_2x05_P3.00mm_Horizontal.step",
+      "baseline_sha256": "a30f5426dc1def9bbe9a608c8ef98377f1d47848db840b74083c36e4d9995ba9",
+      "candidate_sha256": "a30f5426dc1def9bbe9a608c8ef98377f1d47848db840b74083c36e4d9995ba9",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Connector_Molex_Molex_Micro-Fit_3.0_43045-1012_2x05_P3.00mm_Vertical.step",
+      "baseline_sha256": "fbbb5793083b5973267f8b0dabb12f926dfddbf0627ccb211730f7b97dd0cabc",
+      "candidate_sha256": "fbbb5793083b5973267f8b0dabb12f926dfddbf0627ccb211730f7b97dd0cabc",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Connector_USB_USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step",
+      "baseline_sha256": "6338ce740fa231c2d3dcc6384e0576994a47240a312a21413cb85d76990a69a0",
+      "candidate_sha256": "6338ce740fa231c2d3dcc6384e0576994a47240a312a21413cb85d76990a69a0",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Diode_SMD_D_SMB.step",
+      "baseline_sha256": "029466277d91e9f5492556be93e46611049e07115c7913880c547afa96058ed4",
+      "candidate_sha256": "029466277d91e9f5492556be93e46611049e07115c7913880c547afa96058ed4",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Diode_SMD_D_SOD-123.step",
+      "baseline_sha256": "b3dc4065573abc72e3d5b4cca0e908f72a24205a41b6284b1f75ccacbe99adf8",
+      "candidate_sha256": "b3dc4065573abc72e3d5b4cca0e908f72a24205a41b6284b1f75ccacbe99adf8",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Diode_SMD_D_SOD-323.step",
+      "baseline_sha256": "cd8619b2119cd95683a2c5e660ab4f2d4db674f696cd6f9e9756f221171a214d",
+      "candidate_sha256": "cd8619b2119cd95683a2c5e660ab4f2d4db674f696cd6f9e9756f221171a214d",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Diode_SMD_D_SOD-523.step",
+      "baseline_sha256": "b525222377930c32abea58606bffba3aaf171cc66ac292b82d28a82d646d995d",
+      "candidate_sha256": "b525222377930c32abea58606bffba3aaf171cc66ac292b82d28a82d646d995d",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Diode_SMD_Nexperia_CFP3_SOD-123W.step",
+      "baseline_sha256": "b7e56594bfc2e4eec42ca2b7b7911cc7eff91c1f55a3c8db11ddfba2e5ce21d7",
+      "candidate_sha256": "b7e56594bfc2e4eec42ca2b7b7911cc7eff91c1f55a3c8db11ddfba2e5ce21d7",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Inductor_SMD_L_Bourns_SRP6060FA.step",
+      "baseline_sha256": "c7a9e2fe6362c19c7d270c9ce5b55bc154ec0b2cf6723e520f5afaa3aa3924a8",
+      "candidate_sha256": "c7a9e2fe6362c19c7d270c9ce5b55bc154ec0b2cf6723e520f5afaa3aa3924a8",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Inductor_SMD_L_Coilcraft_XAL4020-XXX.step",
+      "baseline_sha256": "ccccee60d1c700cb295b890024e8da4e4d7507b6b69039c751b6dcc3e91bd3ee",
+      "candidate_sha256": "ccccee60d1c700cb295b890024e8da4e4d7507b6b69039c751b6dcc3e91bd3ee",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/LED_SMD_LED_0603_1608Metric.step",
+      "baseline_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d",
+      "candidate_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Littelfuse_0451001_MRL_VISUAL.step",
+      "baseline_sha256": "ac63f50b23a3d9ca0bacccdae4a557fe4d9f1350cabea3501b1bdea8abdd0edf",
+      "candidate_sha256": "ac63f50b23a3d9ca0bacccdae4a557fe4d9f1350cabea3501b1bdea8abdd0edf",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Littelfuse_08853_15DR_VISUAL.step",
+      "baseline_sha256": "cebd4d2019cae91df5cfd0dc6d185ec6e030751217ce809b49845a697014fce8",
+      "candidate_sha256": "cebd4d2019cae91df5cfd0dc6d185ec6e030751217ce809b49845a697014fce8",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/MAX98357A_TQFN16_BODY_ENVELOPE.step",
+      "baseline_sha256": "2e254212c1d595af31582ab1e79fedf41f1f658b087d826bd18a2de9bac6bb4d",
+      "candidate_sha256": "2e254212c1d595af31582ab1e79fedf41f1f658b087d826bd18a2de9bac6bb4d",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/MICROFIT_VISUAL_PROVENANCE.json",
+      "baseline_sha256": "b72ff2df7e8d9276eb4c1aeee67d587b2d75e3837e0843ff6d0b4e8b302a5f5a",
+      "candidate_sha256": "b72ff2df7e8d9276eb4c1aeee67d587b2d75e3837e0843ff6d0b4e8b302a5f5a",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Molex_22035035_VERTICAL_DIMENSIONED_REFERENCE.step",
+      "baseline_sha256": "03aee1269e2dddcd27cde96ea4c44753ebe60a13bfe4396765f68b3842d2504f",
+      "candidate_sha256": "03aee1269e2dddcd27cde96ea4c44753ebe60a13bfe4396765f68b3842d2504f",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Molex_22057035_VISUAL.step",
+      "baseline_sha256": "de34112234f37c6a1d91487ea01651a0394f33b4be46d3e3f83f048c53548df4",
+      "candidate_sha256": "de34112234f37c6a1d91487ea01651a0394f33b4be46d3e3f83f048c53548df4",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Package_DFN_QFN_Texas_RVC0020A_WQFN-20-1EP_3x4mm_P0.5mm_EP1.6x2.6mm.step",
+      "baseline_sha256": "f257536c2c62c3b774a8d2e72792a5e607e79f19c56edb5e8211258bed260d6c",
+      "candidate_sha256": "f257536c2c62c3b774a8d2e72792a5e607e79f19c56edb5e8211258bed260d6c",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Package_SON_VSON-8-1EP_3x3mm_P0.65mm_EP1.65x2.4mm.step",
+      "baseline_sha256": "1050def5c38af941aebf6e8f32735342c3682a02492520c8a60367d50292e2ab",
+      "candidate_sha256": "1050def5c38af941aebf6e8f32735342c3682a02492520c8a60367d50292e2ab",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Package_SO_MSOP-10_3x3mm_P0.5mm.step",
+      "baseline_sha256": "b8f88eac3ce221c2ccb0b5048f9ad49c2ef4af148f8ae50c4e232e357683f547",
+      "candidate_sha256": "b8f88eac3ce221c2ccb0b5048f9ad49c2ef4af148f8ae50c4e232e357683f547",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Package_SO_TSSOP-14_4.4x5mm_P0.65mm.step",
+      "baseline_sha256": "3ee5786aae56190997aa793ba3cfc003fd616782770e29719b4562f012982245",
+      "candidate_sha256": "3ee5786aae56190997aa793ba3cfc003fd616782770e29719b4562f012982245",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Package_SO_TSSOP-8_4.4x3mm_P0.65mm.step",
+      "baseline_sha256": "2299fb3b85d686800712b24f5411cd4896ad7de29f3aab656d6dc1006211629b",
+      "candidate_sha256": "2299fb3b85d686800712b24f5411cd4896ad7de29f3aab656d6dc1006211629b",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Package_SO_VSSOP-8_2.3x2mm_P0.5mm.step",
+      "baseline_sha256": "353552981eef35cb93635057d4aeb89aef22648c77af6fd095e328bfe6b834bd",
+      "candidate_sha256": "353552981eef35cb93635057d4aeb89aef22648c77af6fd095e328bfe6b834bd",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Package_TO_SOT_SMD_SOT-23-5.step",
+      "baseline_sha256": "720a6eab0024069bbee68e7cb4c3ff1149468a34611225cdc852662c5d0ec2b7",
+      "candidate_sha256": "720a6eab0024069bbee68e7cb4c3ff1149468a34611225cdc852662c5d0ec2b7",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Package_TO_SOT_SMD_SOT-23-6.step",
+      "baseline_sha256": "c9fe686b4d1b56927a41fa84a9bc1efb61d8a45a123a3db43bcaa05c2891d635",
+      "candidate_sha256": "c9fe686b4d1b56927a41fa84a9bc1efb61d8a45a123a3db43bcaa05c2891d635",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Package_TO_SOT_SMD_SOT-23.step",
+      "baseline_sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+      "candidate_sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Package_TO_SOT_SMD_SOT-323_SC-70.step",
+      "baseline_sha256": "acbf75a28fe41aa90efb38cd2b78220968d6eb6ebae1625dfd532dbeb268fece",
+      "candidate_sha256": "acbf75a28fe41aa90efb38cd2b78220968d6eb6ebae1625dfd532dbeb268fece",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Package_TO_SOT_SMD_SOT-353_SC-70-5.step",
+      "baseline_sha256": "2860de5b7b085919ff6e952148353f928798588d9f544dc69430545aff2ba908",
+      "candidate_sha256": "2860de5b7b085919ff6e952148353f928798588d9f544dc69430545aff2ba908",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/RF_Module_ESP32-S3-WROOM-1U.step",
+      "baseline_sha256": "9255fcb7efa11e68753c797987752cc076df8914b6cfecd30d7d0dd8c97bb46a",
+      "candidate_sha256": "9255fcb7efa11e68753c797987752cc076df8914b6cfecd30d7d0dd8c97bb46a",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Resistor_SMD_R_0402_1005Metric.step",
+      "baseline_sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+      "candidate_sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Resistor_SMD_R_0603_1608Metric.step",
+      "baseline_sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "candidate_sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Resistor_SMD_R_1206_3216Metric.step",
+      "baseline_sha256": "f5d1ea5c47935091292bd1c6c698e0df88d3d4bbf92bf66b4c97e49df5be9ebc",
+      "candidate_sha256": "f5d1ea5c47935091292bd1c6c698e0df88d3d4bbf92bf66b4c97e49df5be9ebc",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/TerminalBlock_Phoenix_TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal.step",
+      "baseline_sha256": "2684469b03d2dd46f26862eb86eb283215344c311dd485db877e7139b5381497",
+      "candidate_sha256": "2684469b03d2dd46f26862eb86eb283215344c311dd485db877e7139b5381497",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Vishay_SiRA99DP_PowerPAK_SO8_ENVELOPE.step",
+      "baseline_sha256": "83100492cebada0f7085ddd8d43595b3a87472719f57e7b1c7354b573d97861a",
+      "candidate_sha256": "83100492cebada0f7085ddd8d43595b3a87472719f57e7b1c7354b573d97861a",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/Waveshare_DC5_36_5V_PHOTO_BASED_VISUAL_a5a8c664b4a7.step",
+      "baseline_sha256": "a5a8c664b4a71081e197c29846342f11fa209f1ad27a6bed727bc9143dab167d",
+      "candidate_sha256": "a5a8c664b4a71081e197c29846342f11fa209f1ad27a6bed727bc9143dab167d",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/models/XT30UPB-M_REFERENCE.step",
+      "baseline_sha256": "c1d027e0359f35ec4e0e37047a1463c70507c714c46f50fb66df226e35d89347",
+      "candidate_sha256": "c1d027e0359f35ec4e0e37047a1463c70507c714c46f50fb66df226e35d89347",
+      "identical": true,
+      "accepted": true
+    },
+    {
+      "path": "electrical/sym-lib-table",
+      "baseline_sha256": "e281d613cef681ed94420244e864e2b34916b376f093119993058baaac69a70f",
+      "candidate_sha256": "e281d613cef681ed94420244e864e2b34916b376f093119993058baaac69a70f",
+      "identical": true,
+      "accepted": true
+    }
+  ],
+  "leader_manifest_sha256": "89468bce8167e96b60637a9c2ca21d8b0aaa7072fff6f45c46c964c6065d31ca",
+  "all_source_bytes_identical": false,
+  "electrical_and_physical_equivalence_pass": true,
+  "new_reference_style_pass": true,
+  "status": "PASS_PROTECTED_DESIGN_UNCHANGED",
+  "limits": [
+    "Native-file comparison only; no new electrical simulation or physical board test.",
+    "This is not the final legibility/clearance approval; mask clearances and actual exported ink still need their geometry/preview checks.",
+    "Historic small Fab text is excluded from printed-silkscreen checks. Reference/value strings remain protected.",
+    "The only source-file exception is an explicitly recorded top-level BOM_PCBWAY_ASSEMBLY.json notes change; all other BOM data and supplier CSVs remain protected."
+  ],
+  "external_manifest_metadata_rebinding": {
+    "proof_file": "LEADER_MANIFEST_REBIND.json",
+    "proof_sha256": "33fc8535c300b7f4d49f991954595a44e45d0b5993e73323c054a18dcc547adb",
+    "original_report_file": "SILK_ONLY_EQUIVALENCE_ORIGINAL.json",
+    "original_report_sha256": "c89340679af64d406e9ef764cc5b5947921829c33e70396c684c77da05bde326",
+    "full_comparator_reexecuted": false,
+    "reason": "Unchanged exact PCB; final manifest dependencies are matched to the original measured native leader objects."
+  }
+}

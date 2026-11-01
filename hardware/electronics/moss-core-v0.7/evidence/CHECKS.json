@@ -1,5 +1,5 @@
 {
-  "board_sha256": "456219f7eb97119b7e4328ed76f150012619131788f42d3a9d21fc4e40859cdb",
+  "board_sha256": "4f456f0563e9dc5a3b7cbab98eaa8d9f24485d14dc79a7656af5ab04b983b6b1",
   "DRC_errors": 0,
   "unconnected_items": 0,
   "schematic_parity_issues": 0,
@@ -22,7 +22,7 @@
     "electrical/02_Controller.kicad_sch": "f852944702e2f69acaa46aa1bd669ac16bed7d5c5ab3745de6e79dfef7d2778c",
     "electrical/10_Battery_Power.kicad_sch": "074947d57428eba15134572bde5e1cb4ddc074649d1677a95604281a71fcd3b5",
     "electrical/18_Actuator_Cutoff.kicad_sch": "c3d6d0e08e057c2286851b12f7a1e44c0fc811ec48ecd1ca3c866214776c7c44",
-    "electrical/MOSS_Core_V07_Prototype.kicad_pcb": "456219f7eb97119b7e4328ed76f150012619131788f42d3a9d21fc4e40859cdb",
+    "electrical/MOSS_Core_V07_Prototype.kicad_pcb": "4f456f0563e9dc5a3b7cbab98eaa8d9f24485d14dc79a7656af5ab04b983b6b1",
     "electrical/MOSS_Core_V07_Prototype.kicad_dru": "c39def057e204409fa042e1c68b905486cfb948b02db4ca079145826dfac18ea",
     "electrical/MOSS.pretty/Diode_SMD_D_SOD-523.kicad_mod": "5c47c9905d63faaa235e41aeae0412ed52138f9a9abf728615596bdbcd8fe717",
     "electrical/MOSS.pretty/Package_SO_VSSOP-8_2.3x2mm_P0.5mm.kicad_mod": "4e907b9c6a04ca98e5aaac52513b7d29f4d8572e3af1b1361616a23a384e2e23",
@@ -81,7 +81,7 @@
     "electrical/MOSS.pretty/Package_TO_SOT_SMD_SOT-23-5.kicad_mod": "56665b9629bd9421fa1b5106294b94d7e931b7a444e3712dcaa7d3d298ced86f",
     "electrical/MOSS.pretty/Package_TO_SOT_SMD_SOT-23.kicad_mod": "1fc64a59ce10911e130c0050db406230830188e05d7a5cce2f1fb3d7879a8f10",
     "electrical/circuit.json": "80aceb62b867a158efafe1cccc0763384479b2f619c79f407a8b722f2816ec69",
-    "electrical/BOM_PCBWAY_ASSEMBLY.json": "71da646b3510c4bde3c74a2439709639ef2d049ae413256dcd4d535723bcaf92"
+    "electrical/BOM_PCBWAY_ASSEMBLY.json": "839e01073b6a335dcfb4fd190e032e41c16d86785f60f05f1ccca957accfa4c2"
   },
   "scope": "Native prototype checks; no hardware qualification.",
   "reviewed_warning": {
@@ -107,6 +107,5 @@
       "a6ddedfb-20ac-41c9-8492-ec9bc296efca"
     ],
     "reason": "Tiny C21 underside outline meets J10.1 mask aperture. Gerbers are exported with --subtract-soldermask; ink over the aperture is removed without changing any copper, pad or drill."
-  },
-  "metadata_only_rebinding": "BOM_NOTE_REFRESH.json"
+  }
 }

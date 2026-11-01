@@ -2,9 +2,13 @@
 
 This is my first custom PCB for **MOSS, the litter-picking rover**, designed with Codex and KiCad. I am publishing the editable design so people with electronics experience can help review it before the first assembled prototypes are tested.
 
-**Updated 1 November 2026: power and rearm update.** The matched files below describe the current layout for PCBWay engineering review. This is still the first, unbuilt prototype; hardware revision letters are reserved for fabricated boards.
+**Updated 2 November 2026: component reference markings.** The matched files below describe the current layout for PCBWay engineering review. This is still the first, unbuilt prototype; hardware revision letters are reserved for fabricated boards.
 
 ## What changed
+
+The current update adds printed component references while keeping the existing numbering. It changes the legends only: the circuit, components, copper, drill pattern, connector pinouts and placements remain the same as the power/rearm design. See [reference markings and verification scope](SILKSCREEN_UPDATE.md), including the U15 dense-area exception and its assembly locator.
+
+The preceding electrical update is retained:
 
 - **Supply recovery now requires a fresh arm pulse.** A hardware latch prevents held enable/PWM levels from automatically reopening the command gates after a qualified actuator-supply fault. GPIO1 provides the arm pulse; GPIO2 reads back the latch. The firmware must support this interface.
 - **Logic-regulator transient response:** C170 adds the 6.8 pF feedforward capacitor recommended by TI for the existing feedback divider. The nominal logic voltage remains 3.384 V. Its response under load still needs measurement.
@@ -46,7 +50,7 @@ The [harness study](https://github.com/metrox-eth/moss/tree/main/hardware/electr
 
 ## Assembly review
 
-A [focused mask/paste and BOM review](evidence/assembly_review/README.md) checked the current-sense shunts and amplifiers. Their apertures remain separate; the PCB and production CSV are unchanged. A classified BOM view makes semiconductors, passives and connectors easier to inspect. Stencil and reflow-process confirmation remains with PCBWay.
+A [focused mask/paste and BOM review](evidence/assembly_review/README.md) checked the current-sense shunts and amplifiers. Their apertures remain separate; the later legend update preserves these openings and the production CSV. A classified BOM view makes semiconductors, passives and connectors easier to inspect. Stencil and reflow-process confirmation remains with PCBWay.
 
 ## Firmware and commissioning
 
@@ -56,11 +60,11 @@ The ESP32-S3 build passes with zero compiler warnings. Shared-code host tests an
 
 ## Download and inspect
 
-- [Complete prototype review package](delivery/MOSS_CORE_V07_PROTOTYPE_REVIEW_20261101_POWER_REARM.zip).
+- [Complete prototype review package](delivery/MOSS_CORE_V07_PROTOTYPE_REVIEW_20261102_SILKSCREEN.zip).
 - [KiCad project](electrical/MOSS_Core_V07_Prototype.kicad_pro), [PCB](electrical/MOSS_Core_V07_Prototype.kicad_pcb) and [root schematic](electrical/MOSS_Core_V07_Prototype.kicad_sch).
 - [Physical-pin circuit contract](electrical/circuit.json), local symbols and footprints in `electrical/`.
 - [Grouped component BOM](delivery/assembly/MOSS_CORE_V07_PROTOTYPE_BOM.csv) and [placement file](delivery/assembly/MOSS_CORE_V07_PROTOTYPE_POSITIONS.csv): **216 placed components, 99 purchase articles**. The native board also contains mounting holes and test pads, for 230 footprints total.
-- [Gerbers and drills](delivery/MOSS_CORE_V07_PROTOTYPE_GERBERS_20261101_POWER_REARM.zip), with [fabrication notes](delivery/fabrication/FABRICATION_NOTES.txt) and [assembly notes](delivery/assembly/ASSEMBLY_NOTES.txt).
+- [Gerbers and drills](delivery/MOSS_CORE_V07_PROTOTYPE_GERBERS_20261102_SILKSCREEN.zip), with [fabrication notes](delivery/fabrication/FABRICATION_NOTES.txt) and [assembly notes](delivery/assembly/ASSEMBLY_NOTES.txt).
 - [File hashes](MANIFEST.json), [check results](evidence/CHECKS.json) and [publication provenance](evidence/PUBLICATION_NOTES.json).
 
 Use KiCad 10. Open the project from `electrical/` so `${KIPRJMOD}` resolves its local libraries and models. Preserve the native-board model settings when updating footprints: some library defaults reference KiCad's installed models. Several custom models are visual approximations, not manufacturer mating CAD. The previews add a simple U60 body and manufacturer-based IC markings, with the ESP shield left unmarked, documented in [visual provenance](preview/VISUAL_PROVENANCE.json); the native PCB is unchanged.
@@ -68,7 +72,7 @@ Use KiCad 10. Open the project from `electrical/` so `${KIPRJMOD}` resolves its 
 The native candidate PCB is identified by:
 
 ```text
-SHA-256: 456219f7eb97119b7e4328ed76f150012619131788f42d3a9d21fc4e40859cdb
+SHA-256: 4f456f0563e9dc5a3b7cbab98eaa8d9f24485d14dc79a7656af5ab04b983b6b1
 ```
 
 ## Community review welcome

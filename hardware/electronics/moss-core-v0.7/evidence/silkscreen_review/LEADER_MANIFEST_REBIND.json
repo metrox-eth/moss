@@ -1,0 +1,83 @@
+{
+  "timestamp_utc": "2026-11-01T18:53:30.745258+00:00",
+  "status": "PASS_EXTERNAL_MANIFEST_METADATA_REBIND",
+  "old_comparator_report_sha256": "c89340679af64d406e9ef764cc5b5947921829c33e70396c684c77da05bde326",
+  "old_manifest_sha256": "8f2da60d65a78213ca9043b8fe7f66b58bb4415609114d1e7ce8f753db3eed27",
+  "new_manifest_sha256": "89468bce8167e96b60637a9c2ca21d8b0aaa7072fff6f45c46c964c6065d31ca",
+  "baseline_board_sha256": "456219f7eb97119b7e4328ed76f150012619131788f42d3a9d21fc4e40859cdb",
+  "candidate_board_sha256": "4f456f0563e9dc5a3b7cbab98eaa8d9f24485d14dc79a7656af5ab04b983b6b1",
+  "consumed_manifest_dependencies": [
+    "baseline_sha256",
+    "candidate_sha256",
+    "leaders.ref",
+    "leaders.side",
+    "leaders.width_mm",
+    "leaders.points_mm",
+    "leaders.graphic_uuids",
+    "leaders.coordinate_frame if fp_line"
+  ],
+  "all_consumed_dependencies_revalidated": true,
+  "native_leaders": [
+    {
+      "uuid": "164120a1-8748-4ae5-9790-6b7170e61188",
+      "reference": "R35",
+      "native_object_sha256": "effcfb9b08969820a44afc92755c0fbdefad1cdd6d17dfa6fee0b39ea10e49f3",
+      "final_declared_geometry_matches_previous_native_measurement": true,
+      "max_coordinate_delta_mm": 9.99999993922529e-07
+    },
+    {
+      "uuid": "1c8b0f5c-b7dd-422d-a975-6b869986e70d",
+      "reference": "R35",
+      "native_object_sha256": "98840010c9d121d23067d97de2f3d13d63bba38746b499daf65f6e4419382e0c",
+      "final_declared_geometry_matches_previous_native_measurement": true,
+      "max_coordinate_delta_mm": 9.99999993922529e-07
+    },
+    {
+      "uuid": "22c8cc1a-1018-4e59-9e53-d4a930f86b4a",
+      "reference": "R56",
+      "native_object_sha256": "713cc238b7afcabf3f130f110d5fc619698fe0f6d7b0acf7cc830fdfe9cb4087",
+      "final_declared_geometry_matches_previous_native_measurement": true,
+      "max_coordinate_delta_mm": 4.999999987376214e-07
+    },
+    {
+      "uuid": "42e93314-6a8c-48bc-b4ef-a9fd7304541b",
+      "reference": "R56",
+      "native_object_sha256": "a049d7f9195b933e1cb95005356f48f08445f95e923b9ac476f1daaa4777cdcb",
+      "final_declared_geometry_matches_previous_native_measurement": true,
+      "max_coordinate_delta_mm": 4.999999987376214e-07
+    },
+    {
+      "uuid": "5b0f417d-6ca1-415f-9979-07750cfbc7f6",
+      "reference": "D2",
+      "native_object_sha256": "d659236598269e21ae4e14920597ec83226d8d55bc552b228532efc1dd722d98",
+      "final_declared_geometry_matches_previous_native_measurement": true,
+      "max_coordinate_delta_mm": 9.999999974752427e-07
+    },
+    {
+      "uuid": "fd80f12e-3e6d-4204-8ac4-627b36dc9bdf",
+      "reference": "D2",
+      "native_object_sha256": "10f8fca2b8c73105f04135130fa4ef7ae16db359c3868a7bbb87ff13686a935d",
+      "final_declared_geometry_matches_previous_native_measurement": true,
+      "max_coordinate_delta_mm": 9.99999983264388e-07
+    },
+    {
+      "uuid": "11681b65-090d-43d7-b94d-e3425063eced",
+      "reference": "R105",
+      "native_object_sha256": "0c90e66e0b7bcc7dfb3645d285c28ae3a5779d37c778cdd75d99be8c61abb4b3",
+      "final_declared_geometry_matches_previous_native_measurement": true,
+      "max_coordinate_delta_mm": 9.999999974752427e-07
+    },
+    {
+      "uuid": "0404a138-da3d-4032-8d38-3edc46ebe29a",
+      "reference": "R105",
+      "native_object_sha256": "cc2f94bcf23ece73dd670bcb570c8513eefb5badc3d853259adb51f9073af5a7",
+      "final_declared_geometry_matches_previous_native_measurement": true,
+      "max_coordinate_delta_mm": 9.999999903698154e-07
+    }
+  ],
+  "other_layout_metadata": "Not used by the protected-design comparator; this does not assert byte identity of unconsumed layout metadata. U15 locator metadata is separately bound by the final layout/locator evidence.",
+  "full_comparator_reexecuted": false,
+  "clearance_reexecuted": false,
+  "electrical_simulation_reexecuted": false,
+  "rebind_script_sha256": "8388bf6e228ce6de18b8ebd4dce0488ec3d141ce2a667252642594c84c3a5979"
+}

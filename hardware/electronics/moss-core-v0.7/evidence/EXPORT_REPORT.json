@@ -1,6 +1,6 @@
 {
-  "status": "POWER_REARM_UPDATE_FOR_PCBWAY_ENGINEERING_REVIEW",
-  "board_sha256": "456219f7eb97119b7e4328ed76f150012619131788f42d3a9d21fc4e40859cdb",
+  "status": "SILKSCREEN_UPDATE_FOR_PCBWAY_ENGINEERING_REVIEW",
+  "board_sha256": "4f456f0563e9dc5a3b7cbab98eaa8d9f24485d14dc79a7656af5ab04b983b6b1",
   "component_count": 216,
   "article_count": 99,
   "DRC_errors": 0,
@@ -8,6 +8,5 @@
   "schematic_parity_issues": 0,
   "ERC_violations": 0,
   "known_DRC_warnings": 2,
-  "hardware_qualified": false,
-  "firmware_crosscheck": "FIRMWARE_CROSSCHECK.json"
+  "hardware_qualified": false
 }

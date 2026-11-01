@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="790" viewBox="0 0 1000 790">
+<rect width="1000" height="790" fill="#11171d"/>
+<g font-family="Arial, sans-serif" fill="#eef3f7">
+<text x="50" y="58" font-size="30" font-weight="bold">MOSS Core V0.7 · U15 assembly locator</text>
+<text x="50" y="98" font-size="19" fill="#bac6d0">Top side. Footprint envelopes shown at their native relative positions.</text>
+<rect x="538.88" y="262.96" width="240.25" height="177.16" rx="4" fill="#405367" stroke="#8fa7bc" stroke-width="2"/>
+<text x="659.00" y="358.54" text-anchor="middle" font-size="21" font-weight="bold" fill="#ffffff">U6</text>
+<rect x="441.85" y="296.59" width="93.31" height="46.81" rx="4" fill="#405367" stroke="#8fa7bc" stroke-width="2"/>
+<text x="488.50" y="327.00" text-anchor="middle" font-size="21" font-weight="bold" fill="#ffffff">R19</text>
+<rect x="333.35" y="420.59" width="93.31" height="46.81" rx="4" fill="#405367" stroke="#8fa7bc" stroke-width="2"/>
+<text x="380.00" y="451.00" text-anchor="middle" font-size="21" font-weight="bold" fill="#ffffff">C26</text>
+<rect x="431.46" y="371.92" width="77.81" height="91.45" rx="4" fill="#f2cc60" stroke="#f2cc60" stroke-width="2"/>
+<text x="470.36" y="424.65" text-anchor="middle" font-size="21" font-weight="bold" fill="#10171e">U15</text>
+<rect x="519.35" y="451.59" width="93.31" height="46.81" rx="4" fill="#405367" stroke="#8fa7bc" stroke-width="2"/>
+<text x="566.00" y="482.00" text-anchor="middle" font-size="21" font-weight="bold" fill="#ffffff">R111</text>
+<rect x="148.28" y="475.62" width="339.45" height="184.76" rx="4" fill="#405367" stroke="#8fa7bc" stroke-width="2"/>
+<text x="318.00" y="575.00" text-anchor="middle" font-size="21" font-weight="bold" fill="#ffffff">J5</text>
+<text x="50" y="730" font-size="19">U15 · SN74LVC1G126DCKR · footprint origin: X 25.00 mm, Y 62.15 mm</text>
+<text x="50" y="762" font-size="17" fill="#bac6d0">Its reference remains in KiCad F.Fab and the BOM; it is not printed on the PCB.</text>
+</g></svg>

@@ -1,12 +1,12 @@
 {
-  "timestamp_utc": "2026-11-01T14:48:48.531727+00:00",
+  "timestamp_utc": "2026-11-01T18:43:29.470621+00:00",
   "status": "CONTRACT_LOGIC_MODEL_PASS_WITH_EXPLICIT_TIMING_LIMITS",
   "inputs": {
     "circuit_file": "circuit.json",
     "netlist_file": "NETLIST.xml"
   },
   "circuit_sha256": "80aceb62b867a158efafe1cccc0763384479b2f619c79f407a8b722f2816ec69",
-  "native_netlist_sha256": "27c084d1fbab63de8406f9647e1f8d1f9ee7b7c1bb00c568e4da15ae0adb4aa8",
+  "native_netlist_sha256": "ed90f9dd85748446c873a69aaf9864c0a9e95c02d4e0fd148efccc4cb9d734e6",
   "script_sha256": "a7fa0df453ffe88a46f1f11c15f65eff89bda6f8048e53ddba611b116378f84d",
   "counts": {
     "static_command_combinations": 2048,

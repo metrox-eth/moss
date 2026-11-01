@@ -1,9 +1,14 @@
 {
-  "native_board_sha256": "456219f7eb97119b7e4328ed76f150012619131788f42d3a9d21fc4e40859cdb",
+  "native_board_sha256": "4f456f0563e9dc5a3b7cbab98eaa8d9f24485d14dc79a7656af5ab04b983b6b1",
   "native_model_references": 214,
   "missing_local_models": [],
   "external_model_references": [],
   "top_bottom_flat_views_inspected": true,
   "native_component_positions_used": true,
-  "scope": "Native KiCad orthographic renders with the existing declared visual-only marking overlays; not an assembled-board photograph."
+  "scope": "Native KiCad orthographic renders with the existing declared visual-only marking overlays; not an assembled-board photograph.",
+  "reference_review": {
+    "front": "J3/J4 clear of connector overhang; R180 moved; U4/L1 separated; C45/C43/C44 dense but individually legible.",
+    "rear": "Native small-component references and large connector legends retained and legible.",
+    "exceptions": "U15 shown in the dedicated assembly locator; J1 identified by existing rear legend."
+  }
 }

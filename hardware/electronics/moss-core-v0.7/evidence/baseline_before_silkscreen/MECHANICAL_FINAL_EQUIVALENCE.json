@@ -1,0 +1,24 @@
+{
+  "status": "PASS_FINAL_ADDITIVE_MECHANICAL_EQUIVALENCE",
+  "final_PCB": "MOSS_Core_V07_Prototype.kicad_pcb",
+  "final_sha256": "456219f7eb97119b7e4328ed76f150012619131788f42d3a9d21fc4e40859cdb",
+  "baseline_sha256": "7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14",
+  "additive_CAD_report_sha256": "6efd62cebf64aa5bae5b4f392a50cad5f5578a4bc032360a75f1943a56dccf6a",
+  "original222physical_footprints_unchanged": true,
+  "all8additive_poses_models_and_pads_unchanged": true,
+  "outline_and_thickness_unchanged": true,
+  "changed_existing_references": [],
+  "changed_additive_references": [],
+  "no_new_geometric_solver_run": true,
+  "inheritance": "The CAD reservation proof applies to exactly the same physical geometry in the final PCB. Copper and electrical metadata are outside this mechanical equivalence comparison.",
+  "report_path_normalization": {
+    "original_report_sha256": "6ea7b94b66600c2d4987e67d88a7c01d30d6267183893e86126ce42813514d58",
+    "published_report_sha256": "6efd62cebf64aa5bae5b4f392a50cad5f5578a4bc032360a75f1943a56dccf6a",
+    "changed_fields": [
+      "native_sources.baseline.source",
+      "native_sources.cff.source",
+      "native_sources.latch.source"
+    ],
+    "scope": "Only absolute workstation paths were replaced with portable review_inputs paths. Input hashes, geometry, poses, measurements and results are identical. No new geometry solver run."
+  }
+}

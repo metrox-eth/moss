@@ -1,0 +1,240 @@
+{
+  "timestamp_utc": "2026-11-01T18:51:13.476204+00:00",
+  "status": "PASS_SILK_ONLY_WITH_DOCUMENTED_U15_REFERENCE_EXCEPTION",
+  "baseline_pcb_sha256": "456219f7eb97119b7e4328ed76f150012619131788f42d3a9d21fc4e40859cdb",
+  "current_pcb_sha256": "4f456f0563e9dc5a3b7cbab98eaa8d9f24485d14dc79a7656af5ab04b983b6b1",
+  "electrical_and_mechanical_protected_design_unchanged": true,
+  "reference_renumbering": false,
+  "source_files": {
+    "checked": 134,
+    "byte_identical": 133,
+    "sole_exception": "Top-level BOM JSON notes; all non-notes data exact; supplier CSVs unchanged."
+  },
+  "new_silk_leader_segments": [
+    {
+      "reference": "R35",
+      "uuid": "164120a1-8748-4ae5-9790-6b7170e61188",
+      "native_kind": "gr_line",
+      "face": "F.SilkS",
+      "width_mm": 0.15,
+      "start_mm": [
+        61.675,
+        12.2625
+      ],
+      "end_mm": [
+        61.700929,
+        12.23657
+      ],
+      "coordinate_frame": "board",
+      "native_object_sha256": "effcfb9b08969820a44afc92755c0fbdefad1cdd6d17dfa6fee0b39ea10e49f3"
+    },
+    {
+      "reference": "R35",
+      "uuid": "1c8b0f5c-b7dd-422d-a975-6b869986e70d",
+      "native_kind": "gr_line",
+      "face": "F.SilkS",
+      "width_mm": 0.15,
+      "start_mm": [
+        61.700929,
+        12.23657
+      ],
+      "end_mm": [
+        61.700929,
+        10.025085
+      ],
+      "coordinate_frame": "board",
+      "native_object_sha256": "98840010c9d121d23067d97de2f3d13d63bba38746b499daf65f6e4419382e0c"
+    },
+    {
+      "reference": "R56",
+      "uuid": "22c8cc1a-1018-4e59-9e53-d4a930f86b4a",
+      "native_kind": "gr_line",
+      "face": "B.SilkS",
+      "width_mm": 0.15,
+      "start_mm": [
+        39.425,
+        41.1125
+      ],
+      "end_mm": [
+        39.464685,
+        41.152185
+      ],
+      "coordinate_frame": "board",
+      "native_object_sha256": "713cc238b7afcabf3f130f110d5fc619698fe0f6d7b0acf7cc830fdfe9cb4087"
+    },
+    {
+      "reference": "R56",
+      "uuid": "42e93314-6a8c-48bc-b4ef-a9fd7304541b",
+      "native_kind": "gr_line",
+      "face": "B.SilkS",
+      "width_mm": 0.15,
+      "start_mm": [
+        39.464685,
+        41.152185
+      ],
+      "end_mm": [
+        39.464685,
+        43.687835
+      ],
+      "coordinate_frame": "board",
+      "native_object_sha256": "a049d7f9195b933e1cb95005356f48f08445f95e923b9ac476f1daaa4777cdcb"
+    },
+    {
+      "reference": "D2",
+      "uuid": "5b0f417d-6ca1-415f-9979-07750cfbc7f6",
+      "native_kind": "gr_line",
+      "face": "F.SilkS",
+      "width_mm": 0.15,
+      "start_mm": [
+        70.074999,
+        63.887499
+      ],
+      "end_mm": [
+        70.711129,
+        63.25137
+      ],
+      "coordinate_frame": "board",
+      "native_object_sha256": "d659236598269e21ae4e14920597ec83226d8d55bc552b228532efc1dd722d98"
+    },
+    {
+      "reference": "D2",
+      "uuid": "fd80f12e-3e6d-4204-8ac4-627b36dc9bdf",
+      "native_kind": "gr_line",
+      "face": "F.SilkS",
+      "width_mm": 0.15,
+      "start_mm": [
+        70.711129,
+        63.25137
+      ],
+      "end_mm": [
+        70.711129,
+        60.636285
+      ],
+      "coordinate_frame": "board",
+      "native_object_sha256": "10f8fca2b8c73105f04135130fa4ef7ae16db359c3868a7bbb87ff13686a935d"
+    },
+    {
+      "reference": "R105",
+      "uuid": "11681b65-090d-43d7-b94d-e3425063eced",
+      "native_kind": "gr_line",
+      "face": "F.SilkS",
+      "width_mm": 0.15,
+      "start_mm": [
+        32.612499,
+        50.275
+      ],
+      "end_mm": [
+        33.88842,
+        51.55092
+      ],
+      "coordinate_frame": "board",
+      "native_object_sha256": "0c90e66e0b7bcc7dfb3645d285c28ae3a5779d37c778cdd75d99be8c61abb4b3"
+    },
+    {
+      "reference": "R105",
+      "uuid": "0404a138-da3d-4032-8d38-3edc46ebe29a",
+      "native_kind": "gr_line",
+      "face": "F.SilkS",
+      "width_mm": 0.15,
+      "start_mm": [
+        33.88842,
+        51.55092
+      ],
+      "end_mm": [
+        33.88842,
+        52.735581
+      ],
+      "coordinate_frame": "board",
+      "native_object_sha256": "cc2f94bcf23ece73dd670bcb570c8513eefb5badc3d853259adb51f9073af5a7"
+    }
+  ],
+  "native_new_reference_style_pass": true,
+  "minimum_observed_stroke_to_opening_mm": 0.15457800000000077,
+  "minimum_required_opening_clearance_mm": 0.15,
+  "strict_clearance_pass_without_numerical_allowance": true,
+  "coverage": {
+    "assembled_components": 216,
+    "new_native_assembled_reference_labels": 214,
+    "existing_manual_labels": {
+      "J1": [
+        {
+          "text": "J1 | USB2 DEVICE",
+          "uuid": "0c9f6718-baf0-5ec5-b408-eeee3cc49524",
+          "face": "B.Silkscreen"
+        }
+      ]
+    },
+    "assembled_identified": 215,
+    "assembled_without_printed_reference": [
+      "U15"
+    ],
+    "all_native_reference_labels_printed": 228
+  },
+  "U15_locator_sha256": "85fa8ca77407563b3ec9841b9a5face43aada87a9589fd39547af5fd7dd0757a",
+  "native_DRC": {
+    "errors": 0,
+    "unconnected": 0,
+    "schematic_parity_issues": 0,
+    "inherited_warning_types": [
+      "track_dangling",
+      "silk_over_copper"
+    ]
+  },
+  "preview_inspection": {
+    "front_sha256": "1044547ff4e09bd898932a13bf449907b8397eb42ee7af9d918c1c4683e9256e",
+    "back_sha256": "9699efe4ae5ca580e5b9939d985ab55591c3fa3541ec0049d03e6629f97c99fb",
+    "finding": "Previously noted J3/J4, R180 and U4/L1 issues are corrected; no additional obvious obstruction found."
+  },
+  "author_reports_sha256": {
+    "REFERENCE_LAYOUT.json": "89468bce8167e96b60637a9c2ca21d8b0aaa7072fff6f45c46c964c6065d31ca",
+    "LEADER_LABELS.json": "98fd9b20dc4c5d18bbac2b5ca87160078e1d6a1c272c5ef6fb62f400bf1c56f9",
+    "FINISH_ADJUSTMENTS.json": "cc750e993c719fb5a3df9fa3f1db54ce53d7c6fb9f9beb06303e0263e46733e1",
+    "DRC_FROZEN.json": "ede66e1fb5077bfeb0025011af7aedeaa7949f920ab428d41ecba5e82d01d712"
+  },
+  "retained_baseline_evidence_sha256": {
+    "CHECKS.json": "75117a6aa12645e99299555ca1a57d405188dc8b31934f91fc617b2261414299",
+    "DRC.json": "328301148c8bf16cd7d24d1e5e12d817d46591e374f36f090ac1f4ecda17e9c7",
+    "ERC.json": "628bb55a7344aba175c0803083535c40d3aac0571013d90e8c795703a54eb7ec",
+    "DESIGN_CONTRACT.json": "693bf3a8b8df088134ce2fb1ecb837eca9e87daadd2b011b6eaa511e70378dd6",
+    "POWER_AND_GROUND.json": "cc9ec89f77f722fa734a157261eb6e80391e5a632cfbc10b239b83e349f24f0e",
+    "LOGIC_REARM_MODEL.json": "cae05e7554e8a3747a8ca6a60edc5ab18dfd675cf9526218dcb5a37267612d09",
+    "MECHANICAL_FINAL_EQUIVALENCE.json": "54607733e358d1e04ecc69949ebcef02d48bd6e2e5d35c40e0d2729a6a599ec0",
+    "ADDITIVE_MECHANICAL_REVIEW.json": "6efd62cebf64aa5bae5b4f392a50cad5f5578a4bc032360a75f1943a56dccf6a",
+    "FIRMWARE_CROSSCHECK.json": "fe1571da792b0188d932c6ce32edab89bba4ac5bd48968d8a1086be96de1acb9"
+  },
+  "retained_evidence_applicability": "Exact protected native tree and unchanged electrical-source/library/model/assembly data. BOM notes are separately disclosed. Original baseline input hashes must remain visible.",
+  "independent_review_files_sha256": {
+    "FINAL_REVIEW.md": "48d091c72816cff3f5478006c79d13f145a16afe8c99598213e10f84491d2dba",
+    "check_silk_only.py": "3b01b415c80cd618339b140d11702ecc00aa5d0a15899b37dc0a920935c2c89a",
+    "check_ink_clearance.py": "83186501bd6add5745e82953e38804fb893f699a4e4b5db83941c35a0a3ef3be",
+    "SILK_ONLY_EQUIVALENCE.json": "98b48d2f244e6cf182079ad15520706cbc49b8e351c16eb4fc8158b8b3dad510",
+    "INK_OPENING_CLEARANCE.json": "63724bc1f506b8de781d927ca0c3e750dff0b14c55688e498151f290989cc7aa",
+    "BINDING_PLAN.md": "c05e1907b27dc6429d8105559123327fbfb70a36e8a1ad59006d3295b769cad4",
+    "SELFTEST.json": "a52d0d9185c3517ad3ae473644626bba88e087575a1f52d33947601d50d555ff",
+    "rebind_leader_manifest.py": "8388bf6e228ce6de18b8ebd4dce0488ec3d141ce2a667252642594c84c3a5979",
+    "SILK_ONLY_EQUIVALENCE_ORIGINAL.json": "c89340679af64d406e9ef764cc5b5947921829c33e70396c684c77da05bde326",
+    "LEADER_MANIFEST_REBIND.json": "33fc8535c300b7f4d49f991954595a44e45d0b5993e73323c054a18dcc547adb"
+  },
+  "electrical_simulation_rerun": false,
+  "mechanical_solver_rerun": false,
+  "firmware_rebuilt_or_flashed": false,
+  "PCB_modified_by_reviewer": false,
+  "limits": [
+    "Native geometry and rendered-preview review only; not fabricated-board print registration or functional hardware qualification.",
+    "U15 remains intentionally unprinted and must be identified through the assembly/Fab/BOM locator.",
+    "Final exported CAM equivalence is a separate parent-owned package check."
+  ],
+  "final_layout_manifest_sha256": "89468bce8167e96b60637a9c2ca21d8b0aaa7072fff6f45c46c964c6065d31ca",
+  "external_manifest_rebinding": {
+    "proof_file": "LEADER_MANIFEST_REBIND.json",
+    "proof_sha256": "33fc8535c300b7f4d49f991954595a44e45d0b5993e73323c054a18dcc547adb",
+    "all_consumed_dependencies_revalidated": true,
+    "full_comparator_reexecuted": false,
+    "clearance_reexecuted": false
+  },
+  "publication_copy_edit": {
+    "scope": "Spacing and wording in the narrative report only; measurements, scripts, source files and test results unchanged.",
+    "original_narrative_sha256": "68bccc92952cbf803140b837b38049dc9183663048da27a1a546d361ce9cbd93",
+    "published_narrative_sha256": "48d091c72816cff3f5478006c79d13f145a16afe8c99598213e10f84491d2dba"
+  }
+}

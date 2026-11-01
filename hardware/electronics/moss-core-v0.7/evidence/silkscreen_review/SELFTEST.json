@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "fixture_checks": {
+    "reference_presentation_allowed": true,
+    "numeric_spelling_allowed": true,
+    "copper_width_rejected": true,
+    "pad_net_rejected": true,
+    "reference_renumber_rejected": true,
+    "component_value_rejected": true,
+    "model_offset_rejected": true,
+    "zone_vertex_rejected": true,
+    "outline_rejected": true,
+    "via_drill_rejected": true,
+    "footprint_uuid_rejected": true,
+    "old_small_Fab_is_not_a_silk_failure": true,
+    "new_small_printed_ref_is_rejected": true,
+    "explicit_BOM_top_level_notes_change_allowed": true,
+    "BOM_quantity_change_rejected": true,
+    "other_BOM_metadata_change_rejected": true,
+    "exact_declared_new_silk_leader_allowed": true,
+    "leader_without_whitelist_rejected": true,
+    "leader_on_copper_rejected": true,
+    "subminimum_or_undeclared_width_rejected": true,
+    "preexisting_graphic_cannot_be_whitelisted": true
+  },
+  "actual_candidate_review_run": false
+}
