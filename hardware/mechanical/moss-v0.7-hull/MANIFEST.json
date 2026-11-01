@@ -1,0 +1,175 @@
+{
+  "status": "CURRENT_HULL_74x71_SOURCE_AND_EXPORT_INVENTORY",
+  "units": "mm",
+  "pcb_sha256": "7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14",
+  "files": {
+    ".gitattributes": {
+      "bytes": 128,
+      "sha256": "7eca871bf14babd56e28fbcbe9d054ec58427561098bc16e435dd1af55221885"
+    },
+    ".gitignore": {
+      "bytes": 131,
+      "sha256": "74358322a12cb579f758e083b10cad617d97869cf73fff3106db6c35e570184a"
+    },
+    "README.md": {
+      "bytes": 4092,
+      "sha256": "01b8598208004fd4dcb1b2a3d66cdb70ecd5ce54bf1d8c7cb188eab2c64a6e62"
+    },
+    "cad/Hull_MOSS_V07_Core_74x71_EDITABLE.f3d": {
+      "bytes": 3391770,
+      "sha256": "cf7568e6b675fd62b193d25f3ea2aa774c6301abdab9ccef405e8d1ec29c3d00"
+    },
+    "cad/Hull_MOSS_V07_Core_Stack.step": {
+      "bytes": 8796144,
+      "sha256": "93699d5219fa699f0ed72d8527ee1579ebd5b5b51b05fac893e344254e7bde37"
+    },
+    "cad/Hull_MOSS_V07_Harness_Tie_Loops_PROTOTYPE.step": {
+      "bytes": 9153473,
+      "sha256": "bdfd0b6d3a3fa2ff688d87edff741f517d6c7c8d3123c199e8d7bf481fff52b5"
+    },
+    "cad/tie_anchors_overlay.step": {
+      "bytes": 244268,
+      "sha256": "63f553e411831e459df0cc7f35cc755c2e755cc75aa696e64869d284c6dc2405"
+    },
+    "evidence/DIVIDER_WIRE_NOTCH_QA.json": {
+      "bytes": 2373,
+      "sha256": "954fb9ce3c8c0a517a73eadbfc8c31b833dae65d31c4c82763cbcc09f8cee99b"
+    },
+    "evidence/ENVIRONMENT.json": {
+      "bytes": 292,
+      "sha256": "d529fec4d732be1d4f47379fe5b5eb42ba81ff7d9ed87c75f307820015396c73"
+    },
+    "evidence/FINAL_HULL_ARTIFACTS.json": {
+      "bytes": 743,
+      "sha256": "58ec748c96856ca6664578cb31c182e66694714e7bf90a45faefe2c732c63964"
+    },
+    "evidence/FUSION_NATIVE_PRINT_EXPORT.json": {
+      "bytes": 708,
+      "sha256": "569835e51238a7a91c87c5c0bfecc71da46ac4a21c0ae45a7b1f704b6edb757f"
+    },
+    "evidence/GEOMETRY_SNAPSHOT.json": {
+      "bytes": 493,
+      "sha256": "1dfbed2994aa23f379219025344e9d5ff0e645dd17cd91a7b80452a549342601"
+    },
+    "evidence/INDEPENDENT_HULL_PILOTS.json": {
+      "bytes": 1335,
+      "sha256": "66ad349db6839ac5ed24f021876807dacda781f135d5ce115d7ef7daa44e8970"
+    },
+    "evidence/LOCAL_BREP_DIAGNOSTIC.json": {
+      "bytes": 3631,
+      "sha256": "03787be49f2580b98f0926da562a693b2dd8503f72a1df308dacf94b826458b3"
+    },
+    "evidence/LOCAL_CORE_MOUNT_REFRESH.json": {
+      "bytes": 3221,
+      "sha256": "7f70b0134820653b533addc0035443d3bd4be824c26d8659a18bbda6f05fde44"
+    },
+    "evidence/LOCAL_WELD_QA.json": {
+      "bytes": 574,
+      "sha256": "1e65e6064e9d332763f4d9aa788e0b735830b8d343c54560142c676a6a5f8e85"
+    },
+    "evidence/hull_tie_variant_QA.json": {
+      "bytes": 11756,
+      "sha256": "ec264f4e9ab0d97694ecbb60027b3f54e56c42715aec62f756267edaaa818dd1"
+    },
+    "harness/source/add_divider_wire_notch.py": {
+      "bytes": 6376,
+      "sha256": "4d40abd19aa0efb5d9898c898bae5eaf8a3956955c2915c6c7c03b6721e025a9"
+    },
+    "harness/source/build_hull_tie_variant.py": {
+      "bytes": 9888,
+      "sha256": "558507304b19e4a3068c20d42930c83cc1cc0cff9beaf540aa818a917911a1de"
+    },
+    "harness/source/tie_anchor.py": {
+      "bytes": 3708,
+      "sha256": "0ceeaef36a354a066d7bb618b41f7da752cb05fec17dbce60968aa6999ac470f"
+    },
+    "preview/HULL_WITH_TIES_AND_NOTCH.npz": {
+      "bytes": 643846,
+      "sha256": "bdc6081a537d639d1953eb401c2f496ff410160f168409a05dd643dd28e5393e"
+    },
+    "preview/mounting.svg": {
+      "bytes": 2510,
+      "sha256": "da70ba916d6bbf0151b3f22a863547057548767e2e73426c9b41a4a4a01fd58d"
+    },
+    "preview/tie_anchors_overlay.npz": {
+      "bytes": 25776,
+      "sha256": "83e7b32024908bd5d5c29e0ee448531f884424bc5751c436ec1f6e11748644d1"
+    },
+    "reference/Hull_Core_72x67.step": {
+      "bytes": 8522964,
+      "sha256": "8c903c024a3806a8f9481183a198cb4b94cb77afaa72a6c3dcc743cd4bcc77b9"
+    },
+    "reference/Hull_Core_72x67.stl": {
+      "bytes": 3792384,
+      "sha256": "38518aa90aa65797da2d848e8855cfe08b0d1b81aa76e1a6cf4aa0a0316f7e43"
+    },
+    "reference/Hull_R92_Repaired.step": {
+      "bytes": 9126184,
+      "sha256": "540b26938321268156500984b74ae83221e220a445943e1fe98c6192d616af5d"
+    },
+    "reference/Hull_R92_native.smt": {
+      "bytes": 6150272,
+      "sha256": "d8230d76d527cc603b469f31f186b0b5061a9b342d5de5401b3ee1877f108ae5"
+    },
+    "reference/mechanical_parameters_before.json": {
+      "bytes": 6200,
+      "sha256": "de771f6f06b1a7e5bff8fc43d9e775dfcb12d058bbc0c6b3ec78fae878068e8d"
+    },
+    "requirements.txt": {
+      "bytes": 100,
+      "sha256": "75eb9f433c1d343521bcb2ccd305ce12793f58e70d775b3714c2d7d9e29626fa"
+    },
+    "source/FusionV07Hull/FusionV07Hull.manifest": {
+      "bytes": 229,
+      "sha256": "42905f52f3cf9e2e98fd76f67666083263f19ec7c110cf1c6280cc70f3d2073f"
+    },
+    "source/FusionV07Hull/FusionV07Hull.py": {
+      "bytes": 7067,
+      "sha256": "b33828333d6d3400db2b3ef51504908912dbcb36577b05a3fed6934f52597377"
+    },
+    "source/build_manifest.py": {
+      "bytes": 927,
+      "sha256": "193dddf089c01eefc5916da8e664438ce327f12e533474542c0b7a598692afab"
+    },
+    "source/build_mount_refresh.py": {
+      "bytes": 7291,
+      "sha256": "3f3fbc56e7757a64ea9e4da8ae00dc97c35b4d87c0b38f74ef916d6cfaf30ea4"
+    },
+    "source/centered_cytron_support.py": {
+      "bytes": 2434,
+      "sha256": "d76fff9ded7402e6704f07605480c95dffef8b7710c1629e91da550d91696de0"
+    },
+    "source/export_native_print_mesh.py": {
+      "bytes": 2004,
+      "sha256": "88ea71f03c63bbaa2f3b3e6023de73d3186f127f65348958a2a0d901e85874c0"
+    },
+    "source/heal_matched_step.py": {
+      "bytes": 2157,
+      "sha256": "7efd545022e8e246265f82eed3ec26d231af2d026339971c19d46cdad4342655"
+    },
+    "source/mechanical_parameters.json": {
+      "bytes": 7238,
+      "sha256": "8e08d87e34d2fdea252eab23f4e1aa5658f8aeea7e8d4c59f0dbe497556d7bc9"
+    },
+    "source/rebuild.py": {
+      "bytes": 2174,
+      "sha256": "0194b121a0b4190fdbbc1b71d0e22fe3c8c51e985f3b1fc05447776101e29a5d"
+    },
+    "source/run_fusion_native_export.py": {
+      "bytes": 1992,
+      "sha256": "b547fc8f66b8a8130e9576eb24af766faaedfaed6203be54bb4d137c412e6425"
+    },
+    "source/weld_native_mesh.py": {
+      "bytes": 1519,
+      "sha256": "ad6e8753c328b8736f553e440b74af577b0a2bec2b84e110f92bdb8cddbd2a50"
+    },
+    "stl/Hull_MOSS_V07_Harness_Tie_Loops_PROTOTYPE.stl": {
+      "bytes": 3929084,
+      "sha256": "f2a01d2b0b696583a667c67974691ad508d3c799999874d7d93c534850d8db5f"
+    },
+    "stl/Hull_MOSS_V07_Print.stl": {
+      "bytes": 3733584,
+      "sha256": "3bf5893f4bf1fae1a56c78f92af5f0615a3b058d9275406c3ca181befed899cd"
+    }
+  }
+}

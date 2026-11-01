@@ -1,0 +1,7 @@
+# Preserve exported CAD and source-kernel bytes.
+*.step binary
+*.stp binary
+*.smt binary
+*.f3d binary
+*.stl binary
+*.npz binary

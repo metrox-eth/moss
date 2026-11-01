@@ -14,6 +14,8 @@ See the [print catalogue](../3DPrinting.md), [BOM](../BOM.md) and [assembly guid
 
 [MOSS CORE V0.7 — Prototype](electronics/moss-core-v0.7/) is the single current community design review: editable KiCad files, component views, grouped BOM, connector guide, Gerbers and static review evidence. **Updated 1 November 2026:** black 82 × 79 mm rectangular layout, vertical battery/servo/speaker headers, large connector labels and a 74 × 71 mm chassis mounting pattern, new routing and combined Orange Pi clearance evidence. The integrated converter, six-wire motor connectors, consolidated Cytron link and H1 GND connection remain. Per-motor current sensing, fan outputs and the compact host-branch fuse remain. **Not fabricated yet: not production-ready or hardware-qualified.** Electrical, connector and real-load review is welcome. Hardware revision letters are reserved for fabricated iterations.
 
+The matching [V0.7 hull prototype](mechanical/moss-v0.7-hull/) provides STEP, STL, editable Fusion geometry and rebuild sources for the 74 × 71 mm fixings, five cable-tie bridges and divider notch. The updated [wiring harness](electronics/moss-core-v0.7/harness/) includes one six-wire cable per motor, the grouped Cytron link, a detachable STOP tail, an offline viewer and a prototype quotation package. These are V0.7 prototypes; they do not replace the released V0.6/R92 build.
+
 [MOSS Core V1D](electronics/moss-core-v1d/) is retained as the previous routed design review. Its assumptions and package are historical; it is not the current V0.7 design.
 
 [V1C](electronics/moss-core-v1c/) is retained for traceability and **must not be fabricated** because of a physical-pin mapping error; see the [critical erratum](electronics/moss-core-v1d/V1C_CRITICAL_ERRATA.txt).

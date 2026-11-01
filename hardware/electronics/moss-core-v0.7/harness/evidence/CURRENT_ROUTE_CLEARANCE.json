@@ -1,0 +1,1882 @@
+{
+  "status": "SAMPLED_CABLE_CONTEXT_SCREEN",
+  "PCB_sha256": "7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14",
+  "source_scene_sha256": "356379ecf1e2bb02bfa3f622677f91ce2fba74a0824f8a7cabbc3c9ce4a6e8ba",
+  "route_lengths_sha256": "ffa1e1283457c61096f7128c7c20471511b5268852f9a02089c626a8f6d9c91f",
+  "method": "Nearest triangle surface distance minus conductor radius or modeled sleeve radius+0.1mm braid allowance at approx0.9mm intervals. Absolute distance only; no containment proof. Exclude final18mm only at the matching matingdevice for individual wires; no exclusion for modeled sleeve sample spans. Complete declared sleeve volumes vsPi checked separately in FULL_SLEEVE_OPI_QA.json. No physical tolerance/bend/electrical certification.",
+  "results": [
+    {
+      "route": "H01",
+      "obstacle": "Hull",
+      "minimum_sampled_skin_clearance_mm": 1.798,
+      "closest_wire": 2,
+      "closest_point_world_mm": [
+        25.6439,
+        61.1159,
+        59.5771
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H01",
+      "obstacle": "Hull",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 1.209,
+      "closest_point_world_mm": [
+        25.4512,
+        60.5138,
+        60.8037
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H01",
+      "obstacle": "OrangePi",
+      "minimum_sampled_skin_clearance_mm": 4.669,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        -53.0,
+        35.0,
+        32.9
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H01",
+      "obstacle": "OrangePi",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 16.368,
+      "closest_point_world_mm": [
+        -48.7503,
+        47.7951,
+        38.1042
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H01",
+      "obstacle": "Pi_standoffs",
+      "minimum_sampled_skin_clearance_mm": 10.105,
+      "closest_wire": 2,
+      "closest_point_world_mm": [
+        -58.0,
+        35.0,
+        32.9
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H01",
+      "obstacle": "Pi_standoffs",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 24.732,
+      "closest_point_world_mm": [
+        -48.7503,
+        47.7951,
+        38.1042
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H01",
+      "obstacle": "Cytron",
+      "minimum_sampled_skin_clearance_mm": 36.577,
+      "closest_wire": 2,
+      "closest_point_world_mm": [
+        -56.9958,
+        38.821,
+        36.0699
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H01",
+      "obstacle": "Cytron",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 42.951,
+      "closest_point_world_mm": [
+        -48.7503,
+        47.7951,
+        38.1042
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H01",
+      "obstacle": "Speaker",
+      "minimum_sampled_skin_clearance_mm": 87.275,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        -53.0,
+        35.0,
+        32.9
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H01",
+      "obstacle": "Speaker",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 98.694,
+      "closest_point_world_mm": [
+        -48.7503,
+        47.7951,
+        38.1042
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H01",
+      "obstacle": "Motors",
+      "minimum_sampled_skin_clearance_mm": 42.405,
+      "closest_wire": 2,
+      "closest_point_world_mm": [
+        -58.0,
+        35.0,
+        32.9
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H01",
+      "obstacle": "Motors",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 45.73,
+      "closest_point_world_mm": [
+        -48.7503,
+        47.7951,
+        38.1042
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H02",
+      "obstacle": "Hull",
+      "minimum_sampled_skin_clearance_mm": 1.812,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        -92.0481,
+        -43.5852,
+        36.9849
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H02",
+      "obstacle": "Hull",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 0.513,
+      "closest_point_world_mm": [
+        -93.3256,
+        -44.5936,
+        36.3948
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H02",
+      "obstacle": "OrangePi",
+      "minimum_sampled_skin_clearance_mm": 16.457,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        -82.1391,
+        13.2842,
+        17.0492
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H02",
+      "obstacle": "OrangePi",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 16.013,
+      "closest_point_world_mm": [
+        -88.1154,
+        -3.2721,
+        24.43
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H02",
+      "obstacle": "Pi_standoffs",
+      "minimum_sampled_skin_clearance_mm": 12.2,
+      "closest_wire": 2,
+      "closest_point_world_mm": [
+        -81.405,
+        8.465,
+        16.395
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H02",
+      "obstacle": "Pi_standoffs",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 15.671,
+      "closest_point_world_mm": [
+        -88.2934,
+        0.949,
+        23.4597
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H02",
+      "obstacle": "Cytron",
+      "minimum_sampled_skin_clearance_mm": 8.944,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        -93.4318,
+        -47.1926,
+        38.6535
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H02",
+      "obstacle": "Cytron",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 7.907,
+      "closest_point_world_mm": [
+        -94.3745,
+        -47.2862,
+        37.6501
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H02",
+      "obstacle": "Speaker",
+      "minimum_sampled_skin_clearance_mm": 19.899,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        -92.0481,
+        -43.5852,
+        36.9849
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H02",
+      "obstacle": "Speaker",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 18.21,
+      "closest_point_world_mm": [
+        -92.9956,
+        -43.6911,
+        35.9872
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H02",
+      "obstacle": "Motors",
+      "minimum_sampled_skin_clearance_mm": 7.558,
+      "closest_wire": 2,
+      "closest_point_world_mm": [
+        -107.4454,
+        -59.7893,
+        46.3773
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H02",
+      "obstacle": "Motors",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 7.104,
+      "closest_point_world_mm": [
+        -106.7435,
+        -59.8842,
+        47.5617
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H03",
+      "obstacle": "Hull",
+      "minimum_sampled_skin_clearance_mm": 8.326,
+      "closest_wire": 6,
+      "closest_point_world_mm": [
+        -136.84,
+        -45.4,
+        54.0
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H03",
+      "obstacle": "Hull",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 23.706,
+      "closest_point_world_mm": [
+        -74.682,
+        55.433,
+        61.8218
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H03",
+      "obstacle": "OrangePi",
+      "minimum_sampled_skin_clearance_mm": 2.57,
+      "closest_wire": 7,
+      "closest_point_world_mm": [
+        -40.5,
+        32.7,
+        29.235
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H03",
+      "obstacle": "OrangePi",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 12.719,
+      "closest_point_world_mm": [
+        -37.2447,
+        42.4858,
+        44.6343
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H03",
+      "obstacle": "Pi_standoffs",
+      "minimum_sampled_skin_clearance_mm": 21.491,
+      "closest_wire": 6,
+      "closest_point_world_mm": [
+        -43.5,
+        32.7,
+        29.235
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H03",
+      "obstacle": "Pi_standoffs",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 29.966,
+      "closest_point_world_mm": [
+        -37.2447,
+        42.4858,
+        44.6343
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H03",
+      "obstacle": "Cytron",
+      "minimum_sampled_skin_clearance_mm": 5.978,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        -118.682,
+        48.4872,
+        61.8636
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H03",
+      "obstacle": "Cytron",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 23.418,
+      "closest_point_world_mm": [
+        -74.682,
+        55.433,
+        61.8218
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H03",
+      "obstacle": "Speaker",
+      "minimum_sampled_skin_clearance_mm": 35.623,
+      "closest_wire": 8,
+      "closest_point_world_mm": [
+        -100.0154,
+        -54.7318,
+        57.8817
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H03",
+      "obstacle": "Speaker",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 93.94,
+      "closest_point_world_mm": [
+        -37.2447,
+        42.4858,
+        44.6343
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H03",
+      "obstacle": "Motors",
+      "minimum_sampled_skin_clearance_mm": 12.267,
+      "closest_wire": 8,
+      "closest_point_world_mm": [
+        -116.84,
+        -45.4,
+        54.0
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H03",
+      "obstacle": "Motors",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 27.672,
+      "closest_point_world_mm": [
+        -74.682,
+        55.433,
+        61.8218
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H04",
+      "obstacle": "Hull",
+      "minimum_sampled_skin_clearance_mm": 1.927,
+      "closest_wire": 4,
+      "closest_point_world_mm": [
+        -89.9204,
+        -1.9716,
+        37.8907
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H04",
+      "obstacle": "Hull",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 1.478,
+      "closest_point_world_mm": [
+        -88.3349,
+        -1.897,
+        36.7623
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H04",
+      "obstacle": "OrangePi",
+      "minimum_sampled_skin_clearance_mm": 3.934,
+      "closest_wire": 3,
+      "closest_point_world_mm": [
+        -69.0,
+        -7.0,
+        29.235
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H04",
+      "obstacle": "OrangePi",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 13.362,
+      "closest_point_world_mm": [
+        -85.5618,
+        -6.3426,
+        37.2885
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H04",
+      "obstacle": "Pi_standoffs",
+      "minimum_sampled_skin_clearance_mm": 5.482,
+      "closest_wire": 3,
+      "closest_point_world_mm": [
+        -69.0,
+        -7.0,
+        29.235
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H04",
+      "obstacle": "Pi_standoffs",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 15.401,
+      "closest_point_world_mm": [
+        -85.5618,
+        -6.3426,
+        37.2885
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H04",
+      "obstacle": "Cytron",
+      "minimum_sampled_skin_clearance_mm": 9.152,
+      "closest_wire": 4,
+      "closest_point_world_mm": [
+        -89.4816,
+        -3.4025,
+        38.1981
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H04",
+      "obstacle": "Cytron",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 8.455,
+      "closest_point_world_mm": [
+        -88.0,
+        -3.0,
+        37.0
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H04",
+      "obstacle": "Speaker",
+      "minimum_sampled_skin_clearance_mm": 42.676,
+      "closest_wire": 4,
+      "closest_point_world_mm": [
+        -75.0,
+        -10.0,
+        29.235
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H04",
+      "obstacle": "Speaker",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 46.058,
+      "closest_point_world_mm": [
+        -85.5618,
+        -6.3426,
+        37.2885
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H04",
+      "obstacle": "Motors",
+      "minimum_sampled_skin_clearance_mm": 11.468,
+      "closest_wire": 3,
+      "closest_point_world_mm": [
+        -90.6522,
+        6.7911,
+        32.6244
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H04",
+      "obstacle": "Motors",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 11.001,
+      "closest_point_world_mm": [
+        -88.8294,
+        7.2582,
+        33.5321
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H05",
+      "obstacle": "Hull",
+      "minimum_sampled_skin_clearance_mm": 4.252,
+      "closest_wire": 6,
+      "closest_point_world_mm": [
+        -156.4976,
+        -5.2506,
+        25.9639
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H05",
+      "obstacle": "Hull",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 3.9,
+      "closest_point_world_mm": [
+        -154.455,
+        -4.5288,
+        28.1576
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H05",
+      "obstacle": "OrangePi",
+      "minimum_sampled_skin_clearance_mm": 14.86,
+      "closest_wire": 3,
+      "closest_point_world_mm": [
+        -69.0,
+        -18.4,
+        29.235
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H05",
+      "obstacle": "OrangePi",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 17.981,
+      "closest_point_world_mm": [
+        -90.823,
+        -6.9031,
+        30.4659
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H05",
+      "obstacle": "Pi_standoffs",
+      "minimum_sampled_skin_clearance_mm": 16.751,
+      "closest_wire": 3,
+      "closest_point_world_mm": [
+        -69.0,
+        -18.4,
+        29.235
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H05",
+      "obstacle": "Pi_standoffs",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 19.539,
+      "closest_point_world_mm": [
+        -91.0638,
+        -5.9272,
+        30.3599
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H05",
+      "obstacle": "Cytron",
+      "minimum_sampled_skin_clearance_mm": 12.235,
+      "closest_wire": 6,
+      "closest_point_world_mm": [
+        -145.3178,
+        1.0446,
+        34.4152
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H05",
+      "obstacle": "Cytron",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 10.945,
+      "closest_point_world_mm": [
+        -145.1837,
+        -0.5533,
+        33.3101
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H05",
+      "obstacle": "Speaker",
+      "minimum_sampled_skin_clearance_mm": 31.32,
+      "closest_wire": 4,
+      "closest_point_world_mm": [
+        -75.0,
+        -21.4,
+        29.235
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H05",
+      "obstacle": "Speaker",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 33.827,
+      "closest_point_world_mm": [
+        -88.0238,
+        -18.7398,
+        31.8525
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H05",
+      "obstacle": "Motors",
+      "minimum_sampled_skin_clearance_mm": 2.18,
+      "closest_wire": 5,
+      "closest_point_world_mm": [
+        -109.9642,
+        1.7751,
+        30.1998
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H05",
+      "obstacle": "Motors",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 1.559,
+      "closest_point_world_mm": [
+        -110.0,
+        0.0,
+        31.0
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H08_chassis",
+      "obstacle": "Hull",
+      "minimum_sampled_skin_clearance_mm": 3.969,
+      "closest_wire": 2,
+      "closest_point_world_mm": [
+        21.6809,
+        82.9361,
+        55.5866
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H08_chassis",
+      "obstacle": "Hull",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 3.492,
+      "closest_point_world_mm": [
+        21.133,
+        82.8568,
+        51.1887
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H08_chassis",
+      "obstacle": "OrangePi",
+      "minimum_sampled_skin_clearance_mm": 9.437,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        -19.4872,
+        34.5942,
+        23.5466
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H08_chassis",
+      "obstacle": "OrangePi",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 12.745,
+      "closest_point_world_mm": [
+        -9.2197,
+        41.5203,
+        25.011
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H08_chassis",
+      "obstacle": "Pi_standoffs",
+      "minimum_sampled_skin_clearance_mm": 6.116,
+      "closest_wire": 4,
+      "closest_point_world_mm": [
+        -15.5,
+        30.675,
+        20.6
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H08_chassis",
+      "obstacle": "Pi_standoffs",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 13.147,
+      "closest_point_world_mm": [
+        -9.2197,
+        41.5203,
+        25.011
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H08_chassis",
+      "obstacle": "Cytron",
+      "minimum_sampled_skin_clearance_mm": 77.049,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        -19.6848,
+        33.8388,
+        23.0042
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H08_chassis",
+      "obstacle": "Cytron",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 85.506,
+      "closest_point_world_mm": [
+        -9.2197,
+        41.5203,
+        25.011
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H08_chassis",
+      "obstacle": "Speaker",
+      "minimum_sampled_skin_clearance_mm": 83.406,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        -20.5,
+        30.675,
+        20.6
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H08_chassis",
+      "obstacle": "Speaker",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 94.121,
+      "closest_point_world_mm": [
+        -9.2197,
+        41.5203,
+        25.011
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H08_chassis",
+      "obstacle": "Motors",
+      "minimum_sampled_skin_clearance_mm": 70.888,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        -20.5,
+        30.675,
+        20.6
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H08_chassis",
+      "obstacle": "Motors",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 81.905,
+      "closest_point_world_mm": [
+        -9.2197,
+        41.5203,
+        25.011
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H08_lid",
+      "obstacle": "Hull",
+      "minimum_sampled_skin_clearance_mm": 1.853,
+      "closest_wire": 2,
+      "closest_point_world_mm": [
+        31.6842,
+        66.797,
+        63.0737
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H08_lid",
+      "obstacle": "Hull",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 1.4,
+      "closest_point_world_mm": [
+        31.7386,
+        66.2246,
+        63.0795
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H08_lid",
+      "obstacle": "OrangePi",
+      "minimum_sampled_skin_clearance_mm": 49.246,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        16.125,
+        65.0,
+        58.0
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H08_lid",
+      "obstacle": "OrangePi",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 59.428,
+      "closest_point_world_mm": [
+        30.8045,
+        66.136,
+        63.0599
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H08_lid",
+      "obstacle": "Pi_standoffs",
+      "minimum_sampled_skin_clearance_mm": 51.962,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        16.125,
+        65.0,
+        58.0
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H08_lid",
+      "obstacle": "Pi_standoffs",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 62.075,
+      "closest_point_world_mm": [
+        30.8045,
+        66.136,
+        63.0599
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H08_lid",
+      "obstacle": "Cytron",
+      "minimum_sampled_skin_clearance_mm": 112.169,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        16.125,
+        65.0,
+        58.0
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H08_lid",
+      "obstacle": "Cytron",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 126.142,
+      "closest_point_world_mm": [
+        30.8045,
+        66.136,
+        63.0599
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H08_lid",
+      "obstacle": "Speaker",
+      "minimum_sampled_skin_clearance_mm": 129.205,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        16.125,
+        65.0,
+        58.0
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H08_lid",
+      "obstacle": "Speaker",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 135.902,
+      "closest_point_world_mm": [
+        30.8045,
+        66.136,
+        63.0599
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H08_lid",
+      "obstacle": "Motors",
+      "minimum_sampled_skin_clearance_mm": 109.8,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        16.125,
+        65.0,
+        58.0
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H08_lid",
+      "obstacle": "Motors",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 124.079,
+      "closest_point_world_mm": [
+        30.8045,
+        66.136,
+        63.0599
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O01",
+      "obstacle": "Hull",
+      "minimum_sampled_skin_clearance_mm": 1.669,
+      "closest_wire": 3,
+      "closest_point_world_mm": [
+        23.6491,
+        -56.7559,
+        24.9303
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O01",
+      "obstacle": "Hull",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 1.159,
+      "closest_point_world_mm": [
+        22.7208,
+        -56.949,
+        25.2596
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O01",
+      "obstacle": "OrangePi",
+      "minimum_sampled_skin_clearance_mm": 25.726,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        -55.5,
+        -29.355,
+        24.8
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O01",
+      "obstacle": "OrangePi",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 37.55,
+      "closest_point_world_mm": [
+        -51.2416,
+        -42.8741,
+        24.3669
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O01",
+      "obstacle": "Pi_standoffs",
+      "minimum_sampled_skin_clearance_mm": 28.233,
+      "closest_wire": 3,
+      "closest_point_world_mm": [
+        -60.5,
+        -29.355,
+        24.8
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O01",
+      "obstacle": "Pi_standoffs",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 42.336,
+      "closest_point_world_mm": [
+        -51.2416,
+        -42.8741,
+        24.3669
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O01",
+      "obstacle": "Cytron",
+      "minimum_sampled_skin_clearance_mm": 38.864,
+      "closest_wire": 3,
+      "closest_point_world_mm": [
+        -59.2572,
+        -32.8707,
+        26.7791
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O01",
+      "obstacle": "Cytron",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 45.677,
+      "closest_point_world_mm": [
+        -51.2416,
+        -42.8741,
+        24.3669
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O01",
+      "obstacle": "Speaker",
+      "minimum_sampled_skin_clearance_mm": 4.553,
+      "closest_wire": 2,
+      "closest_point_world_mm": [
+        -30.5923,
+        -47.9499,
+        21.7454
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O01",
+      "obstacle": "Speaker",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 3.939,
+      "closest_point_world_mm": [
+        -30.6027,
+        -47.1094,
+        22.294
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O01",
+      "obstacle": "Motors",
+      "minimum_sampled_skin_clearance_mm": 35.703,
+      "closest_wire": 3,
+      "closest_point_world_mm": [
+        -60.5,
+        -29.355,
+        24.8
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O01",
+      "obstacle": "Motors",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 41.725,
+      "closest_point_world_mm": [
+        -51.2416,
+        -42.8741,
+        24.3669
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O02",
+      "obstacle": "Hull",
+      "minimum_sampled_skin_clearance_mm": 5.779,
+      "closest_wire": 2,
+      "closest_point_world_mm": [
+        -20.971,
+        -60.617,
+        17.6859
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O02",
+      "obstacle": "Hull",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 13.229,
+      "closest_point_world_mm": [
+        11.0409,
+        -40.4483,
+        26.0495
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O02",
+      "obstacle": "OrangePi",
+      "minimum_sampled_skin_clearance_mm": 22.89,
+      "closest_wire": 2,
+      "closest_point_world_mm": [
+        -4.95,
+        -25.0,
+        23.8
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O02",
+      "obstacle": "OrangePi",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 33.695,
+      "closest_point_world_mm": [
+        8.8363,
+        -34.2822,
+        26.7751
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O02",
+      "obstacle": "Pi_standoffs",
+      "minimum_sampled_skin_clearance_mm": 23.708,
+      "closest_wire": 2,
+      "closest_point_world_mm": [
+        -4.95,
+        -25.0,
+        23.8
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O02",
+      "obstacle": "Pi_standoffs",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 35.751,
+      "closest_point_world_mm": [
+        8.8363,
+        -34.2822,
+        26.7751
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O02",
+      "obstacle": "Cytron",
+      "minimum_sampled_skin_clearance_mm": 78.853,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        -22.2118,
+        -61.1173,
+        18.6355
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O02",
+      "obstacle": "Cytron",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 90.292,
+      "closest_point_world_mm": [
+        -5.4645,
+        -55.7807,
+        24.5876
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O02",
+      "obstacle": "Speaker",
+      "minimum_sampled_skin_clearance_mm": 13.616,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        -5.6227,
+        -55.8775,
+        25.2418
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O02",
+      "obstacle": "Speaker",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 12.672,
+      "closest_point_world_mm": [
+        -5.4645,
+        -55.7807,
+        24.5876
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O02",
+      "obstacle": "Motors",
+      "minimum_sampled_skin_clearance_mm": 68.499,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        -22.2118,
+        -61.1173,
+        18.6355
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O02",
+      "obstacle": "Motors",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 85.063,
+      "closest_point_world_mm": [
+        -5.4645,
+        -55.7807,
+        24.5876
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O03_left",
+      "obstacle": "Hull",
+      "minimum_sampled_skin_clearance_mm": 1.416,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        -90.366,
+        15.6506,
+        38.6046
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O03_left",
+      "obstacle": "Hull",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 0.431,
+      "closest_point_world_mm": [
+        -90.3461,
+        18.6273,
+        38.5461
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O03_left",
+      "obstacle": "OrangePi",
+      "minimum_sampled_skin_clearance_mm": 19.771,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        -89.1985,
+        27.6943,
+        40.5996
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O03_left",
+      "obstacle": "OrangePi",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 18.785,
+      "closest_point_world_mm": [
+        -89.447,
+        27.8049,
+        40.0873
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O03_left",
+      "obstacle": "Pi_standoffs",
+      "minimum_sampled_skin_clearance_mm": 21.209,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        -89.4901,
+        24.5838,
+        40.0659
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O03_left",
+      "obstacle": "Pi_standoffs",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 20.216,
+      "closest_point_world_mm": [
+        -89.7385,
+        24.6951,
+        39.5537
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O03_left",
+      "obstacle": "Cytron",
+      "minimum_sampled_skin_clearance_mm": 5.915,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        -88.6904,
+        40.6128,
+        42.8823
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O03_left",
+      "obstacle": "Cytron",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 5.1,
+      "closest_point_world_mm": [
+        -88.9855,
+        41.5859,
+        42.524
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O03_left",
+      "obstacle": "Speaker",
+      "minimum_sampled_skin_clearance_mm": 8.789,
+      "closest_wire": 2,
+      "closest_point_world_mm": [
+        -72.3945,
+        -45.13,
+        30.3843
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O03_left",
+      "obstacle": "Speaker",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 8.163,
+      "closest_point_world_mm": [
+        -72.3582,
+        -44.9833,
+        30.9443
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O03_left",
+      "obstacle": "Motors",
+      "minimum_sampled_skin_clearance_mm": 4.353,
+      "closest_wire": 2,
+      "closest_point_world_mm": [
+        -119.2213,
+        62.7558,
+        45.8991
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O03_left",
+      "obstacle": "Motors",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 3.885,
+      "closest_point_world_mm": [
+        -119.1626,
+        62.8998,
+        46.4578
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O03_right",
+      "obstacle": "Hull",
+      "minimum_sampled_skin_clearance_mm": 6.472,
+      "closest_wire": 2,
+      "closest_point_world_mm": [
+        -147.7496,
+        -54.1213,
+        36.4911
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O03_right",
+      "obstacle": "Hull",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 9.294,
+      "closest_point_world_mm": [
+        -89.5673,
+        -52.0254,
+        35.9648
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O03_right",
+      "obstacle": "OrangePi",
+      "minimum_sampled_skin_clearance_mm": 31.46,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        -37.9,
+        -34.8,
+        26.1
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O03_right",
+      "obstacle": "OrangePi",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 40.024,
+      "closest_point_world_mm": [
+        -50.7383,
+        -45.5419,
+        31.7363
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O03_right",
+      "obstacle": "Pi_standoffs",
+      "minimum_sampled_skin_clearance_mm": 42.004,
+      "closest_wire": 2,
+      "closest_point_world_mm": [
+        -40.4,
+        -34.8,
+        26.1
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O03_right",
+      "obstacle": "Pi_standoffs",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 45.716,
+      "closest_point_world_mm": [
+        -53.6207,
+        -46.4112,
+        31.8064
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O03_right",
+      "obstacle": "Cytron",
+      "minimum_sampled_skin_clearance_mm": 14.735,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        -148.2504,
+        -53.8787,
+        37.5089
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O03_right",
+      "obstacle": "Cytron",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 14.191,
+      "closest_point_world_mm": [
+        -91.721,
+        -54.3146,
+        38.0541
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O03_right",
+      "obstacle": "Speaker",
+      "minimum_sampled_skin_clearance_mm": 6.35,
+      "closest_wire": 2,
+      "closest_point_world_mm": [
+        -66.9567,
+        -49.3885,
+        31.5907
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O03_right",
+      "obstacle": "Speaker",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 5.854,
+      "closest_point_world_mm": [
+        -66.1296,
+        -49.1798,
+        32.096
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O03_right",
+      "obstacle": "Motors",
+      "minimum_sampled_skin_clearance_mm": 4.11,
+      "closest_wire": 2,
+      "closest_point_world_mm": [
+        -119.3007,
+        -64.3745,
+        45.661
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "O03_right",
+      "obstacle": "Motors",
+      "geometry": "MODELED_SLEEVE_PLUS_BRAID",
+      "minimum_sampled_skin_clearance_mm": 3.65,
+      "closest_point_world_mm": [
+        -119.2644,
+        -64.2694,
+        46.2303
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "U01",
+      "obstacle": "Hull",
+      "minimum_sampled_skin_clearance_mm": 2.72,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        21.53,
+        10.3766,
+        22.0734
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "U01",
+      "obstacle": "OrangePi",
+      "minimum_sampled_skin_clearance_mm": 24.208,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        -4.9907,
+        -28.1042,
+        41.3241
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "U01",
+      "obstacle": "Pi_standoffs",
+      "minimum_sampled_skin_clearance_mm": 17.608,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        -16.5241,
+        -18.8774,
+        33.887
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "U01",
+      "obstacle": "Cytron",
+      "minimum_sampled_skin_clearance_mm": 76.047,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        -16.5241,
+        -18.8774,
+        33.887
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "U01",
+      "obstacle": "Speaker",
+      "minimum_sampled_skin_clearance_mm": 30.256,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        -13.1403,
+        -26.9121,
+        38.9215
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "U01",
+      "obstacle": "Motors",
+      "minimum_sampled_skin_clearance_mm": 77.598,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        -16.5241,
+        -18.8774,
+        33.887
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "U02",
+      "obstacle": "Hull",
+      "minimum_sampled_skin_clearance_mm": 2.406,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        21.8444,
+        -1.913,
+        25.0014
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "U02",
+      "obstacle": "OrangePi",
+      "minimum_sampled_skin_clearance_mm": 24.831,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        21.2149,
+        9.4163,
+        33.6163
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "U02",
+      "obstacle": "Pi_standoffs",
+      "minimum_sampled_skin_clearance_mm": 23.334,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        17.175,
+        -7.2,
+        12.78
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "U02",
+      "obstacle": "Cytron",
+      "minimum_sampled_skin_clearance_mm": 69.414,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        -31.2,
+        73.0,
+        61.0
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "U02",
+      "obstacle": "Speaker",
+      "minimum_sampled_skin_clearance_mm": 55.883,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        17.175,
+        -7.2,
+        12.78
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "U02",
+      "obstacle": "Motors",
+      "minimum_sampled_skin_clearance_mm": 61.762,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        -31.2,
+        78.5,
+        56.5
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "U03",
+      "obstacle": "Hull",
+      "minimum_sampled_skin_clearance_mm": 3.424,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        20.6756,
+        -28.0214,
+        42.758
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "U03",
+      "obstacle": "OrangePi",
+      "minimum_sampled_skin_clearance_mm": 23.682,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        19.9486,
+        27.6667,
+        35.3517
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "U03",
+      "obstacle": "Pi_standoffs",
+      "minimum_sampled_skin_clearance_mm": 24.915,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        19.9687,
+        26.0263,
+        35.639
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "U03",
+      "obstacle": "Cytron",
+      "minimum_sampled_skin_clearance_mm": 43.957,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        -51.0,
+        -55.0,
+        37.5
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "U03",
+      "obstacle": "Speaker",
+      "minimum_sampled_skin_clearance_mm": 9.63,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        -51.0,
+        -55.0,
+        37.5
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "U03",
+      "obstacle": "Motors",
+      "minimum_sampled_skin_clearance_mm": 40.096,
+      "closest_wire": 1,
+      "closest_point_world_mm": [
+        -51.2284,
+        -60.6006,
+        38.8675
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H03",
+      "obstacle": "Hull",
+      "geometry": "FOUR_BRIDGE_OUTPUTS_SLEEVE",
+      "minimum_sampled_skin_clearance_mm": 10.513,
+      "closest_point_world_mm": [
+        -92.58153979868412,
+        -43.92770875364471,
+        60.47196532259904
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H03",
+      "obstacle": "OrangePi",
+      "geometry": "FOUR_BRIDGE_OUTPUTS_SLEEVE",
+      "minimum_sampled_skin_clearance_mm": 28.936,
+      "closest_point_world_mm": [
+        -86.64938360346719,
+        26.459262557007808,
+        62.03539708670329
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H03",
+      "obstacle": "Pi_standoffs",
+      "geometry": "FOUR_BRIDGE_OUTPUTS_SLEEVE",
+      "minimum_sampled_skin_clearance_mm": 32.176,
+      "closest_point_world_mm": [
+        -86.85498030885454,
+        0.12006978051115424,
+        61.88129657706888
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H03",
+      "obstacle": "Cytron",
+      "geometry": "FOUR_BRIDGE_OUTPUTS_SLEEVE",
+      "minimum_sampled_skin_clearance_mm": 9.08,
+      "closest_point_world_mm": [
+        -92.09956877320664,
+        -43.017480248547514,
+        60.54045105186459
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H03",
+      "obstacle": "Speaker",
+      "geometry": "FOUR_BRIDGE_OUTPUTS_SLEEVE",
+      "minimum_sampled_skin_clearance_mm": 36.177,
+      "closest_point_world_mm": [
+        -94.14028414893777,
+        -46.6854228376941,
+        60.25387385125078
+      ],
+      "samples_below_zero": 0
+    },
+    {
+      "route": "H03",
+      "obstacle": "Motors",
+      "geometry": "FOUR_BRIDGE_OUTPUTS_SLEEVE",
+      "minimum_sampled_skin_clearance_mm": 24.998,
+      "closest_point_world_mm": [
+        -94.14028414893777,
+        -46.6854228376941,
+        60.25387385125078
+      ],
+      "samples_below_zero": 0
+    }
+  ],
+  "violations": []
+}

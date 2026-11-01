@@ -3,155 +3,399 @@
   "connectors": [
     {
       "ref": "J2",
-      "family": "GH",
-      "circuits": 5,
-      "pitch_mm": 1.25,
-      "housing_width_mm": 7.5,
-      "housing_axial_length_mm": 5.7,
+      "family": "MicroFit",
+      "circuits": 10,
+      "populated_cavities": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "pitch_mm": 3.0,
+      "housing_width_mm": 15.85,
+      "housing_axial_length_mm": 14.0,
       "wire_exit_world_mm": [
-        -32.5,
-        36.65,
-        13.245
+        -37.5,
+        34.199999999999996,
+        29.235
       ],
       "mating_axis_world": [
         0,
-        1,
-        0
+        0,
+        1.0
       ],
-      "evidence": "Public catalogue dimensions; simplified reconstructed housing, native fixed PCB model retained."
+      "cavity_wire_points_world_mm": [
+        [
+          -43.5,
+          35.7,
+          29.235
+        ],
+        [
+          -40.5,
+          35.7,
+          29.235
+        ],
+        [
+          -37.5,
+          35.7,
+          29.235
+        ],
+        [
+          -34.5,
+          35.7,
+          29.235
+        ],
+        [
+          -31.5,
+          35.7,
+          29.235
+        ],
+        [
+          -43.5,
+          32.7,
+          29.235
+        ],
+        [
+          -40.5,
+          32.7,
+          29.235
+        ],
+        [
+          -37.5,
+          32.7,
+          29.235
+        ],
+        [
+          -34.5,
+          32.7,
+          29.235
+        ]
+      ],
+      "housing_mpn": "43025-1000",
+      "evidence": "Dimensioned cable reference; native fixed current PCB model retained. MicroFit drawing430250000-SD A=9.85/15.85, axial14, crossbody6.85; published matedheight17.64 is a reservation, exact latch/cavityclocking and seat not CAD-qualified."
     },
     {
       "ref": "J3",
-      "family": "GH",
-      "circuits": 4,
-      "pitch_mm": 1.25,
-      "housing_width_mm": 6.25,
-      "housing_axial_length_mm": 5.7,
+      "family": "MicroFit",
+      "circuits": 6,
+      "populated_cavities": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "pitch_mm": 3.0,
+      "housing_width_mm": 9.85,
+      "housing_axial_length_mm": 14.0,
       "wire_exit_world_mm": [
-        -18,
-        36.65,
-        13.245
+        -72.0,
+        -8.5,
+        29.235
       ],
       "mating_axis_world": [
         0,
-        1,
-        0
+        0,
+        1.0
       ],
-      "evidence": "Public catalogue dimensions; simplified reconstructed housing, native fixed PCB model retained."
+      "cavity_wire_points_world_mm": [
+        [
+          -75.0,
+          -7.0,
+          29.235
+        ],
+        [
+          -72.0,
+          -7.0,
+          29.235
+        ],
+        [
+          -69.0,
+          -7.0,
+          29.235
+        ],
+        [
+          -75.0,
+          -10.0,
+          29.235
+        ],
+        [
+          -72.0,
+          -10.0,
+          29.235
+        ],
+        [
+          -69.0,
+          -10.0,
+          29.235
+        ]
+      ],
+      "housing_mpn": "43025-0600",
+      "evidence": "Dimensioned cable reference; native fixed current PCB model retained. MicroFit drawing430250000-SD A=9.85/15.85, axial14, crossbody6.85; published matedheight17.64 is a reservation, exact latch/cavityclocking and seat not CAD-qualified."
     },
     {
       "ref": "J4",
-      "family": "GH",
-      "circuits": 4,
-      "pitch_mm": 1.25,
-      "housing_width_mm": 6.25,
-      "housing_axial_length_mm": 5.7,
+      "family": "MicroFit",
+      "circuits": 6,
+      "populated_cavities": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "pitch_mm": 3.0,
+      "housing_width_mm": 9.85,
+      "housing_axial_length_mm": 14.0,
       "wire_exit_world_mm": [
-        -43.25,
-        36.65,
-        13.245
+        -72.0,
+        -19.900000000000002,
+        29.235
       ],
       "mating_axis_world": [
         0,
-        1,
-        0
+        0,
+        1.0
       ],
-      "evidence": "Public catalogue dimensions; simplified reconstructed housing, native fixed PCB model retained."
+      "cavity_wire_points_world_mm": [
+        [
+          -75.0,
+          -18.4,
+          29.235
+        ],
+        [
+          -72.0,
+          -18.4,
+          29.235
+        ],
+        [
+          -69.0,
+          -18.4,
+          29.235
+        ],
+        [
+          -75.0,
+          -21.4,
+          29.235
+        ],
+        [
+          -72.0,
+          -21.4,
+          29.235
+        ],
+        [
+          -69.0,
+          -21.4,
+          29.235
+        ]
+      ],
+      "housing_mpn": "43025-0600",
+      "evidence": "Dimensioned cable reference; native fixed current PCB model retained. MicroFit drawing430250000-SD A=9.85/15.85, axial14, crossbody6.85; published matedheight17.64 is a reservation, exact latch/cavityclocking and seat not CAD-qualified."
     },
     {
       "ref": "J8",
       "family": "SH",
       "circuits": 6,
-      "pitch_mm": 1,
-      "housing_width_mm": 7,
-      "housing_axial_length_mm": 5,
+      "populated_cavities": [
+        1,
+        2,
+        5,
+        6
+      ],
+      "pitch_mm": 1.0,
+      "housing_width_mm": 7.0,
+      "housing_axial_length_mm": 5.0,
       "wire_exit_world_mm": [
-        -73.625,
-        0.1,
-        17.895
+        -18.0,
+        30.675,
+        20.6
       ],
       "mating_axis_world": [
         0,
         0,
-        1
+        1.0
       ],
-      "evidence": "Public catalogue dimensions; simplified reconstructed housing, native fixed PCB model retained."
+      "cavity_wire_points_world_mm": [
+        [
+          -20.5,
+          30.675,
+          20.6
+        ],
+        [
+          -19.5,
+          30.675,
+          20.6
+        ],
+        [
+          -16.5,
+          30.675,
+          20.6
+        ],
+        [
+          -15.5,
+          30.675,
+          20.6
+        ]
+      ],
+      "housing_mpn": "SHR-06V-S",
+      "evidence": "Public catalogue dimensions; reconstructed cavity/latch visual, cable seating reserved not certified."
     },
     {
       "ref": "J14",
       "family": "XH",
       "circuits": 2,
+      "populated_cavities": [
+        1,
+        2
+      ],
       "pitch_mm": 2.5,
       "housing_width_mm": 7.3,
       "housing_axial_length_mm": 7.5,
       "wire_exit_world_mm": [
-        -39.25,
+        -48.05,
         -34.8,
-        21.395
+        26.1
       ],
       "mating_axis_world": [
         0,
         0,
-        1
+        1.0
       ],
-      "evidence": "Public catalogue dimensions; simplified reconstructed housing, native fixed PCB model retained."
+      "cavity_wire_points_world_mm": [
+        [
+          -46.8,
+          -34.8,
+          26.1
+        ],
+        [
+          -49.3,
+          -34.8,
+          26.1
+        ]
+      ],
+      "housing_mpn": "XHP-2",
+      "evidence": "Public catalogue dimensions; reconstructed cavity/latch visual, cable seating reserved not certified."
     },
     {
       "ref": "J15",
       "family": "XH",
       "circuits": 2,
+      "populated_cavities": [
+        1,
+        2
+      ],
       "pitch_mm": 2.5,
       "housing_width_mm": 7.3,
       "housing_axial_length_mm": 7.5,
       "wire_exit_world_mm": [
-        -27.75,
+        -39.15,
         -34.8,
-        21.395
+        26.1
       ],
       "mating_axis_world": [
         0,
         0,
-        1
+        1.0
       ],
-      "evidence": "Public catalogue dimensions; simplified reconstructed housing, native fixed PCB model retained."
+      "cavity_wire_points_world_mm": [
+        [
+          -37.9,
+          -34.8,
+          26.1
+        ],
+        [
+          -40.4,
+          -34.8,
+          26.1
+        ]
+      ],
+      "housing_mpn": "XHP-2",
+      "evidence": "Public catalogue dimensions; reconstructed cavity/latch visual, cable seating reserved not certified."
     },
     {
       "ref": "J7",
       "family": "PH",
       "circuits": 2,
-      "pitch_mm": 2,
+      "populated_cavities": [
+        1,
+        2
+      ],
+      "pitch_mm": 2.0,
       "housing_width_mm": 5.8,
       "housing_axial_length_mm": 6.35,
       "wire_exit_world_mm": [
-        2.8,
-        -26,
-        14.095
+        -4.950000000000003,
+        -26.0,
+        23.8
       ],
       "mating_axis_world": [
-        1,
         0,
-        0
+        0,
+        1.0
       ],
-      "evidence": "Public catalogue dimensions; simplified reconstructed housing, native fixed PCB model retained."
+      "cavity_wire_points_world_mm": [
+        [
+          -4.950000000000003,
+          -27.0,
+          23.8
+        ],
+        [
+          -4.950000000000003,
+          -25.0,
+          23.8
+        ]
+      ],
+      "housing_mpn": "PHR-2",
+      "evidence": "Public catalogue dimensions; reconstructed cavity/latch visual, cable seating reserved not certified."
     },
     {
       "ref": "J5",
       "family": "SPOX",
       "circuits": 3,
+      "populated_cavities": [
+        1,
+        2,
+        3
+      ],
       "pitch_mm": 2.5,
       "housing_width_mm": 8.9,
-      "housing_axial_length_mm": 8,
+      "housing_axial_length_mm": 8.0,
       "wire_exit_world_mm": [
-        -58,
-        -38.55,
-        14.045
+        -58.0,
+        -29.355000000000004,
+        24.8
       ],
       "mating_axis_world": [
         0,
-        -1,
-        0
+        0,
+        1.0
       ],
-      "evidence": "Public catalogue dimensions; simplified reconstructed housing, native fixed PCB model retained."
+      "cavity_wire_points_world_mm": [
+        [
+          -55.5,
+          -29.355000000000004,
+          24.8
+        ],
+        [
+          -58.0,
+          -29.355000000000004,
+          24.8
+        ],
+        [
+          -60.5,
+          -29.355000000000004,
+          24.8
+        ]
+      ],
+      "housing_mpn": "50-37-5033",
+      "evidence": "Public catalogue dimensions; reconstructed cavity/latch visual, cable seating reserved not certified."
     },
     {
       "ref": "motor_left",

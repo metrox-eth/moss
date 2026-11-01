@@ -1,120 +1,483 @@
 {
-  "status": "VISUAL_TOPOLOGY_AND_ENDPOINT_CHECK_PASSED",
-  "source_scene_sha256": "aa5189fd3d90b0e86e7b9ab5475aa18ec92ac18cd51857cdf2fff8b7478a989c",
-  "connections": [
+  "status": "PASS_CURRENT_CABLE_CORE_STARTS",
+  "PCB_sha256": "7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14",
+  "route_data_sha256": "ffa1e1283457c61096f7128c7c20471511b5268852f9a02089c626a8f6d9c91f",
+  "routes": 14,
+  "custom_conductors": 42,
+  "Core_cavity_starts_checked": 38,
+  "scope": "All38 custom-wire starts at Core numbered cavities agree with final native pad XY; J11 uses its native pad Y axis and external ferrule exit. The4lid-tail wires are at X08. USB commercial assemblies are not pin-level wire fanouts. Stock motor cavity image order is not an electrical qualification.",
+  "checks": [
+    {
+      "route": "H01",
+      "connector": "J10",
+      "cavity": "1",
+      "net": "GND",
+      "start_world_mm": [
+        -53.0,
+        35.0,
+        32.9
+      ],
+      "pad_axis_error_mm": 0.0
+    },
+    {
+      "route": "H01",
+      "connector": "J10",
+      "cavity": "2",
+      "net": "BAT_PROTECTED",
+      "start_world_mm": [
+        -58.0,
+        35.0,
+        32.9
+      ],
+      "pad_axis_error_mm": 0.0
+    },
+    {
+      "route": "H02",
+      "connector": "J11",
+      "cavity": "1",
+      "net": "ACTUATOR_SW",
+      "start_world_mm": [
+        -81.405,
+        13.545000000000002,
+        16.395
+      ],
+      "pad_axis_error_mm": 0.0
+    },
+    {
+      "route": "H02",
+      "connector": "J11",
+      "cavity": "2",
+      "net": "GND",
+      "start_world_mm": [
+        -81.405,
+        8.465,
+        16.395
+      ],
+      "pad_axis_error_mm": 0.0
+    },
     {
       "route": "H03",
-      "end": "Core",
-      "description": "Wire centres coincide with J2 housing outlet cavities; same source coordinate frame.",
-      "conductors": 5,
-      "maximum_mesh_endpoint_error_mm": 5.446340424084061e-06
+      "connector": "J2",
+      "cavity": "1",
+      "net": "MDD_PWM1",
+      "start_world_mm": [
+        -43.5,
+        35.7,
+        29.235
+      ],
+      "pad_axis_error_mm": 0.0
+    },
+    {
+      "route": "H03",
+      "connector": "J2",
+      "cavity": "2",
+      "net": "MDD_DIR1",
+      "start_world_mm": [
+        -40.5,
+        35.7,
+        29.235
+      ],
+      "pad_axis_error_mm": 0.0
+    },
+    {
+      "route": "H03",
+      "connector": "J2",
+      "cavity": "3",
+      "net": "MDD_PWM2",
+      "start_world_mm": [
+        -37.5,
+        35.7,
+        29.235
+      ],
+      "pad_axis_error_mm": 0.0
+    },
+    {
+      "route": "H03",
+      "connector": "J2",
+      "cavity": "4",
+      "net": "MDD_DIR2",
+      "start_world_mm": [
+        -34.5,
+        35.7,
+        29.235
+      ],
+      "pad_axis_error_mm": 0.0
+    },
+    {
+      "route": "H03",
+      "connector": "J2",
+      "cavity": "5",
+      "net": "GND",
+      "start_world_mm": [
+        -31.5,
+        35.7,
+        29.235
+      ],
+      "pad_axis_error_mm": 0.0
+    },
+    {
+      "route": "H03",
+      "connector": "J2",
+      "cavity": "6",
+      "net": "CYTRON_L_LEAD",
+      "start_world_mm": [
+        -43.5,
+        32.7,
+        29.235
+      ],
+      "pad_axis_error_mm": 0.0
+    },
+    {
+      "route": "H03",
+      "connector": "J2",
+      "cavity": "7",
+      "net": "MOTOR_L_RETURN",
+      "start_world_mm": [
+        -40.5,
+        32.7,
+        29.235
+      ],
+      "pad_axis_error_mm": 0.0
+    },
+    {
+      "route": "H03",
+      "connector": "J2",
+      "cavity": "8",
+      "net": "CYTRON_R_LEAD",
+      "start_world_mm": [
+        -37.5,
+        32.7,
+        29.235
+      ],
+      "pad_axis_error_mm": 0.0
+    },
+    {
+      "route": "H03",
+      "connector": "J2",
+      "cavity": "9",
+      "net": "MOTOR_R_RETURN",
+      "start_world_mm": [
+        -34.5,
+        32.7,
+        29.235
+      ],
+      "pad_axis_error_mm": 0.0
     },
     {
       "route": "H04",
-      "end": "Core",
-      "description": "Wire centres coincide with J3 housing outlet cavities; same source coordinate frame.",
-      "conductors": 4,
-      "maximum_mesh_endpoint_error_mm": 5.446340424084061e-06
+      "connector": "J3",
+      "cavity": "1",
+      "net": "MOTOR_L_LEAD",
+      "start_world_mm": [
+        -75.0,
+        -7.0,
+        29.235
+      ],
+      "pad_axis_error_mm": 0.0
+    },
+    {
+      "route": "H04",
+      "connector": "J3",
+      "cavity": "2",
+      "net": "MOTOR_L_RETURN",
+      "start_world_mm": [
+        -72.0,
+        -7.0,
+        29.235
+      ],
+      "pad_axis_error_mm": 0.0
+    },
+    {
+      "route": "H04",
+      "connector": "J3",
+      "cavity": "3",
+      "net": "GND",
+      "start_world_mm": [
+        -69.0,
+        -7.0,
+        29.235
+      ],
+      "pad_axis_error_mm": 0.0
+    },
+    {
+      "route": "H04",
+      "connector": "J3",
+      "cavity": "4",
+      "net": "ENC_3V3",
+      "start_world_mm": [
+        -75.0,
+        -10.0,
+        29.235
+      ],
+      "pad_axis_error_mm": 0.0
+    },
+    {
+      "route": "H04",
+      "connector": "J3",
+      "cavity": "5",
+      "net": "EL_A_EXT",
+      "start_world_mm": [
+        -72.0,
+        -10.0,
+        29.235
+      ],
+      "pad_axis_error_mm": 0.0
+    },
+    {
+      "route": "H04",
+      "connector": "J3",
+      "cavity": "6",
+      "net": "EL_B_EXT",
+      "start_world_mm": [
+        -69.0,
+        -10.0,
+        29.235
+      ],
+      "pad_axis_error_mm": 0.0
     },
     {
       "route": "H05",
-      "end": "Core",
-      "description": "Wire centres coincide with J4 housing outlet cavities; same source coordinate frame.",
-      "conductors": 4,
-      "maximum_mesh_endpoint_error_mm": 4.575092879528021e-06
+      "connector": "J4",
+      "cavity": "1",
+      "net": "MOTOR_R_LEAD",
+      "start_world_mm": [
+        -75.0,
+        -18.4,
+        29.235
+      ],
+      "pad_axis_error_mm": 0.0
     },
     {
-      "route": "O01",
-      "end": "Core",
-      "description": "Wire centres coincide with J5 housing outlet cavities; same source coordinate frame.",
-      "conductors": 3,
-      "maximum_mesh_endpoint_error_mm": 4.024279619193854e-06
+      "route": "H05",
+      "connector": "J4",
+      "cavity": "2",
+      "net": "MOTOR_R_RETURN",
+      "start_world_mm": [
+        -72.0,
+        -18.4,
+        29.235
+      ],
+      "pad_axis_error_mm": 0.0
     },
     {
-      "route": "O02",
-      "end": "Core",
-      "description": "Wire centres coincide with J7 housing outlet cavities; same source coordinate frame.",
-      "conductors": 2,
-      "maximum_mesh_endpoint_error_mm": 3.28152666324919e-07
+      "route": "H05",
+      "connector": "J4",
+      "cavity": "3",
+      "net": "GND",
+      "start_world_mm": [
+        -69.0,
+        -18.4,
+        29.235
+      ],
+      "pad_axis_error_mm": 0.0
+    },
+    {
+      "route": "H05",
+      "connector": "J4",
+      "cavity": "4",
+      "net": "ENC_3V3",
+      "start_world_mm": [
+        -75.0,
+        -21.4,
+        29.235
+      ],
+      "pad_axis_error_mm": 0.0
+    },
+    {
+      "route": "H05",
+      "connector": "J4",
+      "cavity": "5",
+      "net": "ER_A_EXT",
+      "start_world_mm": [
+        -72.0,
+        -21.4,
+        29.235
+      ],
+      "pad_axis_error_mm": 0.0
+    },
+    {
+      "route": "H05",
+      "connector": "J4",
+      "cavity": "6",
+      "net": "ER_B_EXT",
+      "start_world_mm": [
+        -69.0,
+        -21.4,
+        29.235
+      ],
+      "pad_axis_error_mm": 0.0
     },
     {
       "route": "H08_chassis",
-      "end": "Core",
-      "description": "Wire centres coincide with J8 housing outlet cavities; same source coordinate frame.",
-      "conductors": 4,
-      "maximum_mesh_endpoint_error_mm": 7.767201626195375e-06
+      "connector": "J8",
+      "cavity": "1",
+      "net": "ESTOP_CUT_SOURCE",
+      "start_world_mm": [
+        -20.5,
+        30.675,
+        20.6
+      ],
+      "pad_axis_error_mm": 0.0
     },
     {
-      "route": "O03_right",
-      "end": "Core",
-      "description": "Wire centres coincide with J14 housing outlet cavities; same source coordinate frame.",
-      "conductors": 2,
-      "maximum_mesh_endpoint_error_mm": 3.378538488938997e-06
+      "route": "H08_chassis",
+      "connector": "J8",
+      "cavity": "2",
+      "net": "ESTOP_CUT_RETURN",
+      "start_world_mm": [
+        -19.5,
+        30.675,
+        20.6
+      ],
+      "pad_axis_error_mm": 0.0
+    },
+    {
+      "route": "H08_chassis",
+      "connector": "J8",
+      "cavity": "5",
+      "net": "ESTOP_STATUS_SOURCE",
+      "start_world_mm": [
+        -16.5,
+        30.675,
+        20.6
+      ],
+      "pad_axis_error_mm": 0.0
+    },
+    {
+      "route": "H08_chassis",
+      "connector": "J8",
+      "cavity": "6",
+      "net": "ESTOP_STATUS_RAW",
+      "start_world_mm": [
+        -15.5,
+        30.675,
+        20.6
+      ],
+      "pad_axis_error_mm": 0.0
+    },
+    {
+      "route": "O01",
+      "connector": "J5",
+      "cavity": "1",
+      "net": "SERVO_BUS",
+      "start_world_mm": [
+        -55.5,
+        -29.355000000000004,
+        24.8
+      ],
+      "pad_axis_error_mm": 0.0
+    },
+    {
+      "route": "O01",
+      "connector": "J5",
+      "cavity": "2",
+      "net": "ACTUATOR_SW",
+      "start_world_mm": [
+        -58.0,
+        -29.355000000000004,
+        24.8
+      ],
+      "pad_axis_error_mm": 0.0
+    },
+    {
+      "route": "O01",
+      "connector": "J5",
+      "cavity": "3",
+      "net": "GND",
+      "start_world_mm": [
+        -60.5,
+        -29.355000000000004,
+        24.8
+      ],
+      "pad_axis_error_mm": 0.0
+    },
+    {
+      "route": "O02",
+      "connector": "J7",
+      "cavity": "1",
+      "net": "SPEAKER_P",
+      "start_world_mm": [
+        -4.950000000000003,
+        -27.0,
+        23.8
+      ],
+      "pad_axis_error_mm": 0.0
+    },
+    {
+      "route": "O02",
+      "connector": "J7",
+      "cavity": "2",
+      "net": "SPEAKER_N",
+      "start_world_mm": [
+        -4.950000000000003,
+        -25.0,
+        23.8
+      ],
+      "pad_axis_error_mm": 0.0
     },
     {
       "route": "O03_left",
-      "end": "Core",
-      "description": "Wire centres coincide with J15 housing outlet cavities; same source coordinate frame.",
-      "conductors": 2,
-      "maximum_mesh_endpoint_error_mm": 3.378538488938997e-06
+      "connector": "J14",
+      "cavity": "1",
+      "net": "FAN_3S",
+      "start_world_mm": [
+        -46.8,
+        -34.8,
+        26.1
+      ],
+      "pad_axis_error_mm": 0.0
     },
     {
-      "route": "H04",
-      "end": "device",
-      "description": "Four encoder wires enter the shared six-way motor housing.",
-      "conductors": 4,
-      "maximum_mesh_endpoint_error_mm": 8.682674169330707e-06
+      "route": "O03_left",
+      "connector": "J14",
+      "cavity": "2",
+      "net": "GND",
+      "start_world_mm": [
+        -49.3,
+        -34.8,
+        26.1
+      ],
+      "pad_axis_error_mm": 0.0
     },
     {
-      "route": "H05",
-      "end": "device",
-      "description": "Four encoder wires enter the shared six-way motor housing.",
-      "conductors": 4,
-      "maximum_mesh_endpoint_error_mm": 1.5264834636847105e-05
+      "route": "O03_right",
+      "connector": "J15",
+      "cavity": "1",
+      "net": "FAN_3S",
+      "start_world_mm": [
+        -37.9,
+        -34.8,
+        26.1
+      ],
+      "pad_axis_error_mm": 0.0
     },
     {
-      "route": "H06b",
-      "end": "device",
-      "description": "Motor power enters a remaining cavity of the same housing; physical pin order unverified.",
-      "conductors": 1,
-      "maximum_mesh_endpoint_error_mm": 7.404935634193362e-07
-    },
-    {
-      "route": "H06c",
-      "end": "device",
-      "description": "Motor power enters a remaining cavity of the same housing; physical pin order unverified.",
-      "conductors": 1,
-      "maximum_mesh_endpoint_error_mm": 4.2957285344570135e-07
-    },
-    {
-      "route": "H07b",
-      "end": "device",
-      "description": "Motor power enters a remaining cavity of the same housing; physical pin order unverified.",
-      "conductors": 1,
-      "maximum_mesh_endpoint_error_mm": 1.5360046110182386e-05
-    },
-    {
-      "route": "H07c",
-      "end": "device",
-      "description": "Motor power enters a remaining cavity of the same housing; physical pin order unverified.",
-      "conductors": 1,
-      "maximum_mesh_endpoint_error_mm": 4.2957285344570135e-07
-    },
-    {
-      "route": "H08",
-      "description": "The four coloured wire paths align in X/Z across the mated inline pair; vendor cavity numbers still require qualification."
+      "route": "O03_right",
+      "connector": "J15",
+      "cavity": "2",
+      "net": "GND",
+      "start_world_mm": [
+        -40.4,
+        -34.8,
+        26.1
+      ],
+      "pad_axis_error_mm": 0.0
     }
   ],
-  "topology": {
-    "STOP": "J8 via removable lid connector; four signal wires, positions 1/2/5/6",
-    "battery": "XT30 J10 via existing pack fuse",
-    "Pi_power": "Core J20 -> Orange Pi POWER",
-    "USB_data": "Pi DATA -> OTG adapter -> HB1 upstream; HB1 downstream -> Core J1"
+  "unpopulated_cavities": {
+    "J2": [
+      "10"
+    ],
+    "J8": [
+      "3",
+      "4"
+    ]
   },
-  "limits": [
-    "No physical mate test",
-    "Photo-based motor housing identification, clocking and circuit order remain unverified",
-    "PicoBlade selected from manufacturer drawings; first-article mating test remains",
-    "USB cable excess and installed bend radii remain provisional"
-  ]
+  "source_electrical_pin_proof": "INDEPENDENT_CONNECTOR_MAP_20261101.json",
+  "current_equivalence": {
+    "status": "PASS_38_CORE_STARTS_EXACTLY_UNCHANGED",
+    "previous_source_sha256": "e921e6ab221b7ba81abcaf106c930dc62b840ba7d57944c25791e189dd5f94ff",
+    "current_source_sha256": "ffa1e1283457c61096f7128c7c20471511b5268852f9a02089c626a8f6d9c91f",
+    "max_device_end_roundoff_mm": 2.0097183471152322e-14
+  }
 }

@@ -1,0 +1,17 @@
+{
+  "operation": "Import the independently checked STEP, export STL with native Fusion mesh engine. No geometry edit.",
+  "source_step_sha256": "93699d5219fa699f0ed72d8527ee1579ebd5b5b51b05fac893e344254e7bde37",
+  "solid_count": 1,
+  "native_volume_mm3": 635434.0613815337,
+  "f3d_scope": "Editable imported BRep; no reconstructed parametric history claimed.",
+  "artifacts": {
+    "stl/Hull_MOSS_V07_NATIVE_MATCHED.stl": {
+      "sha256": "619028262ff62e7ccb3954cfb4630e01e0796c3860ca1db40e1a56bb203f4137",
+      "bytes": 3733584
+    },
+    "cad/Hull_MOSS_V07_Core_74x71_EDITABLE.f3d": {
+      "sha256": "cf7568e6b675fd62b193d25f3ea2aa774c6301abdab9ccef405e8d1ec29c3d00",
+      "bytes": 3391770
+    }
+  }
+}

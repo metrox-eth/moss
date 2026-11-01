@@ -1,0 +1,6 @@
+cadquery==2.8.0
+cadquery-ocp==7.9.3.1.1
+numpy==2.5.3
+trimesh==5.1.0
+manifold3d==3.5.3
+scipy==1.18.1

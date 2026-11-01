@@ -1,0 +1,53 @@
+{
+  "status": "PASS_OFFLINE_HULL_HARNESS_PUBLICATION_AUDIT",
+  "date": "2026-11-01",
+  "native_board_sha256": "7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14",
+  "licence": "CC-BY-NC-SA-4.0 for current MOSS-authored hardware; Apache code and third-party notices retained; previous grants preserved",
+  "hull_requirements": {
+    "board_size_mm": [
+      82,
+      79
+    ],
+    "Core_mount_pitch_mm": [
+      74,
+      71
+    ],
+    "analytic_pilots_and_STEP_STL": "INDEPENDENT_FINAL_HULL_CHECK_20261101.json",
+    "source_package": "../../../../mechanical/moss-v0.7-hull/",
+    "tie_bridges": 5,
+    "divider_notch_retained": true
+  },
+  "harness_requirements": {
+    "routes": 14,
+    "custom_wire_segments": 42,
+    "standard_USB_assemblies": 3,
+    "motor_connections": "one six-wire route per motor, J3/J4",
+    "Cytron": "nine-wire J2 link, cavity10empty; separateJ11supply",
+    "STOP": "twoNCloops and inline disconnect nearlid",
+    "route_data_sha256": "ffa1e1283457c61096f7128c7c20471511b5268852f9a02089c626a8f6d9c91f",
+    "wirelist_sha256": "dc0c691e5370ba5c799b14542c94083036bf98cbf5b60ed6fa400dc50cf31935",
+    "PDF_sha256": "9b2eddd0f18ac177aedff6d29f876161e76bcd229c57c55b979930b1e94ac867"
+  },
+  "checks": {
+    "76pins_PCB_netlist_contract": "INDEPENDENT_CONNECTOR_MAP_20261101.json",
+    "42wirelist_entries_match_contract_and_final_CAD_lengths": true,
+    "14valid_STEP_common_trunk_solids": "HARNESS_STEP_QA.json",
+    "six_full_sleeve_envelopes_clear_native_Pi_GPIO_standoffs": "FULL_SLEEVE_OPI_QA.json",
+    "sampled_wires_sleeves_context": "CURRENT_ROUTE_CLEARANCE.json",
+    "sampled_closed_cover_and_illustrative_cooler": "COOLER_LID_CLEARANCE.json",
+    "PDFsix_pages_static_and_visual": "RFQ_CONTENT_CHECKS.json",
+    "local_documentation_links_checked": 93,
+    "embedded_GLTF2_self_contained_buffer_and_ZIP_crc": true,
+    "final_static_views_inspected": true,
+    "Python_sources_parse": true
+  },
+  "preserved_manufacturing_archive_sha256": "8dd54ce961989971f6c3344d19eefa92b52d5858ffaf59c61fc98200e4654bba",
+  "limitations": [
+    "No powered, EMI, thermal or physical crimp/printed-fit test performed.",
+    "Stock motor pigtail mapping and exact physical connector seating require first-article checks.",
+    "Cooler shape is an illustrative envelope, not supplied native cooler CAD.",
+    "Closed-cover sampled minimum at unchanged H03 trunk is about0.53mm; physical tolerances require checking.",
+    "Offline viewer bundle validated and static views inspected; browser interaction not exercised.",
+    "No new video, fabrication, payment or external messages."
+  ]
+}

@@ -1,27 +1,22 @@
-# Rebuilding the visual study
+# Rebuild the current harness study
 
-Run commands from the `harness/` directory in a Python environment with the dependencies in `requirements.txt`. The frozen meshes in `assets/` preserve the 30 October Core board, native context, speaker and prototype hull positions. They predate the 31 October integrated-power PCB update in the parent folder. Rebuilding this study reproduces that earlier packaging proposal; it does not regenerate a mesh from the current PCB.
+Run from `harness/` using the Python dependencies listed in [requirements.txt](../requirements.txt). The frozen assets now match the 1 November 2026 Core PCB `7d88...`, the final Orange Pi pose and the matching 74 x 71 mm hull boss pattern. A normal rebuild uses these supplied meshes and does not export or modify the PCB.
 
 ```sh
-python source/build_hoco.py
+python -m pip install -r requirements.txt
 python source/build_harness.py
 python source/export_harness_step.py
+python source/check_current_routes.py
+python source/check_cooler_lid.py
+python source/build_current_rfq.py
 npm ci --prefix viewer_runtime
 node source/build_viewer.mjs
 ```
 
-The generated files go into ignored `output/` and `assets/HARNESS_SCENE.npz`; published CAD/data are kept separately in `cad/` and `data/`. No native PCB or released rover file is edited. The connector mesh cache includes the KiCad reference header so an installed macOS KiCad path is not required for a normal cached rebuild.
+Outputs go into ignored `output/`; the scene mesh is written into `assets/HARNESS_SCENE.npz`. Published CAD, data, RFQ and viewer files are separate reviewed copies. The connector cache includes its KiCad motor-header reference and dimensioned cable housings, so cached rebuilding does not require a macOS KiCad installation.
 
-The source includes the complete visual routing recipe and the tie-bridge primitive. The supplied hull STEP/STL are the editable mechanical result; the scene builder does not reconstruct the original Fusion history or repeat its native mesh Boolean workflow.
+`build_harness.py` is the current 14-route recipe. The RFQ generator validates the PCB hash, all route counts and the independent connector map before producing its 42-wire schedule. Its length estimates include drawn slack; batch cut/strip dimensions still require a fitted first article. `extract_current_anchors.py` is an optional read-only native KiCad Python extraction step and requires pcbnew/wx from KiCad, not the regular Python environment.
 
-## Video
+`export_harness_step.py` produces common-trunk conduit reservations, not complete crimped wires. Individual paths, including the Cytron fanout, are retained in `ROUTE_LENGTHS.json` and the GLB. `render_current_static.py` produces current static review frames. No browser interaction was tested in this session; the offline bundle has no required external network resources.
 
-```sh
-python source/render_story.py --stills
-MOSS_MUSIC=/absolute/path/to/your/licensed-music.m4a python source/make_story_audio.py
-python source/render_story.py
-```
-
-The film uses VTK camera motion and lighting, with Pillow for the existing MOSS graphics and FFmpeg for encoding. It streams frames straight to the encoder rather than saving a large image sequence. The STOP/battery callout shot has a stationary camera; callout endpoints are projected from model coordinates. The soundtrack source is not bundled; use music you have permission to use. The current soundtrack contains music only, with no generated transition beeps.
-
-The offline viewer is a Three.js bundle with the GLB embedded. Bundle checks verify the GLB container, embedded resources and JS compilation. This publication does not claim an automated interactive browser acceptance test.
+The hull is maintained in the [dedicated source package](../../../../mechanical/moss-v0.7-hull/). The historical `render_story.py` and audio scripts preserve the earlier film; do not use them as current assembly instructions. There is no new video in this update. Only the STOP tail moves with the removable lid.

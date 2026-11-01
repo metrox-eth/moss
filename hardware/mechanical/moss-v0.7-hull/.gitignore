@@ -1,0 +1,6 @@
+!cad/Hull_MOSS_V07_Core_74x71_EDITABLE.f3d
+harness/assets/
+harness/output/
+__pycache__/
+*.pyc
+stl/Hull_MOSS_V07_NATIVE_MATCHED.stl

@@ -1,0 +1,749 @@
+{
+  "status": "CURRENT_CORE_RENDER_MESH_READY",
+  "board": {
+    "path": "../electrical/MOSS_Core_V07_Prototype.kicad_pcb",
+    "sha256": "7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14",
+    "modified": false
+  },
+  "glb": {
+    "path": "current_core_native.glb",
+    "sha256": "03128277cd4b63b3d052fbf0a4556104f17b9912cb0ea11aa184aaf697515cd6",
+    "bytes": 29443340
+  },
+  "mesh": {
+    "path": "current_core_mesh.npz",
+    "sha256": "ef2c7e07daf9aa1c8481fc3945865be9ae0f7a220a9025ea4368c56c9b198da4",
+    "vertices": 652164,
+    "triangles": 597792,
+    "native_primitive_instances": 32823,
+    "conversion": "Deterministic native GLB scene, node transform, accessor and material traversal; every primitive retained",
+    "keys": [
+      "Core_vertices",
+      "Core_faces",
+      "Core_facecolors",
+      "Core_facecolors_rgba",
+      "Core_color",
+      "Core_world_transform"
+    ]
+  },
+  "export_command": [
+    "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+    "pcb",
+    "export",
+    "glb",
+    "--force",
+    "--include-tracks",
+    "--include-pads",
+    "--include-zones",
+    "--include-silkscreen",
+    "--include-soldermask",
+    "--cut-vias-in-body",
+    "-o",
+    "current_core_native.glb",
+    "../electrical/MOSS_Core_V07_Prototype.kicad_pcb"
+  ],
+  "frame": {
+    "units": "millimetres",
+    "pcb_mapping": [
+      "PCB_x - 78",
+      "37 - PCB_y",
+      "10 + native_board_z_mm"
+    ],
+    "glb_mapping": [
+      "1000*glb_x - 78",
+      "37 - 1000*glb_z",
+      "10 + 1000*glb_y"
+    ],
+    "glb_units": "metres",
+    "substrate_bottom_world_z_mm": 10,
+    "substrate_top_world_z_mm": 11.51,
+    "native_top_component_model_datum_world_z_mm": 11.595,
+    "nominal_board_thickness_mm": 1.6,
+    "orientation": "Right-handed; GLB Y up converted to world Z up, PCB positive Y toward negative world Y"
+  },
+  "world_bounds_mm": [
+    [
+      -80.0,
+      -38.000003814697266,
+      8.114999771118164
+    ],
+    [
+      2.674999952316284,
+      41.0,
+      25.41499900817871
+    ]
+  ],
+  "categories": {
+    "component": {
+      "nodes": 10005,
+      "triangles": 82202,
+      "bounds_min": [
+        -78.4499999601394,
+        -37.149999966099855,
+        8.114999891966582
+      ],
+      "bounds_max": [
+        2.6750000435858965,
+        38.349999922141436,
+        25.414999840557577
+      ]
+    },
+    "copper": {
+      "nodes": 12217,
+      "triangles": 241620,
+      "bounds_min": [
+        -79.5999999595806,
+        -37.17500019073486,
+        9.964999999065185
+      ],
+      "bounds_max": [
+        1.2293325066566467,
+        36.999999197815455,
+        11.565000042319298
+      ]
+    },
+    "pad": {
+      "nodes": 7550,
+      "triangles": 113138,
+      "bounds_min": [
+        -78.69999997504056,
+        -35.999998927116394,
+        9.960000001010485
+      ],
+      "bounds_max": [
+        0.9749994874000549,
+        39.70000007003546,
+        11.569999963976443
+      ]
+    },
+    "via": {
+      "nodes": 2052,
+      "triangles": 98496,
+      "bounds_min": [
+        -79.44999998155981,
+        -36.66129755973816,
+        9.964999999065185
+      ],
+      "bounds_max": [
+        1.081900417804718,
+        36.45000000298023,
+        11.565000042319298
+      ]
+    },
+    "silkscreen": {
+      "nodes": 876,
+      "triangles": 33306,
+      "bounds_min": [
+        -79.53214496094733,
+        -37.61000233888626,
+        9.924999996437691
+      ],
+      "bounds_max": [
+        0.6999985575675964,
+        40.453772980719805,
+        11.604999997653067
+      ]
+    },
+    "soldermask": {
+      "nodes": 2,
+      "triangles": 20110,
+      "bounds_min": [
+        -80.0000000949949,
+        -38.00000298023224,
+        9.950000001263106
+      ],
+      "bounds_max": [
+        1.9999982118606567,
+        41.000000189989805,
+        11.580000040121377
+      ]
+    },
+    "PCB": {
+      "nodes": 121,
+      "triangles": 8920,
+      "bounds_min": [
+        -80.0000000949949,
+        -38.00000298023224,
+        10.0
+      ],
+      "bounds_max": [
+        1.9999982118606567,
+        41.000000189989805,
+        11.530000008642673
+      ]
+    }
+  },
+  "landmarks": {
+    "F1": {
+      "value": "3.15A / compact host input fuse",
+      "at_pcb_mm": [
+        56,
+        57
+      ],
+      "model_paths": [
+        "${KIPRJMOD}/models/Littelfuse_08853_15DR_VISUAL.step"
+      ],
+      "bounds_mm": [
+        [
+          -27.520000122487545,
+          -22.400000113993883,
+          11.615
+        ],
+        [
+          -16.479999877512455,
+          -17.599999886006117,
+          16.3950000756979
+        ]
+      ]
+    },
+    "F2": {
+      "value": "1A / 125V fast",
+      "at_pcb_mm": [
+        47.5,
+        71.3
+      ],
+      "model_paths": [
+        "${KIPRJMOD}/models/Littelfuse_0451001_MRL_VISUAL.step"
+      ],
+      "bounds_mm": [
+        [
+          -33.54999994114041,
+          -35.64499999694526,
+          11.615
+        ],
+        [
+          -27.450000058859587,
+          -32.955000003054735,
+          14.304999993890524
+        ]
+      ]
+    },
+    "J2": {
+      "value": "CYTRON LINK",
+      "at_pcb_mm": [
+        34.5,
+        1.3
+      ],
+      "model_paths": [
+        "${KIPRJMOD}/models/Connector_Molex_Molex_Micro-Fit_3.0_43045-1012_2x05_P3.00mm_Vertical.step"
+      ],
+      "bounds_mm": [
+        [
+          -46.949999960139394,
+          30.70000011175871,
+          8.4150000808388
+        ],
+        [
+          -28.05000016838312,
+          38.349999922141436,
+          21.51499994635582
+        ]
+      ]
+    },
+    "J3": {
+      "value": "LEFT MOTOR + ENCODER",
+      "at_pcb_mm": [
+        3,
+        44
+      ],
+      "model_paths": [
+        "${KIPRJMOD}/models/Connector_Molex_Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical.step"
+      ],
+      "bounds_mm": [
+        [
+          -78.4499999601394,
+          -11.999999888241291,
+          8.4150000808388
+        ],
+        [
+          -65.55000022053719,
+          -4.350000077858567,
+          21.51499994635582
+        ]
+      ]
+    },
+    "J4": {
+      "value": "RIGHT MOTOR + ENCODER",
+      "at_pcb_mm": [
+        3,
+        55.4
+      ],
+      "model_paths": [
+        "${KIPRJMOD}/models/Connector_Molex_Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical.step"
+      ],
+      "bounds_mm": [
+        [
+          -78.4499999601394,
+          -23.39999988824129,
+          8.4150000808388
+        ],
+        [
+          -65.55000022053719,
+          -15.750000077858566,
+          21.51499994635582
+        ]
+      ]
+    },
+    "J5": {
+      "value": "ARM / DATA V+ GND",
+      "at_pcb_mm": [
+        22.5,
+        66.355,
+        180
+      ],
+      "model_paths": [
+        "${KIPRJMOD}/models/Molex_22035035_VERTICAL_DIMENSIONED_REFERENCE.step"
+      ],
+      "bounds_mm": [
+        [
+          -62.949999917298555,
+          -32.455000089034456,
+          8.114999891966582
+        ],
+        [
+          -53.049999970942736,
+          -27.555000030919928,
+          17.515000222027304
+        ]
+      ]
+    },
+    "J7": {
+      "value": "SPEAKER / 4 ohm 3 W",
+      "at_pcb_mm": [
+        73.05,
+        64,
+        90
+      ],
+      "model_paths": [
+        "${KIPRJMOD}/models/Connector_JST_JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical.step"
+      ],
+      "bounds_mm": [
+        [
+          -6.700000054016712,
+          -28.949999947100878,
+          8.214999954923988
+        ],
+        [
+          -2.150000099837783,
+          -23.050000190734863,
+          17.615000052154066
+        ]
+      ]
+    },
+    "J10": {
+      "value": "XT30UPB-M.G.Y / FUSED 3S INPUT",
+      "at_pcb_mm": [
+        25,
+        2,
+        180
+      ],
+      "model_paths": [
+        "${KIPRJMOD}/models/XT30UPB-M_REFERENCE.step"
+      ],
+      "bounds_mm": [
+        [
+          -60.600000128149986,
+          32.20000009983778,
+          8.614999973922968
+        ],
+        [
+          -50.39999999292195,
+          37.79999990016222,
+          22.31500045001507
+        ]
+      ]
+    },
+    "J14": {
+      "value": "FAN 1 / 3S",
+      "at_pcb_mm": [
+        31.2,
+        71.8,
+        180
+      ],
+      "model_paths": [
+        "${KIPRJMOD}/models/Connector_JST_JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical.step"
+      ],
+      "bounds_mm": [
+        [
+          -51.74999997317791,
+          -37.149999966099855,
+          8.214999954923988
+        ],
+        [
+          -44.34999997094274,
+          -31.399999954923985,
+          18.61500021606684
+        ]
+      ]
+    },
+    "J15": {
+      "value": "FAN 2 / 3S",
+      "at_pcb_mm": [
+        40.1,
+        71.8,
+        180
+      ],
+      "model_paths": [
+        "${KIPRJMOD}/models/Connector_JST_JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical.step"
+      ],
+      "bounds_mm": [
+        [
+          -42.84999997317791,
+          -37.149999966099855,
+          8.214999954923988
+        ],
+        [
+          -35.449999970942734,
+          -31.399999954923985,
+          18.61500021606684
+        ]
+      ]
+    }
+  },
+  "native_glb_component_nodes": [
+    {
+      "children": [
+        8
+      ],
+      "translation": [
+        0.003,
+        0.0016150000000000001,
+        0.0554
+      ],
+      "name": "J4"
+    },
+    {
+      "children": [
+        58
+      ],
+      "translation": [
+        0.0345,
+        0.0016150000000000001,
+        0.0013000000000000002
+      ],
+      "name": "J2"
+    },
+    {
+      "children": [
+        99
+      ],
+      "rotation": [
+        0.0,
+        1.0,
+        0.0,
+        6.123233995736766e-17
+      ],
+      "translation": [
+        0.0225,
+        0.0016150000000000001,
+        0.06635500000000001
+      ],
+      "name": "J5"
+    },
+    {
+      "children": [
+        119
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865475
+      ],
+      "translation": [
+        0.07305,
+        0.0016150000000000001,
+        0.064
+      ],
+      "name": "J7"
+    },
+    {
+      "children": [
+        145
+      ],
+      "translation": [
+        0.0475,
+        0.0016150000000000001,
+        0.0713
+      ],
+      "name": "F2"
+    },
+    {
+      "children": [
+        150
+      ],
+      "translation": [
+        0.003,
+        0.0016150000000000001,
+        0.044
+      ],
+      "name": "J3"
+    },
+    {
+      "children": [
+        171
+      ],
+      "rotation": [
+        0.0,
+        1.0,
+        0.0,
+        6.123233995736766e-17
+      ],
+      "translation": [
+        0.0312,
+        0.0016150000000000001,
+        0.0718
+      ],
+      "name": "J14"
+    },
+    {
+      "children": [
+        199
+      ],
+      "translation": [
+        0.056,
+        0.0016150000000000001,
+        0.057
+      ],
+      "name": "F1"
+    },
+    {
+      "children": [
+        229
+      ],
+      "rotation": [
+        0.0,
+        1.0,
+        0.0,
+        6.123233995736766e-17
+      ],
+      "translation": [
+        0.040100000000000004,
+        0.0016150000000000001,
+        0.0718
+      ],
+      "name": "J15"
+    },
+    {
+      "children": [
+        285
+      ],
+      "rotation": [
+        0.0,
+        1.0,
+        0.0,
+        6.123233995736766e-17
+      ],
+      "translation": [
+        0.025,
+        0.0016150000000000001,
+        0.002
+      ],
+      "name": "J10"
+    }
+  ],
+  "model_instances": 206,
+  "model_files": [
+    {
+      "path": "Bourns_CSS2H_2512K_2L00F_ENVELOPE.step",
+      "sha256": "2935d9fe6762f96ef8f63ecf8878f15ce7797ececc3786e9df4f7165bb3de0cf"
+    },
+    {
+      "path": "Button_Switch_SMD_SW_Push_1P1T_NO_CK_KMR2.step",
+      "sha256": "3bc8d332afe2964b582d8caddfabf0912a948d62325ecb4300adcefa2eadc874"
+    },
+    {
+      "path": "Capacitor_SMD_CP_Elec_6.3x5.9.step",
+      "sha256": "db9f56772f8759b93f4ba0b274e293a14bbd3c7d5f2de835feeabb78b0c02d76"
+    },
+    {
+      "path": "Capacitor_SMD_C_0603_1608Metric.step",
+      "sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+    },
+    {
+      "path": "Capacitor_SMD_C_0805_2012Metric.step",
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c"
+    },
+    {
+      "path": "Capacitor_SMD_C_1206_3216Metric.step",
+      "sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a"
+    },
+    {
+      "path": "Capacitor_SMD_C_1210_3225Metric.step",
+      "sha256": "f8510481c5044113cf49b0fa6dd54ddab9224508bd6808e1afab8ef0cefdefc9"
+    },
+    {
+      "path": "Connector_JST_JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical.step",
+      "sha256": "cab512a9b16c7568ed6e0047c17de04c4dd11893cdee71cb33fb51768543f927"
+    },
+    {
+      "path": "Connector_JST_JST_SH_BM06B-SRSS-TB_1x06-1MP_P1.00mm_Vertical.step",
+      "sha256": "3542ff3606fe531a56b4051935716b0f13dd857908b5cb5237af98bdbe29716a"
+    },
+    {
+      "path": "Connector_JST_JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical.step",
+      "sha256": "7287616fdad677e9b54cf5494f17efc4b3fb77be002659d73e215772393f20c6"
+    },
+    {
+      "path": "Connector_Molex_Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical.step",
+      "sha256": "6f690556ab4e93c8b7f977affc0e68c75bf6f6a7be0b0cf42290f7e280442406"
+    },
+    {
+      "path": "Connector_Molex_Molex_Micro-Fit_3.0_43045-1012_2x05_P3.00mm_Vertical.step",
+      "sha256": "fbbb5793083b5973267f8b0dabb12f926dfddbf0627ccb211730f7b97dd0cabc"
+    },
+    {
+      "path": "Connector_USB_USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step",
+      "sha256": "6338ce740fa231c2d3dcc6384e0576994a47240a312a21413cb85d76990a69a0"
+    },
+    {
+      "path": "Diode_SMD_D_SMB.step",
+      "sha256": "029466277d91e9f5492556be93e46611049e07115c7913880c547afa96058ed4"
+    },
+    {
+      "path": "Diode_SMD_D_SOD-123.step",
+      "sha256": "b3dc4065573abc72e3d5b4cca0e908f72a24205a41b6284b1f75ccacbe99adf8"
+    },
+    {
+      "path": "Diode_SMD_D_SOD-323.step",
+      "sha256": "cd8619b2119cd95683a2c5e660ab4f2d4db674f696cd6f9e9756f221171a214d"
+    },
+    {
+      "path": "Diode_SMD_D_SOD-523.step",
+      "sha256": "b525222377930c32abea58606bffba3aaf171cc66ac292b82d28a82d646d995d"
+    },
+    {
+      "path": "Diode_SMD_Nexperia_CFP3_SOD-123W.step",
+      "sha256": "b7e56594bfc2e4eec42ca2b7b7911cc7eff91c1f55a3c8db11ddfba2e5ce21d7"
+    },
+    {
+      "path": "Inductor_SMD_L_Bourns_SRP6060FA.step",
+      "sha256": "c7a9e2fe6362c19c7d270c9ce5b55bc154ec0b2cf6723e520f5afaa3aa3924a8"
+    },
+    {
+      "path": "Inductor_SMD_L_Coilcraft_XAL4020-XXX.step",
+      "sha256": "ccccee60d1c700cb295b890024e8da4e4d7507b6b69039c751b6dcc3e91bd3ee"
+    },
+    {
+      "path": "LED_SMD_LED_0603_1608Metric.step",
+      "sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "path": "Littelfuse_0451001_MRL_VISUAL.step",
+      "sha256": "ac63f50b23a3d9ca0bacccdae4a557fe4d9f1350cabea3501b1bdea8abdd0edf"
+    },
+    {
+      "path": "Littelfuse_08853_15DR_VISUAL.step",
+      "sha256": "cebd4d2019cae91df5cfd0dc6d185ec6e030751217ce809b49845a697014fce8"
+    },
+    {
+      "path": "MAX98357A_TQFN16_BODY_ENVELOPE.step",
+      "sha256": "2e254212c1d595af31582ab1e79fedf41f1f658b087d826bd18a2de9bac6bb4d"
+    },
+    {
+      "path": "Molex_22035035_VERTICAL_DIMENSIONED_REFERENCE.step",
+      "sha256": "03aee1269e2dddcd27cde96ea4c44753ebe60a13bfe4396765f68b3842d2504f"
+    },
+    {
+      "path": "Package_DFN_QFN_Texas_RVC0020A_WQFN-20-1EP_3x4mm_P0.5mm_EP1.6x2.6mm.step",
+      "sha256": "f257536c2c62c3b774a8d2e72792a5e607e79f19c56edb5e8211258bed260d6c"
+    },
+    {
+      "path": "Package_SON_VSON-8-1EP_3x3mm_P0.65mm_EP1.65x2.4mm.step",
+      "sha256": "1050def5c38af941aebf6e8f32735342c3682a02492520c8a60367d50292e2ab"
+    },
+    {
+      "path": "Package_SO_MSOP-10_3x3mm_P0.5mm.step",
+      "sha256": "b8f88eac3ce221c2ccb0b5048f9ad49c2ef4af148f8ae50c4e232e357683f547"
+    },
+    {
+      "path": "Package_SO_TSSOP-14_4.4x5mm_P0.65mm.step",
+      "sha256": "3ee5786aae56190997aa793ba3cfc003fd616782770e29719b4562f012982245"
+    },
+    {
+      "path": "Package_SO_TSSOP-8_4.4x3mm_P0.65mm.step",
+      "sha256": "2299fb3b85d686800712b24f5411cd4896ad7de29f3aab656d6dc1006211629b"
+    },
+    {
+      "path": "Package_SO_VSSOP-8_2.3x2mm_P0.5mm.step",
+      "sha256": "353552981eef35cb93635057d4aeb89aef22648c77af6fd095e328bfe6b834bd"
+    },
+    {
+      "path": "Package_TO_SOT_SMD_SOT-23-5.step",
+      "sha256": "720a6eab0024069bbee68e7cb4c3ff1149468a34611225cdc852662c5d0ec2b7"
+    },
+    {
+      "path": "Package_TO_SOT_SMD_SOT-23-6.step",
+      "sha256": "c9fe686b4d1b56927a41fa84a9bc1efb61d8a45a123a3db43bcaa05c2891d635"
+    },
+    {
+      "path": "Package_TO_SOT_SMD_SOT-23.step",
+      "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0"
+    },
+    {
+      "path": "Package_TO_SOT_SMD_SOT-323_SC-70.step",
+      "sha256": "acbf75a28fe41aa90efb38cd2b78220968d6eb6ebae1625dfd532dbeb268fece"
+    },
+    {
+      "path": "Package_TO_SOT_SMD_SOT-353_SC-70-5.step",
+      "sha256": "2860de5b7b085919ff6e952148353f928798588d9f544dc69430545aff2ba908"
+    },
+    {
+      "path": "RF_Module_ESP32-S3-WROOM-1U.step",
+      "sha256": "9255fcb7efa11e68753c797987752cc076df8914b6cfecd30d7d0dd8c97bb46a"
+    },
+    {
+      "path": "Resistor_SMD_R_0402_1005Metric.step",
+      "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb"
+    },
+    {
+      "path": "Resistor_SMD_R_0603_1608Metric.step",
+      "sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+    },
+    {
+      "path": "Resistor_SMD_R_1206_3216Metric.step",
+      "sha256": "f5d1ea5c47935091292bd1c6c698e0df88d3d4bbf92bf66b4c97e49df5be9ebc"
+    },
+    {
+      "path": "TerminalBlock_Phoenix_TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal.step",
+      "sha256": "2684469b03d2dd46f26862eb86eb283215344c311dd485db877e7139b5381497"
+    },
+    {
+      "path": "Vishay_SiRA99DP_PowerPAK_SO8_ENVELOPE.step",
+      "sha256": "83100492cebada0f7085ddd8d43595b3a87472719f57e7b1c7354b573d97861a"
+    },
+    {
+      "path": "XT30UPB-M_REFERENCE.step",
+      "sha256": "c1d027e0359f35ec4e0e37047a1463c70507c714c46f50fb66df226e35d89347"
+    }
+  ],
+  "model_for_F3": {
+    "value": "1A / 125V fast",
+    "at_pcb_mm": [
+      56,
+      71.3
+    ],
+    "model_paths": []
+  },
+  "prototype_label": {
+    "text": "MOSS CORE V0.7\\nPROTOTYPE",
+    "layer": "B.SilkS",
+    "pcb_xy_mm": [
+      42,
+      60.5
+    ],
+    "exported_as": "Native KiCad tessellated silkscreen faces"
+  },
+  "color_storage": {
+    "rgb": "Core_facecolors is native GLB material main_color RGB divided by 255; compatible with existing VTK scene pipeline",
+    "rgba": "Core_facecolors_rgba preserves native material RGBA in uint8, including soldermask alpha",
+    "glb": "Original PBR materials remain unchanged in current_core.glb"
+  },
+  "scope": [
+    "Fresh export of the exact current PCB, including compact F1, J14/J15 fan connectors, current copper/pads/zones/silkscreen/soldermask.",
+    "Only source-attached native component models are used; no external power module or fuse-holder is imported.",
+    "No legacy Core mesh reused.",
+    "No PCB source edits, electrical validation or STEP export performed."
+  ],
+  "display_only_override": "build_harness.py displays green soldermask-sized material classes as black to match the current native black-mask intent; no source PCB geometry or electrical data changed."
+}

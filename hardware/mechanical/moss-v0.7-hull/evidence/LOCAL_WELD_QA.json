@@ -1,0 +1,19 @@
+{
+  "operation": "Merge only one pair of coincident boundary vertices along original rim; no global quantization, mesh simplification or filling.",
+  "target_vertex_indices": [
+    5385,
+    13454
+  ],
+  "maximum_displacement_mm": 8.529922399520072e-06,
+  "removed_zero_area_degenerate_faces": 0,
+  "faces_before": 74670,
+  "faces_after": 74670,
+  "watertight": true,
+  "winding_consistent": true,
+  "is_volume": true,
+  "boundary_edges": 0,
+  "nonmanifold_edges": 0,
+  "volume_mm3": 635406.7428325359,
+  "volume_delta_mm3": 3.8868398405611515e-05,
+  "connected_shells": 3
+}

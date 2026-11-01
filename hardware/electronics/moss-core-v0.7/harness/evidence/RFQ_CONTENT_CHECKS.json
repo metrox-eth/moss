@@ -1,0 +1,17 @@
+{
+  "status": "PASS_CURRENT_RFQ_STATIC_AND_VISUAL",
+  "board_sha256": "7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14",
+  "route_lengths_sha256": "ffa1e1283457c61096f7128c7c20471511b5268852f9a02089c626a8f6d9c91f",
+  "route_count": 14,
+  "custom_wire_count": 42,
+  "standard_usb_assembly_count": 3,
+  "current_input_hash_matches": true,
+  "all_wire_lengths_match_routes": true,
+  "empty_cavities": true,
+  "no_retired_names_in_pdf": true,
+  "pdf_page_count": 6,
+  "contacts_18AWG": 8,
+  "contacts_24AWG": 13,
+  "visual_review": "Final ffa1 pages1/2/4/6 rerendered and inspected; no clipping/overflow. Pages3/5 unchanged and inspected previously. PNGtoptextleftx73-74px validates normal margins.",
+  "scope": "Static wire/connector consistency and visual PDF QA; no physical harness qualification."
+}

@@ -1,0 +1,757 @@
+{
+  "status": "NO_CAD_INTERSECTION_FOR_SIX_FULL_SLEEVE_ENVELOPES",
+  "units": "mm",
+  "source": "ROUTE_LENGTHS.json",
+  "route_lengths_sha256": "22f0bfdbeaa45003d4a52326027f03cda3072fdc5cbae1c2f10dfcd4a9a21c2e",
+  "PCB_sha256": "7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14",
+  "Pi_source": "orpi.step",
+  "Pi_source_sha256": "d3fd550932f408df51b4174cb23e7146278d69728176bdea5215d239a55a464b",
+  "Pi_transform_translation_mm": [
+    -26.124103,
+    0.822605,
+    32.8
+  ],
+  "Pi_rotation_deg": 0,
+  "Pi_scale": 1,
+  "Pi_source_component_count": 123,
+  "Pi_source_solid_count": 123,
+  "Pi_bbox_mm": [
+    -70.500019172171,
+    -4.0773951,
+    29.549948461179667,
+    -5.202299192480776,
+    29.244408807519225,
+    41.74
+  ],
+  "method": "Exact cubic-Hermite-to-Bezier centreline from export_harness_step.hermite_geometry, swept full sleeve outer diameter as a conservative occupied solid. Native complete Orange Pi STEP occurrence transforms preserved, including connector bodies and GPIO pins. CAD BRep min-distance plus exact common booleans for every full route; NO initial/final length exclusions. Full annular CAD20mm standoffs checked separately.",
+  "standoffs": {
+    "H5": {
+      "bbox_mm": [
+        -69.5,
+        22.0,
+        11.6,
+        -64.5,
+        27.0,
+        31.6
+      ],
+      "valid": true,
+      "outer_diameter_mm": 5.0,
+      "hole_diameter_mm": 2.1,
+      "height_mm": 20,
+      "CAD_recipe_source": "build_v07_mechanics.py"
+    },
+    "H6": {
+      "bbox_mm": [
+        -11.5,
+        22.0,
+        11.6,
+        -6.499999999999999,
+        27.0,
+        31.6
+      ],
+      "valid": true,
+      "outer_diameter_mm": 5.0,
+      "hole_diameter_mm": 2.1,
+      "height_mm": 20,
+      "CAD_recipe_source": "build_v07_mechanics.py"
+    },
+    "H7": {
+      "bbox_mm": [
+        -69.5,
+        -1.0,
+        11.6,
+        -64.5,
+        4.0,
+        31.6
+      ],
+      "valid": true,
+      "outer_diameter_mm": 5.0,
+      "hole_diameter_mm": 2.1,
+      "height_mm": 20,
+      "CAD_recipe_source": "build_v07_mechanics.py"
+    },
+    "H8": {
+      "bbox_mm": [
+        -11.5,
+        -1.0,
+        11.6,
+        -6.5,
+        4.0,
+        31.6
+      ],
+      "valid": true,
+      "outer_diameter_mm": 5.0,
+      "hole_diameter_mm": 2.1,
+      "height_mm": 20,
+      "CAD_recipe_source": "build_v07_mechanics.py"
+    }
+  },
+  "routes": [
+    {
+      "id": "H01",
+      "route_lengths_sha256_for_this_route": "22f0bfdbeaa45003d4a52326027f03cda3072fdc5cbae1c2f10dfcd4a9a21c2e",
+      "sleeve_outer_diameter_mm": 6.06,
+      "sweep_valid": true,
+      "sweep_solid_count": 1,
+      "sweep_volume_mm3": 4685.490063523002,
+      "sweep_bbox_mm": [
+        -58.813338749117584,
+        32.836359197391936,
+        30.77878352489404,
+        82.00000010000007,
+        63.550883595010674,
+        65.18056219080535
+      ],
+      "max_curve_reconstruction_error_mm": 7.177095570893082e-05,
+      "excluded_endpoint_length_mm": 0,
+      "Pi_minimum_CAD_distance_mm": 4.405228771215254,
+      "Pi_nearest_component_path": "/orpi/=>[0:1:1:12]__label_0_1_1_1_11/native_solid_1",
+      "Pi_common_volume_sum_over_components_mm3": 0,
+      "Pi_intersecting_components": [],
+      "standoffs": [
+        {
+          "standoff": "H5",
+          "minimum_CAD_distance_mm": 10.70380863154668,
+          "common_volume_mm3": 0.0
+        },
+        {
+          "standoff": "H6",
+          "minimum_CAD_distance_mm": 25.084385517044037,
+          "common_volume_mm3": 0.0
+        },
+        {
+          "standoff": "H7",
+          "minimum_CAD_distance_mm": 30.82129268782755,
+          "common_volume_mm3": 0.0
+        },
+        {
+          "standoff": "H8",
+          "minimum_CAD_distance_mm": 47.47615985758751,
+          "common_volume_mm3": 0.0
+        }
+      ],
+      "status": "NO_CAD_INTERSECTION",
+      "checked_control_points_mm": [
+        [
+          -55.5,
+          35.0,
+          32.9
+        ],
+        [
+          -55.5,
+          40,
+          38
+        ],
+        [
+          -47,
+          49,
+          38
+        ],
+        [
+          -27,
+          52,
+          38
+        ],
+        [
+          -6,
+          55,
+          39
+        ],
+        [
+          13,
+          57,
+          46
+        ],
+        [
+          17,
+          60,
+          58
+        ],
+        [
+          36,
+          60,
+          62
+        ],
+        [
+          48,
+          56,
+          62
+        ],
+        [
+          64,
+          56,
+          62
+        ],
+        [
+          72,
+          60,
+          62
+        ],
+        [
+          82,
+          60,
+          62
+        ]
+      ]
+    },
+    {
+      "id": "H03",
+      "route_lengths_sha256_for_this_route": "22f0bfdbeaa45003d4a52326027f03cda3072fdc5cbae1c2f10dfcd4a9a21c2e",
+      "sleeve_outer_diameter_mm": 7.1,
+      "sweep_valid": true,
+      "sweep_solid_count": 1,
+      "sweep_volume_mm3": 3380.463013554833,
+      "sweep_bbox_mm": [
+        -93.93406689056214,
+        31.009371917964156,
+        27.678596006323975,
+        -33.67898439449523,
+        58.99561052452039,
+        65.58289764165953
+      ],
+      "max_curve_reconstruction_error_mm": 6.947908849217674e-05,
+      "excluded_endpoint_length_mm": 0,
+      "Pi_minimum_CAD_distance_mm": 1.769334650293644,
+      "Pi_nearest_component_path": "/orpi/WR-FPC:1__label_0_1_1_1_8/native_solid_24",
+      "Pi_common_volume_sum_over_components_mm3": 0,
+      "Pi_intersecting_components": [],
+      "standoffs": [
+        {
+          "standoff": "H5",
+          "minimum_CAD_distance_mm": 25.03795589448091,
+          "common_volume_mm3": 0.0
+        },
+        {
+          "standoff": "H6",
+          "minimum_CAD_distance_mm": 24.0918268452608,
+          "common_volume_mm3": 0.0
+        },
+        {
+          "standoff": "H7",
+          "minimum_CAD_distance_mm": 38.1850338841763,
+          "common_volume_mm3": 0.0
+        },
+        {
+          "standoff": "H8",
+          "minimum_CAD_distance_mm": 37.52769942872085,
+          "common_volume_mm3": 0.0
+        }
+      ],
+      "status": "NO_CAD_INTERSECTION",
+      "checked_control_points_mm": [
+        [
+          -37.5,
+          34.199999999999996,
+          29.235
+        ],
+        [
+          -37.5,
+          37.5,
+          36
+        ],
+        [
+          -37.5,
+          44,
+          47
+        ],
+        [
+          -42,
+          51,
+          56
+        ],
+        [
+          -62,
+          55,
+          61
+        ],
+        [
+          -82,
+          55,
+          62
+        ],
+        [
+          -93,
+          52,
+          62
+        ]
+      ]
+    },
+    {
+      "id": "H04",
+      "route_lengths_sha256_for_this_route": "22f0bfdbeaa45003d4a52326027f03cda3072fdc5cbae1c2f10dfcd4a9a21c2e",
+      "sleeve_outer_diameter_mm": 6.09,
+      "sweep_valid": true,
+      "sweep_solid_count": 1,
+      "sweep_volume_mm3": 1467.9415792670197,
+      "sweep_bbox_mm": [
+        -100.59142837355681,
+        -11.927386362518993,
+        19.626988417391015,
+        -69.61855631448617,
+        11.376621061601988,
+        40.33359408984603
+      ],
+      "max_curve_reconstruction_error_mm": 6.99712853807414e-05,
+      "excluded_endpoint_length_mm": 0,
+      "Pi_minimum_CAD_distance_mm": 3.6767139078316973,
+      "Pi_nearest_component_path": "/orpi/=>[0:1:1:12]__label_0_1_1_1_11/native_solid_1",
+      "Pi_common_volume_sum_over_components_mm3": 0,
+      "Pi_intersecting_components": [],
+      "standoffs": [
+        {
+          "standoff": "H5",
+          "minimum_CAD_distance_mm": 22.081825323114774,
+          "common_volume_mm3": 0.0
+        },
+        {
+          "standoff": "H6",
+          "minimum_CAD_distance_mm": 66.0829831134807,
+          "common_volume_mm3": 0.0
+        },
+        {
+          "standoff": "H7",
+          "minimum_CAD_distance_mm": 5.767663806149156,
+          "common_volume_mm3": 0.0
+        },
+        {
+          "standoff": "H8",
+          "minimum_CAD_distance_mm": 58.889176372154836,
+          "common_volume_mm3": 0.0
+        }
+      ],
+      "status": "NO_CAD_INTERSECTION",
+      "checked_control_points_mm": [
+        [
+          -72.0,
+          -8.5,
+          29.235
+        ],
+        [
+          -75,
+          -8.5,
+          33
+        ],
+        [
+          -83,
+          -8.5,
+          37
+        ],
+        [
+          -88,
+          -3,
+          37
+        ],
+        [
+          -89,
+          7.8,
+          33
+        ],
+        [
+          -93,
+          7.8,
+          24
+        ],
+        [
+          -100,
+          7.8,
+          22.614
+        ]
+      ]
+    },
+    {
+      "id": "H08_chassis",
+      "route_lengths_sha256_for_this_route": "22f0bfdbeaa45003d4a52326027f03cda3072fdc5cbae1c2f10dfcd4a9a21c2e",
+      "sleeve_outer_diameter_mm": 2.55,
+      "sweep_valid": true,
+      "sweep_solid_count": 1,
+      "sweep_volume_mm3": 643.3538914423992,
+      "sweep_bbox_mm": [
+        -19.570052401951564,
+        29.98885216369119,
+        15.02337900319792,
+        22.58982452997233,
+        85.31977489701087,
+        62.37883827639503
+      ],
+      "max_curve_reconstruction_error_mm": 7.38411028249995e-05,
+      "excluded_endpoint_length_mm": 0,
+      "Pi_minimum_CAD_distance_mm": 8.802560985988634,
+      "Pi_nearest_component_path": "/orpi/=>[0:1:1:12]__label_0_1_1_1_11/native_solid_1",
+      "Pi_common_volume_sum_over_components_mm3": 0,
+      "Pi_intersecting_components": [],
+      "standoffs": [
+        {
+          "standoff": "H5",
+          "minimum_CAD_distance_mm": 45.619786461636316,
+          "common_volume_mm3": 0.0
+        },
+        {
+          "standoff": "H6",
+          "minimum_CAD_distance_mm": 7.305144142991117,
+          "common_volume_mm3": 0.0
+        },
+        {
+          "standoff": "H7",
+          "minimum_CAD_distance_mm": 53.37923903104376,
+          "common_volume_mm3": 0.0
+        },
+        {
+          "standoff": "H8",
+          "minimum_CAD_distance_mm": 27.278826510944885,
+          "common_volume_mm3": 0.0
+        }
+      ],
+      "status": "NO_CAD_INTERSECTION",
+      "checked_control_points_mm": [
+        [
+          -18.0,
+          30.675,
+          20.6
+        ],
+        [
+          -18,
+          36,
+          24
+        ],
+        [
+          -11,
+          41,
+          25
+        ],
+        [
+          3,
+          43,
+          24
+        ],
+        [
+          13,
+          46,
+          20
+        ],
+        [
+          18,
+          55,
+          17
+        ],
+        [
+          18,
+          70,
+          17
+        ],
+        [
+          18,
+          83,
+          28
+        ],
+        [
+          21,
+          83,
+          49
+        ],
+        [
+          21,
+          81,
+          61
+        ],
+        [
+          18,
+          74,
+          58
+        ]
+      ]
+    },
+    {
+      "id": "H05",
+      "route_lengths_sha256_for_this_route": "22f0bfdbeaa45003d4a52326027f03cda3072fdc5cbae1c2f10dfcd4a9a21c2e",
+      "sleeve_outer_diameter_mm": 6.09,
+      "sweep_valid": true,
+      "sweep_solid_count": 1,
+      "sweep_volume_mm3": 3477.9371140195785,
+      "sweep_bbox_mm": [
+        -157.68790433993783,
+        -23.562273128704412,
+        19.269929814845504,
+        -70.5264236967583,
+        3.3224800191128816,
+        36.35565326811185
+      ],
+      "max_curve_reconstruction_error_mm": 7.808937195569868e-05,
+      "excluded_endpoint_length_mm": 0,
+      "Pi_minimum_CAD_distance_mm": 14.374535312086321,
+      "Pi_nearest_component_path": "/orpi/=>[0:1:1:12]__label_0_1_1_1_11/native_solid_1",
+      "Pi_common_volume_sum_over_components_mm3": 0,
+      "Pi_intersecting_components": [],
+      "standoffs": [
+        {
+          "standoff": "H5",
+          "minimum_CAD_distance_mm": 31.568999536296865,
+          "common_volume_mm3": 0.0
+        },
+        {
+          "standoff": "H6",
+          "minimum_CAD_distance_mm": 72.46187979719217,
+          "common_volume_mm3": 0.0
+        },
+        {
+          "standoff": "H7",
+          "minimum_CAD_distance_mm": 16.499348761925404,
+          "common_volume_mm3": 0.0
+        },
+        {
+          "standoff": "H8",
+          "minimum_CAD_distance_mm": 62.34238156051421,
+          "common_volume_mm3": 0.0
+        }
+      ],
+      "status": "NO_CAD_INTERSECTION",
+      "checked_control_points_mm": [
+        [
+          -72.0,
+          -19.900000000000002,
+          29.235
+        ],
+        [
+          -77,
+          -19.9,
+          32
+        ],
+        [
+          -87,
+          -20,
+          32
+        ],
+        [
+          -93,
+          -2,
+          30
+        ],
+        [
+          -110,
+          0,
+          31
+        ],
+        [
+          -135,
+          0,
+          33
+        ],
+        [
+          -153,
+          -2,
+          32
+        ],
+        [
+          -154,
+          -7.8,
+          23
+        ],
+        [
+          -142,
+          -7.8,
+          22.614
+        ]
+      ]
+    },
+    {
+      "id": "H03_power_branch",
+      "checked_control_points_mm": [
+        [
+          -93,
+          52,
+          62
+        ],
+        [
+          -88,
+          43,
+          62
+        ],
+        [
+          -87,
+          10,
+          62
+        ],
+        [
+          -89,
+          -36,
+          61
+        ],
+        [
+          -104,
+          -58,
+          59
+        ],
+        [
+          -124.34,
+          -54,
+          57
+        ]
+      ],
+      "route_lengths_sha256_for_this_route": "ffa1e1283457c61096f7128c7c20471511b5268852f9a02089c626a8f6d9c91f",
+      "sleeve_outer_diameter_mm": 5.3,
+      "sweep_valid": true,
+      "sweep_solid_count": 1,
+      "sweep_volume_mm3": 3041.0645087326575,
+      "sweep_bbox_mm": [
+        -124.90906048079023,
+        -61.040949591394316,
+        54.36224819511893,
+        -83.99746011554706,
+        53.28695386762342,
+        64.69141868374064
+      ],
+      "max_curve_reconstruction_error_mm": 7.554365092969761e-05,
+      "excluded_endpoint_length_mm": 0,
+      "Pi_minimum_CAD_distance_mm": 29.036208896829926,
+      "Pi_nearest_component_path": "/orpi/M20-8762242:1__label_0_1_1_1_5/native_solid_20",
+      "Pi_common_volume_sum_over_components_mm3": 0,
+      "Pi_intersecting_components": [],
+      "standoffs": [
+        {
+          "standoff": "H5",
+          "minimum_CAD_distance_mm": 32.29457862845579,
+          "common_volume_mm3": 0.0
+        },
+        {
+          "standoff": "H6",
+          "minimum_CAD_distance_mm": 78.44077893640335,
+          "common_volume_mm3": 0.0
+        },
+        {
+          "standoff": "H7",
+          "minimum_CAD_distance_mm": 32.27318386310307,
+          "common_volume_mm3": 0.0
+        },
+        {
+          "standoff": "H8",
+          "minimum_CAD_distance_mm": 78.56891032841183,
+          "common_volume_mm3": 0.0
+        }
+      ],
+      "status": "NO_CAD_INTERSECTION"
+    }
+  ],
+  "limitations": [
+    "Conservative full-diameter sleeve envelope; not braid wall or compressible textile. Exact CAD collision test on declared nominal geometry, not physical fit or tolerance qualification.",
+    "The H03 common sleeved trunk and complete D5.3 four-output power branch are checked. Five unsleeved control fanout wires and other cable routes are outside this bounded sleeve-only test.",
+    "No connectors or other routes were changed by this check."
+  ],
+  "source_sha256_at_end": "22f0bfdbeaa45003d4a52326027f03cda3072fdc5cbae1c2f10dfcd4a9a21c2e",
+  "source_changed_during_run": false,
+  "all_checked_route_source_hashes_match_current": true,
+  "checked_sweep_count": 6,
+  "minimum_Pi_clearance_mm": 1.769334650293644,
+  "minimum_standoff_clearance_mm": 5.767663806149156,
+  "all_common_volumes_zero": true,
+  "H03_power_branch_envelope": "Additional conservative full sweep D5.3mm on entire power_branch_points_mm; the display sleeve is shorter, excluding first22/last36mm. This QA excludes no branch length.",
+  "current_geometry_equivalence": {
+    "current_route_lengths_sha256": "ffa1e1283457c61096f7128c7c20471511b5268852f9a02089c626a8f6d9c91f",
+    "exact_checked_control_points_and_diameters_match": {
+      "H01": true,
+      "H03": true,
+      "H04": true,
+      "H08_chassis": true,
+      "H05": true,
+      "H03_power_branch": true
+    },
+    "all_match": true,
+    "scope": "Five unchanged full-sleeve CAD results preserved exactly from the22f snapshot; H03 power branch recomputed against native Pi and standoffs on ffa1. Only unsleeved control fanout and power-branch geometry changed from e921; common trunk is exactly unchanged."
+  },
+  "elapsed_seconds_main_five_sweeps": 135.00019598007202,
+  "elapsed_seconds_additional_power_branch": 88.83834075927734,
+  "distance_method": "Exact BRep distance to native STEP solids, sorted by conservative bounding-box lower bounds; stop only when no unvisited solid can improve the current minimum. Exact common booleans for all bbox-overlapping native solids. No nearest-vertex or sampled-centreline approximation.",
+  "current_validation_status": "PASS_FIVE_PRESERVED_GEOMETRIES_PLUS_RECALCULATED_H03_POWER_BRANCH_ON_FINAL_ffa1",
+  "prior_power_branch_results": [
+    {
+      "id": "H03_power_branch",
+      "route_lengths_sha256_for_this_route": "22f0bfdbeaa45003d4a52326027f03cda3072fdc5cbae1c2f10dfcd4a9a21c2e",
+      "sleeve_outer_diameter_mm": 5.3,
+      "sweep_valid": true,
+      "sweep_solid_count": 1,
+      "sweep_volume_mm3": 3070.2855708527413,
+      "sweep_bbox_mm": [
+        -125.05005502780554,
+        -61.04496103126173,
+        54.39799855492934,
+        -84.0283280040255,
+        53.53623591907318,
+        69.36198336179297
+      ],
+      "max_curve_reconstruction_error_mm": 7.998984948548724e-05,
+      "excluded_endpoint_length_mm": 0,
+      "Pi_minimum_CAD_distance_mm": 32.13631715048052,
+      "Pi_nearest_component_path": "/orpi/M20-8762242:1__label_0_1_1_1_5/native_solid_20",
+      "Pi_common_volume_sum_over_components_mm3": 0,
+      "Pi_intersecting_components": [],
+      "standoffs": [
+        {
+          "standoff": "H5",
+          "minimum_CAD_distance_mm": 36.283420554957225,
+          "common_volume_mm3": 0.0
+        },
+        {
+          "standoff": "H6",
+          "minimum_CAD_distance_mm": 80.28218345312138,
+          "common_volume_mm3": 0.0
+        },
+        {
+          "standoff": "H7",
+          "minimum_CAD_distance_mm": 35.84012947314351,
+          "common_volume_mm3": 0.0
+        },
+        {
+          "standoff": "H8",
+          "minimum_CAD_distance_mm": 80.17187392644047,
+          "common_volume_mm3": 0.0
+        }
+      ],
+      "status": "NO_CAD_INTERSECTION",
+      "checked_control_points_mm": [
+        [
+          -93,
+          52,
+          62
+        ],
+        [
+          -88,
+          43,
+          66
+        ],
+        [
+          -87,
+          10,
+          66
+        ],
+        [
+          -89,
+          -36,
+          65
+        ],
+        [
+          -104,
+          -58,
+          61
+        ],
+        [
+          -124.34,
+          -54,
+          57
+        ]
+      ]
+    }
+  ],
+  "prior_current_geometry_validations": [
+    {
+      "current_route_lengths_sha256": "e921e6ab221b7ba81abcaf106c930dc62b840ba7d57944c25791e189dd5f94ff",
+      "exact_checked_control_points_and_diameters_match": {
+        "H01": true,
+        "H03": true,
+        "H04": true,
+        "H08_chassis": true,
+        "H05": true,
+        "H03_power_branch": true
+      },
+      "all_match": true,
+      "scope": "Full source may change for H08_lid and metadata; checked control points and sleeve diameters are compared exactly. Earlier source hashes remain in each route record."
+    }
+  ]
+}

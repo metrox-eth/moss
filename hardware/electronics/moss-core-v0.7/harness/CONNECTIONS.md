@@ -1,61 +1,36 @@
 # Where the cables go
 
-**STOP is J8. Battery is XT30 J10. USB is separate.** Crossing or sharing a routing corridor does not mean two cables are electrically connected.
+Updated 1 November 2026 for PCB `7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14`. Twelve external PCB connectors; fourteen routed paths.
 
-![Separate STOP and battery connections](media/STOP_AND_BATTERY.jpg)
+J3 is the complete left motor cable and J4 is the complete right motor cable, viewed in the rover's forward-driving direction. Each has six wires.
 
-```mermaid
-flowchart LR
-  B[3S battery + existing 15 A pack fuse] --> J10[Core J10: XT30 battery input]
-  STOP[STOP button on the lid] --> X08[Proposed inline disconnect]
-  X08 --> J8[Core J8: STOP signals]
-  J20[Core J20: 5 V output] --> PIP[Orange Pi POWER port]
-  PID[Orange Pi DATA port] <--> OTG[USB-C OTG adapter]
-  OTG <--> HUB[HB1 USB hub]
-  HUB <--> J1[Core J1: USB DATA]
-  HUB <--> PER[Camera / wrist camera / LiDAR]
-```
+Supply H02 and nine-wire H03 form one sleeved Cytron cable ensemble with TWO Core terminations: J11 for supply and J2 for controls plus four winding outputs. H03 has no supply-positive conductor. J2.5 is signal ground; driver supply current uses J11. Leave J2.10 empty. Neither winding lead is ground.
 
-The diagram describes the intended connections. Peripheral USB cables are not all drawn in the 3D packaging scene, and USB power/bandwidth performance is not validated by this model.
+| Core connector | Numbered cavities |
+| --- | --- |
+| J10 | 1 BAT_NEG (GND); 2 BAT_POS (BAT_PROTECTED) |
+| J11 | 1 CYTRON_BAT_POS (ACTUATOR_SW); 2 MOTOR_NEG (GND) |
+| J2 | 1 PWM1 (MDD_PWM1); 2 DIR1 (MDD_DIR1); 3 PWM2 (MDD_PWM2); 4 DIR2 (MDD_DIR2); 5 SIGNAL_GND (GND); 6 LEFT_A (CYTRON_L_LEAD); 7 LEFT_B (MOTOR_L_RETURN); 8 RIGHT_A (CYTRON_R_LEAD); 9 RIGHT_B (MOTOR_R_RETURN); 10 UNUSED (NO WIRE) |
+| J3 | 1 M1 (MOTOR_L_LEAD); 2 M2 (MOTOR_L_RETURN); 3 ENC_GND (GND); 4 ENC_3V3 (ENC_3V3); 5 ENC_A (EL_A_EXT); 6 ENC_B (EL_B_EXT) |
+| J4 | 1 M1 (MOTOR_R_LEAD); 2 M2 (MOTOR_R_RETURN); 3 ENC_GND (GND); 4 ENC_3V3 (ENC_3V3); 5 ENC_A (ER_A_EXT); 6 ENC_B (ER_B_EXT) |
+| J5 | 1 DATA (SERVO_BUS); 2 V_SERVO_3S (ACTUATOR_SW); 3 GND (GND) |
+| J7 | 1 SPK_P (SPEAKER_P); 2 SPK_N (SPEAKER_N) |
+| J8 | 1 CUT_SOURCE (ESTOP_CUT_SOURCE); 2 CUT_RETURN (ESTOP_CUT_RETURN); 3 DNC_3 (NO WIRE); 4 DNC_4 (NO WIRE); 5 STATUS_SOURCE (ESTOP_STATUS_SOURCE); 6 STATUS_RETURN (ESTOP_STATUS_RAW) |
+| J14 | 1 FAN_POS (FAN_3S); 2 FAN_NEG (GND) |
+| J15 | 1 FAN_POS (FAN_3S); 2 FAN_NEG (GND) |
 
-| Core connector | Connection | Important distinction |
-| --- | --- | --- |
-| J8 | STOP button, through the lid disconnect | Six-position JST SH housing with **four** contacts: 1, 2, 5 and 6. Positions 3 and 4 have no contact or wire. Low-current circuits only. |
-| J10 | Battery XT30 lead | Separate power feed. The existing external 15 A pack fuse remains required. |
-| J20 | Orange Pi **POWER** USB-C port | Power-only output. Not a hub data port. |
-| J1 | One HB1 downstream port | USB data connection to the Core controller. |
-| J11 | Cytron power input | Cytron remains a separate motor driver. |
-| J2 | Cytron control header | Five control/reference wires. |
-| J3 / J4 | Left / right encoder wiring | Four wires join the corresponding motor's six-way plug. |
-| J12 / J13 | Left / right motor-current measurement path | One motor leg runs through the corresponding measurement path; the other comes directly from the Cytron. Both reach the same motor plug. |
-| J5 | Arm servo chain | One three-wire bus connector, not six separate servo sockets. |
-| J7 | Speaker lead | Two amplifier outputs; neither is a ground return. |
-| J14 / J15 | Chassis fans | Fused 3S battery rail, not regulated 12 V. |
+## USB
 
-## STOP contact arrangement
+U01: Core J20 to Orange Pi POWER, complete C-to-C 5 V/3 A cable. U02: HB1 downstream to Core J1, complete A-to-C data cable. U03: Orange Pi DATA through a USB-C OTG adapter to the HB1 captive USB-A upstream lead. Hub downstream sockets serve Core, wrist camera, navigation camera and LiDAR. The HB1 has an 800 mm captive lead; only the routed portion is modelled. Store excess cable clear of fans and moving parts.
 
-The current Core circuit contract expects two independent normally closed contacts:
+## STOP and lid disconnect
 
-- J8.1 / J8.2: CUT source and return.
-- J8.5 / J8.6: STATUS source and return.
-- J8.3 / J8.4: deliberately unconnected.
+J8.1/2 connect to C1/NC1 and J8.5/6 to C2/NC2. Cavities 3 and 4 remain empty, with no contacts or wires. X08 is PicoBlade 51021-0400/51047-0400 with 50058-8000/50133-8000 contacts. Map J8.1/2/5/6 to X08 circuits 1/2/3/4, straight through. Use 28 AWG with insulation OD 0.50-0.80 mm. The connector is friction-retained; hold both housings when disconnecting. Only the STOP tail moves with the lid.
 
-For a newly supplied kit, specify **YJ-LA16-22ZS/A**, non-illuminated: C1-NC1 for CUT and C2-NC2 for STATUS. The existing unmarked button needs a continuity check to identify these pairs. The older LA16-11ZS/A BOM entry does not specify the two independent contacts required here.
+## Motor device ends
 
-The lid disconnect is **Molex PicoBlade 51021-0400 / 51047-0400**, female contacts **50058-8000**, male contacts **50133-8000**. Use **28 AWG, insulation OD 0.50-0.80 mm** throughout H08. Map J8.1/2/5/6 to inline circuits 1/2/3/4 respectively, by the manufacturer's cavity numbers. The connector is friction-retained; disconnect by its housings.
+Retain both six-wire pigtails supplied with Arduitronics RU00129. With power disconnected, trace each stock wire to the motor board's M1/M2, GND/VCC and C1/C2 markings. Record cavity numbers, wire gauge and insulation OD, then approve the factory wirelist. Device-end cavity numbering and OEM connector MPN are not established. Quote insulated factory transitions when the stock wire cannot be terminated directly with the specified Core contact. Never force 18 AWG into an unverified stock motor contact.
 
-## Motor plugs
+The current shunts remain on Core: Cytron M1A -> J2.6 -> left shunt -> J3.1; M1B -> J2.7 -> J3.2. Right side: M2A -> J2.8 -> right shunt -> J4.1; M2B -> J2.9 -> J4.2. J3/J4.3 is encoder GND, .4 is switched 3.3 V, .5 channel A/C1 and .6 channel B/C2. Neither .1 nor .2 is ground.
 
-Use the six-wire pigtails included with **Arduitronics RU00129**, JGB37-520, 12 V / 110 rpm. The product photos show M1/M2, VCC/GND and C1/C2 on the encoder board. Preserve the motor-end plugs and trace the supplied wires to those labels before terminating the first kit; record the result for both motors.
-
-Core encoder pin order is **1 GND, 2 switched 3.3 V, 3 A, 4 B**. Motor power goes to M1/M2, separately from encoder VCC/GND. Heavy power legs require a factory transition to the stock pigtails; do not force 16 AWG into the small motor contacts. The animation's colours are illustrative, not a crimp drawing.
-
-Manufacturer references and the reason for retaining the stock motor plugs are in [interface verification](INTERFACE_VERIFICATION.md).
-
-## Hub cable
-
-![HB1 and separate USB connections](media/USB_HUB.jpg)
-
-The model follows the official **USB-A HB1** product: four top USB-A ports and an 80 cm captive USB-A lead. A short USB-C OTG adapter is illustrated at the Orange Pi DATA connection. Only the routed portion of the captive lead is shown; the remaining cable storage, actual adapter dimensions and final bend radii are unresolved packaging details.
-
-Electrical reference: the current [Core connector guide](../CONNECTORS.md) and [physical-pin circuit contract](../electrical/circuit.json). This harness study does not modify either one.
+Speaker J7 has two driven amplifier outputs. Fans J14/J15 use fused 3S battery positive and GND, up to 12.6 V; they are not regulated 12 V outputs. J5 is one bus for the whole arm, not one connector per servo.

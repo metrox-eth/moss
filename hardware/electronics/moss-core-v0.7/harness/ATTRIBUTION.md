@@ -10,3 +10,5 @@ Earlier copies and releases supplied under CERN-OHL-S-2.0 retain the rights alre
 - HOCO, JST, Molex, AMASS, PCBWay and partner marks remain the property of their owners. This is a MOSS design study, not manufacturer endorsement or manufacturer mating CAD.
 - The HB1 geometry is reconstructed from public dimensions/photographs, linked in [MODEL_PROVENANCE.md](MODEL_PROVENANCE.md). The photos and gated supplier CAD files are not redistributed here.
 - The film reuses the existing MOSS soundtrack. Its separate source recording is not bundled or relicensed as code.
+
+- Micro-Fit cable housings are MOSS dimensional reconstructions based on [Molex430250000-SD](https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/430/43025/430251600_sd.pdf). Exact manufacturer cable-housing STEP was not obtained; cavity/key/latch visuals are not certified mating CAD. Current fixed Core headers remain native KiCad models.

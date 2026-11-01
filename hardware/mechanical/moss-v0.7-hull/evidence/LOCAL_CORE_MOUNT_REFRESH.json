@@ -1,0 +1,129 @@
+{
+  "status": "CURRENT_CORE_MOUNT_REFRESH_BASE_COMPLETE",
+  "pcb_sha256": "7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14",
+  "pattern_mm": [
+    74,
+    71
+  ],
+  "board_mm": [
+    82,
+    79,
+    1.6
+  ],
+  "board_outline_pcb_mm": [
+    [
+      -2,
+      -4
+    ],
+    [
+      80,
+      75
+    ]
+  ],
+  "pcb_to_hull": [
+    "world_x=pcb_x-78",
+    "world_y=37-pcb_y",
+    "PCB bottom Z10 mm"
+  ],
+  "mount_centres_pcb_mm": {
+    "H1": [
+      2,
+      0
+    ],
+    "H2": [
+      76,
+      0
+    ],
+    "H3": [
+      2,
+      71
+    ],
+    "H4": [
+      76,
+      71
+    ]
+  },
+  "mount_centres_hull_mm": {
+    "H1": [
+      -76,
+      37
+    ],
+    "H2": [
+      -2,
+      37
+    ],
+    "H3": [
+      -76,
+      -34
+    ],
+    "H4": [
+      -2,
+      -34
+    ]
+  },
+  "pilot_diameter_mm": 2.1,
+  "pilot_tool_z_mm": [
+    4,
+    10.2
+  ],
+  "boss_dimensions": {
+    "bottom_z": 2.8,
+    "foot_radius": 4.5,
+    "post_start_z": 6,
+    "post_radius": 3.25,
+    "top_z": 10,
+    "pilot_bottom_z": 4,
+    "pilot_radius": 1.05,
+    "pilot_height": 6.2
+  },
+  "geometry_changes": "Three Core floor bosses repositioned with original-native floor mask. Fourth boss and all non-Core geometry unchanged. Original floor lip restored at retired pilot sites.",
+  "native_validation": {
+    "new_step_valid": true,
+    "solid_count": 1,
+    "shell_count": 3,
+    "independent_root_report": "INDEPENDENT_HULL_PILOTS.json",
+    "volume_delta_check": "Builder cumulative local-material/global-volume residual passed <1 mm3 before export completion.",
+    "new_step_volume_mm3": 635464.2314885319,
+    "prior_step_volume_mm3": 635457.2221631577,
+    "global_volume_delta_mm3": 7.009325374267064
+  },
+  "mesh_generation": "Import the independently checked STEP, export STL with native Fusion mesh engine. No geometry edit.",
+  "mesh_weld": {
+    "operation": "Merge only one pair of coincident boundary vertices along original rim; no global quantization, mesh simplification or filling.",
+    "target_vertex_indices": [
+      5385,
+      13454
+    ],
+    "maximum_displacement_mm": 8.529922399520072e-06,
+    "removed_zero_area_degenerate_faces": 0,
+    "faces_before": 74670,
+    "faces_after": 74670,
+    "watertight": true,
+    "winding_consistent": true,
+    "is_volume": true,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "volume_mm3": 635406.7428325359,
+    "volume_delta_mm3": 3.8868398405611515e-05,
+    "connected_shells": 3
+  },
+  "artifacts": {
+    "cad/Hull_MOSS_V07_Core_Stack.step": {
+      "sha256": "93699d5219fa699f0ed72d8527ee1579ebd5b5b51b05fac893e344254e7bde37",
+      "bytes": 8796144
+    },
+    "stl/Hull_MOSS_V07_Print.stl": {
+      "sha256": "3bf5893f4bf1fae1a56c78f92af5f0615a3b058d9275406c3ca181befed899cd",
+      "bytes": 3733584
+    },
+    "cad/Hull_MOSS_V07_Core_74x71_EDITABLE.f3d": {
+      "sha256": "cf7568e6b675fd62b193d25f3ea2aa774c6301abdab9ccef405e8d1ec29c3d00",
+      "bytes": 3391770
+    }
+  },
+  "limits": [
+    "Offline geometry and native mesh checks; no physical print/fit claimed.",
+    "Current imported F3D has editable BRep, without reconstructed parametric history.",
+    "No identity claim between previous STL vertices and current native tessellation."
+  ]
+}

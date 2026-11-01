@@ -1,0 +1,409 @@
+{
+  "status": "PROTOTYPE_FIT_REQUIRED_NOT_FULL_COLLISION_QUALIFICATION",
+  "source_hull": "cad/Hull_MOSS_V07_Core_Stack.step",
+  "source_sha256": "93699d5219fa699f0ed72d8527ee1579ebd5b5b51b05fac893e344254e7bde37",
+  "stations": [
+    {
+      "x_mm": 18,
+      "y_mm": -25,
+      "angle_deg": 90,
+      "floor_min_mm": 4.853315219160699,
+      "floor_max_mm": 4.903133472521464,
+      "datum_z_mm": 4.913133472521464,
+      "floor_variation_mm": 0.0498182533607654,
+      "minimum_sampled_embed_mm": 0.5401817466392346,
+      "sample_count": 25,
+      "id": "T01",
+      "status": "ACCEPTED",
+      "bounds_mm": [
+        [
+          15.0,
+          -30.0,
+          4.313133472521464
+        ],
+        [
+          21.000000000000004,
+          -20.0,
+          9.113133472521465
+        ]
+      ],
+      "roof_top_mm": 9.113133472521465,
+      "anchor_volume_mm3": 228.91667210643635,
+      "floor_join_overlap_mm3": 33.67879373336771,
+      "hull_collision_above_datum_mm3": 0.0,
+      "device_xy_envelope_overlaps": []
+    },
+    {
+      "x_mm": 18,
+      "y_mm": 38,
+      "angle_deg": 90,
+      "floor_min_mm": 4.853316988912166,
+      "floor_max_mm": 4.903139602165446,
+      "datum_z_mm": 4.913139602165446,
+      "floor_variation_mm": 0.04982261325327997,
+      "minimum_sampled_embed_mm": 0.54017738674672,
+      "sample_count": 25,
+      "id": "T02",
+      "status": "ACCEPTED",
+      "bounds_mm": [
+        [
+          15.0,
+          33.0,
+          4.313139602165446
+        ],
+        [
+          21.000000000000004,
+          43.0,
+          9.113139602165447
+        ]
+      ],
+      "roof_top_mm": 9.113139602165447,
+      "anchor_volume_mm3": 228.91667210643638,
+      "floor_join_overlap_mm3": 33.67863056511645,
+      "hull_collision_above_datum_mm3": 0.0,
+      "device_xy_envelope_overlaps": []
+    },
+    {
+      "x_mm": 18,
+      "y_mm": 70,
+      "angle_deg": 90,
+      "floor_min_mm": 4.853314279829695,
+      "floor_max_mm": 4.903174381434432,
+      "datum_z_mm": 4.913174381434432,
+      "floor_variation_mm": 0.04986010160473775,
+      "minimum_sampled_embed_mm": 0.5401398983952622,
+      "sample_count": 25,
+      "id": "T03",
+      "status": "ACCEPTED",
+      "bounds_mm": [
+        [
+          15.0,
+          65.0,
+          4.3131743814344325
+        ],
+        [
+          21.000000000000004,
+          75.0,
+          9.113174381434433
+        ]
+      ],
+      "roof_top_mm": 9.113174381434433,
+      "anchor_volume_mm3": 228.9166721064364,
+      "floor_join_overlap_mm3": 33.67772454645329,
+      "hull_collision_above_datum_mm3": 0.0,
+      "device_xy_envelope_overlaps": []
+    },
+    {
+      "x_mm": -48,
+      "y_mm": -45,
+      "angle_deg": 0,
+      "floor_min_mm": 4.665225986171929,
+      "floor_max_mm": 4.905899033553689,
+      "datum_z_mm": 4.915899033553689,
+      "floor_variation_mm": 0.24067304738175999,
+      "minimum_sampled_embed_mm": 0.34932695261824,
+      "sample_count": 25,
+      "id": "T04",
+      "status": "ACCEPTED",
+      "bounds_mm": [
+        [
+          -53.0,
+          -48.0,
+          4.3158990335536895
+        ],
+        [
+          -43.0,
+          -42.0,
+          9.115899033553688
+        ]
+      ],
+      "roof_top_mm": 9.115899033553688,
+      "anchor_volume_mm3": 228.9166721064363,
+      "floor_join_overlap_mm3": 28.942012208713116,
+      "hull_collision_above_datum_mm3": 0.0,
+      "device_xy_envelope_overlaps": []
+    },
+    {
+      "x_mm": -10,
+      "y_mm": -45,
+      "angle_deg": 0,
+      "floor_min_mm": 4.758371899796748,
+      "floor_max_mm": 4.762837222508882,
+      "datum_z_mm": 4.7728372225088815,
+      "floor_variation_mm": 0.004465322712134068,
+      "minimum_sampled_embed_mm": 0.5855346772878659,
+      "sample_count": 25,
+      "id": "T05",
+      "status": "ACCEPTED",
+      "bounds_mm": [
+        [
+          -15.0,
+          -48.0,
+          4.172837222508882
+        ],
+        [
+          -5.0,
+          -42.0,
+          8.972837222508883
+        ]
+      ],
+      "roof_top_mm": 8.972837222508883,
+      "anchor_volume_mm3": 228.91667210643638,
+      "floor_join_overlap_mm3": 35.022162800357975,
+      "hull_collision_above_datum_mm3": 0.0,
+      "device_xy_envelope_overlaps": []
+    },
+    {
+      "id": "T06",
+      "x_mm": -84,
+      "y_mm": -25,
+      "angle_deg": 90,
+      "status": "OMITTED",
+      "reason": "Floor variation 1.5307 exceeds joining allowance"
+    },
+    {
+      "id": "T07",
+      "x_mm": -84,
+      "y_mm": 25,
+      "angle_deg": 90,
+      "status": "OMITTED",
+      "reason": "Floor variation 1.5307 exceeds joining allowance"
+    }
+  ],
+  "screened_device_xy_envelopes": {
+    "Core XY footprint": [
+      -80,
+      -38,
+      2,
+      41
+    ],
+    "battery XY footprint": [
+      37,
+      -65,
+      110,
+      75
+    ],
+    "hub XY footprint": [
+      -78,
+      56,
+      0,
+      81
+    ],
+    "speaker XY footprint": [
+      -87,
+      -83,
+      -16,
+      -53
+    ],
+    "rear motor north XY footprint": [
+      -140,
+      14,
+      -102,
+      92
+    ],
+    "rear motor south XY footprint": [
+      -140,
+      -92,
+      -102,
+      -14
+    ]
+  },
+  "limits": [
+    "Local footprint floor sampling, exact positive attachment overlap, exact hull interference above the local datum, and listed device XY envelopes only.",
+    "Actual wire/tie fit, print strength, electrical harness routing and complete assembly collisions are not qualified here.",
+    "A 4 mm printed bridge span and 2.4 mm passage need a printer-specific coupon trial."
+  ],
+  "variant_valid_before_export": true,
+  "variant_solid_count_before_export": 1,
+  "step_roundtrip": {
+    "valid": true,
+    "solid_count": 1,
+    "shell_count": 3,
+    "bounds_mm": [
+      [
+        -164.0000001,
+        -118.5000001,
+        -5.765684231515188e-07
+      ],
+      [
+        164.00000010000022,
+        118.5000001,
+        66.00000012866927
+      ]
+    ]
+  },
+  "source_volume_mm3": 635464.2314885319,
+  "variant_volume_mm3": 636444.228746812,
+  "added_volume_mm3": 979.9972582800547,
+  "expected_addition_mm3": 979.5840366781733,
+  "whole_solid_integration_residual_mm3": 0.4132216018813324,
+  "integration_note": "Adaptive volume integration of the inherited spline hull has a small bounded integration residue versus the sum of local anchor differences. Whole-hull subtraction of nearly coincident native spline surfaces produced nonphysical fragments and is not used as a preservation proof. The STEP is an additive Boolean result, reimported as one valid solid; local overlaps are checked. The print mesh has the separate source-vertex preservation check below.",
+  "stl_mesh": {
+    "watertight": true,
+    "winding_consistent": true,
+    "is_volume": true,
+    "vertices": 39166,
+    "triangles": 78580,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "bounds_mm": [
+      [
+        -164.0,
+        -118.5,
+        -1.6787533387672558e-15
+      ],
+      [
+        164.0,
+        118.5,
+        66.0
+      ]
+    ]
+  },
+  "stl_provenance": {
+    "operation": "Additive manifold mesh Boolean of selected watertight native print mesh and tessellated tie anchors; no global remeshing or hole filling.",
+    "source": "stl/Hull_MOSS_V07_Print.stl",
+    "source_sha256": "3bf5893f4bf1fae1a56c78f92af5f0615a3b058d9275406c3ca181befed899cd",
+    "source_mesh": {
+      "vertices": 37221,
+      "triangles": 74670,
+      "watertight": true,
+      "winding_consistent": true,
+      "is_volume": true,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "bounds_mm": [
+        [
+          -164.0,
+          -118.5,
+          -1.6787533387672558e-15
+        ],
+        [
+          164.0,
+          118.5,
+          66.0
+        ]
+      ]
+    },
+    "source_vertices_absent_in_result": 34,
+    "absent_vertices_outside_anchor_bounds": 0,
+    "source_volume_mm3": 635406.7428325359,
+    "added_volume_mm3": 979.3636241030181,
+    "mesh_vs_step_volume_difference_mm3": -58.12229017307982,
+    "native_internal_cavity_shells_preserved": true
+  },
+  "artifacts": {
+    "Hull_MOSS_V07_Harness_Tie_Loops_PROTOTYPE.step": {
+      "sha256": "bdfd0b6d3a3fa2ff688d87edff741f517d6c7c8d3123c199e8d7bf481fff52b5",
+      "bytes": 9153473
+    },
+    "Hull_MOSS_V07_Harness_Tie_Loops_PROTOTYPE.stl": {
+      "sha256": "f2a01d2b0b696583a667c67974691ad508d3c799999874d7d93c534850d8db5f",
+      "bytes": 3929084
+    },
+    "tie_anchors_overlay.npz": {
+      "sha256": "83e7b32024908bd5d5c29e0ee448531f884424bc5751c436ec1f6e11748644d1",
+      "bytes": 25776
+    },
+    "tie_anchors_overlay.step": {
+      "sha256": "63f553e411831e459df0cc7f35cc755c2e755cc75aa696e64869d284c6dc2405",
+      "bytes": 244268
+    },
+    "HULL_WITH_TIES_AND_NOTCH.npz": {
+      "sha256": "bdc6081a537d639d1953eb401c2f496ff410160f168409a05dd643dd28e5393e",
+      "bytes": 643846
+    }
+  },
+  "original_hull_unchanged": true,
+  "original_native_print_mesh_unchanged": true,
+  "divider_wire_notch": {
+    "status": "PROTOTYPE_FIT_REQUIRED_NOT_FULL_COLLISION_QUALIFICATION",
+    "operation": "One top-open notch through the battery divider, subtractive only inside the verified local tool.",
+    "tool_bounds_mm": [
+      [
+        24,
+        55,
+        56.5
+      ],
+      [
+        34,
+        69,
+        72
+      ]
+    ],
+    "actual_removed_material_bounds_mm": [
+      [
+        26.0,
+        55.0,
+        56.5
+      ],
+      [
+        32.0,
+        69.0,
+        66.0
+      ]
+    ],
+    "actual_removed_material_volume_mm3": 787.6991118452404,
+    "actual_removed_solid_count": 1,
+    "opening_width_mm": 14,
+    "maximum_depth_below_divider_top_mm": 9.5,
+    "bottom_corner_radius_mm": 2,
+    "additional_edge_fillet_mm": 0,
+    "edge_note": "The two lower profile corners are R2; no global edge fillet was applied to inherited native surfaces.",
+    "baseline_step_sha256": "f18353186a1477e51fbaae17a3573fe49792f7f835f080e5b07b5e5de683554f",
+    "baseline_stl_sha256": "86c66cf471bc0e04af28d83ce327b123f8ea4af0e50bb191d088de7ce2b4f8e9",
+    "step_roundtrip": {
+      "valid": true,
+      "solid_count": 1,
+      "shell_count": 3,
+      "bounds_mm": [
+        [
+          -164.0000001,
+          -118.5000001,
+          -5.765684231515188e-07
+        ],
+        [
+          164.00000010000022,
+          118.5000001,
+          66.00000012866927
+        ]
+      ]
+    },
+    "stl_mesh": {
+      "watertight": true,
+      "winding_consistent": true,
+      "is_volume": true,
+      "vertices": 39166,
+      "triangles": 78580,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "bounds_mm": [
+        [
+          -164.0,
+          -118.5,
+          -1.6787533387672558e-15
+        ],
+        [
+          164.0,
+          118.5,
+          66.0
+        ]
+      ]
+    },
+    "mesh_removed_volume_mm3": 787.6952098549809,
+    "pre_notch_vertices_absent_in_result": 0,
+    "absent_vertices_outside_notch_tool": 0,
+    "mesh_shell_count": 3,
+    "internal_history": "harness/assets/internal_history/pre_notch_f18353186a1477e5",
+    "native_source_hashes": {
+      "cad/Hull_MOSS_V07_Core_Stack.step": "93699d5219fa699f0ed72d8527ee1579ebd5b5b51b05fac893e344254e7bde37",
+      "stl/Hull_MOSS_V07_Print.stl": "3bf5893f4bf1fae1a56c78f92af5f0615a3b058d9275406c3ca181befed899cd"
+    },
+    "native_sources_unchanged": true,
+    "harness_step_regenerated": false,
+    "limits": [
+      "Local geometry opening only; wire clearance, actual insulation contact, cover fit and access remain for root routing checks and physical trial."
+    ]
+  },
+  "pre_notch_anchor_QA_is_preserved": true,
+  "baseline_anchor_addition_volume_fields_scope": "The source_volume, variant_volume, added_volume, expected_addition and stl_provenance fields above describe the archived five-anchor baseline before subtracting the notch. Use divider_wire_notch for the local subtractive change."
+}

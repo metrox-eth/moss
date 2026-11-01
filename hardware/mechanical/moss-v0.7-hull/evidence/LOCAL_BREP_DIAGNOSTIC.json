@@ -1,0 +1,193 @@
+{
+  "status": "LOCAL_BREP_DIAGNOSTIC",
+  "sources": {
+    "reference/Hull_Core_72x67.step": "8c903c024a3806a8f9481183a198cb4b94cb77afaa72a6c3dcc743cd4bcc77b9",
+    "reference/Hull_Core_72x67.stl": "38518aa90aa65797da2d848e8855cfe08b0d1b81aa76e1a6cf4aa0a0316f7e43",
+    "reference/Hull_R92_Repaired.step": "540b26938321268156500984b74ae83221e220a445943e1fe98c6192d616af5d"
+  },
+  "old_centres": [
+    [
+      -74,
+      -34
+    ],
+    [
+      -2,
+      -34
+    ],
+    [
+      -74,
+      33
+    ],
+    [
+      -2,
+      33
+    ]
+  ],
+  "new_centres": [
+    [
+      -76,
+      -34
+    ],
+    [
+      -2,
+      -34
+    ],
+    [
+      -76,
+      37
+    ],
+    [
+      -2,
+      37
+    ]
+  ],
+  "boss_dimensions": {
+    "bottom_z": 2.8,
+    "foot_radius": 4.5,
+    "post_start_z": 6,
+    "post_radius": 3.25,
+    "top_z": 10,
+    "pilot_bottom_z": 4,
+    "pilot_radius": 1.05,
+    "pilot_height": 6.2
+  },
+  "pcb_sha256": "7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14",
+  "approach": "Subtract only material outside the original native R92 floor at three obsolete bosses; add identical new boss forms; local manifold mesh Booleans only.",
+  "fusion_f3d_status": "Source recipe updated; no regenerated F3D claimed by this offline BRep export.",
+  "removals": [
+    {
+      "centre_mm": [
+        -74,
+        -34
+      ],
+      "volume_mm3": 194.76224904861198,
+      "native_in_pilot_mm3": 0.0673816779786963,
+      "bounds_mm": [
+        [
+          -78.07845707143441,
+          -38.024496761775964,
+          3.8791500509166084
+        ],
+        [
+          -70.0270816038216,
+          -29.97550380774366,
+          10.0000001
+        ]
+      ],
+      "actual_overlap_mm3": 194.76245812346338
+    },
+    {
+      "centre_mm": [
+        -74,
+        33
+      ],
+      "volume_mm3": 194.7622380901899,
+      "native_in_pilot_mm3": 0.06738237537702939,
+      "bounds_mm": [
+        [
+          -78.07845693693126,
+          28.97550412210456,
+          3.879150397406802
+        ],
+        [
+          -70.0270815303074,
+          37.024496934452856,
+          10.0000001
+        ]
+      ],
+      "actual_overlap_mm3": 194.7624701383852
+    },
+    {
+      "centre_mm": [
+        -2,
+        33
+      ],
+      "volume_mm3": 161.78325280694355,
+      "native_in_pilot_mm3": 2.6635952986025044,
+      "bounds_mm": [
+        [
+          -5.733701272219388,
+          29.269132396684526,
+          4.761724895514994
+        ],
+        [
+          1.7264566577429556,
+          36.73086566322715,
+          10.0000001
+        ]
+      ],
+      "actual_overlap_mm3": 161.78331161580132
+    }
+  ],
+  "additions": [
+    {
+      "centre_mm": [
+        -76,
+        -34
+      ],
+      "native_in_pilot_mm3": 0.0,
+      "bounds_mm": [
+        [
+          -80.5,
+          -38.5,
+          2.8
+        ],
+        [
+          -71.5,
+          -29.5,
+          10.0
+        ]
+      ]
+    },
+    {
+      "centre_mm": [
+        -76,
+        37
+      ],
+      "native_in_pilot_mm3": 0.0,
+      "bounds_mm": [
+        [
+          -80.5,
+          32.5,
+          2.8
+        ],
+        [
+          -71.5,
+          41.5,
+          10.0
+        ]
+      ]
+    },
+    {
+      "centre_mm": [
+        -2,
+        37
+      ],
+      "native_in_pilot_mm3": 2.663605260088294,
+      "bounds_mm": [
+        [
+          -6.5,
+          32.5,
+          2.8
+        ],
+        [
+          2.5,
+          41.5,
+          10.0
+        ]
+      ]
+    }
+  ],
+  "baseline_bounds_mm": [
+    [
+      -164.0000001,
+      -118.5000001,
+      -5.765684231515188e-07
+    ],
+    [
+      164.00000010000022,
+      118.5000001,
+      66.00000012866927
+    ]
+  ]
+}

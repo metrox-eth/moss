@@ -1,0 +1,698 @@
+{
+  "status": "PASS_CONNECTOR_PIN_MAP_PCB_SCHEMATIC_CONTRACT",
+  "pcb_sha256": "7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14",
+  "connector_count": 12,
+  "pins_checked": 76,
+  "scope": "Pin assignments only. No physical harness, crimp quality or motor connector cavity mapping verified.",
+  "pins": [
+    {
+      "ref": "J1",
+      "pin": "A1",
+      "function": "GND",
+      "net": "GND",
+      "mpn": "USB4105-GF-A",
+      "pcb_net": "GND",
+      "schematic_net": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "A4",
+      "function": "VBUS",
+      "net": "VBUS",
+      "mpn": "USB4105-GF-A",
+      "pcb_net": "VBUS",
+      "schematic_net": "VBUS"
+    },
+    {
+      "ref": "J1",
+      "pin": "A5",
+      "function": "CC1",
+      "net": "CC1",
+      "mpn": "USB4105-GF-A",
+      "pcb_net": "CC1",
+      "schematic_net": "CC1"
+    },
+    {
+      "ref": "J1",
+      "pin": "A6",
+      "function": "D+",
+      "net": "USB_P",
+      "mpn": "USB4105-GF-A",
+      "pcb_net": "USB_P",
+      "schematic_net": "USB_P"
+    },
+    {
+      "ref": "J1",
+      "pin": "A7",
+      "function": "D-",
+      "net": "USB_N",
+      "mpn": "USB4105-GF-A",
+      "pcb_net": "USB_N",
+      "schematic_net": "USB_N"
+    },
+    {
+      "ref": "J1",
+      "pin": "A8",
+      "function": "SBU1",
+      "net": null,
+      "mpn": "USB4105-GF-A",
+      "pcb_net": "unconnected-(J1-SBU1-PadA8)",
+      "schematic_net": "unconnected-(J1-SBU1-PadA8)"
+    },
+    {
+      "ref": "J1",
+      "pin": "A9",
+      "function": "VBUS",
+      "net": "VBUS",
+      "mpn": "USB4105-GF-A",
+      "pcb_net": "VBUS",
+      "schematic_net": "VBUS"
+    },
+    {
+      "ref": "J1",
+      "pin": "A12",
+      "function": "GND",
+      "net": "GND",
+      "mpn": "USB4105-GF-A",
+      "pcb_net": "GND",
+      "schematic_net": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "B1",
+      "function": "GND",
+      "net": "GND",
+      "mpn": "USB4105-GF-A",
+      "pcb_net": "GND",
+      "schematic_net": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "B4",
+      "function": "VBUS",
+      "net": "VBUS",
+      "mpn": "USB4105-GF-A",
+      "pcb_net": "VBUS",
+      "schematic_net": "VBUS"
+    },
+    {
+      "ref": "J1",
+      "pin": "B5",
+      "function": "CC2",
+      "net": "CC2",
+      "mpn": "USB4105-GF-A",
+      "pcb_net": "CC2",
+      "schematic_net": "CC2"
+    },
+    {
+      "ref": "J1",
+      "pin": "B6",
+      "function": "D+",
+      "net": "USB_P",
+      "mpn": "USB4105-GF-A",
+      "pcb_net": "USB_P",
+      "schematic_net": "USB_P"
+    },
+    {
+      "ref": "J1",
+      "pin": "B7",
+      "function": "D-",
+      "net": "USB_N",
+      "mpn": "USB4105-GF-A",
+      "pcb_net": "USB_N",
+      "schematic_net": "USB_N"
+    },
+    {
+      "ref": "J1",
+      "pin": "B8",
+      "function": "SBU2",
+      "net": null,
+      "mpn": "USB4105-GF-A",
+      "pcb_net": "unconnected-(J1-SBU2-PadB8)",
+      "schematic_net": "unconnected-(J1-SBU2-PadB8)"
+    },
+    {
+      "ref": "J1",
+      "pin": "B9",
+      "function": "VBUS",
+      "net": "VBUS",
+      "mpn": "USB4105-GF-A",
+      "pcb_net": "VBUS",
+      "schematic_net": "VBUS"
+    },
+    {
+      "ref": "J1",
+      "pin": "B12",
+      "function": "GND",
+      "net": "GND",
+      "mpn": "USB4105-GF-A",
+      "pcb_net": "GND",
+      "schematic_net": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "SH",
+      "function": "SHIELD",
+      "net": "GND",
+      "mpn": "USB4105-GF-A",
+      "pcb_net": "GND",
+      "schematic_net": "GND"
+    },
+    {
+      "ref": "J2",
+      "pin": "1",
+      "function": "PWM1",
+      "net": "MDD_PWM1",
+      "mpn": "43045-1012",
+      "pcb_net": "MDD_PWM1",
+      "schematic_net": "MDD_PWM1"
+    },
+    {
+      "ref": "J2",
+      "pin": "2",
+      "function": "DIR1",
+      "net": "MDD_DIR1",
+      "mpn": "43045-1012",
+      "pcb_net": "MDD_DIR1",
+      "schematic_net": "MDD_DIR1"
+    },
+    {
+      "ref": "J2",
+      "pin": "3",
+      "function": "PWM2",
+      "net": "MDD_PWM2",
+      "mpn": "43045-1012",
+      "pcb_net": "MDD_PWM2",
+      "schematic_net": "MDD_PWM2"
+    },
+    {
+      "ref": "J2",
+      "pin": "4",
+      "function": "DIR2",
+      "net": "MDD_DIR2",
+      "mpn": "43045-1012",
+      "pcb_net": "MDD_DIR2",
+      "schematic_net": "MDD_DIR2"
+    },
+    {
+      "ref": "J2",
+      "pin": "5",
+      "function": "SIGNAL_GND",
+      "net": "GND",
+      "mpn": "43045-1012",
+      "pcb_net": "GND",
+      "schematic_net": "GND"
+    },
+    {
+      "ref": "J2",
+      "pin": "6",
+      "function": "LEFT_A",
+      "net": "CYTRON_L_LEAD",
+      "mpn": "43045-1012",
+      "pcb_net": "CYTRON_L_LEAD",
+      "schematic_net": "CYTRON_L_LEAD"
+    },
+    {
+      "ref": "J2",
+      "pin": "7",
+      "function": "LEFT_B",
+      "net": "MOTOR_L_RETURN",
+      "mpn": "43045-1012",
+      "pcb_net": "MOTOR_L_RETURN",
+      "schematic_net": "MOTOR_L_RETURN"
+    },
+    {
+      "ref": "J2",
+      "pin": "8",
+      "function": "RIGHT_A",
+      "net": "CYTRON_R_LEAD",
+      "mpn": "43045-1012",
+      "pcb_net": "CYTRON_R_LEAD",
+      "schematic_net": "CYTRON_R_LEAD"
+    },
+    {
+      "ref": "J2",
+      "pin": "9",
+      "function": "RIGHT_B",
+      "net": "MOTOR_R_RETURN",
+      "mpn": "43045-1012",
+      "pcb_net": "MOTOR_R_RETURN",
+      "schematic_net": "MOTOR_R_RETURN"
+    },
+    {
+      "ref": "J2",
+      "pin": "10",
+      "function": "UNUSED",
+      "net": null,
+      "mpn": "43045-1012",
+      "pcb_net": "unconnected-(J2-UNUSED-Pad10)",
+      "schematic_net": "unconnected-(J2-UNUSED-Pad10)"
+    },
+    {
+      "ref": "J3",
+      "pin": "1",
+      "function": "M1",
+      "net": "MOTOR_L_LEAD",
+      "mpn": "43045-0612",
+      "pcb_net": "MOTOR_L_LEAD",
+      "schematic_net": "MOTOR_L_LEAD"
+    },
+    {
+      "ref": "J3",
+      "pin": "2",
+      "function": "M2",
+      "net": "MOTOR_L_RETURN",
+      "mpn": "43045-0612",
+      "pcb_net": "MOTOR_L_RETURN",
+      "schematic_net": "MOTOR_L_RETURN"
+    },
+    {
+      "ref": "J3",
+      "pin": "3",
+      "function": "ENC_GND",
+      "net": "GND",
+      "mpn": "43045-0612",
+      "pcb_net": "GND",
+      "schematic_net": "GND"
+    },
+    {
+      "ref": "J3",
+      "pin": "4",
+      "function": "ENC_3V3",
+      "net": "ENC_3V3",
+      "mpn": "43045-0612",
+      "pcb_net": "ENC_3V3",
+      "schematic_net": "ENC_3V3"
+    },
+    {
+      "ref": "J3",
+      "pin": "5",
+      "function": "ENC_A",
+      "net": "EL_A_EXT",
+      "mpn": "43045-0612",
+      "pcb_net": "EL_A_EXT",
+      "schematic_net": "EL_A_EXT"
+    },
+    {
+      "ref": "J3",
+      "pin": "6",
+      "function": "ENC_B",
+      "net": "EL_B_EXT",
+      "mpn": "43045-0612",
+      "pcb_net": "EL_B_EXT",
+      "schematic_net": "EL_B_EXT"
+    },
+    {
+      "ref": "J4",
+      "pin": "1",
+      "function": "M1",
+      "net": "MOTOR_R_LEAD",
+      "mpn": "43045-0612",
+      "pcb_net": "MOTOR_R_LEAD",
+      "schematic_net": "MOTOR_R_LEAD"
+    },
+    {
+      "ref": "J4",
+      "pin": "2",
+      "function": "M2",
+      "net": "MOTOR_R_RETURN",
+      "mpn": "43045-0612",
+      "pcb_net": "MOTOR_R_RETURN",
+      "schematic_net": "MOTOR_R_RETURN"
+    },
+    {
+      "ref": "J4",
+      "pin": "3",
+      "function": "ENC_GND",
+      "net": "GND",
+      "mpn": "43045-0612",
+      "pcb_net": "GND",
+      "schematic_net": "GND"
+    },
+    {
+      "ref": "J4",
+      "pin": "4",
+      "function": "ENC_3V3",
+      "net": "ENC_3V3",
+      "mpn": "43045-0612",
+      "pcb_net": "ENC_3V3",
+      "schematic_net": "ENC_3V3"
+    },
+    {
+      "ref": "J4",
+      "pin": "5",
+      "function": "ENC_A",
+      "net": "ER_A_EXT",
+      "mpn": "43045-0612",
+      "pcb_net": "ER_A_EXT",
+      "schematic_net": "ER_A_EXT"
+    },
+    {
+      "ref": "J4",
+      "pin": "6",
+      "function": "ENC_B",
+      "net": "ER_B_EXT",
+      "mpn": "43045-0612",
+      "pcb_net": "ER_B_EXT",
+      "schematic_net": "ER_B_EXT"
+    },
+    {
+      "ref": "J5",
+      "pin": "1",
+      "function": "DATA",
+      "net": "SERVO_BUS",
+      "mpn": "22-03-5035",
+      "pcb_net": "SERVO_BUS",
+      "schematic_net": "SERVO_BUS"
+    },
+    {
+      "ref": "J5",
+      "pin": "2",
+      "function": "V_SERVO_3S",
+      "net": "ACTUATOR_SW",
+      "mpn": "22-03-5035",
+      "pcb_net": "ACTUATOR_SW",
+      "schematic_net": "ACTUATOR_SW"
+    },
+    {
+      "ref": "J5",
+      "pin": "3",
+      "function": "GND",
+      "net": "GND",
+      "mpn": "22-03-5035",
+      "pcb_net": "GND",
+      "schematic_net": "GND"
+    },
+    {
+      "ref": "J7",
+      "pin": "1",
+      "function": "SPK_P",
+      "net": "SPEAKER_P",
+      "mpn": "B2B-PH-K-S(LF)(SN)",
+      "pcb_net": "SPEAKER_P",
+      "schematic_net": "SPEAKER_P"
+    },
+    {
+      "ref": "J7",
+      "pin": "2",
+      "function": "SPK_N",
+      "net": "SPEAKER_N",
+      "mpn": "B2B-PH-K-S(LF)(SN)",
+      "pcb_net": "SPEAKER_N",
+      "schematic_net": "SPEAKER_N"
+    },
+    {
+      "ref": "J10",
+      "pin": "1",
+      "function": "BAT_NEG",
+      "net": "GND",
+      "mpn": "XT30UPB-M.G.Y",
+      "pcb_net": "GND",
+      "schematic_net": "GND"
+    },
+    {
+      "ref": "J10",
+      "pin": "2",
+      "function": "BAT_POS",
+      "net": "BAT_PROTECTED",
+      "mpn": "XT30UPB-M.G.Y",
+      "pcb_net": "BAT_PROTECTED",
+      "schematic_net": "BAT_PROTECTED"
+    },
+    {
+      "ref": "J11",
+      "pin": "1",
+      "function": "CYTRON_BAT_POS",
+      "net": "ACTUATOR_SW",
+      "mpn": "1715721",
+      "pcb_net": "ACTUATOR_SW",
+      "schematic_net": "ACTUATOR_SW"
+    },
+    {
+      "ref": "J11",
+      "pin": "2",
+      "function": "MOTOR_NEG",
+      "net": "GND",
+      "mpn": "1715721",
+      "pcb_net": "GND",
+      "schematic_net": "GND"
+    },
+    {
+      "ref": "J20",
+      "pin": "A1",
+      "function": "GND",
+      "net": "GND",
+      "mpn": "USB4105-GF-A",
+      "pcb_net": "GND",
+      "schematic_net": "GND"
+    },
+    {
+      "ref": "J20",
+      "pin": "A4",
+      "function": "VBUS",
+      "net": "HOST_5V",
+      "mpn": "USB4105-GF-A",
+      "pcb_net": "HOST_5V",
+      "schematic_net": "HOST_5V"
+    },
+    {
+      "ref": "J20",
+      "pin": "A5",
+      "function": "CC1",
+      "net": "HOST_CC1",
+      "mpn": "USB4105-GF-A",
+      "pcb_net": "HOST_CC1",
+      "schematic_net": "HOST_CC1"
+    },
+    {
+      "ref": "J20",
+      "pin": "A6",
+      "function": "D+",
+      "net": null,
+      "mpn": "USB4105-GF-A",
+      "pcb_net": "unconnected-(J20-D+-PadA6)",
+      "schematic_net": "unconnected-(J20-D+-PadA6)"
+    },
+    {
+      "ref": "J20",
+      "pin": "A7",
+      "function": "D-",
+      "net": null,
+      "mpn": "USB4105-GF-A",
+      "pcb_net": "unconnected-(J20-D--PadA7)",
+      "schematic_net": "unconnected-(J20-D--PadA7)"
+    },
+    {
+      "ref": "J20",
+      "pin": "A8",
+      "function": "SBU1",
+      "net": null,
+      "mpn": "USB4105-GF-A",
+      "pcb_net": "unconnected-(J20-SBU1-PadA8)",
+      "schematic_net": "unconnected-(J20-SBU1-PadA8)"
+    },
+    {
+      "ref": "J20",
+      "pin": "A9",
+      "function": "VBUS",
+      "net": "HOST_5V",
+      "mpn": "USB4105-GF-A",
+      "pcb_net": "HOST_5V",
+      "schematic_net": "HOST_5V"
+    },
+    {
+      "ref": "J20",
+      "pin": "A12",
+      "function": "GND",
+      "net": "GND",
+      "mpn": "USB4105-GF-A",
+      "pcb_net": "GND",
+      "schematic_net": "GND"
+    },
+    {
+      "ref": "J20",
+      "pin": "B1",
+      "function": "GND",
+      "net": "GND",
+      "mpn": "USB4105-GF-A",
+      "pcb_net": "GND",
+      "schematic_net": "GND"
+    },
+    {
+      "ref": "J20",
+      "pin": "B4",
+      "function": "VBUS",
+      "net": "HOST_5V",
+      "mpn": "USB4105-GF-A",
+      "pcb_net": "HOST_5V",
+      "schematic_net": "HOST_5V"
+    },
+    {
+      "ref": "J20",
+      "pin": "B5",
+      "function": "CC2",
+      "net": "HOST_CC2",
+      "mpn": "USB4105-GF-A",
+      "pcb_net": "HOST_CC2",
+      "schematic_net": "HOST_CC2"
+    },
+    {
+      "ref": "J20",
+      "pin": "B6",
+      "function": "D+",
+      "net": null,
+      "mpn": "USB4105-GF-A",
+      "pcb_net": "unconnected-(J20-D+-PadB6)",
+      "schematic_net": "unconnected-(J20-D+-PadB6)"
+    },
+    {
+      "ref": "J20",
+      "pin": "B7",
+      "function": "D-",
+      "net": null,
+      "mpn": "USB4105-GF-A",
+      "pcb_net": "unconnected-(J20-D--PadB7)",
+      "schematic_net": "unconnected-(J20-D--PadB7)"
+    },
+    {
+      "ref": "J20",
+      "pin": "B8",
+      "function": "SBU2",
+      "net": null,
+      "mpn": "USB4105-GF-A",
+      "pcb_net": "unconnected-(J20-SBU2-PadB8)",
+      "schematic_net": "unconnected-(J20-SBU2-PadB8)"
+    },
+    {
+      "ref": "J20",
+      "pin": "B9",
+      "function": "VBUS",
+      "net": "HOST_5V",
+      "mpn": "USB4105-GF-A",
+      "pcb_net": "HOST_5V",
+      "schematic_net": "HOST_5V"
+    },
+    {
+      "ref": "J20",
+      "pin": "B12",
+      "function": "GND",
+      "net": "GND",
+      "mpn": "USB4105-GF-A",
+      "pcb_net": "GND",
+      "schematic_net": "GND"
+    },
+    {
+      "ref": "J20",
+      "pin": "SH",
+      "function": "SHIELD",
+      "net": "GND",
+      "mpn": "USB4105-GF-A",
+      "pcb_net": "GND",
+      "schematic_net": "GND"
+    },
+    {
+      "ref": "J8",
+      "pin": "1",
+      "function": "CUT_SOURCE",
+      "net": "ESTOP_CUT_SOURCE",
+      "mpn": "BM06B-SRSS-TB(LF)(SN)",
+      "pcb_net": "ESTOP_CUT_SOURCE",
+      "schematic_net": "ESTOP_CUT_SOURCE"
+    },
+    {
+      "ref": "J8",
+      "pin": "2",
+      "function": "CUT_RETURN",
+      "net": "ESTOP_CUT_RETURN",
+      "mpn": "BM06B-SRSS-TB(LF)(SN)",
+      "pcb_net": "ESTOP_CUT_RETURN",
+      "schematic_net": "ESTOP_CUT_RETURN"
+    },
+    {
+      "ref": "J8",
+      "pin": "3",
+      "function": "DNC_3",
+      "net": null,
+      "mpn": "BM06B-SRSS-TB(LF)(SN)",
+      "pcb_net": "unconnected-(J8-DNC_3-Pad3)",
+      "schematic_net": "unconnected-(J8-DNC_3-Pad3)"
+    },
+    {
+      "ref": "J8",
+      "pin": "4",
+      "function": "DNC_4",
+      "net": null,
+      "mpn": "BM06B-SRSS-TB(LF)(SN)",
+      "pcb_net": "unconnected-(J8-DNC_4-Pad4)",
+      "schematic_net": "unconnected-(J8-DNC_4-Pad4)"
+    },
+    {
+      "ref": "J8",
+      "pin": "5",
+      "function": "STATUS_SOURCE",
+      "net": "ESTOP_STATUS_SOURCE",
+      "mpn": "BM06B-SRSS-TB(LF)(SN)",
+      "pcb_net": "ESTOP_STATUS_SOURCE",
+      "schematic_net": "ESTOP_STATUS_SOURCE"
+    },
+    {
+      "ref": "J8",
+      "pin": "6",
+      "function": "STATUS_RETURN",
+      "net": "ESTOP_STATUS_RAW",
+      "mpn": "BM06B-SRSS-TB(LF)(SN)",
+      "pcb_net": "ESTOP_STATUS_RAW",
+      "schematic_net": "ESTOP_STATUS_RAW"
+    },
+    {
+      "ref": "J8",
+      "pin": "MP",
+      "function": "MOUNT",
+      "net": "GND",
+      "mpn": "BM06B-SRSS-TB(LF)(SN)",
+      "pcb_net": "GND",
+      "schematic_net": "GND"
+    },
+    {
+      "ref": "J14",
+      "pin": "1",
+      "function": "FAN_POS",
+      "net": "FAN_3S",
+      "mpn": "B2B-XH-A(LF)(SN)",
+      "pcb_net": "FAN_3S",
+      "schematic_net": "FAN_3S"
+    },
+    {
+      "ref": "J14",
+      "pin": "2",
+      "function": "FAN_NEG",
+      "net": "GND",
+      "mpn": "B2B-XH-A(LF)(SN)",
+      "pcb_net": "GND",
+      "schematic_net": "GND"
+    },
+    {
+      "ref": "J15",
+      "pin": "1",
+      "function": "FAN_POS",
+      "net": "FAN_3S",
+      "mpn": "B2B-XH-A(LF)(SN)",
+      "pcb_net": "FAN_3S",
+      "schematic_net": "FAN_3S"
+    },
+    {
+      "ref": "J15",
+      "pin": "2",
+      "function": "FAN_NEG",
+      "net": "GND",
+      "mpn": "B2B-XH-A(LF)(SN)",
+      "pcb_net": "GND",
+      "schematic_net": "GND"
+    }
+  ],
+  "sources": {
+    "pcb": "../../electrical/MOSS_Core_V07_Prototype.kicad_pcb",
+    "schematic_netlist": "../../evidence/NETLIST.xml",
+    "circuit_contract": "../../electrical/circuit.json"
+  }
+}

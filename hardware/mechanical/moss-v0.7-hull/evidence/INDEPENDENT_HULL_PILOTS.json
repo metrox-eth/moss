@@ -1,0 +1,75 @@
+{
+  "status": "PASS_STEP_PILOT_AXIS_MEASUREMENT",
+  "method": "Read analytic cylindrical surfaces from reimported STEP; no generator parameters used to infer measured axes.",
+  "step_sha256": "93699d5219fa699f0ed72d8527ee1579ebd5b5b51b05fac893e344254e7bde37",
+  "expected_core_axes_mm": [
+    [
+      -76,
+      37
+    ],
+    [
+      -2,
+      37
+    ],
+    [
+      -76,
+      -34
+    ],
+    [
+      -2,
+      -34
+    ]
+  ],
+  "measured_vertical_pilots_mm": [
+    {
+      "x": -6.0,
+      "y": 50.0,
+      "radius": 1.05,
+      "z_min": 4.0,
+      "z_max": 10.0
+    },
+    {
+      "x": -2.0,
+      "y": -34.0,
+      "radius": 1.05,
+      "z_min": 4.0,
+      "z_max": 10.0
+    },
+    {
+      "x": -2.0,
+      "y": 37.0,
+      "radius": 1.05,
+      "z_min": 4.0,
+      "z_max": 10.0
+    },
+    {
+      "x": -76.0,
+      "y": -34.0,
+      "radius": 1.05,
+      "z_min": 4.0,
+      "z_max": 10.0
+    },
+    {
+      "x": -76.0,
+      "y": 37.0,
+      "radius": 1.05,
+      "z_min": 4.0,
+      "z_max": 10.0
+    },
+    {
+      "x": -72.0,
+      "y": 50.0,
+      "radius": 1.05,
+      "z_min": 4.0,
+      "z_max": 10.0
+    }
+  ],
+  "core_pitch_mm": [
+    74,
+    71
+  ],
+  "old_three_axes_absent": true,
+  "valid_BRep": true,
+  "solid_count": 1,
+  "scope": "Nominal CAD positions and diameters. Does not validate printed screw engagement."
+}

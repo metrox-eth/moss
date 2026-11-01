@@ -1,2 +1,9 @@
 cad/*.step binary
 cad/*.stl binary
+
+# Keep PDF and generated 3D packages byte-exact.
+*.pdf binary
+*.npz binary
+*.glb binary
+*.zip binary
+rfq/*.csv -text whitespace=cr-at-eol

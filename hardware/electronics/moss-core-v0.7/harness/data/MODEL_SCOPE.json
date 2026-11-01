@@ -1,12 +1,18 @@
 {
-  "board_sha256": "cffb4a378502802a778fcee618310e6f3fa5c49ad201b0c372728368ae3520d1",
-  "routes": 20,
-  "scene_meshes": 422,
-  "triangles": 1605033,
+  "board_sha256": "7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14",
+  "hull_source_sha256": "bdc6081a537d639d1953eb401c2f496ff410160f168409a05dd643dd28e5393e",
+  "Core_mount_pattern_mm": [
+    74,
+    71
+  ],
+  "routes": 14,
+  "custom_wire_count": 42,
+  "scene_meshes": 396,
+  "triangles": 1508796,
   "units_GLTF": "metres",
   "units_source": "mm",
   "conceptual_geometry": [
-    "Simplified connector housings reconstructed from public dimensions; fixed board connectors from KiCad",
+    "Current native fixed PCB headers; cable housings dimensioned from manufacturer drawings with cavities/latches, not vendor mating CAD",
     "Inline stop connector",
     "Battery envelope and outlet; photo-based HB1 visual model, shifted +10mm Y; 800mm commercial lead excess not represented",
     "Sleeve diameters, wire OD, bend radii and routing",

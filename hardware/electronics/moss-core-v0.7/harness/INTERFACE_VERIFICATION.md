@@ -1,33 +1,40 @@
 # Harness interface verification
 
-Checked 31 October 2026 against the current Core circuit and supplier documentation. This record distinguishes catalogue evidence from checks on the physical rover.
+Updated 1 November 2026. PCB `7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14`.
 
-## Motors
+## Checked evidence
 
-The matching distributor listing is **Arduitronics RU00129**, JGB37-520 encoder motor kit, 12 V / 110 rpm. Its specification image lists a 90:1 reduction. The kit includes the six-wire motor cable. [Product and original photographs](https://www.arduitronics.com/product/6047/).
+The independent connector-map check matched all 76 physical connector pins across 12 connectors between PCB, schematic and circuit contract. This is a static check, not a cable or powered test. Core motor/driver housing selections are Molex 43025-0600 and 43025-1000, mating with the PCB's 43045-0612 and 43045-1012.
 
-The close-up of the encoder board shows the labels **M1, GND, C2, C1, VCC, M2**. M1/M2 are motor terminals; VCC/GND power the encoder; C1/C2 are its two signal channels. The photographed connector and encoder PCB agree visually with the MOSS workshop photograph. A photo does not establish the connector manufacturer's part number or pitch tolerance.
+## Selected Micro-Fit wire and contacts
 
-**Procurement choice:** retain the cable supplied with RU00129 and terminate its other end as part of the loom. Do not substitute a generic PH/XH six-pin connector by appearance. The motor plug in the model remains an XH-style visual reference. Before terminating the first kit, trace the stock pigtail to the board's function labels and record its cavity numbering, wire gauge and insulation diameter. Apply the resulting schedule to both motor branches. This is a continuity check, with the motor unpowered.
+| Circuits | Wire | Contact | Installed contacts per kit |
+| --- | --- | --- | --- |
+| Motor winding leads | 18 AWG; tool optimum OD 1.60-1.85 mm | 43030-0038 | 8 |
+| Encoder/control | 24 AWG; tool scope OD 1.42-1.85 mm | 43030-0001 | 13 |
 
-ASLONG / Shenzhen Jinshunlaite manufactures a [JGB37-520B family](https://www.aslongdcmotor.com/sale-45027788-12v-dc-motor-encoder-jgb37-520b-37mm-brush-motor-12v-volt-brushed-gear.html), but no source found connects Arduitronics RU00129 to that factory. The RFQ identifies the distributor SKU without assigning an unverified OEM.
+A factory-terminated kit avoids maker crimping. For a small DIY quantity, 43030-0007 is Molex's bagged loose-piece alternative to reel 43030-0001 for 20-24 AWG. Use 63828-0200 for the listed 18 AWG / 43030-0038 combination and 63819-0000 for its listed 20-30 AWG contacts. The 18 AWG tool specifies optimal insulation OD 1.60-1.85 mm; the 20-24 AWG tool scope specifies 1.42-1.85 mm. Record the exact wire and measure insulation OD; AWG alone does not establish crimp compatibility. Thick silicone wire may not fit. Pre-crimped leads are another documented option, but verify their exact terminal, gauge, insulation and length; no specific pre-crimp lead MPN is selected here.
 
-## STOP button
+## Physical motor pin map remains to be recorded
 
-The [Yijia LA16 catalogue](https://yijiabutton.com/wp-content/uploads/2023/10/28.-YJ-LA16-Specification.pdf) distinguishes **11 = one changeover contact** from **22 = two independent changeover contacts**. Core requires two normally closed loops. For a new, factory-wired prototype, the documented reference is **YJ-LA16-22ZS/A**, red, non-illuminated, 16 mm mounting hole, 30 mm head. Its tabs are 2.8 x 0.5 mm. Quote the smaller-head **22ZS** only as a declared alternative.
+Retain both six-wire pigtails supplied with Arduitronics RU00129. With power disconnected, trace each stock wire to the motor board's M1/M2, GND/VCC and C1/C2 markings. Record cavity numbers, wire gauge and insulation OD, then approve the factory wirelist. Device-end cavity numbering and OEM connector MPN are not established. Quote insulated factory transitions when the stock wire cannot be terminated directly with the specified Core contact. Never force 18 AWG into an unverified stock motor contact.
 
-Use C1-NC1 for CUT and C2-NC2 for STATUS. Both loops are closed when released and open when pressed. NO1/NO2 remain unused. J8 uses cavities **1, 2, 5, 6**; 3/4 have no contacts. The existing unmarked button is not identified as a Yijia part. It can be reused after identifying its two independent NC pairs by continuity. Six terminals alone do not establish that arrangement.
+The distributor SKU identifies the supplied motor kit; it does not establish the motor connector's manufacturer or exact part number. The six-wire Core assignment is fixed; the stock device-side cavity assignment is pending continuity tracing.
 
-The older rover BOM names LA16-11ZS/A; that is not an adequate purchasing specification for Core's two-loop input. This V0.7 specification supersedes it for the Core harness, without silently changing the released V0.6 build.
+## STOP
 
-## Lid disconnect
+A new documented switch option is Yijia YJ-LA16-22ZS/A, red and non-illuminated, with two independent changeover contacts; use C1-NC1 and C2-NC2. An existing unmarked button can be retained only after identifying two independent NC pairs by continuity. Six tabs alone do not prove the contact arrangement. NO terminals remain unused and insulated. The 51021/51047 PicoBlade inline pair and 28 AWG OD 0.50-0.80 mm are retained.
 
-The initial Micro-Fit proposal was removed. [Molex tooling data](https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/applicationtoolingspecificationpdf/638/63819/ATS-638190000-001.pdf) specifies 1.09-1.27 mm insulation for the selected contacts, outside the 0.40-0.80 mm range at the Core JST SH connector.
+## First article records
 
-The replacement uses **PicoBlade 51021-0400 + 51047-0400**, with **50058-8000 female + 50133-8000 male contacts**. Both terminal types accept 28 AWG and 0.50-1.00 mm insulation. Specifying **28 AWG, insulation OD 0.50-0.80 mm including tolerance**, is compatible with both PicoBlade and JST SH. The two halves use the same circuit numbers 1-4. This is a polarized friction-retained connector, not a lever-release latch. Hold the housings when disconnecting and secure the nearby loom so the lid does not pull on it.
+- Record the stock motor cavity/function map, gauge, insulation OD and factory transitions for both motors.
+- Check all numbered cavities and polarity. Keep J2.10 and J8.3/4 empty.
+- Record continuity and isolation of both STOP loops when released, pressed and unplugged; check isolation between loops.
+- Fit the assembled loom with the cover closed and opened; verify connector seating, wire exit, bend radius, strain relief, fan clearance and HB1 excess cable storage.
+- Check encoder counts/direction against an independent rotation reference during forward/reverse operation and repeated loaded reversals; inspect for resets, missed/extra counts and supply dips. This test is planned, not performed.
+- Verify load, startup, temperature and voltage drop on the final wires/crimps. The driver channel rating does not establish the complete harness rating.
+- Freeze the manufacturing cut/strip schedule only after these checks.
 
-Sources: [mating drawing, page 2](https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/510/51047/510470400_sd.pdf), [female contact](https://www.molex.com/en-us/products/part-detail/500588000), [male contact](https://www.molex.com/en-us/products/part-detail/501338000), [JST SH](https://www.jst-mfg.com/product/pdf/eng/eSH.pdf).
+## Geometry limits
 
-## First article
-
-Before releasing more than the prototype kits: record the motor pigtail map; test both STOP loops; check connector fit and polarity; fit the loom with the cover closed and open. Store the HB1's excess captive cable outside the fans and moving parts. Only then freeze finished cable lengths and the factory cut/strip schedule. No physical test result is claimed by this repository.
+No manufacturer STEP/IGES was obtained for the cable housings. The scene uses dimensioned visual references; actual mating fit, latch operation, insertion access and cable bend remain unverified. Published current header mated height is 17.64 mm; the older family drawing reports 17.56 mm. The latter is not silently treated as the same datum. Native PCB header CAD is retained.

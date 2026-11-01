@@ -1,0 +1,398 @@
+{
+  "units": "millimetres",
+  "source_native_smt": "reference/Hull_R92_native.smt",
+  "hull_min_corner_mm": [
+    -164,
+    -118.5,
+    0
+  ],
+  "core_mount_xy": [
+    [
+      -74,
+      -34
+    ],
+    [
+      -2,
+      -34
+    ],
+    [
+      -74,
+      33
+    ],
+    [
+      -2,
+      33
+    ]
+  ],
+  "hub_screw_xy": [
+    [
+      -72,
+      50
+    ],
+    [
+      -6,
+      50
+    ]
+  ],
+  "hub_rear_support_xy": [
+    [
+      -72,
+      79
+    ],
+    [
+      -6,
+      79
+    ]
+  ],
+  "boss": {
+    "bottom_z": 2.8,
+    "foot_radius": 4.5,
+    "post_start_z": 6,
+    "post_radius": 3.25,
+    "top_z": 10,
+    "pilot_bottom_z": 4,
+    "pilot_radius": 1.05,
+    "pilot_height": 6.2
+  },
+  "allowed_edit_region": {
+    "min": [
+      -159.02,
+      -70.38,
+      2.79
+    ],
+    "max": [
+      16.51,
+      92.01,
+      49.01
+    ]
+  },
+  "stack": {
+    "core_size_mm": [
+      80,
+      75,
+      1.6
+    ],
+    "core_bottom_z": 10,
+    "orange_pi_size_mm": [
+      65,
+      32,
+      16
+    ],
+    "orange_pi_bottom_z": 31.6,
+    "orange_pi_rotation_deg": 180,
+    "orange_pi_mount_pitch_mm": [
+      58,
+      23
+    ],
+    "orange_pi_core_holes_xy": [
+      [
+        11,
+        12.5
+      ],
+      [
+        69,
+        12.5
+      ],
+      [
+        11,
+        35.5
+      ],
+      [
+        69,
+        35.5
+      ]
+    ],
+    "hoco_body_bounds_mm": [
+      [
+        -78,
+        56,
+        12
+      ],
+      [
+        0,
+        81,
+        37
+      ]
+    ],
+    "battery_bounds_mm": [
+      [
+        37,
+        -65,
+        9.5
+      ],
+      [
+        110,
+        75,
+        57.5
+      ]
+    ],
+    "orange_pi_supplied_cad": {
+      "file": "reference/orange_pi_user/orpi.step",
+      "sha256": "d3fd550932f408df51b4174cb23e7146278d69728176bdea5215d239a55a464b",
+      "transform": {
+        "translation_mm": [
+          -49.875897,
+          25.177395,
+          32.8
+        ],
+        "rotation_z_deg": 180,
+        "scale": 1
+      },
+      "source_hole_pitch_mm": [
+        58.000138,
+        22.999954
+      ],
+      "source_hole_diameter_mm": 3,
+      "lowest_component_z_mm": 29.549948461179667,
+      "cooler": "Not in supplied CAD; measured 16mm total-height reserve retained"
+    }
+  },
+  "obsolete_mount_face_removals": [
+    {
+      "name": "Jetson_caddy_front_right",
+      "min": [
+        7.499,
+        -62.501,
+        2.79
+      ],
+      "max": [
+        16.501,
+        -53.499,
+        22.701
+      ]
+    },
+    {
+      "name": "Jetson_caddy_front_left",
+      "min": [
+        7.499,
+        53.499,
+        2.79
+      ],
+      "max": [
+        16.501,
+        62.501,
+        22.701
+      ]
+    },
+    {
+      "name": "Jetson_caddy_rear_right",
+      "min": [
+        -94.501,
+        -43.501,
+        2.79
+      ],
+      "max": [
+        -85.499,
+        -34.499,
+        22.701
+      ]
+    },
+    {
+      "name": "Jetson_caddy_rear_left",
+      "min": [
+        -94.501,
+        34.499,
+        2.79
+      ],
+      "max": [
+        -85.499,
+        43.501,
+        22.701
+      ]
+    },
+    {
+      "name": "Waveshare_servo_front_left",
+      "min": [
+        -57.501,
+        48.499,
+        2.79
+      ],
+      "max": [
+        -52.499,
+        53.501,
+        19.501
+      ]
+    },
+    {
+      "name": "Waveshare_servo_front_right",
+      "min": [
+        -29.501,
+        48.499,
+        2.79
+      ],
+      "max": [
+        -24.499,
+        53.501,
+        19.501
+      ]
+    },
+    {
+      "name": "Waveshare_servo_rear_bridge",
+      "min": [
+        -59.001,
+        83.999,
+        2.79
+      ],
+      "max": [
+        -22.999,
+        92.001,
+        19.501
+      ]
+    },
+    {
+      "name": "INA219_both_rails",
+      "min": [
+        -90.1,
+        53.2,
+        2.79
+      ],
+      "max": [
+        -65.85,
+        82.8,
+        22.501
+      ]
+    },
+    {
+      "name": "ESP32_BFF_frame_and_gussets",
+      "min": [
+        -159.001,
+        29.989,
+        39.499
+      ],
+      "max": [
+        -111.799,
+        70.011,
+        49.001
+      ],
+      "boxes": [
+        [
+          [
+            -159.001,
+            29.989,
+            41.999
+          ],
+          [
+            -111.799,
+            70.011,
+            49.001
+          ]
+        ],
+        [
+          [
+            -159.001,
+            30.989,
+            41.049
+          ],
+          [
+            -156.499,
+            35.491,
+            42.001
+          ]
+        ],
+        [
+          [
+            -159.001,
+            63.509,
+            39.499
+          ],
+          [
+            -156.499,
+            68.011,
+            42.001
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "Cytron_original_offset_frame_and_gussets",
+      "min": [
+        -159.001,
+        -70.372,
+        30.9
+      ],
+      "max": [
+        -92.059,
+        16.371,
+        51.402
+      ],
+      "preserve_rear_wall_microfaces": true,
+      "preserve_rear_wall_planes": true
+    }
+  ],
+  "obsolete_mount_removal_method": "Delete all bounded legacy feature faces from native R92 solid and heal surrounding original floor/rib surfaces before creating new Core/hub bosses.",
+  "cytron_recenter": {
+    "translation_mm": [
+      0,
+      27,
+      0
+    ],
+    "pcb_center_xy_mm": [
+      -124,
+      0
+    ],
+    "mount_pitch_mm": [
+      55.88,
+      78.74
+    ],
+    "mount_xy_mm": [
+      [
+        -151.94,
+        -39.37
+      ],
+      [
+        -151.94,
+        39.37
+      ],
+      [
+        -96.06,
+        -39.37
+      ],
+      [
+        -96.06,
+        39.37
+      ]
+    ],
+    "seat_z_mm": 47.4,
+    "motor_axis_xz_mm": [
+      -121,
+      22.614087480217
+    ],
+    "motor_relief_radius_mm": 18.9,
+    "rear_gusset_y_mm": [
+      -20,
+      20
+    ],
+    "fan_top_z_mm": 40.75,
+    "rear_rail_underside_z_mm": 41.05,
+    "rear_wall_bridge_y_mm": [
+      -26.5,
+      26.5
+    ],
+    "protected_native_fan_clip_regions_mm": [
+      [
+        [
+          -159.01,
+          -46.01,
+          41.14
+        ],
+        [
+          -156.49,
+          -37.99,
+          43.16
+        ]
+      ],
+      [
+        [
+          -159.01,
+          37.99,
+          41.14
+        ],
+        [
+          -156.49,
+          46.01,
+          43.16
+        ]
+      ]
+    ]
+  }
+}

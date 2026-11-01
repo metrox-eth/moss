@@ -1,0 +1,19 @@
+{
+  "status": "FINAL_HULL_CURRENT_CORE_MOUNTING_WITH_FIVE_TIES_AND_NOTCH",
+  "pcb_sha256": "7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14",
+  "frame": "Native R92 CAD coordinates, millimetres, Z up",
+  "files": {
+    "cad/Hull_MOSS_V07_Harness_Tie_Loops_PROTOTYPE.step": {
+      "sha256": "bdfd0b6d3a3fa2ff688d87edff741f517d6c7c8d3123c199e8d7bf481fff52b5",
+      "bytes": 9153473
+    },
+    "stl/Hull_MOSS_V07_Harness_Tie_Loops_PROTOTYPE.stl": {
+      "sha256": "f2a01d2b0b696583a667c67974691ad508d3c799999874d7d93c534850d8db5f",
+      "bytes": 3929084
+    },
+    "preview/HULL_WITH_TIES_AND_NOTCH.npz": {
+      "sha256": "bdc6081a537d639d1953eb401c2f496ff410160f168409a05dd643dd28e5393e",
+      "bytes": 643846
+    }
+  }
+}

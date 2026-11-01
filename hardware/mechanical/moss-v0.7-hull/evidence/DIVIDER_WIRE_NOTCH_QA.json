@@ -1,0 +1,89 @@
+{
+  "status": "PROTOTYPE_FIT_REQUIRED_NOT_FULL_COLLISION_QUALIFICATION",
+  "operation": "One top-open notch through the battery divider, subtractive only inside the verified local tool.",
+  "tool_bounds_mm": [
+    [
+      24,
+      55,
+      56.5
+    ],
+    [
+      34,
+      69,
+      72
+    ]
+  ],
+  "actual_removed_material_bounds_mm": [
+    [
+      26.0,
+      55.0,
+      56.5
+    ],
+    [
+      32.0,
+      69.0,
+      66.0
+    ]
+  ],
+  "actual_removed_material_volume_mm3": 787.6991118452404,
+  "actual_removed_solid_count": 1,
+  "opening_width_mm": 14,
+  "maximum_depth_below_divider_top_mm": 9.5,
+  "bottom_corner_radius_mm": 2,
+  "additional_edge_fillet_mm": 0,
+  "edge_note": "The two lower profile corners are R2; no global edge fillet was applied to inherited native surfaces.",
+  "baseline_step_sha256": "f18353186a1477e51fbaae17a3573fe49792f7f835f080e5b07b5e5de683554f",
+  "baseline_stl_sha256": "86c66cf471bc0e04af28d83ce327b123f8ea4af0e50bb191d088de7ce2b4f8e9",
+  "step_roundtrip": {
+    "valid": true,
+    "solid_count": 1,
+    "shell_count": 3,
+    "bounds_mm": [
+      [
+        -164.0000001,
+        -118.5000001,
+        -5.765684231515188e-07
+      ],
+      [
+        164.00000010000022,
+        118.5000001,
+        66.00000012866927
+      ]
+    ]
+  },
+  "stl_mesh": {
+    "watertight": true,
+    "winding_consistent": true,
+    "is_volume": true,
+    "vertices": 39166,
+    "triangles": 78580,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "bounds_mm": [
+      [
+        -164.0,
+        -118.5,
+        -1.6787533387672558e-15
+      ],
+      [
+        164.0,
+        118.5,
+        66.0
+      ]
+    ]
+  },
+  "mesh_removed_volume_mm3": 787.6952098549809,
+  "pre_notch_vertices_absent_in_result": 0,
+  "absent_vertices_outside_notch_tool": 0,
+  "mesh_shell_count": 3,
+  "internal_history": "harness/assets/internal_history/pre_notch_f18353186a1477e5",
+  "native_source_hashes": {
+    "cad/Hull_MOSS_V07_Core_Stack.step": "93699d5219fa699f0ed72d8527ee1579ebd5b5b51b05fac893e344254e7bde37",
+    "stl/Hull_MOSS_V07_Print.stl": "3bf5893f4bf1fae1a56c78f92af5f0615a3b058d9275406c3ca181befed899cd"
+  },
+  "native_sources_unchanged": true,
+  "harness_step_regenerated": false,
+  "limits": [
+    "Local geometry opening only; wire clearance, actual insulation contact, cover fit and access remain for root routing checks and physical trial."
+  ]
+}

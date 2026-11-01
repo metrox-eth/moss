@@ -1,41 +1,31 @@
-# MOSS CORE V0.7 - Harness study
+# MOSS Core V0.7 - wiring harness
 
-A removable wiring loom for **MOSS, the litter-picking rover**, connecting the Core board, Cytron motor driver, two encoder motors and lid-mounted STOP button. Five cable-tie bridges and a divider notch are integrated into a prototype hull.
+Updated **1 November 2026** for the current 82 x 79 mm Core PCB and the matching hull with a 74 x 71 mm mounting pattern. This is a prototype cable kit for **MOSS, the litter-picking rover**; the released rover remains V0.6/R92.
 
-![Harness inside MOSS](media/ASSEMBLY.jpg)
+![Current harness inside MOSS](media/ASSEMBLY.jpg)
 
-**Design study for prototype quotation.** Physical fit has not yet been tested. The released rover remains V0.6/R92.
+- **One six-wire cable per motor:** two winding leads and four encoder wires, through J3/J4 Micro-Fit connectors.
+- **Cytron link:** J2 carries four control signals, signal GND and four winding outputs. J11 remains the separate supply. These form one loom assembly with two Core terminations; J2 cavity 10 is empty.
+- **Detachable STOP tail:** two separate NC loops through J8 and a four-way inline disconnect near the lid button.
+- **Current Core:** integrated 5 V converter, vertical battery/arm/speaker headers, two fan connectors and no external power module or fuse holder.
 
-**Board snapshot: 30 October 2026.** This viewer, film and CAD still show the separate Waveshare power module. The [current Core PCB](../) was updated on 31 October with an integrated converter and a GND mounting connection. The harness geometry and its recorded checks have not been updated to that board.
+## Inspect and build
 
-## Explore
-
-- [Studio film](media/MOSS_Harness_Story.mp4)
 - [Offline 3D viewer](viewer/MOSS_HARNESS_VIEWER.zip) - unzip and open the HTML in a desktop browser with WebGL.
-- [Wiring and connector guide](CONNECTIONS.md)
-- [Interface verification](INTERFACE_VERIFICATION.md) - supplier references, corrections and remaining physical checks.
-- [Prototype quotation package](rfq/MOSS_CORE_V07_HARNESS_RFQ.pdf)
+- [Current top view](media/CURRENT_TOP.png), [Core without Orange Pi](media/CURRENT_NO_PI.png), [Core with Orange Pi](media/CURRENT_CONNECTORS.png).
+- [Connection guide](CONNECTIONS.md) and [interface/first-article checks](INTERFACE_VERIFICATION.md).
+- [Prototype quotation PDF](rfq/MOSS_CORE_V07_HARNESS_RFQ.pdf), [42-wire schedule](rfq/WIRELIST.csv) and [machine-readable specification](rfq/HARNESS_SPECIFICATION.json).
+- [Routing STEP](cad/MOSS_HARNESS_ROUTING.step), [common-trunk centrelines](cad/MOSS_HARNESS_CENTRELINES.step) and [route data](data/ROUTE_LENGTHS.json).
+- [Hull STEP](cad/Hull_MOSS_V07_Harness_Tie_Loops_PROTOTYPE.step) / [STL](cad/Hull_MOSS_V07_Harness_Tie_Loops_PROTOTYPE.stl), with five integral cable-tie bridges and the divider notch. [Hull rebuild sources and editable Fusion file](../../../mechanical/moss-v0.7-hull/).
 
-## Layout
+The model contains **14 routes and 42 custom wire segments**, plus three commercial USB cable assemblies. H03's STEP centreline covers its common trunk; its individual Cytron fanout paths and four-output sleeve are in the viewer and route data. [CAD notes](README_CAD.md) explain the length allowances and connector choices.
 
-| Assembly | Connection |
-| --- | --- |
-| Battery | XT30 J10; retain the pack's existing fuse. |
-| Cytron | J11 supply, J2 control and J12/J13 motor-current paths. |
-| Motors | One six-wire plug per motor: two motor leads and four encoder wires. Retain the supplied Arduitronics motor pigtails. |
-| Removable lid | J8, four signal wires through a small inline connector near the STOP button. |
-| Orange Pi | J20 supplies its POWER port; DATA connects to the HB1 USB hub. |
-| Other devices | Arm bus J5, speaker J7, fans J14/J15; cameras and LiDAR use the hub. |
+## What is checked
 
-## CAD and dimensions
+Native PCB/schematic/contract comparison covers [76 pins on 12 connectors](evidence/INDEPENDENT_CONNECTOR_MAP_20261101.json). [38 custom-wire starts](evidence/CONNECTION_CHECKS.json) match the Core cavity positions; the four remaining custom wires begin at the lid disconnect. All 14 common-trunk STEP sweeps reimport as valid solids.
 
-| Download | Contents |
-| --- | --- |
-| [Routing STEP](cad/MOSS_HARNESS_ROUTING.step) / [centrelines](cad/MOSS_HARNESS_CENTRELINES.step) | 20 named routes in the R92 coordinate frame, in millimetres. |
-| [Hull STEP](cad/Hull_MOSS_V07_Harness_Tie_Loops_PROTOTYPE.step) / [STL](cad/Hull_MOSS_V07_Harness_Tie_Loops_PROTOTYPE.stl) | Five integral tie bridges and a rounded divider notch. |
-| [Tie-loop test coupon](cad/tie_anchor_fit_coupon.stl) | Test print for a 2.5 mm cable tie. |
-| [HB1 STEP](cad/HOCO_HB1_Visual_Reference.step) / [speaker STEP](cad/Speaker_3W_4Ohm_R92_original.step) | Photo-based hub and original R92 speaker reference geometry. |
+Six full-diameter sleeve envelopes were checked against all 123 solids of the supplied Orange Pi CAD, including GPIO pins, and all four 20 mm standoffs: **zero intersection**, without trimming either end. The closest nominal Pi clearance is **1.77 mm** at J2's H03 trunk. See the [full CAD check](evidence/FULL_SLEEVE_OPI_QA.json), the separate [sampled route/context screen](evidence/CURRENT_ROUTE_CLEARANCE.json), and the [closed-cover/cooler screen](evidence/COOLER_LID_CLEARANCE.json). The latter includes all 42 complete wire paths and modeled sleeves, without endpoint exclusions: no contact with the closed cover or illustrative cooler. The real cooler shape was not supplied. H03 command loops stay below the Cytron cover roof; neither Cytron nor the cover was moved. The unchanged H03 trunk has 0.53 mm nominal clearance at the cover rib; physical wire/sleeve tolerances require first-article fitting. These are model checks, not physical-fit or electrical qualification.
 
-[Route data](data/ROUTE_LENGTHS.json) gives geometric cable paths. The quotation schedule adds a stated prototype allowance; it does not replace a fitted first-article check or the manufacturer's cut/strip schedule.
+Retain the supplied motor pigtails and record their cavity/function map by continuity on the first article. Physical connector seating, wire/sleeve tolerances, closed-lid fit, strain relief, motor noise immunity and storage of the hub's 800 mm captive USB lead still require a fitted prototype. The old film shows the superseded 30 October layout and is not a current assembly reference. This session checked the offline bundle and static views; browser interaction was not tested.
 
-Generated wire endpoints, STEP reimport and sampled route clearances are checked in [evidence](evidence/). These checks cover the model, not physical connector mating. See [geometry sources](MODEL_PROVENANCE.md), [rebuild instructions](source/README.md) and [attribution](ATTRIBUTION.md).
+See [geometry provenance](MODEL_PROVENANCE.md), [rebuild instructions](source/README.md) and [attribution/licensing](ATTRIBUTION.md). No PCB fabrication or assembly source is changed by this harness study.

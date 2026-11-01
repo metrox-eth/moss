@@ -52,14 +52,14 @@ def main():
     started=time.time()
     source_hash=sha(SOURCE)
     routes=json.loads(SOURCE.read_text())['routes']
-    assert len(routes)==20
+    assert len(routes)==14
     center_assembly=cq.Assembly(name='MOSS_HARNESS_CENTRELINES_CONCEPT_MM')
     envelope_assembly=cq.Assembly(name='MOSS_HARNESS_OUTER_ROUTE_ENVELOPES_CONCEPT_MM')
     report={
         'status':'EDITABLE_CONCEPT_CAD_NOT_FABRICATION_OR_COLLISION_RELEASE',
         'units':'mm','source':str(SOURCE),'source_sha256':source_hash,
         'method':'Exact piecewise cubic Bezier conversion of the build_harness.py cubic Hermite recipe; same control points and derivatives. Rounded recorded samples verified against reconstructed Hermite samples.',
-        'envelope_definition':'Full-length circular outer route reservations: sleeve_outer_diameter_mm when sleeve=true, otherwise wire_od_mm. These are not literal braid, contacts or individual conductors.',
+        'envelope_definition':'Common-trunk outer route reservations: sleeve_outer_diameter_mm when sleeve=true, otherwise wire_od_mm. H03 Cytron terminal fanout is separately in ROUTE_LENGTHS individual_wire_points_mm/GLB; the common-trunk STEP is not its complete branched cable. These are not contacts, braid or individual conductors.',
         'fallback':'If one sweep fails or yields invalid geometry, preserve its named centreline wire in the routing assembly. No changed route or reduced radius is substituted.',
         'routes':[],
     }
@@ -125,16 +125,11 @@ def main():
     assert report['roundtrip']['centerline_route_names_preserved'] and report['roundtrip']['routing_route_names_preserved']
     # Use the same 1e-7 mm quadrature tolerance for both curve wrappers.
     assert abs(report['roundtrip']['total_reimported_centerline_length_mm']-report['roundtrip']['total_original_curve_length_mm'])<.00001
-    copies=[
-        'Hull_MOSS_V07_Harness_Tie_Loops_PROTOTYPE.step',
-        'Hull_MOSS_V07_Harness_Tie_Loops_PROTOTYPE.stl',
-        'tie_anchor_fit_coupon.step','tie_anchor_fit_coupon.stl',
-        'tie_anchor_fit_coupon.png','hull_tie_variant_QA.json',
-    ]
+    copies=[]  # Hull exports are owned by the independent mounting/hull refresh.
     report['copied_verified_hull_and_coupon']=[]
     for name in copies:
-        shutil.copy2(P/'cad'/name,O/name)
-        assert sha(P/'cad'/name)==sha(O/name)
+        shutil.copy2(A/name,O/name)
+        assert sha(A/name)==sha(O/name)
         report['copied_verified_hull_and_coupon'].append(name)
     report['outputs']={path.name:{'sha256':sha(path),'bytes':path.stat().st_size} for path in [center_path,envelope_path]}
     report['source_unchanged']=sha(SOURCE)==source_hash

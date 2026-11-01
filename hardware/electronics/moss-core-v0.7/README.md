@@ -41,7 +41,7 @@ The fan outputs carry fused 3S battery voltage, up to 12.6 V, rather than regula
 
 ## Orange Pi assembly clearance
 
-The combined [mechanical review](evidence/MECHANICAL_REVIEW.json) uses **20 mm Orange Pi standoffs**, a CAD mounting height, and the measured **16 mm total Orange Pi/cooler height**. **The hull posts must be adapted to the new Core mounting pattern.** The previous hull-mount fit is no longer a current fit claim. The component bodies clear the Orange Pi and four standoffs, including a 6 mm diameter standoff reservation. The conservative vertical gap from the highest component beneath the Orange Pi to its lowest underside feature is **4.15 mm**.
+The combined [mechanical review](evidence/MECHANICAL_REVIEW.json) uses **20 mm Orange Pi standoffs**, a CAD mounting height, and the measured **16 mm total Orange Pi/cooler height**. The [updated hull prototype](https://github.com/metrox-eth/moss/tree/main/hardware/mechanical/moss-v0.7-hull) uses the new **74 × 71 mm Core fixing pattern**, with its own geometry checks and editable source. The earlier mechanical review remains evidence for the upper stack; its request to update the hull posts is addressed by this separate hull update. The component bodies clear the Orange Pi and four standoffs, including a 6 mm diameter standoff reservation. The conservative vertical gap from the highest component beneath the Orange Pi to its lowest underside feature is **4.15 mm**.
 
 The mated-connector and wire checks use supplier dimensions where available and declared clearance envelopes elsewhere. **Route J2's wires rearward and J3's wires leftward, away from the Orange Pi, before bringing them upward.** A straight, expanded vertical bundle reservation at these two ports intersects the Orange Pi CAD. This is an assembly routing condition; the exact cable and connector tolerances still need checking on the first prototype. The cooler's lateral shape was not supplied, so its final cable clearance also needs checking.
 
@@ -51,7 +51,7 @@ The [mounting table](MOUNTING.md) gives the current chassis fixing pattern; the 
 
 ## Harness packaging study
 
-The separate [harness study](harness/) contains a 3D viewer, film and hull prototype with cable-tie supports. **Its geometry is frozen to the 30 October board with the separate Waveshare module.** It has not yet been updated or physically fitted to this integrated-power design.
+The [updated harness study](https://github.com/metrox-eth/moss/tree/main/hardware/electronics/moss-core-v0.7/harness) follows the current integrated-power board and vertical connectors. Each motor uses one six-wire cable to J3/J4. A nine-wire link at J2 groups the Cytron control and motor-output circuits; J11 retains its separate supply. The model includes the updated hull fixings, five cable-tie bridges and the divider notch. The package contains current CAD, an offline viewer, wiring schedules and a prototype RFQ. The older film is historical and is not evidence for this layout. Physical fit and electrical operation remain first-prototype checks.
 
 ## Download and inspect
 

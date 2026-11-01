@@ -1,0 +1,84 @@
+{
+  "status": "PASS_FINAL_HULL_STEP_STL_AND_PILOTS",
+  "method": "Independent reimport: analytic cylindrical surface axes in STEP, mesh topology and STEP/STL bounds.",
+  "step_sha256": "bdfd0b6d3a3fa2ff688d87edff741f517d6c7c8d3123c199e8d7bf481fff52b5",
+  "stl_sha256": "f2a01d2b0b696583a667c67974691ad508d3c799999874d7d93c534850d8db5f",
+  "core_axes_mm": [
+    [
+      -76,
+      37
+    ],
+    [
+      -2,
+      37
+    ],
+    [
+      -76,
+      -34
+    ],
+    [
+      -2,
+      -34
+    ]
+  ],
+  "core_pitch_mm": [
+    74,
+    71
+  ],
+  "all_vertical_pilots_mm": [
+    {
+      "x": -6.0,
+      "y": 50.0,
+      "radius": 1.05,
+      "z_min": 4.0,
+      "z_max": 10.0
+    },
+    {
+      "x": -2.0,
+      "y": -34.0,
+      "radius": 1.05,
+      "z_min": 4.0,
+      "z_max": 10.0
+    },
+    {
+      "x": -2.0,
+      "y": 37.0,
+      "radius": 1.05,
+      "z_min": 4.0,
+      "z_max": 10.0
+    },
+    {
+      "x": -76.0,
+      "y": -34.0,
+      "radius": 1.05,
+      "z_min": 4.0,
+      "z_max": 10.0
+    },
+    {
+      "x": -76.0,
+      "y": 37.0,
+      "radius": 1.05,
+      "z_min": 4.0,
+      "z_max": 10.0
+    },
+    {
+      "x": -72.0,
+      "y": 50.0,
+      "radius": 1.05,
+      "z_min": 4.0,
+      "z_max": 10.0
+    }
+  ],
+  "old_three_axes_absent": true,
+  "valid_BRep": true,
+  "solid_count": 1,
+  "mesh_watertight": true,
+  "mesh_winding_consistent": true,
+  "mesh_triangle_count": 78580,
+  "maximum_STEP_STL_bounds_difference_mm": 5.765684214727654e-07,
+  "scope": "Nominal geometry and print-mesh consistency; physical printed screw engagement not tested.",
+  "source_files": [
+    "../cad/Hull_MOSS_V07_Harness_Tie_Loops_PROTOTYPE.step",
+    "../cad/Hull_MOSS_V07_Harness_Tie_Loops_PROTOTYPE.stl"
+  ]
+}

@@ -51,20 +51,33 @@ def housing(n,pitch,width,length,height,outside,hole_od,neck=None):
     latch=block(max(1.2,width*.5),max(.8,outside*.65),.35,(0,-outside*.6,height/2+.10))
     return s.fuse(latch)
 
-# Wire-exit frames, not SMT pad coordinates. Each tuple: (origin,row,+out).
-CORE={
- 'J2':([-32.5,36.65,13.245],[1,0,0],[0,1,0],'GH',5,1.25,7.5,5.7,3.75,2.2,1.0),
- 'J3':([-18,36.65,13.245],[1,0,0],[0,1,0],'GH',4,1.25,6.25,5.7,3.75,2.2,1.0),
- 'J4':([-43.25,36.65,13.245],[1,0,0],[0,1,0],'GH',4,1.25,6.25,5.7,3.75,2.2,1.0),
- 'J8':([-73.625,.1,17.895],[0,-1,0],[0,0,1],'SH',6,1,7,5,2.8,1.98,.8),
- 'J14':([-39.25,-34.8,21.395],[-1,0,0],[0,0,1],'XH',2,2.5,7.3,7.5,5.7,2.8,1.3),
- 'J15':([-27.75,-34.8,21.395],[-1,0,0],[0,0,1],'XH',2,2.5,7.3,7.5,5.7,2.8,1.3),
- 'J7':([2.8,-26,14.095],[0,-1,0],[1,0,0],'PH',2,2,5.8,6.35,4.5,2,1.4),
- 'J5':([-58,-38.55,14.045],[-1,0,0],[0,-1,0],'SPOX',3,2.5,8.9,8,4.2,2.6,1.7),
-}
+# Wire-exit planes for dimensioned cable-housing references. Native PCB headers
+# are exported unchanged from the current PCB. These reconstructed cable bodies
+# show cavity/locking features; they are not vendor mating CAD or a fit certificate.
+ANCHORS=json.loads((P/'source/PCB_CONNECTOR_ANCHORS.json').read_text())['connectors']
+TOP=11.595
+# tuple retained for caller compatibility: outlet,row,out,family,n,pitch,w,l,h,collar,OD
+CORE={}
+for ref,family,n,pitch,width,length,height,z in [
+ ('J2','MicroFit',10,3.,15.85,14.,6.85,TOP+17.64),
+ ('J3','MicroFit',6,3.,9.85,14.,6.85,TOP+17.64),
+ ('J4','MicroFit',6,3.,9.85,14.,6.85,TOP+17.64),
+ ('J8','SH',6,1.,7.,5.,2.8,20.6),
+ ('J14','XH',2,2.5,7.3,7.5,5.7,26.1),
+ ('J15','XH',2,2.5,7.3,7.5,5.7,26.1),
+ ('J7','PH',2,2.,5.8,6.35,4.5,23.8),
+ ('J5','SPOX',3,2.5,8.9,8.,4.2,24.8),
+]:
+ ps=[p for p in ANCHORS[ref]['pads'] if p['pad'].isdigit()]
+ centre=np.array([p['world_xy_mm'] for p in ps]).mean(0)
+ row=np.array(ps[1]['world_xy_mm'])-np.array(ps[0]['world_xy_mm']);row/=np.linalg.norm(row)
+ CORE[ref]=([*centre,z],[*row,0.],[0,0,1.],family,n,pitch,width,length,height,2.6,1.85 if family=='MicroFit' else 1.2)
+# J10 vertical XT30: native pin1 GND, pin2 battery+. Wire-plane height is
+# a declared mating reservation because the supplied AMASS drawing is reference CAD.
+BATTERY_EXIT=np.array([-55.5,35.,32.9])
 USB={
- 'J1':([17,-7.2,13.195],[0,1,0],[1,0,0]),
- 'J20':([17,13,13.195],[0,1,0],[1,0,0]),
+ 'J1':([17.175,-7.2,12.78],[0,1,0],[1,0,0]),
+ 'J20':([17.175,13.,12.78],[0,1,0],[1,0,0]),
  'Pi_power':([-16.5241,-18.8774,33.887],[-1,0,0],[0,-1,0]),
  'Pi_data':([-29.0741,-18.9774,33.887],[-1,0,0],[0,-1,0]),
  'Hub_downstream':([-31.2,78.5,56.5],[0,1,0],[0,0,1]),
@@ -74,12 +87,39 @@ MOTOR={
  'left':{'origin':[-112,10.8,22.614],'outlet':[-100,7.8,22.614], 'row':[0,0,1], 'out':[1,0,0], 'up':[0,-1,0]},
  'right':{'origin':[-130,-10.8,22.614],'outlet':[-142,-7.8,22.614], 'row':[0,0,1], 'out':[-1,0,0], 'up':[0,1,0]},
 }
-
 def core_points(ref):
-    a=CORE[ref];p=np.array(a[0]);r=np.array(a[1]);n,pitch=a[4:6]
-    points=[p+r*(i-(n-1)/2)*pitch for i in range(n)]
-    if ref in ['J2','J3','J4','J5','J7']:points=points[::-1]
-    return [points[i] for i in ([0,1,4,5] if ref=='J8' else range(n))]
+ z=CORE[ref][0][2]
+ pads=sorted([p for p in ANCHORS[ref]['pads'] if p['pad'].isdigit()],key=lambda p:int(p['pad']))
+ active=[p for p in pads if (ref!='J8' or int(p['pad']) in [1,2,5,6]) and (ref!='J2' or p['pad']!='10')]
+ return [np.r_[p['world_xy_mm'],z] for p in active]
+
+def microfit_mesh(n):
+ cols=n//2;w=9.85 if n==6 else 15.85
+ # Drawing430250000-SD: A,14axial,6.85across,3mmrowpitch.
+ # Additional details are visual approximations; cavity/keywall and side latch
+ # remain visibly separate instead of an undifferentiated solid block.
+ s=block(w,6.85,14,(0,0,-7))
+ for row in [-1.5,1.5]:
+  for i in range(cols):
+   x=(i-(cols-1)/2)*3.
+   # Female socket cavity and rear wire inlet, without simulated live contacts.
+   s=s.cut(block(1.93,1.93,14.4,(x,row,-7)))
+   s=s.cut(cq.Solid.makeCylinder(1.0,2.1,cq.Vector(x,row,-2.0)))
+ # Two moulded polarizing ribs and external flexible latch visual.
+ for x in [-w/2+.55,w/2-.55]:s=s.fuse(block(.55,1.0,9,(x,3.65,-8)))
+ s=s.fuse(block(max(3.,w*.42),.65,8.,(0,3.75,-7.1)))
+ s=s.fuse(block(max(3.2,w*.45),1.55,1.,(0,3.6,-2.8)))
+ return s
+
+def vertical_housing(ref):
+ a=CORE[ref];outlet,row,out,family,n,pitch,width,length,height,outside,od=a
+ if family=='MicroFit':
+  m=cached(f'MicroFit_{n}_dimensional_20261101',lambda:microfit_mesh(n))
+  # Native pads are inworldX rows andworldY oppositePCB Y. Keep native cavity
+  # ordering from PCB data, not inferred from the visual rib.
+  m.vertices[:,1]*=-1
+  m.apply_translation(outlet);return m
+ return transform(cached(f'VERTICAL_{family}_{n}_{pitch}_{width}_{length}_{height}',lambda:housing(n,pitch,width,length,height,outside,od, (width-1.6,height-1.5) if family=='XH' else None)),outlet,row,out)
 
 def motor_points(side,subset):
     d=MOTOR[side];p=np.array(d['outlet']);r=np.array(d['row'])
@@ -89,14 +129,12 @@ def add_models(add,box):
     records=[]
     for ref,a in CORE.items():
         outlet,row,out,family,n,pitch,width,length,height,outside,od=a
-        key=f'{family}_{n}_{pitch}_{width}_{length}_{height}_{outside}'
-        m=cached(key,lambda n=n,pitch=pitch,width=width,length=length,height=height,outside=outside,od=od:
-            housing(n,pitch,width,length,height,outside,od, (width-1.6,height-1.5) if family=='XH' else None))
-        rid={'J2':'H03','J3':'H04','J4':'H05','J8':'H08_chassis','J14':'O03_right','J15':'O03_left','J5':'O01','J7':'O02'}[ref]
-        add(f'CONNECTOR__{rid}__{ref}_{family}_housing',transform(m,outlet,row,out),WHITE,'CONNECTOR',rid)
-        records.append({'ref':ref,'family':family,'circuits':n,'pitch_mm':pitch,'housing_width_mm':width,
-            'housing_axial_length_mm':length,'wire_exit_world_mm':outlet,'mating_axis_world':out,
-            'evidence':'Public catalogue dimensions; simplified reconstructed housing, native fixed PCB model retained.'})
+        rid={'J2':'H03','J3':'H04','J4':'H05','J8':'H08_chassis','J14':'O03_left','J15':'O03_right','J5':'O01','J7':'O02'}[ref]
+        add(f'CONNECTOR__{rid}__{ref}_{family}_housing',vertical_housing(ref),BLACK if family=='MicroFit' else WHITE,'CONNECTOR',rid)
+        records.append({'ref':ref,'family':family,'circuits':n,'populated_cavities':list(range(1,10)) if ref=='J2' else [1,2,5,6] if ref=='J8' else list(range(1,n+1)),'pitch_mm':pitch,'housing_width_mm':width,
+            'housing_axial_length_mm':length,'wire_exit_world_mm':outlet,'mating_axis_world':out,'cavity_wire_points_world_mm':[v.tolist()for v in core_points(ref)],
+            'housing_mpn':{'J2':'43025-1000','J3':'43025-0600','J4':'43025-0600','J5':'50-37-5033','J7':'PHR-2','J8':'SHR-06V-S','J14':'XHP-2','J15':'XHP-2'}[ref],
+            'evidence':'Dimensioned cable reference; native fixed current PCB model retained. MicroFit drawing430250000-SD A=9.85/15.85, axial14, crossbody6.85; published matedheight17.64 is a reservation, exact latch/cavityclocking and seat not CAD-qualified.' if family=='MicroFit' else 'Public catalogue dimensions; reconstructed cavity/latch visual, cable seating reserved not certified.'})
     # USB-C: compact commercial cable allowance. Metal tongue enters the socket;
     # jacket sits outside it. Rubber ribs at the wire exit are distinct geometry.
     for key,(outlet,row,out) in USB.items():
@@ -126,7 +164,7 @@ def add_models(add,box):
     m=cached('Cytron_control_5',lambda:housing(5,2.54,12.7,8.5,3.4,4.7,1.05))
     add('CONNECTOR__H03__Cytron_five_way',transform(m,[-124,39.359,65.4],[1,0,0],[0,0,1]),WHITE,'CONNECTOR','H03')
     # Ferrules enter each screw terminal; coloured insulated collars remain visible.
-    terms=[('H02',-126.84),('H02',-121.84),('H06a',-136.84),('H06c',-131.84),('H07a',-116.84),('H07c',-111.84)]
+    terms=[('H02',-126.84),('H02',-121.84),('H03',-136.84),('H03',-131.84),('H03',-116.84),('H03',-111.84)]
     for i,(rid,x) in enumerate(terms):
         ferr=cq.Solid.makeCylinder(.85,5.0,cq.Vector(x,-43.2,54),cq.Vector(0,1,0))
         add(f'CONNECTOR__{rid}__Cytron_ferrule_{i}',shape_mesh(ferr),METAL,'CONNECTOR',rid)
@@ -139,7 +177,7 @@ def add_models(add,box):
         return s
     xt=cached('XT30U_legacy_envelope',xt30)
     # Core battery mating housing, 5mm contact pitch, not old undersized block.
-    add('CONNECTOR__H01__Core_XT30_cable',transform(xt,[-55.5,50.1,14.995],[1,0,0],[0,1,0]),YELLOW,'CONNECTOR','H01')
+    add('CONNECTOR__H01__Core_XT30_cable',transform(xt,BATTERY_EXIT,[-1,0,0],[0,0,1]),YELLOW,'CONNECTOR','H01')
     for key,outlet,direction in [('loom',[82,60,62],[-1,0,0]),('pack',[103,60,62],[1,0,0])]:
         add(f'CONNECTOR__H01__battery_XT30_{key}',transform(xt,outlet,[0,1,0],direction),YELLOW,'CONNECTOR','H01')
     # PicoBlade 51047/51021: official drawing gives 9 mm mated length.

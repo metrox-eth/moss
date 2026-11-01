@@ -1,0 +1,1773 @@
+{
+  "status": "SAMPLED_TARGETED_COOLER_AND_CLOSED_LID_SCREEN",
+  "PCB_sha256": "7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14",
+  "route_data_sha256": "ffa1e1283457c61096f7128c7c20471511b5268852f9a02089c626a8f6d9c91f",
+  "source_scene_sha256": "356379ecf1e2bb02bfa3f622677f91ce2fba74a0824f8a7cabbc3c9ce4a6e8ba",
+  "groups": {
+    "Illustrative_cooler": {
+      "meshes": [
+        "PI__Cooler_visual",
+        "PI__Cooler_fin_-51.0",
+        "PI__Cooler_fin_-48.64",
+        "PI__Cooler_fin_-46.27",
+        "PI__Cooler_fin_-43.91",
+        "PI__Cooler_fin_-41.55",
+        "PI__Cooler_fin_-39.18",
+        "PI__Cooler_fin_-36.82",
+        "PI__Cooler_fin_-34.45",
+        "PI__Cooler_fin_-32.09",
+        "PI__Cooler_fin_-29.73",
+        "PI__Cooler_fin_-27.36",
+        "PI__Cooler_fin_-25.0"
+      ],
+      "vertices": 104,
+      "triangles": 156,
+      "bounds_world_mm": [
+        [
+          -53.5,
+          0.0,
+          38.5
+        ],
+        [
+          -22.5,
+          26.0,
+          47.599998474121094
+        ]
+      ]
+    },
+    "Closed_upper_cover": {
+      "meshes": [
+        "LID__Upper_cover_R9"
+      ],
+      "vertices": 27780,
+      "triangles": 55575,
+      "bounds_world_mm": [
+        [
+          -164.0,
+          -95.43506622314453,
+          62.000003814697266
+        ],
+        [
+          122.00003814697266,
+          95.4302749633789,
+          109.14631652832031
+        ]
+      ]
+    }
+  },
+  "method": "Nearest triangle surface distance minus individual insulation radius / actual modeled sleeve outer radius+0.1mm braid, at approximately0.9mm path samples. Entire individual wires, no endpoint exclusions. Sleeves checked over their actual displayed sample spans. Absolute distance: surface-clearance screen, not containment or physical-fit certification.",
+  "cooler_scope": "Illustrative fin/body envelope only; real cooler shape not supplied. Overall16mm board+cooler height is the user measurement.",
+  "results": [
+    {
+      "route": "H01",
+      "geometry": "wire_1",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 1.3,
+      "minimum_sampled_skin_clearance_mm": 9.3,
+      "closest_point_world_mm": [
+        -53.0,
+        35.0,
+        32.9
+      ],
+      "closest_sample": 0,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H01",
+      "geometry": "wire_2",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 1.3,
+      "minimum_sampled_skin_clearance_mm": 10.21564,
+      "closest_point_world_mm": [
+        -58.0,
+        35.0,
+        32.9
+      ],
+      "closest_sample": 0,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H01",
+      "geometry": "modeled_sleeve_plus_braid",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 3.13,
+      "minimum_sampled_skin_clearance_mm": 18.66869,
+      "closest_point_world_mm": [
+        -48.7503,
+        47.7951,
+        38.1042
+      ],
+      "closest_sample": 20,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H01",
+      "geometry": "wire_1",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 1.3,
+      "minimum_sampled_skin_clearance_mm": 1.3245,
+      "closest_point_world_mm": [
+        39.6989,
+        58.2093,
+        63.3755
+      ],
+      "closest_sample": 138,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H01",
+      "geometry": "wire_2",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 1.3,
+      "minimum_sampled_skin_clearance_mm": 2.7,
+      "closest_point_world_mm": [
+        82.0,
+        62.5,
+        62.0
+      ],
+      "closest_sample": 189,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H01",
+      "geometry": "modeled_sleeve_plus_braid",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 3.13,
+      "minimum_sampled_skin_clearance_mm": 0.7195,
+      "closest_point_world_mm": [
+        39.922,
+        58.8042,
+        62.1505
+      ],
+      "closest_sample": 138,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H02",
+      "geometry": "wire_1",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 1.3,
+      "minimum_sampled_skin_clearance_mm": 34.29944,
+      "closest_point_world_mm": [
+        -81.405,
+        13.545,
+        16.395
+      ],
+      "closest_sample": 0,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H02",
+      "geometry": "wire_2",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 1.3,
+      "minimum_sampled_skin_clearance_mm": 34.29944,
+      "closest_point_world_mm": [
+        -81.405,
+        8.465,
+        16.395
+      ],
+      "closest_sample": 0,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H02",
+      "geometry": "modeled_sleeve_plus_braid",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 3.13,
+      "minimum_sampled_skin_clearance_mm": 34.35334,
+      "closest_point_world_mm": [
+        -88.0683,
+        -4.2972,
+        24.6592
+      ],
+      "closest_sample": 26,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H02",
+      "geometry": "wire_1",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 1.3,
+      "minimum_sampled_skin_clearance_mm": 9.1345,
+      "closest_point_world_mm": [
+        -120.5717,
+        -56.6146,
+        55.5655
+      ],
+      "closest_sample": 123,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H02",
+      "geometry": "wire_2",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 1.3,
+      "minimum_sampled_skin_clearance_mm": 10.94298,
+      "closest_point_world_mm": [
+        -121.8019,
+        -46.293,
+        53.8766
+      ],
+      "closest_sample": 134,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H02",
+      "geometry": "modeled_sleeve_plus_braid",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 3.13,
+      "minimum_sampled_skin_clearance_mm": 10.2896,
+      "closest_point_world_mm": [
+        -115.9531,
+        -60.069,
+        52.5804
+      ],
+      "closest_sample": 113,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H03",
+      "geometry": "wire_1",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 0.75,
+      "minimum_sampled_skin_clearance_mm": 11.27118,
+      "closest_point_world_mm": [
+        -40.0027,
+        37.2794,
+        34.3426
+      ],
+      "closest_sample": 6,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H03",
+      "geometry": "wire_2",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 0.75,
+      "minimum_sampled_skin_clearance_mm": 12.44482,
+      "closest_point_world_mm": [
+        -39.5262,
+        37.1677,
+        31.4725
+      ],
+      "closest_sample": 3,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H03",
+      "geometry": "wire_3",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 0.75,
+      "minimum_sampled_skin_clearance_mm": 9.73578,
+      "closest_point_world_mm": [
+        -37.5,
+        36.3138,
+        36.6087
+      ],
+      "closest_sample": 8,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H03",
+      "geometry": "wire_4",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 0.75,
+      "minimum_sampled_skin_clearance_mm": 11.27118,
+      "closest_point_world_mm": [
+        -37.6767,
+        37.2794,
+        34.3426
+      ],
+      "closest_sample": 6,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H03",
+      "geometry": "wire_5",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 0.75,
+      "minimum_sampled_skin_clearance_mm": 11.27118,
+      "closest_point_world_mm": [
+        -33.5692,
+        37.2794,
+        34.3426
+      ],
+      "closest_sample": 6,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H03",
+      "geometry": "wire_6",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 0.9,
+      "minimum_sampled_skin_clearance_mm": 10.23512,
+      "closest_point_world_mm": [
+        -41.9419,
+        34.773,
+        31.6425
+      ],
+      "closest_sample": 3,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H03",
+      "geometry": "wire_7",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 0.9,
+      "minimum_sampled_skin_clearance_mm": 9.22946,
+      "closest_point_world_mm": [
+        -39.5882,
+        34.9695,
+        33.7932
+      ],
+      "closest_sample": 5,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H03",
+      "geometry": "wire_8",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 0.9,
+      "minimum_sampled_skin_clearance_mm": 10.23512,
+      "closest_point_world_mm": [
+        -37.1105,
+        34.773,
+        31.6425
+      ],
+      "closest_sample": 3,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H03",
+      "geometry": "wire_9",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 0.9,
+      "minimum_sampled_skin_clearance_mm": 9.22946,
+      "closest_point_world_mm": [
+        -35.4118,
+        34.9695,
+        33.7932
+      ],
+      "closest_sample": 5,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H03",
+      "geometry": "modeled_sleeve_plus_braid",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 3.65,
+      "minimum_sampled_skin_clearance_mm": 12.8358,
+      "closest_point_world_mm": [
+        -37.2447,
+        42.4858,
+        44.6343
+      ],
+      "closest_sample": 20,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H03",
+      "geometry": "four_bridge_outputs_sleeve",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 2.75,
+      "minimum_sampled_skin_clearance_mm": 34.29743,
+      "closest_point_world_mm": [
+        -86.64938360346719,
+        26.459262557007808,
+        62.03539708670329
+      ],
+      "closest_sample": 31,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H03",
+      "geometry": "wire_1",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 0.75,
+      "minimum_sampled_skin_clearance_mm": 1.1724,
+      "closest_point_world_mm": [
+        -129.08,
+        40.484,
+        67.0776
+      ],
+      "closest_sample": 149,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H03",
+      "geometry": "wire_2",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 0.75,
+      "minimum_sampled_skin_clearance_mm": 1.1744,
+      "closest_point_world_mm": [
+        -126.54,
+        40.5013,
+        67.0756
+      ],
+      "closest_sample": 146,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H03",
+      "geometry": "wire_3",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 0.75,
+      "minimum_sampled_skin_clearance_mm": 1.1752,
+      "closest_point_world_mm": [
+        -124.0,
+        40.5083,
+        67.0748
+      ],
+      "closest_sample": 145,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H03",
+      "geometry": "wire_4",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 0.75,
+      "minimum_sampled_skin_clearance_mm": 1.1745,
+      "closest_point_world_mm": [
+        -121.46,
+        40.5021,
+        67.0755
+      ],
+      "closest_sample": 143,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H03",
+      "geometry": "wire_5",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 0.75,
+      "minimum_sampled_skin_clearance_mm": 1.1756,
+      "closest_point_world_mm": [
+        -118.92,
+        40.5118,
+        67.0744
+      ],
+      "closest_sample": 141,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H03",
+      "geometry": "wire_6",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 0.9,
+      "minimum_sampled_skin_clearance_mm": 3.3372,
+      "closest_point_world_mm": [
+        -90.0236,
+        47.1985,
+        61.8393
+      ],
+      "closest_sample": 105,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H03",
+      "geometry": "wire_7",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 0.9,
+      "minimum_sampled_skin_clearance_mm": 3.2737,
+      "closest_point_world_mm": [
+        -91.4983,
+        48.1435,
+        61.8263
+      ],
+      "closest_sample": 102,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H03",
+      "geometry": "wire_8",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 0.9,
+      "minimum_sampled_skin_clearance_mm": 2.8312,
+      "closest_point_world_mm": [
+        -86.1394,
+        55.7912,
+        62.2688
+      ],
+      "closest_sample": 91,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H03",
+      "geometry": "wire_9",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 0.9,
+      "minimum_sampled_skin_clearance_mm": 1.3868,
+      "closest_point_world_mm": [
+        -85.6263,
+        53.9444,
+        63.7132
+      ],
+      "closest_sample": 91,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H03",
+      "geometry": "modeled_sleeve_plus_braid",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 3.65,
+      "minimum_sampled_skin_clearance_mm": 0.5282,
+      "closest_point_world_mm": [
+        -74.682,
+        55.433,
+        61.8218
+      ],
+      "closest_sample": 77,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H03",
+      "geometry": "four_bridge_outputs_sleeve",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 2.75,
+      "minimum_sampled_skin_clearance_mm": 3.14458,
+      "closest_point_world_mm": [
+        -94.14028414893777,
+        -46.6854228376941,
+        60.25387385125078
+      ],
+      "closest_sample": 115,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H04",
+      "geometry": "wire_1",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 0.9,
+      "minimum_sampled_skin_clearance_mm": 23.53543,
+      "closest_point_world_mm": [
+        -75.0,
+        -7.0,
+        29.235
+      ],
+      "closest_sample": 0,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H04",
+      "geometry": "wire_2",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 0.9,
+      "minimum_sampled_skin_clearance_mm": 20.9424,
+      "closest_point_world_mm": [
+        -72.0,
+        -7.0,
+        29.235
+      ],
+      "closest_sample": 0,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H04",
+      "geometry": "wire_3",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 0.75,
+      "minimum_sampled_skin_clearance_mm": 18.61725,
+      "closest_point_world_mm": [
+        -69.0,
+        -7.0,
+        29.235
+      ],
+      "closest_sample": 0,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H04",
+      "geometry": "wire_4",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 0.75,
+      "minimum_sampled_skin_clearance_mm": 24.34972,
+      "closest_point_world_mm": [
+        -75.4795,
+        -10.0656,
+        31.7486
+      ],
+      "closest_sample": 3,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H04",
+      "geometry": "wire_5",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 0.75,
+      "minimum_sampled_skin_clearance_mm": 22.23021,
+      "closest_point_world_mm": [
+        -72.0,
+        -10.0,
+        29.235
+      ],
+      "closest_sample": 0,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H04",
+      "geometry": "wire_6",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 0.75,
+      "minimum_sampled_skin_clearance_mm": 19.89195,
+      "closest_point_world_mm": [
+        -69.0,
+        -10.0,
+        29.235
+      ],
+      "closest_sample": 0,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H04",
+      "geometry": "modeled_sleeve_plus_braid",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 3.145,
+      "minimum_sampled_skin_clearance_mm": 29.56059,
+      "closest_point_world_mm": [
+        -85.5618,
+        -6.3426,
+        37.2885
+      ],
+      "closest_sample": 21,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H04",
+      "geometry": "wire_1",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 0.9,
+      "minimum_sampled_skin_clearance_mm": 31.7436,
+      "closest_point_world_mm": [
+        -85.6983,
+        -6.4655,
+        36.3564
+      ],
+      "closest_sample": 21,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H04",
+      "geometry": "wire_2",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 0.9,
+      "minimum_sampled_skin_clearance_mm": 29.8794,
+      "closest_point_world_mm": [
+        -85.4253,
+        -6.2197,
+        38.2206
+      ],
+      "closest_sample": 21,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H04",
+      "geometry": "wire_3",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 0.75,
+      "minimum_sampled_skin_clearance_mm": 31.5649,
+      "closest_point_world_mm": [
+        -86.922,
+        -7.5988,
+        36.6851
+      ],
+      "closest_sample": 21,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H04",
+      "geometry": "wire_4",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 0.75,
+      "minimum_sampled_skin_clearance_mm": 29.7008,
+      "closest_point_world_mm": [
+        -86.649,
+        -7.3531,
+        38.5492
+      ],
+      "closest_sample": 21,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H04",
+      "geometry": "wire_5",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 0.75,
+      "minimum_sampled_skin_clearance_mm": 32.2222,
+      "closest_point_world_mm": [
+        -84.4746,
+        -5.3321,
+        36.0278
+      ],
+      "closest_sample": 21,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H04",
+      "geometry": "wire_6",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 0.75,
+      "minimum_sampled_skin_clearance_mm": 30.358,
+      "closest_point_world_mm": [
+        -84.2016,
+        -5.0863,
+        37.892
+      ],
+      "closest_sample": 21,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H04",
+      "geometry": "modeled_sleeve_plus_braid",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 3.145,
+      "minimum_sampled_skin_clearance_mm": 28.5665,
+      "closest_point_world_mm": [
+        -85.5618,
+        -6.3426,
+        37.2885
+      ],
+      "closest_sample": 21,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H05",
+      "geometry": "wire_1",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 0.9,
+      "minimum_sampled_skin_clearance_mm": 28.87667,
+      "closest_point_world_mm": [
+        -75.0,
+        -18.4,
+        29.235
+      ],
+      "closest_sample": 0,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H05",
+      "geometry": "wire_2",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 0.9,
+      "minimum_sampled_skin_clearance_mm": 26.78845,
+      "closest_point_world_mm": [
+        -72.0,
+        -18.4,
+        29.235
+      ],
+      "closest_sample": 0,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H05",
+      "geometry": "wire_3",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 0.75,
+      "minimum_sampled_skin_clearance_mm": 25.03081,
+      "closest_point_world_mm": [
+        -69.0,
+        -18.4,
+        29.235
+      ],
+      "closest_sample": 0,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H05",
+      "geometry": "wire_4",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 0.75,
+      "minimum_sampled_skin_clearance_mm": 30.96829,
+      "closest_point_world_mm": [
+        -75.0,
+        -21.4,
+        29.235
+      ],
+      "closest_sample": 0,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H05",
+      "geometry": "wire_5",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 0.75,
+      "minimum_sampled_skin_clearance_mm": 29.0166,
+      "closest_point_world_mm": [
+        -72.0,
+        -21.4,
+        29.235
+      ],
+      "closest_sample": 0,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H05",
+      "geometry": "wire_6",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 0.75,
+      "minimum_sampled_skin_clearance_mm": 27.2509,
+      "closest_point_world_mm": [
+        -69.0,
+        -21.4,
+        29.235
+      ],
+      "closest_sample": 0,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H05",
+      "geometry": "modeled_sleeve_plus_braid",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 3.145,
+      "minimum_sampled_skin_clearance_mm": 35.61139,
+      "closest_point_world_mm": [
+        -90.6006,
+        -7.9295,
+        30.58
+      ],
+      "closest_sample": 33,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H05",
+      "geometry": "wire_1",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 0.9,
+      "minimum_sampled_skin_clearance_mm": 31.2845,
+      "closest_point_world_mm": [
+        -151.8646,
+        -1.4756,
+        31.5887
+      ],
+      "closest_sample": 109,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H05",
+      "geometry": "wire_2",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 0.9,
+      "minimum_sampled_skin_clearance_mm": 29.41203,
+      "closest_point_world_mm": [
+        -152.49,
+        -1.798,
+        33.3537
+      ],
+      "closest_sample": 109,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H05",
+      "geometry": "wire_3",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 0.75,
+      "minimum_sampled_skin_clearance_mm": 31.70949,
+      "closest_point_world_mm": [
+        -151.2819,
+        -3.0704,
+        31.504
+      ],
+      "closest_sample": 109,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H05",
+      "geometry": "wire_4",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 0.75,
+      "minimum_sampled_skin_clearance_mm": 29.83714,
+      "closest_point_world_mm": [
+        -151.9073,
+        -3.3927,
+        33.2689
+      ],
+      "closest_sample": 109,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H05",
+      "geometry": "wire_5",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 0.75,
+      "minimum_sampled_skin_clearance_mm": 31.16788,
+      "closest_point_world_mm": [
+        -152.4474,
+        0.1191,
+        31.6735
+      ],
+      "closest_sample": 109,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H05",
+      "geometry": "wire_6",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 0.75,
+      "minimum_sampled_skin_clearance_mm": 29.29475,
+      "closest_point_world_mm": [
+        -152.2591,
+        0.0457,
+        33.7184
+      ],
+      "closest_sample": 108,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H05",
+      "geometry": "modeled_sleeve_plus_braid",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 3.145,
+      "minimum_sampled_skin_clearance_mm": 28.10326,
+      "closest_point_world_mm": [
+        -152.1773,
+        -1.6368,
+        32.4712
+      ],
+      "closest_sample": 109,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H08_chassis",
+      "geometry": "wire_1",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 0.35,
+      "minimum_sampled_skin_clearance_mm": 17.15832,
+      "closest_point_world_mm": [
+        -19.4872,
+        34.5942,
+        23.5466
+      ],
+      "closest_sample": 5,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H08_chassis",
+      "geometry": "wire_2",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 0.35,
+      "minimum_sampled_skin_clearance_mm": 17.60758,
+      "closest_point_world_mm": [
+        -18.7157,
+        34.7232,
+        23.2665
+      ],
+      "closest_sample": 5,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H08_chassis",
+      "geometry": "wire_3",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 0.35,
+      "minimum_sampled_skin_clearance_mm": 18.15998,
+      "closest_point_world_mm": [
+        -17.5751,
+        34.9011,
+        23.036
+      ],
+      "closest_sample": 5,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H08_chassis",
+      "geometry": "wire_4",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 0.35,
+      "minimum_sampled_skin_clearance_mm": 17.89028,
+      "closest_point_world_mm": [
+        -17.4969,
+        35.5339,
+        23.7765
+      ],
+      "closest_sample": 6,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H08_chassis",
+      "geometry": "modeled_sleeve_plus_braid",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 1.375,
+      "minimum_sampled_skin_clearance_mm": 23.10355,
+      "closest_point_world_mm": [
+        -9.2197,
+        41.5203,
+        25.011
+      ],
+      "closest_sample": 21,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H08_chassis",
+      "geometry": "wire_1",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 0.35,
+      "minimum_sampled_skin_clearance_mm": 4.7091,
+      "closest_point_world_mm": [
+        20.5343,
+        80.37,
+        60.9409
+      ],
+      "closest_sample": 139,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H08_chassis",
+      "geometry": "wire_2",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 0.35,
+      "minimum_sampled_skin_clearance_mm": 4.1758,
+      "closest_point_world_mm": [
+        20.7835,
+        80.5194,
+        61.4742
+      ],
+      "closest_sample": 139,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H08_chassis",
+      "geometry": "wire_3",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 0.35,
+      "minimum_sampled_skin_clearance_mm": 4.3845,
+      "closest_point_world_mm": [
+        20.6941,
+        80.6736,
+        61.2655
+      ],
+      "closest_sample": 139,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H08_chassis",
+      "geometry": "wire_4",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 0.35,
+      "minimum_sampled_skin_clearance_mm": 4.8911,
+      "closest_point_world_mm": [
+        21.2168,
+        80.6874,
+        60.7589
+      ],
+      "closest_sample": 137,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H08_chassis",
+      "geometry": "modeled_sleeve_plus_braid",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 1.375,
+      "minimum_sampled_skin_clearance_mm": 13.4363,
+      "closest_point_world_mm": [
+        21.133,
+        82.8568,
+        51.1887
+      ],
+      "closest_sample": 126,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H08_lid",
+      "geometry": "wire_1",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 0.35,
+      "minimum_sampled_skin_clearance_mm": 55.94512,
+      "closest_point_world_mm": [
+        16.125,
+        65.0,
+        58.0
+      ],
+      "closest_sample": 0,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H08_lid",
+      "geometry": "wire_2",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 0.35,
+      "minimum_sampled_skin_clearance_mm": 56.81,
+      "closest_point_world_mm": [
+        17.375,
+        65.0,
+        58.0
+      ],
+      "closest_sample": 0,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H08_lid",
+      "geometry": "wire_3",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 0.35,
+      "minimum_sampled_skin_clearance_mm": 57.68891,
+      "closest_point_world_mm": [
+        18.625,
+        65.0,
+        58.0
+      ],
+      "closest_sample": 0,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H08_lid",
+      "geometry": "wire_4",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 0.35,
+      "minimum_sampled_skin_clearance_mm": 58.38575,
+      "closest_point_world_mm": [
+        18.837,
+        64.7251,
+        61.0405
+      ],
+      "closest_sample": 3,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H08_lid",
+      "geometry": "modeled_sleeve_plus_braid",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 1.375,
+      "minimum_sampled_skin_clearance_mm": 67.62223,
+      "closest_point_world_mm": [
+        30.8045,
+        66.136,
+        63.0599
+      ],
+      "closest_sample": 21,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H08_lid",
+      "geometry": "wire_1",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 0.35,
+      "minimum_sampled_skin_clearance_mm": 3.1143,
+      "closest_point_world_mm": [
+        35.8141,
+        66.5439,
+        62.5357
+      ],
+      "closest_sample": 26,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H08_lid",
+      "geometry": "wire_2",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 0.35,
+      "minimum_sampled_skin_clearance_mm": 2.5449,
+      "closest_point_world_mm": [
+        35.7891,
+        67.1239,
+        63.1051
+      ],
+      "closest_sample": 26,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H08_lid",
+      "geometry": "wire_3",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 0.35,
+      "minimum_sampled_skin_clearance_mm": 1.9644,
+      "closest_point_world_mm": [
+        35.8159,
+        66.5551,
+        63.6856
+      ],
+      "closest_sample": 26,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H08_lid",
+      "geometry": "wire_4",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 0.35,
+      "minimum_sampled_skin_clearance_mm": 2.5338,
+      "closest_point_world_mm": [
+        35.8408,
+        65.9751,
+        63.1162
+      ],
+      "closest_sample": 26,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "H08_lid",
+      "geometry": "modeled_sleeve_plus_braid",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 1.375,
+      "minimum_sampled_skin_clearance_mm": 1.5144,
+      "closest_point_world_mm": [
+        35.815,
+        66.5495,
+        63.1106
+      ],
+      "closest_sample": 26,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "O01",
+      "geometry": "wire_1",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 0.8,
+      "minimum_sampled_skin_clearance_mm": 31.65622,
+      "closest_point_world_mm": [
+        -55.5,
+        -29.355,
+        24.8
+      ],
+      "closest_sample": 0,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "O01",
+      "geometry": "wire_2",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 0.8,
+      "minimum_sampled_skin_clearance_mm": 31.9056,
+      "closest_point_world_mm": [
+        -58.0,
+        -29.355,
+        24.8
+      ],
+      "closest_sample": 0,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "O01",
+      "geometry": "wire_3",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 0.8,
+      "minimum_sampled_skin_clearance_mm": 32.34221,
+      "closest_point_world_mm": [
+        -60.5,
+        -29.355,
+        24.8
+      ],
+      "closest_sample": 0,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "O01",
+      "geometry": "modeled_sleeve_plus_braid",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 2.255,
+      "minimum_sampled_skin_clearance_mm": 42.88847,
+      "closest_point_world_mm": [
+        -51.2416,
+        -42.8741,
+        24.3669
+      ],
+      "closest_sample": 20,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "O01",
+      "geometry": "wire_1",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 0.8,
+      "minimum_sampled_skin_clearance_mm": 32.26018,
+      "closest_point_world_mm": [
+        31.1256,
+        -74.0979,
+        29.8313
+      ],
+      "closest_sample": 137,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "O01",
+      "geometry": "wire_2",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 0.8,
+      "minimum_sampled_skin_clearance_mm": 33.68589,
+      "closest_point_world_mm": [
+        31.7135,
+        -75.3382,
+        28.5065
+      ],
+      "closest_sample": 138,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "O01",
+      "geometry": "wire_3",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 0.8,
+      "minimum_sampled_skin_clearance_mm": 33.83746,
+      "closest_point_world_mm": [
+        31.8138,
+        -73.4433,
+        28.3751
+      ],
+      "closest_sample": 137,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "O01",
+      "geometry": "modeled_sleeve_plus_braid",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 2.255,
+      "minimum_sampled_skin_clearance_mm": 31.80521,
+      "closest_point_world_mm": [
+        31.3189,
+        -74.1765,
+        28.8494
+      ],
+      "closest_sample": 137,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "O02",
+      "geometry": "wire_1",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 0.6,
+      "minimum_sampled_skin_clearance_mm": 34.79905,
+      "closest_point_world_mm": [
+        -4.95,
+        -27.0,
+        23.8
+      ],
+      "closest_sample": 0,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "O02",
+      "geometry": "wire_2",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 0.6,
+      "minimum_sampled_skin_clearance_mm": 33.29827,
+      "closest_point_world_mm": [
+        -4.95,
+        -25.0,
+        23.8
+      ],
+      "closest_sample": 0,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "O02",
+      "geometry": "modeled_sleeve_plus_braid",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 1.73,
+      "minimum_sampled_skin_clearance_mm": 46.17309,
+      "closest_point_world_mm": [
+        8.8363,
+        -34.2822,
+        26.7751
+      ],
+      "closest_sample": 20,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "O02",
+      "geometry": "wire_1",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 0.6,
+      "minimum_sampled_skin_clearance_mm": 36.20822,
+      "closest_point_world_mm": [
+        10.1818,
+        -37.2635,
+        27.1069
+      ],
+      "closest_sample": 23,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "O02",
+      "geometry": "wire_2",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 0.6,
+      "minimum_sampled_skin_clearance_mm": 37.466,
+      "closest_point_world_mm": [
+        10.2458,
+        -37.0729,
+        25.7619
+      ],
+      "closest_sample": 23,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "O02",
+      "geometry": "modeled_sleeve_plus_braid",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 1.73,
+      "minimum_sampled_skin_clearance_mm": 35.70634,
+      "closest_point_world_mm": [
+        10.2138,
+        -37.1682,
+        26.4344
+      ],
+      "closest_sample": 23,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "O03_left",
+      "geometry": "wire_1",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 0.5,
+      "minimum_sampled_skin_clearance_mm": 35.21359,
+      "closest_point_world_mm": [
+        -89.1089,
+        28.7326,
+        40.7796
+      ],
+      "closest_sample": 132,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "O03_left",
+      "geometry": "wire_2",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 0.5,
+      "minimum_sampled_skin_clearance_mm": 35.72641,
+      "closest_point_world_mm": [
+        -89.6059,
+        28.9524,
+        39.7548
+      ],
+      "closest_sample": 132,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "O03_left",
+      "geometry": "modeled_sleeve_plus_braid",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 1.53,
+      "minimum_sampled_skin_clearance_mm": 34.43989,
+      "closest_point_world_mm": [
+        -89.3574,
+        28.8425,
+        40.2672
+      ],
+      "closest_sample": 132,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "O03_left",
+      "geometry": "wire_1",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 0.5,
+      "minimum_sampled_skin_clearance_mm": 17.7868,
+      "closest_point_world_mm": [
+        -131.4882,
+        63.1634,
+        47.7132
+      ],
+      "closest_sample": 206,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "O03_left",
+      "geometry": "wire_2",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 0.5,
+      "minimum_sampled_skin_clearance_mm": 18.9106,
+      "closest_point_world_mm": [
+        -131.4716,
+        62.8764,
+        46.5894
+      ],
+      "closest_sample": 206,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "O03_left",
+      "geometry": "modeled_sleeve_plus_braid",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 1.53,
+      "minimum_sampled_skin_clearance_mm": 17.3187,
+      "closest_point_world_mm": [
+        -131.4799,
+        63.0199,
+        47.1513
+      ],
+      "closest_sample": 206,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "O03_right",
+      "geometry": "wire_1",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 0.5,
+      "minimum_sampled_skin_clearance_mm": 36.4432,
+      "closest_point_world_mm": [
+        -37.9,
+        -34.8,
+        26.1
+      ],
+      "closest_sample": 0,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "O03_right",
+      "geometry": "wire_2",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 0.5,
+      "minimum_sampled_skin_clearance_mm": 36.4432,
+      "closest_point_world_mm": [
+        -40.4,
+        -34.8,
+        26.1
+      ],
+      "closest_sample": 0,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "O03_right",
+      "geometry": "modeled_sleeve_plus_braid",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 1.53,
+      "minimum_sampled_skin_clearance_mm": 44.51142,
+      "closest_point_world_mm": [
+        -50.7383,
+        -45.5419,
+        31.7363
+      ],
+      "closest_sample": 21,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "O03_right",
+      "geometry": "wire_1",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 0.5,
+      "minimum_sampled_skin_clearance_mm": 17.9668,
+      "closest_point_world_mm": [
+        -132.4095,
+        -64.7744,
+        47.5332
+      ],
+      "closest_sample": 122,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "O03_right",
+      "geometry": "wire_2",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 0.5,
+      "minimum_sampled_skin_clearance_mm": 19.1078,
+      "closest_point_world_mm": [
+        -132.4083,
+        -64.9831,
+        46.3922
+      ],
+      "closest_sample": 122,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "O03_right",
+      "geometry": "modeled_sleeve_plus_braid",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 1.53,
+      "minimum_sampled_skin_clearance_mm": 17.5073,
+      "closest_point_world_mm": [
+        -132.4089,
+        -64.8787,
+        46.9627
+      ],
+      "closest_sample": 122,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "U01",
+      "geometry": "wire_1",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 1.75,
+      "minimum_sampled_skin_clearance_mm": 18.58095,
+      "closest_point_world_mm": [
+        -16.5241,
+        -18.8774,
+        33.887
+      ],
+      "closest_sample": 104,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "U01",
+      "geometry": "wire_1",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 1.75,
+      "minimum_sampled_skin_clearance_mm": 19.5082,
+      "closest_point_world_mm": [
+        15.5694,
+        -17.4277,
+        41.7063
+      ],
+      "closest_sample": 55,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "U02",
+      "geometry": "wire_1",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 1.75,
+      "minimum_sampled_skin_clearance_mm": 36.64648,
+      "closest_point_world_mm": [
+        -13.2684,
+        60.2549,
+        60.7118
+      ],
+      "closest_sample": 121,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "U02",
+      "geometry": "wire_1",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 1.75,
+      "minimum_sampled_skin_clearance_mm": 2.6642,
+      "closest_point_world_mm": [
+        -27.9385,
+        69.1629,
+        61.5858
+      ],
+      "closest_sample": 141,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "U03",
+      "geometry": "wire_1",
+      "obstacle": "Illustrative_cooler",
+      "radius_mm": 1.9,
+      "minimum_sampled_skin_clearance_mm": 40.66497,
+      "closest_point_world_mm": [
+        19.9687,
+        26.0263,
+        35.639
+      ],
+      "closest_sample": 171,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    },
+    {
+      "route": "U03",
+      "geometry": "wire_1",
+      "obstacle": "Closed_upper_cover",
+      "radius_mm": 1.9,
+      "minimum_sampled_skin_clearance_mm": 17.2845,
+      "closest_point_world_mm": [
+        19.9713,
+        -36.1999,
+        42.9127
+      ],
+      "closest_sample": 100,
+      "samples_below_zero": 0,
+      "hit_points_world_mm": []
+    }
+  ],
+  "violations": []
+}
