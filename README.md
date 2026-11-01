@@ -27,7 +27,7 @@ MOSS is a small litter-picking rover you print and build yourself: a tracked bas
 
 **Option 1 offers the most computing headroom for the autonomy software being developed.** It does not guarantee autonomous operation: autonomous litter collection has not yet been demonstrated on any of these configurations.
 
-The goal is to bring as much of the stack as possible to smaller, lower-cost hardware. This work involves porting, optimizing and testing features progressively, and **it will take time**. Equivalent autonomy capabilities across all three options are a development goal, not something available today.
+The goal is to bring as much of the stack as possible to smaller, lower-cost hardware. This work involves porting, optimizing and testing features progressively, and **it will take time**. Feature support will depend on what can be ported and validated on each hardware option.
 
 **Option 3 is experimental for now.** Early Orange Pi + MightyCam bench tests are documented in the [experiment folder](experiments/orange-pi-mightycam/); the combination is not yet validated as a complete rover configuration. The [BOM](BOM.md) covers the established configurations.
 
