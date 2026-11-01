@@ -93,6 +93,10 @@ Edit the native KiCad design in this folder. Update the circuit contract and ass
 
 ## License and provenance
 
-MOSS hardware design: [CERN-OHL-S-2.0](LICENSE-HARDWARE). Documentation/media: CC BY 4.0, as described in the repository [NOTICE](NOTICE). Bundled KiCad library material retains its [upstream license and exception](KiCad_Libraries_LICENSE.md).
+From **1 November 2026**, the current distribution of MOSS-authored hardware design files is offered under **[CC BY-NC-SA 4.0](LICENSE-HARDWARE)**: attribution, noncommercial use and ShareAlike. This covers the PCB design, fabrication outputs and MOSS-authored wiring/harness designs.
+
+Code remains under Apache-2.0; documentation and media remain under CC BY 4.0. Bundled KiCad library collections retain their [CC BY-SA 4.0 licence and KiCad Libraries Exception](KiCad_Libraries_LICENSE.md), and other third-party material keeps its own terms. See [NOTICE](NOTICE).
+
+Earlier copies and releases distributed under CERN-OHL-S-2.0 retain their original grants. This notice does not withdraw or retroactively replace those rights.
 
 Supplier correspondence, account/order information and unrelated workshop files are excluded. Local provenance paths in reports were converted to package-relative paths. The native PCB, schematic, footprints and matching fabrication/assembly data are preserved.

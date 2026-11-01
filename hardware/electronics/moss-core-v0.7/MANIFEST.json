@@ -11,9 +11,13 @@
     "bytes": 2105,
     "sha256": "285b027a721577d0bc0198f36e948c6c282ddaa4b58fef8ed826749576eb0aef"
   },
+  "LICENSE": {
+    "bytes": 11358,
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
   "LICENSE-HARDWARE": {
-    "bytes": 13419,
-    "sha256": "253ad3f89603e728abfa60c36fbcaf8225cf55c1eab12725f19fb3d74d647f3a"
+    "bytes": 19018,
+    "sha256": "600ca4e25fe11762b75a97e714707fab48bb778374e92d24c6ca068791661c11"
   },
   "MOTOR_WIRING.md": {
     "bytes": 4887,
@@ -24,12 +28,12 @@
     "sha256": "0641d0a98632ab38bb71a8c2e5e49130ea52054e392b9c2e954472e11cd421d6"
   },
   "NOTICE": {
-    "bytes": 1262,
-    "sha256": "493f97004241642e6224d9b721e649ae233acfa7f7f3744c81ad1c3cd755b050"
+    "bytes": 2265,
+    "sha256": "6170ba3765654afed1075527ffacfe22a31e5086b9315cc08883ddb98c4a7296"
   },
   "README.md": {
-    "bytes": 11770,
-    "sha256": "738259a38e54eca1d5d8c4bc3a7ff5f6a624abaad15686e17ecf3a058a09ed0b"
+    "bytes": 12255,
+    "sha256": "79a2b4271e9539a9ca9be6d1596a4e9450601f5af8cbcdb2bd353b04c50a1220"
   },
   "delivery/assembly/ASSEMBLY_NOTES.txt": {
     "bytes": 3532,
@@ -792,7 +796,7 @@
     "sha256": "1504cea30a52bf922abd08045b45656f926ded96089ae2ededda0fef345fa6a2"
   },
   "tools/export_package.py": {
-    "bytes": 13776,
-    "sha256": "8ba9c4bfbe873380cc3150274eac72144893c12c83bfa59d7c32bf11e4824cb1"
+    "bytes": 13787,
+    "sha256": "121b8f23199552d40951e1faf3a786bae3734e8f2975960e4e54c6c7df4b448c"
   }
 }

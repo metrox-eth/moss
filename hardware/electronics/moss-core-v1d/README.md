@@ -40,7 +40,7 @@ Before fabrication, review the return/decoupling findings, stackup, power and th
 
 No manufacturing approval is provided by this publication. Planned initial quantity is two assembled prototypes after the required release checks.
 
-Hardware design: [CERN-OHL-S-2.0](../../../LICENSE-HARDWARE). Bundled KiCad library material retains its upstream license and exception, included in the ZIP. See [NOTICE](../../../NOTICE) for repository licensing.
+This historical snapshot and its ZIP are unchanged and retain their original [CERN-OHL-S-2.0 hardware terms](https://github.com/metrox-eth/moss/blob/4c626e547e17265f93b0fac8ec0e2681b920758f/LICENSE-HARDWARE). The repository's later hardware licence change does not rewrite this archived delivery. Bundled KiCad library material retains its upstream license and exception, included in the ZIP. See the [historical NOTICE](https://github.com/metrox-eth/moss/blob/4c626e547e17265f93b0fac8ec0e2681b920758f/NOTICE) for repository licensing.
 
 ## Package provenance
 

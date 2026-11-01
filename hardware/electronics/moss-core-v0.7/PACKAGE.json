@@ -22,8 +22,16 @@
     },
     {
       "path": "delivery/MOSS_CORE_V07_PROTOTYPE_REVIEW_20261101_MOUNTING.zip",
-      "bytes": 6668298,
-      "sha256": "bdf7d91a44c7067eff47871891ad8449c3dd0fedaaf4c5f2c1801ae373e70652"
+      "bytes": 6673737,
+      "sha256": "7646dcec3e24bd0e8dfb49a5f3e3424a1847c060f9c39553482a7f723a757af7"
     }
-  ]
+  ],
+  "licensing": {
+    "hardware": "CC-BY-NC-SA-4.0",
+    "effective_date": "2026-11-01",
+    "code": "Apache-2.0",
+    "documentation_media": "CC-BY-4.0",
+    "third_party_terms_preserved": true,
+    "earlier_CERN_OHL_S_2_0_grants_preserved": true
+  }
 }

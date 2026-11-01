@@ -3,7 +3,8 @@ Copyright 2026 Laurent Genoud (Show Robotics), Thailand.
 
 Code: Apache License 2.0; see ../../LICENSE in the repository root (or the
 copy of LICENSE included with a standalone distribution).
-MOSS-derived CAD meshes: CERN-OHL-S-2.0; see the repository LICENSE-HARDWARE.
+MOSS-owned CAD geometry and derived meshes: CC BY-NC-SA 4.0; see
+../../LICENSE-HARDWARE in the repository root.
 Documentation and preview: CC BY 4.0.
 
 SO101 and NormaCore-derived meshes retain their Apache-2.0 licence; each

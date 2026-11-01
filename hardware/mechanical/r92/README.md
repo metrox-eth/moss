@@ -24,6 +24,8 @@ Standard 0.20 mm settings, 0.4 mm nozzle, **15% gyroid for all parts** and **aut
 
 The original 16 October archive remains available for reference. Use the 24 October package for the current grouped files and prepared plates. CAD geometry is unchanged by this packaging update.
 
-Hardware: CERN-OHL-S-2.0. Upstream SO-101 and NormaCore notices are included. Documentation and media: CC BY 4.0.
+MOSS-owned hardware designs in this repository: [CC BY-NC-SA 4.0](../../../LICENSE-HARDWARE). SO-101 and NormaCore material retains its upstream Apache-2.0 licence and notices. Documentation and media: CC BY 4.0.
+
+The existing R92 release downloads are unchanged and retain the licence terms included in those published packages.
 
 All **38 spacers** are together on **H2S plate 5** or **P1 / P2 plate 8**. Print **four identical tensioner sliders** and rotate each to match its assembly position.

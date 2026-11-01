@@ -86,7 +86,7 @@
       "rig": "static",
       "file": "meshes/Hull_R92.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.164,
@@ -117,7 +117,7 @@
       "rig": "static",
       "file": "meshes/Left_Outer_Track_Frame_R32.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.144,
@@ -148,7 +148,7 @@
       "rig": "static",
       "file": "meshes/Right_Outer_Track_Frame_R32.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.144,
@@ -179,7 +179,7 @@
       "rig": "static",
       "file": "meshes/Left_inner_tensioner_cover_R12_C2.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.097,
@@ -210,7 +210,7 @@
       "rig": "static",
       "file": "meshes/Right_inner_tensioner_cover_R12_C2.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.097,
@@ -241,7 +241,7 @@
       "rig": "static",
       "file": "meshes/Left_inner_track_frame_R12_C2.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.081,
@@ -272,7 +272,7 @@
       "rig": "static",
       "file": "meshes/Right_inner_track_frame_R12_C2.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.081,
@@ -303,7 +303,7 @@
       "rig": "static",
       "file": "meshes/Left_Spacer_cross_member_-40.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.043,
@@ -334,7 +334,7 @@
       "rig": "static",
       "file": "meshes/Left_Spacer_cross_member_40.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.037,
@@ -365,7 +365,7 @@
       "rig": "static",
       "file": "meshes/Right_Spacer_cross_member_-40.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.043,
@@ -396,7 +396,7 @@
       "rig": "static",
       "file": "meshes/Right_Spacer_cross_member_40.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.037,
@@ -427,7 +427,7 @@
       "rig": "static",
       "file": "meshes/Left_Spacer_road_wheel_-70_inner_ID01_R24.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.0698,
@@ -458,7 +458,7 @@
       "rig": "static",
       "file": "meshes/Left_Spacer_road_wheel_0_inner_ID01_R24.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.0002,
@@ -489,7 +489,7 @@
       "rig": "static",
       "file": "meshes/Left_Spacer_road_wheel_70_inner_ID01_R24.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.0702,
@@ -520,7 +520,7 @@
       "rig": "static",
       "file": "meshes/Right_Spacer_road_wheel_-70_inner_ID01_R24.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.0698,
@@ -551,7 +551,7 @@
       "rig": "static",
       "file": "meshes/Right_Spacer_road_wheel_0_inner_ID01_R24.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.0002,
@@ -582,7 +582,7 @@
       "rig": "static",
       "file": "meshes/Right_Spacer_road_wheel_70_inner_ID01_R24.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.0702,
@@ -613,7 +613,7 @@
       "rig": "static",
       "file": "meshes/Left_Spacer_tensioner_inner_ID05_R24.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.123,
@@ -644,7 +644,7 @@
       "rig": "static",
       "file": "meshes/Right_Spacer_tensioner_inner_ID05_R24.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.123,
@@ -675,7 +675,7 @@
       "rig": "static",
       "file": "meshes/Left_Spacer_drive_inner_ID03_R24.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.1255,
@@ -706,7 +706,7 @@
       "rig": "static",
       "file": "meshes/Right_Spacer_drive_inner_ID03_R24.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.1255,
@@ -737,7 +737,7 @@
       "rig": "static",
       "file": "meshes/02_Motor_access_hatch_10_screws.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.1586,
@@ -768,7 +768,7 @@
       "rig": "static",
       "file": "meshes/Motor_Mount_Left_R90.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.1545,
@@ -799,7 +799,7 @@
       "rig": "static",
       "file": "meshes/Motor_Mount_Right_R90.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.1545,
@@ -830,7 +830,7 @@
       "rig": "static",
       "file": "meshes/05_Left_bearing_retainer.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.136557368354874,
@@ -861,7 +861,7 @@
       "rig": "static",
       "file": "meshes/06_Right_bearing_retainer.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.136557368354874,
@@ -892,7 +892,7 @@
       "rig": "static",
       "file": "meshes/Lidar_Base_R84.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.1225,
@@ -923,7 +923,7 @@
       "rig": "static",
       "file": "meshes/Lidar_dovetail_carriage_R21.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.105,
@@ -954,7 +954,7 @@
       "rig": "static",
       "file": "meshes/Left_Spacer_road_wheel_-70_outer_ID02_R24.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.0698,
@@ -985,7 +985,7 @@
       "rig": "static",
       "file": "meshes/Left_Spacer_road_wheel_0_outer_ID02_R24.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.00020000000000000017,
@@ -1016,7 +1016,7 @@
       "rig": "static",
       "file": "meshes/Left_Spacer_road_wheel_70_outer_ID02_R24.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.0702,
@@ -1047,7 +1047,7 @@
       "rig": "static",
       "file": "meshes/Right_Spacer_road_wheel_-70_outer_ID02_R24.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.0698,
@@ -1078,7 +1078,7 @@
       "rig": "static",
       "file": "meshes/Right_Spacer_road_wheel_0_outer_ID02_R24.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.00020000000000000017,
@@ -1109,7 +1109,7 @@
       "rig": "static",
       "file": "meshes/Right_Spacer_road_wheel_70_outer_ID02_R24.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.0702,
@@ -1140,7 +1140,7 @@
       "rig": "static",
       "file": "meshes/Left_Spacer_tensioner_outer_ID06_R24.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.123,
@@ -1171,7 +1171,7 @@
       "rig": "static",
       "file": "meshes/Right_Spacer_tensioner_outer_ID06_R24.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.123,
@@ -1202,7 +1202,7 @@
       "rig": "static",
       "file": "meshes/Left_Spacer_drive_outer_HEX12_L12.6_ID04_R24.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.1255,
@@ -1233,7 +1233,7 @@
       "rig": "static",
       "file": "meshes/Right_Spacer_drive_outer_HEX12_L12.6_ID04_R24.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.1255,
@@ -1264,7 +1264,7 @@
       "rig": "static",
       "file": "meshes/Left_Cover_tensioner_outer.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.097,
@@ -1295,7 +1295,7 @@
       "rig": "static",
       "file": "meshes/Right_Cover_tensioner_outer.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.097,
@@ -1326,7 +1326,7 @@
       "rig": "static",
       "file": "meshes/Left_22T_idler_wheel_inner_half_R13.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.09624187631353211,
@@ -1357,7 +1357,7 @@
       "rig": "static",
       "file": "meshes/Left_22T_idler_wheel_outer_half_R13.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.09624187631353211,
@@ -1388,7 +1388,7 @@
       "rig": "static",
       "file": "meshes/Right_22T_idler_wheel_inner_half_R13.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.09624187631353211,
@@ -1419,7 +1419,7 @@
       "rig": "static",
       "file": "meshes/Right_22T_idler_wheel_outer_half_R13.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.09624187631353211,
@@ -1450,7 +1450,7 @@
       "rig": "static",
       "file": "meshes/Left_HEX12_drive_wheel_inner_half_R13.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.153758123686468,
@@ -1481,7 +1481,7 @@
       "rig": "static",
       "file": "meshes/Left_HEX12_drive_wheel_outer_half_R13.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.153758123686468,
@@ -1512,7 +1512,7 @@
       "rig": "static",
       "file": "meshes/Right_HEX12_drive_wheel_inner_half_R13.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.153758123686468,
@@ -1543,7 +1543,7 @@
       "rig": "static",
       "file": "meshes/Right_HEX12_drive_wheel_outer_half_R13.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.153758123686468,
@@ -1574,7 +1574,7 @@
       "rig": "static",
       "file": "meshes/Left_625_road_wheel_-70_inner_half_R13.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.0895,
@@ -1605,7 +1605,7 @@
       "rig": "static",
       "file": "meshes/Left_625_road_wheel_-70_outer_half_R13.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.0895,
@@ -1636,7 +1636,7 @@
       "rig": "static",
       "file": "meshes/Left_625_road_wheel_70_inner_half_R13.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.0505,
@@ -1667,7 +1667,7 @@
       "rig": "static",
       "file": "meshes/Left_625_road_wheel_70_outer_half_R13.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.0505,
@@ -1698,7 +1698,7 @@
       "rig": "static",
       "file": "meshes/Right_625_road_wheel_-70_inner_half_R13.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.0895,
@@ -1729,7 +1729,7 @@
       "rig": "static",
       "file": "meshes/Right_625_road_wheel_-70_outer_half_R13.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.0895,
@@ -1760,7 +1760,7 @@
       "rig": "static",
       "file": "meshes/Right_625_road_wheel_70_inner_half_R13.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.0505,
@@ -1791,7 +1791,7 @@
       "rig": "static",
       "file": "meshes/Right_625_road_wheel_70_outer_half_R13.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.0505,
@@ -1822,7 +1822,7 @@
       "rig": "static",
       "file": "meshes/Left_625_road_wheel_0_inner_half_R13.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.0195,
@@ -1853,7 +1853,7 @@
       "rig": "static",
       "file": "meshes/Left_625_road_wheel_0_outer_half_R13.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.0195,
@@ -1884,7 +1884,7 @@
       "rig": "static",
       "file": "meshes/Right_625_road_wheel_0_inner_half_R13.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.0195,
@@ -1915,7 +1915,7 @@
       "rig": "static",
       "file": "meshes/Right_625_road_wheel_0_outer_half_R13.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.0195,
@@ -1946,7 +1946,7 @@
       "rig": "static",
       "file": "meshes/XT30_distribution_base.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.061,
@@ -1977,7 +1977,7 @@
       "rig": "static",
       "file": "meshes/XT30_distribution_lid.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.061,
@@ -2008,7 +2008,7 @@
       "rig": "static",
       "file": "meshes/XT30_insulating_separator.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.0689,
@@ -2039,7 +2039,7 @@
       "rig": "static",
       "file": "meshes/Left_Slider_outer.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.116,
@@ -2070,7 +2070,7 @@
       "rig": "static",
       "file": "meshes/Left_Cover_motor_bearing.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.137,
@@ -2101,7 +2101,7 @@
       "rig": "static",
       "file": "meshes/Right_Slider_outer.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.116,
@@ -2132,7 +2132,7 @@
       "rig": "static",
       "file": "meshes/Right_Cover_motor_bearing.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.137,
@@ -2163,7 +2163,7 @@
       "rig": "static",
       "file": "meshes/Left_inner_tensioner_slider.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.116,
@@ -2194,7 +2194,7 @@
       "rig": "static",
       "file": "meshes/Right_inner_tensioner_slider.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.116,
@@ -2225,7 +2225,7 @@
       "rig": "static",
       "file": "meshes/Left_Spacer_tensioner_retainer_inner_ID07_R24.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.123,
@@ -2256,7 +2256,7 @@
       "rig": "static",
       "file": "meshes/Left_Spacer_tensioner_retainer_outer_ID08_R24.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.123,
@@ -2287,7 +2287,7 @@
       "rig": "static",
       "file": "meshes/Left_Spacer_tensioner_center.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.123,
@@ -2318,7 +2318,7 @@
       "rig": "static",
       "file": "meshes/Right_Spacer_tensioner_retainer_inner_ID07_R24.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.123,
@@ -2349,7 +2349,7 @@
       "rig": "static",
       "file": "meshes/Right_Spacer_tensioner_retainer_outer_ID08_R24.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.123,
@@ -2380,7 +2380,7 @@
       "rig": "static",
       "file": "meshes/Right_Spacer_tensioner_center.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.123,
@@ -2411,7 +2411,7 @@
       "rig": "static",
       "file": "meshes/Left_Spacer_road_wheel_-70_center.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.0698,
@@ -2442,7 +2442,7 @@
       "rig": "static",
       "file": "meshes/Left_Spacer_road_wheel_0_center.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.0002,
@@ -2473,7 +2473,7 @@
       "rig": "static",
       "file": "meshes/Left_Spacer_road_wheel_70_center.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.0702,
@@ -2504,7 +2504,7 @@
       "rig": "static",
       "file": "meshes/Right_Spacer_road_wheel_-70_center.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.0698,
@@ -2535,7 +2535,7 @@
       "rig": "static",
       "file": "meshes/Right_Spacer_road_wheel_0_center.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.0002,
@@ -2566,7 +2566,7 @@
       "rig": "static",
       "file": "meshes/Right_Spacer_road_wheel_70_center.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.0702,
@@ -2597,7 +2597,7 @@
       "rig": "static",
       "file": "meshes/Left_Drive_bearing_to_collar_spacer_R12_C1.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.1255,
@@ -2628,7 +2628,7 @@
       "rig": "static",
       "file": "meshes/Right_Drive_bearing_to_collar_spacer_R12_C1.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.1255,
@@ -2659,7 +2659,7 @@
       "rig": "static",
       "file": "meshes/Upper_cover_R9.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.164,
@@ -2690,7 +2690,7 @@
       "rig": "static",
       "file": "meshes/14_Bin_20x10x2_magnet_pockets.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.175,
@@ -2777,7 +2777,7 @@
       "rig": "static",
       "file": "meshes/Arm_Mounting_Platform_R22.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.024,
@@ -3007,7 +3007,7 @@
       "rig": "nc90_tool",
       "file": "meshes/Gripper_Camera_Mount_R30.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.33277468224794,
@@ -3269,7 +3269,7 @@
       "rig": "static",
       "file": "meshes/Jetson_Adapter_R87.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.09449684248060301,
@@ -3300,7 +3300,7 @@
       "rig": "static",
       "file": "meshes/RealSense_Insert_R72.stl",
       "source": "MOSS_Printable_BRep_Parts_R92.step",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           0.12575,
@@ -4257,7 +4257,7 @@
       "rig": "static",
       "file": "meshes/Track_Left.obj",
       "source": "Track_Left_Mounted_Reference_reference_mesh.json",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.16060661561200937,
@@ -4288,7 +4288,7 @@
       "rig": "static",
       "file": "meshes/Track_Right.obj",
       "source": "Track_Right_Mounted_Reference_reference_mesh.json",
-      "license": "CERN-OHL-S-2.0",
+      "license": "CC-BY-NC-SA-4.0",
       "world_bounds_m": [
         [
           -0.16060661561200937,

@@ -129,7 +129,7 @@ files = [f for name in roots for f in (P / name).rglob('*')
          if f.is_file() and f.suffix not in ('.kicad_prl', '.lck', '.bak', '.pending')
          and not any(part.startswith('.') or part == '__pycache__' or part.endswith('-backups') for part in f.relative_to(P).parts)]
 files += [f for folder in (F, A) for f in folder.iterdir() if f.is_file()]
-files += [P / name for name in ('README.md', 'CONNECTORS.md', 'MOTOR_WIRING.md', 'MOUNTING.md', 'LICENSE-HARDWARE', 'NOTICE', 'KiCad_Libraries_LICENSE.md', '.gitattributes') if (P / name).is_file()]
+files += [P / name for name in ('README.md', 'CONNECTORS.md', 'MOTOR_WIRING.md', 'MOUNTING.md', 'LICENSE', 'LICENSE-HARDWARE', 'NOTICE', 'KiCad_Libraries_LICENSE.md', '.gitattributes') if (P / name).is_file()]
 manifest = {str(f.relative_to(P)): dict(bytes=f.stat().st_size, sha256=sha(f)) for f in sorted(files)}
 (P / 'MANIFEST.json').write_text(json.dumps(manifest, indent=2) + '\n')
 outputs.append(archive(D / (prefix + 'REVIEW_' + date + '.zip'), files + [P / 'MANIFEST.json'], P))

@@ -7,7 +7,7 @@ Cleaner streets, one maker at a time.
 
 **[Build guide](https://www.showrobotics.ai/moss/build/) · [Print parts](https://www.showrobotics.ai/moss/build/#print) · [Bill of materials](BOM.md) · [Download CAD, STL & 3MF](https://github.com/metrox-eth/moss/releases/download/v0.6-r92/MOSS_R92_Mechanical_20261024.zip) · [Software setup](Software.md)**
 
-MOSS is a small litter-picking rover you print and build yourself: a tracked base, a bin on top, an arm derived from the SO-101 with a parallel gripper. It is open hardware, built in public, and meant to be built by many hands.
+MOSS is a small litter-picking rover you print and build yourself: a tracked base, a bin on top, an arm derived from the SO-101 with a parallel gripper. It is built in public, with hardware files available for noncommercial builds and improvements.
 
 ![MOSS picking up a can: approach, grasp, lift, drop in the bin](media/images/moss_v05_pickup.gif)
 
@@ -83,4 +83,6 @@ This is a prototype with a lithium battery and no certified protection. Put it o
 
 ## License
 
-Code under Apache-2.0. Hardware files under CERN-OHL-S-2.0. Documentation and media under CC BY 4.0. See `NOTICE`.
+Code remains under Apache-2.0. From **1 November 2026**, the current distribution of MOSS-authored hardware designs is offered under **[CC BY-NC-SA 4.0](LICENSE-HARDWARE)**: attribution, noncommercial use and ShareAlike. Documentation and media remain under CC BY 4.0.
+
+Earlier CERN-OHL-S-2.0 distributions retain the rights already granted with those copies. Third-party material keeps its own licence, including the KiCad library licence and exception. See [NOTICE](NOTICE) for scope and attribution.

@@ -138,6 +138,6 @@ asset preparation. [`validation.json`](validation.json) records the checked scop
 
 ## Licence
 
-Code: Apache-2.0. MOSS-derived geometry: CERN-OHL-S-2.0. SO101 and NormaCore-derived
+Code: Apache-2.0. MOSS-owned geometry: [CC BY-NC-SA 4.0](../../LICENSE-HARDWARE). SO101 and NormaCore-derived
 parts retain Apache-2.0. Documentation and preview: CC BY 4.0. See `NOTICE` and
 the per-part manifest; this simulation folder does not replace the printable CAD.
