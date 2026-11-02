@@ -1,0 +1,2011 @@
+{
+  "model": "jev-1.14.0",
+  "threshold": 0.9,
+  "max_rounds": 5,
+  "orders": {
+    "10": {
+      "litter": 10,
+      "intruders": 5,
+      "litter_order": [
+        "taco1223_1",
+        "taco1214_0",
+        "taco1272_0",
+        "taco1256_0",
+        "taco1314_0",
+        "taco1346_0",
+        "taco1384_0",
+        "taco1188_0",
+        "taco1341_0",
+        "taco1366_1",
+        "taco1377_0",
+        "taco1344_1",
+        "taco1344_3",
+        "taco1246_0",
+        "taco1173_0",
+        "taco1394_1",
+        "taco1391_0",
+        "taco1303_0",
+        "taco1288_0",
+        "taco1275_0",
+        "taco1187_0",
+        "taco1352_1",
+        "taco1347_1",
+        "taco1195_0",
+        "taco1369_0",
+        "taco1283_0",
+        "taco1297_1",
+        "taco1344_2",
+        "taco1314_2",
+        "taco1344_0",
+        "taco1290_1",
+        "taco1213_5",
+        "taco1209_5",
+        "taco1348_0",
+        "taco1231_0",
+        "taco1349_0",
+        "taco1375_0",
+        "taco1397_1",
+        "taco1317_0",
+        "taco1229_1",
+        "taco1246_7",
+        "taco1255_2",
+        "taco1390_0",
+        "taco1193_1",
+        "taco1273_1",
+        "taco1178_0",
+        "taco1209_2",
+        "taco1345_0",
+        "taco1251_1",
+        "taco1340_0",
+        "taco1316_0",
+        "taco1369_1",
+        "taco1176_0",
+        "taco1246_9",
+        "taco1351_6",
+        "taco1273_0",
+        "taco1358_0",
+        "taco1385_0",
+        "taco1205_0",
+        "taco1367_1",
+        "taco1372_2",
+        "taco1194_1",
+        "taco1252_0",
+        "taco1246_6",
+        "taco1237_0",
+        "taco1304_0",
+        "taco1213_1",
+        "taco1228_0",
+        "taco1288_4",
+        "taco1395_0",
+        "taco1177_0",
+        "taco1213_0",
+        "taco1337_0",
+        "taco1228_1",
+        "taco1276_0",
+        "taco1193_0",
+        "taco1226_0",
+        "taco1379_0",
+        "taco1213_2",
+        "taco1175_0",
+        "taco1351_1",
+        "taco1352_0",
+        "taco1246_2",
+        "taco1289_1",
+        "taco1371_0",
+        "taco1314_4",
+        "taco1236_1",
+        "taco1301_1",
+        "taco1224_3",
+        "taco1288_1",
+        "taco1372_0",
+        "taco1224_4",
+        "taco1230_0",
+        "taco1216_1",
+        "taco1366_2",
+        "taco1210_0",
+        "taco1302_0",
+        "taco1351_0",
+        "taco1300_1",
+        "taco1267_0",
+        "taco1378_1",
+        "taco1383_0",
+        "taco1224_1",
+        "taco1221_0",
+        "taco1227_0",
+        "taco1291_0",
+        "taco1315_0",
+        "taco1385_1",
+        "taco1209_0",
+        "taco1357_1",
+        "taco1249_1",
+        "taco1308_0",
+        "taco1383_1",
+        "taco1251_0",
+        "taco1374_1",
+        "taco1222_1",
+        "taco1218_0",
+        "taco1305_0",
+        "taco1366_3",
+        "taco1234_0",
+        "taco1397_0",
+        "taco1213_3",
+        "taco1222_0",
+        "taco1195_1",
+        "taco1347_0",
+        "taco1214_3",
+        "taco1343_0",
+        "taco1289_0",
+        "taco1254_0",
+        "taco1246_1",
+        "taco1348_1",
+        "taco1213_4",
+        "taco1270_0",
+        "taco1285_1",
+        "taco1246_3",
+        "taco1314_5",
+        "taco1232_0",
+        "taco1194_0",
+        "taco1217_0",
+        "taco1393_0",
+        "taco1314_1",
+        "taco1288_3",
+        "taco1209_4",
+        "taco1246_5",
+        "taco1357_0",
+        "taco1367_0"
+      ],
+      "intruder_order": [
+        "taco1301_2",
+        "taco1297_3",
+        "taco1270_1",
+        "empty1302_2",
+        "taco1214_2",
+        "empty1215_4",
+        "taco1378_0",
+        "taco1394_0",
+        "taco1394_2",
+        "taco1236_0",
+        "taco1300_0",
+        "taco1290_0",
+        "taco1285_0",
+        "taco1251_2",
+        "taco1223_0",
+        "taco1390_1",
+        "empty1302_1",
+        "taco1372_1",
+        "empty1231_0",
+        "taco1374_0",
+        "taco1304_2",
+        "taco1297_4",
+        "taco1301_0",
+        "empty1219_0",
+        "taco1288_2",
+        "empty1397_0",
+        "empty1386_0",
+        "empty1357_0",
+        "taco1215_0",
+        "taco1254_2",
+        "taco1216_0",
+        "empty1219_1",
+        "taco1282_1",
+        "taco1211_5",
+        "taco1308_1",
+        "taco1256_1",
+        "empty1215_1",
+        "taco1268_0",
+        "empty1231_1",
+        "empty1256_0",
+        "empty1271_0",
+        "empty1397_1",
+        "empty1215_0",
+        "taco1304_1",
+        "taco1393_1",
+        "empty1302_0",
+        "taco1270_2",
+        "empty1219_3",
+        "empty1255_0",
+        "empty1178_0",
+        "empty1215_3",
+        "taco1249_0",
+        "taco1251_3",
+        "empty1219_2",
+        "empty1270_1",
+        "empty1302_3",
+        "empty1375_0",
+        "taco1255_1",
+        "taco1271_0",
+        "empty1395_0",
+        "empty1303_0",
+        "taco1216_3",
+        "taco1224_2",
+        "taco1297_5",
+        "taco1386_2",
+        "taco1255_0",
+        "taco1282_0",
+        "taco1243_0",
+        "empty1300_0",
+        "taco1254_1",
+        "empty1215_2",
+        "taco1220_0",
+        "empty1270_0"
+      ]
+    },
+    "50": {
+      "litter": 50,
+      "intruders": 10,
+      "litter_order": [
+        "taco1348_0",
+        "taco1302_0",
+        "taco1337_0",
+        "taco1173_0",
+        "taco1285_1",
+        "taco1290_1",
+        "taco1314_1",
+        "taco1224_1",
+        "taco1209_4",
+        "taco1297_1",
+        "taco1251_0",
+        "taco1272_0",
+        "taco1228_1",
+        "taco1209_2",
+        "taco1289_0",
+        "taco1232_0",
+        "taco1213_3",
+        "taco1288_4",
+        "taco1230_0",
+        "taco1357_1",
+        "taco1315_0",
+        "taco1246_6",
+        "taco1175_0",
+        "taco1214_0",
+        "taco1246_2",
+        "taco1383_0",
+        "taco1347_0",
+        "taco1314_2",
+        "taco1357_0",
+        "taco1352_0",
+        "taco1341_0",
+        "taco1254_0",
+        "taco1289_1",
+        "taco1367_1",
+        "taco1347_1",
+        "taco1390_0",
+        "taco1224_3",
+        "taco1246_1",
+        "taco1374_1",
+        "taco1351_1",
+        "taco1195_0",
+        "taco1178_0",
+        "taco1397_1",
+        "taco1246_3",
+        "taco1236_1",
+        "taco1216_1",
+        "taco1213_4",
+        "taco1188_0",
+        "taco1375_0",
+        "taco1305_0",
+        "taco1352_1",
+        "taco1351_6",
+        "taco1273_1",
+        "taco1209_5",
+        "taco1187_0",
+        "taco1176_0",
+        "taco1237_0",
+        "taco1276_0",
+        "taco1255_2",
+        "taco1193_1",
+        "taco1369_1",
+        "taco1308_0",
+        "taco1344_1",
+        "taco1351_0",
+        "taco1314_4",
+        "taco1377_0",
+        "taco1270_0",
+        "taco1246_9",
+        "taco1194_1",
+        "taco1343_0",
+        "taco1246_0",
+        "taco1372_2",
+        "taco1229_1",
+        "taco1177_0",
+        "taco1283_0",
+        "taco1397_0",
+        "taco1366_1",
+        "taco1213_0",
+        "taco1234_0",
+        "taco1213_2",
+        "taco1316_0",
+        "taco1228_0",
+        "taco1267_0",
+        "taco1340_0",
+        "taco1213_5",
+        "taco1379_0",
+        "taco1383_1",
+        "taco1314_0",
+        "taco1378_1",
+        "taco1249_1",
+        "taco1366_2",
+        "taco1345_0",
+        "taco1275_0",
+        "taco1214_3",
+        "taco1291_0",
+        "taco1344_2",
+        "taco1393_0",
+        "taco1366_3",
+        "taco1391_0",
+        "taco1231_0",
+        "taco1314_5",
+        "taco1223_1",
+        "taco1193_0",
+        "taco1224_4",
+        "taco1385_0",
+        "taco1218_0",
+        "taco1300_1",
+        "taco1385_1",
+        "taco1273_0",
+        "taco1213_1",
+        "taco1221_0",
+        "taco1304_0",
+        "taco1227_0",
+        "taco1194_0",
+        "taco1367_0",
+        "taco1209_0",
+        "taco1288_0",
+        "taco1246_5",
+        "taco1384_0",
+        "taco1301_1",
+        "taco1210_0",
+        "taco1288_3",
+        "taco1344_0",
+        "taco1372_0",
+        "taco1226_0",
+        "taco1394_1",
+        "taco1344_3",
+        "taco1317_0",
+        "taco1303_0",
+        "taco1288_1",
+        "taco1246_7",
+        "taco1252_0",
+        "taco1346_0",
+        "taco1369_0",
+        "taco1217_0",
+        "taco1395_0",
+        "taco1349_0",
+        "taco1251_1",
+        "taco1222_0",
+        "taco1222_1",
+        "taco1358_0",
+        "taco1195_1",
+        "taco1371_0",
+        "taco1205_0",
+        "taco1256_0",
+        "taco1348_1"
+      ],
+      "intruder_order": [
+        "empty1256_0",
+        "empty1219_3",
+        "taco1394_0",
+        "empty1219_1",
+        "taco1282_1",
+        "taco1301_2",
+        "taco1374_0",
+        "taco1386_2",
+        "taco1255_0",
+        "taco1268_0",
+        "taco1256_1",
+        "taco1390_1",
+        "empty1215_0",
+        "taco1378_0",
+        "taco1297_4",
+        "taco1301_0",
+        "empty1302_1",
+        "taco1270_2",
+        "empty1178_0",
+        "taco1224_2",
+        "taco1211_5",
+        "empty1270_1",
+        "taco1271_0",
+        "taco1236_0",
+        "empty1302_3",
+        "taco1300_0",
+        "taco1290_0",
+        "taco1251_3",
+        "empty1302_0",
+        "taco1372_1",
+        "taco1249_0",
+        "taco1215_0",
+        "taco1304_1",
+        "taco1282_0",
+        "empty1375_0",
+        "taco1288_2",
+        "taco1285_0",
+        "empty1386_0",
+        "taco1214_2",
+        "empty1231_0",
+        "taco1255_1",
+        "taco1223_0",
+        "empty1397_0",
+        "empty1215_2",
+        "empty1215_3",
+        "empty1302_2",
+        "taco1270_1",
+        "empty1271_0",
+        "empty1215_1",
+        "taco1297_3",
+        "empty1395_0",
+        "taco1297_5",
+        "taco1243_0",
+        "empty1255_0",
+        "empty1357_0",
+        "taco1308_1",
+        "taco1220_0",
+        "empty1215_4",
+        "empty1397_1",
+        "taco1304_2",
+        "taco1251_2",
+        "empty1219_0",
+        "empty1300_0",
+        "taco1393_1",
+        "empty1303_0",
+        "empty1231_1",
+        "empty1219_2",
+        "taco1254_1",
+        "taco1394_2",
+        "empty1270_0",
+        "taco1216_0",
+        "taco1254_2",
+        "taco1216_3"
+      ]
+    }
+  },
+  "crops": {
+    "empty1178_0": {
+      "source": 1178,
+      "label": "non_litter",
+      "sha256": "ac9cbbf9c4e51542ff48e4faf35468ccc360fe5d9bd9d09ba46885817a2c5215",
+      "score": 0.14
+    },
+    "empty1215_0": {
+      "source": 1215,
+      "label": "non_litter",
+      "sha256": "d37a0d171adbd91367b9eca07ed8c1758702cf8c9d1078f01214608d20d0de65",
+      "score": 0.56
+    },
+    "empty1215_1": {
+      "source": 1215,
+      "label": "non_litter",
+      "sha256": "c66c8cecbaa6adbd78c35bb03e5c1c4e27f0503794902f2c36b28575fd0a9633",
+      "score": 0.74
+    },
+    "empty1215_2": {
+      "source": 1215,
+      "label": "non_litter",
+      "sha256": "84835b88ba916439d183f4effb3f5d59659e3ad05d3a103be31b631c8b2e840d",
+      "score": 0.55
+    },
+    "empty1215_3": {
+      "source": 1215,
+      "label": "non_litter",
+      "sha256": "c01d9b339916835b6c9ae22681ff24c4e964b110a25b1fb8a2aacb05bcae4490",
+      "score": 0.74
+    },
+    "empty1215_4": {
+      "source": 1215,
+      "label": "non_litter",
+      "sha256": "ca789af62a586b0754f7bf2fd553b15da8a4e7333e4e95cf9be27380e3c12ca5",
+      "score": 0.52
+    },
+    "empty1219_0": {
+      "source": 1219,
+      "label": "non_litter",
+      "sha256": "d4198824d56cef94572ceb9a4d77e38595bf28759252f1f647d3f68bae126f0f",
+      "score": 0.09
+    },
+    "empty1219_1": {
+      "source": 1219,
+      "label": "non_litter",
+      "sha256": "c490f2707a4a6f08485d6f5dbe665489052d2fb595b886458f16d326f46f85f9",
+      "score": 0.09
+    },
+    "empty1219_2": {
+      "source": 1219,
+      "label": "non_litter",
+      "sha256": "54c566aa1ce6c7300e41ae6ebdedc9a45d54df907a46a8c79fbfde9418b1b134",
+      "score": 0.36
+    },
+    "empty1219_3": {
+      "source": 1219,
+      "label": "non_litter",
+      "sha256": "96b7cf5e0f5c72192dd08e47d1a5989e567583e8082fe7fb206ed3d2c4ca79fa",
+      "score": 0.09
+    },
+    "empty1231_0": {
+      "source": 1231,
+      "label": "non_litter",
+      "sha256": "6e39183bf6fb94604e7101348de829f5ec253a753bee8248700b503f4e808476",
+      "score": 0.49
+    },
+    "empty1231_1": {
+      "source": 1231,
+      "label": "non_litter",
+      "sha256": "a83110f7286bb331df2822772ddc982b5e90386b4fa57c64343b45f11c5bd27e",
+      "score": 0.15
+    },
+    "empty1255_0": {
+      "source": 1255,
+      "label": "non_litter",
+      "sha256": "cfa9b2bbf2cbd5617ae4deb492a43885df3126fa70f8fd88e9d8eb4d24c1e2cf",
+      "score": 0.2
+    },
+    "empty1256_0": {
+      "source": 1256,
+      "label": "non_litter",
+      "sha256": "e7425fddf6141b5f5cbd399e44d85ec76ca0387f29130f0522067a331a7f2d7e",
+      "score": 0.13
+    },
+    "empty1270_0": {
+      "source": 1270,
+      "label": "non_litter",
+      "sha256": "22478f59831854096ad905eb8b235e1de4a961e9e53fc18e0766f07c73bdc265",
+      "score": 0.51
+    },
+    "empty1270_1": {
+      "source": 1270,
+      "label": "non_litter",
+      "sha256": "d42f559475eda0f7bf0942a5665d3a6b180f40f3ce66180a3dbbaf7a397bd0f6",
+      "score": 0.55
+    },
+    "empty1271_0": {
+      "source": 1271,
+      "label": "non_litter",
+      "sha256": "174f060dc8afc2d1f5a9015c9f9668e1380fc5e6d657e67be816a7582a8bdca5",
+      "score": 0.06
+    },
+    "empty1300_0": {
+      "source": 1300,
+      "label": "non_litter",
+      "sha256": "3bc5a2c5dedc85b7a07846a62d1683df90a7922ac013a11cbf210dc6e2f784a9",
+      "score": 0.46
+    },
+    "empty1302_0": {
+      "source": 1302,
+      "label": "non_litter",
+      "sha256": "df8ad0ebf27be648584927f36e355f3a2f46f34ba15d66fa2736589545dc4b50",
+      "score": 0.46
+    },
+    "empty1302_1": {
+      "source": 1302,
+      "label": "non_litter",
+      "sha256": "a0c091808217ef1ea7d204e4c2d6396612e369c2885950515bc486830b4a0887",
+      "score": 0.38
+    },
+    "empty1302_2": {
+      "source": 1302,
+      "label": "non_litter",
+      "sha256": "e4b1bc497627cb8920178a77df27aaa98c3ea37d95c27df931144e53bce9446e",
+      "score": 0.27
+    },
+    "empty1302_3": {
+      "source": 1302,
+      "label": "non_litter",
+      "sha256": "d764be20fa4800337e16658c714eb42cfbe820edd8edc45ed9877ff784e45074",
+      "score": 0.75
+    },
+    "empty1303_0": {
+      "source": 1303,
+      "label": "non_litter",
+      "sha256": "9ffbedf507a007b92eb5c29dcbcf02a8ab61f52e8a3a97afee3d39e8f5e30626",
+      "score": 0.17
+    },
+    "empty1357_0": {
+      "source": 1357,
+      "label": "non_litter",
+      "sha256": "659a92e8561fc26a4b4e78d127562cf4ec29420463d39a2b8b812e1617ef5c00",
+      "score": 0.16
+    },
+    "empty1375_0": {
+      "source": 1375,
+      "label": "non_litter",
+      "sha256": "9a525b92554676ef71490a46a3d57bd0440f8e46b02edfb794d9f9eaa7c53340",
+      "score": 0.07
+    },
+    "empty1386_0": {
+      "source": 1386,
+      "label": "non_litter",
+      "sha256": "7dafd47aadc702f246c535ae39d7b9335b581a7592f7fe3e6a54ebe42def050a",
+      "score": 0.02
+    },
+    "empty1395_0": {
+      "source": 1395,
+      "label": "non_litter",
+      "sha256": "56044ef31bca53c3b096a7caa2ac6d1422726d43dc0a90e2c4af2f9bd38c555b",
+      "score": 0.01
+    },
+    "empty1397_0": {
+      "source": 1397,
+      "label": "non_litter",
+      "sha256": "9133e3e0ba90a6856dd114776a3b1df25a0f352c88cc0eec5cb146398e7a2228",
+      "score": 0.48
+    },
+    "empty1397_1": {
+      "source": 1397,
+      "label": "non_litter",
+      "sha256": "0d2cdb0616299d64d4c120b5108d6312b01ba77ae547391f29c005a51d9b6d65",
+      "score": 0.83
+    },
+    "taco1173_0": {
+      "source": 1173,
+      "label": "litter",
+      "sha256": "70147d284cc3fd030bac317e1edb89ac21f186c61801de438546c6532909dddc",
+      "score": 0.86
+    },
+    "taco1173_1": {
+      "source": 1173,
+      "label": "unverified",
+      "sha256": "492ca8ef724701e0f0330f8d4fcdabd30337387fcc7734b4c33cecd4186c0cde",
+      "score": 0.49
+    },
+    "taco1175_0": {
+      "source": 1175,
+      "label": "litter",
+      "sha256": "5db0fc6e2e267cf119093afd8eda368a596823e8e690f1d70d8a4313e56e2151",
+      "score": 0.76
+    },
+    "taco1176_0": {
+      "source": 1176,
+      "label": "litter",
+      "sha256": "da154af2f83ea6bdbb2d837b8ae60cc15c224ba56eaa155154b5f2eae5cffd64",
+      "score": 0.95
+    },
+    "taco1177_0": {
+      "source": 1177,
+      "label": "litter",
+      "sha256": "bad7497d5b72161d335e0e164a437dd8a1a292661b511dfb82c185b32acdbe38",
+      "score": 0.96
+    },
+    "taco1178_0": {
+      "source": 1178,
+      "label": "litter",
+      "sha256": "23533b76db0625ec2b6191c8e4e98564079901b1bc5c5ed97c440595b571adf6",
+      "score": 0.89
+    },
+    "taco1187_0": {
+      "source": 1187,
+      "label": "litter",
+      "sha256": "aea6dd10629ec4e8c765ecbb50aab78a283056904f8b4c03b9e4c75658add6c7",
+      "score": 0.95
+    },
+    "taco1188_0": {
+      "source": 1188,
+      "label": "litter",
+      "sha256": "bca45b1e83d83667be15b784aa173987f6cb898e5b648da44b6171feff4e8fbe",
+      "score": 0.95
+    },
+    "taco1193_0": {
+      "source": 1193,
+      "label": "litter",
+      "sha256": "f0aeaf773de3212d43e8ef9b4dbb46b4a3b384fa791fce71350faa6c22879f94",
+      "score": 0.85
+    },
+    "taco1193_1": {
+      "source": 1193,
+      "label": "litter",
+      "sha256": "244bbd7eb5d4e7a5c5ecd238d8a31231be0e9b6d1dffc97c191419ec09fff2f6",
+      "score": 0.88
+    },
+    "taco1194_0": {
+      "source": 1194,
+      "label": "litter",
+      "sha256": "75160eb8e6eeb1e15b7ab6320c313518537023a40ffc636f828680fcaac8cd64",
+      "score": 0.95
+    },
+    "taco1194_1": {
+      "source": 1194,
+      "label": "litter",
+      "sha256": "6994cc7a38d79a2083353f57d3584c78bc013260645c6600406883cf6b35a8ab",
+      "score": 0.88
+    },
+    "taco1195_0": {
+      "source": 1195,
+      "label": "litter",
+      "sha256": "46092c07bdba5677258472f301e9ab18531ca1945a35771d40d8893025ff497e",
+      "score": 0.96
+    },
+    "taco1195_1": {
+      "source": 1195,
+      "label": "litter",
+      "sha256": "ed9bdddaa6ea997f454b9ab948dba134c3d0dc48dbd27255ee2050469eaf206e",
+      "score": 0.89
+    },
+    "taco1205_0": {
+      "source": 1205,
+      "label": "litter",
+      "sha256": "3af873e0a4ff8bd0bb8e92c38668d0d831ff747211f09958143e666fa82cdfdd",
+      "score": 0.98
+    },
+    "taco1209_0": {
+      "source": 1209,
+      "label": "litter",
+      "sha256": "8ec4d44b43018fe2589c6a75677f299914940b4f7afdb3f8c1525169001cd03c",
+      "score": 0.95
+    },
+    "taco1209_1": {
+      "source": 1209,
+      "label": "unverified",
+      "sha256": "84870d83ec993e58a22ee957f903682bfc11138a1740aa971c22a59b31b723e8",
+      "score": 0.22
+    },
+    "taco1209_2": {
+      "source": 1209,
+      "label": "litter",
+      "sha256": "a8280090acf44aef3dcaf66cbbfb984ba4473f58499a0d0cf3b9ca3645dd6784",
+      "score": 0.15
+    },
+    "taco1209_3": {
+      "source": 1209,
+      "label": "unverified",
+      "sha256": "98b890877a68b69d61ea11d68df9a1358b2cfad427386edea5d5ac95523553ab",
+      "score": 0.76
+    },
+    "taco1209_4": {
+      "source": 1209,
+      "label": "litter",
+      "sha256": "821ff9577c788947968e78fa1f6d51dffa5308d54dd4447b899f3242d272453f",
+      "score": 0.82
+    },
+    "taco1209_5": {
+      "source": 1209,
+      "label": "litter",
+      "sha256": "6c16da55a2a26946f36d19d9b1a4b47bffd24fded986f698466919f18490621a",
+      "score": 0.84
+    },
+    "taco1210_0": {
+      "source": 1210,
+      "label": "litter",
+      "sha256": "41ea0d63f24719123cd4404d0297920e2e41d61834062d710563a3bc5890ceea",
+      "score": 0.97
+    },
+    "taco1210_1": {
+      "source": 1210,
+      "label": "unverified",
+      "sha256": "7c95369b4c6ab5cc93e03a2da059542b568714a91f3fd055e502c3d39484259a",
+      "score": 0.52
+    },
+    "taco1211_0": {
+      "source": 1211,
+      "label": "unverified",
+      "sha256": "45e8032246c3b890065894e80be0ef0f92887f4b5b46b5481e64a9403ae30c6f",
+      "score": 0.63
+    },
+    "taco1211_1": {
+      "source": 1211,
+      "label": "unverified",
+      "sha256": "28c45df91878bc6286b42c174624647f8c46f549247af2e134be96ef467bbdc7",
+      "score": 0.64
+    },
+    "taco1211_2": {
+      "source": 1211,
+      "label": "unverified",
+      "sha256": "74fd8b89a252f1a0f9936a7b81f0c7239e555864dcde898e606f31ffe062e33f",
+      "score": 0.31
+    },
+    "taco1211_5": {
+      "source": 1211,
+      "label": "non_litter",
+      "sha256": "2dd9fe712b19a13d127c928f0e69ebe9abbb028d170454499eea86990a601f2d",
+      "score": 0.09
+    },
+    "taco1213_0": {
+      "source": 1213,
+      "label": "litter",
+      "sha256": "f68e680d03926761aca710a1a0b0acd0942e9a7a4abdd4f5f65b297854fe7b9d",
+      "score": 0.72
+    },
+    "taco1213_1": {
+      "source": 1213,
+      "label": "litter",
+      "sha256": "f9e3ebbbc918c7f5a47ea9d10b7e2d99fb21174c1f95039466d1599bf13afec7",
+      "score": 0.77
+    },
+    "taco1213_2": {
+      "source": 1213,
+      "label": "litter",
+      "sha256": "07d79a5adbd58efdde7dfb5406082b32123f21c57d2e7cbfa2a124d5de0d9be7",
+      "score": 0.87
+    },
+    "taco1213_3": {
+      "source": 1213,
+      "label": "litter",
+      "sha256": "8b53ddb391d73616427bc1beece69126e30d79dfe196836b08978680c148f443",
+      "score": 0.93
+    },
+    "taco1213_4": {
+      "source": 1213,
+      "label": "litter",
+      "sha256": "268e871daa0041650a2c1e5a39d89cc694d3ee29f3cc38da48eed7557983d0c8",
+      "score": 0.92
+    },
+    "taco1213_5": {
+      "source": 1213,
+      "label": "litter",
+      "sha256": "c7401b5a9294a201ae408ccbc35927fff37cfc26598eeedcf1accfa43980e099",
+      "score": 0.81
+    },
+    "taco1213_6": {
+      "source": 1213,
+      "label": "unverified",
+      "sha256": "28c31404d9924f3a045c4a90e5bc062c8275f221e6e5079950492fc8d073f22c",
+      "score": 0.67
+    },
+    "taco1214_0": {
+      "source": 1214,
+      "label": "litter",
+      "sha256": "b42f31f218ecd89b04c6da0aaebd17ce86f7632e936cb087604e596439b36a1d",
+      "score": 0.42
+    },
+    "taco1214_1": {
+      "source": 1214,
+      "label": "unverified",
+      "sha256": "cb4f0ce7f53c0ecf57c4eacb9e934f7b046031b0320364e4fd300b1bba4cab8f",
+      "score": 0.22
+    },
+    "taco1214_2": {
+      "source": 1214,
+      "label": "non_litter",
+      "sha256": "ab6edf9fbcb7f6e028e2f62645cd93226f7f924782b1b53cdfe5201219fe04ae",
+      "score": 0.59
+    },
+    "taco1214_3": {
+      "source": 1214,
+      "label": "litter",
+      "sha256": "b1b197ee3346c2be88c7fdbdb3826655216c463530ee1306852c0800da9dbfd9",
+      "score": 0.94
+    },
+    "taco1215_0": {
+      "source": 1215,
+      "label": "non_litter",
+      "sha256": "8fc3e8b1b25c6fe8dd5dbaa0a20786a206deeb52183291f64fea2abc2f4cedbb",
+      "score": 0.66
+    },
+    "taco1216_0": {
+      "source": 1216,
+      "label": "non_litter",
+      "sha256": "12d76476cce1dc094f6bb63bd22d99449431377d0a7a2034576a7c1d00c8fe87",
+      "score": 0.07
+    },
+    "taco1216_1": {
+      "source": 1216,
+      "label": "litter",
+      "sha256": "467416ca097e678c80b3942cb01738df31b5c5696c4920927d180c4e3c477900",
+      "score": 0.44
+    },
+    "taco1216_2": {
+      "source": 1216,
+      "label": "unverified",
+      "sha256": "7d5e9175e105fe9223775618ed92b36eb11b0c8539c4e8e6abf17f7412a7a3c3",
+      "score": 0.89
+    },
+    "taco1216_3": {
+      "source": 1216,
+      "label": "non_litter",
+      "sha256": "43efad7543e83b3d1913d6c080a070197f9f5c754a3ded506f171a57828e41e2",
+      "score": 0.06
+    },
+    "taco1216_4": {
+      "source": 1216,
+      "label": "unverified",
+      "sha256": "4d8ec2c2471b086562aa621e063987e310039e34070e396198f61a73c3d91004",
+      "score": 0.32
+    },
+    "taco1217_0": {
+      "source": 1217,
+      "label": "litter",
+      "sha256": "3c6aced8f57e515032dfb4b7ff68579964cb2a53661b01c52496f21c87f06b73",
+      "score": 0.96
+    },
+    "taco1218_0": {
+      "source": 1218,
+      "label": "litter",
+      "sha256": "37e655a14a0f029a4cb1ff88603433d03bac0177bbbf6ab0432c4f4584123ead",
+      "score": 0.92
+    },
+    "taco1219_1": {
+      "source": 1219,
+      "label": "unverified",
+      "sha256": "0ea6b4cb0e3a206d898e9ee65746cdaa3f83a175d2d19536cab85b4ac2385add",
+      "score": 0.19
+    },
+    "taco1220_0": {
+      "source": 1220,
+      "label": "non_litter",
+      "sha256": "45bdd59ddad4e064c27791eda552a33ef4cd48ae9f075d087174e6aaeb21fb6e",
+      "score": 0.43
+    },
+    "taco1221_0": {
+      "source": 1221,
+      "label": "litter",
+      "sha256": "949e3c19a45cd61667631b6ed67933d6dcb826bb566ece5b96662447ec1ffd1d",
+      "score": 0.84
+    },
+    "taco1221_1": {
+      "source": 1221,
+      "label": "unverified",
+      "sha256": "b0ab92c4be7e4eea7bb6bdf74c5b11fee836606e57012af54edeeb4a0cfad116",
+      "score": 0.57
+    },
+    "taco1222_0": {
+      "source": 1222,
+      "label": "litter",
+      "sha256": "b241b4ec2b343f2bbcf4de75dd0f2b447d80761c51f624ea1c352f1174d5b653",
+      "score": 0.86
+    },
+    "taco1222_1": {
+      "source": 1222,
+      "label": "litter",
+      "sha256": "bba3b02f529e5eff72a1a870302a8df03cd8cc0897b1190870f83d1fdb42e567",
+      "score": 0.87
+    },
+    "taco1223_0": {
+      "source": 1223,
+      "label": "non_litter",
+      "sha256": "d8e8670c68c1edd9143272c5195941473b88e459969e768b51047d82df5038ef",
+      "score": 0.02
+    },
+    "taco1223_1": {
+      "source": 1223,
+      "label": "litter",
+      "sha256": "acc72450024054b77ecc10af83293190bb16cfa562c98243adbed4faf076ca27",
+      "score": 0.95
+    },
+    "taco1224_1": {
+      "source": 1224,
+      "label": "litter",
+      "sha256": "6ee94e64aaf8b2ba72e21f35b0340b4d65437749bf42d7fee044c22749fdcb18",
+      "score": 0.94
+    },
+    "taco1224_2": {
+      "source": 1224,
+      "label": "non_litter",
+      "sha256": "418fdf7e923b4c35d70ab3826274ef687f5ceb22e806062a861994f30c9c83bd",
+      "score": 0.37
+    },
+    "taco1224_3": {
+      "source": 1224,
+      "label": "litter",
+      "sha256": "b3ed0bec31d264e6b798c52cadb85a44af6cff039ddc88c89e0d765823fa87dd",
+      "score": 0.6
+    },
+    "taco1224_4": {
+      "source": 1224,
+      "label": "litter",
+      "sha256": "f1f8024105a2f23f368d3d8a2f2511b64c9fa337c473051c6690ecbb2657e803",
+      "score": 0.84
+    },
+    "taco1226_0": {
+      "source": 1226,
+      "label": "litter",
+      "sha256": "9987d9cd78ffb134c650ed028d7653c76860825184c7fc9256583cad72c28097",
+      "score": 0.94
+    },
+    "taco1227_0": {
+      "source": 1227,
+      "label": "litter",
+      "sha256": "b9b3fe7af7bb0afeaa851b249c5074c04a001c24e313a31b419fcd6432191be4",
+      "score": 0.95
+    },
+    "taco1228_0": {
+      "source": 1228,
+      "label": "litter",
+      "sha256": "8a42748911717f2d90bd6154bc2f538c21458116444b0beac0c86adee2c11253",
+      "score": 0.95
+    },
+    "taco1228_1": {
+      "source": 1228,
+      "label": "litter",
+      "sha256": "388cf5ac92bd3f60f1e22d3e53acbecb363f72dffbbf2095b6965ae5af6ee4d9",
+      "score": 0.89
+    },
+    "taco1229_0": {
+      "source": 1229,
+      "label": "unverified",
+      "sha256": "67cb59a79cef8ee7e27fe9bc3de7ce73f1e460d4cf48b8f71355ee6a2a40d497",
+      "score": 0.71
+    },
+    "taco1229_1": {
+      "source": 1229,
+      "label": "litter",
+      "sha256": "bc0fca9f09c88b92b59c6abd43045086902aa7886845a3f1930e30757ea75583",
+      "score": 0.56
+    },
+    "taco1230_0": {
+      "source": 1230,
+      "label": "litter",
+      "sha256": "b10a5756a7d6f8a0ab8e273b2f9de38802a8a99437aaab9181e74974f8aeb431",
+      "score": 0.95
+    },
+    "taco1231_0": {
+      "source": 1231,
+      "label": "litter",
+      "sha256": "6e4a0d50bdc23f93da1af7a12db5e8faff7ec12866edecd06a7bd4c5962ca913",
+      "score": 0.91
+    },
+    "taco1232_0": {
+      "source": 1232,
+      "label": "litter",
+      "sha256": "3ee49b16597de2cc77b4752d8df1ca7b15e47331691458c6889180db4db769ec",
+      "score": 0.96
+    },
+    "taco1233_0": {
+      "source": 1233,
+      "label": "unverified",
+      "sha256": "8f67d19102b003e6c500f4db42d91c6e33832c3ef2550dd730a662f044df8516",
+      "score": 0.66
+    },
+    "taco1234_0": {
+      "source": 1234,
+      "label": "litter",
+      "sha256": "4cc83f7ea05bddc47c5896f13b13cd5f5f0a58121edd655fdae0c5bfb743e4d9",
+      "score": 0.91
+    },
+    "taco1236_0": {
+      "source": 1236,
+      "label": "non_litter",
+      "sha256": "02f6b95f9fc0b7fcc646b6c81ce8edfe7c7a2bef9197a8f97501f1ac1cf15e23",
+      "score": 0.07
+    },
+    "taco1236_1": {
+      "source": 1236,
+      "label": "litter",
+      "sha256": "1773de0ea8b3010a142b82d878849b5f21afff9008500422ba4691886c34c2a0",
+      "score": 0.95
+    },
+    "taco1237_0": {
+      "source": 1237,
+      "label": "litter",
+      "sha256": "f25d529b510480388c75a6f6981b037a546fc7f9265c58cc4b88d4a8cc57b5ff",
+      "score": 0.95
+    },
+    "taco1237_1": {
+      "source": 1237,
+      "label": "unverified",
+      "sha256": "bad91805dd5cf65fceefcc8db13ce2c76d7a229b9228299359a6ce14a6cd3e6b",
+      "score": 0.49
+    },
+    "taco1243_0": {
+      "source": 1243,
+      "label": "non_litter",
+      "sha256": "b2023bf2fc23943ea99bfd39a7f4a9e0b7117fd2758f8b1f01cf8f2d700aca48",
+      "score": 0.44
+    },
+    "taco1243_1": {
+      "source": 1243,
+      "label": "unverified",
+      "sha256": "33b8a136a44e41318367d101b67fdf28374b4d35a9977bc716c493a68d758264",
+      "score": 0.44
+    },
+    "taco1246_0": {
+      "source": 1246,
+      "label": "litter",
+      "sha256": "3f52b9a103ea917d2f87ea4a0b38280c32234ce67d41dfcc296b94811ce28644",
+      "score": 0.63
+    },
+    "taco1246_1": {
+      "source": 1246,
+      "label": "litter",
+      "sha256": "294f7ea41f72ae8a77ef7f50be05b8e6c87044b5c0e728b88e7e4fc330ef0405",
+      "score": 0.93
+    },
+    "taco1246_2": {
+      "source": 1246,
+      "label": "litter",
+      "sha256": "b70b162df26692d03e6cc97cee59cc3efd406883aa74a4a9f6c7d237764384d9",
+      "score": 0.93
+    },
+    "taco1246_3": {
+      "source": 1246,
+      "label": "litter",
+      "sha256": "4d561e4a6debc323e193926a83a1267c2f45e3f5854195ac0e12e25dc536e610",
+      "score": 0.94
+    },
+    "taco1246_5": {
+      "source": 1246,
+      "label": "litter",
+      "sha256": "b5dde1e960c91ecd0ab2095b834119eb13f0c9edb4b27f005f0d13677757eb43",
+      "score": 0.85
+    },
+    "taco1246_6": {
+      "source": 1246,
+      "label": "litter",
+      "sha256": "0ffaef4f96e89361c3b51d577bc8e3802e426eab336b168da563b3ab6f44d9d2",
+      "score": 0.5
+    },
+    "taco1246_7": {
+      "source": 1246,
+      "label": "litter",
+      "sha256": "2b1b4e302adf2d15473ea5b774103f66f0b0da2bfe6d7619bc93d170631caf34",
+      "score": 0.96
+    },
+    "taco1246_9": {
+      "source": 1246,
+      "label": "litter",
+      "sha256": "9b2abb34bd655eed4827f855943c79e4632208585d2e64710e79ee124656fb59",
+      "score": 0.67
+    },
+    "taco1249_0": {
+      "source": 1249,
+      "label": "non_litter",
+      "sha256": "5ab76696b4d3193e9f31e00a6a4db4fc4bf1f6e475a6c3878d67590ce13115a5",
+      "score": 0.05
+    },
+    "taco1249_1": {
+      "source": 1249,
+      "label": "litter",
+      "sha256": "e8d5f55e767025e4275509d70e367169e82b18057befca456eb43e0e2fe7a934",
+      "score": 0.3
+    },
+    "taco1251_0": {
+      "source": 1251,
+      "label": "litter",
+      "sha256": "ffa27eddbd2abd59f4f4161a7b316eb3ae645650e81f204f869513f8f5eb1319",
+      "score": 0.95
+    },
+    "taco1251_1": {
+      "source": 1251,
+      "label": "litter",
+      "sha256": "a2825c7c77011e07959cb8d231107d133d2d021f490957f4cde2832cff352b73",
+      "score": 0.77
+    },
+    "taco1251_2": {
+      "source": 1251,
+      "label": "non_litter",
+      "sha256": "c501eb6164db6273c8cd005d81ddb851f067762bf6da42aefba0a6ca4a27f272",
+      "score": 0.28
+    },
+    "taco1251_3": {
+      "source": 1251,
+      "label": "non_litter",
+      "sha256": "862851b12fef59ce08963ecdf5593922048d66934fd1770e6de834075ac04ee3",
+      "score": 0.02
+    },
+    "taco1252_0": {
+      "source": 1252,
+      "label": "litter",
+      "sha256": "a1c6a86c9adbf33b090bca7bdf1d1cb27c1d3937b2bb26b5cc6e1798105917b9",
+      "score": 0.95
+    },
+    "taco1254_0": {
+      "source": 1254,
+      "label": "litter",
+      "sha256": "f97ea9439a7606c25322dab768bc413f602e10229bfaadc99d5527629811794e",
+      "score": 0.91
+    },
+    "taco1254_1": {
+      "source": 1254,
+      "label": "non_litter",
+      "sha256": "065bfed86b17d768f3cdbd1d77665841c29f47c6dc8c631e49a57aa876e5bbb9",
+      "score": 0.08
+    },
+    "taco1254_2": {
+      "source": 1254,
+      "label": "non_litter",
+      "sha256": "c7df037e779265e77111ff281045e679101713477fd0f4cdece8750f1cd43dd5",
+      "score": 0.32
+    },
+    "taco1255_0": {
+      "source": 1255,
+      "label": "non_litter",
+      "sha256": "e6c825f26b23f0fd649e77cf03172f25fb0b326207a689edde0e41dd9192627e",
+      "score": 0.23
+    },
+    "taco1255_1": {
+      "source": 1255,
+      "label": "non_litter",
+      "sha256": "86b6ddf188a5f792cd99d1f1c0f43b30a9745d2e144e7d440603151942ff679d",
+      "score": 0.27
+    },
+    "taco1255_2": {
+      "source": 1255,
+      "label": "litter",
+      "sha256": "ca4f46e968574bb92123871ae2b13fdd399d29d01b47acea664ce264766aab6b",
+      "score": 0.91
+    },
+    "taco1256_0": {
+      "source": 1256,
+      "label": "litter",
+      "sha256": "eba9a3603a803a9464c45ff53dc947b65037e7cec6cc07190d41d74d63d2c268",
+      "score": 0.97
+    },
+    "taco1256_1": {
+      "source": 1256,
+      "label": "non_litter",
+      "sha256": "a009de6b3e01e2ed9df7fd5cf7aad5443a8029b91fd152360f21f8ef17f1efe7",
+      "score": 0.16
+    },
+    "taco1267_0": {
+      "source": 1267,
+      "label": "litter",
+      "sha256": "7aa17e420085c961310ad1108a145c1498e9a61d71a02d70bf66af9f530b5039",
+      "score": 0.92
+    },
+    "taco1268_0": {
+      "source": 1268,
+      "label": "non_litter",
+      "sha256": "50a319cf3e8d89d33cec3b1a31779ae270afdc6adc35add69b9ebed01ac224d9",
+      "score": 0.18
+    },
+    "taco1270_0": {
+      "source": 1270,
+      "label": "litter",
+      "sha256": "a7c9db1367d1f51d5ad2ad22cb71d797e4b20ffb3b7a5b6ac8f4fdc51f4d16fd",
+      "score": 0.89
+    },
+    "taco1270_1": {
+      "source": 1270,
+      "label": "non_litter",
+      "sha256": "851f0dd8e284a9834e9c69f53586e728194c6c4a690ad07eec4f3127f2cdd377",
+      "score": 0.69
+    },
+    "taco1270_2": {
+      "source": 1270,
+      "label": "non_litter",
+      "sha256": "7f3aa96bf35d3c115f0c2468093f5a3284bb18fe8b0b346c19687b62c5426c54",
+      "score": 0.08
+    },
+    "taco1271_0": {
+      "source": 1271,
+      "label": "non_litter",
+      "sha256": "6ea416fd979d03c6ea7d426f5f09ddf1949662a5131643777cab38503f003a9f",
+      "score": 0.29
+    },
+    "taco1272_0": {
+      "source": 1272,
+      "label": "litter",
+      "sha256": "9a834d4de5b76a0b1416eeddb8e03d62ca68b051575bdf489d18ff043539adbb",
+      "score": 0.95
+    },
+    "taco1273_0": {
+      "source": 1273,
+      "label": "litter",
+      "sha256": "f1db58059305dbd4302566e514a6df095839efc61fea3aa6e695e232e17198af",
+      "score": 0.9
+    },
+    "taco1273_1": {
+      "source": 1273,
+      "label": "litter",
+      "sha256": "8ba05eced3d1f383cdc0fce57370ad58aaab0322a948317f7e0b3e796a03afec",
+      "score": 0.96
+    },
+    "taco1275_0": {
+      "source": 1275,
+      "label": "litter",
+      "sha256": "3bb88ec928c4113c3f2729307dc9c45c30ec4e625a4ff3a595699cbd13ff2a6e",
+      "score": 0.57
+    },
+    "taco1276_0": {
+      "source": 1276,
+      "label": "litter",
+      "sha256": "ec39a2fb4e5c1dc0192b2d27ff005695a70b92589befda647d7da39fad4ffad3",
+      "score": 0.97
+    },
+    "taco1282_0": {
+      "source": 1282,
+      "label": "non_litter",
+      "sha256": "1c260519e639e99d995e6f07c0c555a37725e5895767f13b31fc22ecf8debf4d",
+      "score": 0.06
+    },
+    "taco1282_1": {
+      "source": 1282,
+      "label": "non_litter",
+      "sha256": "ec344aaeb64b8dbf93b325267a8e90acf6e8b622ab9de0db478f05070d3ef020",
+      "score": 0.18
+    },
+    "taco1283_0": {
+      "source": 1283,
+      "label": "litter",
+      "sha256": "9d9ad01f87cb54b7d0e1e07cbab2f6f46d70c5e068fdda384b88908e845330db",
+      "score": 0.95
+    },
+    "taco1285_0": {
+      "source": 1285,
+      "label": "non_litter",
+      "sha256": "c9fe10b85020cfe06066eeb803745478004729ad696a2ecddd3b040bf2980d4e",
+      "score": 0.04
+    },
+    "taco1285_1": {
+      "source": 1285,
+      "label": "litter",
+      "sha256": "885bb96e859900ea626847439bda5b0781fefff0ca5bc57023f0d501fa452489",
+      "score": 0.72
+    },
+    "taco1288_0": {
+      "source": 1288,
+      "label": "litter",
+      "sha256": "d3b48c8553e965b01f692bcde91067659fdbd98145f1f7752f7b700449327ac0",
+      "score": 0.84
+    },
+    "taco1288_1": {
+      "source": 1288,
+      "label": "litter",
+      "sha256": "de05f9e7c3fcc40312042aaf86b030c0169cdbf26e8092343792fcbe1da187ac",
+      "score": 0.81
+    },
+    "taco1288_2": {
+      "source": 1288,
+      "label": "non_litter",
+      "sha256": "555dd0fd5c8cbda822d325b70c4d727a9efbf798477baced3c20046ac1ea3af1",
+      "score": 0.22
+    },
+    "taco1288_3": {
+      "source": 1288,
+      "label": "litter",
+      "sha256": "f778bfe1011797a63210df61c0a8a33a23717e816139f82dbcb9ea588ea33b66",
+      "score": 0.73
+    },
+    "taco1288_4": {
+      "source": 1288,
+      "label": "litter",
+      "sha256": "5bf6050302af17b48d46509bb815277567828784bffea1534998621e995130a7",
+      "score": 0.39
+    },
+    "taco1289_0": {
+      "source": 1289,
+      "label": "litter",
+      "sha256": "3c7347924377b90ffcc578a44ea15c65a2311254b3266a13135a5e8636cc430e",
+      "score": 0.76
+    },
+    "taco1289_1": {
+      "source": 1289,
+      "label": "litter",
+      "sha256": "1c4787f2d0a463e44cce55925fb9718429e4db94ebf1798df1fa8437f8afbcbb",
+      "score": 0.9
+    },
+    "taco1290_0": {
+      "source": 1290,
+      "label": "non_litter",
+      "sha256": "ea1d2fafce1a246d2be3dfe1ae596b672679acb14dbfc9ad25a217c4dcfc122a",
+      "score": 0.1
+    },
+    "taco1290_1": {
+      "source": 1290,
+      "label": "litter",
+      "sha256": "eeea6f3d1613a1f7791f63528da8409568fa682c72af5b13ef15697ee68af933",
+      "score": 0.94
+    },
+    "taco1291_0": {
+      "source": 1291,
+      "label": "litter",
+      "sha256": "8b241fe048f8c21281c94a1a96002f0cbb517350a5b676125ed9a518a3f59f82",
+      "score": 0.68
+    },
+    "taco1297_0": {
+      "source": 1297,
+      "label": "unverified",
+      "sha256": "5cacdb13d53e21316267dc6979bc75d394ae8babce27efe7ff982d3e20f45169",
+      "score": 0.57
+    },
+    "taco1297_1": {
+      "source": 1297,
+      "label": "litter",
+      "sha256": "5a5b0d6c370cbd523e3bb0e27accca3893599cb1562a6080d21001911f700f39",
+      "score": 0.91
+    },
+    "taco1297_2": {
+      "source": 1297,
+      "label": "unverified",
+      "sha256": "7ba5b18a29624fc730aed83ce05494678206cf67534dcb30628c4314d37aebf7",
+      "score": 0.19
+    },
+    "taco1297_3": {
+      "source": 1297,
+      "label": "non_litter",
+      "sha256": "5f46b4582758e679079b58760e891b7df8e0beea25f974d809fec019839c6161",
+      "score": 0.5
+    },
+    "taco1297_4": {
+      "source": 1297,
+      "label": "non_litter",
+      "sha256": "9f1ae1231363cc51258998a3fb1c873d5f7ebad572f9d43214a3bbdc42ae950e",
+      "score": 0.08
+    },
+    "taco1297_5": {
+      "source": 1297,
+      "label": "non_litter",
+      "sha256": "b0643041d7d109609280fe95e3a9e4ff522859b106aaeaed26b5b6916d115819",
+      "score": 0.13
+    },
+    "taco1300_0": {
+      "source": 1300,
+      "label": "non_litter",
+      "sha256": "7317612438ed9b27f032364b183efe9cb48748639097679b3bdc9d6c28efe1d9",
+      "score": 0.09
+    },
+    "taco1300_1": {
+      "source": 1300,
+      "label": "litter",
+      "sha256": "e05b16b39e6fe8298ec34339fed4cafd46e83c66af23076f4ffeca50aab4c5ef",
+      "score": 0.85
+    },
+    "taco1301_0": {
+      "source": 1301,
+      "label": "non_litter",
+      "sha256": "26939e4ef4ad4830b2542dd363aeef24d5ab39fb6f8e259b8ddd39cb6f197d4c",
+      "score": 0.12
+    },
+    "taco1301_1": {
+      "source": 1301,
+      "label": "litter",
+      "sha256": "b85324c1af3f2f3a7683e6cb6d2ba7af88432ff9eb50818cd962a7e581a148c2",
+      "score": 0.83
+    },
+    "taco1301_2": {
+      "source": 1301,
+      "label": "non_litter",
+      "sha256": "8626d89f32c472f95fdc641f0a5c409285b6344404c163d4ef0090b75015db1b",
+      "score": 0.14
+    },
+    "taco1302_0": {
+      "source": 1302,
+      "label": "litter",
+      "sha256": "20331dcbc1b8561473678821d8bc7c88da806feb9a1800aff18324a44040f309",
+      "score": 0.94
+    },
+    "taco1303_0": {
+      "source": 1303,
+      "label": "litter",
+      "sha256": "f06553934a9c4e7ea8923be94fb71645e7a4b521e5404527f97814a5f098a462",
+      "score": 0.92
+    },
+    "taco1304_0": {
+      "source": 1304,
+      "label": "litter",
+      "sha256": "bd2c6a8bc108fcdff20389e26b80a469bacb816754a4959b13f773e751b3b5f3",
+      "score": 0.91
+    },
+    "taco1304_1": {
+      "source": 1304,
+      "label": "non_litter",
+      "sha256": "be527c7c6f352b996867107e4354d4e8e658df45153e4aa624d85e9d1e386c25",
+      "score": 0.08
+    },
+    "taco1304_2": {
+      "source": 1304,
+      "label": "non_litter",
+      "sha256": "0df6627cd690e68e2a714fb39bb490c9bbb90f78a4fd047076c119ca73361e3e",
+      "score": 0.16
+    },
+    "taco1304_3": {
+      "source": 1304,
+      "label": "unverified",
+      "sha256": "4f3c05c456917ade653a585553215d2bfa05de4c41586a13d73de3d863e3b6b1",
+      "score": 0.15
+    },
+    "taco1305_0": {
+      "source": 1305,
+      "label": "litter",
+      "sha256": "448182d73e242dbb090a15d934e6e3845d31e082ef7e8570cdfa65b82507b6cb",
+      "score": 0.85
+    },
+    "taco1305_1": {
+      "source": 1305,
+      "label": "unverified",
+      "sha256": "b19840e78ac2d35e16cc274d946e7dbd644ad250f3dead90caf5abb31df67b79",
+      "score": 0.63
+    },
+    "taco1308_0": {
+      "source": 1308,
+      "label": "litter",
+      "sha256": "1ca0c1132ec94ec5dce2a77c267881c443e95a5b56da7871fa069c45d04e0df5",
+      "score": 0.94
+    },
+    "taco1308_1": {
+      "source": 1308,
+      "label": "non_litter",
+      "sha256": "70b0b50e3a2c1a517e3985c5c43f0536ace80542efb3df998f0fe9c5d9d70d7f",
+      "score": 0.09
+    },
+    "taco1314_0": {
+      "source": 1314,
+      "label": "litter",
+      "sha256": "482c5249afb82ec082f351b009abab6de52793f7ef8966af15eb5cd6be60b51d",
+      "score": 0.96
+    },
+    "taco1314_1": {
+      "source": 1314,
+      "label": "litter",
+      "sha256": "fd943b3f98b1b5dcca035965d7ab6fd8de83d96021fa01bacd4d839b084135e0",
+      "score": 0.94
+    },
+    "taco1314_2": {
+      "source": 1314,
+      "label": "litter",
+      "sha256": "01e1f9ea54617c8d0428b004bbd8b8d43285f180762b1d3d8844d6305a373521",
+      "score": 0.71
+    },
+    "taco1314_4": {
+      "source": 1314,
+      "label": "litter",
+      "sha256": "f6ee44cab6711eb3baa7933e3d144a93e97cc3fc94c8e25d9b7b1c2aa1e8ec14",
+      "score": 0.96
+    },
+    "taco1314_5": {
+      "source": 1314,
+      "label": "litter",
+      "sha256": "bda46544c57fdd4236ad9a6ecdd84c275702355fbf6789d4acba5b2add79c207",
+      "score": 0.98
+    },
+    "taco1315_0": {
+      "source": 1315,
+      "label": "litter",
+      "sha256": "a16c68b8c3416633aad607aa050bf1799c374c720d8ec487a255a567f4bad47b",
+      "score": 0.84
+    },
+    "taco1315_1": {
+      "source": 1315,
+      "label": "unverified",
+      "sha256": "23f974a0225b66f4a11972206f342ed1020d5b02e222ccaa05bec806037f93cc",
+      "score": 0.64
+    },
+    "taco1316_0": {
+      "source": 1316,
+      "label": "litter",
+      "sha256": "e7f82dbf60df65f7d0869d39828a3832ab4b1f328fcd5b178f1688573bd81911",
+      "score": 0.97
+    },
+    "taco1317_0": {
+      "source": 1317,
+      "label": "litter",
+      "sha256": "b1ff22ea7645b2da91abf85da267b049a9164399d30d9e47b4e4853673b048c9",
+      "score": 0.89
+    },
+    "taco1337_0": {
+      "source": 1337,
+      "label": "litter",
+      "sha256": "a811f0ec9cf5815cc4a5283ce1390f981537b14e0ed57cb20a20b5306e0a1efe",
+      "score": 0.88
+    },
+    "taco1337_1": {
+      "source": 1337,
+      "label": "unverified",
+      "sha256": "ef151b4aaa19e1eacaf3369fd6c466c5e3b8a866f10404f29a3b5b43596e7f0b",
+      "score": 0.86
+    },
+    "taco1337_2": {
+      "source": 1337,
+      "label": "unverified",
+      "sha256": "48205315ddd22c054decb530a07210bf0978e5c9cae34bbf858ef8f90312018c",
+      "score": 0.79
+    },
+    "taco1340_0": {
+      "source": 1340,
+      "label": "litter",
+      "sha256": "0911bc1d299616b0f6e35d79eed6a622bc4b923dd373bd943cd906ef9f93b54d",
+      "score": 0.96
+    },
+    "taco1341_0": {
+      "source": 1341,
+      "label": "litter",
+      "sha256": "35edfe48662d060ada6b32e48f077e42a91d0f1a1b60b6bb53277adfa3f6d9d1",
+      "score": 0.86
+    },
+    "taco1343_0": {
+      "source": 1343,
+      "label": "litter",
+      "sha256": "045aa2620aac4332fcb3b8e7e36b9859987a502094cb56b74b479f74132f8ed3",
+      "score": 0.93
+    },
+    "taco1344_0": {
+      "source": 1344,
+      "label": "litter",
+      "sha256": "3a4312d241cd67cee0c7a6479f9cd6f8d69b14b956e4288b252685253c0be9cc",
+      "score": 0.93
+    },
+    "taco1344_1": {
+      "source": 1344,
+      "label": "litter",
+      "sha256": "7b799d855756cdb68247b4c4aba7c9203da36f96a44e1fb3728da99d606e0476",
+      "score": 0.75
+    },
+    "taco1344_2": {
+      "source": 1344,
+      "label": "litter",
+      "sha256": "4fe17f8de822280f17fa5303550bcdd6d92e14d2492a1c47e044130e5fa803e1",
+      "score": 0.81
+    },
+    "taco1344_3": {
+      "source": 1344,
+      "label": "litter",
+      "sha256": "aff04ea7217d3e83d1254525a674c33e14b912677545f6162ffeaa3c1fccd0ec",
+      "score": 0.85
+    },
+    "taco1345_0": {
+      "source": 1345,
+      "label": "litter",
+      "sha256": "9115c1b30ca8785e1a86e4097178b3673e487449a49dd17b3996dc2db9d65303",
+      "score": 0.87
+    },
+    "taco1346_0": {
+      "source": 1346,
+      "label": "litter",
+      "sha256": "fe743d3964c328b50184109c66df4e4b5afad90b3526233b5693feb2d5c54d20",
+      "score": 0.9
+    },
+    "taco1347_0": {
+      "source": 1347,
+      "label": "litter",
+      "sha256": "296ca0d8936fcd12f2a9e45bcf0cd3fc441f73c57f9a07c5eadb46c688e41410",
+      "score": 0.65
+    },
+    "taco1347_1": {
+      "source": 1347,
+      "label": "litter",
+      "sha256": "35977465471259e031c7691bfe6c3feedff899e175fe18a85e488ce512f6b265",
+      "score": 0.75
+    },
+    "taco1348_0": {
+      "source": 1348,
+      "label": "litter",
+      "sha256": "b53a7891258198c492a51528b85922452c0e55dfa1f308f24ea9c49d19876557",
+      "score": 0.97
+    },
+    "taco1348_1": {
+      "source": 1348,
+      "label": "litter",
+      "sha256": "cd37ad81dddc2b4874cc79b60d679549647ac53e127737d55d97ae8a33401faf",
+      "score": 0.72
+    },
+    "taco1349_0": {
+      "source": 1349,
+      "label": "litter",
+      "sha256": "c0ef0af4cde04bee86795b4ec93b23dcdb5f7e03b41a58b14b65a81c3299f911",
+      "score": 0.46
+    },
+    "taco1351_0": {
+      "source": 1351,
+      "label": "litter",
+      "sha256": "5b16ccd00967811aa97a94d00189b8d01eee90a89ee55cf8bb1d6478df149679",
+      "score": 0.96
+    },
+    "taco1351_1": {
+      "source": 1351,
+      "label": "litter",
+      "sha256": "9b87d0250e86f0cf842693b51fae32dca0a9003de2ca041f20cfe94d61db7099",
+      "score": 0.91
+    },
+    "taco1351_2": {
+      "source": 1351,
+      "label": "unverified",
+      "sha256": "bb47d8efe86636cc45e913e5ac61a0e366af450303e9c2afe9f96a1f58e7bcc0",
+      "score": 0.76
+    },
+    "taco1351_3": {
+      "source": 1351,
+      "label": "unverified",
+      "sha256": "6e2e3c73bb70028b1410b74bf99b039a0d520fedc98a6f34dfc2b3e323e23a02",
+      "score": 0.64
+    },
+    "taco1351_4": {
+      "source": 1351,
+      "label": "unverified",
+      "sha256": "37baf30b89693586c52e591b05b1cb564fbe28ce2782de34ada273a952d513b4",
+      "score": 0.42
+    },
+    "taco1351_6": {
+      "source": 1351,
+      "label": "litter",
+      "sha256": "6cf6824a20c47206ae98a5ab0a7570211a9dd552c20cb76fa7d69d84155a4311",
+      "score": 0.83
+    },
+    "taco1352_0": {
+      "source": 1352,
+      "label": "litter",
+      "sha256": "c884898faafb7356f72c173507eb49f3bd211b892abf35592d229413ac053d0a",
+      "score": 0.92
+    },
+    "taco1352_1": {
+      "source": 1352,
+      "label": "litter",
+      "sha256": "31cb3ab42e2a302857de5a660790d6d2171ff20dab21fff3cb55be30deaf0d80",
+      "score": 0.93
+    },
+    "taco1352_2": {
+      "source": 1352,
+      "label": "unverified",
+      "sha256": "db347153d8eb3d4dc1e4b8d1145918716a3fb8ff92dbd588eb1090891c0c8a10",
+      "score": 0.4
+    },
+    "taco1357_0": {
+      "source": 1357,
+      "label": "litter",
+      "sha256": "9148b4c179f36d689128d554bba09e263300f940b1689cfa56f5caaa4a1765d2",
+      "score": 0.91
+    },
+    "taco1357_1": {
+      "source": 1357,
+      "label": "litter",
+      "sha256": "95b58279811c3f5a6f270b6300171d5abe0d75433f563639ddcc0d2779be99f0",
+      "score": 0.96
+    },
+    "taco1358_0": {
+      "source": 1358,
+      "label": "litter",
+      "sha256": "a70d6224fe78879f9c1cb5900428a765395c5146964d863256c3bae314acbd19",
+      "score": 0.93
+    },
+    "taco1358_1": {
+      "source": 1358,
+      "label": "unverified",
+      "sha256": "aa50017b448cb74f2b5e8beaa552948fc894924455b800c50e10d5e30a71c23c",
+      "score": 0.32
+    },
+    "taco1366_0": {
+      "source": 1366,
+      "label": "unverified",
+      "sha256": "79cd26eef95ef8a7ee9fef5b7a4fac08ee88fd92f2d261e06b792022de448aae",
+      "score": 0.41
+    },
+    "taco1366_1": {
+      "source": 1366,
+      "label": "litter",
+      "sha256": "dafc6ff7dc1c74c4241672495342ccac5cf77e4c2174bab6bec44a89893b41b9",
+      "score": 0.93
+    },
+    "taco1366_2": {
+      "source": 1366,
+      "label": "litter",
+      "sha256": "3d5e57ea61f1204409bdb25385b4e51d11add47df271e0ba79f8387139b80498",
+      "score": 0.96
+    },
+    "taco1366_3": {
+      "source": 1366,
+      "label": "litter",
+      "sha256": "496b7630b5c359a5625d53fc4e9b1fcf0969215fa5dc369a150a34f1bff93817",
+      "score": 0.96
+    },
+    "taco1366_4": {
+      "source": 1366,
+      "label": "unverified",
+      "sha256": "9e389e4183b20aa9feac9c77dd6366f0e49509ce02b9561645f08cdff28621d8",
+      "score": 0.22
+    },
+    "taco1367_0": {
+      "source": 1367,
+      "label": "litter",
+      "sha256": "7056e5d7efbc96605b8de1df2a194847be2bc306abd983937a0bf7eedced4f39",
+      "score": 0.92
+    },
+    "taco1367_1": {
+      "source": 1367,
+      "label": "litter",
+      "sha256": "287d3c59dd3ecd8d7b4a9a2ab01dd097a3f2a3dca8d00e1da8d942bf760f1a97",
+      "score": 0.91
+    },
+    "taco1369_0": {
+      "source": 1369,
+      "label": "litter",
+      "sha256": "ad6110027d5989b38156434079b4a9ac832248c8c6cc8159281cf7735bf29383",
+      "score": 0.96
+    },
+    "taco1369_1": {
+      "source": 1369,
+      "label": "litter",
+      "sha256": "33d350c53e5e8322cfd6641a4e17e04e22590bbd0154891f0e301c37df75f0d3",
+      "score": 0.84
+    },
+    "taco1370_0": {
+      "source": 1370,
+      "label": "unverified",
+      "sha256": "35b56ed06fe4321637d789f158574ae5b2777a13256aacc988154aa6e3997c61",
+      "score": 0.42
+    },
+    "taco1371_0": {
+      "source": 1371,
+      "label": "litter",
+      "sha256": "0ba2afd971b1e52ada526537cc869a0b6a2741660a947cac7eb3fa1280aee9e5",
+      "score": 0.78
+    },
+    "taco1372_0": {
+      "source": 1372,
+      "label": "litter",
+      "sha256": "094fae515cac86347440990aa0c1d717516545746fd1bb212c85662a995fc909",
+      "score": 0.85
+    },
+    "taco1372_1": {
+      "source": 1372,
+      "label": "non_litter",
+      "sha256": "111f9cb158b8c994724fe9276dbefaae38cdb889ab43c02e9a6b923169fef6ec",
+      "score": 0.7
+    },
+    "taco1372_2": {
+      "source": 1372,
+      "label": "litter",
+      "sha256": "1b64a6f0389b1f6e9ca87f2f11a5809501733ea827b10a1eda574719173a1e80",
+      "score": 0.92
+    },
+    "taco1374_0": {
+      "source": 1374,
+      "label": "non_litter",
+      "sha256": "130af8dbf6e284b9183880c046df29d44b2ec124a78b08e8ad93c0dcc4505da0",
+      "score": 0.21
+    },
+    "taco1374_1": {
+      "source": 1374,
+      "label": "litter",
+      "sha256": "b821ff3c96cbb3016268fb5a33fa9846eecd13f8b2c6a79bdab291a15a8e9b8b",
+      "score": 0.96
+    },
+    "taco1375_0": {
+      "source": 1375,
+      "label": "litter",
+      "sha256": "70d9956e6abf67eb5864e0c9f28da98dcc8efb5169df46ed66942b7b319fe3f0",
+      "score": 0.94
+    },
+    "taco1376_0": {
+      "source": 1376,
+      "label": "unverified",
+      "sha256": "bc6f16c5424491b96de48eee1d4200cccfa61343c2a2215630943de67532d800",
+      "score": 0.6
+    },
+    "taco1376_1": {
+      "source": 1376,
+      "label": "unverified",
+      "sha256": "7c751a2652b4586242391d19c99768295f9a2c394cdfe00728b3e9678fa93b7c",
+      "score": 0.4
+    },
+    "taco1377_0": {
+      "source": 1377,
+      "label": "litter",
+      "sha256": "57914561c51a29db9cb206aaaf2d4317ade0185e54c98e29d1fb7dea0fd00da3",
+      "score": 0.96
+    },
+    "taco1378_0": {
+      "source": 1378,
+      "label": "non_litter",
+      "sha256": "f5d46d20235190eddf97138185ff2fda8b94f623588802ebd3b0e6aee71a0071",
+      "score": 0.01
+    },
+    "taco1378_1": {
+      "source": 1378,
+      "label": "litter",
+      "sha256": "b6a390236997c9f7fe6638c518b9d8545e9d33f0f902966080ef43c962625fa1",
+      "score": 0.94
+    },
+    "taco1379_0": {
+      "source": 1379,
+      "label": "litter",
+      "sha256": "23821cd0b3f7c411d7ed8cdd00f5e68efbc2134f76f067563de262bb72072fcf",
+      "score": 0.94
+    },
+    "taco1383_0": {
+      "source": 1383,
+      "label": "litter",
+      "sha256": "9ec7c654deb30b9bc15b0e5fb4b3fe60ddae5e53402e2f42851f1b28d4ac1605",
+      "score": 0.92
+    },
+    "taco1383_1": {
+      "source": 1383,
+      "label": "litter",
+      "sha256": "faaa0c584273e161a0e3490f86e12f7b4667f089a6b009e61bc6a448f2047bf5",
+      "score": 0.94
+    },
+    "taco1384_0": {
+      "source": 1384,
+      "label": "litter",
+      "sha256": "7ae0661ccef0adfb46a886fc4cf8eb49a9ceb513fc8ff0d577875ef10d3621a0",
+      "score": 0.95
+    },
+    "taco1385_0": {
+      "source": 1385,
+      "label": "litter",
+      "sha256": "fc10b4e353dc4e7318a2e805bb05f8d686a98f6a8c5cef116c002752f16af754",
+      "score": 0.96
+    },
+    "taco1385_1": {
+      "source": 1385,
+      "label": "litter",
+      "sha256": "cc87f7c13a4d3c1103b3df244cd2921811feb3f68fb52b49b34461658d3a0027",
+      "score": 0.89
+    },
+    "taco1386_1": {
+      "source": 1386,
+      "label": "unverified",
+      "sha256": "611a6e05c5fc8b49814f6125098108c320c3cefb670452de2b3bf4766ad7bb2e",
+      "score": 0.77
+    },
+    "taco1386_2": {
+      "source": 1386,
+      "label": "non_litter",
+      "sha256": "81bacf103d5425b79268e89fc5736fea1484ba63199f885f4248a0e4612ff8d3",
+      "score": 0.04
+    },
+    "taco1390_0": {
+      "source": 1390,
+      "label": "litter",
+      "sha256": "b77ce309f6b20b6058e307d4014ec08772cfd8e2f70441199c23bb0bceaaaac3",
+      "score": 0.95
+    },
+    "taco1390_1": {
+      "source": 1390,
+      "label": "non_litter",
+      "sha256": "e44706d1ae7e5a29e8431a62a43dc88d6b8d5b97b2de83a3740fab83c631ea80",
+      "score": 0.53
+    },
+    "taco1391_0": {
+      "source": 1391,
+      "label": "litter",
+      "sha256": "aaa7136ecf03756f645a5ea5938cc5197690441b83369ebae52070b259a886cd",
+      "score": 0.93
+    },
+    "taco1391_1": {
+      "source": 1391,
+      "label": "unverified",
+      "sha256": "4819968ea37940cccb5a7641010683a13fbbe6b962f65a7062c79dae7b591bcc",
+      "score": 0.52
+    },
+    "taco1391_2": {
+      "source": 1391,
+      "label": "unverified",
+      "sha256": "8b64402744d1137e4633f66d10e61541fcf526b2209be7b2871801cb43679968",
+      "score": 0.45
+    },
+    "taco1393_0": {
+      "source": 1393,
+      "label": "litter",
+      "sha256": "7b53db0f561a4781c462178ba4154249ff176d006ca18f19b659b625c2f1fb55",
+      "score": 0.92
+    },
+    "taco1393_1": {
+      "source": 1393,
+      "label": "non_litter",
+      "sha256": "39bbc660cd18d4fa564d21623e24e110abacb6d87afd4cab84ae65d20b760c70",
+      "score": 0.13
+    },
+    "taco1394_0": {
+      "source": 1394,
+      "label": "non_litter",
+      "sha256": "35c4c13ce7a52e9631335c7e074347fc93ba72c3cbe905cf0e6802de28514380",
+      "score": 0.03
+    },
+    "taco1394_1": {
+      "source": 1394,
+      "label": "litter",
+      "sha256": "210b7f27dfbe627079880d942fb44f8b3856c53434112d58f585b0aec75acb5a",
+      "score": 0.9
+    },
+    "taco1394_2": {
+      "source": 1394,
+      "label": "non_litter",
+      "sha256": "42e31b93377b92e8f5a11965e6643176b2c9dffe6b2437cf7daac2a9fbd6f21d",
+      "score": 0.22
+    },
+    "taco1395_0": {
+      "source": 1395,
+      "label": "litter",
+      "sha256": "3355157b5072f2a8a60daf0eec307981dbc56f444b4367eca1b12b0af9d27dc6",
+      "score": 0.79
+    },
+    "taco1397_0": {
+      "source": 1397,
+      "label": "litter",
+      "sha256": "e664e7f8e004d09c7e1d392194cfc548d8ba7d57fe2f19d1910943a0ae7426ab",
+      "score": 0.96
+    },
+    "taco1397_1": {
+      "source": 1397,
+      "label": "litter",
+      "sha256": "f6626256e8d572147c4faf8ea838a3105378f84ee2d6f83f5962bfd18e843f47",
+      "score": 0.94
+    },
+    "taco1397_2": {
+      "source": 1397,
+      "label": "unverified",
+      "sha256": "f6196b56d1c30f3f8a1aa56a028a1a22441484bd3f402976956b7620af334bc0",
+      "score": 0.5
+    },
+    "taco1397_3": {
+      "source": 1397,
+      "label": "unverified",
+      "sha256": "66abd4939140c1fde8fad6dabe9a24e3e5297bb80a83661bb4fcd90f6016eaf3",
+      "score": 0.78
+    }
+  }
+}
