@@ -8,7 +8,7 @@ YOLO spotted a drinks can and a dry leaf. I’d pick up the can and leave the le
 
 ### What I tried
 
-A fine-tuned YOLO11n segmentation model outlined objects in outdoor photos. For each proposed object, I cropped the surrounding area, marked the target with four pink corners and asked Jev 1.14.0 whether MOSS should pick it up. A score of 0.90 or higher counted as a yes. The can scored **0.96** and the leaf **0.02**. [Original can crop](examples/can.jpg) · [Original leaf crop](examples/leaf.jpg)
+A fine-tuned YOLO11n segmentation model outlined objects in outdoor photos. For each proposed object, I cropped the surrounding area, marked the target with four pink corners and asked Jev 1.14.0 whether MOSS should pick it up. A score of 0.90 or higher counted as a yes. The red can scored **0.97** and the leaf **0.02**. [Original can crop](examples/can.jpg) · [Original leaf crop](examples/leaf.jpg)
 
 I checked **258 crops from 108 TACO photos**. Jev said yes to **86 of 146** labeled litter crops. It said yes to **0 of 73** checked non-litter crops, including 29 proposals from empty background regions. Another 39 crops had no overlapping annotation and weren't verified, so I left them out of those two counts. This measures what happens after YOLO spots something. Litter YOLO misses never reaches Jev. [TACO dataset](https://github.com/pedropro/TACO)
 
