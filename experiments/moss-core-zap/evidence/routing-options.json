@@ -1,0 +1,12 @@
+{
+  "router": "stable",
+  "strip_existing": "true",
+  "keep_existing": "false",
+  "fab_floor": "board",
+  "vias_in_pads": "forbid",
+  "ground_pour": "on",
+  "size_rails_from_current": "on",
+  "effort": "normal",
+  "minutes": 10,
+  "consent_training": "false"
+}

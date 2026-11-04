@@ -1,0 +1,2973 @@
+{
+  "status": "succeeded",
+  "created_at": "2026-11-04T17:32:25Z",
+  "finished_at": "2026-11-04T17:38:25Z",
+  "version": {
+    "service": "2026.10.14.94",
+    "router": "r36a991d.6a78b6e8",
+    "router_choice": "stable"
+  },
+  "summary": {
+    "lower_is_better": true,
+    "unconnected": 29,
+    "critical_unconnected": 8,
+    "drc_errors": 8,
+    "shorts": 0,
+    "shorts_already_in_board": 0,
+    "jlc_violations": 0,
+    "sections_over_limit": null,
+    "worst_rise_c": null,
+    "rise_limit_c": null,
+    "heat": null,
+    "jlc_order_blocking": 0,
+    "jlc": "JLC-orderable as is",
+    "dangling": 0,
+    "isolated": 0
+  },
+  "pours": {
+    "replaced": [
+      {
+        "net": "GND",
+        "layers": [
+          "In1.Cu"
+        ]
+      },
+      {
+        "net": "GND",
+        "layers": [
+          "In2.Cu"
+        ]
+      }
+    ],
+    "made": [
+      {
+        "net": "GND",
+        "layers": [
+          "F.Cu"
+        ]
+      },
+      {
+        "net": "GND",
+        "layers": [
+          "In1.Cu"
+        ]
+      },
+      {
+        "net": "GND",
+        "layers": [
+          "In2.Cu"
+        ]
+      },
+      {
+        "net": "GND",
+        "layers": [
+          "B.Cu"
+        ]
+      },
+      {
+        "net": "VBUS",
+        "layers": [
+          "B.Cu"
+        ]
+      },
+      {
+        "net": "AMP_5V",
+        "layers": [
+          "F.Cu"
+        ]
+      },
+      {
+        "net": "AMP_5V",
+        "layers": [
+          "B.Cu"
+        ]
+      },
+      {
+        "net": "AUDIO_SW",
+        "layers": [
+          "F.Cu"
+        ]
+      },
+      {
+        "net": "HOST_SW",
+        "layers": [
+          "F.Cu"
+        ]
+      },
+      {
+        "net": "V5_HOST_RAW",
+        "layers": [
+          "F.Cu"
+        ]
+      },
+      {
+        "net": "V5_HOST_RAW",
+        "layers": [
+          "B.Cu"
+        ]
+      },
+      {
+        "net": "3V3",
+        "layers": [
+          "F.Cu"
+        ]
+      },
+      {
+        "net": "3V3",
+        "layers": [
+          "B.Cu"
+        ]
+      },
+      {
+        "net": "BUCK_SW",
+        "layers": [
+          "F.Cu"
+        ]
+      },
+      {
+        "net": "PACK_VBUS",
+        "layers": [
+          "B.Cu"
+        ]
+      },
+      {
+        "net": "BAT_AUX_PROTECTED",
+        "layers": [
+          "F.Cu"
+        ]
+      },
+      {
+        "net": "BAT_AUX_PROTECTED",
+        "layers": [
+          "B.Cu"
+        ]
+      },
+      {
+        "net": "BAT_PROTECTED",
+        "layers": [
+          "F.Cu"
+        ]
+      },
+      {
+        "net": "BAT_PROTECTED",
+        "layers": [
+          "B.Cu"
+        ]
+      },
+      {
+        "net": "VBUS",
+        "layers": [
+          "F.Cu"
+        ]
+      }
+    ]
+  },
+  "source_format": "kicad_pcb",
+  "fab_fix": {
+    "silk_silk_items_cut": 1,
+    "silk_silk_items_removed": 1,
+    "silk_silk_pieces_written": 0,
+    "silk_filled_or_unmodelled_silk_on_copper": 1,
+    "mask_mask_bridges_before": 0,
+    "mask_mask_bridges_after": 0,
+    "mask_pads_changed": 0,
+    "mask_left_unfixable": 0,
+    "mask_web_nm": 100000,
+    "wall_s": 0.236047317
+  },
+  "time_budget": {
+    "minutes": 10,
+    "attempts": 5,
+    "attempts_finished": 3,
+    "rounds": 1,
+    "winner_attempt": 3,
+    "winner_setting": 3,
+    "routing_s": 312.4,
+    "winner": "standard",
+    "stopped": "time",
+    "summary": "5 attempts in 1 round, 312 s of routing; kept attempt 3 (standard setting 3); stopped because the next attempt could not finish within the minutes asked for."
+  },
+  "settings": {
+    "no_project": false,
+    "items": [
+      {
+        "setting": "signal track width, mm",
+        "value": 0.2,
+        "source": "board"
+      },
+      {
+        "setting": "clearance, mm",
+        "value": 0.15,
+        "source": "board"
+      },
+      {
+        "setting": "via diameter, mm",
+        "value": 0.6,
+        "source": "board"
+      },
+      {
+        "setting": "via drill, mm",
+        "value": 0.3,
+        "source": "board"
+      },
+      {
+        "setting": "supply track width",
+        "value": "from current where room allows, estimated",
+        "source": "default"
+      },
+      {
+        "setting": "via cost",
+        "value": "normal",
+        "source": "default"
+      },
+      {
+        "setting": "vias in pads",
+        "value": "forbid",
+        "source": "default"
+      },
+      {
+        "setting": "ground pour",
+        "value": "on",
+        "source": "default"
+      },
+      {
+        "setting": "stitching",
+        "value": "on",
+        "source": "default"
+      },
+      {
+        "setting": "effort",
+        "value": "normal",
+        "source": "default"
+      },
+      {
+        "setting": "copper layers used",
+        "value": "all 4",
+        "source": "default"
+      },
+      {
+        "setting": "inner layers kept as planes",
+        "value": "In1",
+        "source": "default"
+      },
+      {
+        "setting": "fab floor",
+        "value": "board",
+        "source": "yours"
+      },
+      {
+        "setting": "keep existing copper",
+        "value": "no",
+        "source": "default"
+      },
+      {
+        "setting": "existing tracks and vias",
+        "value": "discarded, everything routed",
+        "source": "yours"
+      },
+      {
+        "setting": "time budget, minutes",
+        "value": 10,
+        "source": "yours"
+      }
+    ]
+  },
+  "warnings": [],
+  "image": {
+    "origin_mm": [
+      -1.996,
+      -3.997
+    ],
+    "size_mm": [
+      81.991,
+      78.994
+    ],
+    "format": "svg",
+    "layers": [
+      {
+        "name": "F.Cu"
+      },
+      {
+        "name": "In1.Cu"
+      },
+      {
+        "name": "In2.Cu"
+      },
+      {
+        "name": "B.Cu"
+      }
+    ],
+    "note": "KiCad's plot of each copper layer with the board outline, all in one frame: origin_mm is its top-left corner in board coordinates and size_mm its size, so a finding at (x, y) sits at ((x - origin x) / width, (y - origin y) / height) of the picture."
+  },
+  "sections": [
+    {
+      "kind": "unconnected",
+      "title": "Connections still missing (finish them by hand)",
+      "total": 29,
+      "truncated": false,
+      "problems": 29,
+      "items": [
+        {
+          "net": "CYTRON_L_LEAD",
+          "layer": "F.Cu",
+          "reason": "The router found no point on its routing grid where a track or via could join pad U40 2 while keeping your clearances",
+          "at_mm": [
+            20.975,
+            47.163
+          ],
+          "to_mm": [
+            15.3,
+            41.7
+          ],
+          "critical": true,
+          "refs": [
+            "R180",
+            "U40"
+          ],
+          "items": [
+            "Pad 2 [CYTRON_L_LEAD] of U40 on F.Cu",
+            "Pad 1 [CYTRON_L_LEAD] of R180 on F.Cu"
+          ],
+          "reason_code": "pad_no_access",
+          "reason_source": "router",
+          "evidence": {
+            "pads_unconnected": 1,
+            "pads_total": 3,
+            "pads_without_access": 1,
+            "routed_as_pour": false,
+            "search_stop": "time_stop",
+            "pads": [
+              {
+                "ref": "U40",
+                "pad": "2",
+                "at_mm": [
+                  20.975,
+                  47.1625
+                ],
+                "reachable": false,
+                "no_access": true
+              }
+            ]
+          },
+          "ends": [
+            {
+              "kind": "pad",
+              "ref": "U40",
+              "pad": "2",
+              "layer": "F.Cu"
+            },
+            {
+              "kind": "pad",
+              "ref": "R180",
+              "pad": "1",
+              "layer": "F.Cu"
+            }
+          ],
+          "what_to_do": "No track or via could reach this pad under your clearances: check the pad size and its net class clearance (File > Board Setup > Design Rules > Net Classes), move the parts next to it (M), or connect it by hand (X)."
+        },
+        {
+          "net": "CYTRON_R_LEAD",
+          "layer": "F.Cu",
+          "reason": "The router found no point on its routing grid where a track or via could join pad U41 2 while keeping your clearances",
+          "at_mm": [
+            15.3,
+            55.9
+          ],
+          "to_mm": [
+            20.975,
+            60.663
+          ],
+          "critical": true,
+          "refs": [
+            "R181",
+            "U41"
+          ],
+          "items": [
+            "Pad 1 [CYTRON_R_LEAD] of R181 on F.Cu",
+            "Pad 2 [CYTRON_R_LEAD] of U41 on F.Cu"
+          ],
+          "reason_code": "pad_no_access",
+          "reason_source": "router",
+          "evidence": {
+            "pads_unconnected": 2,
+            "pads_total": 3,
+            "pads_without_access": 1,
+            "routed_as_pour": false,
+            "search_stop": "time_stop",
+            "pads": [
+              {
+                "ref": "R181",
+                "pad": "1",
+                "at_mm": [
+                  15.3,
+                  55.9
+                ],
+                "reachable": false,
+                "no_access": false,
+                "region_cells": 42012,
+                "blocked_side": "pad"
+              },
+              {
+                "ref": "U41",
+                "pad": "2",
+                "at_mm": [
+                  20.975,
+                  60.6625
+                ],
+                "reachable": false,
+                "no_access": true
+              }
+            ]
+          },
+          "ends": [
+            {
+              "kind": "pad",
+              "ref": "R181",
+              "pad": "1",
+              "layer": "F.Cu"
+            },
+            {
+              "kind": "pad",
+              "ref": "U41",
+              "pad": "2",
+              "layer": "F.Cu"
+            }
+          ],
+          "what_to_do": "No track or via could reach this pad under your clearances: check the pad size and its net class clearance (File > Board Setup > Design Rules > Net Classes), move the parts next to it (M), or connect it by hand (X)."
+        },
+        {
+          "net": "CYTRON_R_LEAD",
+          "layer": "F.Cu",
+          "reason": "Pad R181 1 is walled in on the router's grid by a via of net GND, a track of net MOTOR_R_LEAD on B.Cu, pad R183 2 (CURRENT_R_ADC); no path joins it to its net under your clearances",
+          "at_mm": [
+            40.5,
+            4.3
+          ],
+          "to_mm": [
+            15.3,
+            55.9
+          ],
+          "critical": true,
+          "refs": [
+            "J2",
+            "R181"
+          ],
+          "items": [
+            "PTH pad 8 [CYTRON_R_LEAD] of J2",
+            "Pad 1 [CYTRON_R_LEAD] of R181 on F.Cu"
+          ],
+          "reason_code": "no_path_found",
+          "reason_source": "router",
+          "evidence": {
+            "pads_unconnected": 2,
+            "pads_total": 3,
+            "pads_without_access": 1,
+            "routed_as_pour": false,
+            "search_stop": "time_stop",
+            "pads": [
+              {
+                "ref": "R181",
+                "pad": "1",
+                "at_mm": [
+                  15.3,
+                  55.9
+                ],
+                "reachable": false,
+                "no_access": false,
+                "region_cells": 42012,
+                "blocked_side": "pad"
+              }
+            ]
+          },
+          "ends": [
+            {
+              "kind": "pad",
+              "ref": "J2",
+              "pad": "8",
+              "layer": null
+            },
+            {
+              "kind": "pad",
+              "ref": "R181",
+              "pad": "1",
+              "layer": "F.Cu"
+            }
+          ],
+          "blocking": [
+            {
+              "kind": "via",
+              "net": "GND",
+              "layer": "B.Cu",
+              "at_mm": [
+                21.522,
+                44.329
+              ],
+              "blocked_cells": 387,
+              "walls_in": {
+                "ref": "R181",
+                "pad": "1"
+              }
+            },
+            {
+              "kind": "track",
+              "net": "MOTOR_R_LEAD",
+              "layer": "B.Cu",
+              "at_mm": [
+                15.661,
+                53.689
+              ],
+              "blocked_cells": 247,
+              "walls_in": {
+                "ref": "R181",
+                "pad": "1"
+              }
+            },
+            {
+              "kind": "pad",
+              "net": "CURRENT_R_ADC",
+              "layer": "F.Cu",
+              "at_mm": [
+                17.475,
+                52.85
+              ],
+              "blocked_cells": 194,
+              "walls_in": {
+                "ref": "R181",
+                "pad": "1"
+              },
+              "ref": "R183",
+              "pad": "2"
+            }
+          ],
+          "what_to_do": "The router found no path here that keeps your clearances: route it by hand (Route > Route Single Track, or X), or make room by moving a part at either end (M) or the tracks between them (D) and submit again; critical nets must be finished before ordering boards."
+        },
+        {
+          "net": "GND",
+          "layer": "F.Cu",
+          "reason": "Pad C165 2 is walled in on the router's grid by a track of net V5_HOST_RAW on F.Cu, pad C164 1 (V5_HOST_RAW), a track of net WD_TICK on F.Cu; no path joins it to its net under your clearances",
+          "at_mm": [
+            38.375,
+            29.8
+          ],
+          "to_mm": [
+            78.222,
+            -3.685
+          ],
+          "critical": true,
+          "refs": [
+            "C165"
+          ],
+          "items": [
+            "Pad 2 [GND] of C165 on F.Cu",
+            "Zone 'GND F.Cu' [GND] on F.Cu, priority 0"
+          ],
+          "reason_code": "no_path_found",
+          "reason_source": "router",
+          "evidence": {
+            "pads_unconnected": 3,
+            "pads_total": 171,
+            "pads_without_access": 0,
+            "routed_as_pour": true,
+            "search_stop": "time_stop",
+            "pads": [
+              {
+                "ref": "C165",
+                "pad": "2",
+                "at_mm": [
+                  38.375,
+                  29.8
+                ],
+                "reachable": false,
+                "no_access": false,
+                "region_cells": 2429,
+                "blocked_side": "pad"
+              }
+            ]
+          },
+          "ends": [
+            {
+              "kind": "pad",
+              "ref": "C165",
+              "pad": "2",
+              "layer": "F.Cu"
+            },
+            {
+              "kind": "zone",
+              "ref": null,
+              "pad": null,
+              "layer": "F.Cu"
+            }
+          ],
+          "blocking": [
+            {
+              "kind": "track",
+              "net": "V5_HOST_RAW",
+              "layer": "F.Cu",
+              "at_mm": [
+                38.631,
+                29.077
+              ],
+              "blocked_cells": 76,
+              "walls_in": {
+                "ref": "C165",
+                "pad": "2"
+              }
+            },
+            {
+              "kind": "pad",
+              "net": "V5_HOST_RAW",
+              "layer": "F.Cu",
+              "at_mm": [
+                40.825,
+                30.3
+              ],
+              "blocked_cells": 62,
+              "walls_in": {
+                "ref": "C165",
+                "pad": "2"
+              },
+              "ref": "C164",
+              "pad": "1"
+            },
+            {
+              "kind": "track",
+              "net": "WD_TICK",
+              "layer": "F.Cu",
+              "at_mm": [
+                37.781,
+                31.144
+              ],
+              "blocked_cells": 40,
+              "walls_in": {
+                "ref": "C165",
+                "pad": "2"
+              }
+            }
+          ],
+          "what_to_do": "The router found no path here that keeps your clearances: route it by hand (Route > Route Single Track, or X), or make room by moving a part at either end (M) or the tracks between them (D) and submit again; critical nets must be finished before ordering boards."
+        },
+        {
+          "net": "GND",
+          "layer": "F.Cu",
+          "reason": "Free space on the returned board still joins pad C162 2 to its net, but the router's search stopped at the job's time limit before this connection was settled against other nets",
+          "at_mm": [
+            78.222,
+            -3.685
+          ],
+          "to_mm": [
+            39.15,
+            25.775
+          ],
+          "critical": true,
+          "refs": [
+            "C162"
+          ],
+          "items": [
+            "Zone 'GND F.Cu' [GND] on F.Cu, priority 0",
+            "Pad 2 [GND] of C162 on F.Cu"
+          ],
+          "reason_code": "search_limit",
+          "reason_source": "router",
+          "evidence": {
+            "pads_unconnected": 3,
+            "pads_total": 171,
+            "pads_without_access": 0,
+            "routed_as_pour": true,
+            "search_stop": "time_stop",
+            "pads": [
+              {
+                "ref": "C162",
+                "pad": "2",
+                "at_mm": [
+                  39.15,
+                  25.775
+                ],
+                "reachable": true,
+                "no_access": false
+              }
+            ]
+          },
+          "ends": [
+            {
+              "kind": "zone",
+              "ref": null,
+              "pad": null,
+              "layer": "F.Cu"
+            },
+            {
+              "kind": "pad",
+              "ref": "C162",
+              "pad": "2",
+              "layer": "F.Cu"
+            }
+          ],
+          "what_to_do": "There is still free space for this connection, but the router's search stopped at its limit first: route it by hand (X), or submit again with effort=thorough (twice the router's work; evidence.search_stop work_budget or iteration_cap) or more minutes (time_stop)."
+        },
+        {
+          "net": "GND",
+          "layer": "F.Cu",
+          "reason": "Pad U43 7 is walled in on the router's grid by a via of net ENC_L_A, a track of net 3V3 on F.Cu, pad U1 8 (STATUS_LED); no path joins it to its net under your clearances",
+          "at_mm": [
+            78.222,
+            -3.685
+          ],
+          "to_mm": [
+            55.4,
+            39.86
+          ],
+          "critical": true,
+          "refs": [
+            "U43"
+          ],
+          "items": [
+            "Zone 'GND F.Cu' [GND] on F.Cu, priority 0",
+            "Pad 7 [GND] of U43 on F.Cu"
+          ],
+          "reason_code": "no_path_found",
+          "reason_source": "router",
+          "evidence": {
+            "pads_unconnected": 3,
+            "pads_total": 171,
+            "pads_without_access": 0,
+            "routed_as_pour": true,
+            "search_stop": "time_stop",
+            "pads": [
+              {
+                "ref": "U43",
+                "pad": "7",
+                "at_mm": [
+                  55.4,
+                  39.86
+                ],
+                "reachable": false,
+                "no_access": false,
+                "region_cells": 1099,
+                "blocked_side": "pad"
+              }
+            ]
+          },
+          "ends": [
+            {
+              "kind": "zone",
+              "ref": null,
+              "pad": null,
+              "layer": "F.Cu"
+            },
+            {
+              "kind": "pad",
+              "ref": "U43",
+              "pad": "7",
+              "layer": "F.Cu"
+            }
+          ],
+          "blocking": [
+            {
+              "kind": "via",
+              "net": "ENC_L_A",
+              "layer": "F.Cu",
+              "at_mm": [
+                54.489,
+                42.066
+              ],
+              "blocked_cells": 40,
+              "walls_in": {
+                "ref": "U43",
+                "pad": "7"
+              }
+            },
+            {
+              "kind": "track",
+              "net": "3V3",
+              "layer": "F.Cu",
+              "at_mm": [
+                55.092,
+                39.417
+              ],
+              "blocked_cells": 30,
+              "walls_in": {
+                "ref": "U43",
+                "pad": "7"
+              }
+            },
+            {
+              "kind": "pad",
+              "net": "STATUS_LED",
+              "layer": "F.Cu",
+              "at_mm": [
+                52.75,
+                41.495
+              ],
+              "blocked_cells": 28,
+              "walls_in": {
+                "ref": "U43",
+                "pad": "7"
+              },
+              "ref": "U1",
+              "pad": "8"
+            }
+          ],
+          "what_to_do": "The router found no path here that keeps your clearances: route it by hand (Route > Route Single Track, or X), or make room by moving a part at either end (M) or the tracks between them (D) and submit again; critical nets must be finished before ordering boards."
+        },
+        {
+          "net": "MOTOR_L_LEAD",
+          "layer": "F.Cu",
+          "reason": "The router found no point on its routing grid where a track or via could join pad U40 3 while keeping your clearances",
+          "at_mm": [
+            15.3,
+            46.9
+          ],
+          "to_mm": [
+            21.625,
+            47.163
+          ],
+          "critical": true,
+          "refs": [
+            "R180",
+            "U40"
+          ],
+          "items": [
+            "Pad 2 [MOTOR_L_LEAD] of R180 on F.Cu",
+            "Pad 3 [MOTOR_L_LEAD] of U40 on F.Cu"
+          ],
+          "reason_code": "pad_no_access",
+          "reason_source": "router",
+          "evidence": {
+            "pads_unconnected": 1,
+            "pads_total": 3,
+            "pads_without_access": 1,
+            "routed_as_pour": false,
+            "search_stop": "time_stop",
+            "pads": [
+              {
+                "ref": "U40",
+                "pad": "3",
+                "at_mm": [
+                  21.625,
+                  47.1625
+                ],
+                "reachable": false,
+                "no_access": true
+              }
+            ],
+            "changed_after_routing": [
+              {
+                "stage": "via_upsize",
+                "step": "via enlarging",
+                "tracks_removed": 0,
+                "vias_removed": 1,
+                "zones_removed": 0,
+                "tracks_added": 0,
+                "vias_added": 1,
+                "track_mm_removed": 0.0,
+                "track_mm_added": 0.0
+              }
+            ]
+          },
+          "ends": [
+            {
+              "kind": "pad",
+              "ref": "R180",
+              "pad": "2",
+              "layer": "F.Cu"
+            },
+            {
+              "kind": "pad",
+              "ref": "U40",
+              "pad": "3",
+              "layer": "F.Cu"
+            }
+          ],
+          "what_to_do": "No track or via could reach this pad under your clearances: check the pad size and its net class clearance (File > Board Setup > Design Rules > Net Classes), move the parts next to it (M), or connect it by hand (X)."
+        },
+        {
+          "net": "MOTOR_R_LEAD",
+          "layer": "F.Cu",
+          "reason": "The router found no point on its routing grid where a track or via could join pad U41 3 while keeping your clearances",
+          "at_mm": [
+            15.85,
+            59.65
+          ],
+          "to_mm": [
+            21.625,
+            60.663
+          ],
+          "critical": true,
+          "refs": [
+            "U41"
+          ],
+          "items": [
+            "Track [MOTOR_R_LEAD] on F.Cu, length 0.7778 mm",
+            "Pad 3 [MOTOR_R_LEAD] of U41 on F.Cu"
+          ],
+          "reason_code": "pad_no_access",
+          "reason_source": "router",
+          "evidence": {
+            "pads_unconnected": 1,
+            "pads_total": 3,
+            "pads_without_access": 1,
+            "routed_as_pour": false,
+            "search_stop": "time_stop",
+            "pads": [
+              {
+                "ref": "U41",
+                "pad": "3",
+                "at_mm": [
+                  21.625,
+                  60.6625
+                ],
+                "reachable": false,
+                "no_access": true
+              }
+            ],
+            "changed_after_routing": [
+              {
+                "stage": "via_upsize",
+                "step": "via enlarging",
+                "tracks_removed": 0,
+                "vias_removed": 1,
+                "zones_removed": 0,
+                "tracks_added": 0,
+                "vias_added": 1,
+                "track_mm_removed": 0.0,
+                "track_mm_added": 0.0
+              }
+            ]
+          },
+          "ends": [
+            {
+              "kind": "track",
+              "ref": null,
+              "pad": null,
+              "layer": "F.Cu"
+            },
+            {
+              "kind": "pad",
+              "ref": "U41",
+              "pad": "3",
+              "layer": "F.Cu"
+            }
+          ],
+          "what_to_do": "No track or via could reach this pad under your clearances: check the pad size and its net class clearance (File > Board Setup > Design Rules > Net Classes), move the parts next to it (M), or connect it by hand (X)."
+        },
+        {
+          "net": "ACTUATOR_SW",
+          "layer": "F.Cu",
+          "reason": "Pad R140 1 is walled in on the router's grid by pad R144 1 (ACT_READY), pad R140 2 (ACTUATOR_SW_SENSE), pad R143 2 (ACT_READY); no path joins it to its net under your clearances",
+          "at_mm": [
+            7.175,
+            17.0
+          ],
+          "to_mm": [
+            18.7,
+            23.45
+          ],
+          "critical": false,
+          "refs": [
+            "R140"
+          ],
+          "items": [
+            "Pad 1 [ACTUATOR_SW] of R140 on F.Cu",
+            "Track [ACTUATOR_SW] on B.Cu, length 11.2500 mm"
+          ],
+          "reason_code": "no_path_found",
+          "reason_source": "router",
+          "evidence": {
+            "pads_unconnected": 1,
+            "pads_total": 9,
+            "pads_without_access": 0,
+            "routed_as_pour": false,
+            "search_stop": "time_stop",
+            "pads": [
+              {
+                "ref": "R140",
+                "pad": "1",
+                "at_mm": [
+                  7.175,
+                  17.0
+                ],
+                "reachable": false,
+                "no_access": false,
+                "region_cells": 30,
+                "blocked_side": "pad"
+              }
+            ]
+          },
+          "ends": [
+            {
+              "kind": "pad",
+              "ref": "R140",
+              "pad": "1",
+              "layer": "F.Cu"
+            },
+            {
+              "kind": "track",
+              "ref": null,
+              "pad": null,
+              "layer": "B.Cu"
+            }
+          ],
+          "blocking": [
+            {
+              "kind": "pad",
+              "net": "ACT_READY",
+              "layer": "F.Cu",
+              "at_mm": [
+                5.5,
+                17.175
+              ],
+              "blocked_cells": 10,
+              "walls_in": {
+                "ref": "R140",
+                "pad": "1"
+              },
+              "ref": "R144",
+              "pad": "1"
+            },
+            {
+              "kind": "pad",
+              "net": "ACTUATOR_SW_SENSE",
+              "layer": "F.Cu",
+              "at_mm": [
+                8.825,
+                17.0
+              ],
+              "blocked_cells": 10,
+              "walls_in": {
+                "ref": "R140",
+                "pad": "1"
+              },
+              "ref": "R140",
+              "pad": "2"
+            },
+            {
+              "kind": "pad",
+              "net": "ACT_READY",
+              "layer": "F.Cu",
+              "at_mm": [
+                7.0,
+                15.325
+              ],
+              "blocked_cells": 4,
+              "walls_in": {
+                "ref": "R140",
+                "pad": "1"
+              },
+              "ref": "R143",
+              "pad": "2"
+            }
+          ],
+          "what_to_do": "The router found no path here that keeps your clearances: route it by hand (Route > Route Single Track, or X), or make room by moving a part at either end (M) or the tracks between them (D) and submit again; critical nets must be finished before ordering boards."
+        },
+        {
+          "net": "ACT_POWER_ENABLE",
+          "layer": "F.Cu",
+          "reason": "Free space on the returned board still joins pad U52 4 to its net, but the router's search stopped at the job's time limit before this connection was settled against other nets",
+          "at_mm": [
+            35.25,
+            38.955
+          ],
+          "to_mm": [
+            51.138,
+            58.0
+          ],
+          "critical": false,
+          "refs": [
+            "U1",
+            "U52"
+          ],
+          "items": [
+            "Pad 31 [ACT_POWER_ENABLE] of U1 on F.Cu",
+            "Pad 4 [ACT_POWER_ENABLE] of U52 on B.Cu"
+          ],
+          "reason_code": "search_limit",
+          "reason_source": "router",
+          "evidence": {
+            "pads_unconnected": 3,
+            "pads_total": 4,
+            "pads_without_access": 0,
+            "routed_as_pour": false,
+            "search_stop": "time_stop",
+            "pads": [
+              {
+                "ref": "U52",
+                "pad": "4",
+                "at_mm": [
+                  51.1375,
+                  58.0
+                ],
+                "reachable": true,
+                "no_access": false
+              }
+            ]
+          },
+          "ends": [
+            {
+              "kind": "pad",
+              "ref": "U1",
+              "pad": "31",
+              "layer": "F.Cu"
+            },
+            {
+              "kind": "pad",
+              "ref": "U52",
+              "pad": "4",
+              "layer": "B.Cu"
+            }
+          ],
+          "what_to_do": "There is still free space for this connection, but the router's search stopped at its limit first: route it by hand (X), or submit again with effort=thorough (twice the router's work; evidence.search_stop work_budget or iteration_cap) or more minutes (time_stop)."
+        },
+        {
+          "net": "ACT_POWER_ENABLE",
+          "layer": "F.Cu",
+          "reason": "Free space on the returned board still joins pad R222 1 to its net, but the router's search stopped at the job's time limit before this connection was settled against other nets",
+          "at_mm": [
+            35.25,
+            38.955
+          ],
+          "to_mm": [
+            11.675,
+            26.0
+          ],
+          "critical": false,
+          "refs": [
+            "R222",
+            "U1"
+          ],
+          "items": [
+            "Pad 31 [ACT_POWER_ENABLE] of U1 on F.Cu",
+            "Pad 1 [ACT_POWER_ENABLE] of R222 on B.Cu"
+          ],
+          "reason_code": "search_limit",
+          "reason_source": "router",
+          "evidence": {
+            "pads_unconnected": 3,
+            "pads_total": 4,
+            "pads_without_access": 0,
+            "routed_as_pour": false,
+            "search_stop": "time_stop",
+            "pads": [
+              {
+                "ref": "R222",
+                "pad": "1",
+                "at_mm": [
+                  11.675,
+                  26.0
+                ],
+                "reachable": true,
+                "no_access": false
+              }
+            ]
+          },
+          "ends": [
+            {
+              "kind": "pad",
+              "ref": "U1",
+              "pad": "31",
+              "layer": "F.Cu"
+            },
+            {
+              "kind": "pad",
+              "ref": "R222",
+              "pad": "1",
+              "layer": "B.Cu"
+            }
+          ],
+          "what_to_do": "There is still free space for this connection, but the router's search stopped at its limit first: route it by hand (X), or submit again with effort=thorough (twice the router's work; evidence.search_stop work_budget or iteration_cap) or more minutes (time_stop)."
+        },
+        {
+          "net": "ACT_POWER_ENABLE",
+          "layer": "B.Cu",
+          "reason": "Pad U52 11 is walled in on the router's grid by a via of net GND, a track of net BOOT_N on In2.Cu, a via of net 3V3; no path joins it to its net under your clearances",
+          "at_mm": [
+            51.138,
+            58.0
+          ],
+          "to_mm": [
+            56.862,
+            58.0
+          ],
+          "critical": false,
+          "refs": [
+            "U52"
+          ],
+          "items": [
+            "Pad 4 [ACT_POWER_ENABLE] of U52 on B.Cu",
+            "Pad 11 [ACT_POWER_ENABLE] of U52 on B.Cu"
+          ],
+          "reason_code": "no_path_found",
+          "reason_source": "router",
+          "evidence": {
+            "pads_unconnected": 3,
+            "pads_total": 4,
+            "pads_without_access": 0,
+            "routed_as_pour": false,
+            "search_stop": "time_stop",
+            "pads": [
+              {
+                "ref": "U52",
+                "pad": "4",
+                "at_mm": [
+                  51.1375,
+                  58.0
+                ],
+                "reachable": true,
+                "no_access": false
+              },
+              {
+                "ref": "U52",
+                "pad": "11",
+                "at_mm": [
+                  56.8625,
+                  58.0
+                ],
+                "reachable": false,
+                "no_access": false,
+                "region_cells": 64006,
+                "blocked_side": "pad"
+              }
+            ]
+          },
+          "ends": [
+            {
+              "kind": "pad",
+              "ref": "U52",
+              "pad": "4",
+              "layer": "B.Cu"
+            },
+            {
+              "kind": "pad",
+              "ref": "U52",
+              "pad": "11",
+              "layer": "B.Cu"
+            }
+          ],
+          "blocking": [
+            {
+              "kind": "via",
+              "net": "GND",
+              "layer": "In2.Cu",
+              "at_mm": [
+                57.621,
+                49.076
+              ],
+              "blocked_cells": 521,
+              "walls_in": {
+                "ref": "U52",
+                "pad": "11"
+              }
+            },
+            {
+              "kind": "track",
+              "net": "BOOT_N",
+              "layer": "In2.Cu",
+              "at_mm": [
+                57.865,
+                57.683
+              ],
+              "blocked_cells": 401,
+              "walls_in": {
+                "ref": "U52",
+                "pad": "11"
+              }
+            },
+            {
+              "kind": "via",
+              "net": "3V3",
+              "layer": "In2.Cu",
+              "at_mm": [
+                56.832,
+                49.295
+              ],
+              "blocked_cells": 303,
+              "walls_in": {
+                "ref": "U52",
+                "pad": "11"
+              }
+            }
+          ],
+          "what_to_do": "The router found no path here that keeps your clearances: route it by hand (Route > Route Single Track, or X), or make room by moving a part at either end (M) or the tracks between them (D) and submit again; critical nets must be finished before ordering boards."
+        },
+        {
+          "net": "A_LRCLK_BUF",
+          "layer": "B.Cu",
+          "reason": "Pad R51 1 is walled in on the router's grid by a track of net AUDIO_BCLK on B.Cu, a track of net I2C_SCL on F.Cu, a track of net DRIVE_ENABLE on In2.Cu; no path joins it to its net under your clearances",
+          "at_mm": [
+            36.638,
+            34.7
+          ],
+          "to_mm": [
+            38.5,
+            41.325
+          ],
+          "critical": false,
+          "refs": [
+            "R51",
+            "U16"
+          ],
+          "items": [
+            "Pad 6 [A_LRCLK_BUF] of U16 on B.Cu",
+            "Pad 1 [A_LRCLK_BUF] of R51 on B.Cu"
+          ],
+          "reason_code": "no_path_found",
+          "reason_source": "router",
+          "evidence": {
+            "pads_unconnected": 1,
+            "pads_total": 2,
+            "pads_without_access": 0,
+            "routed_as_pour": false,
+            "search_stop": "time_stop",
+            "pads": [
+              {
+                "ref": "R51",
+                "pad": "1",
+                "at_mm": [
+                  38.5,
+                  41.325
+                ],
+                "reachable": false,
+                "no_access": false,
+                "region_cells": 14654,
+                "blocked_side": "pad"
+              }
+            ]
+          },
+          "ends": [
+            {
+              "kind": "pad",
+              "ref": "U16",
+              "pad": "6",
+              "layer": "B.Cu"
+            },
+            {
+              "kind": "pad",
+              "ref": "R51",
+              "pad": "1",
+              "layer": "B.Cu"
+            }
+          ],
+          "blocking": [
+            {
+              "kind": "track",
+              "net": "AUDIO_BCLK",
+              "layer": "B.Cu",
+              "at_mm": [
+                35.23,
+                39.985
+              ],
+              "blocked_cells": 180,
+              "walls_in": {
+                "ref": "R51",
+                "pad": "1"
+              }
+            },
+            {
+              "kind": "track",
+              "net": "I2C_SCL",
+              "layer": "F.Cu",
+              "at_mm": [
+                38.596,
+                39.396
+              ],
+              "blocked_cells": 167,
+              "walls_in": {
+                "ref": "R51",
+                "pad": "1"
+              }
+            },
+            {
+              "kind": "track",
+              "net": "DRIVE_ENABLE",
+              "layer": "In2.Cu",
+              "at_mm": [
+                36.312,
+                42.162
+              ],
+              "blocked_cells": 147,
+              "walls_in": {
+                "ref": "R51",
+                "pad": "1"
+              }
+            }
+          ],
+          "what_to_do": "The router found no path here that keeps your clearances: route it by hand (Route > Route Single Track, or X), or make room by moving a part at either end (M) or the tracks between them (D) and submit again; critical nets must be finished before ordering boards."
+        },
+        {
+          "net": "BAT_PROTECTED",
+          "layer": "B.Cu",
+          "reason": "The router found no point on its routing grid where a track or via could join 1 pad of this net while keeping your clearances",
+          "at_mm": [
+            18.167,
+            -3.579
+          ],
+          "to_mm": [
+            18.167,
+            -3.579
+          ],
+          "critical": false,
+          "items": [
+            "Zone 'BAT_PROTECTED B.Cu' [BAT_PROTECTED] on B.Cu, priority 2",
+            "Zone 'BAT_PROTECTED B.Cu' [BAT_PROTECTED] on B.Cu, priority 2"
+          ],
+          "reason_code": "pad_no_access",
+          "reason_source": "router",
+          "evidence": {
+            "pads_unconnected": 1,
+            "pads_total": 12,
+            "pads_without_access": 1,
+            "routed_as_pour": false,
+            "search_stop": "time_stop",
+            "unreached_pads": [
+              {
+                "ref": "C152",
+                "pad": "1",
+                "at_mm": [
+                  25.625,
+                  27.3
+                ],
+                "reachable": false,
+                "no_access": true
+              }
+            ],
+            "changed_after_routing": [
+              {
+                "stage": "via_upsize",
+                "step": "via enlarging",
+                "tracks_removed": 0,
+                "vias_removed": 4,
+                "zones_removed": 0,
+                "tracks_added": 0,
+                "vias_added": 4,
+                "track_mm_removed": 0.0,
+                "track_mm_added": 0.0
+              }
+            ]
+          },
+          "ends": [
+            {
+              "kind": "zone",
+              "ref": null,
+              "pad": null,
+              "layer": "B.Cu"
+            },
+            {
+              "kind": "zone",
+              "ref": null,
+              "pad": null,
+              "layer": "B.Cu"
+            }
+          ],
+          "what_to_do": "No track or via could reach this pad under your clearances: check the pad size and its net class clearance (File > Board Setup > Design Rules > Net Classes), move the parts next to it (M), or connect it by hand (X)."
+        },
+        {
+          "net": "DRIVE_RUN",
+          "layer": "F.Cu",
+          "reason": "Free space on the returned board still joins pad U6 6 and U1 36 to its net, but the router's search stopped at the job's time limit before this connection was settled against other nets",
+          "at_mm": [
+            28.137,
+            61.4
+          ],
+          "to_mm": [
+            35.25,
+            45.305
+          ],
+          "critical": false,
+          "refs": [
+            "U1",
+            "U6"
+          ],
+          "items": [
+            "Pad 6 [DRIVE_RUN] of U6 on F.Cu",
+            "Pad 36 [DRIVE_RUN] of U1 on F.Cu"
+          ],
+          "reason_code": "search_limit",
+          "reason_source": "router",
+          "evidence": {
+            "pads_unconnected": 2,
+            "pads_total": 6,
+            "pads_without_access": 0,
+            "routed_as_pour": false,
+            "search_stop": "time_stop",
+            "pads": [
+              {
+                "ref": "U6",
+                "pad": "6",
+                "at_mm": [
+                  28.1375,
+                  61.4
+                ],
+                "reachable": true,
+                "no_access": false
+              },
+              {
+                "ref": "U1",
+                "pad": "36",
+                "at_mm": [
+                  35.25,
+                  45.305
+                ],
+                "reachable": true,
+                "no_access": false
+              }
+            ]
+          },
+          "ends": [
+            {
+              "kind": "pad",
+              "ref": "U6",
+              "pad": "6",
+              "layer": "F.Cu"
+            },
+            {
+              "kind": "pad",
+              "ref": "U1",
+              "pad": "36",
+              "layer": "F.Cu"
+            }
+          ],
+          "what_to_do": "There is still free space for this connection, but the router's search stopped at its limit first: route it by hand (X), or submit again with effort=thorough (twice the router's work; evidence.search_stop work_budget or iteration_cap) or more minutes (time_stop)."
+        },
+        {
+          "net": "DRIVE_RUN",
+          "layer": "F.Cu",
+          "reason": "Free space on the returned board still joins pad U1 36 to its net, but the router's search stopped at the job's time limit before this connection was settled against other nets",
+          "at_mm": [
+            35.25,
+            45.305
+          ],
+          "to_mm": [
+            33.25,
+            11.9
+          ],
+          "critical": false,
+          "refs": [
+            "U1"
+          ],
+          "items": [
+            "Pad 36 [DRIVE_RUN] of U1 on F.Cu",
+            "Track [DRIVE_RUN] on F.Cu, length 4.3000 mm"
+          ],
+          "reason_code": "search_limit",
+          "reason_source": "router",
+          "evidence": {
+            "pads_unconnected": 2,
+            "pads_total": 6,
+            "pads_without_access": 0,
+            "routed_as_pour": false,
+            "search_stop": "time_stop",
+            "pads": [
+              {
+                "ref": "U1",
+                "pad": "36",
+                "at_mm": [
+                  35.25,
+                  45.305
+                ],
+                "reachable": true,
+                "no_access": false
+              }
+            ]
+          },
+          "ends": [
+            {
+              "kind": "pad",
+              "ref": "U1",
+              "pad": "36",
+              "layer": "F.Cu"
+            },
+            {
+              "kind": "track",
+              "ref": null,
+              "pad": null,
+              "layer": "F.Cu"
+            }
+          ],
+          "what_to_do": "There is still free space for this connection, but the router's search stopped at its limit first: route it by hand (X), or submit again with effort=thorough (twice the router's work; evidence.search_stop work_budget or iteration_cap) or more minutes (time_stop)."
+        },
+        {
+          "net": "ER_B_F",
+          "layer": "B.Cu",
+          "reason": "Free space on the returned board still joins pad C22 1 and R41 2 to its net, but the router's search stopped at the job's time limit before this connection was settled against other nets",
+          "at_mm": [
+            24.275,
+            5.7
+          ],
+          "to_mm": [
+            14.325,
+            2.8
+          ],
+          "critical": false,
+          "refs": [
+            "C22",
+            "R41"
+          ],
+          "items": [
+            "Pad 1 [ER_B_F] of C22 on B.Cu",
+            "Pad 2 [ER_B_F] of R41 on B.Cu"
+          ],
+          "reason_code": "search_limit",
+          "reason_source": "router",
+          "evidence": {
+            "pads_unconnected": 3,
+            "pads_total": 5,
+            "pads_without_access": 0,
+            "routed_as_pour": false,
+            "search_stop": "time_stop",
+            "pads": [
+              {
+                "ref": "C22",
+                "pad": "1",
+                "at_mm": [
+                  24.275,
+                  5.7
+                ],
+                "reachable": true,
+                "no_access": false
+              },
+              {
+                "ref": "R41",
+                "pad": "2",
+                "at_mm": [
+                  14.325,
+                  2.8
+                ],
+                "reachable": true,
+                "no_access": false
+              }
+            ]
+          },
+          "ends": [
+            {
+              "kind": "pad",
+              "ref": "C22",
+              "pad": "1",
+              "layer": "B.Cu"
+            },
+            {
+              "kind": "pad",
+              "ref": "R41",
+              "pad": "2",
+              "layer": "B.Cu"
+            }
+          ],
+          "what_to_do": "There is still free space for this connection, but the router's search stopped at its limit first: route it by hand (X), or submit again with effort=thorough (twice the router's work; evidence.search_stop work_budget or iteration_cap) or more minutes (time_stop)."
+        },
+        {
+          "net": "ER_B_F",
+          "layer": "F.Cu",
+          "reason": "Free space on the returned board still joins pad R42 2 and C22 1 to its net, but the router's search stopped at the job's time limit before this connection was settled against other nets",
+          "at_mm": [
+            54.175,
+            17.0
+          ],
+          "to_mm": [
+            24.275,
+            5.7
+          ],
+          "critical": false,
+          "refs": [
+            "C22",
+            "R42"
+          ],
+          "items": [
+            "Pad 2 [ER_B_F] of R42 on F.Cu",
+            "Pad 1 [ER_B_F] of C22 on B.Cu"
+          ],
+          "reason_code": "search_limit",
+          "reason_source": "router",
+          "evidence": {
+            "pads_unconnected": 3,
+            "pads_total": 5,
+            "pads_without_access": 0,
+            "routed_as_pour": false,
+            "search_stop": "time_stop",
+            "pads": [
+              {
+                "ref": "R42",
+                "pad": "2",
+                "at_mm": [
+                  54.175,
+                  17.0
+                ],
+                "reachable": true,
+                "no_access": false
+              },
+              {
+                "ref": "C22",
+                "pad": "1",
+                "at_mm": [
+                  24.275,
+                  5.7
+                ],
+                "reachable": true,
+                "no_access": false
+              }
+            ]
+          },
+          "ends": [
+            {
+              "kind": "pad",
+              "ref": "R42",
+              "pad": "2",
+              "layer": "F.Cu"
+            },
+            {
+              "kind": "pad",
+              "ref": "C22",
+              "pad": "1",
+              "layer": "B.Cu"
+            }
+          ],
+          "what_to_do": "There is still free space for this connection, but the router's search stopped at its limit first: route it by hand (X), or submit again with effort=thorough (twice the router's work; evidence.search_stop work_budget or iteration_cap) or more minutes (time_stop)."
+        },
+        {
+          "net": "ER_B_F",
+          "layer": "F.Cu",
+          "reason": "Free space on the returned board still joins pad R42 2 to its net, but the router's search stopped at the job's time limit before this connection was settled against other nets",
+          "at_mm": [
+            71.325,
+            49.0
+          ],
+          "to_mm": [
+            54.175,
+            17.0
+          ],
+          "critical": false,
+          "refs": [
+            "R42",
+            "R79"
+          ],
+          "items": [
+            "Pad 1 [ER_B_F] of R79 on F.Cu",
+            "Pad 2 [ER_B_F] of R42 on F.Cu"
+          ],
+          "reason_code": "search_limit",
+          "reason_source": "router",
+          "evidence": {
+            "pads_unconnected": 3,
+            "pads_total": 5,
+            "pads_without_access": 0,
+            "routed_as_pour": false,
+            "search_stop": "time_stop",
+            "pads": [
+              {
+                "ref": "R42",
+                "pad": "2",
+                "at_mm": [
+                  54.175,
+                  17.0
+                ],
+                "reachable": true,
+                "no_access": false
+              }
+            ]
+          },
+          "ends": [
+            {
+              "kind": "pad",
+              "ref": "R79",
+              "pad": "1",
+              "layer": "F.Cu"
+            },
+            {
+              "kind": "pad",
+              "ref": "R42",
+              "pad": "2",
+              "layer": "F.Cu"
+            }
+          ],
+          "what_to_do": "There is still free space for this connection, but the router's search stopped at its limit first: route it by hand (X), or submit again with effort=thorough (twice the router's work; evidence.search_stop work_budget or iteration_cap) or more minutes (time_stop)."
+        },
+        {
+          "net": "I2C_SDA",
+          "layer": "F.Cu",
+          "reason": "Free space on the returned board still joins pad U1 34 and R8 2 to its net, but the router's search stopped at the job's time limit before this connection was settled against other nets",
+          "at_mm": [
+            35.25,
+            42.765
+          ],
+          "to_mm": [
+            26.0,
+            47.675
+          ],
+          "critical": false,
+          "refs": [
+            "R8",
+            "U1"
+          ],
+          "items": [
+            "Pad 34 [I2C_SDA] of U1 on F.Cu",
+            "Pad 2 [I2C_SDA] of R8 on F.Cu"
+          ],
+          "reason_code": "search_limit",
+          "reason_source": "router",
+          "evidence": {
+            "pads_unconnected": 4,
+            "pads_total": 5,
+            "pads_without_access": 0,
+            "routed_as_pour": false,
+            "search_stop": "time_stop",
+            "pads": [
+              {
+                "ref": "U1",
+                "pad": "34",
+                "at_mm": [
+                  35.25,
+                  42.765
+                ],
+                "reachable": true,
+                "no_access": false
+              },
+              {
+                "ref": "R8",
+                "pad": "2",
+                "at_mm": [
+                  26.0,
+                  47.675
+                ],
+                "reachable": true,
+                "no_access": false
+              }
+            ]
+          },
+          "ends": [
+            {
+              "kind": "pad",
+              "ref": "U1",
+              "pad": "34",
+              "layer": "F.Cu"
+            },
+            {
+              "kind": "pad",
+              "ref": "R8",
+              "pad": "2",
+              "layer": "F.Cu"
+            }
+          ],
+          "what_to_do": "There is still free space for this connection, but the router's search stopped at its limit first: route it by hand (X), or submit again with effort=thorough (twice the router's work; evidence.search_stop work_budget or iteration_cap) or more minutes (time_stop)."
+        },
+        {
+          "net": "I2C_SDA",
+          "layer": "F.Cu",
+          "reason": "Pad U43 9 is walled in on the router's grid by a via of net ENC_L_A, a track of net 3V3 on F.Cu, pad U1 8 (STATUS_LED); no path joins it to its net under your clearances",
+          "at_mm": [
+            55.4,
+            40.86
+          ],
+          "to_mm": [
+            35.25,
+            42.765
+          ],
+          "critical": false,
+          "refs": [
+            "U1",
+            "U43"
+          ],
+          "items": [
+            "Pad 9 [I2C_SDA] of U43 on F.Cu",
+            "Pad 34 [I2C_SDA] of U1 on F.Cu"
+          ],
+          "reason_code": "no_path_found",
+          "reason_source": "router",
+          "evidence": {
+            "pads_unconnected": 4,
+            "pads_total": 5,
+            "pads_without_access": 0,
+            "routed_as_pour": false,
+            "search_stop": "time_stop",
+            "pads": [
+              {
+                "ref": "U43",
+                "pad": "9",
+                "at_mm": [
+                  55.4,
+                  40.86
+                ],
+                "reachable": false,
+                "no_access": false,
+                "region_cells": 1099,
+                "blocked_side": "pad"
+              },
+              {
+                "ref": "U1",
+                "pad": "34",
+                "at_mm": [
+                  35.25,
+                  42.765
+                ],
+                "reachable": true,
+                "no_access": false
+              }
+            ]
+          },
+          "ends": [
+            {
+              "kind": "pad",
+              "ref": "U43",
+              "pad": "9",
+              "layer": "F.Cu"
+            },
+            {
+              "kind": "pad",
+              "ref": "U1",
+              "pad": "34",
+              "layer": "F.Cu"
+            }
+          ],
+          "blocking": [
+            {
+              "kind": "via",
+              "net": "ENC_L_A",
+              "layer": "F.Cu",
+              "at_mm": [
+                54.489,
+                42.066
+              ],
+              "blocked_cells": 40,
+              "walls_in": {
+                "ref": "U43",
+                "pad": "9"
+              }
+            },
+            {
+              "kind": "track",
+              "net": "3V3",
+              "layer": "F.Cu",
+              "at_mm": [
+                55.092,
+                39.583
+              ],
+              "blocked_cells": 30,
+              "walls_in": {
+                "ref": "U43",
+                "pad": "9"
+              }
+            },
+            {
+              "kind": "pad",
+              "net": "STATUS_LED",
+              "layer": "F.Cu",
+              "at_mm": [
+                52.75,
+                41.495
+              ],
+              "blocked_cells": 28,
+              "walls_in": {
+                "ref": "U43",
+                "pad": "9"
+              },
+              "ref": "U1",
+              "pad": "8"
+            }
+          ],
+          "what_to_do": "The router found no path here that keeps your clearances: route it by hand (Route > Route Single Track, or X), or make room by moving a part at either end (M) or the tracks between them (D) and submit again; critical nets must be finished before ordering boards."
+        },
+        {
+          "net": "I2C_SDA",
+          "layer": "B.Cu",
+          "reason": "Pad U43 9 is walled in on the router's grid by a via of net ENC_L_A, a track of net 3V3 on F.Cu, pad U1 8 (STATUS_LED); no path joins it to its net under your clearances",
+          "at_mm": [
+            60.1,
+            46.0
+          ],
+          "to_mm": [
+            55.4,
+            40.86
+          ],
+          "critical": false,
+          "refs": [
+            "U17",
+            "U43"
+          ],
+          "items": [
+            "Pad 4 [I2C_SDA] of U17 on B.Cu",
+            "Pad 9 [I2C_SDA] of U43 on F.Cu"
+          ],
+          "reason_code": "no_path_found",
+          "reason_source": "router",
+          "evidence": {
+            "pads_unconnected": 4,
+            "pads_total": 5,
+            "pads_without_access": 0,
+            "routed_as_pour": false,
+            "search_stop": "time_stop",
+            "pads": [
+              {
+                "ref": "U17",
+                "pad": "4",
+                "at_mm": [
+                  60.1,
+                  46.0
+                ],
+                "reachable": true,
+                "no_access": false
+              },
+              {
+                "ref": "U43",
+                "pad": "9",
+                "at_mm": [
+                  55.4,
+                  40.86
+                ],
+                "reachable": false,
+                "no_access": false,
+                "region_cells": 1099,
+                "blocked_side": "pad"
+              }
+            ]
+          },
+          "ends": [
+            {
+              "kind": "pad",
+              "ref": "U17",
+              "pad": "4",
+              "layer": "B.Cu"
+            },
+            {
+              "kind": "pad",
+              "ref": "U43",
+              "pad": "9",
+              "layer": "F.Cu"
+            }
+          ],
+          "blocking": [
+            {
+              "kind": "via",
+              "net": "ENC_L_A",
+              "layer": "F.Cu",
+              "at_mm": [
+                54.489,
+                42.066
+              ],
+              "blocked_cells": 40,
+              "walls_in": {
+                "ref": "U43",
+                "pad": "9"
+              }
+            },
+            {
+              "kind": "track",
+              "net": "3V3",
+              "layer": "F.Cu",
+              "at_mm": [
+                55.092,
+                39.583
+              ],
+              "blocked_cells": 30,
+              "walls_in": {
+                "ref": "U43",
+                "pad": "9"
+              }
+            },
+            {
+              "kind": "pad",
+              "net": "STATUS_LED",
+              "layer": "F.Cu",
+              "at_mm": [
+                52.75,
+                41.495
+              ],
+              "blocked_cells": 28,
+              "walls_in": {
+                "ref": "U43",
+                "pad": "9"
+              },
+              "ref": "U1",
+              "pad": "8"
+            }
+          ],
+          "what_to_do": "The router found no path here that keeps your clearances: route it by hand (Route > Route Single Track, or X), or make room by moving a part at either end (M) or the tracks between them (D) and submit again; critical nets must be finished before ordering boards."
+        },
+        {
+          "net": "I2C_SDA",
+          "layer": "F.Cu",
+          "reason": "Free space on the returned board still joins pad U17 4 to its net, but the router's search stopped at the job's time limit before this connection was settled against other nets",
+          "at_mm": [
+            69.0,
+            72.5
+          ],
+          "to_mm": [
+            60.1,
+            46.0
+          ],
+          "critical": false,
+          "refs": [
+            "TP5",
+            "U17"
+          ],
+          "items": [
+            "Pad 1 [I2C_SDA] of TP5 on F.Cu",
+            "Pad 4 [I2C_SDA] of U17 on B.Cu"
+          ],
+          "reason_code": "search_limit",
+          "reason_source": "router",
+          "evidence": {
+            "pads_unconnected": 4,
+            "pads_total": 5,
+            "pads_without_access": 0,
+            "routed_as_pour": false,
+            "search_stop": "time_stop",
+            "pads": [
+              {
+                "ref": "U17",
+                "pad": "4",
+                "at_mm": [
+                  60.1,
+                  46.0
+                ],
+                "reachable": true,
+                "no_access": false
+              }
+            ]
+          },
+          "ends": [
+            {
+              "kind": "pad",
+              "ref": "TP5",
+              "pad": "1",
+              "layer": "F.Cu"
+            },
+            {
+              "kind": "pad",
+              "ref": "U17",
+              "pad": "4",
+              "layer": "B.Cu"
+            }
+          ],
+          "what_to_do": "There is still free space for this connection, but the router's search stopped at its limit first: route it by hand (X), or submit again with effort=thorough (twice the router's work; evidence.search_stop work_budget or iteration_cap) or more minutes (time_stop)."
+        },
+        {
+          "net": "MOTOR_R_RETURN",
+          "layer": null,
+          "reason": "Pad J2 9 is walled in on the router's grid by pad J2 8 (CYTRON_R_LEAD), pad J2 10 (unconnected-(J2-UNUSED-Pad10)), pad J2 4 (MDD_DIR2); no path joins it to its net under your clearances",
+          "at_mm": [
+            6.0,
+            55.4
+          ],
+          "to_mm": [
+            43.5,
+            4.3
+          ],
+          "critical": false,
+          "refs": [
+            "J2",
+            "J4"
+          ],
+          "items": [
+            "PTH pad 2 [MOTOR_R_RETURN] of J4",
+            "PTH pad 9 [MOTOR_R_RETURN] of J2"
+          ],
+          "reason_code": "no_path_found",
+          "reason_source": "router",
+          "evidence": {
+            "pads_unconnected": 1,
+            "pads_total": 2,
+            "pads_without_access": 0,
+            "routed_as_pour": false,
+            "search_stop": "time_stop",
+            "pads": [
+              {
+                "ref": "J2",
+                "pad": "9",
+                "at_mm": [
+                  43.5,
+                  4.3
+                ],
+                "reachable": false,
+                "no_access": false,
+                "region_cells": 930,
+                "blocked_side": "pad"
+              }
+            ]
+          },
+          "ends": [
+            {
+              "kind": "pad",
+              "ref": "J4",
+              "pad": "2",
+              "layer": null
+            },
+            {
+              "kind": "pad",
+              "ref": "J2",
+              "pad": "9",
+              "layer": null
+            }
+          ],
+          "blocking": [
+            {
+              "kind": "pad",
+              "net": "CYTRON_R_LEAD",
+              "layer": "F.Cu",
+              "at_mm": [
+                40.5,
+                4.3
+              ],
+              "blocked_cells": 72,
+              "walls_in": {
+                "ref": "J2",
+                "pad": "9"
+              },
+              "ref": "J2",
+              "pad": "8"
+            },
+            {
+              "kind": "pad",
+              "net": "unconnected-(J2-UNUSED-Pad10)",
+              "layer": "F.Cu",
+              "at_mm": [
+                46.5,
+                4.3
+              ],
+              "blocked_cells": 72,
+              "walls_in": {
+                "ref": "J2",
+                "pad": "9"
+              },
+              "ref": "J2",
+              "pad": "10"
+            },
+            {
+              "kind": "pad",
+              "net": "MDD_DIR2",
+              "layer": "F.Cu",
+              "at_mm": [
+                43.5,
+                1.3
+              ],
+              "blocked_cells": 51,
+              "walls_in": {
+                "ref": "J2",
+                "pad": "9"
+              },
+              "ref": "J2",
+              "pad": "4"
+            }
+          ],
+          "what_to_do": "The router found no path here that keeps your clearances: route it by hand (Route > Route Single Track, or X), or make room by moving a part at either end (M) or the tracks between them (D) and submit again; critical nets must be finished before ordering boards."
+        },
+        {
+          "net": "SPEAKER_N",
+          "layer": "F.Cu",
+          "reason": "Free space on the returned board still joins pad U23 10 to its net, but the router's search stopped at the job's time limit before this connection was settled against other nets",
+          "at_mm": [
+            32.925,
+            53.75
+          ],
+          "to_mm": [
+            73.05,
+            62.0
+          ],
+          "critical": false,
+          "refs": [
+            "J7",
+            "U23"
+          ],
+          "items": [
+            "Pad 10 [SPEAKER_N] of U23 on F.Cu",
+            "PTH pad 2 [SPEAKER_N] of J7"
+          ],
+          "reason_code": "search_limit",
+          "reason_source": "router",
+          "evidence": {
+            "pads_unconnected": 1,
+            "pads_total": 2,
+            "pads_without_access": 0,
+            "routed_as_pour": false,
+            "search_stop": "time_stop",
+            "pads": [
+              {
+                "ref": "U23",
+                "pad": "10",
+                "at_mm": [
+                  32.925,
+                  53.75
+                ],
+                "reachable": true,
+                "no_access": false
+              }
+            ]
+          },
+          "ends": [
+            {
+              "kind": "pad",
+              "ref": "U23",
+              "pad": "10",
+              "layer": "F.Cu"
+            },
+            {
+              "kind": "pad",
+              "ref": "J7",
+              "pad": "2",
+              "layer": null
+            }
+          ],
+          "what_to_do": "There is still free space for this connection, but the router's search stopped at its limit first: route it by hand (X), or submit again with effort=thorough (twice the router's work; evidence.search_stop work_budget or iteration_cap) or more minutes (time_stop)."
+        },
+        {
+          "net": "SPEAKER_P",
+          "layer": "F.Cu",
+          "reason": "Free space on the returned board still joins pad U23 9 to its net, but the router's search stopped at the job's time limit before this connection was settled against other nets",
+          "at_mm": [
+            32.925,
+            54.25
+          ],
+          "to_mm": [
+            73.05,
+            64.0
+          ],
+          "critical": false,
+          "refs": [
+            "J7",
+            "U23"
+          ],
+          "items": [
+            "Pad 9 [SPEAKER_P] of U23 on F.Cu",
+            "PTH pad 1 [SPEAKER_P] of J7"
+          ],
+          "reason_code": "search_limit",
+          "reason_source": "router",
+          "evidence": {
+            "pads_unconnected": 1,
+            "pads_total": 2,
+            "pads_without_access": 0,
+            "routed_as_pour": false,
+            "search_stop": "time_stop",
+            "pads": [
+              {
+                "ref": "U23",
+                "pad": "9",
+                "at_mm": [
+                  32.925,
+                  54.25
+                ],
+                "reachable": true,
+                "no_access": false
+              }
+            ]
+          },
+          "ends": [
+            {
+              "kind": "pad",
+              "ref": "U23",
+              "pad": "9",
+              "layer": "F.Cu"
+            },
+            {
+              "kind": "pad",
+              "ref": "J7",
+              "pad": "1",
+              "layer": null
+            }
+          ],
+          "what_to_do": "There is still free space for this connection, but the router's search stopped at its limit first: route it by hand (X), or submit again with effort=thorough (twice the router's work; evidence.search_stop work_budget or iteration_cap) or more minutes (time_stop)."
+        },
+        {
+          "net": "USB_N",
+          "layer": "F.Cu",
+          "reason": "Pad U2 2 is walled in on the router's grid by a via of net GND, a via of net GND, pad H8 ?; no path joins it to its net under your clearances",
+          "at_mm": [
+            56.11,
+            35.5
+          ],
+          "to_mm": [
+            69.112,
+            47.65
+          ],
+          "critical": false,
+          "refs": [
+            "R4",
+            "U2"
+          ],
+          "items": [
+            "Pad 1 [USB_N] of R4 on F.Cu",
+            "Pad 2 [USB_N] of U2 on F.Cu"
+          ],
+          "reason_code": "no_path_found",
+          "reason_source": "router",
+          "evidence": {
+            "pads_unconnected": 3,
+            "pads_total": 4,
+            "pads_without_access": 0,
+            "routed_as_pour": false,
+            "search_stop": "time_stop",
+            "pads": [
+              {
+                "ref": "U2",
+                "pad": "2",
+                "at_mm": [
+                  69.1125,
+                  47.65
+                ],
+                "reachable": false,
+                "no_access": false,
+                "region_cells": 251671,
+                "blocked_side": "pad"
+              }
+            ]
+          },
+          "ends": [
+            {
+              "kind": "pad",
+              "ref": "R4",
+              "pad": "1",
+              "layer": "F.Cu"
+            },
+            {
+              "kind": "pad",
+              "ref": "U2",
+              "pad": "2",
+              "layer": "F.Cu"
+            }
+          ],
+          "blocking": [
+            {
+              "kind": "via",
+              "net": "GND",
+              "layer": "In2.Cu",
+              "at_mm": [
+                65.855,
+                45.083
+              ],
+              "blocked_cells": 1426,
+              "walls_in": {
+                "ref": "U2",
+                "pad": "2"
+              }
+            },
+            {
+              "kind": "via",
+              "net": "GND",
+              "layer": "B.Cu",
+              "at_mm": [
+                67.911,
+                44.763
+              ],
+              "blocked_cells": 1332,
+              "walls_in": {
+                "ref": "U2",
+                "pad": "2"
+              }
+            },
+            {
+              "kind": "pad",
+              "net": null,
+              "layer": "F.Cu",
+              "at_mm": [
+                69.0,
+                35.5
+              ],
+              "blocked_cells": 1242,
+              "walls_in": {
+                "ref": "U2",
+                "pad": "2"
+              },
+              "ref": "H8"
+            }
+          ],
+          "what_to_do": "The router found no path here that keeps your clearances: route it by hand (Route > Route Single Track, or X), or make room by moving a part at either end (M) or the tracks between them (D) and submit again; critical nets must be finished before ordering boards."
+        },
+        {
+          "net": "USB_N",
+          "layer": "F.Cu",
+          "reason": "Pad U2 2 is walled in on the router's grid by a via of net GND, a via of net GND, pad H8 ?; no path joins it to its net under your clearances",
+          "at_mm": [
+            69.112,
+            47.65
+          ],
+          "to_mm": [
+            73.32,
+            44.95
+          ],
+          "critical": false,
+          "refs": [
+            "J1",
+            "U2"
+          ],
+          "items": [
+            "Pad 2 [USB_N] of U2 on F.Cu",
+            "Pad B7 [USB_N] of J1 on F.Cu"
+          ],
+          "reason_code": "no_path_found",
+          "reason_source": "router",
+          "evidence": {
+            "pads_unconnected": 3,
+            "pads_total": 4,
+            "pads_without_access": 0,
+            "routed_as_pour": false,
+            "search_stop": "time_stop",
+            "pads": [
+              {
+                "ref": "U2",
+                "pad": "2",
+                "at_mm": [
+                  69.1125,
+                  47.65
+                ],
+                "reachable": false,
+                "no_access": false,
+                "region_cells": 251671,
+                "blocked_side": "pad"
+              },
+              {
+                "ref": "J1",
+                "pad": "B7",
+                "at_mm": [
+                  73.32,
+                  44.95
+                ],
+                "reachable": false,
+                "no_access": false,
+                "region_cells": 251818,
+                "blocked_side": "pad"
+              }
+            ]
+          },
+          "ends": [
+            {
+              "kind": "pad",
+              "ref": "U2",
+              "pad": "2",
+              "layer": "F.Cu"
+            },
+            {
+              "kind": "pad",
+              "ref": "J1",
+              "pad": "B7",
+              "layer": "F.Cu"
+            }
+          ],
+          "blocking": [
+            {
+              "kind": "via",
+              "net": "GND",
+              "layer": "In2.Cu",
+              "at_mm": [
+                65.855,
+                45.083
+              ],
+              "blocked_cells": 1426,
+              "walls_in": {
+                "ref": "U2",
+                "pad": "2"
+              }
+            },
+            {
+              "kind": "via",
+              "net": "GND",
+              "layer": "B.Cu",
+              "at_mm": [
+                67.911,
+                44.763
+              ],
+              "blocked_cells": 1332,
+              "walls_in": {
+                "ref": "U2",
+                "pad": "2"
+              }
+            },
+            {
+              "kind": "pad",
+              "net": null,
+              "layer": "F.Cu",
+              "at_mm": [
+                69.0,
+                35.5
+              ],
+              "blocked_cells": 1242,
+              "walls_in": {
+                "ref": "U2",
+                "pad": "2"
+              },
+              "ref": "H8"
+            },
+            {
+              "kind": "via",
+              "net": "GND",
+              "layer": "In2.Cu",
+              "at_mm": [
+                65.855,
+                45.083
+              ],
+              "blocked_cells": 1426,
+              "walls_in": {
+                "ref": "J1",
+                "pad": "B7"
+              }
+            },
+            {
+              "kind": "via",
+              "net": "GND",
+              "layer": "B.Cu",
+              "at_mm": [
+                67.911,
+                44.763
+              ],
+              "blocked_cells": 1332,
+              "walls_in": {
+                "ref": "J1",
+                "pad": "B7"
+              }
+            },
+            {
+              "kind": "pad",
+              "net": null,
+              "layer": "F.Cu",
+              "at_mm": [
+                69.0,
+                35.5
+              ],
+              "blocked_cells": 1242,
+              "walls_in": {
+                "ref": "J1",
+                "pad": "B7"
+              },
+              "ref": "H8"
+            }
+          ],
+          "what_to_do": "The router found no path here that keeps your clearances: route it by hand (Route > Route Single Track, or X), or make room by moving a part at either end (M) or the tracks between them (D) and submit again; critical nets must be finished before ordering boards."
+        },
+        {
+          "net": "USB_N",
+          "layer": "F.Cu",
+          "reason": "Pad J1 B7 is walled in on the router's grid by a via of net GND, a via of net GND, pad H8 ?; no path joins it to its net under your clearances",
+          "at_mm": [
+            73.32,
+            44.95
+          ],
+          "to_mm": [
+            73.32,
+            43.95
+          ],
+          "critical": false,
+          "refs": [
+            "J1"
+          ],
+          "items": [
+            "Pad B7 [USB_N] of J1 on F.Cu",
+            "Pad A7 [USB_N] of J1 on F.Cu"
+          ],
+          "reason_code": "no_path_found",
+          "reason_source": "router",
+          "evidence": {
+            "pads_unconnected": 3,
+            "pads_total": 4,
+            "pads_without_access": 0,
+            "routed_as_pour": false,
+            "search_stop": "time_stop",
+            "pads": [
+              {
+                "ref": "J1",
+                "pad": "B7",
+                "at_mm": [
+                  73.32,
+                  44.95
+                ],
+                "reachable": false,
+                "no_access": false,
+                "region_cells": 251818,
+                "blocked_side": "pad"
+              },
+              {
+                "ref": "J1",
+                "pad": "A7",
+                "at_mm": [
+                  73.32,
+                  43.95
+                ],
+                "reachable": false,
+                "no_access": false,
+                "region_cells": 251713,
+                "blocked_side": "pad"
+              }
+            ]
+          },
+          "ends": [
+            {
+              "kind": "pad",
+              "ref": "J1",
+              "pad": "B7",
+              "layer": "F.Cu"
+            },
+            {
+              "kind": "pad",
+              "ref": "J1",
+              "pad": "A7",
+              "layer": "F.Cu"
+            }
+          ],
+          "blocking": [
+            {
+              "kind": "via",
+              "net": "GND",
+              "layer": "In2.Cu",
+              "at_mm": [
+                65.855,
+                45.083
+              ],
+              "blocked_cells": 1426,
+              "walls_in": {
+                "ref": "J1",
+                "pad": "B7"
+              }
+            },
+            {
+              "kind": "via",
+              "net": "GND",
+              "layer": "B.Cu",
+              "at_mm": [
+                67.911,
+                44.763
+              ],
+              "blocked_cells": 1332,
+              "walls_in": {
+                "ref": "J1",
+                "pad": "B7"
+              }
+            },
+            {
+              "kind": "pad",
+              "net": null,
+              "layer": "F.Cu",
+              "at_mm": [
+                69.0,
+                35.5
+              ],
+              "blocked_cells": 1242,
+              "walls_in": {
+                "ref": "J1",
+                "pad": "B7"
+              },
+              "ref": "H8"
+            },
+            {
+              "kind": "via",
+              "net": "GND",
+              "layer": "In2.Cu",
+              "at_mm": [
+                65.855,
+                45.083
+              ],
+              "blocked_cells": 1426,
+              "walls_in": {
+                "ref": "J1",
+                "pad": "A7"
+              }
+            },
+            {
+              "kind": "via",
+              "net": "GND",
+              "layer": "B.Cu",
+              "at_mm": [
+                67.911,
+                44.763
+              ],
+              "blocked_cells": 1332,
+              "walls_in": {
+                "ref": "J1",
+                "pad": "A7"
+              }
+            },
+            {
+              "kind": "pad",
+              "net": null,
+              "layer": "F.Cu",
+              "at_mm": [
+                69.0,
+                35.5
+              ],
+              "blocked_cells": 1242,
+              "walls_in": {
+                "ref": "J1",
+                "pad": "A7"
+              },
+              "ref": "H8"
+            }
+          ],
+          "what_to_do": "The router found no path here that keeps your clearances: route it by hand (Route > Route Single Track, or X), or make room by moving a part at either end (M) or the tracks between them (D) and submit again; critical nets must be finished before ordering boards."
+        }
+      ],
+      "reason_counts": {
+        "pad_no_access": 5,
+        "no_path_found": 12,
+        "search_limit": 12
+      }
+    },
+    {
+      "kind": "drc_errors",
+      "title": "Design-rule errors under your rules",
+      "total": 8,
+      "truncated": false,
+      "problems": 8,
+      "items": [
+        {
+          "type": "hole_clearance",
+          "layer": "F.Cu",
+          "net": "GND",
+          "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1944 mm)",
+          "at_mm": [
+            73.32,
+            20.8
+          ],
+          "refs": [
+            "J20"
+          ],
+          "items": [
+            "Pad A12 [GND] of J20 on F.Cu",
+            "NPTH pad of J20"
+          ],
+          "what_to_do": "A hole here is too close to other copper: drag the via or track away from it (D), or move the part (M)."
+        },
+        {
+          "type": "hole_clearance",
+          "layer": "F.Cu",
+          "net": "GND",
+          "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1944 mm)",
+          "at_mm": [
+            73.32,
+            20.8
+          ],
+          "refs": [
+            "J20"
+          ],
+          "items": [
+            "Pad B1 [GND] of J20 on F.Cu",
+            "NPTH pad of J20"
+          ],
+          "what_to_do": "A hole here is too close to other copper: drag the via or track away from it (D), or move the part (M)."
+        },
+        {
+          "type": "hole_clearance",
+          "layer": "F.Cu",
+          "net": "GND",
+          "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1944 mm)",
+          "at_mm": [
+            73.32,
+            27.2
+          ],
+          "refs": [
+            "J20"
+          ],
+          "items": [
+            "Pad A1 [GND] of J20 on F.Cu",
+            "NPTH pad of J20"
+          ],
+          "what_to_do": "A hole here is too close to other copper: drag the via or track away from it (D), or move the part (M)."
+        },
+        {
+          "type": "hole_clearance",
+          "layer": "F.Cu",
+          "net": "GND",
+          "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1944 mm)",
+          "at_mm": [
+            73.32,
+            27.2
+          ],
+          "refs": [
+            "J20"
+          ],
+          "items": [
+            "Pad B12 [GND] of J20 on F.Cu",
+            "NPTH pad of J20"
+          ],
+          "what_to_do": "A hole here is too close to other copper: drag the via or track away from it (D), or move the part (M)."
+        },
+        {
+          "type": "hole_clearance",
+          "layer": "F.Cu",
+          "net": "GND",
+          "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1944 mm)",
+          "at_mm": [
+            73.32,
+            41.0
+          ],
+          "refs": [
+            "J1"
+          ],
+          "items": [
+            "Pad A12 [GND] of J1 on F.Cu",
+            "NPTH pad of J1"
+          ],
+          "what_to_do": "A hole here is too close to other copper: drag the via or track away from it (D), or move the part (M)."
+        },
+        {
+          "type": "hole_clearance",
+          "layer": "F.Cu",
+          "net": "GND",
+          "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1944 mm)",
+          "at_mm": [
+            73.32,
+            41.0
+          ],
+          "refs": [
+            "J1"
+          ],
+          "items": [
+            "Pad B1 [GND] of J1 on F.Cu",
+            "NPTH pad of J1"
+          ],
+          "what_to_do": "A hole here is too close to other copper: drag the via or track away from it (D), or move the part (M)."
+        },
+        {
+          "type": "hole_clearance",
+          "layer": "F.Cu",
+          "net": "GND",
+          "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1944 mm)",
+          "at_mm": [
+            73.32,
+            47.4
+          ],
+          "refs": [
+            "J1"
+          ],
+          "items": [
+            "Pad A1 [GND] of J1 on F.Cu",
+            "NPTH pad of J1"
+          ],
+          "what_to_do": "A hole here is too close to other copper: drag the via or track away from it (D), or move the part (M)."
+        },
+        {
+          "type": "hole_clearance",
+          "layer": "F.Cu",
+          "net": "GND",
+          "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1944 mm)",
+          "at_mm": [
+            73.32,
+            47.4
+          ],
+          "refs": [
+            "J1"
+          ],
+          "items": [
+            "Pad B12 [GND] of J1 on F.Cu",
+            "NPTH pad of J1"
+          ],
+          "what_to_do": "A hole here is too close to other copper: drag the via or track away from it (D), or move the part (M)."
+        }
+      ]
+    },
+    {
+      "kind": "jlc",
+      "title": "JLC capability violations",
+      "total": 0,
+      "truncated": false,
+      "problems": 0,
+      "items": []
+    },
+    {
+      "kind": "dangling",
+      "title": "Track ends and vias that connect nothing",
+      "total": 0,
+      "truncated": false,
+      "problems": 0,
+      "items": []
+    },
+    {
+      "kind": "isolated",
+      "title": "Copper islands with no connection",
+      "total": 0,
+      "truncated": false,
+      "problems": 0,
+      "items": []
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+*.kicad_prl
+*.lck
+fp-info-cache
+my-zap-check.json
+private/
+oauth.json
+access_token

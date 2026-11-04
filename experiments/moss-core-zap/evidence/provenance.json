@@ -1,0 +1,94 @@
+{
+  "test_date_local": "2026-11-05",
+  "timezone": "Asia/Bangkok",
+  "source_commit": "2af4606d4aace74b695e0066c2827f3f6efe7f99",
+  "source_repository": "https://github.com/metrox-eth/moss",
+  "source_files": [
+    {
+      "source": "https://raw.githubusercontent.com/metrox-eth/moss/2af4606d4aace74b695e0066c2827f3f6efe7f99/hardware/electronics/moss-core-v0.7/electrical/MOSS_Core_V07_Prototype.kicad_pcb",
+      "bytes": 2795913,
+      "sha256": "4f456f0563e9dc5a3b7cbab98eaa8d9f24485d14dc79a7656af5ab04b983b6b1"
+    },
+    {
+      "source": "https://raw.githubusercontent.com/metrox-eth/moss/2af4606d4aace74b695e0066c2827f3f6efe7f99/hardware/electronics/moss-core-v0.7/electrical/MOSS_Core_V07_Prototype.kicad_pro",
+      "bytes": 14305,
+      "sha256": "874d73c022a1a29260d729258ec7fcdaf404e1cc32ba3cd578a0277e957481ff"
+    },
+    {
+      "source": "https://raw.githubusercontent.com/metrox-eth/moss/2af4606d4aace74b695e0066c2827f3f6efe7f99/hardware/electronics/moss-core-v0.7/electrical/MOSS_Core_V07_Prototype.kicad_dru",
+      "bytes": 2713,
+      "sha256": "c39def057e204409fa042e1c68b905486cfb948b02db4ca079145826dfac18ea"
+    }
+  ],
+  "result_sha256": "c086d06a2a405b8b7f4dd60e7acd11fbdb586baff4a0e3565ff595c580b8e6b4",
+  "local_kicad": "10.0.6",
+  "service": {
+    "service": "2026.10.14.94",
+    "router": "r36a991d.6a78b6e8",
+    "router_choice": "stable"
+  },
+  "started_at_utc": "2026-11-04T17:32:25Z",
+  "finished_at_utc": "2026-11-04T17:38:25Z",
+  "metrics": {
+    "unconnected": 29,
+    "critical_unconnected": 8,
+    "drc_errors": 8,
+    "wall_time_s": 359.3,
+    "fab": {
+      "check": "fab1 1.6",
+      "rules": {
+        "project": "uploaded",
+        "custom_rules": "none"
+      },
+      "jlc_items_total": 0,
+      "jlc_items_truncated": false,
+      "dangling_total": 0,
+      "isolated_total": 0,
+      "computed": true,
+      "thermal": {
+        "computed": false,
+        "reason": "time limit"
+      },
+      "shorts": 0,
+      "shorts_already_in_board": 0,
+      "drc_errors": 8,
+      "drc_errors_by_type": {
+        "hole_clearance": 8
+      },
+      "jlc_violations": 0,
+      "jlc_violations_by_type": {},
+      "jlc_capabilities": "multilayer",
+      "counts_capped": [
+        "lib_footprint_issues"
+      ],
+      "time_s": 23.3,
+      "jlc_items": []
+    },
+    "time_budget": {
+      "minutes": 10,
+      "attempts": 5,
+      "attempts_finished": 3,
+      "rounds": 1,
+      "winner_attempt": 3,
+      "winner_setting": 3,
+      "routing_s": 312.4,
+      "winner": "standard",
+      "stopped": "time",
+      "summary": "5 attempts in 1 round, 312 s of routing; kept attempt 3 (standard setting 3); stopped because the next attempt could not finish within the minutes asked for."
+    }
+  },
+  "attempts": [
+    {
+      "result": "rejected",
+      "reason": "unsupported_rules",
+      "rules_uploaded": true
+    },
+    {
+      "result": "returned_incomplete_board",
+      "rules_uploaded": false,
+      "local_verification_rules": "original complete project and .kicad_dru restored"
+    }
+  ],
+  "report_redactions": "Service job ID and expired authenticated URLs removed; findings and metrics retained.",
+  "no_payment": true
+}
