@@ -1,0 +1,1758 @@
+{
+  "timestamp_utc": "2026-11-01T18:43:29.470621+00:00",
+  "status": "CONTRACT_LOGIC_MODEL_PASS_WITH_EXPLICIT_TIMING_LIMITS",
+  "inputs": {
+    "circuit_file": "circuit.json",
+    "netlist_file": "NETLIST.xml"
+  },
+  "circuit_sha256": "80aceb62b867a158efafe1cccc0763384479b2f619c79f407a8b722f2816ec69",
+  "native_netlist_sha256": "ed90f9dd85748446c873a69aaf9864c0a9e95c02d4e0fd148efccc4cb9d734e6",
+  "script_sha256": "a7fa0df453ffe88a46f1f11c15f65eff89bda6f8048e53ddba611b116378f84d",
+  "counts": {
+    "static_command_combinations": 2048,
+    "state_transitions": 2048,
+    "unqualified_coincident_transitions": 30,
+    "native_physical_pin_definitions": 730,
+    "sequence_scenarios": 14
+  },
+  "gate_models": [
+    [
+      "U52",
+      [
+        "ACT_READY",
+        "RESET_N",
+        "WD_ENABLE"
+      ],
+      "ARM_CLEAR_BASE"
+    ],
+    [
+      "U52",
+      [
+        "ARM_CLEAR_BASE",
+        "ACT_POWER_ENABLE",
+        "3V3"
+      ],
+      "ARM_CLEAR_N"
+    ],
+    [
+      "U52",
+      [
+        "ACT_READY",
+        "ARM_LATCHED",
+        "ACT_POWER_ENABLE"
+      ],
+      "ARM_READY"
+    ],
+    [
+      "U6",
+      [
+        "WD_ENABLE",
+        "DRIVE_ENABLE",
+        "ARM_READY",
+        "RESET_N"
+      ],
+      "DRIVE_RUN"
+    ],
+    [
+      "U6",
+      [
+        "WD_ENABLE",
+        "SERVO_TX_ENABLE",
+        "ARM_READY",
+        "RESET_N"
+      ],
+      "SERVO_OE_ON"
+    ],
+    [
+      "U11",
+      [
+        "PWM_L",
+        "DRIVE_RUN"
+      ],
+      "PWM_L_SAFE"
+    ],
+    [
+      "U11",
+      [
+        "PWM_R",
+        "DRIVE_RUN"
+      ],
+      "PWM_R_SAFE"
+    ],
+    [
+      "U11",
+      [
+        "DIR_L",
+        "DRIVE_RUN"
+      ],
+      "DIR_L_SAFE"
+    ],
+    [
+      "U11",
+      [
+        "DIR_R",
+        "DRIVE_RUN"
+      ],
+      "DIR_R_SAFE"
+    ]
+  ],
+  "scenarios": [
+    {
+      "name": "fault_recovery_held_clock",
+      "fault": "ACT_READY",
+      "held_clock": false,
+      "trace": [
+        {
+          "time_ns": 10000,
+          "clock": false,
+          "clear_n": false,
+          "q": false,
+          "flags": {
+            "ACT_READY": false,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 20000000,
+          "clock": false,
+          "clear_n": true,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 21000000,
+          "clock": false,
+          "clear_n": true,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 22000000,
+          "clock": true,
+          "clear_n": true,
+          "q": true,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": true,
+          "SERVO_OE_ON": true,
+          "J2": {
+            "1": true,
+            "2": false,
+            "3": true,
+            "4": true
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        }
+      ]
+    },
+    {
+      "name": "fault_recovery_held_clock",
+      "fault": "ACT_READY",
+      "held_clock": true,
+      "trace": [
+        {
+          "time_ns": 10000,
+          "clock": true,
+          "clear_n": false,
+          "q": false,
+          "flags": {
+            "ACT_READY": false,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 20000000,
+          "clock": true,
+          "clear_n": true,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 21000000,
+          "clock": false,
+          "clear_n": true,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 22000000,
+          "clock": true,
+          "clear_n": true,
+          "q": true,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": true,
+          "SERVO_OE_ON": true,
+          "J2": {
+            "1": true,
+            "2": false,
+            "3": true,
+            "4": true
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        }
+      ]
+    },
+    {
+      "name": "fault_recovery_held_clock",
+      "fault": "RESET_N",
+      "held_clock": false,
+      "trace": [
+        {
+          "time_ns": 10000,
+          "clock": false,
+          "clear_n": false,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": false,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 20000000,
+          "clock": false,
+          "clear_n": true,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 21000000,
+          "clock": false,
+          "clear_n": true,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 22000000,
+          "clock": true,
+          "clear_n": true,
+          "q": true,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": true,
+          "SERVO_OE_ON": true,
+          "J2": {
+            "1": true,
+            "2": false,
+            "3": true,
+            "4": true
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        }
+      ]
+    },
+    {
+      "name": "fault_recovery_held_clock",
+      "fault": "RESET_N",
+      "held_clock": true,
+      "trace": [
+        {
+          "time_ns": 10000,
+          "clock": true,
+          "clear_n": false,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": false,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 20000000,
+          "clock": true,
+          "clear_n": true,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 21000000,
+          "clock": false,
+          "clear_n": true,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 22000000,
+          "clock": true,
+          "clear_n": true,
+          "q": true,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": true,
+          "SERVO_OE_ON": true,
+          "J2": {
+            "1": true,
+            "2": false,
+            "3": true,
+            "4": true
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        }
+      ]
+    },
+    {
+      "name": "fault_recovery_held_clock",
+      "fault": "WD_ENABLE",
+      "held_clock": false,
+      "trace": [
+        {
+          "time_ns": 10000,
+          "clock": false,
+          "clear_n": false,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": false,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 20000000,
+          "clock": false,
+          "clear_n": true,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 21000000,
+          "clock": false,
+          "clear_n": true,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 22000000,
+          "clock": true,
+          "clear_n": true,
+          "q": true,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": true,
+          "SERVO_OE_ON": true,
+          "J2": {
+            "1": true,
+            "2": false,
+            "3": true,
+            "4": true
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        }
+      ]
+    },
+    {
+      "name": "fault_recovery_held_clock",
+      "fault": "WD_ENABLE",
+      "held_clock": true,
+      "trace": [
+        {
+          "time_ns": 10000,
+          "clock": true,
+          "clear_n": false,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": false,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 20000000,
+          "clock": true,
+          "clear_n": true,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 21000000,
+          "clock": false,
+          "clear_n": true,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 22000000,
+          "clock": true,
+          "clear_n": true,
+          "q": true,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": true,
+          "SERVO_OE_ON": true,
+          "J2": {
+            "1": true,
+            "2": false,
+            "3": true,
+            "4": true
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        }
+      ]
+    },
+    {
+      "name": "fault_recovery_held_clock",
+      "fault": "ACT_POWER_ENABLE",
+      "held_clock": false,
+      "trace": [
+        {
+          "time_ns": 10000,
+          "clock": false,
+          "clear_n": false,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": false,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 20000000,
+          "clock": false,
+          "clear_n": true,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 21000000,
+          "clock": false,
+          "clear_n": true,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 22000000,
+          "clock": true,
+          "clear_n": true,
+          "q": true,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": true,
+          "SERVO_OE_ON": true,
+          "J2": {
+            "1": true,
+            "2": false,
+            "3": true,
+            "4": true
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        }
+      ]
+    },
+    {
+      "name": "fault_recovery_held_clock",
+      "fault": "ACT_POWER_ENABLE",
+      "held_clock": true,
+      "trace": [
+        {
+          "time_ns": 10000,
+          "clock": true,
+          "clear_n": false,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": false,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 20000000,
+          "clock": true,
+          "clear_n": true,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 21000000,
+          "clock": false,
+          "clear_n": true,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 22000000,
+          "clock": true,
+          "clear_n": true,
+          "q": true,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": true,
+          "SERVO_OE_ON": true,
+          "J2": {
+            "1": true,
+            "2": false,
+            "3": true,
+            "4": true
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        }
+      ]
+    },
+    {
+      "name": "boot_and_first_explicit_arm",
+      "trace": [
+        {
+          "time_ns": 10000,
+          "clock": true,
+          "clear_n": false,
+          "q": false,
+          "flags": {
+            "ACT_READY": false,
+            "RESET_N": false,
+            "WD_ENABLE": false,
+            "ACT_POWER_ENABLE": false,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 20000000,
+          "clock": true,
+          "clear_n": false,
+          "q": false,
+          "flags": {
+            "ACT_READY": false,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 40000000,
+          "clock": true,
+          "clear_n": true,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 41000000,
+          "clock": false,
+          "clear_n": true,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 42000000,
+          "clock": true,
+          "clear_n": true,
+          "q": true,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": true,
+          "SERVO_OE_ON": true,
+          "J2": {
+            "1": true,
+            "2": false,
+            "3": true,
+            "4": true
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        }
+      ]
+    },
+    {
+      "name": "arm_pulse_during_fault_held_high_afterwards",
+      "trace": [
+        {
+          "time_ns": 10000,
+          "clock": true,
+          "clear_n": false,
+          "q": false,
+          "flags": {
+            "ACT_READY": false,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 20000000,
+          "clock": true,
+          "clear_n": true,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        }
+      ]
+    },
+    {
+      "name": "UART_packet_enable_is_not_clock",
+      "trace": [
+        {
+          "time_ns": 10000,
+          "clock": false,
+          "clear_n": true,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": false
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 20000,
+          "clock": false,
+          "clear_n": true,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 30000,
+          "clock": false,
+          "clear_n": true,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": false
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 40000,
+          "clock": false,
+          "clear_n": true,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 50000,
+          "clock": false,
+          "clear_n": true,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": false
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 60000,
+          "clock": false,
+          "clear_n": true,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 70000,
+          "clock": false,
+          "clear_n": true,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": false
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 80000,
+          "clock": false,
+          "clear_n": true,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 90000,
+          "clock": false,
+          "clear_n": true,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": false
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 100000,
+          "clock": false,
+          "clear_n": true,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 110000,
+          "clock": false,
+          "clear_n": true,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": false
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 120000,
+          "clock": false,
+          "clear_n": true,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 130000,
+          "clock": false,
+          "clear_n": true,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": false
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 140000,
+          "clock": false,
+          "clear_n": true,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 150000,
+          "clock": false,
+          "clear_n": true,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": false
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 160000,
+          "clock": false,
+          "clear_n": true,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 170000,
+          "clock": false,
+          "clear_n": true,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": false
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 180000,
+          "clock": false,
+          "clear_n": true,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 190000,
+          "clock": false,
+          "clear_n": true,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": false
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 200000,
+          "clock": false,
+          "clear_n": true,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        }
+      ]
+    },
+    {
+      "name": "deliberately_invalid_clear_release_clock_coincidence",
+      "expected": "UNQUALIFIED",
+      "trace": [
+        {
+          "time_ns": 10000,
+          "clock": true,
+          "clear_n": true,
+          "q": null,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": null,
+          "SERVO_OE_ON": null,
+          "J2": {
+            "1": null,
+            "2": false,
+            "3": null,
+            "4": null
+          },
+          "timing_issues": [
+            "clock inside clear-release guard"
+          ],
+          "logic_power_valid": true
+        }
+      ]
+    },
+    {
+      "name": "deliberately_invalid_one_ns_clock_pulse",
+      "expected": "UNQUALIFIED",
+      "trace": [
+        {
+          "time_ns": 10000,
+          "clock": true,
+          "clear_n": true,
+          "q": true,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": true,
+          "SERVO_OE_ON": true,
+          "J2": {
+            "1": true,
+            "2": false,
+            "3": true,
+            "4": true
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 10001,
+          "clock": false,
+          "clear_n": true,
+          "q": null,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": null,
+          "SERVO_OE_ON": null,
+          "J2": {
+            "1": null,
+            "2": false,
+            "3": null,
+            "4": null
+          },
+          "timing_issues": [
+            "clock high pulse below2.7ns"
+          ],
+          "logic_power_valid": true
+        }
+      ]
+    },
+    {
+      "name": "power_invalid_then_qualified_reset",
+      "trace": [
+        {
+          "time_ns": 10000,
+          "q": null,
+          "logic_power_valid": false
+        },
+        {
+          "time_ns": 20000000,
+          "clock": true,
+          "clear_n": false,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": false,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        },
+        {
+          "time_ns": 40000000,
+          "clock": true,
+          "clear_n": true,
+          "q": false,
+          "flags": {
+            "ACT_READY": true,
+            "RESET_N": true,
+            "WD_ENABLE": true,
+            "ACT_POWER_ENABLE": true,
+            "DRIVE_ENABLE": true,
+            "SERVO_TX_ENABLE": true
+          },
+          "DRIVE_RUN": false,
+          "SERVO_OE_ON": false,
+          "J2": {
+            "1": false,
+            "2": false,
+            "3": false,
+            "4": false
+          },
+          "timing_issues": [],
+          "logic_power_valid": true
+        }
+      ]
+    }
+  ],
+  "timing": {
+    "supply_nominal_V": 3.384,
+    "DFF_table_supply_range_V": [
+      3.0,
+      3.6
+    ],
+    "DFF_min_clear_low_ns": 2.7,
+    "DFF_min_clock_high_low_ns": 2.7,
+    "DFF_clear_release_setup_before_clock_ns": 1.2,
+    "DFF_separate_clear_removal_spec_ns": null,
+    "DFF_max_input_slew_ns_per_V": 10,
+    "model_protocol_guard_ns": 1000.0,
+    "recommended_GPIO_pulse_ns": 1000000,
+    "note": "Guard is a conservative protocol choice, not a fabricated manufacturer removal specification. Near-coincidences and out-of-range supply are explicitly unqualified."
+  },
+  "guarantee": "After a valid ACT_READY/RESET_N/WD_ENABLE/ACT_POWER_ENABLE low clears U51, restoring those levels or old PWM/TX_ENABLE levels cannot restore permission without a new qualified rising edge on the dedicated ARM_COMMIT clock.",
+  "limits": [
+    "Current contract/native netlist logic check only; no PCB copper connectivity, routed slew or hardware test.",
+    "Digital Boolean/state model, not transistor SPICE, EMI, analog brownout, metastability probability, contact bounce or real motor/servo simulation.",
+    "No guarantee for a clock edge inside asynchronous-clear recovery/removal uncertainty. The protocol must hold clock low during qualification and wait before pulsing.",
+    "The circuit recognizes a new electrical ARM_COMMIT edge; firmware must discard queued old arm events and must never clock this signal per UART packet.",
+    "ACT_POWER_ENABLE remains upstream; the latch inhibits new motor PWM/DIR and UART transmission, not actuator power or autonomous behaviour of an already-commanded/restarting servo.",
+    "Unpowered Cytron braking/regeneration and supply transients remain outside the model."
+  ]
+}

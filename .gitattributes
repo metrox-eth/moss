@@ -1,0 +1,4 @@
+electrical/*.kicad_pcb -diff
+electrical/MOSS.pretty/** linguist-vendored=true
+checks/*.json linguist-generated=true
+evidence/*.json linguist-generated=true

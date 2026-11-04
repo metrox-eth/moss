@@ -1,0 +1,585 @@
+{
+  "repository": "https://github.com/metrox-eth/moss",
+  "commit": "89db394b67da0afb0144c24023628f015c6967d0",
+  "snapshot_date": "2026-11-05",
+  "board_last_published_update": "2026-11-02",
+  "pcb_sha256": "4f456f0563e9dc5a3b7cbab98eaa8d9f24485d14dc79a7656af5ab04b983b6b1",
+  "native_kicad_files_byte_identical_to_source": true,
+  "documentation_adjustment": "Some relative links point to the full repository at the pinned source commit.",
+  "files": {
+    "electrical/01_USB_Power.kicad_sch": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/01_USB_Power.kicad_sch",
+      "original_git_blob": "c509161a9ea8446259a0f22c2b16770031488815",
+      "sha256": "3fa5e87a542a1ea22954ff650a782216367a9cacaaa49d4fdf572812fd62acbf",
+      "bytes": 80361
+    },
+    "electrical/02_Controller.kicad_sch": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/02_Controller.kicad_sch",
+      "original_git_blob": "e8d0221315d8f0bba26ea61a47d94e78a8c79216",
+      "sha256": "f852944702e2f69acaa46aa1bd669ac16bed7d5c5ab3745de6e79dfef7d2778c",
+      "bytes": 81798
+    },
+    "electrical/03_Hardware_Interlock.kicad_sch": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/03_Hardware_Interlock.kicad_sch",
+      "original_git_blob": "95c8c59bafedf89f267b09c01977b1c05d7d4b2a",
+      "sha256": "0d732ba938d4a6c67ac6d1bfd92b344c867d402daa4f3149b73a7345e0d35a52",
+      "bytes": 81374
+    },
+    "electrical/04_Drive_Encoders.kicad_sch": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/04_Drive_Encoders.kicad_sch",
+      "original_git_blob": "10cf2fcb0cbc99d1b538d3658c7c168b8305d2de",
+      "sha256": "3d33800c9cb9095ccce556607bdecfee2d21bbbc0eacb39667d7382c047f0fab",
+      "bytes": 134595
+    },
+    "electrical/05_Servo.kicad_sch": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/05_Servo.kicad_sch",
+      "original_git_blob": "d41d81e8ac9c9723bdf5f5a2432d6781e6bdcfc6",
+      "sha256": "6a7c82a46b745ddd6cf6030c52398f58da0f9229ebeccac58d55ee1f6eca454a",
+      "bytes": 38992
+    },
+    "electrical/06_Audio.kicad_sch": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/06_Audio.kicad_sch",
+      "original_git_blob": "e91011103493a02524677254a12887a484fa6c85",
+      "sha256": "799d90d8179718f06e8e7b7a5483041e17c1600a9ce50519884eb2eb525e5bd3",
+      "bytes": 64055
+    },
+    "electrical/07_Battery_Voltage.kicad_sch": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/07_Battery_Voltage.kicad_sch",
+      "original_git_blob": "7cf78a60efb591530ec26fda1123c4ef7add0c2c",
+      "sha256": "1eb4e9de1676ca9bcb7f3c5f7c29a2f77f95a8ea9967e6eafac44e8c1f335be6",
+      "bytes": 17860
+    },
+    "electrical/09_Audio_Power.kicad_sch": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/09_Audio_Power.kicad_sch",
+      "original_git_blob": "e0ba1f3cf6d4517b43bf53652937ca88a22768f2",
+      "sha256": "5e61de9b1aa96b58ebb81700320da25143f553d86607009a9301dd5813ade424",
+      "bytes": 38892
+    },
+    "electrical/10_Battery_Power.kicad_sch": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/10_Battery_Power.kicad_sch",
+      "original_git_blob": "25f6b4bec550ba3d36358bc16763be271c243711",
+      "sha256": "074947d57428eba15134572bde5e1cb4ddc074649d1677a95604281a71fcd3b5",
+      "bytes": 10503
+    },
+    "electrical/16_Orange_Pi_Power.kicad_sch": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/16_Orange_Pi_Power.kicad_sch",
+      "original_git_blob": "556733d401d8b273539da49aad0b022012d158e2",
+      "sha256": "96327667fead1427c418236587ac46f09a56d00ce978c44a1034dd098b4cbbb0",
+      "bytes": 92421
+    },
+    "electrical/17_Motor_Current.kicad_sch": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/17_Motor_Current.kicad_sch",
+      "original_git_blob": "3eaec8da1c1db3b926cabde788196cea377193aa",
+      "sha256": "f3f4c233e95c2d2e07528c7c70f574f5cd82617b179a31b98bb105a2ea842b15",
+      "bytes": 48178
+    },
+    "electrical/18_Actuator_Cutoff.kicad_sch": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/18_Actuator_Cutoff.kicad_sch",
+      "original_git_blob": "b37deec16c659a09ba78f242aea1271cc7152e6c",
+      "sha256": "c3d6d0e08e057c2286851b12f7a1e44c0fc811ec48ecd1ca3c866214776c7c44",
+      "bytes": 58150
+    },
+    "electrical/19_Fans.kicad_sch": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/19_Fans.kicad_sch",
+      "original_git_blob": "08c585eaec82d0abaf7429e6a586f689f44635ef",
+      "sha256": "9016812d051dcfe94462d556a78942b2705c91fa4e026a5279ac555ce54ababb",
+      "bytes": 10451
+    },
+    "electrical/BOM.json": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/BOM.json",
+      "original_git_blob": "bf9bf51fa28c446a9b470a1591b01520d62c9288",
+      "sha256": "79766035398571fca3857600901ec3591c8fa5cb1f7a5f3743247f9527ccc2a7",
+      "bytes": 37286
+    },
+    "electrical/MCU_PIN_MAP.json": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MCU_PIN_MAP.json",
+      "original_git_blob": "26849efa9583272185d4fb051fa2c6478ab83320",
+      "sha256": "64d7c9f4bf37b9fefce667e99dd607e88e90d8d0e479c9827932cba1aa8605fe",
+      "bytes": 3254
+    },
+    "electrical/MOSS.kicad_sym": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.kicad_sym",
+      "original_git_blob": "e669acff1f8aaea912b9bade8db8df5148d16664",
+      "sha256": "f34892c1c1045e520463837666cd53c4e688985722dd749fd7cd713dd6fc83ff",
+      "bytes": 295359
+    },
+    "electrical/MOSS.pretty/Button_Switch_SMD_SW_Push_1P1T_NO_CK_KMR2.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Button_Switch_SMD_SW_Push_1P1T_NO_CK_KMR2.kicad_mod",
+      "original_git_blob": "33ba4850a4b9c15e15c3322225925f3c7274db2e",
+      "sha256": "433ba4b677161514c7809202cb49e1e4d299c2399fc57327077b67e83a30ae15",
+      "bytes": 4157
+    },
+    "electrical/MOSS.pretty/Capacitor_SMD_CP_Elec_6.3x5.9.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Capacitor_SMD_CP_Elec_6.3x5.9.kicad_mod",
+      "original_git_blob": "e123aa8d4e03d4d1824bc39c2325aeb4e6a6b68b",
+      "sha256": "31667e472901e55b4853e6378d1f6734cf346544668d6445ef56f87266c8e839",
+      "bytes": 5231
+    },
+    "electrical/MOSS.pretty/Capacitor_SMD_C_0402_1005Metric.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Capacitor_SMD_C_0402_1005Metric.kicad_mod",
+      "original_git_blob": "d5e1669d1c3924b44fed55cb7763b090404e793a",
+      "sha256": "59a574359ce9d2edc5ffb85d2b28af6e99fdff63aa419bb839918c8216a7e404",
+      "bytes": 1937
+    },
+    "electrical/MOSS.pretty/Capacitor_SMD_C_0603_1608Metric.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Capacitor_SMD_C_0603_1608Metric.kicad_mod",
+      "original_git_blob": "bb0b8e160f50f90377e88c04018ea5ae5fc927c2",
+      "sha256": "d868255d0ce37cb5f53470bf3464a652008dd262c7733b6f3f3d6ba023803c6e",
+      "bytes": 1929
+    },
+    "electrical/MOSS.pretty/Capacitor_SMD_C_0805_2012Metric.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Capacitor_SMD_C_0805_2012Metric.kicad_mod",
+      "original_git_blob": "66c3e2213a5693376b687fbbd8395f85c987ded2",
+      "sha256": "1711192f7b24ee9d3f49a3e7614564af1163d448a923de3e43dc4d7a6963c163",
+      "bytes": 2031
+    },
+    "electrical/MOSS.pretty/Capacitor_SMD_C_1206_3216Metric.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Capacitor_SMD_C_1206_3216Metric.kicad_mod",
+      "original_git_blob": "5fe94c9e08976e57cfe792bf32e22db48a4a08ad",
+      "sha256": "cd32001f37c37af2833a65a56db69283fce14c07f211a4e25facce7767c4de3f",
+      "bytes": 1939
+    },
+    "electrical/MOSS.pretty/Capacitor_SMD_C_1210_3225Metric.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Capacitor_SMD_C_1210_3225Metric.kicad_mod",
+      "original_git_blob": "21454b986c71a85c6e72e4ad79a1b8161cd07700",
+      "sha256": "4422eca63653282f2cece15d05ebe82d035e23c2f081cf80b3d275214a9ac918",
+      "bytes": 1937
+    },
+    "electrical/MOSS.pretty/Connector_AMASS_AMASS_XT30PW-M_1x02_P2.50mm_Horizontal_EdgeEntry.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Connector_AMASS_AMASS_XT30PW-M_1x02_P2.50mm_Horizontal_EdgeEntry.kicad_mod",
+      "original_git_blob": "65551fb55bc0d7a91e970a18e14b4c7ff2e31966",
+      "sha256": "e62d018d9f7e0924a7b0a34f380d747ca7526afdfb639b779af3b9d75ac7a8de",
+      "bytes": 6063
+    },
+    "electrical/MOSS.pretty/Connector_AMASS_AMASS_XT30UPB-M_1x02_P5.0mm_Vertical.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Connector_AMASS_AMASS_XT30UPB-M_1x02_P5.0mm_Vertical.kicad_mod",
+      "original_git_blob": "d5848443f4d11153e6698fb33c487bd5b8479230",
+      "sha256": "88cb05166a7f4715fdc86497f13c5df9f3334352bf0e1f1a3e8122538ba4fb74",
+      "bytes": 5177
+    },
+    "electrical/MOSS.pretty/Connector_JST_JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Connector_JST_JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal.kicad_mod",
+      "original_git_blob": "2d81cfe0327e32e540a4832a8c4f59a417a13edc",
+      "sha256": "bd3d91f06a7e137a9121c233155e634b54c6f2cba622dd3a03fd805e84fd9278",
+      "bytes": 5249
+    },
+    "electrical/MOSS.pretty/Connector_JST_JST_GH_SM05B-GHS-TB_1x05-1MP_P1.25mm_Horizontal.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Connector_JST_JST_GH_SM05B-GHS-TB_1x05-1MP_P1.25mm_Horizontal.kicad_mod",
+      "original_git_blob": "c81c40f7d7d84466cbbbb260e15526c40b618592",
+      "sha256": "60d78da749f952c41c3054f139553f9ebfe779eedf78031f67e05584f104be93",
+      "bytes": 5323
+    },
+    "electrical/MOSS.pretty/Connector_JST_JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Connector_JST_JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical.kicad_mod",
+      "original_git_blob": "be7d6acda92e4ed51e1cad5d004b7fbae5e4b881",
+      "sha256": "e9a3ca055ab784da0e8c721b835873fad06ba80fd7e5d83fa2712ff220b3bb14",
+      "bytes": 4474
+    },
+    "electrical/MOSS.pretty/Connector_JST_JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Connector_JST_JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal.kicad_mod",
+      "original_git_blob": "c3f7816b6c4e750ec1b6397475052f8afd555568",
+      "sha256": "f6cf0f972b346df942f394a1dd52d6e17b9ad53efe064b356b37fa45a978f149",
+      "bytes": 5058
+    },
+    "electrical/MOSS.pretty/Connector_JST_JST_SH_BM06B-SRSS-TB_1x06-1MP_P1.00mm_Vertical.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Connector_JST_JST_SH_BM06B-SRSS-TB_1x06-1MP_P1.00mm_Vertical.kicad_mod",
+      "original_git_blob": "d3ebcd94dd72eb6fdd4af9d07a6a1ada63c160f7",
+      "sha256": "53c3c819d715331e1707f16c4a5a722e7fd6ca2e1e240fb0de652927e39590ac",
+      "bytes": 6160
+    },
+    "electrical/MOSS.pretty/Connector_JST_JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Connector_JST_JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical.kicad_mod",
+      "original_git_blob": "79632e1feb687c169d37a6c675c13ea867ce37b0",
+      "sha256": "e6c8288e844619538cacedd7c3c0cd9a77f9c419b743ed312183a146ff98ee69",
+      "bytes": 3353
+    },
+    "electrical/MOSS.pretty/Connector_Molex_Molex_Micro-Fit_3.0_43045-0600_2x03_P3.00mm_Horizontal.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Connector_Molex_Molex_Micro-Fit_3.0_43045-0600_2x03_P3.00mm_Horizontal.kicad_mod",
+      "original_git_blob": "4e7bb78c6ec42a205c6441ff4e000a76fcbd9379",
+      "sha256": "05f6ba88ba803eaeccbc9e611ac426283b4741106d9c3b01641f75bbb2c051a4",
+      "bytes": 4757
+    },
+    "electrical/MOSS.pretty/Connector_Molex_Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Connector_Molex_Molex_Micro-Fit_3.0_43045-0612_2x03_P3.00mm_Vertical.kicad_mod",
+      "original_git_blob": "53a7df42412485b2f545204ba82dc5db709543d7",
+      "sha256": "4ee789ca0db376f1801b61fa09a5bd1a0c475eb76dd8ec1b114bec9d24611c2d",
+      "bytes": 8055
+    },
+    "electrical/MOSS.pretty/Connector_Molex_Molex_Micro-Fit_3.0_43045-1000_2x05_P3.00mm_Horizontal.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Connector_Molex_Molex_Micro-Fit_3.0_43045-1000_2x05_P3.00mm_Horizontal.kicad_mod",
+      "original_git_blob": "e98d7b9423aacebb38e9d4d9ff3be18ea0be7261",
+      "sha256": "e046f67c4596e1ea228eeebe7722a12c79e9b57a82b685a343a36cb259326ef2",
+      "bytes": 5393
+    },
+    "electrical/MOSS.pretty/Connector_Molex_Molex_Micro-Fit_3.0_43045-1012_2x05_P3.00mm_Vertical.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Connector_Molex_Molex_Micro-Fit_3.0_43045-1012_2x05_P3.00mm_Vertical.kicad_mod",
+      "original_git_blob": "a60592f0e429ce48e1ca0946dbe6fa4a3709c09b",
+      "sha256": "d3e1d93bfcb27a02cb1ef56c7c873154a6b38614ff58f9f199c2240752280611",
+      "bytes": 8205
+    },
+    "electrical/MOSS.pretty/Connector_Molex_Molex_SPOX_5267-03A_1x03_P2.50mm_Vertical.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Connector_Molex_Molex_SPOX_5267-03A_1x03_P2.50mm_Vertical.kicad_mod",
+      "original_git_blob": "0555d958394857ff4b1b6241bafb2ba70cab2ce6",
+      "sha256": "26691bcf747cff198411da827ed8ba2a2a6b2f1abc661a80553a6b8660d84777",
+      "bytes": 3764
+    },
+    "electrical/MOSS.pretty/Connector_Molex_Molex_SPOX_5268-03A_1x03_P2.50mm_Horizontal.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Connector_Molex_Molex_SPOX_5268-03A_1x03_P2.50mm_Horizontal.kicad_mod",
+      "original_git_blob": "a32819b30c106559133fc7ff054960cd41a4f5db",
+      "sha256": "91f2bb20791b342aa62a908dda0c1242bb1539132c36341bdbcf2a90ebcd0f0b",
+      "bytes": 4891
+    },
+    "electrical/MOSS.pretty/Connector_USB_USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Connector_USB_USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.kicad_mod",
+      "original_git_blob": "ce2e97fcce3181bf335aa06f93b8f120646165d8",
+      "sha256": "21eb03a8b57a777dd1012d747daa9be8f2842ee8019c6badced9a9651d403e81",
+      "bytes": 7061
+    },
+    "electrical/MOSS.pretty/Diode_SMD_D_SMB.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Diode_SMD_D_SMB.kicad_mod",
+      "original_git_blob": "6e84e6503900b494d08203d8eff58bb4bc12dbb8",
+      "sha256": "3a4a45ad27a1e82c3a12538c50afd80671bf8c6b5112d1caba663eae8737f9bd",
+      "bytes": 4548
+    },
+    "electrical/MOSS.pretty/Diode_SMD_D_SOD-123.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Diode_SMD_D_SOD-123.kicad_mod",
+      "original_git_blob": "2b3c0b5582f9c3e2bf6b12b69c4ef78a4525b56f",
+      "sha256": "cf0853fd94d3ba2a3fef24a6592b93f10a06f2d8de6d719bbca042f99442b52c",
+      "bytes": 4581
+    },
+    "electrical/MOSS.pretty/Diode_SMD_D_SOD-323.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Diode_SMD_D_SOD-323.kicad_mod",
+      "original_git_blob": "eb126f6e3d499bf61827143e596b38504c579468",
+      "sha256": "bdbdc360aa5188f7fba3014a3d961be5645877452c0ba7ab299e1647249e521a",
+      "bytes": 4436
+    },
+    "electrical/MOSS.pretty/Diode_SMD_D_SOD-523.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Diode_SMD_D_SOD-523.kicad_mod",
+      "original_git_blob": "ab83dd5aca2bfd9e459711040d17576910ff82a6",
+      "sha256": "5c47c9905d63faaa235e41aeae0412ed52138f9a9abf728615596bdbcd8fe717",
+      "bytes": 4487
+    },
+    "electrical/MOSS.pretty/Diode_SMD_Nexperia_CFP3_SOD-123W.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Diode_SMD_Nexperia_CFP3_SOD-123W.kicad_mod",
+      "original_git_blob": "6a3bd3965264f759356c71ed8ed6d2c1a07b57d7",
+      "sha256": "d0b9f0cb100522c6d8d36fb623ba4112bafe228a00a113883c402919f05cb29f",
+      "bytes": 4502
+    },
+    "electrical/MOSS.pretty/Fuse_Fuse_Littelfuse-NANO2-885.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Fuse_Fuse_Littelfuse-NANO2-885.kicad_mod",
+      "original_git_blob": "f0047a89a6d14e9ed74637c9814fc7b1930c894b",
+      "sha256": "c42ca6b6efda451e0ca830a6aa214c22de1219db7bbe1a1874973e7051a232b2",
+      "bytes": 3637
+    },
+    "electrical/MOSS.pretty/Fuse_Littelfuse_0451_Nano2.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Fuse_Littelfuse_0451_Nano2.kicad_mod",
+      "original_git_blob": "7347729e5fbc99a199db068fb23e42cebe1c1e04",
+      "sha256": "057d57cebfd29bc7120ccee7cdb7a9efffba938da76ecbcf996372ab026a6d5b",
+      "bytes": 1161
+    },
+    "electrical/MOSS.pretty/Inductor_SMD_L_Bourns_SRP6060FA.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Inductor_SMD_L_Bourns_SRP6060FA.kicad_mod",
+      "original_git_blob": "9c386d75eb35e3551422d921733291383d4a68bd",
+      "sha256": "16c4ddc13671453c35af1b57636d6e57074016bd1a93119aba40dd074c9c39f2",
+      "bytes": 2044
+    },
+    "electrical/MOSS.pretty/Inductor_SMD_L_Coilcraft_XAL4020-XXX.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Inductor_SMD_L_Coilcraft_XAL4020-XXX.kicad_mod",
+      "original_git_blob": "6a77a3084a95865b88aabbdd153923434ff0f3ab",
+      "sha256": "31aac3dfe38eb8f324989c6da7d57770fd85f2db7a782e4f56074d87a59f6cc1",
+      "bytes": 2068
+    },
+    "electrical/MOSS.pretty/LED_SMD_LED_0603_1608Metric.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/LED_SMD_LED_0603_1608Metric.kicad_mod",
+      "original_git_blob": "6f14e5e9f91af8577c46452a303490078e5d4453",
+      "sha256": "90c23978eb2345ec7167c83127b9c7135e01b12f9db4970bca540b17191e8894",
+      "bytes": 2432
+    },
+    "electrical/MOSS.pretty/MOSS_Mount_M2p5_2p7_D6.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/MOSS_Mount_M2p5_2p7_D6.kicad_mod",
+      "original_git_blob": "e39de34f2171b8e363932be231a1a0c59ce715e7",
+      "sha256": "e05f35331f08cd3596d3ef16e74223605ce0eb15a4a827c8a16d8bbad14db7fd",
+      "bytes": 595
+    },
+    "electrical/MOSS.pretty/MOSS_Mount_M2p5_2p7_D8.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/MOSS_Mount_M2p5_2p7_D8.kicad_mod",
+      "original_git_blob": "a4f750ecddfb86cf56e4fba53a0f2dc8eea90c27",
+      "sha256": "50f0e219bd3e5eb0f3f19fca97143da3ce7cacf7ab95c7c484c00bbe43e1d376",
+      "bytes": 595
+    },
+    "electrical/MOSS.pretty/MOSS_Mount_M2p5_GND_D8.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/MOSS_Mount_M2p5_GND_D8.kicad_mod",
+      "original_git_blob": "d362fc9aa81daa16e61111bcf6f4dd14d45be664",
+      "sha256": "0c41d5bf4b925ab665bf0ba0d9f77a2a60a1db0ca2437a8f02c1db53283503da",
+      "bytes": 2668
+    },
+    "electrical/MOSS.pretty/MOSS_Power_MP9447_QFN25_3x4.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/MOSS_Power_MP9447_QFN25_3x4.kicad_mod",
+      "original_git_blob": "d34f2554a97f31ffcb42c687b1365253412119ee",
+      "sha256": "d214415c1dfd672b42f872d6756fe85f1f479423d1cc55126413202ccf6e3dd1",
+      "bytes": 3382
+    },
+    "electrical/MOSS.pretty/MOSS_V07_CSS2H_2512K_Bourns.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/MOSS_V07_CSS2H_2512K_Bourns.kicad_mod",
+      "original_git_blob": "464fbb4da6aeab4ccd7e74b64dd03f8eca3f0f27",
+      "sha256": "ce0fc8efd753d3bc5091e20b827dabfe28ad53ae213442ad8f776f38ef76d193",
+      "bytes": 1092
+    },
+    "electrical/MOSS.pretty/Package_DFN_QFN_MAX98357A_T1633_4_90_0031.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Package_DFN_QFN_MAX98357A_T1633_4_90_0031.kicad_mod",
+      "original_git_blob": "62265355ef06c10fcd317e885f565d87f9549e2f",
+      "sha256": "79518dce3fdd1c5714fd628dfb0cd3454f2b0af9a4b69cd5e621b099f8ffe7c4",
+      "bytes": 7509
+    },
+    "electrical/MOSS.pretty/Package_DFN_QFN_Texas_RVC0020A_WQFN-20-1EP_3x4mm_P0.5mm_EP1.6x2.6mm_ThermalVias.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Package_DFN_QFN_Texas_RVC0020A_WQFN-20-1EP_3x4mm_P0.5mm_EP1.6x2.6mm_ThermalVias.kicad_mod",
+      "original_git_blob": "32a17a953ac09d36733efbdb3642f1f9ad9e537e",
+      "sha256": "d5fad165e23c7328af9a19bacb3e5d8b0ee4a7fd10656c870e0c0c8a8cf7e573",
+      "bytes": 8692
+    },
+    "electrical/MOSS.pretty/Package_SON_VSON-8-1EP_3x3mm_P0.65mm_EP1.65x2.4mm.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Package_SON_VSON-8-1EP_3x3mm_P0.65mm_EP1.65x2.4mm.kicad_mod",
+      "original_git_blob": "c08765c91a0b5882c4045bc4ab16fd942265c9b4",
+      "sha256": "ec797b556ab94756fe7e33dee7551f5e3232c564d49501208f6cc15c3eb978f0",
+      "bytes": 4923
+    },
+    "electrical/MOSS.pretty/Package_SO_MSOP-10_3x3mm_P0.5mm.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Package_SO_MSOP-10_3x3mm_P0.5mm.kicad_mod",
+      "original_git_blob": "c0db24316f84fb43d606c91681507ff4740ddda9",
+      "sha256": "65c23add7af2f2a30edd0f0436230d4ad522fb11d7a4b801518724bd5856c4e8",
+      "bytes": 7164
+    },
+    "electrical/MOSS.pretty/Package_SO_PowerPAK_SO-8_Single.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Package_SO_PowerPAK_SO-8_Single.kicad_mod",
+      "original_git_blob": "2709d5982a9deea33042e57a14b47fd83a708f2c",
+      "sha256": "5ab58d78514fd49ecb9def985369d467044eba75ff53ceaf37f47640391f4063",
+      "bytes": 4874
+    },
+    "electrical/MOSS.pretty/Package_SO_TSSOP-14_4.4x5mm_P0.65mm.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Package_SO_TSSOP-14_4.4x5mm_P0.65mm.kicad_mod",
+      "original_git_blob": "738f4121c5e12437cb010f3a6a65c60a3a7a9065",
+      "sha256": "ab8826b0c30a16c4c79a1d9cc43277e4198530d890b0b4486025b0249871b4f3",
+      "bytes": 5378
+    },
+    "electrical/MOSS.pretty/Package_SO_TSSOP-8_4.4x3mm_P0.65mm.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Package_SO_TSSOP-8_4.4x3mm_P0.65mm.kicad_mod",
+      "original_git_blob": "8548afd39c821d43f8595a7e49d0612388321851",
+      "sha256": "1b908731d09b6173ab87370f051b8ad42ce49073bfcb200cf0417c716c6634a5",
+      "bytes": 4604
+    },
+    "electrical/MOSS.pretty/Package_SO_VSSOP-8_2.3x2mm_P0.5mm.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Package_SO_VSSOP-8_2.3x2mm_P0.5mm.kicad_mod",
+      "original_git_blob": "47eafc7051c609d05075533768a9c24cff80212c",
+      "sha256": "4e907b9c6a04ca98e5aaac52513b7d29f4d8572e3af1b1361616a23a384e2e23",
+      "bytes": 6145
+    },
+    "electrical/MOSS.pretty/Package_TO_SOT_SMD_SOT-23-5.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Package_TO_SOT_SMD_SOT-23-5.kicad_mod",
+      "original_git_blob": "5d7beb80c993798e4087fbedd9220858ec73d130",
+      "sha256": "56665b9629bd9421fa1b5106294b94d7e931b7a444e3712dcaa7d3d298ced86f",
+      "bytes": 4751
+    },
+    "electrical/MOSS.pretty/Package_TO_SOT_SMD_SOT-23-6.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Package_TO_SOT_SMD_SOT-23-6.kicad_mod",
+      "original_git_blob": "97539d040a75d1ac2b6d17e259d0704d389d2aeb",
+      "sha256": "a624b3d7fd0733da18f9d4544486ce7d69d363b541db22d3e7a8e875d74e5405",
+      "bytes": 4286
+    },
+    "electrical/MOSS.pretty/Package_TO_SOT_SMD_SOT-23.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Package_TO_SOT_SMD_SOT-23.kicad_mod",
+      "original_git_blob": "2c598294a923cd00301bac05ba321b58fc893091",
+      "sha256": "1fc64a59ce10911e130c0050db406230830188e05d7a5cce2f1fb3d7879a8f10",
+      "bytes": 4491
+    },
+    "electrical/MOSS.pretty/Package_TO_SOT_SMD_SOT-323_SC-70.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Package_TO_SOT_SMD_SOT-323_SC-70.kicad_mod",
+      "original_git_blob": "f5d912c324ef68f32d0fc08d8f1deea00f069c9d",
+      "sha256": "fa9a3ed068d67ac84eb0c127d6efaf2cc19ca4458d0e44b8ba92e1df315e8e63",
+      "bytes": 4296
+    },
+    "electrical/MOSS.pretty/Package_TO_SOT_SMD_SOT-353_SC-70-5.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Package_TO_SOT_SMD_SOT-353_SC-70-5.kicad_mod",
+      "original_git_blob": "f0c681ece89d515619c8e8709b33bfbb22d8e7d1",
+      "sha256": "ebb3e3a60fae926649e3c2607c1b39bcb585d1cad10c6205b32edc9f5f38a039",
+      "bytes": 4901
+    },
+    "electrical/MOSS.pretty/RF_Module_ESP32-S3-WROOM-1U.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/RF_Module_ESP32-S3-WROOM-1U.kicad_mod",
+      "original_git_blob": "41d2478b11757b744183ec7ab3c0ecd4397f474c",
+      "sha256": "75475cdd2aa5c3d15dccbcd6b8adba1e19ca63330b08a4931f5fb6a175e273b6",
+      "bytes": 14938
+    },
+    "electrical/MOSS.pretty/Resistor_SMD_R_0402_1005Metric.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Resistor_SMD_R_0402_1005Metric.kicad_mod",
+      "original_git_blob": "29e939016cede98bc2d271821e93f158ce6b504c",
+      "sha256": "cac0c58feb3a3a908debd1bddbefbe3a76fb0483436c0e91ae122cd454ac37ec",
+      "bytes": 1937
+    },
+    "electrical/MOSS.pretty/Resistor_SMD_R_0603_1608Metric.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Resistor_SMD_R_0603_1608Metric.kicad_mod",
+      "original_git_blob": "fd85a5ef1e2c54081152e4bb55d310283d4be2d2",
+      "sha256": "fbcf38e085a3d5a76df02ca931b641f0cd462ef4a97b4ceb14367d1a80608d11",
+      "bytes": 1943
+    },
+    "electrical/MOSS.pretty/Resistor_SMD_R_1206_3216Metric.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/Resistor_SMD_R_1206_3216Metric.kicad_mod",
+      "original_git_blob": "4ae7f5c03900e4185ed65c500b2417030821337f",
+      "sha256": "105f91691a8aaebe8f8a381f975304307551e70973ad93dee10adc50bdf2cd10",
+      "bytes": 1943
+    },
+    "electrical/MOSS.pretty/TerminalBlock_Phoenix_TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/TerminalBlock_Phoenix_TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal.kicad_mod",
+      "original_git_blob": "8eda13a71a32327722b7723d27b714c8737c3ca8",
+      "sha256": "68ddf52ca63afa46954a2db2362c7b7e893678112ee22cd8cc0599b9e5d4cbfd",
+      "bytes": 4523
+    },
+    "electrical/MOSS.pretty/TestPoint_TestPoint_Pad_D1.0mm.kicad_mod": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS.pretty/TestPoint_TestPoint_Pad_D1.0mm.kicad_mod",
+      "original_git_blob": "68ebfd16579e2006e7f5ce41989d83f11b1bc8ac",
+      "sha256": "be28d30483ce15dc3f110c7fc6c311c84e9766305cb5a7c314aaf202419d76b3",
+      "bytes": 1758
+    },
+    "electrical/MOSS_Core_V07_Prototype.kicad_dru": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS_Core_V07_Prototype.kicad_dru",
+      "original_git_blob": "9f7814d7d25d84ad06dba6565787acd31095e54c",
+      "sha256": "c39def057e204409fa042e1c68b905486cfb948b02db4ca079145826dfac18ea",
+      "bytes": 2713
+    },
+    "electrical/MOSS_Core_V07_Prototype.kicad_pcb": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS_Core_V07_Prototype.kicad_pcb",
+      "original_git_blob": "5369791922f1523f980c129f58e4f25127b50287",
+      "sha256": "4f456f0563e9dc5a3b7cbab98eaa8d9f24485d14dc79a7656af5ab04b983b6b1",
+      "bytes": 2795913
+    },
+    "electrical/MOSS_Core_V07_Prototype.kicad_pro": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS_Core_V07_Prototype.kicad_pro",
+      "original_git_blob": "08e19044ebb65a1f0e239929681ea476ecd7dd7f",
+      "sha256": "874d73c022a1a29260d729258ec7fcdaf404e1cc32ba3cd578a0277e957481ff",
+      "bytes": 14305
+    },
+    "electrical/MOSS_Core_V07_Prototype.kicad_sch": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/MOSS_Core_V07_Prototype.kicad_sch",
+      "original_git_blob": "197132a9bdd2c86b9dca9207b87666db63109f67",
+      "sha256": "bec1a7bc8f26de9c6403a0ae8ccb967cdb98e0cdad72d2443e468bdb30197043",
+      "bytes": 18125
+    },
+    "electrical/fp-lib-table": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/fp-lib-table",
+      "original_git_blob": "9b288d33f6a5ae4db0ffda9f718976907d108503",
+      "sha256": "649e163907570b09af9ca8809bee1f3385e72e50e2eb9bb8e229923ea7f13fd0",
+      "bytes": 137
+    },
+    "electrical/sym-lib-table": {
+      "source_path": "hardware/electronics/moss-core-v0.7/electrical/sym-lib-table",
+      "original_git_blob": "1da903aaf4d657af26e1a45d09593fd1be478111",
+      "sha256": "e281d613cef681ed94420244e864e2b34916b376f093119993058baaac69a70f",
+      "bytes": 138
+    },
+    "docs/CONNECTORS.md": {
+      "source_path": "hardware/electronics/moss-core-v0.7/CONNECTORS.md",
+      "original_git_blob": "e683cd8081c0378bbd6e86656ce505104f703d6d",
+      "sha256": "7b3b04f6832924a37d79c8c3e57480502cd723e25caa1f09464cb2633f7c88a9",
+      "bytes": 9128
+    },
+    "docs/MOTOR_WIRING.md": {
+      "source_path": "hardware/electronics/moss-core-v0.7/MOTOR_WIRING.md",
+      "original_git_blob": "aaa80da5b7c6fda42801f0f3ec3c2a937a051524",
+      "sha256": "ccacc1e13a2dfba525152aa7786d4bc68e704280425ac047ec98370704489711",
+      "bytes": 5184
+    },
+    "docs/MOUNTING.md": {
+      "source_path": "hardware/electronics/moss-core-v0.7/MOUNTING.md",
+      "original_git_blob": "303dd0a92a331e7b2b8e4b76bcb2ea8ddd6ca808",
+      "sha256": "fa178ec3d96907af0a71edead47534d0619a840be06beae39c5a2745f25c85fc",
+      "bytes": 2227
+    },
+    "docs/POWER_AND_REARM.md": {
+      "source_path": "hardware/electronics/moss-core-v0.7/POWER_AND_REARM.md",
+      "original_git_blob": "6fae8fcd39e091e1752bb4d17befbf29a6b3bd72",
+      "sha256": "9dcd67d0b52a8de283fbfede2e295020c022de740269124641e37de35407b231",
+      "bytes": 7078
+    },
+    "LICENSE": {
+      "source_path": "hardware/electronics/moss-core-v0.7/LICENSE",
+      "original_git_blob": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    "LICENSE-HARDWARE": {
+      "source_path": "hardware/electronics/moss-core-v0.7/LICENSE-HARDWARE",
+      "original_git_blob": "baee873b679e36a4123c83b8a29e0fb17fad14eb",
+      "sha256": "600ca4e25fe11762b75a97e714707fab48bb778374e92d24c6ca068791661c11",
+      "bytes": 19018
+    },
+    "NOTICE": {
+      "source_path": "hardware/electronics/moss-core-v0.7/NOTICE",
+      "original_git_blob": "765038e17b8c527e61ba7c91345b7e3148bcb0c7",
+      "sha256": "6170ba3765654afed1075527ffacfe22a31e5086b9315cc08883ddb98c4a7296",
+      "bytes": 2265
+    },
+    "KiCad_Libraries_LICENSE.md": {
+      "source_path": "hardware/electronics/moss-core-v0.7/KiCad_Libraries_LICENSE.md",
+      "original_git_blob": "327317f61dd65cd0da7af643a9ace96da9d90c8f",
+      "sha256": "285b027a721577d0bc0198f36e948c6c282ddaa4b58fef8ed826749576eb0aef",
+      "bytes": 2105
+    },
+    "evidence/FIRMWARE_CROSSCHECK.json": {
+      "source_path": "hardware/electronics/moss-core-v0.7/evidence/FIRMWARE_CROSSCHECK.json",
+      "original_git_blob": "9ec6d5241b6759c91bd46d334e9f668c2507085e",
+      "sha256": "fe1571da792b0188d932c6ce32edab89bba4ac5bd48968d8a1086be96de1acb9",
+      "bytes": 2173
+    },
+    "evidence/POWER_NOISE_REVIEW.json": {
+      "source_path": "hardware/electronics/moss-core-v0.7/evidence/POWER_NOISE_REVIEW.json",
+      "original_git_blob": "c49e79e44dbdf6ed4216b1b83f5f172bc0cacb1d",
+      "sha256": "57e59ab7fe777c51c596233b7f5b0f0e7f255fe34599c1582df15a56ef4be62c",
+      "bytes": 1368
+    },
+    "evidence/POWER_AND_GROUND.json": {
+      "source_path": "hardware/electronics/moss-core-v0.7/evidence/POWER_AND_GROUND.json",
+      "original_git_blob": "367970cc548d7131807a94d242fb3168726842b6",
+      "sha256": "cc9ec89f77f722fa734a157261eb6e80391e5a632cfbc10b239b83e349f24f0e",
+      "bytes": 90209
+    },
+    "evidence/LOGIC_REARM_MODEL.json": {
+      "source_path": "hardware/electronics/moss-core-v0.7/evidence/LOGIC_REARM_MODEL.json",
+      "original_git_blob": "f0d4e239356fa6bfb23103ceee39584d12affef8",
+      "sha256": "b05da5f91ee13303b44f1596d5079c4b101f141fd7e6fca7f1b9d155d1dcfb54",
+      "bytes": 44674
+    },
+    "evidence/LATCH_LOAD_AND_TIMING.json": {
+      "source_path": "hardware/electronics/moss-core-v0.7/evidence/LATCH_LOAD_AND_TIMING.json",
+      "original_git_blob": "e525d451cd961d019ff9cda5c981a66902dd3821",
+      "sha256": "87bc27c85de5efa83982d41c30e98a95f809516d757aab44fabd55ece94d8c2d",
+      "bytes": 3305
+    },
+    "evidence/F1_SELECTION.md": {
+      "source_path": "hardware/electronics/moss-core-v0.7/evidence/F1_SELECTION.md",
+      "original_git_blob": "afbe10fa21dfdf301d3bafbafafecc583fd4a8d2",
+      "sha256": "26052882174a581ac45b20940ef56f279fc5c61b697bbe035e6688ecfe3acaa7",
+      "bytes": 3564
+    },
+    "BOM.csv": {
+      "source_path": "hardware/electronics/moss-core-v0.7/delivery/assembly/MOSS_CORE_V07_PROTOTYPE_BOM.csv",
+      "original_git_blob": "6763444941b5803ed3acc02ff81d920a95167cf1",
+      "sha256": "2e7059a0ebacc8bf465b89b45eb893c72502f77aad264f50c6d3619857f119cf",
+      "bytes": 8777
+    },
+    "docs/FABRICATION_NOTES.txt": {
+      "source_path": "hardware/electronics/moss-core-v0.7/delivery/fabrication/FABRICATION_NOTES.txt",
+      "original_git_blob": "0b9c181259acb1817e40ad33e49eb350eb1841d4",
+      "sha256": "d0065e64dacce66d3c3054f624fc2c3183bf6d7c876703dfaf3af4e1c0e32c4c",
+      "bytes": 1636
+    }
+  },
+  "package_checks": {
+    "kicad_version": "10.0.6",
+    "erc_violations": 0,
+    "drc_errors": 0,
+    "drc_warnings": 2,
+    "unconnected_items": 0,
+    "schematic_parity_issues": 0,
+    "schematic_sheets": 14,
+    "omitted_assets_do_not_break_electrical_checks": true
+  }
+}
