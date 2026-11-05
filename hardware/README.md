@@ -16,6 +16,8 @@ See the [print catalogue](../3DPrinting.md), [BOM](../BOM.md) and [assembly guid
 
 The matching [V0.7 hull prototype](mechanical/moss-v0.7-hull/) provides STEP, STL, editable Fusion geometry and rebuild sources for the 74 × 71 mm fixings, five cable-tie bridges and divider notch. The updated [wiring harness](electronics/moss-core-v0.7/harness/) includes one six-wire cable per motor, the grouped Cytron link, a detachable STOP tail, an offline viewer and a prototype quotation package. These are V0.7 prototypes; they do not replace the released V0.6/R92 build.
 
+[MOSS Core V0.8 notes](electronics/moss-core-v0.8/) collect observations to revisit after testing the V0.7 prototype.
+
 [MOSS Core V1D](electronics/moss-core-v1d/) is retained as the previous routed design review. Its assumptions and package are historical; it is not the current V0.7 design.
 
 [V1C](electronics/moss-core-v1c/) is retained for traceability and **must not be fabricated** because of a physical-pin mapping error; see the [critical erratum](electronics/moss-core-v1d/V1C_CRITICAL_ERRATA.txt).
