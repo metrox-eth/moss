@@ -68,7 +68,7 @@ Build MOSS in this order:
 
 1. Match the locating feature on each pair of halves.
 2. Close each wheel with three M3 × 20 screws and three M3 nuts. Keep the HEX12 seat clear.
-3. Insert one HEX12 metal hub (6 mm bore, 18 mm length) into the hexagonal seat of each printed drive wheel. The gold-coloured hubs supplied with our motors fit this design; check whether your motor kit includes them.
+3. Insert one HEX12 metal hub (6 mm bore, 18 mm length) into the hexagonal seat of each printed drive wheel. The motors used in the original MOSS build came with a gold-coloured hub and two set screws per motor. If your motor kit does not include them, order two HEX12 metal hubs (6 mm bore, 18 mm length), each with two matching set screws, separately.
 4. Keep the two hub set screws accessible through the side openings in the printed wheel. These screws secure the metal hub to the 6 mm steel drive axle. Tighten them when fitting the axle in step 08.
 
 ### 04. Build the two idler wheels
