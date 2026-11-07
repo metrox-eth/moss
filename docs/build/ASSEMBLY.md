@@ -64,9 +64,12 @@ Build MOSS in this order:
 | HEX12 metal hub, 6 mm bore, 18 mm length | 2 |
 | M3 × 20 socket-head screw | 6 |
 | M3 hex nut | 6 |
+| Hub set screws, supplied with the metal hubs (2 per hub) | 4 |
 
 1. Match the locating feature on each pair of halves.
 2. Close each wheel with three M3 × 20 screws and three M3 nuts. Keep the HEX12 seat clear.
+3. Insert one HEX12 metal hub (6 mm bore, 18 mm length) into the hexagonal seat of each printed drive wheel. The gold-coloured hubs supplied with our motors fit this design; check whether your motor kit includes them.
+4. Keep the two hub set screws accessible through the side openings in the printed wheel. These screws secure the metal hub to the 6 mm steel drive axle. Tighten them when fitting the axle in step 08.
 
 ### 04. Build the two idler wheels
 
@@ -144,8 +147,11 @@ Build MOSS in this order:
 | M3 × 15 socket-head screw | 6 |
 | M3 hex nut | 6 |
 
-1. Use SP03 (3 dots, 7.6 mm) on the motor side and SP04 (4 dots, 12.6 mm) on the outer side of the drive wheel.
-2. Put SP11 (3.5 mm, no dots) between the outer 626 bearing and LK06 (6 mm bore). Secure each bearing cover with three M3 × 15 screws and nuts.
+1. Dry-fit each drive wheel and its metal hub on the 6 mm steel drive axle. Mark where the two opposing hub set screws meet the axle.
+2. Remove the axle and lightly sand two small, shallow flats at those marks, one on each side. Keep the bearing seats round and remove burrs and sanding dust before assembly. The flats help prevent the hub from slipping on the axle.
+3. Use SP03 (3 dots, 7.6 mm) on the motor side and SP04 (4 dots, 12.6 mm) on the outer side of the drive wheel.
+4. Align the two hub set screws with the flats and tighten both with an Allen key through the wheel openings, one from each side. Check that the wheel and axle turn together without slipping.
+5. Put SP11 (3.5 mm, no dots) between the outer 626 bearing and LK06 (6 mm bore). Secure each bearing cover with three M3 × 15 screws and nuts.
 
 [Watch the exploded assembly](videos/03-drive-wheel-spacers.mp4)
 
