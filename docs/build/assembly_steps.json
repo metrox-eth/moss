@@ -317,6 +317,7 @@
         }
       ],
       "actions": [
+        "JGB37-520 is a motor family, not a complete specification. This build uses the 12 V, 110 rpm output, 90:1 version with a Hall encoder and a 6 mm D-shaft. Check the voltage and output speed on the supplier listing and motor label; the gearbox ratio alone does not identify the version. Do not connect a 6 V motor to the rover battery following this guide.",
         "Use three M3 × 8 screws per motor, without washers. The other six M3 × 8 screws secure the two bearing retainers.",
         "Put four M4 nuts into each motor-support nut pocket and secure each support to the hull with four M4 × 20 screws.",
         "Fit the inner bearing retainers with three M3 × 8 screws per side."

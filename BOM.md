@@ -20,6 +20,8 @@ One rover, using separate off-the-shelf modules. Choose one computer and one dep
 
 ## Drive
 
+**Before buying motors:** JGB37-520 is a motor family, not a complete specification. This build uses the 12 V, 110 rpm output, 90:1 version with a Hall encoder and a 6 mm D-shaft. Check the voltage and output speed on the supplier listing and motor label; the gearbox ratio alone does not identify the version. Do not connect a 6 V motor to the rover battery following this guide.
+
 | Item | Quantity | Note |
 |---|---:|---|
 | JGB37-520, 12 V, 90:1, 110 rpm, Hall encoder, 6 mm D-shaft | 2 |  |
