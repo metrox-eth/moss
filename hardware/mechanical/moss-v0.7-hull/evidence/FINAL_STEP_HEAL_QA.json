@@ -1,0 +1,16 @@
+{
+  "status": "VALID_NATIVE_STEP_WITH_BOUNDED_TOPOLOGY_REPAIR",
+  "source": "Hull_MOSS_V07_NATIVE_MATCHED.step",
+  "source_sha256": "44cc81f3abf9c0127b9d46e54ec1c473886045880e853b5029f8a8cf1adea4d7",
+  "operation": "Remove sole invalid near-zero-area planar sliver and sew adjacent native surfaces at0.001mm. Preserve all3shells in ONEsolid, including2internalvoids. No global remeshing.",
+  "removed_face_index": 576,
+  "removed_face_area_mm2": -0.02081180135046168,
+  "sewing_tolerance_mm": 0.001,
+  "reimport_valid": true,
+  "solid_count": 1,
+  "shell_count": 3,
+  "adaptive_source_volume_mm3": 634959.9384876812,
+  "adaptive_repaired_volume_mm3": 634959.3311521171,
+  "sha256": "204b0278790d85e66ae092e0badc4b7c943411de250136060151c4ffec8ab828",
+  "volume_difference_mm3": -0.6073355640983209
+}

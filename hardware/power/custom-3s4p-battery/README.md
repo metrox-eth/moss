@@ -171,13 +171,15 @@ For this common-port BMS, the charging negative returns to **C−**. Charging po
 | Internal male charging lead | 1 | [MookMig 5.5 × 2.1 mm](https://www.lazada.co.th/products/jack-dc-male-18awg-pvc-5521-powerbox-i2148060041-s7690922633.html), option **ตัวผู้ 0.3M 18AWG**; stock length 300 mm, trim only after measuring the installed route |
 | Battery female charging lead | 1 | [MookMig 5.5 × 2.1 mm](https://www.lazada.co.th/products/jack-dc-male-18awg-pvc-5521-powerbox-i2148060041-s7690922637.html), option **ตัวเมีย 0.3M 18AWG** |
 
-The MookMig listing specifies 18 AWG wire but does not provide a separate continuous-current datasheet for the molded contacts. Confirm the **complete mating assemblies** for 5 A before use. These are sourcing candidates, not tested replacements. The DC099's 11 mm hole must be checked against the existing rear opening. Verify the charger's actual plug: **5.5 × 2.1 and 5.5 × 2.5 mm are different sizes**.
+Use the **18 AWG** option for both charging leads. The wire size alone does not establish the contact rating: the complete mating connection must carry **5 A continuously**. Verify centre-positive polarity before connecting the charger. The rear socket uses an **11 mm mounting hole**. Match the actual charger plug: **5.5 × 2.1 mm and 5.5 × 2.5 mm are different sizes**.
 
 ### Rover main switch
 
-The main switch carries the full rover current, with 15 A as the present design requirement. Select a documented DC switching rating of at least 20 A at the operating voltage of a 3S pack (up to 12.6 V), with suitable load/inrush ratings and terminals for the main wiring. Do not use a KCD11 with only AC ratings or unknown ratings in this path. Thicker wires do not increase the contact rating. The replacement part and panel fit still need to be confirmed.
+Fit the round KCD1-5-101EN main switch in the 20 mm opening. This replaces the small KCD11. The selected supplier lists 20 A at 12 V DC. Use the optional splash cap if available. Keep the existing 15 A pack fuse and main power wiring.
 
-The [Kejian KCD11 specifications](https://www.kjele.com/product/rocker-switch-kcd-series-kcd11.html) list 3 A / 250 VAC and 6 A / 125 VAC, with no DC rating. That does not qualify an unidentified KCD11 for the rover's 15 A DC path. Keep the pack's **15 A fuse**; selecting a higher-rated switch is not a reason to increase the fuse.
+[Selected switch](https://www.lazada.co.th/products/led-dc12v-20a-20-kcd1-5-101en-onoff-round-rocker-toggle-switch-push-button-switch-20mm-i2389441284-s11758134838.html): **สวิตช์1ตัว+ยางกันน้ำ** includes the transparent splash cap. The switch carries the rover supply, with **15 A** as the design requirement. The charging connection carries **5 A**. These are separate paths.
+
+Route pack positive through the existing fuse and the switch's two power contacts. The third terminal is only for the LED return. Identify the terminals from the supplied switch markings or a continuity check before wiring; do not infer their functions from colour or position. Insulate the terminals after connecting them.
 
 ### 6. Insulate and wrap
 

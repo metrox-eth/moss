@@ -1,5 +1,12 @@
 # MOSS R92 — mechanical changes
 
+## 9 November 2026 — Important Safety Update
+
+- Replaced the small main switch with a round KCD1-5-101EN, listed for 20 A at 12 V DC.
+- Specified a DC099 rear charging socket and 18 AWG leads for the complete 5 A charging connection. Rover power stays on XT30 with the existing 15 A pack fuse.
+- Updated the one-piece and split hulls, Fusion/STEP sources, both 3MF projects, BOM and assembly instructions. The rear socket uses an 11 mm mounting hole; the switch uses a keyed 20 mm opening.
+
+
 ## 24 October package update
 
 - Replaced the two-port USB hub with the Hoco HB1 four-port USB 2.0 hub.

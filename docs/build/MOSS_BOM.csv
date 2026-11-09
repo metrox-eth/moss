@@ -29,13 +29,15 @@ Two-part epoxy adhesive kit (resin + hardener),1,For gluing the four bin magnets
 "12-cell battery pack, 3S4P, with BMS",1,110 × 67 × 35 mm.
 12.6 V CC/CV charger for the selected 3S pack,1,
 "Emergency stop LA16-11ZS/A, 16 mm",1,
-Main power switch with DC rating for the complete rover load,1,"15 A rover design requirement; select documented 20 A or higher DC switch covering 12.6 V and startup peaks. Reference and panel fit pending."
+"KCD1-5-101EN round rocker switch, 12 V LED, 20 mm mounting hole",1,"PADPAD, listed 20 A / 12 V DC. Switch + splash cap option. https://www.lazada.co.th/products/led-dc12v-20a-20-kcd1-5-101en-onoff-round-rocker-toggle-switch-push-button-switch-20mm-i2389441284-s11758134838.html"
 "Inline blade-fuse holder, 14 AWG",1,
 "ATC blade fuse, 15 A",1,
 Amass XT30 male/female connector pair,6,
-"DC panel socket, 5.5 ×2.1 mm",2,Rear charge socket and complete mating cable must support 5 A continuous. Verify mounting hole and plug fit.
+"DC099 rear charging socket, 5.5 × 2.1 mm, 11 mm mounting hole",1,"DIYsound, silver #061-2, listed 5 A / 30 V. https://www.lazada.co.th/products/diysound-dc099-11mm-female-size-55-21mm-dc-099-jack-socket-55x21-mm-metal-dc-socket-power-socket-gold-female-dc-jack-dc099-i2791212067-s14534609557.html"
+"Battery female charging lead, 5.5 × 2.1 mm, 18 AWG",1,MookMig female 0.3M 18AWG. Stock 300 mm. https://www.lazada.co.th/products/jack-dc-male-18awg-pvc-5521-powerbox-i2148060041-s7690922637.html
 DC male barrel plug — computer power,1,"Jetson option: 5.5 × 2.5 mm, 9.5 mm barrel, centre positive. Pi option: match the input of the selected 5 V power supply. Choose one."
-"DC male barrel plug, 5.5 × 2.1 mm",2,One for Waveshare Bus Servo Adapter A; one for the battery charging extension. The charging assembly must support 5 A continuous; use short 18 AWG minimum copper leads.
+"DC male barrel plug, 5.5 × 2.1 mm — servo power branch",1,For Waveshare Bus Servo Adapter A.
+"Internal male charging lead, 5.5 × 2.1 mm, 18 AWG",1,"MookMig male 0.3M 18AWG. Stock 300 mm, trim to fitted route. Complete mating connection must carry 5 A. https://www.lazada.co.th/products/jack-dc-male-18awg-pvc-5521-powerbox-i2148060041-s7690922633.html"
 "Wire, ferrules and heat-shrink",1,One set for the power and signal wiring.
 Hoco HB1 four-port USB 2.0 hub,1,
 GameSir Nova 2 Lite gamepad with wireless USB receiver,1,For manual driving; include the wireless USB receiver. Used successfully on MOSS.

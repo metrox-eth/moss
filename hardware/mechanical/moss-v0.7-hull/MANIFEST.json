@@ -1,5 +1,5 @@
 {
-  "status": "CURRENT_HULL_74x71_SOURCE_AND_EXPORT_INVENTORY",
+  "status": "CURRENT_HULL_74x71_WITH_ELECTRICAL_UPDATE",
   "units": "mm",
   "pcb_sha256": "7d88c146a2482b4d89a26b8dbafe18132ae649e58c58671ddaed233b6ab8bc14",
   "files": {
@@ -12,36 +12,36 @@
       "sha256": "74358322a12cb579f758e083b10cad617d97869cf73fff3106db6c35e570184a"
     },
     "README.md": {
-      "bytes": 4092,
-      "sha256": "01b8598208004fd4dcb1b2a3d66cdb70ecd5ce54bf1d8c7cb188eab2c64a6e62"
+      "bytes": 3629,
+      "sha256": "ca39aeb020b6d2a3ea2a1d332bced2fef9d16d67aaebfeec59b37ee8c404fc51"
     },
     "cad/Hull_MOSS_V07_Core_74x71_EDITABLE.f3d": {
-      "bytes": 3391770,
-      "sha256": "cf7568e6b675fd62b193d25f3ea2aa774c6301abdab9ccef405e8d1ec29c3d00"
+      "bytes": 1217150,
+      "sha256": "6d5d0ec74b152e6f11b7f7a612ab4957cac68680f071b32e75ee4db246b48850"
     },
     "cad/Hull_MOSS_V07_Core_Stack.step": {
-      "bytes": 8796144,
-      "sha256": "93699d5219fa699f0ed72d8527ee1579ebd5b5b51b05fac893e344254e7bde37"
+      "bytes": 8486559,
+      "sha256": "204b0278790d85e66ae092e0badc4b7c943411de250136060151c4ffec8ab828"
     },
     "cad/Hull_MOSS_V07_Harness_Tie_Loops_PROTOTYPE.step": {
-      "bytes": 9153473,
-      "sha256": "bdfd0b6d3a3fa2ff688d87edff741f517d6c7c8d3123c199e8d7bf481fff52b5"
+      "bytes": 8966690,
+      "sha256": "3d39092df277d02114fd00eed807724843848b15e8254e6cc83996210fad1e03"
     },
     "cad/tie_anchors_overlay.step": {
       "bytes": 244268,
-      "sha256": "63f553e411831e459df0cc7f35cc755c2e755cc75aa696e64869d284c6dc2405"
+      "sha256": "acae9cd110e1da54d8604b842e0e7c50c574fa08129b506ea81ef665501ebc4f"
     },
     "evidence/DIVIDER_WIRE_NOTCH_QA.json": {
-      "bytes": 2373,
-      "sha256": "954fb9ce3c8c0a517a73eadbfc8c31b833dae65d31c4c82763cbcc09f8cee99b"
+      "bytes": 2313,
+      "sha256": "8268b2de6eed522936ee89563892cfcbe6dee4d18c5eb3be0f66d97074665c54"
     },
     "evidence/ENVIRONMENT.json": {
       "bytes": 292,
       "sha256": "d529fec4d732be1d4f47379fe5b5eb42ba81ff7d9ed87c75f307820015396c73"
     },
     "evidence/FINAL_HULL_ARTIFACTS.json": {
-      "bytes": 743,
-      "sha256": "58ec748c96856ca6664578cb31c182e66694714e7bf90a45faefe2c732c63964"
+      "bytes": 1145,
+      "sha256": "806af7758bc6d4f293c5fceffaf25ade265442c8702becbdea2d55f3ad7a2d69"
     },
     "evidence/FUSION_NATIVE_PRINT_EXPORT.json": {
       "bytes": 708,
@@ -49,7 +49,7 @@
     },
     "evidence/GEOMETRY_SNAPSHOT.json": {
       "bytes": 493,
-      "sha256": "1dfbed2994aa23f379219025344e9d5ff0e645dd17cd91a7b80452a549342601"
+      "sha256": "a35bc278ed850488583d5fcc47043d8940440f301923895792c3627bf2f52334"
     },
     "evidence/INDEPENDENT_HULL_PILOTS.json": {
       "bytes": 1335,
@@ -64,12 +64,12 @@
       "sha256": "7f70b0134820653b533addc0035443d3bd4be824c26d8659a18bbda6f05fde44"
     },
     "evidence/LOCAL_WELD_QA.json": {
-      "bytes": 574,
-      "sha256": "1e65e6064e9d332763f4d9aa788e0b735830b8d343c54560142c676a6a5f8e85"
+      "bytes": 575,
+      "sha256": "6be47cf2d18a91c37e3eec458833f520a301ea1c78bb227a23f243a48a8348b7"
     },
     "evidence/hull_tie_variant_QA.json": {
-      "bytes": 11756,
-      "sha256": "ec264f4e9ab0d97694ecbb60027b3f54e56c42715aec62f756267edaaa818dd1"
+      "bytes": 11682,
+      "sha256": "8be4daca7d0d110839b82e6ca02d28190c6de1c756957ed165a20b1b5d4e2af0"
     },
     "harness/source/add_divider_wire_notch.py": {
       "bytes": 6376,
@@ -84,16 +84,16 @@
       "sha256": "0ceeaef36a354a066d7bb618b41f7da752cb05fec17dbce60968aa6999ac470f"
     },
     "preview/HULL_WITH_TIES_AND_NOTCH.npz": {
-      "bytes": 643846,
-      "sha256": "bdc6081a537d639d1953eb401c2f496ff410160f168409a05dd643dd28e5393e"
+      "bytes": 639560,
+      "sha256": "644715f85656f87966a49430121e5ad7f6f4cb4ccad45e96f68b57255c6e374c"
     },
     "preview/mounting.svg": {
       "bytes": 2510,
       "sha256": "da70ba916d6bbf0151b3f22a863547057548767e2e73426c9b41a4a4a01fd58d"
     },
     "preview/tie_anchors_overlay.npz": {
-      "bytes": 25776,
-      "sha256": "83e7b32024908bd5d5c29e0ee448531f884424bc5751c436ec1f6e11748644d1"
+      "bytes": 25777,
+      "sha256": "53019bf6d5d2c0d74719d5865adf8d68b05f0eb43ee6dd41bc8cd09d0128e3b5"
     },
     "reference/Hull_Core_72x67.step": {
       "bytes": 8522964,
@@ -108,8 +108,8 @@
       "sha256": "540b26938321268156500984b74ae83221e220a445943e1fe98c6192d616af5d"
     },
     "reference/Hull_R92_native.smt": {
-      "bytes": 6150272,
-      "sha256": "d8230d76d527cc603b469f31f186b0b5061a9b342d5de5401b3ee1877f108ae5"
+      "bytes": 5751775,
+      "sha256": "575b13f2b5ed09256b54d353569930f9ee4419b69561d667af7ff8a3ae625cd3"
     },
     "reference/mechanical_parameters_before.json": {
       "bytes": 6200,
@@ -152,24 +152,33 @@
       "sha256": "8e08d87e34d2fdea252eab23f4e1aa5658f8aeea7e8d4c59f0dbe497556d7bc9"
     },
     "source/rebuild.py": {
-      "bytes": 2174,
-      "sha256": "0194b121a0b4190fdbbc1b71d0e22fe3c8c51e985f3b1fc05447776101e29a5d"
+      "bytes": 2440,
+      "sha256": "cd8929dd5619ba6d456e7785ba97acf8c2677146822c7e6487c204335b5151d8"
     },
     "source/run_fusion_native_export.py": {
-      "bytes": 1992,
-      "sha256": "b547fc8f66b8a8130e9576eb24af766faaedfaed6203be54bb4d137c412e6425"
+      "bytes": 2032,
+      "sha256": "f44bc2fea8c2f105d237ea088064bba8f7f39f1e538b403e524c921e34bafcfd"
     },
     "source/weld_native_mesh.py": {
       "bytes": 1519,
       "sha256": "ad6e8753c328b8736f553e440b74af577b0a2bec2b84e110f92bdb8cddbd2a50"
     },
     "stl/Hull_MOSS_V07_Harness_Tie_Loops_PROTOTYPE.stl": {
-      "bytes": 3929084,
-      "sha256": "f2a01d2b0b696583a667c67974691ad508d3c799999874d7d93c534850d8db5f"
+      "bytes": 3936084,
+      "sha256": "9bf404ee03a68732e1b79d36cddd94b1b6cf65e15ea927da20150af7e33cccb1"
     },
     "stl/Hull_MOSS_V07_Print.stl": {
-      "bytes": 3733584,
-      "sha256": "3bf5893f4bf1fae1a56c78f92af5f0615a3b058d9275406c3ca181befed899cd"
+      "bytes": 3741584,
+      "sha256": "aefb72a5363d626cd44e0b8587b4f33d4c6bb14d88ef252740dd98a391fa5827"
+    },
+    "evidence/FUSION_NATIVE_BUILD.json": {
+      "bytes": 6286,
+      "sha256": "5e737d7506ba488c91a294e07cc357f0a292c0577288ca7a2d42c47b0171ef70"
+    },
+    "evidence/FINAL_STEP_HEAL_QA.json": {
+      "bytes": 799,
+      "sha256": "9e0487d6cdb185a697964f36a2437c092c3459cccdc0115aa6dad051011937c5"
     }
-  }
+  },
+  "updated": "2026-11-09"
 }

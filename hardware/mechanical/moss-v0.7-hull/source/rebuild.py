@@ -20,8 +20,8 @@ def main():
     parser.add_argument('--resume-after-native-mesh',action='store_true')
     args=parser.parse_args()
     if not args.resume_after_native_mesh:
-        run(ROOT/'source/build_mount_refresh.py','--execute')
         run(ROOT/'source/run_fusion_native_export.py','--endpoint',args.fusion_endpoint)
+        run(ROOT/'source/heal_matched_step.py')
         run(ROOT/'source/weld_native_mesh.py')
     geometry_names=['cad/Hull_MOSS_V07_Core_Stack.step','stl/Hull_MOSS_V07_Print.stl',
                     'cad/Hull_MOSS_V07_Core_74x71_EDITABLE.f3d']
@@ -40,6 +40,10 @@ def main():
     for name,folder in [('Hull_MOSS_V07_Harness_Tie_Loops_PROTOTYPE.step','cad'),
                         ('Hull_MOSS_V07_Harness_Tie_Loops_PROTOTYPE.stl','stl'),
                         ('HULL_WITH_TIES_AND_NOTCH.npz','preview')]:
+        shutil.copy2(assets/name,ROOT/folder/name)
+    for name in ['hull_tie_variant_QA.json','DIVIDER_WIRE_NOTCH_QA.json']:
+        shutil.copy2(assets/name,ROOT/'evidence'/name)
+    for name,folder in [('tie_anchors_overlay.step','cad'),('tie_anchors_overlay.npz','preview')]:
         shutil.copy2(assets/name,ROOT/folder/name)
     run(ROOT/'source/build_manifest.py')
 

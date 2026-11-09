@@ -1,16 +1,16 @@
 {
   "files": {
     "cad/Hull_MOSS_V07_Core_Stack.step": {
-      "sha256": "93699d5219fa699f0ed72d8527ee1579ebd5b5b51b05fac893e344254e7bde37",
-      "bytes": 8796144
+      "sha256": "204b0278790d85e66ae092e0badc4b7c943411de250136060151c4ffec8ab828",
+      "bytes": 8486559
     },
     "stl/Hull_MOSS_V07_Print.stl": {
-      "sha256": "3bf5893f4bf1fae1a56c78f92af5f0615a3b058d9275406c3ca181befed899cd",
-      "bytes": 3733584
+      "sha256": "aefb72a5363d626cd44e0b8587b4f33d4c6bb14d88ef252740dd98a391fa5827",
+      "bytes": 3741584
     },
     "cad/Hull_MOSS_V07_Core_74x71_EDITABLE.f3d": {
-      "sha256": "cf7568e6b675fd62b193d25f3ea2aa774c6301abdab9ccef405e8d1ec29c3d00",
-      "bytes": 3391770
+      "sha256": "6d5d0ec74b152e6f11b7f7a612ab4957cac68680f071b32e75ee4db246b48850",
+      "bytes": 1217150
     }
   }
 }

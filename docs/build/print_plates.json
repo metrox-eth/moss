@@ -1,11 +1,11 @@
 {
-  "release_date": "2026-10-24",
+  "release_date": "2026-11-09",
   "profiles": [
     {
       "name": "H2S",
       "file": "MOSS_V06_R92_H2S_Print_Plates.3mf",
       "url": "https://github.com/metrox-eth/moss/releases/download/v0.6-r92/MOSS_V06_R92_H2S_Print_Plates.3mf",
-      "sha256": "8e984615b9c9249fb237852d4b103e47fb7e73ed877e914c7c2db130d10bf5bc",
+      "sha256": "45e6372b5876c0d3e487f42c0035e825fff089c4dfe9b7140e5d10582020fb21",
       "plate_count": 21,
       "common_plates": [
         1,
@@ -468,7 +468,7 @@
       "name": "P1 / P2",
       "file": "MOSS_V06_R92_256mm_Split_Print_Plates.3mf",
       "url": "https://github.com/metrox-eth/moss/releases/download/v0.6-r92/MOSS_V06_R92_256mm_Split_Print_Plates.3mf",
-      "sha256": "d58dc9d09a2285d4e8e6d1924c5c026c6e5f715afe392cf113c2060a1fc8b30a",
+      "sha256": "f071f41f360a0beb34bbc40dbbb0a71740aade128285c11869c4f4911570c7c1",
       "plate_count": 24,
       "common_plates": [
         1,

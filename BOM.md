@@ -57,14 +57,15 @@ LK05/LK06/LK08 are guide identifiers for purchased shaft collars, also called lo
 | 12-cell battery pack, 3S4P, with BMS | 1 | 110 × 67 × 35 mm. |
 | 12.6 V CC/CV charger for the selected 3S pack | 1 |  |
 | Emergency stop LA16-11ZS/A, 16 mm | 1 |  |
-| Main power switch with DC rating for the complete rover load | 1 | **15 A rover design load; select at least 20 A DC switching capacity, covering a 3S pack up to 12.6 V and startup peaks. Replacement reference and panel fit pending.** |
+| KCD1-5-101EN round rocker switch, 12 V LED, 20 mm mounting hole | 1 | [PADPAD](https://www.lazada.co.th/products/led-dc12v-20a-20-kcd1-5-101en-onoff-round-rocker-toggle-switch-push-button-switch-20mm-i2389441284-s11758134838.html), listed 20 A / 12 V DC. Select **สวิตช์1ตัว+ยางกันน้ำ** for the switch with splash cap. |
 | Inline blade-fuse holder, 14 AWG | 1 |  |
 | ATC blade fuse, 15 A | 1 |  |
 | Amass XT30 male/female connector pair | 6 |  |
-| DC panel socket, 5.5 ×2.1 mm | 2 | Female panel-mount sockets. The rear charging socket must be rated for **5 A continuous**; the complete charge lead must match. [Charging path and sourcing options](hardware/power/custom-3s4p-battery/#rear-charging-port-and-cable). |
+| DC099 rear charging socket, 5.5 × 2.1 mm, 11 mm mounting hole | 1 | [DIYsound](https://www.lazada.co.th/products/diysound-dc099-11mm-female-size-55-21mm-dc-099-jack-socket-55x21-mm-metal-dc-socket-power-socket-gold-female-dc-jack-dc099-i2791212067-s14534609557.html), **DC099 เงิน #061-2**, listed 5 A / 30 V. |
+| Battery female charging lead, 5.5 × 2.1 mm, 18 AWG | 1 | [MookMig](https://www.lazada.co.th/products/jack-dc-male-18awg-pvc-5521-powerbox-i2148060041-s7690922637.html), **ตัวเมีย 0.3M 18AWG**. Stock length 300 mm. |
 | DC male barrel plug — computer power branch | 1 | Jetson: **5.5 × 2.5 mm**, 9.5 mm barrel, centre positive ([NVIDIA specification](https://developer.nvidia.com/downloads/assets/embedded/secure/jetson/orin_nano/docs/jetson_orin_nano_devkit_carrier_board_specification_sp.pdf)). Pi option: choose the plug that matches the input of the selected 5 V power supply. These are alternatives. |
 | DC male barrel plug, 5.5 × 2.1 mm — servo power branch | 1 | For the Waveshare Bus Servo Adapter A ([Waveshare specification](https://docs.waveshare.com/Bus_Servo_Adapter_A)). |
-| DC male barrel plug, 5.5 × 2.1 mm — battery extension | 1 | **5 A continuous as a complete assembly**, with short 18 AWG minimum copper leads (16 AWG preferred). Match both sockets and actual charger polarity; measure route before choosing length. |
+| Internal male charging lead, 5.5 × 2.1 mm, 18 AWG | 1 | [MookMig](https://www.lazada.co.th/products/jack-dc-male-18awg-pvc-5521-powerbox-i2148060041-s7690922633.html), **ตัวผู้ 0.3M 18AWG**. Stock length 300 mm; trim to the fitted route. The complete mating connection must carry 5 A. |
 | Wire, ferrules and heat-shrink | 1 lot |  |
 | Hoco HB1 four-port USB 2.0 hub | 1 |  |
 | GameSir Nova 2 Lite gamepad with wireless USB receiver | 1 | For manual driving; include the wireless USB receiver. Used successfully on MOSS. |

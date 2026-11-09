@@ -948,7 +948,7 @@
           "quantity": 1
         },
         {
-          "reference": "Main power switch with DC rating for the complete rover load",
+          "reference": "KCD1-5-101EN round rocker switch, 12 V LED, 20 mm mounting hole",
           "quantity": 1
         },
         {
@@ -974,12 +974,20 @@
           "quantity": 1
         },
         {
-          "reference": "DC male barrel plug, 5.5 × 2.1 mm — battery extension to the panel socket",
+          "reference": "Internal charging lead, 5.5 × 2.1 mm male, 18 AWG",
           "quantity": 1
         },
         {
           "reference": "XT30 enclosure connectors: 1 input + 4 outputs, from the BOM connector pairs",
           "quantity": 5
+        },
+        {
+          "reference": "DC099 rear charging socket, 5.5 × 2.1 mm, 11 mm mounting hole",
+          "quantity": 1
+        },
+        {
+          "reference": "Battery female charging lead, 5.5 × 2.1 mm, 18 AWG",
+          "quantity": 1
         }
       ],
       "fasteners": [
@@ -992,8 +1000,8 @@
         "Clip the two fans into their mounts.",
         "Fit the emergency stop and rocker switch in their hull openings.",
         "Assemble the XT30 base, insulating separator and lid with four low-head M2.5 × 10 screws.",
-        "The complete rear charging path must support 5 A continuous: rear panel socket, internal two-core lead and male plug, and battery female socket/pigtail. Use short copper leads of at least 18 AWG; 16 AWG gives more voltage-drop margin. Match barrel dimensions and polarity, provide strain relief, and protect the charging branch to suit its lowest-rated part.",
-        "The main switch carries the full rover current, with 15 A as the present design requirement. Select a documented DC switching rating of at least 20 A at the operating voltage of a 3S pack (up to 12.6 V), with suitable load/inrush ratings and terminals for the main wiring. Do not use a KCD11 with only AC ratings or unknown ratings in this path. Thicker wires do not increase the contact rating. The replacement part and panel fit still need to be confirmed."
+        "Use a DC099 5.5 × 2.1 mm rear charging socket (11 mm mounting hole), an 18 AWG internal male lead and an 18 AWG female lead on the battery. The complete connection, including both pairs of contacts, must support the 5 A charger. Keep the rover power connection on XT30.",
+        "Fit the round KCD1-5-101EN main switch in the 20 mm opening. This replaces the small KCD11. The selected supplier lists 20 A at 12 V DC. Use the optional splash cap if available. Keep the existing 15 A pack fuse and main power wiring."
       ],
       "video": "videos/07-xt30-power-distribution.mp4"
     },

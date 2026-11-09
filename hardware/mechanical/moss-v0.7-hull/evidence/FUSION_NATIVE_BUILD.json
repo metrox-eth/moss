@@ -1,0 +1,358 @@
+{
+  "source": "Hull_R92_native.smt",
+  "native_source_transform_cm": [
+    1.0,
+    0.0,
+    0.0,
+    0.4000000000000057,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    -2.4,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "original": {
+    "volume_mm3": 651346.4283273952,
+    "solid": true,
+    "lumps": 1,
+    "bounds_mm": [
+      [
+        -164.0,
+        -118.5,
+        0.0
+      ],
+      [
+        164.00000000000006,
+        118.5,
+        66.0
+      ]
+    ]
+  },
+  "result": {
+    "volume_mm3": 634965.0522475637,
+    "solid": true,
+    "lumps": 1,
+    "bounds_mm": [
+      [
+        -164.0,
+        -118.5,
+        0.0
+      ],
+      [
+        164.00000000000006,
+        118.5,
+        66.0
+      ]
+    ]
+  },
+  "added": {
+    "volume_mm3": 7451.315878834739,
+    "solid": true,
+    "lumps": 15,
+    "bounds_mm": [
+      [
+        -159.0,
+        -43.37,
+        3.8083502435795897
+      ],
+      [
+        1.726474410234502,
+        82.99849812999318,
+        47.400000000000006
+      ]
+    ]
+  },
+  "removed": {
+    "volume_mm3": 23835.364854689768,
+    "solid": true,
+    "lumps": 20,
+    "bounds_mm": [
+      [
+        -159.0,
+        -70.37,
+        2.799999999999998
+      ],
+      [
+        16.500000000000057,
+        92.00000000000001,
+        49.0
+      ]
+    ]
+  },
+  "legacy_mount_removals": [
+    {
+      "name": "Jetson_caddy_front_right",
+      "min": [
+        7.499,
+        -62.501,
+        2.79
+      ],
+      "max": [
+        16.501,
+        -53.499,
+        22.701
+      ],
+      "face_count": 4,
+      "removed_volume_mm3": 1119.0743073766353
+    },
+    {
+      "name": "Jetson_caddy_front_left",
+      "min": [
+        7.499,
+        53.499,
+        2.79
+      ],
+      "max": [
+        16.501,
+        62.501,
+        22.701
+      ],
+      "face_count": 4,
+      "removed_volume_mm3": 1122.8507516583195
+    },
+    {
+      "name": "Jetson_caddy_rear_right",
+      "min": [
+        -94.501,
+        -43.501,
+        2.79
+      ],
+      "max": [
+        -85.499,
+        -34.499,
+        22.701
+      ],
+      "face_count": 4,
+      "removed_volume_mm3": 1037.9438507884042
+    },
+    {
+      "name": "Jetson_caddy_rear_left",
+      "min": [
+        -94.501,
+        34.499,
+        2.79
+      ],
+      "max": [
+        -85.499,
+        43.501,
+        22.701
+      ],
+      "face_count": 4,
+      "removed_volume_mm3": 1037.943850788055
+    },
+    {
+      "name": "Waveshare_servo_front_left",
+      "min": [
+        -57.501,
+        48.499,
+        2.79
+      ],
+      "max": [
+        -52.499,
+        53.501,
+        19.501
+      ],
+      "face_count": 2,
+      "removed_volume_mm3": 287.62418371276
+    },
+    {
+      "name": "Waveshare_servo_front_right",
+      "min": [
+        -29.501,
+        48.499,
+        2.79
+      ],
+      "max": [
+        -24.499,
+        53.501,
+        19.501
+      ],
+      "face_count": 2,
+      "removed_volume_mm3": 289.03185269923415
+    },
+    {
+      "name": "Waveshare_servo_rear_bridge",
+      "min": [
+        -59.001,
+        83.999,
+        2.79
+      ],
+      "max": [
+        -22.999,
+        92.001,
+        19.501
+      ],
+      "face_count": 11,
+      "removed_volume_mm3": 1938.1548530490836
+    },
+    {
+      "name": "INA219_both_rails",
+      "min": [
+        -90.1,
+        53.2,
+        2.79
+      ],
+      "max": [
+        -65.85,
+        82.8,
+        22.501
+      ],
+      "face_count": 33,
+      "removed_volume_mm3": 5892.595269671874
+    },
+    {
+      "name": "ESP32_BFF_frame_and_gussets",
+      "min": [
+        -159.001,
+        29.989,
+        39.499
+      ],
+      "max": [
+        -111.799,
+        70.011,
+        49.001
+      ],
+      "boxes": [
+        [
+          [
+            -159.001,
+            29.989,
+            41.999
+          ],
+          [
+            -111.799,
+            70.011,
+            49.001
+          ]
+        ],
+        [
+          [
+            -159.001,
+            30.989,
+            41.049
+          ],
+          [
+            -156.499,
+            35.491,
+            42.001
+          ]
+        ],
+        [
+          [
+            -159.001,
+            63.509,
+            39.499
+          ],
+          [
+            -156.499,
+            68.011,
+            42.001
+          ]
+        ]
+      ],
+      "face_count": 37,
+      "removed_volume_mm3": 4269.2196578700095
+    },
+    {
+      "name": "Cytron_original_offset_frame_and_gussets",
+      "min": [
+        -159.001,
+        -70.372,
+        30.9
+      ],
+      "max": [
+        -92.059,
+        16.371,
+        51.402
+      ],
+      "preserve_rear_wall_microfaces": true,
+      "preserve_rear_wall_planes": true,
+      "face_count": 55,
+      "removed_volume_mm3": 12621.449861634988
+    }
+  ],
+  "cytron_recenter": {
+    "translation_mm": [
+      0,
+      27,
+      0
+    ],
+    "pcb_center_xy_mm": [
+      -124,
+      0
+    ],
+    "mount_pitch_mm": [
+      55.88,
+      78.74
+    ],
+    "mount_xy_mm": [
+      [
+        -151.94,
+        -39.37
+      ],
+      [
+        -151.94,
+        39.37
+      ],
+      [
+        -96.06,
+        -39.37
+      ],
+      [
+        -96.06,
+        39.37
+      ]
+    ],
+    "seat_z_mm": 47.4,
+    "motor_axis_xz_mm": [
+      -121,
+      22.614087480217
+    ],
+    "motor_relief_radius_mm": 18.9,
+    "rear_gusset_y_mm": [
+      -20,
+      20
+    ],
+    "fan_top_z_mm": 40.75,
+    "rear_rail_underside_z_mm": 41.05,
+    "rear_wall_bridge_y_mm": [
+      -26.5,
+      26.5
+    ],
+    "protected_native_fan_clip_regions_mm": [
+      [
+        [
+          -159.01,
+          -46.01,
+          41.14
+        ],
+        [
+          -156.49,
+          -37.99,
+          43.16
+        ]
+      ],
+      [
+        [
+          -159.01,
+          37.99,
+          41.14
+        ],
+        [
+          -156.49,
+          46.01,
+          43.16
+        ]
+      ]
+    ]
+  },
+  "operations": "Remove obsolete Jetson-caddy, Waveshare/servo, INA219 and ESP32 supports. Center the Cytron frame by Y+27mm with unchanged Z47.4 seating and 55.88x78.74mm pitch; preserve motor/fan clearance with two rounded motor reliefs and rear gussets between fans. Core floor boss pattern updated to 74x71 mm at unchanged Z10 seating. Preserve hub mounts, motor and battery interfaces. No global remesh.",
+  "status": "Native Fusion mechanical prototype; no physical fit test"
+}

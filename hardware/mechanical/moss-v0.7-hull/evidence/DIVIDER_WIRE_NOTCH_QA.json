@@ -32,8 +32,8 @@
   "bottom_corner_radius_mm": 2,
   "additional_edge_fillet_mm": 0,
   "edge_note": "The two lower profile corners are R2; no global edge fillet was applied to inherited native surfaces.",
-  "baseline_step_sha256": "f18353186a1477e51fbaae17a3573fe49792f7f835f080e5b07b5e5de683554f",
-  "baseline_stl_sha256": "86c66cf471bc0e04af28d83ce327b123f8ea4af0e50bb191d088de7ce2b4f8e9",
+  "baseline_step_sha256": "f1f5781e246ce7e2ac5931e2bbd455bb2931125738347b6d269ba53a1b8c77f2",
+  "baseline_stl_sha256": "d730315e32731fb1a7224ce63fdee98442a5395d7d1768002ce87cf9e5e301b4",
   "step_roundtrip": {
     "valid": true,
     "solid_count": 1,
@@ -42,7 +42,7 @@
       [
         -164.0000001,
         -118.5000001,
-        -5.765684231515188e-07
+        -5.765684231365385e-07
       ],
       [
         164.00000010000022,
@@ -55,15 +55,15 @@
     "watertight": true,
     "winding_consistent": true,
     "is_volume": true,
-    "vertices": 39166,
-    "triangles": 78580,
+    "vertices": 39236,
+    "triangles": 78720,
     "boundary_edges": 0,
     "nonmanifold_edges": 0,
     "bounds_mm": [
       [
         -164.0,
         -118.5,
-        -1.6787533387672558e-15
+        0.0
       ],
       [
         164.0,
@@ -72,14 +72,14 @@
       ]
     ]
   },
-  "mesh_removed_volume_mm3": 787.6952098549809,
+  "mesh_removed_volume_mm3": 787.6952098548645,
   "pre_notch_vertices_absent_in_result": 0,
   "absent_vertices_outside_notch_tool": 0,
   "mesh_shell_count": 3,
-  "internal_history": "harness/assets/internal_history/pre_notch_f18353186a1477e5",
+  "internal_history": "pre_notch_f1f5781e246ce7e2",
   "native_source_hashes": {
-    "cad/Hull_MOSS_V07_Core_Stack.step": "93699d5219fa699f0ed72d8527ee1579ebd5b5b51b05fac893e344254e7bde37",
-    "stl/Hull_MOSS_V07_Print.stl": "3bf5893f4bf1fae1a56c78f92af5f0615a3b058d9275406c3ca181befed899cd"
+    "Hull_MOSS_V07_Core_Stack.step": "204b0278790d85e66ae092e0badc4b7c943411de250136060151c4ffec8ab828",
+    "Hull_MOSS_V07_Print.stl": "aefb72a5363d626cd44e0b8587b4f33d4c6bb14d88ef252740dd98a391fa5827"
   },
   "native_sources_unchanged": true,
   "harness_step_regenerated": false,

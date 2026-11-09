@@ -296,21 +296,23 @@ All four tensioner sliders are the same printed part. Rotate each slider to matc
 | [XT30 insulating separator](https://github.com/metrox-eth/moss/releases/download/v0.6-r92/XT30_insulating_separator.stl) · PETG | 1 |
 | 3010 fan, 12 V | 2 |
 | Emergency stop LA16-11ZS/A, 16 mm | 1 |
-| Main power switch with DC rating for the complete rover load | 1 |
+| KCD1-5-101EN round rocker switch, 12 V LED, 20 mm mounting hole | 1 |
 | 12-cell battery pack, 3S4P, with BMS, 110 × 67 × 35 mm | 1 |
 | Power harness wire, fuse and USB cables | 1 |
 | DC male barrel plug, 5.5 × 2.5 mm, 9.5 mm barrel, centre positive — Jetson power | 1 |
 | DC male barrel plug matching the input of the Pi 5 V power supply | 1 |
 | DC male barrel plug, 5.5 × 2.1 mm — Waveshare Bus Servo Adapter A power | 1 |
-| DC male barrel plug, 5.5 × 2.1 mm — battery extension to the panel socket | 1 |
+| Internal charging lead, 5.5 × 2.1 mm male, 18 AWG | 1 |
+| DC099 rear charging socket, 5.5 × 2.1 mm, 11 mm mounting hole | 1 |
+| Battery female charging lead, 5.5 × 2.1 mm, 18 AWG | 1 |
 | XT30 enclosure connectors: 1 input + 4 outputs, from the BOM connector pairs | 5 |
 | M2.5 × 10 low-head screw, head diameter 5 mm maximum | 4 |
 
 1. Clip the two fans into their mounts.
 2. Fit the emergency stop and rocker switch in their hull openings.
 3. Assemble the XT30 base, insulating separator and lid with four low-head M2.5 × 10 screws.
-4. The complete rear charging path must support 5 A continuous: rear panel socket, internal two-core lead and male plug, and battery female socket/pigtail. Use short copper leads of at least 18 AWG; 16 AWG gives more voltage-drop margin. Match barrel dimensions and polarity, provide strain relief, and protect the charging branch to suit its lowest-rated part.
-5. The main switch carries the full rover current, with 15 A as the present design requirement. Select a documented DC switching rating of at least 20 A at the operating voltage of a 3S pack (up to 12.6 V), with suitable load/inrush ratings and terminals for the main wiring. Do not use a KCD11 with only AC ratings or unknown ratings in this path. Thicker wires do not increase the contact rating. The replacement part and panel fit still need to be confirmed.
+4. Use a DC099 5.5 × 2.1 mm rear charging socket (11 mm mounting hole), an 18 AWG internal male lead and an 18 AWG female lead on the battery. The complete connection, including both pairs of contacts, must support the 5 A charger. Keep the rover power connection on XT30.
+5. Fit the round KCD1-5-101EN main switch in the 20 mm opening. This replaces the small KCD11. The selected supplier lists 20 A at 12 V DC. Use the optional splash cap if available. Keep the existing 15 A pack fuse and main power wiring.
 
 [Rear charging path, parts and wiring](../../hardware/power/custom-3s4p-battery/#rear-charging-port-and-cable)
 

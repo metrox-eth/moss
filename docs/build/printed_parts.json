@@ -26,7 +26,7 @@
       "infill_percent": 15,
       "infill_pattern": "gyroid",
       "profile": "standard/default",
-      "sha256": "b3cf069dee52f00744f2cd6a41ecebe5dbc6a40da43c806cc8442ee77f53fc83",
+      "sha256": "9b45996a2ef317cacde8c553b5b4efb98faa4f89487d55cc93c1eef5adaba554",
       "display_name": "One-piece hull",
       "legacy_part_ids": [
         "Hull_R92"
@@ -46,7 +46,7 @@
       "infill_percent": 15,
       "infill_pattern": "gyroid",
       "profile": "standard/default",
-      "sha256": "02e1bc7b4f4755b0ca82ddd2a5242765e538a1483545c7483617ea75f468d951",
+      "sha256": "381b85aa28536c89a068d1a93880d061eab6f2925ded41f76f850b3faaa19b3c",
       "cad_source": "CAD/Split_Hull_R92/Hull_R92_Split_Rear_Motor_Computer.f3d",
       "legacy_part_ids": [
         "Hull_R92_Split_Rear_Motor_Computer"
@@ -66,7 +66,7 @@
       "infill_percent": 15,
       "infill_pattern": "gyroid",
       "profile": "standard/default",
-      "sha256": "5f55175d4943ebde82d409dabb7b6ac6047e21f00a6836642135a2625c3fcb8d",
+      "sha256": "250b07b65e5e2249517430d8257d333d09b212d25b9a6852622d6433c16a2164",
       "cad_source": "CAD/Split_Hull_R92/Hull_R92_Split_Front_Battery_Camera.f3d",
       "legacy_part_ids": [
         "Hull_R92_Split_Front_Battery_Camera"
@@ -1618,7 +1618,7 @@
   ],
   "release": "R92 / 2026-10-16",
   "distinct_part_count": 73,
-  "catalogue_updated": "2026-10-24",
+  "catalogue_updated": "2026-11-09",
   "legacy_archive": "MOSS_R92_Mechanical_20261016.zip",
-  "archive_note": "The current package includes both Jetson retaining tabs and both prepared 3MF projects. Shared parts have one reference and a total print quantity. Tensioner_Slider replaces the rotation-equivalent A/B references."
+  "archive_note": "Updated hull openings for the 20 mm round main switch and 11 mm rear charging socket. Both prepared 3MF projects are included. Shared parts have one reference and a total print quantity; print four Tensioner_Slider parts."
 }
