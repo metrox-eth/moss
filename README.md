@@ -44,7 +44,6 @@ I pick up litter by hand on my walks. MOSS is the robot I want next to me doing 
 
 ## News
 
-- 9 November 2026: **[Important Safety Update](docs/build/RELEASE_NOTES.md)** — larger main switch, a 5 A charging connection with 18 AWG leads, and matching hull, CAD and print-plate files. [Download the updated package](https://github.com/metrox-eth/moss/releases/download/v0.6-r92/MOSS_R92_Mechanical_20261109.zip).
 - 1 November 2026: **[MOSS CORE V0.7 updated](hardware/electronics/moss-core-v0.7/)** — black 82 × 79 mm board, vertical cable headers, larger underside connector labels, a 74 × 71 mm chassis mounting pattern and a new routing layout. Orange Pi assembly clearance and the matched KiCad/BOM/Gerber package are documented. The integrated power supply, current sensing and consolidated motor harness remain. First prototype, not built or tested yet.
 
 - 30 October 2026: **[MOSS CORE V0.7 harness study](hardware/electronics/moss-core-v0.7/harness/)** — a short film, offline 3D viewer, cable routing and a hull prototype with integrated cable-tie mounts. An unbuilt packaging proposal, published for review.

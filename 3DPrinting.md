@@ -1,7 +1,5 @@
 # 3D printing
 
-**9 November update:** the hull files and both 3MF projects now fit the round 20 mm main switch and 11 mm rear charging socket. Re-download the project before printing the hull.
-
 Choose one hull, one upper cover, one computer carrier and one camera option. Print each shared STL in the **quantity shown**, rather than downloading a separate copy for every wheel or axle position. The catalogue has **73 distinct STL files** across all options.
 
 With a one-piece hull and cover: **106 pieces for Pi + RealSense, 107 for Pi + Gemini, 108 for Jetson + RealSense, or 109 for Jetson + Gemini**. Each split option adds one piece.
