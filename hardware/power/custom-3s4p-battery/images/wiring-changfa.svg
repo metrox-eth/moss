@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="940" viewBox="0 0 1500 940" role="img" aria-labelledby="title desc"><title id="title">MOSS battery power and sense wiring with ChangFa 3S common-port BMS</title><desc id="desc">Pack positive goes through a 15 amp fuse to the positive rover and charger connector. Pack negative goes through a thick 12 AWG lead to the large B minus terminal. C minus is the protected negative for both the rover and charger. Four thin wires separately connect pack nodes 0, 1, 2, 3 to small B minus, B1, B2, B3.</desc>
+<rect width="1500" height="940" fill="#3D576A"/>
+<g font-family="Arial, sans-serif">
+<text x="50" y="65" font-size="36" fill="#EAF0EF" text-anchor="start">MOSS / CHANGFA 3S 30 A — WIRING</text>
+<text x="50" y="112" font-size="25" fill="#EAF0EF" text-anchor="start">Large B− = battery negative. C− = protected negative for rover AND charger.</text>
+<rect x="65" y="220" width="350" height="400" rx="10" fill="#111B29" stroke="#EAF0EF" stroke-width="2"/>
+<text x="240" y="295" font-size="30" fill="#EAF0EF" text-anchor="middle">12-CELL PACK</text>
+<text x="240" y="342" font-size="24" fill="#EAF0EF" text-anchor="middle">3 groups × 4 cells</text>
+<text x="240" y="418" font-size="28" fill="#6CF8C7" text-anchor="middle">20 Ah rated</text>
+<text x="390" y="260" font-size="30" fill="#FF947E" text-anchor="end">+</text>
+<text x="390" y="586" font-size="30" fill="#EAF0EF" text-anchor="end">−</text>
+<polyline points="415,250 765,250" fill="none" stroke="#FF947E" stroke-width="12" stroke-linejoin="round"/>
+<rect x="765" y="222" width="150" height="56" rx="3" fill="#3D576A" stroke="#FF947E" stroke-width="2"/>
+<text x="840" y="259" font-size="22" fill="#EAF0EF" text-anchor="middle">15 A FUSE</text>
+<polyline points="915,250 1340,250" fill="none" stroke="#FF947E" stroke-width="12" stroke-linejoin="round"/>
+<text x="560" y="215" font-size="24" fill="#EAF0EF" text-anchor="middle">12 AWG</text>
+<text x="1115" y="215" font-size="22" fill="#EAF0EF" text-anchor="middle">14 AWG holder pigtails</text>
+<rect x="700" y="490" width="370" height="230" rx="10" fill="#111B29" stroke="#EAF0EF" stroke-width="2"/>
+<text x="885" y="545" font-size="27" fill="#EAF0EF" text-anchor="middle">CHANGFA BMS</text>
+<text x="885" y="584" font-size="23" fill="#6CF8C7" text-anchor="middle">3S / common port</text>
+<text x="722" y="650" font-size="29" fill="#EAF0EF" text-anchor="start">B−</text>
+<text x="1045" y="650" font-size="29" fill="#EAF0EF" text-anchor="end">C−</text>
+<polyline points="415,580 565,580 565,650 700,650" fill="none" stroke="#EAF0EF" stroke-width="12" stroke-linejoin="round"/>
+<polyline points="1070,650 1340,650" fill="none" stroke="#EAF0EF" stroke-width="12" stroke-linejoin="round"/>
+<text x="555" y="705" font-size="24" fill="#EAF0EF" text-anchor="middle">12 AWG</text>
+<text x="1200" y="705" font-size="24" fill="#EAF0EF" text-anchor="middle">12 AWG</text>
+<polyline points="415,455 500,455 500,410 885,410 885,490" fill="none" stroke="#6CF8C7" stroke-width="3" stroke-linejoin="round" stroke-dasharray="8 6"/>
+<text x="755" y="373" font-size="23" fill="#6CF8C7" text-anchor="middle">4 SMALL SENSE / BALANCE WIRES</text>
+<text x="685" y="448" font-size="22" fill="#EAF0EF" text-anchor="middle">0 → B−   1 → B1   2 → B2   3 → B3</text>
+<rect x="1275" y="330" width="190" height="230" rx="10" fill="#111B29" stroke="#EAF0EF" stroke-width="2"/>
+<text x="1370" y="389" font-size="30" fill="#EAF0EF" text-anchor="middle">OUTPUT</text>
+<text x="1370" y="434" font-size="22" fill="#EAF0EF" text-anchor="middle">Rover / charger</text>
+<text x="1370" y="472" font-size="22" fill="#EAF0EF" text-anchor="middle">5 A charge lead</text>
+<polyline points="1340,250 1340,330" fill="none" stroke="#FF947E" stroke-width="10" stroke-linejoin="round"/>
+<polyline points="1340,560 1340,650" fill="none" stroke="#EAF0EF" stroke-width="10" stroke-linejoin="round"/>
+<text x="1365" y="297" font-size="28" fill="#FF947E" text-anchor="start">+</text>
+<text x="1365" y="618" font-size="28" fill="#EAF0EF" text-anchor="start">−</text>
+<text x="50" y="812" font-size="27" fill="#EAF0EF" text-anchor="start">The small B− wire and the large B− lead both join pack node 0.</text>
+<text x="50" y="861" font-size="26" fill="#EAF0EF" text-anchor="start">C− must not be wired directly to node 0: that would bypass protection.</text>
+<text x="50" y="906" font-size="24" fill="#EAF0EF" text-anchor="start">Electrical overview. Read the BMS markings for the actual connector pin order.</text>
+</g></svg>

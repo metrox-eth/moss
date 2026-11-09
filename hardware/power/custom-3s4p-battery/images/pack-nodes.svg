@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="920" viewBox="0 0 1500 920" role="img" aria-labelledby="title desc"><title id="title">MOSS 3S4P pack: both faces and four electrical nodes</title><desc id="desc">Two rows of six cells. Face 1 has node 0 on the left four negative ends and node 2 joining the right eight ends. Face 2 has node 1 joining the left eight ends and node 3 on the right four positive ends. These are opposite ends of the same twelve cells, with group 1 kept left.</desc>
+<rect width="1500" height="920" fill="#3D576A"/>
+<g font-family="Arial, sans-serif">
+<text x="50" y="65" font-size="36" fill="#EAF0EF" text-anchor="start">MOSS / THE FOUR PACK CONNECTIONS</text>
+<text x="50" y="112" font-size="25" fill="#EAF0EF" text-anchor="start">Two faces of the same 12 cells. Keep group 1 on the left when turning the pack over.</text>
+<text x="70" y="190" font-size="26" fill="#6CF8C7" text-anchor="start">FACE 1 / interconnect-photo side</text>
+<text x="110" y="245" font-size="23" fill="#EAF0EF" text-anchor="middle">1</text>
+<circle cx="110" cy="310" r="44" fill="#CBD7DA" stroke="#111B29" stroke-width="3"/>
+<circle cx="110" cy="310" r="27" fill="#111B29" stroke="#111B29" stroke-width="1"/>
+<text x="110" y="320" font-size="34" fill="#EAF0EF" text-anchor="middle">-</text>
+<circle cx="110" cy="425" r="44" fill="#CBD7DA" stroke="#111B29" stroke-width="3"/>
+<circle cx="110" cy="425" r="27" fill="#111B29" stroke="#111B29" stroke-width="1"/>
+<text x="110" y="435" font-size="34" fill="#EAF0EF" text-anchor="middle">-</text>
+<text x="214" y="245" font-size="23" fill="#EAF0EF" text-anchor="middle">1</text>
+<circle cx="214" cy="310" r="44" fill="#CBD7DA" stroke="#111B29" stroke-width="3"/>
+<circle cx="214" cy="310" r="27" fill="#111B29" stroke="#111B29" stroke-width="1"/>
+<text x="214" y="320" font-size="34" fill="#EAF0EF" text-anchor="middle">-</text>
+<circle cx="214" cy="425" r="44" fill="#CBD7DA" stroke="#111B29" stroke-width="3"/>
+<circle cx="214" cy="425" r="27" fill="#111B29" stroke="#111B29" stroke-width="1"/>
+<text x="214" y="435" font-size="34" fill="#EAF0EF" text-anchor="middle">-</text>
+<text x="318" y="245" font-size="23" fill="#EAF0EF" text-anchor="middle">2</text>
+<circle cx="318" cy="310" r="44" fill="#CBD7DA" stroke="#111B29" stroke-width="3"/>
+<circle cx="318" cy="310" r="27" fill="#111B29" stroke="#111B29" stroke-width="1"/>
+<text x="318" y="320" font-size="34" fill="#EAF0EF" text-anchor="middle">+</text>
+<circle cx="318" cy="425" r="44" fill="#CBD7DA" stroke="#111B29" stroke-width="3"/>
+<circle cx="318" cy="425" r="27" fill="#111B29" stroke="#111B29" stroke-width="1"/>
+<text x="318" y="435" font-size="34" fill="#EAF0EF" text-anchor="middle">+</text>
+<text x="422" y="245" font-size="23" fill="#EAF0EF" text-anchor="middle">2</text>
+<circle cx="422" cy="310" r="44" fill="#CBD7DA" stroke="#111B29" stroke-width="3"/>
+<circle cx="422" cy="310" r="27" fill="#111B29" stroke="#111B29" stroke-width="1"/>
+<text x="422" y="320" font-size="34" fill="#EAF0EF" text-anchor="middle">+</text>
+<circle cx="422" cy="425" r="44" fill="#CBD7DA" stroke="#111B29" stroke-width="3"/>
+<circle cx="422" cy="425" r="27" fill="#111B29" stroke="#111B29" stroke-width="1"/>
+<text x="422" y="435" font-size="34" fill="#EAF0EF" text-anchor="middle">+</text>
+<text x="526" y="245" font-size="23" fill="#EAF0EF" text-anchor="middle">3</text>
+<circle cx="526" cy="310" r="44" fill="#CBD7DA" stroke="#111B29" stroke-width="3"/>
+<circle cx="526" cy="310" r="27" fill="#111B29" stroke="#111B29" stroke-width="1"/>
+<text x="526" y="320" font-size="34" fill="#EAF0EF" text-anchor="middle">-</text>
+<circle cx="526" cy="425" r="44" fill="#CBD7DA" stroke="#111B29" stroke-width="3"/>
+<circle cx="526" cy="425" r="27" fill="#111B29" stroke="#111B29" stroke-width="1"/>
+<text x="526" y="435" font-size="34" fill="#EAF0EF" text-anchor="middle">-</text>
+<text x="630" y="245" font-size="23" fill="#EAF0EF" text-anchor="middle">3</text>
+<circle cx="630" cy="310" r="44" fill="#CBD7DA" stroke="#111B29" stroke-width="3"/>
+<circle cx="630" cy="310" r="27" fill="#111B29" stroke="#111B29" stroke-width="1"/>
+<text x="630" y="320" font-size="34" fill="#EAF0EF" text-anchor="middle">-</text>
+<circle cx="630" cy="425" r="44" fill="#CBD7DA" stroke="#111B29" stroke-width="3"/>
+<circle cx="630" cy="425" r="27" fill="#111B29" stroke="#111B29" stroke-width="1"/>
+<text x="630" y="435" font-size="34" fill="#EAF0EF" text-anchor="middle">-</text>
+<polyline points="110,310 214,310" fill="none" stroke="#A9BCC5" stroke-width="13" stroke-linejoin="round"/>
+<polyline points="110,425 214,425" fill="none" stroke="#A9BCC5" stroke-width="13" stroke-linejoin="round"/>
+<polyline points="110,310 110,425" fill="none" stroke="#A9BCC5" stroke-width="13" stroke-linejoin="round"/>
+<polyline points="214,310 214,425" fill="none" stroke="#A9BCC5" stroke-width="13" stroke-linejoin="round"/>
+<polyline points="318,310 630,310" fill="none" stroke="#A9BCC5" stroke-width="13" stroke-linejoin="round"/>
+<polyline points="318,425 630,425" fill="none" stroke="#A9BCC5" stroke-width="13" stroke-linejoin="round"/>
+<polyline points="318,310 318,425" fill="none" stroke="#A9BCC5" stroke-width="13" stroke-linejoin="round"/>
+<polyline points="422,310 422,425" fill="none" stroke="#A9BCC5" stroke-width="13" stroke-linejoin="round"/>
+<polyline points="526,310 526,425" fill="none" stroke="#A9BCC5" stroke-width="13" stroke-linejoin="round"/>
+<polyline points="630,310 630,425" fill="none" stroke="#A9BCC5" stroke-width="13" stroke-linejoin="round"/>
+<text x="110" y="319" font-size="29" fill="#111B29" text-anchor="middle">-</text>
+<text x="110" y="434" font-size="29" fill="#111B29" text-anchor="middle">-</text>
+<text x="214" y="319" font-size="29" fill="#111B29" text-anchor="middle">-</text>
+<text x="214" y="434" font-size="29" fill="#111B29" text-anchor="middle">-</text>
+<text x="318" y="319" font-size="29" fill="#111B29" text-anchor="middle">+</text>
+<text x="318" y="434" font-size="29" fill="#111B29" text-anchor="middle">+</text>
+<text x="422" y="319" font-size="29" fill="#111B29" text-anchor="middle">+</text>
+<text x="422" y="434" font-size="29" fill="#111B29" text-anchor="middle">+</text>
+<text x="526" y="319" font-size="29" fill="#111B29" text-anchor="middle">-</text>
+<text x="526" y="434" font-size="29" fill="#111B29" text-anchor="middle">-</text>
+<text x="630" y="319" font-size="29" fill="#111B29" text-anchor="middle">-</text>
+<text x="630" y="434" font-size="29" fill="#111B29" text-anchor="middle">-</text>
+<polyline points="110,370 110,515" fill="none" stroke="#6CF8C7" stroke-width="4" stroke-linejoin="round"/>
+<circle cx="110" cy="370" r="9" fill="#6CF8C7" stroke="#111B29" stroke-width="2"/>
+<text x="90" y="559" font-size="24" fill="#6CF8C7" text-anchor="start">0 → B− / pack negative</text>
+<text x="90" y="603" font-size="28" fill="#EAF0EF" text-anchor="start">0 V</text>
+<polyline points="630,370 630,515" fill="none" stroke="#6CF8C7" stroke-width="4" stroke-linejoin="round"/>
+<circle cx="630" cy="370" r="9" fill="#6CF8C7" stroke="#111B29" stroke-width="2"/>
+<text x="610" y="559" font-size="24" fill="#6CF8C7" text-anchor="middle">2 → B2</text>
+<text x="610" y="603" font-size="28" fill="#EAF0EF" text-anchor="middle">≈ 7.04 V</text>
+<text x="820" y="190" font-size="26" fill="#6CF8C7" text-anchor="start">FACE 2 / opposite end</text>
+<text x="860" y="245" font-size="23" fill="#EAF0EF" text-anchor="middle">1</text>
+<circle cx="860" cy="310" r="44" fill="#CBD7DA" stroke="#111B29" stroke-width="3"/>
+<circle cx="860" cy="310" r="27" fill="#111B29" stroke="#111B29" stroke-width="1"/>
+<text x="860" y="320" font-size="34" fill="#EAF0EF" text-anchor="middle">+</text>
+<circle cx="860" cy="425" r="44" fill="#CBD7DA" stroke="#111B29" stroke-width="3"/>
+<circle cx="860" cy="425" r="27" fill="#111B29" stroke="#111B29" stroke-width="1"/>
+<text x="860" y="435" font-size="34" fill="#EAF0EF" text-anchor="middle">+</text>
+<text x="964" y="245" font-size="23" fill="#EAF0EF" text-anchor="middle">1</text>
+<circle cx="964" cy="310" r="44" fill="#CBD7DA" stroke="#111B29" stroke-width="3"/>
+<circle cx="964" cy="310" r="27" fill="#111B29" stroke="#111B29" stroke-width="1"/>
+<text x="964" y="320" font-size="34" fill="#EAF0EF" text-anchor="middle">+</text>
+<circle cx="964" cy="425" r="44" fill="#CBD7DA" stroke="#111B29" stroke-width="3"/>
+<circle cx="964" cy="425" r="27" fill="#111B29" stroke="#111B29" stroke-width="1"/>
+<text x="964" y="435" font-size="34" fill="#EAF0EF" text-anchor="middle">+</text>
+<text x="1068" y="245" font-size="23" fill="#EAF0EF" text-anchor="middle">2</text>
+<circle cx="1068" cy="310" r="44" fill="#CBD7DA" stroke="#111B29" stroke-width="3"/>
+<circle cx="1068" cy="310" r="27" fill="#111B29" stroke="#111B29" stroke-width="1"/>
+<text x="1068" y="320" font-size="34" fill="#EAF0EF" text-anchor="middle">-</text>
+<circle cx="1068" cy="425" r="44" fill="#CBD7DA" stroke="#111B29" stroke-width="3"/>
+<circle cx="1068" cy="425" r="27" fill="#111B29" stroke="#111B29" stroke-width="1"/>
+<text x="1068" y="435" font-size="34" fill="#EAF0EF" text-anchor="middle">-</text>
+<text x="1172" y="245" font-size="23" fill="#EAF0EF" text-anchor="middle">2</text>
+<circle cx="1172" cy="310" r="44" fill="#CBD7DA" stroke="#111B29" stroke-width="3"/>
+<circle cx="1172" cy="310" r="27" fill="#111B29" stroke="#111B29" stroke-width="1"/>
+<text x="1172" y="320" font-size="34" fill="#EAF0EF" text-anchor="middle">-</text>
+<circle cx="1172" cy="425" r="44" fill="#CBD7DA" stroke="#111B29" stroke-width="3"/>
+<circle cx="1172" cy="425" r="27" fill="#111B29" stroke="#111B29" stroke-width="1"/>
+<text x="1172" y="435" font-size="34" fill="#EAF0EF" text-anchor="middle">-</text>
+<text x="1276" y="245" font-size="23" fill="#EAF0EF" text-anchor="middle">3</text>
+<circle cx="1276" cy="310" r="44" fill="#CBD7DA" stroke="#111B29" stroke-width="3"/>
+<circle cx="1276" cy="310" r="27" fill="#111B29" stroke="#111B29" stroke-width="1"/>
+<text x="1276" y="320" font-size="34" fill="#EAF0EF" text-anchor="middle">+</text>
+<circle cx="1276" cy="425" r="44" fill="#CBD7DA" stroke="#111B29" stroke-width="3"/>
+<circle cx="1276" cy="425" r="27" fill="#111B29" stroke="#111B29" stroke-width="1"/>
+<text x="1276" y="435" font-size="34" fill="#EAF0EF" text-anchor="middle">+</text>
+<text x="1380" y="245" font-size="23" fill="#EAF0EF" text-anchor="middle">3</text>
+<circle cx="1380" cy="310" r="44" fill="#CBD7DA" stroke="#111B29" stroke-width="3"/>
+<circle cx="1380" cy="310" r="27" fill="#111B29" stroke="#111B29" stroke-width="1"/>
+<text x="1380" y="320" font-size="34" fill="#EAF0EF" text-anchor="middle">+</text>
+<circle cx="1380" cy="425" r="44" fill="#CBD7DA" stroke="#111B29" stroke-width="3"/>
+<circle cx="1380" cy="425" r="27" fill="#111B29" stroke="#111B29" stroke-width="1"/>
+<text x="1380" y="435" font-size="34" fill="#EAF0EF" text-anchor="middle">+</text>
+<polyline points="860,310 1172,310" fill="none" stroke="#A9BCC5" stroke-width="13" stroke-linejoin="round"/>
+<polyline points="860,425 1172,425" fill="none" stroke="#A9BCC5" stroke-width="13" stroke-linejoin="round"/>
+<polyline points="860,310 860,425" fill="none" stroke="#A9BCC5" stroke-width="13" stroke-linejoin="round"/>
+<polyline points="964,310 964,425" fill="none" stroke="#A9BCC5" stroke-width="13" stroke-linejoin="round"/>
+<polyline points="1068,310 1068,425" fill="none" stroke="#A9BCC5" stroke-width="13" stroke-linejoin="round"/>
+<polyline points="1172,310 1172,425" fill="none" stroke="#A9BCC5" stroke-width="13" stroke-linejoin="round"/>
+<polyline points="1276,310 1380,310" fill="none" stroke="#A9BCC5" stroke-width="13" stroke-linejoin="round"/>
+<polyline points="1276,425 1380,425" fill="none" stroke="#A9BCC5" stroke-width="13" stroke-linejoin="round"/>
+<polyline points="1276,310 1276,425" fill="none" stroke="#A9BCC5" stroke-width="13" stroke-linejoin="round"/>
+<polyline points="1380,310 1380,425" fill="none" stroke="#A9BCC5" stroke-width="13" stroke-linejoin="round"/>
+<text x="860" y="319" font-size="29" fill="#111B29" text-anchor="middle">+</text>
+<text x="860" y="434" font-size="29" fill="#111B29" text-anchor="middle">+</text>
+<text x="964" y="319" font-size="29" fill="#111B29" text-anchor="middle">+</text>
+<text x="964" y="434" font-size="29" fill="#111B29" text-anchor="middle">+</text>
+<text x="1068" y="319" font-size="29" fill="#111B29" text-anchor="middle">-</text>
+<text x="1068" y="434" font-size="29" fill="#111B29" text-anchor="middle">-</text>
+<text x="1172" y="319" font-size="29" fill="#111B29" text-anchor="middle">-</text>
+<text x="1172" y="434" font-size="29" fill="#111B29" text-anchor="middle">-</text>
+<text x="1276" y="319" font-size="29" fill="#111B29" text-anchor="middle">+</text>
+<text x="1276" y="434" font-size="29" fill="#111B29" text-anchor="middle">+</text>
+<text x="1380" y="319" font-size="29" fill="#111B29" text-anchor="middle">+</text>
+<text x="1380" y="434" font-size="29" fill="#111B29" text-anchor="middle">+</text>
+<polyline points="860,370 860,515" fill="none" stroke="#6CF8C7" stroke-width="4" stroke-linejoin="round"/>
+<circle cx="860" cy="370" r="9" fill="#6CF8C7" stroke="#111B29" stroke-width="2"/>
+<text x="840" y="559" font-size="24" fill="#6CF8C7" text-anchor="start">1 → B1</text>
+<text x="840" y="603" font-size="28" fill="#EAF0EF" text-anchor="start">≈ 3.52 V</text>
+<polyline points="1380,370 1380,515" fill="none" stroke="#6CF8C7" stroke-width="4" stroke-linejoin="round"/>
+<circle cx="1380" cy="370" r="9" fill="#6CF8C7" stroke="#111B29" stroke-width="2"/>
+<text x="1360" y="559" font-size="24" fill="#6CF8C7" text-anchor="middle">3 → B3 / pack positive</text>
+<text x="1360" y="603" font-size="28" fill="#EAF0EF" text-anchor="middle">≈ 10.56 V</text>
+<text x="50" y="705" font-size="27" fill="#6CF8C7" text-anchor="start">MEASURING</text>
+<text x="50" y="753" font-size="28" fill="#EAF0EF" text-anchor="start">Black probe stays on node 0. Red probe goes to nodes 1, 2, then 3.</text>
+<text x="50" y="800" font-size="25" fill="#EAF0EF" text-anchor="start">Example values above assume each group is at 3.52 V. Full charge is 12.6 V.</text>
+<text x="50" y="855" font-size="25" fill="#EAF0EF" text-anchor="start">The four small BMS wires follow these nodes; the main power leads are separate.</text>
+</g></svg>

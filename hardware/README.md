@@ -8,7 +8,7 @@ See the [print catalogue](../3DPrinting.md), [BOM](../BOM.md) and [assembly guid
 
 ## Custom battery
 
-[3S4P battery build tutorial](power/custom-3s4p-battery/) — parts, photographs, wiring and assembly for the twelve-cell EVE 21700 pack, with a 15 A blade fuse, 12 AWG main leads and 14 AWG inline fuse-holder pigtails. The updated parts list specifies 130 mm heat-shrink and fishpaper. Rated 20 Ah from the cell specifications; assembled mass 910 g. Actual capacity and collection runtime still need measuring. Read the workshop disclaimer before considering this build.
+[3S4P battery build tutorial](power/custom-3s4p-battery/) — complete illustrated guide for twelve EVE 50E 21700 cells and a **ChangFa 3S 30 A BMS with passive balancing**. Includes the four-wire sense harness, B−/C− power wiring, charger activation, a 15 A blade fuse, 12 AWG main leads, 14 AWG fuse-holder pigtails, 130 mm heat-shrink and fishpaper. Rated 20 Ah from the cell specifications; actual capacity and collection runtime still need measuring. Read the workshop disclaimer before considering this build.
 
 ## Electronics prototypes
 
