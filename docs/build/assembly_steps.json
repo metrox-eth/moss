@@ -948,7 +948,7 @@
           "quantity": 1
         },
         {
-          "reference": "KCD11 two-pin rocker switch and splash cover",
+          "reference": "Main power switch with DC rating for the complete rover load",
           "quantity": 1
         },
         {
@@ -991,7 +991,9 @@
       "actions": [
         "Clip the two fans into their mounts.",
         "Fit the emergency stop and rocker switch in their hull openings.",
-        "Assemble the XT30 base, insulating separator and lid with four low-head M2.5 × 10 screws."
+        "Assemble the XT30 base, insulating separator and lid with four low-head M2.5 × 10 screws.",
+        "The complete rear charging path must support 5 A continuous: rear panel socket, internal two-core lead and male plug, and battery female socket/pigtail. Use short copper leads of at least 18 AWG; 16 AWG gives more voltage-drop margin. Match barrel dimensions and polarity, provide strain relief, and protect the charging branch to suit its lowest-rated part.",
+        "The main switch carries the full rover current, with 15 A as the present design requirement. Select a documented DC switching rating of at least 20 A at the operating voltage of a 3S pack (up to 12.6 V), with suitable load/inrush ratings and terminals for the main wiring. Do not use a KCD11 with only AC ratings or unknown ratings in this path. Thicker wires do not increase the contact rating. The replacement part and panel fit still need to be confirmed."
       ],
       "video": "videos/07-xt30-power-distribution.mp4"
     },

@@ -29,13 +29,13 @@ Two-part epoxy adhesive kit (resin + hardener),1,For gluing the four bin magnets
 "12-cell battery pack, 3S4P, with BMS",1,110 × 67 × 35 mm.
 12.6 V CC/CV charger for the selected 3S pack,1,
 "Emergency stop LA16-11ZS/A, 16 mm",1,
-KCD11 two-pin rocker switch and splash cover,1,
+Main power switch with DC rating for the complete rover load,1,"15 A rover design requirement; select documented 20 A or higher DC switch covering 12.6 V and startup peaks. Reference and panel fit pending."
 "Inline blade-fuse holder, 14 AWG",1,
 "ATC blade fuse, 15 A",1,
 Amass XT30 male/female connector pair,6,
-"DC panel socket, 5.5 ×2.1 mm",2,Female panel-mount sockets.
+"DC panel socket, 5.5 ×2.1 mm",2,Rear charge socket and complete mating cable must support 5 A continuous. Verify mounting hole and plug fit.
 DC male barrel plug — computer power,1,"Jetson option: 5.5 × 2.5 mm, 9.5 mm barrel, centre positive. Pi option: match the input of the selected 5 V power supply. Choose one."
-"DC male barrel plug, 5.5 × 2.1 mm",2,One for Waveshare Bus Servo Adapter A; one for the battery extension.
+"DC male barrel plug, 5.5 × 2.1 mm",2,One for Waveshare Bus Servo Adapter A; one for the battery charging extension. The charging assembly must support 5 A continuous; use short 18 AWG minimum copper leads.
 "Wire, ferrules and heat-shrink",1,One set for the power and signal wiring.
 Hoco HB1 four-port USB 2.0 hub,1,
 GameSir Nova 2 Lite gamepad with wireless USB receiver,1,For manual driving; include the wireless USB receiver. Used successfully on MOSS.

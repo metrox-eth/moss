@@ -296,7 +296,7 @@ All four tensioner sliders are the same printed part. Rotate each slider to matc
 | [XT30 insulating separator](https://github.com/metrox-eth/moss/releases/download/v0.6-r92/XT30_insulating_separator.stl) · PETG | 1 |
 | 3010 fan, 12 V | 2 |
 | Emergency stop LA16-11ZS/A, 16 mm | 1 |
-| KCD11 two-pin rocker switch and splash cover | 1 |
+| Main power switch with DC rating for the complete rover load | 1 |
 | 12-cell battery pack, 3S4P, with BMS, 110 × 67 × 35 mm | 1 |
 | Power harness wire, fuse and USB cables | 1 |
 | DC male barrel plug, 5.5 × 2.5 mm, 9.5 mm barrel, centre positive — Jetson power | 1 |
@@ -309,6 +309,10 @@ All four tensioner sliders are the same printed part. Rotate each slider to matc
 1. Clip the two fans into their mounts.
 2. Fit the emergency stop and rocker switch in their hull openings.
 3. Assemble the XT30 base, insulating separator and lid with four low-head M2.5 × 10 screws.
+4. The complete rear charging path must support 5 A continuous: rear panel socket, internal two-core lead and male plug, and battery female socket/pigtail. Use short copper leads of at least 18 AWG; 16 AWG gives more voltage-drop margin. Match barrel dimensions and polarity, provide strain relief, and protect the charging branch to suit its lowest-rated part.
+5. The main switch carries the full rover current, with 15 A as the present design requirement. Select a documented DC switching rating of at least 20 A at the operating voltage of a 3S pack (up to 12.6 V), with suitable load/inrush ratings and terminals for the main wiring. Do not use a KCD11 with only AC ratings or unknown ratings in this path. Thicker wires do not increase the contact rating. The replacement part and panel fit still need to be confirmed.
+
+[Rear charging path, parts and wiring](../../hardware/power/custom-3s4p-battery/#rear-charging-port-and-cable)
 
 [Watch the exploded assembly](videos/07-xt30-power-distribution.mp4)
 

@@ -57,14 +57,14 @@ LK05/LK06/LK08 are guide identifiers for purchased shaft collars, also called lo
 | 12-cell battery pack, 3S4P, with BMS | 1 | 110 × 67 × 35 mm. |
 | 12.6 V CC/CV charger for the selected 3S pack | 1 |  |
 | Emergency stop LA16-11ZS/A, 16 mm | 1 |  |
-| KCD11 two-pin rocker switch and splash cover | 1 |  |
+| Main power switch with DC rating for the complete rover load | 1 | **15 A rover design load; select at least 20 A DC switching capacity, covering a 3S pack up to 12.6 V and startup peaks. Replacement reference and panel fit pending.** |
 | Inline blade-fuse holder, 14 AWG | 1 |  |
 | ATC blade fuse, 15 A | 1 |  |
 | Amass XT30 male/female connector pair | 6 |  |
-| DC panel socket, 5.5 ×2.1 mm | 2 | Female panel-mount sockets. |
+| DC panel socket, 5.5 ×2.1 mm | 2 | Female panel-mount sockets. The rear charging socket must be rated for **5 A continuous**; the complete charge lead must match. [Charging path and sourcing options](hardware/power/custom-3s4p-battery/#rear-charging-port-and-cable). |
 | DC male barrel plug — computer power branch | 1 | Jetson: **5.5 × 2.5 mm**, 9.5 mm barrel, centre positive ([NVIDIA specification](https://developer.nvidia.com/downloads/assets/embedded/secure/jetson/orin_nano/docs/jetson_orin_nano_devkit_carrier_board_specification_sp.pdf)). Pi option: choose the plug that matches the input of the selected 5 V power supply. These are alternatives. |
 | DC male barrel plug, 5.5 × 2.1 mm — servo power branch | 1 | For the Waveshare Bus Servo Adapter A ([Waveshare specification](https://docs.waveshare.com/Bus_Servo_Adapter_A)). |
-| DC male barrel plug, 5.5 × 2.1 mm — battery extension | 1 | Matches the 5.5 × 2.1 mm panel socket listed above. |
+| DC male barrel plug, 5.5 × 2.1 mm — battery extension | 1 | **5 A continuous as a complete assembly**, with short 18 AWG minimum copper leads (16 AWG preferred). Match both sockets and actual charger polarity; measure route before choosing length. |
 | Wire, ferrules and heat-shrink | 1 lot |  |
 | Hoco HB1 four-port USB 2.0 hub | 1 |  |
 | GameSir Nova 2 Lite gamepad with wireless USB receiver | 1 | For manual driving; include the wireless USB receiver. Used successfully on MOSS. |

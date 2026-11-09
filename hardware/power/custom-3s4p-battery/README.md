@@ -154,6 +154,31 @@ Use **12 AWG main leads**; the fuse holder's **14 AWG pigtails** remain part of 
 
 The board's 30 A marking is not permission to uprate the 15 A fuse. The complete current path, including strips, connectors and wiring, sets the pack's usable limits.
 
+### Rear charging port and cable
+
+> [!IMPORTANT]
+> **The entire charging connection must carry 5 A continuously. A thick cable does not compensate for an underrated jack.** Keep charging stopped if any lead or contact heats abnormally.
+
+![Rear charging connection from the charger to the protected battery terminals](images/rear-charging-path.png)
+
+The complete rear charging path must support 5 A continuous: rear panel socket, internal two-core lead and male plug, and battery female socket/pigtail. Use short copper leads of at least 18 AWG; 16 AWG gives more voltage-drop margin. Match barrel dimensions and polarity, provide strain relief, and protect the charging branch to suit its lowest-rated part.
+
+For this common-port BMS, the charging negative returns to **C−**. Charging positive goes to the fused pack-positive branch. Keep the high-current rover supply on **XT30**; do not route rover current through the charging barrel sockets.
+
+| Part for the complete charging path | Quantity | Purchase option / requirement |
+|---|---:|---|
+| Rear panel female socket | 1 | [DIYsound DC099, 5.5 × 2.1 mm](https://www.lazada.co.th/products/diysound-dc099-11mm-female-size-55-21mm-dc-099-jack-socket-55x21-mm-metal-dc-socket-power-socket-gold-female-dc-jack-dc099-i2791212067-s14534609557.html), option **DC099 เงิน #061-2**, listed **5 A / 30 V**, with **11 mm mounting hole** |
+| Internal male charging lead | 1 | [MookMig 5.5 × 2.1 mm](https://www.lazada.co.th/products/jack-dc-male-18awg-pvc-5521-powerbox-i2148060041-s7690922633.html), option **ตัวผู้ 0.3M 18AWG**; stock length 300 mm, trim only after measuring the installed route |
+| Battery female charging lead | 1 | [MookMig 5.5 × 2.1 mm](https://www.lazada.co.th/products/jack-dc-male-18awg-pvc-5521-powerbox-i2148060041-s7690922637.html), option **ตัวเมีย 0.3M 18AWG** |
+
+The MookMig listing specifies 18 AWG wire but does not provide a separate continuous-current datasheet for the molded contacts. Confirm the **complete mating assemblies** for 5 A before use. These are sourcing candidates, not tested replacements. The DC099's 11 mm hole must be checked against the existing rear opening. Verify the charger's actual plug: **5.5 × 2.1 and 5.5 × 2.5 mm are different sizes**.
+
+### Rover main switch
+
+The main switch carries the full rover current, with 15 A as the present design requirement. Select a documented DC switching rating of at least 20 A at the operating voltage of a 3S pack (up to 12.6 V), with suitable load/inrush ratings and terminals for the main wiring. Do not use a KCD11 with only AC ratings or unknown ratings in this path. Thicker wires do not increase the contact rating. The replacement part and panel fit still need to be confirmed.
+
+The [Kejian KCD11 specifications](https://www.kjele.com/product/rocker-switch-kcd-series-kcd11.html) list 3 A / 250 VAC and 6 A / 125 VAC, with no DC rating. That does not qualify an unidentified KCD11 for the rover's 15 A DC path. Keep the pack's **15 A fuse**; selecting a higher-rated switch is not a reason to increase the fuse.
+
 ### 6. Insulate and wrap
 
 Place a **fishpaper barrier beneath the BMS**, including beneath its metal plate, so it cannot contact cell cans or strips. Cover exposed interconnects and solder joints, retain the positive-end rings and protect wires from sharp edges. Thin tape alone is not a barrier against metal edges rubbing through insulation.
@@ -196,7 +221,7 @@ A proper capacity test should record delivered **Wh and Ah**, along with terrain
 - [12.6 V / 5 A charger listing](https://www.lazada.co.th/products/pdp-i4692319951-s19334045449.html).
 - [Battery and charging safety — Fire and Rescue NSW](https://www.fire.nsw.gov.au/fire-safety/home-fire-safety/battery-and-charging-safety).
 
-Editable diagrams: [pack nodes](images/pack-nodes.svg) · [power wiring](images/wiring-changfa.svg).
+Editable diagrams: [pack nodes](images/pack-nodes.svg) · [power wiring](images/wiring-changfa.svg) · [rear charging path](images/rear-charging-path.svg).
 
 Workshop photos © 2026 Laurent Genoud / Show Robotics. The diagrams describe this **3S common-port ChangFa BMS**; check the markings and supplier instructions for your exact board. Documentation and media follow the repository's [notice](../../../NOTICE); MOSS-authored hardware wiring designs follow [CC BY-NC-SA 4.0](../../../LICENSE-HARDWARE).
 

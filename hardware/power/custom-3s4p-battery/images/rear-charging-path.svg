@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="780" viewBox="0 0 1500 780" role="img" aria-labelledby="title desc"><title id="title">MOSS rear charging path: every connector and lead must carry 5 A</title><desc id="desc">From the 12.6 V 5 A charger male plug, through the rear panel female socket, the internal two-core cable and male plug, the battery female socket and its leads, to fused battery positive and BMS C minus. All connectors, contacts and both conductors in the complete charging path need a continuous current rating of at least 5 A.</desc>
+<rect width="1500" height="780" fill="#3D576A"/>
+<g font-family="Arial, sans-serif">
+<text x="45" y="65" font-size="34" fill="#EAF0EF" text-anchor="start">MOSS / THE COMPLETE REAR CHARGING PATH</text>
+<text x="45" y="114" font-size="25" fill="#EAF0EF" text-anchor="start">The internal extension carries the same charging current as the battery lead.</text>
+<rect x="45" y="235" width="235" height="260" rx="10" fill="#111B29" stroke="#EAF0EF" stroke-width="2"/>
+<text x="162.5" y="285" font-size="23" fill="#6CF8C7" text-anchor="middle">CHARGER</text>
+<text x="162.5" y="342" font-size="21" fill="#EAF0EF" text-anchor="middle">12.6 V / 5 A</text>
+<text x="162.5" y="387" font-size="21" fill="#EAF0EF" text-anchor="middle">Male DC plug</text>
+<rect x="340" y="235" width="235" height="260" rx="10" fill="#111B29" stroke="#EAF0EF" stroke-width="2"/>
+<text x="457.5" y="285" font-size="23" fill="#6CF8C7" text-anchor="middle">REAR SOCKET</text>
+<text x="457.5" y="342" font-size="21" fill="#EAF0EF" text-anchor="middle">Female panel jack</text>
+<text x="457.5" y="387" font-size="21" fill="#EAF0EF" text-anchor="middle">5 A continuous</text>
+<text x="457.5" y="432" font-size="21" fill="#EAF0EF" text-anchor="middle">Check mounting hole</text>
+<rect x="635" y="235" width="235" height="260" rx="10" fill="#111B29" stroke="#EAF0EF" stroke-width="2"/>
+<text x="752.5" y="285" font-size="23" fill="#6CF8C7" text-anchor="middle">INTERNAL CABLE</text>
+<text x="752.5" y="342" font-size="21" fill="#EAF0EF" text-anchor="middle">Two-core copper wire</text>
+<text x="752.5" y="387" font-size="21" fill="#EAF0EF" text-anchor="middle">Male plug at battery</text>
+<text x="752.5" y="432" font-size="21" fill="#EAF0EF" text-anchor="middle">18 AWG or thicker*</text>
+<rect x="930" y="235" width="235" height="260" rx="10" fill="#111B29" stroke="#EAF0EF" stroke-width="2"/>
+<text x="1047.5" y="285" font-size="23" fill="#6CF8C7" text-anchor="middle">BATTERY SOCKET</text>
+<text x="1047.5" y="342" font-size="21" fill="#EAF0EF" text-anchor="middle">Female jack + leads</text>
+<text x="1047.5" y="387" font-size="21" fill="#EAF0EF" text-anchor="middle">5 A continuous</text>
+<text x="1047.5" y="432" font-size="21" fill="#EAF0EF" text-anchor="middle">18 AWG or thicker*</text>
+<rect x="1225" y="235" width="230" height="260" rx="10" fill="#111B29" stroke="#EAF0EF" stroke-width="2"/>
+<text x="1340.0" y="285" font-size="23" fill="#6CF8C7" text-anchor="middle">BATTERY / BMS</text>
+<text x="1340.0" y="342" font-size="21" fill="#EAF0EF" text-anchor="middle">Positive via fuse</text>
+<text x="1340.0" y="387" font-size="21" fill="#EAF0EF" text-anchor="middle">Negative to C−</text>
+<polyline points="285,365 330,365" fill="none" stroke="#EAF0EF" stroke-width="4" stroke-linejoin="round"/>
+<polyline points="319,355 330,365 319,375" fill="none" stroke="#EAF0EF" stroke-width="4" stroke-linejoin="round"/>
+<polyline points="580,365 625,365" fill="none" stroke="#EAF0EF" stroke-width="4" stroke-linejoin="round"/>
+<polyline points="614,355 625,365 614,375" fill="none" stroke="#EAF0EF" stroke-width="4" stroke-linejoin="round"/>
+<polyline points="875,365 920,365" fill="none" stroke="#EAF0EF" stroke-width="4" stroke-linejoin="round"/>
+<polyline points="909,355 920,365 909,375" fill="none" stroke="#EAF0EF" stroke-width="4" stroke-linejoin="round"/>
+<polyline points="1170,365 1215,365" fill="none" stroke="#EAF0EF" stroke-width="4" stroke-linejoin="round"/>
+<polyline points="1204,355 1215,365 1204,375" fill="none" stroke="#EAF0EF" stroke-width="4" stroke-linejoin="round"/>
+<text x="45" y="580" font-size="28" fill="#6CF8C7" text-anchor="start">EVERY CONTACT AND BOTH WIRES MUST BE SUITABLE FOR 5 A CONTINUOUS.</text>
+<text x="45" y="632" font-size="24" fill="#EAF0EF" text-anchor="start">*18 AWG minimum for short 30 cm leads; use 16 AWG for more margin or longer routing.</text>
+<text x="45" y="681" font-size="24" fill="#EAF0EF" text-anchor="start">Match the barrel size and polarity at both connections. Secure and insulate the panel terminals.</text>
+<text x="45" y="732" font-size="24" fill="#EAF0EF" text-anchor="start">The rover’s main XT30 power connection is separate from this charging extension.</text>
+</g></svg>
