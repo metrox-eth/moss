@@ -213,6 +213,10 @@ All four tensioner sliders are the same printed part. Rotate each slider to matc
 
 ### 12. Fit the driver and controller
 
+![Computer and battery hidden to show the electronics mounting locations.](images/MOSS_Current_Electronics_Mounts.png)
+
+*Computer and battery hidden to show the electronics mounting locations.*
+
 | Prepare | Quantity |
 |---|---:|
 | Cytron MDD10A Rev2 dual motor driver | 1 |
@@ -228,6 +232,10 @@ All four tensioner sliders are the same printed part. Rotate each slider to matc
 
 ### 13. Fit the speaker and amplifier
 
+![Computer and battery hidden to show the electronics mounting locations.](images/MOSS_Current_Electronics_Mounts.png)
+
+*Computer and battery hidden to show the electronics mounting locations.*
+
 | Prepare | Quantity |
 |---|---:|
 | Speaker, 3 W, 4 ohm, 2-pin connector with 2 mm pitch | 1 |
@@ -241,6 +249,10 @@ All four tensioner sliders are the same printed part. Rotate each slider to matc
 2. Seat the amplifier on its two mounting posts and two support pillars. Use two M2 × 6 screws with 0.5 mm washers.
 
 ### 14. Fit the computer carrier and servo adapter
+
+![Electronics installed in the hull: Jetson and Gemini 2 configuration.](images/MOSS_Current_Electronics_Overview.png)
+
+*Electronics installed in the hull: Jetson and Gemini 2 configuration.*
 
 | Prepare | Quantity |
 |---|---:|
