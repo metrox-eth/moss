@@ -59,15 +59,10 @@
           "reference": "Split hull only: M4 hex nut, 7 mm across flats",
           "quantity": 6,
           "scope": "HULL_SPLIT"
-        },
-        {
-          "reference": "Split hull only: M4 washer, Ø9 × 0.8 mm",
-          "quantity": 6,
-          "scope": "HULL_SPLIT"
         }
       ],
       "actions": [
-        "Choose the one-piece hull or both split halves. For the split hull, dry-fit both halves first, then apply a thin layer of two-part epoxy to the mating faces. Engage the locating pins, seat six nuts from the battery side, and fit six M4 × 15 screws with washers from the motor/computer side. Tighten progressively and let the epoxy cure before installing electronics or the battery.",
+        "Choose the one-piece hull or both split halves. For the split hull, dry-fit both halves first, then apply a thin layer of two-part epoxy to the mating faces. Engage the locating pins, seat six nuts from the battery side, and fit six M4 × 15 screws from the motor/computer side. Tighten progressively and let the epoxy cure before installing electronics or the battery.",
         "Use a soldering iron to fit the inserts: place each insert over its hole, heat it with the iron tip, then gently press it straight into the plastic. Fit four inserts for the cover, four for the arm plate and two for the LiDAR base in the hull.",
         "Use the same soldering-iron method to fit the remaining insert in the LiDAR base for the carriage lock. Keep the threads clear and let all inserts cool before fitting screws."
       ],
@@ -624,15 +619,11 @@
         {
           "reference": "M4 hex nut",
           "quantity": 4
-        },
-        {
-          "reference": "M4 washer",
-          "quantity": 4
         }
       ],
       "actions": [
         "Put the two SP12 cross-member spacers (41 mm, no dots) in each side assembly.",
-        "Fit the outer frame using two M4 × 60 screws, washers and nuts per side."
+        "Fit the outer frame using two M4 × 60 screws and nuts per side."
       ],
       "video": "videos/05-track-side-reassembly.mp4"
     },
@@ -687,15 +678,11 @@
         {
           "reference": "M2 × 6 screw, non-countersunk",
           "quantity": 6
-        },
-        {
-          "reference": "M2 washer, 0.3 mm thick",
-          "quantity": 6
         }
       ],
       "actions": [
         "Secure the MDD10A with four M3 × 6 screws.",
-        "Use four M2 × 6 screws and 0.3 mm washers for the BFF, and two of each for the INA219."
+        "Use four M2 × 6 screws for the BFF and two M2 × 6 screws for the INA219."
       ],
       "video": null
     },
@@ -725,15 +712,11 @@
         {
           "reference": "M2 × 6 screw, non-countersunk",
           "quantity": 2
-        },
-        {
-          "reference": "M2 washer, 0.5 mm thick",
-          "quantity": 2
         }
       ],
       "actions": [
         "Fix the speaker with two M3 × 6 screws above its grille.",
-        "Seat the amplifier on its two mounting posts and two support pillars. Use two M2 × 6 screws with 0.5 mm washers."
+        "Seat the amplifier on its two mounting posts and two support pillars. Use two M2 × 6 screws."
       ],
       "video": null
     },
@@ -795,15 +778,7 @@
           "quantity": 2
         },
         {
-          "reference": "M3 washer, 0.5 mm thick",
-          "quantity": 4
-        },
-        {
           "reference": "M2.5 × 8 screw, non-countersunk",
-          "quantity": 4
-        },
-        {
-          "reference": "M2.5 washer, 0.5 mm thick",
           "quantity": 4
         },
         {
@@ -814,7 +789,7 @@
       ],
       "actions": [
         "Choose one carrier: Jetson or Pi.",
-        "Use the two M3 × 6 screws at the front and the two M3 × 8 screws at the rear, with one 0.5 mm washer each.",
+        "Use the two M3 × 6 screws at the front and the two M3 × 8 screws at the rear.",
         "For Jetson, secure the two retaining tabs with two M3 × 8 screws, without washers.",
         "For Pi/HAT, use the screws and spacers supplied with the HAT; prepare this assembly before fitting the carrier in the hull."
       ],

@@ -8,14 +8,13 @@ Use these two pieces instead of the one-piece hull. Both include the current R92
 | Front hull — battery and camera | 1 |
 | M4 × 15 socket-head screw | 6 |
 | M4 hex nut, 7 mm across flats | 6 |
-| M4 washer, outside diameter 9 mm, thickness 0.8 mm | 6 |
 | Epoxy from the two-part kit | As needed |
 
 1. Print both halves in PETG, flat exterior base down. Use standard/default settings and 15% gyroid infill.
 2. Dry-fit both halves on a flat surface, then separate them.
 3. Apply a thin layer of two-part epoxy to the mating faces and engage the two locating pins.
 4. Seat the six nuts in the pockets on the battery side.
-5. Insert the six screws and washers from the motor/computer side. Tighten progressively.
+5. Insert the six screws from the motor/computer side. Tighten progressively.
 6. Let the epoxy cure before installing the electronics and battery.
 
 The middle track mounts stay entirely on the motor/computer half. The arm-platform insert bosses stay entirely on the front half.

@@ -28,11 +28,10 @@ Build MOSS in this order:
 | M3 heat-set insert, OD4 mm, length 6 mm | 11 |
 | Split hull only: M4 × 15 socket-head screw | 6 |
 | Split hull only: M4 hex nut, 7 mm across flats | 6 |
-| Split hull only: M4 washer, Ø9 × 0.8 mm | 6 |
 
 ![Current R92 split hull, motor/computer half and battery/camera half](images/split-hull-r92.jpg)
 
-1. Choose the one-piece hull or both split halves. For the split hull, dry-fit both halves first, then apply a thin layer of two-part epoxy to the mating faces. Engage the locating pins, seat six nuts from the battery side, and fit six M4 × 15 screws with washers from the motor/computer side. Tighten progressively and let the epoxy cure before installing electronics or the battery.
+1. Choose the one-piece hull or both split halves. For the split hull, dry-fit both halves first, then apply a thin layer of two-part epoxy to the mating faces. Engage the locating pins, seat six nuts from the battery side, and fit six M4 × 15 screws from the motor/computer side. Tighten progressively and let the epoxy cure before installing electronics or the battery.
 2. Use a soldering iron to fit the inserts: place each insert over its hole, heat it with the iron tip, then gently press it straight into the plastic. Fit four inserts for the cover, four for the arm plate and two for the LiDAR base in the hull.
 3. Use the same soldering-iron method to fit the remaining insert in the LiDAR base for the carriage lock. Keep the threads clear and let all inserts cool before fitting screws.
 
@@ -194,10 +193,9 @@ All four tensioner sliders are the same printed part. Rotate each slider to matc
 | [SP12 · Track frame cross-member spacer](https://github.com/metrox-eth/moss/releases/download/v0.6-r92/SP12_Frame_Cross_Member_Spacer.stl) · PETG | 4 |
 | M4 × 60 socket-head screw | 4 |
 | M4 hex nut | 4 |
-| M4 washer | 4 |
 
 1. Put the two SP12 cross-member spacers (41 mm, no dots) in each side assembly.
-2. Fit the outer frame using two M4 × 60 screws, washers and nuts per side.
+2. Fit the outer frame using two M4 × 60 screws and nuts per side.
 
 [Watch the exploded assembly](videos/05-track-side-reassembly.mp4)
 
@@ -225,10 +223,9 @@ All four tensioner sliders are the same printed part. Rotate each slider to matc
 | Adafruit INA219 STEMMA QT, 904 | 1 |
 | M3 × 6 socket-head screw | 4 |
 | M2 × 6 screw, non-countersunk | 6 |
-| M2 washer, 0.3 mm thick | 6 |
 
 1. Secure the MDD10A with four M3 × 6 screws.
-2. Use four M2 × 6 screws and 0.3 mm washers for the BFF, and two of each for the INA219.
+2. Use four M2 × 6 screws for the BFF and two M2 × 6 screws for the INA219.
 
 ### 13. Fit the speaker and amplifier
 
@@ -243,10 +240,9 @@ All four tensioner sliders are the same printed part. Rotate each slider to matc
 | Splash-resistant acoustic membrane, fitted to the inner grille lip | 1 |
 | M3 × 6 socket-head screw | 2 |
 | M2 × 6 screw, non-countersunk | 2 |
-| M2 washer, 0.5 mm thick | 2 |
 
 1. Fix the speaker with two M3 × 6 screws above its grille.
-2. Seat the amplifier on its two mounting posts and two support pillars. Use two M2 × 6 screws with 0.5 mm washers.
+2. Seat the amplifier on its two mounting posts and two support pillars. Use two M2 × 6 screws.
 
 ### 14. Fit the computer carrier and servo adapter
 
@@ -264,13 +260,11 @@ All four tensioner sliders are the same printed part. Rotate each slider to matc
 | Pi only: HAT mounting screws and spacers, supplied with the HAT | 1 kit |
 | M3 × 6 socket-head screw | 2 |
 | M3 × 8 socket-head screw | 2 |
-| M3 washer, 0.5 mm thick | 4 |
 | M2.5 × 8 screw, non-countersunk | 4 |
-| M2.5 washer, 0.5 mm thick | 4 |
 | Jetson only: M3 × 8 socket-head screw, no washer | 2 |
 
 1. Choose one carrier: Jetson or Pi.
-2. Use the two M3 × 6 screws at the front and the two M3 × 8 screws at the rear, with one 0.5 mm washer each.
+2. Use the two M3 × 6 screws at the front and the two M3 × 8 screws at the rear.
 3. For Jetson, secure the two retaining tabs with two M3 × 8 screws, without washers.
 4. For Pi/HAT, use the screws and spacers supplied with the HAT; prepare this assembly before fitting the carrier in the hull.
 

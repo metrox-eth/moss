@@ -39,7 +39,6 @@ DC male barrel plug — computer power,1,"Jetson option: 5.5 × 2.5 mm, 9.5 mm b
 "DC male barrel plug, 5.5 × 2.1 mm — servo power branch",1,For Waveshare Bus Servo Adapter A.
 "Internal male charging lead, 5.5 × 2.1 mm, 18 AWG",1,"MookMig male 0.3M 18AWG. Stock 300 mm, trim to fitted route. Complete mating connection must carry 5 A. https://www.lazada.co.th/products/jack-dc-male-18awg-pvc-5521-powerbox-i2148060041-s7690922633.html"
 "Wire, ferrules and heat-shrink",1,One set for the power and signal wiring.
-Hoco HB1 four-port USB 2.0 hub,1,
 GameSir Nova 2 Lite gamepad with wireless USB receiver,1,For manual driving; include the wireless USB receiver. Used successfully on MOSS.
 "USB-C to USB-A cable, 30 cm",3,
 RealSense camera cable,1,Lazada product link: https://www.lazada.co.th/products/i16248699269-s127506585857.html · RealSense option only.
@@ -48,12 +47,9 @@ Intel RealSense D455 OR Orbbec Gemini 2,1,Use the matching printed insert(s); th
 SLAMTEC RPLIDAR C1,1,
 Wrist USB camera for the R30 mount,1,PCB mounting-hole pattern: 21 × 13.5 mm.
 "M2 × 6 screw, non-countersunk",12,Controller/INA219: 6; amplifier: 2; wrist-camera PCB: 4.
-"M2 washer, 0.3 mm thick",6,Controller/BFF and INA219.
-"M2 washer, 0.5 mm thick",2,Amplifier.
 M2.5 × 6 socket-head screw,4,LiDAR.
 "M2.5 × 8 screw, non-countersunk",4,Servo adapter.
 M2.5 × 10 low-head screw,4,Power distribution. Head diameter 5 mm maximum.
-"M2.5 washer, 0.5 mm thick",4,Servo adapter.
 M3 × 6 socket-head screw,8,Motor driver: 4; speaker: 2; computer carrier: 2.
 M3 × 8 socket-head screw,18,14 common screws. Add 2 for the Jetson retaining tabs and 2 for the Gemini option. Total required: 14–18 depending on options.
 M3 × 10 socket-head screw,8,LiDAR base: 2; arm plate: 4; wrist-camera bracket: 2.
@@ -64,7 +60,6 @@ M3 × 35 socket-head screw,18,"Six road wheels, 3 screws each."
 "M3 × 10 countersunk 90° screw, head Ø6.4 mm maximum",10,Cover and bin assembly.
 "M3 × 10 countersunk 90° screw, head Ø5.6 mm maximum",4,Cover and bin assembly; smaller head clearance than the other M3 countersunk screws.
 M3 hex nut,54,Road wheels: 18; drive wheels: 6; idlers: 6; bearing covers: 6; tensioners: 16; wrist-camera bracket: 2.
-"M3 washer, 0.5 mm thick",4,Computer carrier and servo-adapter assembly.
 M4 × 10 socket-head screw,2,RealSense option only. Not needed with Gemini.
 M4 × 15 socket-head screw,12,6 for the inner track frames. Add 6 only for the split hull (12 total); monobloc hull uses 6.
 M4 × 20 socket-head screw,8,Motor mounts and inner bearing retainers.
@@ -72,7 +67,7 @@ M4 × 25 countersunk 90° screw,4,Arm base.
 M4 × 35 socket-head screw,4,Track tensioners.
 M4 × 60 socket-head screw,4,Outer track frames.
 M4 hex nut,36,30 for a monobloc rover. Add 6 for the split hull (36 total); split-hull pockets require 7 mm across flats.
-"M4 washer, Ø9 × 0.8 mm",14,8 for tensioners and outer frames. Add 6 for the split hull (14 total).
+"M4 washer, Ø9 × 0.8 mm",4,One for each M4 × 35 track-tensioner adjuster. No other washers are required.
 M2 × 6 original servo screw,20,Supplied with the servo hardware. Keep the original head type; do not buy twice.
 M3 × 6 original servo screw,37,Supplied with the servo hardware. Keep the original head type; do not substitute generic socket heads.
 "M3 × 6 cross-head screw, ISO 7045",11,Original gripper hardware; retain the supplied screw pack.

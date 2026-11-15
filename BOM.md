@@ -69,7 +69,6 @@ LK05/LK06/LK08 are guide identifiers for purchased shaft collars, also called lo
 | DC male barrel plug, 5.5 × 2.1 mm — servo power branch | 1 | For the Waveshare Bus Servo Adapter A ([Waveshare specification](https://docs.waveshare.com/Bus_Servo_Adapter_A)). |
 | Internal male charging lead, 5.5 × 2.1 mm, 18 AWG | 1 | [MookMig](https://www.lazada.co.th/products/jack-dc-male-18awg-pvc-5521-powerbox-i2148060041-s7690922633.html), **ตัวผู้ 0.3M 18AWG**. Stock length 300 mm; trim to the fitted route. The complete mating connection must carry 5 A. |
 | Wire, ferrules and heat-shrink | 1 lot |  |
-| Hoco HB1 four-port USB 2.0 hub | 1 |  |
 | GameSir Nova 2 Lite gamepad with wireless USB receiver | 1 | For manual driving; include the wireless USB receiver. Used successfully on MOSS. |
 | USB-C to USB-A cable, 30 cm | 3 |  |
 | RealSense camera cable | 1 | [Lazada product link](https://www.lazada.co.th/products/i16248699269-s127506585857.html) · RealSense option only. |
@@ -80,6 +79,8 @@ LK05/LK06/LK08 are guide identifiers for purchased shaft collars, also called lo
 |---|---:|---|
 | NVIDIA Jetson Orin Nano Super Developer Kit | 1 | Use the Jetson carrier. |
 | OR Raspberry Pi5 with its cooler, storage and appropriate 5 V supply | 1 | Use the Pi carrier and the mounting screws and spacers supplied with the HAT. |
+
+USB hubs and their power supplies belong to the computer options, not the common shopping list. Check port count, peripheral power and hull clearance for the chosen configuration.
 
 ## Sensors
 
@@ -95,7 +96,7 @@ Quantities are for one rover. Use the assembly step to locate each fastener.
 
 | Assembly | Fasteners for one rover |
 |---|---|
-| Choose the hull and fit the inserts | 11 × M3 heat-set insert, OD4 mm, length 6 mm; 6 × Split hull only: M4 × 15 socket-head screw; 6 × Split hull only: M4 hex nut, 7 mm across flats; 6 × Split hull only: M4 washer, Ø9 × 0.8 mm |
+| Choose the hull and fit the inserts | 11 × M3 heat-set insert, OD4 mm, length 6 mm; 6 × Split hull only: M4 × 15 socket-head screw; 6 × Split hull only: M4 hex nut, 7 mm across flats |
 | Build the six road wheels | 18 × M3 × 35 socket-head screw; 18 × M3 hex nut |
 | Build the two drive wheels | 6 × M3 × 20 socket-head screw; 6 × M3 hex nut |
 | Build the two idler wheels | 6 × M3 × 25 socket-head screw; 6 × M3 hex nut |
@@ -103,10 +104,10 @@ Quantities are for one rover. Use the assembly step to locate each fastener.
 | Fit the inner track frames | 6 × M4 × 15 socket-head screw; 6 × M4 hex nut |
 | Fit the drive axles and outer bearing covers | 6 × M3 × 15 socket-head screw; 6 × M3 hex nut |
 | Fit the idler slides and tensioners | 16 × M3 × 15 socket-head screw; 16 × M3 hex nut; 4 × M4 × 35 socket-head screw; 8 × M4 hex nut; 4 × M4 washer |
-| Close the track frames | 4 × M4 × 60 socket-head screw; 4 × M4 hex nut; 4 × M4 washer |
-| Fit the driver and controller | 4 × M3 × 6 socket-head screw; 6 × M2 × 6 screw, non-countersunk; 6 × M2 washer, 0.3 mm thick |
-| Fit the speaker and amplifier | 2 × M3 × 6 socket-head screw; 2 × M2 × 6 screw, non-countersunk; 2 × M2 washer, 0.5 mm thick |
-| Fit the computer carrier and servo adapter | 2 × M3 × 6 socket-head screw; 2 × M3 × 8 socket-head screw; 4 × M3 washer, 0.5 mm thick; 4 × M2.5 × 8 screw, non-countersunk; 4 × M2.5 washer, 0.5 mm thick; 2 × Jetson only: M3 × 8 socket-head screw, no washer |
+| Close the track frames | 4 × M4 × 60 socket-head screw; 4 × M4 hex nut |
+| Fit the driver and controller | 4 × M3 × 6 socket-head screw; 6 × M2 × 6 screw, non-countersunk |
+| Fit the speaker and amplifier | 2 × M3 × 6 socket-head screw; 2 × M2 × 6 screw, non-countersunk |
+| Fit the computer carrier and servo adapter | 2 × M3 × 6 socket-head screw; 2 × M3 × 8 socket-head screw; 4 × M2.5 × 8 screw, non-countersunk; 2 × Jetson only: M3 × 8 socket-head screw, no washer |
 | Fit the camera option | 2 × RealSense only: M4 × 10 socket-head screw; 2 × Gemini only: M3 × 8 socket-head screw |
 | Fit the LiDAR carriage | 2 × M3 × 10 socket-head screw; 4 × M2.5 × 6 socket-head screw; 1 × M3 × 20 socket-head screw |
 | Fit power distribution and cooling | 4 × M2.5 × 10 low-head screw, head diameter 5 mm maximum |
