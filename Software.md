@@ -71,6 +71,10 @@ The rover's speaker is a MAX98357A I2S amplifier on the Jetson's 40-pin header, 
 
 PulseAudio: make the card the default sink (`pactl set-default-sink alsa_output.platform-sound.analog-stereo`, then `pactl set-sink-volume @DEFAULT_SINK@ 100%`) and keep the sink from suspending between cues, which clicks on this amplifier, with a `~/.config/pulse/default.pa` of two lines: `.include /etc/pulse/default.pa` and `unload-module module-suspend-on-idle`. The sound module (`moss_dimos/sounds.py`, [docs/cockpit.md](docs/cockpit.md)) plays into that session: a stack launched from a login shell or over ssh as the robot's user finds it, the boot service's stack does not and stays silent.
 
+### Speaker on the Raspberry Pi's I2S
+
+For Raspberry Pi 4 / 5, connect the MAX98357A to physical pins 2 (5 V), 6 (GND), 12 (GPIO18 / BCLK), 35 (GPIO19 / LRCLK) and 40 (GPIO21 / data out). The [Raspberry Pi wiring inset](https://www.showrobotics.ai/moss/build/wiring.html#raspberry-pi-4--5) shows both physical and BCM numbering. Use [Adafruit's Raspberry Pi setup and test](https://learn.adafruit.com/adafruit-max98357-i2s-class-d-mono-amp/raspberry-pi-usage) for the OS configuration; the Jetson's I2S2 setup above does not apply. This documents the connection; audio has not been tested on a MOSS Raspberry Pi build.
+
 ## Run
 
 ```

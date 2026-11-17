@@ -246,7 +246,7 @@ All four tensioner sliders are the same printed part. Rotate each slider to matc
 1. Fix the speaker with two M3 × 6 screws above its grille.
 2. Seat the amplifier on its two mounting posts and two support pillars. Use two M2 × 6 screws.
 
-[Wiring: Connect the Jetson amplifier and speaker](WIRING.md#9-connect-the-speaker--jetson-configuration)
+[Wiring: Connect the amplifier and speaker (Jetson / Raspberry Pi)](WIRING.md#9-connect-the-speaker)
 
 ### 14. Fit the computer carrier and servo adapter
 

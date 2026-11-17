@@ -724,8 +724,8 @@
       ],
       "video": null,
       "wiring_guide": {
-        "href": "WIRING.md#9-connect-the-speaker--jetson-configuration",
-        "label": "Connect the Jetson amplifier and speaker"
+        "href": "WIRING.md#9-connect-the-speaker",
+        "label": "Connect the amplifier and speaker (Jetson / Raspberry Pi)"
       }
     },
     {

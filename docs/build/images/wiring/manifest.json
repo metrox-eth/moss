@@ -17,6 +17,7 @@
     "images/wiring/04-motors-encoders.png",
     "images/wiring/05-stop-button.png",
     "images/wiring/06-ina219-voltage.png",
-    "images/wiring/07-jetson-speaker.png"
+    "images/wiring/07-jetson-speaker.png",
+    "images/wiring/08-raspberry-pi-speaker.png"
   ]
 }

@@ -162,7 +162,9 @@ Plan for **six device connections** with this full configuration. A hub can prov
 
 The MDD10A is connected to the QT Py, not directly to a computer USB port. The arm servos likewise connect to their adapter, not individually to USB.
 
-## 9. Connect the speaker — Jetson configuration
+## 9. Connect the speaker
+
+### Jetson Orin Nano
 
 ![Jetson physical header pins 2, 6, 12, 35 and 40 to MAX98357A power, ground and I2S, with the speaker across the two amplifier outputs.](images/wiring/07-jetson-speaker.png)
 
@@ -180,7 +182,27 @@ Connect the 4 Ω speaker across **SPK+ and SPK−**, using the module's printed 
 
 The [NVIDIA carrier-board specification, expansion header](https://developer.nvidia.com/downloads/assets/embedded/secure/jetson/orin_nano/docs/jetson_orin_nano_devkit_carrier_board_specification_sp.pdf) labels these signals I2S0. The existing JetPack audio setup uses the I2S2 name; the physical header numbers above identify the wires in either case.
 
-Then follow [the Jetson audio setup](https://github.com/metrox-eth/moss/blob/main/Software.md#speaker-on-the-jetsons-i2s) to enable I2S2 and test playback. The Raspberry Pi and Orange Pi need their own host-specific audio instructions; do not copy the Jetson pin table to another computer.
+Then follow [the Jetson audio setup](https://github.com/metrox-eth/moss/blob/main/Software.md#speaker-on-the-jetsons-i2s) to enable I2S2 and test playback.
+
+### Raspberry Pi 4 / 5
+
+![Raspberry Pi physical pins 2, 6, 12, 35 and 40 to MAX98357A, with BCM GPIO18, GPIO19 and GPIO21 identified for I2S.](images/wiring/08-raspberry-pi-speaker.png)
+
+Use the Raspberry Pi's **40-pin header**. The physical pin positions for these five connections happen to match the Jetson above; the GPIO names and audio configuration are different. Locate pin 1 on the actual board before counting pins.
+
+| Raspberry Pi physical pin | BCM GPIO / function | MAX98357A label |
+|---|---|---|
+| 2 | 5 V supply | VIN / VDD |
+| 6 | Ground | GND |
+| 12 | GPIO18, I2S bit clock | BCLK |
+| 35 | GPIO19, I2S frame clock | LRC / LRCLK |
+| 40 | GPIO21, I2S data out | DIN |
+
+**GPIO18 means physical pin 12, not pin 18.** Connect the speaker across SPK+ and SPK−, with neither output connected to ground. Power the amplifier from 5 V, never from the rover's battery voltage, and allow at least 500 mA of additional capacity in the Pi's 5 V supply for the amplifier.
+
+Follow [Adafruit's Raspberry Pi audio setup](https://learn.adafruit.com/adafruit-max98357-i2s-class-d-mono-amp/raspberry-pi-usage) for the operating-system configuration and playback test. The Jetson's I2S2 commands do not apply to Raspberry Pi OS. The Orange Pi needs its own pinout and audio setup.
+
+Sources: [Adafruit MAX98357A Raspberry Pi wiring](https://learn.adafruit.com/adafruit-max98357-i2s-class-d-mono-amp/raspberry-pi-wiring), [Raspberry Pi header layout](https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#gpio), and [Raspberry Pi I2S GPIO assignments](https://pip-assets.raspberrypi.com/categories/1259-audio-camera-and-display/documents/RP-009699-WP-1-Using%20the%20I2S%20peripherals%20on%20Raspberry%20Pi%20SBCs.pdf).
 
 ## 10. Check and test one part at a time
 

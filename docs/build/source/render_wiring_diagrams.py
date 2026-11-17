@@ -89,7 +89,7 @@ for y,title,a,b in [(365,'Track control','QT Py → Cytron','Motors + encoders')
                      (695,'Sensors + gamepad','USB camera, LiDAR, receiver','Depth camera on USB 3')]:
     panel(920,y,888,140,title);text(950,y+78,a,27,MINT,600);text(1390,y+78,b,22)
     wire([(552,y+70),(920,y+70)],MINT)
-panel(920,860,888,140,'Speaker');text(950,938,'Jetson I2S → MAX98357A → speaker',27,MINT,600)
+panel(920,860,888,140,'Speaker');text(950,938,'Computer I2S → MAX98357A → speaker',27,MINT,600)
 wire([(552,810),(730,810),(730,930),(920,930)],SALMON)
 paths.append(save('01-overview.png'))
 
@@ -157,6 +157,17 @@ wire([(1450,570),(1600,570)],MINT);wire([(1450,730),(1600,730)],WHITE)
 text(1630,638,'4 Ω',32,MINT,600)
 wrap(114,966,'Connect the speaker across SPK+ and SPK−. Neither output goes to ground.',28,width=1670)
 paths.append(save('07-jetson-speaker.png'))
+
+card('08','Speaker to Raspberry Pi','Physical header pins + BCM GPIO names. Raspberry Pi 4 / 5 with a 40-pin header.')
+panel(112,365,590,560,'Raspberry Pi 4 / 5');panel(1020,365,430,560,'MAX98357A');panel(1600,510,208,290,'Speaker')
+for i,(a,b,c) in enumerate([('Pin 2 · 5 V','VIN',SALMON),('Pin 6 · GND','GND',WHITE),
+                           ('Pin 12 · GPIO18','BCLK',MINT),('Pin 35 · GPIO19','LRC',MINT),('Pin 40 · GPIO21','DIN',MINT)]):
+    y=470+i*85;text(145,y,a,31,c,600);text(1050,y,b,31,c,600);wire([(702,y+17),(1020,y+17)],c)
+text(1330,550,'SPK+',25,MINT,600);text(1330,710,'SPK−',25,WHITE,600)
+wire([(1450,570),(1600,570)],MINT);wire([(1450,730),(1600,730)],WHITE)
+text(1630,638,'4 Ω',32,MINT,600)
+wrap(114,966,'GPIO18 is physical pin 12. Connect the speaker across SPK+ and SPK−, not ground.',28,width=1670)
+paths.append(save('08-raspberry-pi-speaker.png'))
 
 manifest={'font':'Space Grotesk variable, explicit weights 500/600/700',
           'palette':{'STUDIO':'#3D576A','WHITE':'#EAF0EF','MINT':'#6CF8C7','SALMON':'#FF947E'},
