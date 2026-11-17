@@ -41,7 +41,11 @@ The [battery and charging guide](https://github.com/metrox-eth/moss/tree/main/ha
 
 Wire the two 12 V fans in parallel on the fourth branch. Connect every branch's negative to the protected battery-output negative, through the distribution return. On the custom common-port battery this is the BMS's **C− output**, not the raw cell negative.
 
-The stop button is a low-current input to the QT Py, described in section 5 below. Do not put it in series with the motor or whole-rover power wiring. The round main switch is the separate control that disconnects the rover's supply.
+The round main switch is the separate control that disconnects the rover's supply. Connect fused battery positive to its power input, its switched power output to the XT30 positive rail, and its LED-return terminal to protected output negative. Identify those functions from the switch markings or a continuity check before wiring; the LED terminal is not a power output.
+
+The stop button is a low-current input to the QT Py, described in section 5 below. Do not put it in series with the motor or whole-rover power wiring.
+
+[Watch the power-distribution assembly](https://raw.githubusercontent.com/metrox-eth/moss/main/docs/build/videos/07-xt30-power-distribution.mp4).
 
 ## 3. Connect the QT Py to the Cytron
 
