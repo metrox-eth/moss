@@ -2,6 +2,8 @@
 
 [Open the MOSS build guide](https://www.showrobotics.ai/moss/build/) · [Written assembly cards](ASSEMBLY.md)
 
+[Connect the electronics — complete wiring guide](WIRING.md) · [Illustrated web version](https://www.showrobotics.ai/moss/build/wiring.html).
+
 Each step lists the printed parts, components and fasteners to prepare. Seven short clips show part identification, exploded assemblies and road-wheel fastening.
 
 [Grouped print list and quantities](printed_parts.csv) · [Original filename aliases](print_aliases.json). The current archive and both 3MF projects include the two Jetson retaining tabs.

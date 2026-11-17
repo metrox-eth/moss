@@ -227,6 +227,8 @@ All four tensioner sliders are the same printed part. Rotate each slider to matc
 1. Secure the MDD10A with four M3 × 6 screws.
 2. Use four M2 × 6 screws for the BFF and two M2 × 6 screws for the INA219.
 
+[Wiring: Connect the controller, motor driver and encoders](WIRING.md#3-connect-the-qt-py-to-the-cytron)
+
 ### 13. Fit the speaker and amplifier
 
 ![Computer and battery hidden to show the electronics mounting locations.](images/MOSS_Current_Electronics_Mounts.png)
@@ -243,6 +245,8 @@ All four tensioner sliders are the same printed part. Rotate each slider to matc
 
 1. Fix the speaker with two M3 × 6 screws above its grille.
 2. Seat the amplifier on its two mounting posts and two support pillars. Use two M2 × 6 screws.
+
+[Wiring: Connect the Jetson amplifier and speaker](WIRING.md#9-connect-the-speaker--jetson-configuration)
 
 ### 14. Fit the computer carrier and servo adapter
 
@@ -268,6 +272,8 @@ All four tensioner sliders are the same printed part. Rotate each slider to matc
 3. For Jetson, secure the two retaining tabs with two M3 × 8 screws, without washers.
 4. For Pi/HAT, use the screws and spacers supplied with the HAT; prepare this assembly before fitting the carrier in the hull.
 
+[Wiring: Connect servo power and USB](WIRING.md#7-connect-the-arm-and-gripper)
+
 ### 15. Fit the camera option
 
 | Prepare | Quantity |
@@ -282,6 +288,8 @@ All four tensioner sliders are the same printed part. Rotate each slider to matc
 1. For RealSense, slide the support insert down from the top, then use its two M4 × 10 screws.
 2. For Gemini, use the flush insert and the window bezel instead. Secure the camera with two M3 × 8 screws; keep the USB opening clear.
 
+[Wiring: Connect the selected camera](WIRING.md#8-connect-the-usb-devices)
+
 ### 16. Fit the LiDAR carriage
 
 | Prepare | Quantity |
@@ -294,6 +302,8 @@ All four tensioner sliders are the same printed part. Rotate each slider to matc
 
 1. With the carriage removed, secure the LiDAR base to the hull with two M3 × 10 screws.
 2. Secure the C1 to the carriage with four M2.5 × 6 screws, slide it onto the base and lock it with the M3 × 20 screw, without a washer, into the M3 insert.
+
+[Wiring: Connect the LiDAR](WIRING.md#8-connect-the-usb-devices)
 
 ### 17. Fit power distribution and cooling
 
@@ -325,6 +335,8 @@ All four tensioner sliders are the same printed part. Rotate each slider to matc
 [Rear charging path, parts and wiring](../../hardware/power/custom-3s4p-battery/#rear-charging-port-and-cable)
 
 [Watch the exploded assembly](videos/07-xt30-power-distribution.mp4)
+
+[Wiring: Connect power distribution and the two-wire track stop](WIRING.md#2-prepare-the-power-connections)
 
 ## Arm and gripper
 

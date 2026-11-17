@@ -424,6 +424,15 @@ check("no robot.env, no driver key -> informative OK that says how to make it a 
 check("load_robot_env: comments, export, quotes, junk", mp.load_robot_env("# c\nexport A=\"1 2\"\nB='x'\nnot a pair\nlower=3\nC=\n") == {"A": "1 2", "B": "x", "C": ""})
 check("driver_verdict pure: expected set and nothing reported -> KO", mp.driver_verdict("mdd10a", None) == (False, "not reported, robot.env expects mdd10a: reflash the mdd10a build (bench/README.md)"))
 
+rc, out, res, w = run(telemetry=dict(TELEMETRY, stop_open=False, stop_latched=False))
+check("closed two-wire stop loop -> OK", line_of(out, "track stop button").startswith("OK"), line_of(out, "track stop button"))
+rc, out, res, w = run(telemetry=dict(TELEMETRY, stop_open=True, stop_latched=True))
+check("open two-wire stop loop -> KO without writing to serial", line_of(out, "track stop button").startswith("KO") and "open NC loop" in line_of(out, "track stop button"), line_of(out, "track stop button"))
+rc, out, res, w = run(telemetry=dict(TELEMETRY, stop_open=False, stop_latched=True))
+check("released but latched stop -> KO with explicit clearstop instruction", line_of(out, "track stop button").startswith("KO") and "clearstop" in line_of(out, "track stop button"), line_of(out, "track stop button"))
+rc, out, res, w = run(telemetry=dict(TELEMETRY, stop_open="false", stop_latched=False))
+check("malformed stop telemetry -> KO", line_of(out, "track stop button").startswith("KO") and "malformed" in line_of(out, "track stop button"), line_of(out, "track stop button"))
+
 print("F. --json")
 rc, out, res, w = run(["--json"], telemetry=dict(TELEMETRY, bus_mV=10500))
 try:

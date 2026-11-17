@@ -1,0 +1,143 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MOSS wiring · Build guide</title><meta name="description" content="Connect the MOSS rover electronics: QT Py, Cytron, motors, encoders, stop button, INA219, servos and Jetson speaker."><style>
+@font-face{font-family:Space Grotesk;src:url(fonts/SpaceGrotesk.ttf) format("truetype");font-weight:300 700;font-display:swap}
+:root{color-scheme:dark;font-family:"Space Grotesk",sans-serif;background:#3D576A;color:#EAF0EF}*{box-sizing:border-box}body{margin:0}
+header{max-width:1180px;margin:auto;padding:36px 40px 10px;display:flex;align-items:center;justify-content:space-between;gap:20px}header img{width:150px;height:auto;margin:0}nav{display:flex;flex-wrap:wrap;gap:20px}a{color:#6CF8C7;text-underline-offset:4px}nav a{text-decoration:none;font-size:15px}
+main{max-width:1180px;margin:30px auto 70px;padding:0 40px}.kicker{color:#6CF8C7;font-size:14px;font-weight:600;letter-spacing:2.6px}h1{font-size:62px;font-weight:600;line-height:1.05;margin:20px 0 28px}h2{font-size:32px;line-height:1.25;font-weight:600;margin:56px 0 22px;scroll-margin-top:24px}p,li{font-size:18px;line-height:1.65}li{padding-bottom:9px}strong{font-weight:700}code{font-family:"Space Grotesk",sans-serif;font-weight:600;font-size:.94em;background:#080f1a55;padding:2px 6px;border-radius:4px;overflow-wrap:anywhere}
+.diagram{display:block;cursor:zoom-in}.diagram img{display:block;width:100%;height:auto;margin:30px 0;border:1px solid #ffffff25;border-radius:10px}.table-scroll{overflow-x:auto;margin:26px 0}table{width:100%;border-collapse:collapse;font-size:16px;line-height:1.5}th,td{text-align:left;padding:14px 15px;border-bottom:1px solid #eaf0ef33;vertical-align:top}th{color:#6CF8C7;background:#080f1a33;font-weight:600}td:first-child{font-weight:600}
+.contents{padding:22px 25px;border:1px solid #eaf0ef55;border-radius:10px;margin:28px 0}.contents summary{font-size:20px;font-weight:600;cursor:pointer}.contents ul{columns:2;padding-left:22px}.contents li{font-size:15px;break-inside:avoid;padding-bottom:10px}.contents a{text-decoration:none}.back{margin-top:60px;border-top:1px solid #ffffff55;padding-top:22px}
+@media(max-width:720px){header{padding:25px 20px;align-items:flex-start;flex-direction:column}main{padding:0 20px;margin-top:18px}h1{font-size:44px}h2{font-size:27px}p,li{font-size:17px}.contents ul{columns:1}th,td{padding:11px;min-width:100px;font-size:14px}}
+@media print{body{color:#182d29;background:white}header,.contents{display:none}main{max-width:none;margin:0;padding:0}a{color:inherit}h1{font-size:32px}h2{break-after:avoid}p,li{font-size:11px}table{font-size:10px}tr{break-inside:avoid}.diagram{break-inside:avoid}code{background:#eee}}
+</style><header><a href="https://www.showrobotics.ai/moss/build/"><img src="images/moss-wordmark.svg" alt="MOSS"></a><nav><a href="https://www.showrobotics.ai/moss/build/">Build guide</a><a href="https://github.com/metrox-eth/moss/blob/main/BOM.md">BOM</a><a href="https://github.com/metrox-eth/moss/blob/main/Software.md">Software</a></nav></header><main><div class="kicker">BUILD / ELECTRONICS</div><h1 id="moss-wiring">MOSS wiring</h1>
+<p>This guide explains how to connect the electronics listed in the MOSS BOM. The computer talks over USB to a QT Py motor controller and a Waveshare servo adapter. The Cytron MDD10A drives the tracks; the Waveshare adapter controls the arm and gripper.</p>
+<p><a class="diagram" href="images/wiring/01-overview.png" title="Open full-size diagram"><img src="images/wiring/01-overview.png" alt="MOSS electronics: computer, track controller, arm adapter, sensors and speaker." loading="lazy" width="1920" height="1080"></a></p><details class="contents"><summary>Connections in this guide</summary><ul><li><a href="#1-identify-the-modules">1. Identify the modules</a></li><li><a href="#2-prepare-the-power-connections">2. Prepare the power connections</a></li><li><a href="#3-connect-the-qt-py-to-the-cytron">3. Connect the QT Py to the Cytron</a></li><li><a href="#4-connect-the-motor-encoders">4. Connect the motor encoders</a></li><li><a href="#5-connect-the-two-wire-track-stop-button">5. Connect the two-wire track stop button</a></li><li><a href="#6-connect-the-battery-voltage-sensor">6. Connect the battery-voltage sensor</a></li><li><a href="#7-connect-the-arm-and-gripper">7. Connect the arm and gripper</a></li><li><a href="#8-connect-the-usb-devices">8. Connect the USB devices</a></li><li><a href="#9-connect-the-speaker--jetson-configuration">9. Connect the speaker — Jetson configuration</a></li><li><a href="#10-check-and-test-one-part-at-a-time">10. Check and test one part at a time</a></li></ul></details>
+<p>Use this page after mounting the electronics and before closing the hull. Follow the <a href="https://github.com/metrox-eth/moss/blob/main/docs/build/ASSEMBLY.md#hull-electronics-and-sensors">mounting steps</a> for component positions. Left and right mean the rover&#x27;s left and right when facing forward.</p>
+<h2 id="1-identify-the-modules">1. Identify the modules</h2>
+<div class="table-scroll"><table><thead><tr><th>Module</th><th>What it does</th></tr></thead><tbody>
+<tr><td>Onboard computer</td><td>Runs the MOSS software and connects the USB devices</td></tr>
+<tr><td>Adafruit QT Py ESP32-S3, ref. 5426, on Terminal Block BFF, ref. 6495</td><td>Sends motor commands and reads the track encoders</td></tr>
+<tr><td>Cytron MDD10A Rev2</td><td>Supplies the two drive motors</td></tr>
+<tr><td>Adafruit INA219, ref. 904</td><td>Reports battery voltage in this configuration</td></tr>
+<tr><td>Waveshare Bus Servo Adapter A</td><td>Connects the arm and gripper to the computer over USB</td></tr>
+<tr><td>MAX98357A</td><td>Drives the speaker from the computer&#x27;s digital audio output</td></tr>
+</tbody></table></div>
+<p>The tables here use the QT Py&#x27;s printed pin names, such as A0 and SDA. GPIO numbers are included to distinguish them from other ESP32 boards. These connections apply to the QT Py ESP32-S3 listed above.</p>
+<h2 id="2-prepare-the-power-connections">2. Prepare the power connections</h2>
+<p>Keep the battery and charger disconnected while making connections. The rover supply and charging inlet are separate branches: the rover uses XT30; the charging inlet uses the matching barrel connectors.</p>
+<p><a class="diagram" href="images/wiring/02-power-distribution.png" title="Open full-size diagram"><img src="images/wiring/02-power-distribution.png" alt="Protected battery output through the main switch to four XT30 power branches, with a shared protected negative return." loading="lazy" width="1920" height="1080"></a></p>
+<div class="table-scroll"><table><thead><tr><th>Connection</th><th>Requirement for this build</th></tr></thead><tbody>
+<tr><td>Battery output</td><td>Protected 3S Li-ion output; up to 12.6 V when fully charged</td></tr>
+<tr><td>Main fuse</td><td>Existing 15 A pack fuse, close to battery positive</td></tr>
+<tr><td>Main switch</td><td>KCD1-5-101EN, 20 mm opening; selected listing specifies 20 A at 12 V DC</td></tr>
+<tr><td>Power distribution</td><td>XT30 enclosure: one input and four outputs; label each branch</td></tr>
+<tr><td>Cytron power input</td><td>Battery-voltage motor branch; identify Vmotor + and − on the actual driver</td></tr>
+<tr><td>Jetson computer branch</td><td>For the documented Orin Nano developer-kit carrier: 5.5 × 2.5 mm plug, 9.5 mm barrel, centre positive</td></tr>
+<tr><td>Raspberry Pi computer branch</td><td>Use a suitable regulated 5 V supply for the Pi; battery voltage must not go directly to its USB-C input</td></tr>
+<tr><td>Servo branch</td><td>Separate DC power into the Waveshare adapter, matched to the installed servos; USB supplies communication, not the servo load</td></tr>
+<tr><td>Charging connection</td><td>DC099 rear socket and both cable assemblies: 5.5 × 2.1 mm, at least 18 AWG copper leads, complete contacts and cable rated for 5 A continuous</td></tr>
+</tbody></table></div>
+<p>The <a href="https://github.com/metrox-eth/moss/tree/main/hardware/power/custom-3s4p-battery#rear-charging-port-and-cable">battery and charging guide</a> contains the charge-path drawing and main-switch connections. A commercial assembled battery does not require the cell-building steps: start with its protected output and a charger suitable for that pack.</p>
+<p>Wire the two 12 V fans in parallel on the fourth branch. Connect every branch&#x27;s negative to the protected battery-output negative, through the distribution return. On the custom common-port battery this is the BMS&#x27;s <strong>C− output</strong>, not the raw cell negative.</p>
+<p>The stop button is a low-current input to the QT Py, described in section 5 below. Do not put it in series with the motor or whole-rover power wiring. The round main switch is the separate control that disconnects the rover&#x27;s supply.</p>
+<h2 id="3-connect-the-qt-py-to-the-cytron">3. Connect the QT Py to the Cytron</h2>
+<p><a class="diagram" href="images/wiring/03-qtpy-cytron.png" title="Open full-size diagram"><img src="images/wiring/03-qtpy-cytron.png" alt="Five connections: QT Py A0 to PWM1, A1 to DIR1, A2 to PWM2, A3 to DIR2, and GND to signal GND." loading="lazy" width="1920" height="1080"></a></p>
+<p>Use the QT Py/BFF labels in the first column and the Cytron&#x27;s input labels in the second. Identify labels on the boards rather than counting pins from a photograph that might be flipped.</p>
+<div class="table-scroll"><table><thead><tr><th>QT Py / BFF</th><th>GPIO</th><th>Cytron MDD10A input</th><th>Function</th></tr></thead><tbody>
+<tr><td>A0</td><td>18</td><td>PWM1</td><td>Left motor speed</td></tr>
+<tr><td>A1</td><td>17</td><td>DIR1</td><td>Left motor direction</td></tr>
+<tr><td>A2</td><td>9</td><td>PWM2</td><td>Right motor speed</td></tr>
+<tr><td>A3</td><td>8</td><td>DIR2</td><td>Right motor direction</td></tr>
+<tr><td>GND</td><td>—</td><td>Signal GND</td><td>Shared signal reference</td></tr>
+</tbody></table></div>
+<p>Connect the left motor&#x27;s two power wires to motor channel 1 and the right motor&#x27;s to channel 2. Encoder wires belong to the next table; they do not go on the motor output terminals.</p>
+<p>The MDD10A accepts 3.3 V PWM/DIR signals. Its battery input has no reverse-polarity protection, so check the power connector before plugging it into the driver. See the <a href="https://www.cytron.io/p-10amp-5v-30v-dc-motor-driver-2-channels">Cytron product documentation</a>.</p>
+<p>Use the <strong>MDD10A firmware build</strong>, even though the source folder still has MDD3A in its name. The compile option is <code>-DMOSS_DRIVER_MDD10A</code>; <a href="https://github.com/metrox-eth/moss/blob/main/firmware/MOSS_QTPY_MDD3A/bench/README.md">the build command is here</a>.</p>
+<h2 id="4-connect-the-motor-encoders">4. Connect the motor encoders</h2>
+<p><a class="diagram" href="images/wiring/04-motors-encoders.png" title="Open full-size diagram"><img src="images/wiring/04-motors-encoders.png" alt="The two motor power leads connect to the appropriate Cytron channel; each encoder has separate 3.3 V, GND, A and B connections." loading="lazy" width="1920" height="1080"></a></p>
+<div class="table-scroll"><table><thead><tr><th>Encoder signal</th><th>QT Py / BFF</th><th>GPIO</th></tr></thead><tbody>
+<tr><td>Left A</td><td>SDA</td><td>7</td></tr>
+<tr><td>Left B</td><td>SCL</td><td>6</td></tr>
+<tr><td>Right A</td><td>TX</td><td>5</td></tr>
+<tr><td>Right B</td><td>RX</td><td>16</td></tr>
+<tr><td>Both encoder VCC connections</td><td>3V / 3.3 V</td><td>—</td></tr>
+<tr><td>Both encoder GND connections</td><td>GND</td><td>—</td></tr>
+</tbody></table></div>
+<p>In this firmware, SDA/SCL and TX/RX are encoder inputs. They are not being used as their usual I2C and serial interfaces.</p>
+<p>Power the encoders from the QT Py&#x27;s <strong>3V / 3.3 V</strong> output, independently of the motors&#x27; 12 V power wires. The Hall-encoder version used by this guide must support a 3.3 V supply and 3.3 V output signals. An encoder that requires 5 V needs a separately documented interface; do not put its 5 V outputs directly on QT Py inputs.</p>
+<p>Identify the six motor wires by their functions: two motor-power leads, encoder VCC, encoder GND, A and B. Vendors use different wire colours and connector orders. Follow the markings or diagram supplied with the actual motor; the drawing above is a connection list, not a numbered plug orientation. Check each track and its encoder direction during the first test.</p>
+<p>For comparison, <a href="https://www.dowin.com/corp/detail-uuu5cbf-pudwcye-600rpm-24v-small-dc-gear-motors-with-hall-encoder.html">this JGB37-520 family supplier lists 3.3–5 V encoder power</a>. It is not a universal colour or connector standard.</p>
+<h2 id="5-connect-the-two-wire-track-stop-button">5. Connect the two-wire track stop button</h2>
+<p><a class="diagram" href="images/wiring/05-stop-button.png" title="Open full-size diagram"><img src="images/wiring/05-stop-button.png" alt="Normally closed stop-button contact between QT Py SCK, GPIO 36, and GND." loading="lazy" width="1920" height="1080"></a></p>
+<p>This connection uses the <strong>normally closed (NC)</strong> contact of the latching LA16 button. It stops the tracks through the QT Py firmware. It does <strong>not</strong> disconnect motor power or stop the arm, and it depends on the controller running correctly.</p>
+<div class="table-scroll"><table><thead><tr><th>Button connection</th><th>QT Py / BFF</th></tr></thead><tbody>
+<tr><td>One terminal of the NC contact pair</td><td>SCK, GPIO 36</td></tr>
+<tr><td>Other terminal of the same NC pair</td><td>GND</td></tr>
+<tr><td>Normally open (NO) contact and any lamp terminals</td><td>Unused; insulate separately</td></tr>
+</tbody></table></div>
+<p>With no power connected, use continuity mode to identify the NC pair: closed when the button is released, open when pressed and latched. Do not choose terminals just by their location or a seller photograph. The two wires on the NC pair have no polarity. Route them together, away from the motor-power wires.</p>
+<p>Install the <strong><code>qtpy-mdd3a-v5</code> firmware, built for MDD10A</strong>, before expecting the button to work. It enables the input&#x27;s pull-up. A button press, open wire or disconnected contact opens the loop and latches a stop. Motor PWM and ramp state are reset to zero; normal <code>arm</code>, <code>drive</code> and timed-test commands cannot override the latch. Earlier firmware does not implement this input.</p>
+<p>To recover after a stop:</p>
+<ol>
+<li>Stop the teleoperation/navigation stack with <code>tools/moss-fly.sh stop</code> and centre the gamepad sticks.</li>
+<li>Release the physical button. The NC loop must remain closed for at least 100 ms.</li>
+<li>From the robot&#x27;s checkout, run <code>.venv/bin/python firmware/MOSS_QTPY_MDD3A/bench/moss_bench.py &quot;clearstop&quot;</code>. This clears the latch but leaves the firmware disarmed.</li>
+<li>Run <code>tools/moss-fly.sh check</code>, then restart teleoperation deliberately. The host&#x27;s usual arming sequence can now run.</li>
+</ol>
+<p>The new stop support has been compiled and checked with host tests; installation on the physical rover still requires the supported-track test in section 10. Pressing and then releasing the button must not restart a track by itself.</p>
+<h2 id="6-connect-the-battery-voltage-sensor">6. Connect the battery-voltage sensor</h2>
+<p><a class="diagram" href="images/wiring/06-ina219-voltage.png" title="Open full-size diagram"><img src="images/wiring/06-ina219-voltage.png" alt="INA219 logic connects through STEMMA QT. Its Vin-minus measurement terminal connects to switched fused positive; it is not a battery-negative terminal." loading="lazy" width="1920" height="1080"></a></p>
+<p>Connect the INA219 to the QT Py&#x27;s <strong>STEMMA QT connector</strong> with the four-wire STEMMA cable. This connector uses a separate I2C bus; leave the BFF&#x27;s SDA/SCL encoder terminals as connected above.</p>
+<div class="table-scroll"><table><thead><tr><th>QT Py STEMMA QT</th><th>INA219 connection</th></tr></thead><tbody>
+<tr><td>3.3 V</td><td>Logic power</td></tr>
+<tr><td>GND</td><td>Logic ground</td></tr>
+<tr><td>SDA1, GPIO 41</td><td>SDA</td></tr>
+<tr><td>SCL1, GPIO 40</td><td>SCL</td></tr>
+</tbody></table></div>
+<p>The firmware uses <code>Wire1</code>, address <code>0x40</code>, and reports voltage only. Motor current must not be routed through the INA219 module&#x27;s small shunt as part of this installation.</p>
+<p>For a voltage-only installation, connect the INA219 screw terminal marked <strong>Vin−</strong> to the <strong>positive rail at the XT30 distribution, after the pack fuse and main switch</strong>. Use a short, secured copper sense lead, 18 AWG in this harness. Leave Vin+ unused. The sensor&#x27;s ground reference comes through STEMMA QT to the common protected-output ground.</p>
+<p><strong>Vin− is not battery negative.</strong> It is the negative side of the module&#x27;s current-sense shunt; the chip measures bus voltage from this terminal to GND. In this voltage-only wiring it is connected to the positive voltage being measured. Do not connect the 12 V rail to the sensor&#x27;s logic-power VIN/VCC pin.</p>
+<p>The four main power branches bypass the INA219 shunt. The displayed reading is the rover&#x27;s switched supply voltage at the distribution, which can differ slightly from a reading directly on the pack under load. Compare it with a multimeter at that same node. See <a href="https://www.ti.com/lit/ds/symlink/ina219.pdf">the INA219 datasheet, bus-voltage measurement</a>.</p>
+<p>Reference: <a href="https://learn.adafruit.com/adafruit-qt-py-esp32-s3/pinouts">QT Py pinout</a> and <a href="https://learn.adafruit.com/adafruit-ina219-current-sensor-breakout/pinouts">INA219 pinout</a>.</p>
+<h2 id="7-connect-the-arm-and-gripper">7. Connect the arm and gripper</h2>
+<ol>
+<li>Connect the Waveshare Bus Servo Adapter A to the computer with a USB data cable and set its control-mode selector for USB operation.</li>
+<li>Connect its separate DC input to the servo-power branch. The adapter specifies a 9–12.6 V input, matched to the installed servos, and uses a 5.5 × 2.1 mm DC socket. Check polarity on the actual adapter and cable.</li>
+<li>Connect the arm and gripper using their serial-servo bus cables. Follow the connector markings for supply, ground and data; keep the cables clear of the joints.</li>
+<li>Assign a unique ID to each servo before commanding the assembled arm. Use the <a href="https://github.com/metrox-eth/moss/blob/main/docs/arm.md">arm setup and calibration instructions</a> for the original SO-101 configuration.</li>
+</ol>
+<p>The SO-102 variant needs its own joint/ID and calibration instructions; the original SO-101 servo table must not be presented as the SO-102 setup.</p>
+<p>Reference: <a href="https://docs.waveshare.com/Bus_Servo_Adapter_A">Waveshare adapter documentation</a>.</p>
+<h2 id="8-connect-the-usb-devices">8. Connect the USB devices</h2>
+<div class="table-scroll"><table><thead><tr><th>Computer connection</th><th>Device</th></tr></thead><tbody>
+<tr><td>USB data</td><td>QT Py motor controller</td></tr>
+<tr><td>USB data</td><td>Waveshare servo adapter</td></tr>
+<tr><td>USB data</td><td>RPLIDAR C1, using its interface cable</td></tr>
+<tr><td>USB data</td><td>Wrist camera</td></tr>
+<tr><td>USB</td><td>GameSir wireless receiver</td></tr>
+<tr><td>Suitable USB 3 port</td><td>Selected depth camera and its matching cable</td></tr>
+</tbody></table></div>
+<p>Plan for <strong>six device connections</strong> with this full configuration. A hub can provide additional ports, but it is an option for the chosen computer, not a mandatory common part. Check its power budget and fit in the hull. A USB 2 hub does not provide a USB 3 connection for the depth camera.</p>
+<p>The MDD10A is connected to the QT Py, not directly to a computer USB port. The arm servos likewise connect to their adapter, not individually to USB.</p>
+<h2 id="9-connect-the-speaker--jetson-configuration">9. Connect the speaker — Jetson configuration</h2>
+<p><a class="diagram" href="images/wiring/07-jetson-speaker.png" title="Open full-size diagram"><img src="images/wiring/07-jetson-speaker.png" alt="Jetson physical header pins 2, 6, 12, 35 and 40 to MAX98357A power, ground and I2S, with the speaker across the two amplifier outputs." loading="lazy" width="1920" height="1080"></a></p>
+<p>This table uses <strong>physical pin numbers on the Jetson&#x27;s 40-pin header</strong>, not GPIO numbers. It describes the I2S2 setup recorded for the Orin Nano developer kit under JetPack 6.</p>
+<div class="table-scroll"><table><thead><tr><th>Jetson connection</th><th>MAX98357A label</th></tr></thead><tbody>
+<tr><td>Physical pin 12, I2S2 bit clock</td><td>BCLK</td></tr>
+<tr><td>Physical pin 35, I2S2 frame clock</td><td>LRC / LRCLK</td></tr>
+<tr><td>Physical pin 40, I2S2 data out</td><td>DIN</td></tr>
+<tr><td>Physical pin 2, 5 V supply</td><td>VIN / VDD</td></tr>
+<tr><td>Physical pin 6, ground</td><td>GND</td></tr>
+</tbody></table></div>
+<p>Connect the 4 Ω speaker across <strong>SPK+ and SPK−</strong>, using the module&#x27;s printed output labels. Neither speaker output is a ground connection. The amplifier receives 5 V here, not battery voltage. The <a href="https://learn.adafruit.com/adafruit-max98357-i2s-class-d-mono-amp/pinouts">MAX98357A pinout</a> describes the supply, digital inputs and bridged speaker output.</p>
+<p>The <a href="https://developer.nvidia.com/downloads/assets/embedded/secure/jetson/orin_nano/docs/jetson_orin_nano_devkit_carrier_board_specification_sp.pdf">NVIDIA carrier-board specification, expansion header</a> labels these signals I2S0. The existing JetPack audio setup uses the I2S2 name; the physical header numbers above identify the wires in either case.</p>
+<p>Then follow <a href="https://github.com/metrox-eth/moss/blob/main/Software.md#speaker-on-the-jetsons-i2s">the Jetson audio setup</a> to enable I2S2 and test playback. The Raspberry Pi and Orange Pi need their own host-specific audio instructions; do not copy the Jetson pin table to another computer.</p>
+<h2 id="10-check-and-test-one-part-at-a-time">10. Check and test one part at a time</h2>
+<ol>
+<li>With battery and charger disconnected, inspect the finished connections, confirm polarity and check for unintended shorts between supply and ground. Secure the cables away from tracks, fans and arm joints.</li>
+<li>Check the stop button&#x27;s NC contact and its SCK-to-GND loop. With v5 firmware, <code>status</code> reports <code>stop_open</code> and <code>stop_latched</code>; both must be false before driving.</li>
+<li>Power and identify the computer and USB boards first. Check that the QT Py firmware banner reports <code>driver mdd10a</code>.</li>
+<li>Support the rover with both tracks clear. Use the <a href="https://github.com/metrox-eth/moss/blob/main/firmware/MOSS_QTPY_MDD3A/bench/README.md">one-second motor tests</a>, one track at a time, and verify direction and encoder changes. Press the stop button during each test: the track must stop, remain stopped after button release and reject another test until <code>clearstop</code>. Check the same behaviour with either stop-loop wire unplugged.</li>
+<li>Scan the servo bus and confirm IDs before trying a small arm movement in clear space. Follow the arm-specific calibration procedure.</li>
+<li>Check the cameras, LiDAR, controller and speaker. Follow <a href="https://github.com/metrox-eth/moss/blob/main/Software.md">Software setup</a> for device configuration and the first teleoperation run.</li>
+</ol>
+<p>The <code>tools/moss-fly.sh check</code> software check reads the stop flags when the firmware provides them. It does not verify power polarity, cable ratings or the button&#x27;s physical response.</p>
+<p><a href="https://github.com/metrox-eth/moss/blob/main/docs/build/ASSEMBLY.md">Back to mounting instructions</a> · <a href="https://github.com/metrox-eth/moss/blob/main/BOM.md">BOM</a> · <a href="https://github.com/metrox-eth/moss/blob/main/Software.md">Software setup</a></p></main></html>

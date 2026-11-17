@@ -684,7 +684,11 @@
         "Secure the MDD10A with four M3 × 6 screws.",
         "Use four M2 × 6 screws for the BFF and two M2 × 6 screws for the INA219."
       ],
-      "video": null
+      "video": null,
+      "wiring_guide": {
+        "href": "WIRING.md#3-connect-the-qt-py-to-the-cytron",
+        "label": "Connect the controller, motor driver and encoders"
+      }
     },
     {
       "id": "13",
@@ -718,7 +722,11 @@
         "Fix the speaker with two M3 × 6 screws above its grille.",
         "Seat the amplifier on its two mounting posts and two support pillars. Use two M2 × 6 screws."
       ],
-      "video": null
+      "video": null,
+      "wiring_guide": {
+        "href": "WIRING.md#9-connect-the-speaker--jetson-configuration",
+        "label": "Connect the Jetson amplifier and speaker"
+      }
     },
     {
       "id": "14",
@@ -793,7 +801,11 @@
         "For Jetson, secure the two retaining tabs with two M3 × 8 screws, without washers.",
         "For Pi/HAT, use the screws and spacers supplied with the HAT; prepare this assembly before fitting the carrier in the hull."
       ],
-      "video": null
+      "video": null,
+      "wiring_guide": {
+        "href": "WIRING.md#7-connect-the-arm-and-gripper",
+        "label": "Connect servo power and USB"
+      }
     },
     {
       "id": "15",
@@ -844,7 +856,11 @@
         "For RealSense, slide the support insert down from the top, then use its two M4 × 10 screws.",
         "For Gemini, use the flush insert and the window bezel instead. Secure the camera with two M3 × 8 screws; keep the USB opening clear."
       ],
-      "video": null
+      "video": null,
+      "wiring_guide": {
+        "href": "WIRING.md#8-connect-the-usb-devices",
+        "label": "Connect the selected camera"
+      }
     },
     {
       "id": "16",
@@ -883,7 +899,11 @@
         "With the carriage removed, secure the LiDAR base to the hull with two M3 × 10 screws.",
         "Secure the C1 to the carriage with four M2.5 × 6 screws, slide it onto the base and lock it with the M3 × 20 screw, without a washer, into the M3 insert."
       ],
-      "video": null
+      "video": null,
+      "wiring_guide": {
+        "href": "WIRING.md#8-connect-the-usb-devices",
+        "label": "Connect the LiDAR"
+      }
     },
     {
       "id": "17",
@@ -979,7 +999,11 @@
         "Use a DC099 5.5 × 2.1 mm rear charging socket (11 mm mounting hole), an 18 AWG internal male lead and an 18 AWG female lead on the battery. The complete connection, including both pairs of contacts, must support the 5 A charger. Keep the rover power connection on XT30.",
         "Fit the round KCD1-5-101EN main switch in the 20 mm opening. This replaces the small KCD11. The selected supplier lists 20 A at 12 V DC. Use the optional splash cap if available. Keep the existing 15 A pack fuse and main power wiring."
       ],
-      "video": "videos/07-xt30-power-distribution.mp4"
+      "video": "videos/07-xt30-power-distribution.mp4",
+      "wiring_guide": {
+        "href": "WIRING.md#2-prepare-the-power-connections",
+        "label": "Connect power distribution and the two-wire track stop"
+      }
     },
     {
       "id": "18",

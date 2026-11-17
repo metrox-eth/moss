@@ -5,7 +5,7 @@ Cleaner streets, one maker at a time.
 > **MOSS kits are coming soon on [TNKR](https://tnkr.ai/).**
 > Skip printing and sourcing the parts yourself. **[Join the waitlist →](https://ak4khuvxkya.typeform.com/to/qaKmXNME)** to be notified when kits are available.
 
-**[Build guide](https://www.showrobotics.ai/moss/build/) · [Print parts](https://www.showrobotics.ai/moss/build/#print) · [Bill of materials](BOM.md) · [Download CAD, STL & 3MF](https://github.com/metrox-eth/moss/releases/download/v0.6-r92/MOSS_R92_Mechanical_20261109.zip) · [Software setup](Software.md)**
+**[Build guide](https://www.showrobotics.ai/moss/build/) · [Wiring](docs/build/WIRING.md) · [Print parts](https://www.showrobotics.ai/moss/build/#print) · [Bill of materials](BOM.md) · [Download CAD, STL & 3MF](https://github.com/metrox-eth/moss/releases/download/v0.6-r92/MOSS_R92_Mechanical_20261109.zip) · [Software setup](Software.md)**
 
 MOSS is a small litter-picking rover you print and build yourself: a tracked base, a bin on top, an arm derived from the SO-101 with a parallel gripper. It is built in public, with hardware files available for noncommercial builds and improvements.
 

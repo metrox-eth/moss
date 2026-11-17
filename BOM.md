@@ -58,7 +58,7 @@ LK05/LK06/LK08 are guide identifiers for purchased shaft collars, also called lo
 |---|---:|---|
 | 12-cell battery pack, 3S4P, with BMS | 1 | 110 × 67 × 35 mm. |
 | 12.6 V CC/CV charger for the selected 3S pack | 1 |  |
-| Emergency stop LA16-11ZS/A, 16 mm | 1 |  |
+| Emergency stop LA16-11ZS/A, 16 mm | 1 | NC contact to QT Py SCK/GND, using v5 firmware: [two-wire track-stop wiring](docs/build/WIRING.md#5-connect-the-two-wire-track-stop-button). Logic input only; not in the motor-power path. |
 | KCD1-5-101EN round rocker switch, 12 V LED, 20 mm mounting hole | 1 | [PADPAD](https://www.lazada.co.th/products/led-dc12v-20a-20-kcd1-5-101en-onoff-round-rocker-toggle-switch-push-button-switch-20mm-i2389441284-s11758134838.html), listed 20 A / 12 V DC. Select **สวิตช์1ตัว+ยางกันน้ำ** for the switch with splash cap. |
 | Inline blade-fuse holder, 14 AWG | 1 |  |
 | ATC blade fuse, 15 A | 1 |  |

@@ -666,6 +666,15 @@ def check_firmware(ctx: dict, quick: bool) -> None:
             "mode 0 (off)" if mode == 0 else f"mode {mode} ({last.get('reason')}) - something else is driving it")
     ok, detail = driver_verdict(_raw("MOSS_DRIVER"), last.get("driver"))
     verdict(ok, "motor driver", detail)
+    if "stop_open" in last or "stop_latched" in last:
+        opened, latched = last.get("stop_open"), last.get("stop_latched")
+        valid = isinstance(opened, bool) and isinstance(latched, bool)
+        ready = valid and not opened and not latched
+        detail = ("NC loop closed, no latched stop" if ready else
+                  "open NC loop: release the button and check SCK-to-GND wiring" if opened is True else
+                  "stop latched: stop teleoperation, release the button, then send clearstop" if latched is True else
+                  "malformed stop telemetry")
+        verdict(ready, "track stop button", detail)
     _battery(last)
     ticks = last.get("ticks")
     good = isinstance(ticks, list) and len(ticks) == 2 and all(isinstance(x, int) for x in ticks)

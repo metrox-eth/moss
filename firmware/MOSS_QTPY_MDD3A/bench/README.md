@@ -1,4 +1,8 @@
-# Bench scripts for the V0.4 board
+# Bench scripts for the QT Py motor controller
+
+[Complete wiring guide](../../../docs/build/WIRING.md) — including the QT Py/Cytron pin table, encoder power, INA219 and two-wire track stop.
+
+The current sketch is **qtpy-mdd3a-v5**. Before updating, connect the latching button's normally closed contact between **SCK / GPIO 36 and GND**. An open loop latches the tracks off, including at boot. After a stop, stop the host stack and centre the controls, release the button, then send `moss_bench.py "clearstop"`. This clears only the latch; a new arm command is still required. Older firmware does not implement the stop input. The supported-track installation test is described in the wiring guide.
 
 Run from the onboard computer the QT Py is plugged into. They need `pyserial` and `esptool` in the Python used (`PY` at the top of `flash_qtpy.sh`).
 

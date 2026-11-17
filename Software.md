@@ -2,6 +2,8 @@
 
 The microcontroller drives the motors. Everything above it runs on [dimOS](https://github.com/dimensionalOS/dimos) by Dimensional, on the robot's computer: teleop, the lidar map, navigation, exploration and recording. The code for that is in this repository, in `moss_dimos/` and `tools/`.
 
+Connect the hardware first using the [illustrated wiring guide](docs/build/WIRING.md). It includes the motor-driver connections, encoders, INA219, servo adapter and audio.
+
 ## Motor firmware, ESP32-S3
 
 [`firmware/`](firmware/). Current board: Adafruit QT Py ESP32-S3 on its screw-terminal carrier, firmware `firmware/MOSS_QTPY_MDD3A/` (native USB; one build for the Cytron MDD3A, one for the MDD10A). The DevKitC snapshot `firmware/MOSS_ESP32S3/` is the V0.3 bench firmware, kept as history. Newline-terminated commands over USB serial at 115200 baud:
@@ -14,11 +16,14 @@ The microcontroller drives the motors. Everything above it runs on [dimOS](https
 | `ramp UP DOWN` | milliseconds per percent, rise and fall; default 30 / 15 |
 | `test left 10` | one motor for one second, bench only |
 | `stop` | stops and disarms |
+| `clearstop` | v5: clears the latched track stop only after the NC button loop closes; remains disarmed |
 | `zero` | resets the encoder counts (disarmed only) |
 
 Telemetry every 200 ms as JSON: firmware and driver names, mode, applied and target percent, raw encoder ticks, battery voltage. Disarmed at boot, nothing moves by itself. Full stick is 100 % PWM; the host caps lower when it wants to (`MOSS_MAX_PCT`). The firmware is open loop: there is no speed loop, and odometry in metres needs the encoder calibration in [docs/base.md](docs/base.md).
 
 The board reads battery voltage through an INA219. It does not measure motor current: the shunt is not in the motor line.
+
+**Two-wire stop button, v5 firmware:** connect the button's NC contact between SCK (GPIO 36) and GND before installing `qtpy-mdd3a-v5`. An open loop stops and latches the tracks; releasing the button cannot restart them. Telemetry adds `stop_open` and `stop_latched`. This is a software track stop, not a power cutoff or an arm stop. Stop the host stack and centre the controls before sending `clearstop`, then check and restart deliberately. [Connection and recovery procedure](docs/build/WIRING.md#5-connect-the-two-wire-track-stop-button).
 
 To reflash the QT Py, from the root of the checkout: build the images with `arduino-cli compile --fqbn esp32:esp32:adafruit_qtpy_esp32s3_nopsram:CDCOnBoot=cdc --export-binaries firmware/MOSS_QTPY_MDD3A` (they land in `firmware/MOSS_QTPY_MDD3A/build/`), add esptool to the venv with the `firmware` extra (`uv pip install --python .venv/bin/python -e '.[firmware]'`), then run `firmware/MOSS_QTPY_MDD3A/bench/flash_qtpy.sh`. The bench scripts are described in [its README](firmware/MOSS_QTPY_MDD3A/bench/README.md).
 

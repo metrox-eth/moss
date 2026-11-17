@@ -1,0 +1,22 @@
+{
+  "font": "Space Grotesk variable, explicit weights 500/600/700",
+  "palette": {
+    "STUDIO": "#3D576A",
+    "WHITE": "#EAF0EF",
+    "MINT": "#6CF8C7",
+    "SALMON": "#FF947E"
+  },
+  "canvas": [
+    1920,
+    1080
+  ],
+  "files": [
+    "images/wiring/01-overview.png",
+    "images/wiring/02-power-distribution.png",
+    "images/wiring/03-qtpy-cytron.png",
+    "images/wiring/04-motors-encoders.png",
+    "images/wiring/05-stop-button.png",
+    "images/wiring/06-ina219-voltage.png",
+    "images/wiring/07-jetson-speaker.png"
+  ]
+}

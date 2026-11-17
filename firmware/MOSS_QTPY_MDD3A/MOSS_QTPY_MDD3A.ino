@@ -9,6 +9,7 @@
 #include <Wire.h>
 #include <driver/gpio.h>
 #include "Control.h"
+#include "StopLoop.h"
 
 // ── pin map (QT Py ESP32-S3 GPIO numbers, core 3.3.x variant) ────────────
 // MDD3A: two PWM inputs per channel. A high / B low = forward, A low / B high
@@ -20,6 +21,9 @@ constexpr int M2A = A2;   // GPIO 9   right forward PWM
 constexpr int M2B = A3;   // GPIO 8   right backward PWM
 constexpr int ENC_L_A = SDA, ENC_L_B = SCL;   // GPIO 7 / 6 (primary I2C pins reused as inputs)
 constexpr int ENC_R_A = TX,  ENC_R_B = RX;    // GPIO 5 / 16
+// SCK is spare in this wiring. COM -> GND, NC -> SCK (GPIO 36).
+// This is a software stop for the tracks, not a power cutoff or an arm stop.
+constexpr int STOP_NC = SCK;
 // INA219 on the STEMMA QT connector = Wire1 (SDA1 = GPIO 41, SCL1 = GPIO 40)
 constexpr uint8_t INA_ADDRESS = 0x40;
 // The left motor is mounted mirrored: its encoder counts down when the track runs forward, so its
@@ -36,9 +40,11 @@ constexpr bool INVERT_LEFT_DRIVE = true;
 constexpr float SHUNT_OHMS = 0.0f;   // voltage only (see V0.3 README)
 constexpr uint32_t PWM_HZ = 20000;
 constexpr int PWM_BITS = 10;
-constexpr const char* FW = "qtpy-mdd3a-v4";
+constexpr const char* FW = "qtpy-mdd3a-v5";
 
 moss::Control control;
+moss::StopLoop stopLoop;
+volatile bool stopEdgeSeen = false;
 moss::Ramp rampL, rampR;
 bool pwmOK = false, inaOK = false, inaConfigured = false;
 uint32_t lastTelemetry = 0, lastInaTry = 0;
@@ -75,6 +81,19 @@ void outputsZero() {
   if (pwmOK) { ledcWrite(M1A, 0); ledcWrite(M1B, 0); ledcWrite(M2A, 0); ledcWrite(M2B, 0); }
   else { digitalWrite(M1A, LOW); digitalWrite(M1B, LOW); digitalWrite(M2A, LOW); digitalWrite(M2B, LOW); }
   rampL.stop(millis()); rampR.stop(millis());
+}
+void ARDUINO_ISR_ATTR stopOpened() { stopEdgeSeen = true; }
+void sampleStopLoop() {
+  noInterrupts();
+  bool edge = stopEdgeSeen;
+  stopEdgeSeen = false;
+  interrupts();
+  if (edge) stopLoop.trip(millis());  // Retain even a brief opening between loop checks.
+  stopLoop.sample(digitalRead(STOP_NC) != LOW, millis());
+  if (stopLoop.blocked()) {
+    control.stop(stopLoop.open ? "stop_open" : "stop_latched");
+    outputsZero();  // Bypass deceleration ramps on a stop.
+  }
 }
 // Two drivers, one wiring (A0/A1 left, A2/A3 right), chosen at compile time:
 //   default            Cytron MDD3A, two PWM inputs per channel (M1A/M1B): PWM on one,
@@ -137,18 +156,34 @@ void telemetry() {
     snprintf(shunt, sizeof(shunt), "%d", shuntUv);
     if (SHUNT_OHMS > 0) snprintf(current, sizeof(current), "%.2f", shuntUv / (1000.0f * SHUNT_OHMS));
   }
-  char out[560];
+  char out[640];
   snprintf(out, sizeof(out),
     "{\"ms\":%lu,\"fw\":\"%s\",\"driver\":\"%s\",\"mode\":%d,\"reason\":\"%s\",\"target_pct\":[%d,%d],\"output_pct\":[%d,%d],"
-    "\"ramp_ms\":[%lu,%lu],\"ticks\":[%lld,%lld],\"invalid_edges\":[%lu,%lu],\"ina_ok\":%s,\"bus_mV\":%s,\"shunt_uV\":%s,\"current_mA\":%s}",
+    "\"ramp_ms\":[%lu,%lu],\"ticks\":[%lld,%lld],\"invalid_edges\":[%lu,%lu],\"ina_ok\":%s,\"bus_mV\":%s,\"shunt_uV\":%s,\"current_mA\":%s,\"stop_open\":%s,\"stop_latched\":%s}",
     (unsigned long)millis(), FW, DRIVER, int(control.mode), control.reason, control.left, control.right,
     rampL.sign*rampL.value, rampR.sign*rampR.value,
     (unsigned long)control.rampRiseMs, (unsigned long)control.rampFallMs,
-    (long long)l, (long long)r, (unsigned long)il, (unsigned long)ir, inaOK ? "true" : "false", bus, shunt, current);
+    (long long)l, (long long)r, (unsigned long)il, (unsigned long)ir, inaOK ? "true" : "false", bus, shunt, current,
+    stopLoop.open ? "true" : "false", stopLoop.latched ? "true" : "false");
   sendLine(out);
 }
 void handleCommand(char* line) {
+  sampleStopLoop();
   if (!pwmOK) { control.stop("pwm_init_failed"); outputsZero(); sendLine("ERR pwm_init_failed"); return; }
+  if (!strcmp(line, "clearstop")) {
+    control.stop("stop_reset"); outputsZero();
+    if (!stopLoop.clear(millis())) {
+      sendLine(stopLoop.open ? "ERR stop_open" : "ERR stop_not_stable");
+      return;
+    }
+    control.stop("stop_cleared");
+    sendLine("OK");  // Still OFF; a separate arm command is required.
+    return;
+  }
+  if (stopLoop.blocked() && strcmp(line, "status") && strcmp(line, "stop")) {
+    sendLine("ERR stop_latched");
+    return;
+  }
   moss::Reply reply = control.command(line, millis());
   if (control.mode == moss::OFF || control.mode == moss::READY) outputsZero();
   if (reply == moss::ZERO) {
@@ -190,6 +225,9 @@ void setup() {
     control.stop("pwm_init_failed");
   }
   outputsZero();
+  pinMode(STOP_NC, INPUT_PULLUP);
+  attachInterrupt(STOP_NC, stopOpened, RISING);
+  sampleStopLoop();
   for (int pin : {ENC_L_A, ENC_L_B, ENC_R_A, ENC_R_B}) pinMode(pin, INPUT_PULLUP);
   prevL = (digitalRead(ENC_L_A) << 1) | digitalRead(ENC_L_B);
   prevR = (digitalRead(ENC_R_A) << 1) | digitalRead(ENC_R_B);
@@ -197,16 +235,18 @@ void setup() {
   attachInterrupt(ENC_R_A, encoderRight, CHANGE); attachInterrupt(ENC_R_B, encoderRight, CHANGE);
   Wire1.begin(SDA1, SCL1, 100000); Wire1.setTimeOut(5);
   inaConfigured = initIna();
-  { char banner[160]; snprintf(banner, sizeof(banner), "MOSS V0.4 firmware %s; driver %s; USB CDC 115200; limit %d%%; ramp %lu/%lu ms per %%; type status",
+  { char banner[192]; snprintf(banner, sizeof(banner), "MOSS QT Py firmware %s; driver %s; USB CDC 115200; NC stop on SCK/GPIO36; limit %d%%; ramp %lu/%lu ms per %%; type status",
     FW, DRIVER, moss::MAX_PERCENT, (unsigned long)control.rampRiseMs, (unsigned long)control.rampFallMs); sendLine(banner); }
 }
 void loop() {
+  sampleStopLoop();
   uint32_t now = millis();
   if (control.poll(now)) outputsZero();
   serviceSerial();
+  sampleStopLoop();
   now = millis();
   if (control.poll(now)) outputsZero();
-  if (pwmOK && (control.mode == moss::DRIVE || control.mode == moss::TEST)) {
+  if (pwmOK && !stopLoop.blocked() && (control.mode == moss::DRIVE || control.mode == moss::TEST)) {
     motorWrite(M1A, M1B, rampL.tick(control.left, now, control.rampRiseMs, control.rampFallMs), INVERT_LEFT_DRIVE);
     motorWrite(M2A, M2B, rampR.tick(control.right, now, control.rampRiseMs, control.rampFallMs), INVERT_RIGHT);
   }
